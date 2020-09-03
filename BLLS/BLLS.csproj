@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{96718E6E-2051-4541-BB94-09C8D19AD758}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BLLS</RootNamespace>
+    <AssemblyName>BLLS</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bakery\BllBakeryOrder.cs" />
+    <Compile Include="bllaccount\BLLAccounts_Journal_entry.cs" />
+    <Compile Include="bllaccount\BllLedger_entry.cs" />
+    <Compile Include="bllaccount\BLLTrialBalance.cs" />
+    <Compile Include="bllaccount\Bll_Add_Accountypes.cs" />
+    <Compile Include="bllaccount\Bll_allJournal_Lists.cs" />
+    <Compile Include="bllaccount\Bll_balancesheet.cs" />
+    <Compile Include="bllaccount\Bll_profit_loss.cs" />
+    <Compile Include="bllaccount\Bll_Trading.cs" />
+    <Compile Include="BLLAppointmentGraph.cs" />
+    <Compile Include="BLLBarCode.cs" />
+    <Compile Include="BLLBillingTaxCalculate.cs" />
+    <Compile Include="BLLBill_printing.cs" />
+    <Compile Include="BLLBusinessDyanmic.cs" />
+    <Compile Include="BLLcardreport.cs" />
+    <Compile Include="BLLcashwithdrawl.cs" />
+    <Compile Include="BLLCategory.cs" />
+    <Compile Include="BLLCategoryGrouping.cs" />
+    <Compile Include="BLLComplementry.cs" />
+    <Compile Include="BLLCreditPay\BLLcredit_clear.cs" />
+    <Compile Include="BLLCreditPay\BLLcustomer_credit.cs" />
+    <Compile Include="BLLCreditPay\BLL_credit_paid.cs" />
+    <Compile Include="BLLCustomer_details.cs" />
+    <Compile Include="BLLCustomer_wise.cs" />
+    <Compile Include="BLLDamage.cs" />
+    <Compile Include="BLLdays_wise.cs" />
+    <Compile Include="BLLdenomination.cs" />
+    <Compile Include="BLLdepartment.cs" />
+    <Compile Include="BLLdiscount.cs" />
+    <Compile Include="BLLDyanmicDiscount.cs" />
+    <Compile Include="BLLDynamic.cs" />
+    <Compile Include="BLLEventAttedance.cs" />
+    <Compile Include="BLLFonePay.cs" />
+    <Compile Include="BLLhome_delivery.cs" />
+    <Compile Include="BLLIngredientManagement.cs" />
+    <Compile Include="BLLInhouse_Unit.cs" />
+    <Compile Include="BLLInvoice.cs" />
+    <Compile Include="BLLItem_Modifier.cs" />
+    <Compile Include="BLLKitchenOrderInfo.cs" />
+    <Compile Include="BLLKitchenOrderToken.cs" />
+    <Compile Include="BLLKotDisplay.cs" />
+    <Compile Include="BLLkot_kitchen.cs" />
+    <Compile Include="blllCustomerDetailednyo.cs" />
+    <Compile Include="BLLLoyalty.cs" />
+    <Compile Include="BLLNonRefundableCash.cs" />
+    <Compile Include="BLLOrder.cs" />
+    <Compile Include="BLLOrderFire.cs" />
+    <Compile Include="BLLPrinterSetting.cs" />
+    <Compile Include="BLLProduct.cs" />
+    <Compile Include="BLLPurchase.cs" />
+    <Compile Include="BLLpurchasereturn.cs" />
+    <Compile Include="BLLReserved.cs" />
+    <Compile Include="BLLRestaurantReport.cs" />
+    <Compile Include="BLLRestaurentWeekDay.cs" />
+    <Compile Include="BLLRestSell.cs" />
+    <Compile Include="BLLSift_Change.cs" />
+    <Compile Include="BLLStock.cs" />
+    <Compile Include="BLLStockCategory.cs" />
+    <Compile Include="BLLStockTransfer.cs" />
+    <Compile Include="BLLSupplier_details.cs" />
+    <Compile Include="BLLSystemCommand.cs" />
+    <Compile Include="BLLSystemDyanmic.cs" />
+    <Compile Include="BLLTable.cs" />
+    <Compile Include="BLLTable_Area.cs" />
+    <Compile Include="BLLTakeAway.cs" />
+    <Compile Include="BLLToken.cs" />
+    <Compile Include="BLLUser.cs" />
+    <Compile Include="BLLUserLevelDiscount.cs" />
+    <Compile Include="BLL_Billing_Tax.cs" />
+    <Compile Include="BLL_Card_Credit.cs" />
+    <Compile Include="Bll_cashcounter.cs" />
+    <Compile Include="Bll_CashwithDrawl.cs" />
+    <Compile Include="Bll_customer_manager.cs" />
+    <Compile Include="bll_customer_mess.cs" />
+    <Compile Include="Bll_dayend.cs" />
+    <Compile Include="BLL_donation.cs" />
+    <Compile Include="BLL_Fiscal.cs" />
+    <Compile Include="Bll_inventory\bll_inv.cs" />
+    <Compile Include="Bll_inventory\Bll_stockAdjustments.cs" />
+    <Compile Include="BLL_item_category.cs" />
+    <Compile Include="BLL_Item_update_record.cs" />
+    <Compile Include="BLL_Login_logout.cs" />
+    <Compile Include="BLL_menu_item.cs" />
+    <Compile Include="Bll_mess_days\bll_breakfast.cs" />
+    <Compile Include="Bll_mess_days\Bll_customerMess_record.cs" />
+    <Compile Include="Bll_mess_days\Bll_mess_dailyrecord.cs" />
+    <Compile Include="Bll_mess_days\bll_mess_each_records.cs" />
+    <Compile Include="bll_orderCancel.cs" />
+    <Compile Include="BLL_Tax.cs" />
+    <Compile Include="BLL_user_log.cs" />
+    <Compile Include="Bll_wste.cs" />
+    <Compile Include="Chart\BLLChart.cs" />
+    <Compile Include="Hotel\BLLHotelReport.cs" />
+    <Compile Include="Hotel\BLLHotelRoom.cs" />
+    <Compile Include="Hotel\BLL_checkout.cs" />
+    <Compile Include="Hotel\BLL_DayendHotel.cs" />
+    <Compile Include="Hotel\BLL_HotelCategory.cs" />
+    <Compile Include="Hotel\BLL_HotelCustomer.cs" />
+    <Compile Include="Hotel\BLL_HotelDetails.cs" />
+    <Compile Include="Hotel\BLL_hotel_order.cs" />
+    <Compile Include="Hotel\BLL_Pending.cs" />
+    <Compile Include="Hotel\BLL_Report.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SessionUser.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DOA\DOA.csproj">
+      <Project>{42a8d3e1-03fa-4554-b204-3cc3fa98c945}</Project>
+      <Name>DOA</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\System.Data.SQLite.Core.1.0.102.0\build\net45\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.102.0\build\net45\System.Data.SQLite.Core.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.102.0\build\net45\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.102.0\build\net45\System.Data.SQLite.Core.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

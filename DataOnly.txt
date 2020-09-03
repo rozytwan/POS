@@ -1,0 +1,75 @@
+USE [POS2]
+GO
+SET IDENTITY_INSERT [dbo].[tbl_user] ON 
+
+INSERT [dbo].[tbl_user] ([user_id], [user_name], [password], [user_type], [e_mail], [first_name], [last_name], [gender], [date_of_birth], [phone_number], [pin], [date_of_joining], [address_line_1], [address_line_2], [city], [state], [zip_code], [user_image]) VALUES (1, N'admin', N'admin', N'admin', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+SET IDENTITY_INSERT [dbo].[tbl_user] OFF
+SET IDENTITY_INSERT [dbo].[tbl_user_access] ON 
+
+INSERT [dbo].[tbl_user_access] ([user_acc_id], [user_id], [admin], [account], [sales], [report], [stock], [discount]) VALUES (1, 1, N'True', N'True', N'True', N'True', N'True', N'True')
+SET IDENTITY_INSERT [dbo].[tbl_user_access] OFF
+
+
+
+USE [POS2]
+GO
+SET IDENTITY_INSERT [dbo].[tbl_printer] ON 
+
+INSERT [dbo].[tbl_printer] ([printer_id], [bill_printer], [kot_printer]) VALUES (1, N'80', N'80')
+SET IDENTITY_INSERT [dbo].[tbl_printer] OFF
+SET IDENTITY_INSERT [dbo].[tbl_printer_setting_billing] ON 
+
+INSERT [dbo].[tbl_printer_setting_billing] ([kot_print_id], [store_name], [table_name], [seat_name], [date_and_time], [cashier], [order_summary], [header], [items], [sub_total], [received_amt], [discount], [change_amt], [total], [payment_mode], [address]) VALUES (1, N'True', N'True', N'True', N'True', N'True', N'True', N'True', N'True', N'True', N'True', N'True', N'True', N'True', N'True', N'True')
+SET IDENTITY_INSERT [dbo].[tbl_printer_setting_billing] OFF
+SET IDENTITY_INSERT [dbo].[tbl_printer_setting_kot] ON 
+
+INSERT [dbo].[tbl_printer_setting_kot] ([kot_kitchen_id], [business_name], [address], [time], [take_away], [header], [items], [discription]) VALUES (1, N'True', N'True', N'True', N'True', N'True', N'True', N'True')
+SET IDENTITY_INSERT [dbo].[tbl_printer_setting_kot] OFF
+
+
+
+USE [POS2]
+GO
+SET IDENTITY_INSERT [dbo].[tbl_accounting_accounttype] ON 
+
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (1, N'Purchase', N'purchase', N'Expenses/Losses', N'TD', N'debit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (2, N'Cash', N'cash', N'Assets', N'BLS', N'debit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (3, N'Sales', N'sales', N'Revenue/Income/Gain', N'TD', N'credit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (4, N'Discount allowed', N'discount', N'Expenses/Losses', N'PL', N'debit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (5, N'Discount Received', N'discount', N'Revenue/Income/Gain', N'PL', N'credit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (6, N'Cash at Bank', N'cash at bank', N'Assets', N'BLS', N'debit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (7, N'Sales Return', N'sles return', N'Expenses/Losses', N'TD', N'debit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (8, N'GoodWill', N'goodwill', N'Assets', N'BLS', N'debit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (9, N'Land and Building', N'desc', N'Assets', N'BLS', N'debit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (10, N'Plant and Machinery', N'desc', N'Assets', N'BLS', N'debit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (11, N'Furniture', N'desc', N'Assets', N'BLS', N'debit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (12, N'Closing Stock', N'desc', N'Assets', N'BLS', N'debit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (13, N'Debtors', N'desc', N'Assets', N'BLS', N'debit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (14, N'Investment', N'desc', N'Assets', N'BLS', N'debit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (15, N'Prepaid Expenses', N'desc', N'Assets', N'BLS', N'debit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (16, N'Factory Expenses', N'desc', N'Expenses/Losses', N'TD', N'debit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (17, N'Bad Debts', N'desc', N'Expenses/Losses', N'PL', N'debit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (18, N'Office Expenses', N'desc', N'Expenses/Losses', N'PL', N'debit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (20, N'Selling Expenses', N'desc', N'Expenses/Losses', N'PL', N'debit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (22, N'Drawings', N'desc', N'Capital', N'BLS', N'credit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (23, N'Reserves', N'desc', N'Capital', N'BLS', N'credit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (24, N'Creditors', N'desc', N'Liabilities', N'BLS', N'credit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (25, N'Long Term Loan', N'desc', N'Liabilities', N'BLS', N'credit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (26, N'Purchase Return', N'desc', N'Revenue/Income/Gain', N'TD', N'credit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (27, N'Interest Received', N'desc', N'Revenue/Income/Gain', N'PL', N'credit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (28, N'Commission Received', N'desc', N'Revenue/Income/Gain', N'PL', N'credit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (29, N'Bad Debt Recovered', N'desc', N'Revenue/Income/Gain', N'PL', N'credit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (30, N'Salaries', N'desc', N'Expenses/Losses', N'PL', N'debit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (31, N'Wages', N'desc', N'Expenses/Losses', N'TD', N'debit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (32, N'Miscellanious Expenses', N'desc', N'Expenses/Losses', N'TD', N'debit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (33, N'Telephone and Charges', N'des', N'Expenses/Losses', N'PL', N'debit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (34, N'Printing and Stationnery', N'desc', N'Expenses/Losses', N'PL', N'debit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (35, N'Rent', N'desc', N'Expenses/Losses', N'PL', N'debit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (36, N'Commission', N'desc', N'Expenses/Losses', N'PL', N'debit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (37, N'Rent Received', N'desc', N'Expenses/Losses', N'PL', N'credit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (38, N'Dividend Received', N'desc', N'Expenses/Losses', N'PL', N'credit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (39, N'Banks Charges', N'desc', N'Expenses/Losses', N'PL', N'debit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (40, N'Manufacturing Expenses', N'desc', N'Expenses/Losses', N'TD', N'debit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (41, N'Coal,Oil and Gas', N'desc', N'Expenses/Losses', N'TD', N'debit')
+INSERT [dbo].[tbl_accounting_accounttype] ([ac_id], [name], [description], [type], [account], [dr_cr]) VALUES (42, N'Capital', N'asf', N'Capital', N'BLS', N'credit')
+SET IDENTITY_INSERT [dbo].[tbl_accounting_accounttype] OFF

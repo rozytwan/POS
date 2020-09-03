@@ -1,0 +1,1200 @@
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\Stock Product Category\InHouseUnit.resx
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\Stock Product Category\InHouseUnit.cs
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\Stock Product Category\InHouseUnit.designer.cs
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\POS System.exe.config
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\POS System.exe
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\POS System.pdb
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\es-ES\POS System.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\es-PR\POS System.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\Bitfinex.Client.Websocket.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\BLLS.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\Bunifu_UI_v1.5.3.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ClosedXML.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DOA.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DocumentFormat.OpenXml.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\iTextSharp.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\NepaliDateConverter.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\Newtonsoft.Json.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\PdfSharp.Charting.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\PdfSharp.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\QRCoder.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\SecureApp.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\SoftwareLocker.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\SpellNumber.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\SuperSocket.ClientEngine.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\System.Net.Http.Formatting.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\Tulpep.NotificationWindow.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\WatsonWebsocket.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\websocket-sharp.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\WebSocket4Net.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\SerialBoxes.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.Utils.v15.2.UI.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraTreeList.v15.2.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraGrid.v15.2.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraLayout.v15.2.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraVerticalGrid.v15.2.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraNavBar.v15.2.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.Sparkline.v15.2.Core.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.RichEdit.v15.2.Core.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraSpellChecker.v15.2.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.SpellChecker.v15.2.Core.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\FilterControls.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraRichEdit.v15.2.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.Office.v15.2.Core.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.Pdf.v15.2.Core.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.Pdf.v15.2.Drawing.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\BLLS.pdb
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DOA.pdb
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\SecureApp.pdb
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\SoftwareLocker.pdb
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\Bitfinex.Client.Websocket.xml
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ClosedXML.pdb
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevComponents.DotNetBar2.xml
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.Data.v15.2.xml
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.Printing.v15.2.Core.xml
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.Utils.v15.2.xml
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraBars.v15.2.xml
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraCharts.v15.2.xml
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraCharts.v15.2.UI.xml
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraCharts.v15.2.Wizard.xml
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraEditors.v15.2.xml
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraPrinting.v15.2.xml
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraScheduler.v15.2.xml
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraScheduler.v15.2.Core.xml
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraScheduler.v15.2.Extensions.xml
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\Newtonsoft.Json.xml
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\PdfSharp.xml
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\PdfSharp.Charting.xml
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\System.Net.Http.Formatting.xml
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.Utils.v15.2.UI.xml
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraTreeList.v15.2.xml
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraGrid.v15.2.xml
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraLayout.v15.2.xml
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraVerticalGrid.v15.2.xml
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraNavBar.v15.2.xml
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.Sparkline.v15.2.Core.xml
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.RichEdit.v15.2.Core.xml
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraSpellChecker.v15.2.xml
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.SpellChecker.v15.2.Core.xml
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraRichEdit.v15.2.xml
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.Office.v15.2.Core.xml
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.Pdf.v15.2.Core.xml
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.Pdf.v15.2.Drawing.xml
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.Data.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.Data.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.Data.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.Data.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.Printing.v15.2.Core.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.Printing.v15.2.Core.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.Printing.v15.2.Core.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.Printing.v15.2.Core.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.Utils.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.Utils.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.Utils.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.Utils.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraBars.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraBars.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraBars.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraBars.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraCharts.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraCharts.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraCharts.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraCharts.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraCharts.v15.2.Wizard.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraCharts.v15.2.Wizard.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraCharts.v15.2.Wizard.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraCharts.v15.2.Wizard.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraEditors.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraEditors.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraEditors.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraEditors.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraPrinting.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraPrinting.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraPrinting.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraPrinting.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraScheduler.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraScheduler.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraScheduler.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraScheduler.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraScheduler.v15.2.Core.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraScheduler.v15.2.Core.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraScheduler.v15.2.Core.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraScheduler.v15.2.Core.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraScheduler.v15.2.Extensions.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraScheduler.v15.2.Extensions.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraScheduler.v15.2.Extensions.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraScheduler.v15.2.Extensions.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\de\PdfSharp.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\de\PdfSharp.Charting.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.Utils.v15.2.UI.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.Utils.v15.2.UI.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.Utils.v15.2.UI.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.Utils.v15.2.UI.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraTreeList.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraTreeList.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraTreeList.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraTreeList.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraGrid.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraGrid.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraGrid.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraGrid.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraLayout.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraLayout.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraLayout.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraLayout.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraVerticalGrid.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraVerticalGrid.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraVerticalGrid.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraVerticalGrid.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraNavBar.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraNavBar.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraNavBar.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraNavBar.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.Sparkline.v15.2.Core.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.Sparkline.v15.2.Core.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.Sparkline.v15.2.Core.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.Sparkline.v15.2.Core.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.RichEdit.v15.2.Core.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.RichEdit.v15.2.Core.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.RichEdit.v15.2.Core.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.RichEdit.v15.2.Core.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraSpellChecker.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraSpellChecker.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraSpellChecker.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraSpellChecker.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraRichEdit.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraRichEdit.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraRichEdit.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraRichEdit.v15.2.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.Office.v15.2.Core.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.Office.v15.2.Core.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.Office.v15.2.Core.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.Office.v15.2.Core.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.Pdf.v15.2.Core.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.Pdf.v15.2.Core.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.Pdf.v15.2.Core.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.Pdf.v15.2.Core.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.BakeryKOTOrder.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Table_Management.BakeryTable_Billing.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Bakery.CustomerChoose.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Bakery.OrderDetailsForm.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.CreditDetail.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.CustomerDisplayModified.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.CustomerAttendance.AddEventType.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.CustomerAttendance.EventAttendance.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Loyality.Add_Loyality_Itemwise.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Loyality.Loyality.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Loyality.Loyality_Amount.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Loyality.Loyality_Itemwise.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.CustomerLoyalty.ViewCustomerLoyaltyPoint.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.AllCusomterList.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.AppointmentBooking.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.AppointmentGraph.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.BillDetails.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.CheckCard.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.CustomerConsolation.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.EditAppointment.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.ViewCardReport.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Discount.DyanmicDiscount.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Donation.Donation.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Donation_Event.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Dynamic.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.FonePay.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.FonePayApi.QRCodeScan.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.HotelTransfer.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.BookingReport.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.DayEndHotel.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Hotel.HotelStatusUpdate.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Hotel.HotelAdminAccess.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.HotelComplementrySales.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Hotel.HotelRoomStatus.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.HotelUserAccess.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.HotelVoidSales.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Hotel.RoomImages.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.RoomPackage.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Hotel.Room_Transfer.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.SalesReport.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewHotelOrder.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.AddCategoryGrouping.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.ItemSales.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.KitchenOrderInfo.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.KOTOrderManagement.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.OrderCancelDetails.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Parlour.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewRestaurantSalesWithOwnCalculate.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewrestaurantSalesByWeekDay.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewHotelSalesReport.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Sales_Chart.SalesChart.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.SalesDataTaxCalculate.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.ServiceProviderUser.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.AddDamages.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.AddIngredient.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.AllCardCredit.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.CardCreditPay.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.CardCreditRecord.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.CreditPayList.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.CreditRefer.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.CheckCardDetail.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.CustomerCardDetail.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.CustomerCard_Info.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.CustomerCard_Type.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.CustomerCashBack.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.CustomerList.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Dailycardreport.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Damages.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.DenominationList.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Department.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.UserDiscount.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.HotelDashBoard.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.GetDetails.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Hotel.Hotel.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.HotelBilling.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.HotelCoupon.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.hotel_KOTOrder.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.PendingBooking.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Report.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.RoomCategory.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.RoomDetails.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Search.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Test.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Ingredient_Management.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.InventoryList.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.StockAdjustments.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.AddIMenuCategory.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.ADDMenuItem.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.AddMenuItemList.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.AdminAccess.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.AdvanceDiscount.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.allmenu.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.BarCodeSet.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Billing.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.BillingDetails.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Cancel_emo.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.CashWithdrawl.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Counter_Cash_Withdrawl.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.CreateBusiness.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.AllCreditsLists.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.CreditPaidForm.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Creditpayform.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.CustomerDetail.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.CustomerChooseForm.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.CustomerAttendance.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.CustomerDetailform.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.CustomerMessProgram.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.MessPakageChooser.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.Mess_detail_record.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.PakageNameSet.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.setCustomerPakages.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.ShowAttendance.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.ViewPakageChooser.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.xtraform.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Denomination.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Edit_Rest_details.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.edit_user.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.FiscalYear.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.FiscalYearAdd.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Home_delivery_check.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.InhoueseUnit.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.ItemTransfer.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.ItemUpdate.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Item_Modifier.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Item_modifier_list.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.KOTOrder.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Billing_print_setting.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.KOT_printing_setting.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Puchase_Book.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.second_user_interface.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.OpeningStock.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.ProductList.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.PurchaseOrder.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.PurchasePay.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Purchase_Stock_Product.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.StockList.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Stock_Transfer.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.StockProductList.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Stock_Calculation.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.SupplierList.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.SupplierPayment.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.SupplierPurchase.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewPayment.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewStockLog.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewStockSales.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.View_Stock_Purchase.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.SuperAdminAccess.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.SystemCommand.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Table_Management.Table_area_create.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Table_Management.Table_Billing.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Table_Management.Table_create_edit.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Table_Management.Table_new_insert.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Table_Management.Table_update.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_Systems.UserControl_Product.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.UserControl_purchase_return.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS.CV.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\BackUP.DatabaseBackup.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.DayEndReport.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS.EditUpdateUser.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.FastBilling.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.KotScreen.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.KOTSetting.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Loding.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.OpeningBalance.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS.user.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewDayendReport.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewDonationReport.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewOrder.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewOrderCancelForm.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.ShiftChange.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Viewrestaurant_sales_report.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Viewrestaurant_copy.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Viewrestaurant.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewShiftChangeForm.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Supplier_Details.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.TableTransfer.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.UserAccess.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.usercontrol_customerwise.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.softwareversion.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Login.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Properties.Resources.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.UserControl_delivery_status.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.home.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.usercontrol_item_wise.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.UserControl_product_add.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.UserControl_purchase_form.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.btnshowall.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewLoginLogout.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewRestaurantDeleteRecord.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewStockTransfer.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewUserLog.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.View_Materialize.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.View_Complementry.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.View_Complementry_Sales.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Void.AddItemForVoid.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Void.VoidBill.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.VoidSales.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.WasteMgnt.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.XReportView.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Login.es-ES.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.Login.es-PR.resources
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS System.csproj.GenerateResource.Cache
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS System.exe.licenses
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\es-ES\POS System.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\es-PR\POS System.resources.dll
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS System.exe
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS System.pdb
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS System.csprojResolveAssemblyReference.cache
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewDetailDayend.resources
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevComponents.DotNetBar2.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.Charts.v15.2.Core.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.Data.v15.2.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.Printing.v15.2.Core.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.Utils.v15.2.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraBars.v15.2.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraCharts.v15.2.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraCharts.v15.2.UI.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraCharts.v15.2.Wizard.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraEditors.v15.2.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraPrinting.v15.2.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraScheduler.v15.2.Core.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraScheduler.v15.2.dll
+D:\Office Project\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraScheduler.v15.2.Extensions.dll
+D:\Office Project\POS 2 Server Load\POS System\obj\Debug\POS_System.ChequeDetail.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS System.csprojResolveAssemblyReference.cache
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.BakeryKOTOrder.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Table_Management.BakeryTable_Billing.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Bakery.CustomerChoose.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Bakery.OrderDetailsForm.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.ChequeDetail.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.CreditDetail.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.CustomerDisplayModified.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.CustomerAttendance.AddEventType.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.CustomerAttendance.EventAttendance.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Loyality.Add_Loyality_Itemwise.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Loyality.Loyality.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Loyality.Loyality_Amount.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Loyality.Loyality_Itemwise.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.CustomerLoyalty.ViewCustomerLoyaltyPoint.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.AllCusomterList.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.AppointmentBooking.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.AppointmentGraph.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.BillDetails.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.CheckCard.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.CustomerConsolation.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.EditAppointment.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.ViewCardReport.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Discount.DyanmicDiscount.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Donation.Donation.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Donation_Event.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Dynamic.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.FonePay.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.FonePayApi.QRCodeScan.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.HotelTransfer.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.BookingReport.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.DayEndHotel.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Hotel.HotelStatusUpdate.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Hotel.HotelAdminAccess.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.HotelComplementrySales.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Hotel.HotelRoomStatus.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.HotelUserAccess.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.HotelVoidSales.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Hotel.RoomImages.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.RoomPackage.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Hotel.Room_Transfer.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.SalesReport.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewHotelOrder.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.AddCategoryGrouping.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.ItemSales.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.KitchenOrderInfo.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.KOTOrderManagement.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.OrderCancelDetails.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Parlour.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewRestaurantSalesWithOwnCalculate.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewrestaurantSalesByWeekDay.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewHotelSalesReport.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Sales_Chart.SalesChart.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.SalesDataTaxCalculate.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.ServiceProviderUser.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.AddDamages.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.AddIngredient.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.AllCardCredit.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.CardCreditPay.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.CardCreditRecord.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.CreditPayList.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.CreditRefer.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.CheckCardDetail.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.CustomerCardDetail.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.CustomerCard_Info.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.CustomerCard_Type.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.CustomerCashBack.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.CustomerList.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Dailycardreport.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Damages.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.DenominationList.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Department.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.UserDiscount.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.HotelDashBoard.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.GetDetails.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Hotel.Hotel.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.HotelBilling.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.HotelCoupon.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.hotel_KOTOrder.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.PendingBooking.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Report.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.RoomCategory.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.RoomDetails.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Search.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Test.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Ingredient_Management.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.InventoryList.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.StockAdjustments.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.AddIMenuCategory.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.ADDMenuItem.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.AddMenuItemList.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.AdminAccess.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.AdvanceDiscount.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.allmenu.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.BarCodeSet.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Billing.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.BillingDetails.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Cancel_emo.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.CashWithdrawl.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Counter_Cash_Withdrawl.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.CreateBusiness.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.AllCreditsLists.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.CreditPaidForm.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Creditpayform.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.CustomerDetail.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.CustomerChooseForm.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.CustomerAttendance.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.CustomerDetailform.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.CustomerMessProgram.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.MessPakageChooser.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.Mess_detail_record.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.PakageNameSet.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.setCustomerPakages.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.ShowAttendance.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.ViewPakageChooser.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.xtraform.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Denomination.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Edit_Rest_details.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.edit_user.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.FiscalYear.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.FiscalYearAdd.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Home_delivery_check.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.InhoueseUnit.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.ItemTransfer.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.ItemUpdate.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Item_Modifier.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Item_modifier_list.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.KOTOrder.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Billing_print_setting.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.KOT_printing_setting.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Puchase_Book.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.second_user_interface.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.OpeningStock.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.ProductList.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.PurchaseOrder.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.PurchasePay.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Purchase_Stock_Product.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.StockList.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Stock_Transfer.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.StockProductList.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Stock_Calculation.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.SupplierList.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.SupplierPayment.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.SupplierPurchase.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewPayment.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewStockLog.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewStockSales.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.View_Stock_Purchase.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.SuperAdminAccess.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.SystemCommand.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Table_Management.Table_area_create.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Table_Management.Table_Billing.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Table_Management.Table_create_edit.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Table_Management.Table_new_insert.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Table_Management.Table_update.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_Systems.UserControl_Product.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.UserControl_purchase_return.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS.CV.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\BackUP.DatabaseBackup.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.DayEndReport.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS.EditUpdateUser.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.FastBilling.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.KotScreen.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.KOTSetting.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Loding.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.OpeningBalance.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS.user.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewDayendReport.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewDetailDayend.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewDonationReport.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewOrder.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.ShiftChange.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Viewrestaurant_sales_report.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Viewrestaurant_copy.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Viewrestaurant.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewOrderCancelForm.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewShiftChangeForm.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Supplier_Details.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.TableTransfer.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.UserAccess.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.usercontrol_customerwise.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.softwareversion.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Login.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Properties.Resources.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.UserControl_delivery_status.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.home.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.usercontrol_item_wise.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.UserControl_product_add.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.UserControl_purchase_form.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.btnshowall.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewLoginLogout.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewRestaurantDeleteRecord.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewStockTransfer.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewUserLog.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.View_Materialize.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.View_Complementry.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.View_Complementry_Sales.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Void.AddItemForVoid.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Void.VoidBill.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.VoidSales.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.WasteMgnt.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.XReportView.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Login.es-ES.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS_System.Login.es-PR.resources
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS System.csproj.GenerateResource.Cache
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS System.exe.licenses
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS System.exe
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\POS System.pdb
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\POS System.exe.config
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\Stock Product Category\InHouseUnit.resx
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\Stock Product Category\InHouseUnit.cs
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\Stock Product Category\InHouseUnit.designer.cs
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\POS System.exe
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\POS System.pdb
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\es-ES\POS System.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\es-PR\POS System.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\Bitfinex.Client.Websocket.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\BLLS.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ClosedXML.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.Charts.v15.2.Core.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.Data.v15.2.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.Printing.v15.2.Core.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.Utils.v15.2.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraBars.v15.2.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraCharts.v15.2.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraCharts.v15.2.UI.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraCharts.v15.2.Wizard.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraEditors.v15.2.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraPrinting.v15.2.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraScheduler.v15.2.Core.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraScheduler.v15.2.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraScheduler.v15.2.Extensions.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DOA.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\iTextSharp.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\NepaliDateConverter.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\Newtonsoft.Json.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\PdfSharp.Charting.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\PdfSharp.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\QRCoder.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\SecureApp.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\SoftwareLocker.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\SpellNumber.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\SuperSocket.ClientEngine.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\Tulpep.NotificationWindow.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\WatsonWebsocket.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\websocket-sharp.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\WebSocket4Net.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\SerialBoxes.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.Utils.v15.2.UI.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraTreeList.v15.2.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraGrid.v15.2.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraLayout.v15.2.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraVerticalGrid.v15.2.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraNavBar.v15.2.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.Sparkline.v15.2.Core.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.RichEdit.v15.2.Core.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraSpellChecker.v15.2.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.SpellChecker.v15.2.Core.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\FilterControls.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraRichEdit.v15.2.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.Office.v15.2.Core.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.Pdf.v15.2.Core.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.Pdf.v15.2.Drawing.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\BLLS.pdb
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DOA.pdb
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\SecureApp.pdb
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\SoftwareLocker.pdb
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\Bitfinex.Client.Websocket.xml
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ClosedXML.pdb
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevComponents.DotNetBar2.xml
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.Data.v15.2.xml
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.Printing.v15.2.Core.xml
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.Utils.v15.2.xml
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraBars.v15.2.xml
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraCharts.v15.2.xml
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraCharts.v15.2.UI.xml
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraCharts.v15.2.Wizard.xml
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraEditors.v15.2.xml
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraPrinting.v15.2.xml
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraScheduler.v15.2.xml
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraScheduler.v15.2.Core.xml
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraScheduler.v15.2.Extensions.xml
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\Newtonsoft.Json.xml
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\PdfSharp.xml
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\PdfSharp.Charting.xml
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.Utils.v15.2.UI.xml
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraTreeList.v15.2.xml
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraGrid.v15.2.xml
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraLayout.v15.2.xml
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraVerticalGrid.v15.2.xml
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraNavBar.v15.2.xml
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.Sparkline.v15.2.Core.xml
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.RichEdit.v15.2.Core.xml
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraSpellChecker.v15.2.xml
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.SpellChecker.v15.2.Core.xml
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraRichEdit.v15.2.xml
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.Office.v15.2.Core.xml
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.Pdf.v15.2.Core.xml
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\DevExpress.Pdf.v15.2.Drawing.xml
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.Data.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.Data.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.Data.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.Data.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.Printing.v15.2.Core.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.Printing.v15.2.Core.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.Printing.v15.2.Core.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.Printing.v15.2.Core.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.Utils.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.Utils.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.Utils.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.Utils.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraBars.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraBars.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraBars.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraBars.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraCharts.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraCharts.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraCharts.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraCharts.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraCharts.v15.2.Wizard.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraCharts.v15.2.Wizard.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraCharts.v15.2.Wizard.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraCharts.v15.2.Wizard.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraEditors.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraEditors.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraEditors.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraEditors.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraPrinting.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraPrinting.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraPrinting.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraPrinting.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraScheduler.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraScheduler.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraScheduler.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraScheduler.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraScheduler.v15.2.Core.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraScheduler.v15.2.Core.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraScheduler.v15.2.Core.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraScheduler.v15.2.Core.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraScheduler.v15.2.Extensions.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraScheduler.v15.2.Extensions.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraScheduler.v15.2.Extensions.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraScheduler.v15.2.Extensions.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\de\PdfSharp.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\de\PdfSharp.Charting.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.Utils.v15.2.UI.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.Utils.v15.2.UI.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.Utils.v15.2.UI.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.Utils.v15.2.UI.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraTreeList.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraTreeList.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraTreeList.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraTreeList.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraGrid.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraGrid.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraGrid.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraGrid.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraLayout.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraLayout.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraLayout.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraLayout.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraVerticalGrid.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraVerticalGrid.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraVerticalGrid.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraVerticalGrid.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraNavBar.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraNavBar.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraNavBar.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraNavBar.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.Sparkline.v15.2.Core.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.Sparkline.v15.2.Core.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.Sparkline.v15.2.Core.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.Sparkline.v15.2.Core.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.RichEdit.v15.2.Core.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.RichEdit.v15.2.Core.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.RichEdit.v15.2.Core.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.RichEdit.v15.2.Core.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraSpellChecker.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraSpellChecker.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraSpellChecker.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraSpellChecker.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraRichEdit.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraRichEdit.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraRichEdit.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraRichEdit.v15.2.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.Office.v15.2.Core.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.Office.v15.2.Core.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.Office.v15.2.Core.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.Office.v15.2.Core.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.Pdf.v15.2.Core.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.Pdf.v15.2.Core.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.Pdf.v15.2.Core.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.Pdf.v15.2.Core.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\es-ES\POS System.resources.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\POS System\obj\Debug\es-PR\POS System.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\POS System.exe.config
+D:\POS 2 Server Load\POS System\obj\Debug\POS System.exe
+D:\POS 2 Server Load\POS System\obj\Debug\POS System.pdb
+D:\POS 2 Server Load\POS System\bin\Debug\Stock Product Category\InHouseUnit.resx
+D:\POS 2 Server Load\POS System\bin\Debug\Stock Product Category\InHouseUnit.cs
+D:\POS 2 Server Load\POS System\bin\Debug\Stock Product Category\InHouseUnit.designer.cs
+D:\POS 2 Server Load\POS System\bin\Debug\POS System.exe
+D:\POS 2 Server Load\POS System\bin\Debug\POS System.pdb
+D:\POS 2 Server Load\POS System\bin\Debug\es-ES\POS System.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\es-PR\POS System.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\Bitfinex.Client.Websocket.dll
+D:\POS 2 Server Load\POS System\bin\Debug\BLLS.dll
+D:\POS 2 Server Load\POS System\bin\Debug\Bunifu_UI_v1.5.3.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ClosedXML.dll
+D:\POS 2 Server Load\POS System\bin\Debug\DevComponents.DotNetBar2.dll
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.Charts.v15.2.Core.dll
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.Data.v15.2.dll
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.Printing.v15.2.Core.dll
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.Utils.v15.2.dll
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraBars.v15.2.dll
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraCharts.v15.2.dll
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraCharts.v15.2.UI.dll
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraCharts.v15.2.Wizard.dll
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraEditors.v15.2.dll
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraPrinting.v15.2.dll
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraScheduler.v15.2.Core.dll
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraScheduler.v15.2.dll
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraScheduler.v15.2.Extensions.dll
+D:\POS 2 Server Load\POS System\bin\Debug\DOA.dll
+D:\POS 2 Server Load\POS System\bin\Debug\DocumentFormat.OpenXml.dll
+D:\POS 2 Server Load\POS System\bin\Debug\iTextSharp.dll
+D:\POS 2 Server Load\POS System\bin\Debug\NepaliDateConverter.dll
+D:\POS 2 Server Load\POS System\bin\Debug\Newtonsoft.Json.dll
+D:\POS 2 Server Load\POS System\bin\Debug\PdfSharp.Charting.dll
+D:\POS 2 Server Load\POS System\bin\Debug\PdfSharp.dll
+D:\POS 2 Server Load\POS System\bin\Debug\QRCoder.dll
+D:\POS 2 Server Load\POS System\bin\Debug\SecureApp.dll
+D:\POS 2 Server Load\POS System\bin\Debug\SoftwareLocker.dll
+D:\POS 2 Server Load\POS System\bin\Debug\SpellNumber.dll
+D:\POS 2 Server Load\POS System\bin\Debug\SuperSocket.ClientEngine.dll
+D:\POS 2 Server Load\POS System\bin\Debug\System.Net.Http.Formatting.dll
+D:\POS 2 Server Load\POS System\bin\Debug\Tulpep.NotificationWindow.dll
+D:\POS 2 Server Load\POS System\bin\Debug\WatsonWebsocket.dll
+D:\POS 2 Server Load\POS System\bin\Debug\websocket-sharp.dll
+D:\POS 2 Server Load\POS System\bin\Debug\WebSocket4Net.dll
+D:\POS 2 Server Load\POS System\bin\Debug\SerialBoxes.dll
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.Utils.v15.2.UI.dll
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraTreeList.v15.2.dll
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraGrid.v15.2.dll
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraLayout.v15.2.dll
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraVerticalGrid.v15.2.dll
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraNavBar.v15.2.dll
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.Sparkline.v15.2.Core.dll
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.RichEdit.v15.2.Core.dll
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraSpellChecker.v15.2.dll
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.SpellChecker.v15.2.Core.dll
+D:\POS 2 Server Load\POS System\bin\Debug\FilterControls.dll
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraRichEdit.v15.2.dll
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.Office.v15.2.Core.dll
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.Pdf.v15.2.Core.dll
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.Pdf.v15.2.Drawing.dll
+D:\POS 2 Server Load\POS System\bin\Debug\BLLS.pdb
+D:\POS 2 Server Load\POS System\bin\Debug\DOA.pdb
+D:\POS 2 Server Load\POS System\bin\Debug\SecureApp.pdb
+D:\POS 2 Server Load\POS System\bin\Debug\SoftwareLocker.pdb
+D:\POS 2 Server Load\POS System\bin\Debug\Bitfinex.Client.Websocket.xml
+D:\POS 2 Server Load\POS System\bin\Debug\ClosedXML.pdb
+D:\POS 2 Server Load\POS System\bin\Debug\DevComponents.DotNetBar2.xml
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.Data.v15.2.xml
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.Printing.v15.2.Core.xml
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.Utils.v15.2.xml
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraBars.v15.2.xml
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraCharts.v15.2.xml
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraCharts.v15.2.UI.xml
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraCharts.v15.2.Wizard.xml
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraEditors.v15.2.xml
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraPrinting.v15.2.xml
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraScheduler.v15.2.xml
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraScheduler.v15.2.Core.xml
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraScheduler.v15.2.Extensions.xml
+D:\POS 2 Server Load\POS System\bin\Debug\Newtonsoft.Json.xml
+D:\POS 2 Server Load\POS System\bin\Debug\PdfSharp.xml
+D:\POS 2 Server Load\POS System\bin\Debug\PdfSharp.Charting.xml
+D:\POS 2 Server Load\POS System\bin\Debug\System.Net.Http.Formatting.xml
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.Utils.v15.2.UI.xml
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraTreeList.v15.2.xml
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraGrid.v15.2.xml
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraLayout.v15.2.xml
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraVerticalGrid.v15.2.xml
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraNavBar.v15.2.xml
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.Sparkline.v15.2.Core.xml
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.RichEdit.v15.2.Core.xml
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraSpellChecker.v15.2.xml
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.SpellChecker.v15.2.Core.xml
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.XtraRichEdit.v15.2.xml
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.Office.v15.2.Core.xml
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.Pdf.v15.2.Core.xml
+D:\POS 2 Server Load\POS System\bin\Debug\DevExpress.Pdf.v15.2.Drawing.xml
+D:\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.Data.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.Data.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.Data.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.Data.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.Printing.v15.2.Core.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.Printing.v15.2.Core.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.Printing.v15.2.Core.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.Printing.v15.2.Core.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.Utils.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.Utils.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.Utils.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.Utils.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraBars.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraBars.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraBars.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraBars.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraCharts.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraCharts.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraCharts.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraCharts.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraCharts.v15.2.Wizard.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraCharts.v15.2.Wizard.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraCharts.v15.2.Wizard.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraCharts.v15.2.Wizard.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraEditors.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraEditors.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraEditors.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraEditors.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraPrinting.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraPrinting.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraPrinting.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraPrinting.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraScheduler.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraScheduler.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraScheduler.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraScheduler.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraScheduler.v15.2.Core.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraScheduler.v15.2.Core.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraScheduler.v15.2.Core.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraScheduler.v15.2.Core.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraScheduler.v15.2.Extensions.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraScheduler.v15.2.Extensions.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraScheduler.v15.2.Extensions.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraScheduler.v15.2.Extensions.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\de\PdfSharp.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\de\PdfSharp.Charting.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.Utils.v15.2.UI.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.Utils.v15.2.UI.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.Utils.v15.2.UI.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.Utils.v15.2.UI.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraTreeList.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraTreeList.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraTreeList.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraTreeList.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraGrid.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraGrid.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraGrid.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraGrid.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraLayout.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraLayout.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraLayout.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraLayout.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraVerticalGrid.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraVerticalGrid.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraVerticalGrid.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraVerticalGrid.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraNavBar.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraNavBar.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraNavBar.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraNavBar.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.Sparkline.v15.2.Core.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.Sparkline.v15.2.Core.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.Sparkline.v15.2.Core.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.Sparkline.v15.2.Core.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.RichEdit.v15.2.Core.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.RichEdit.v15.2.Core.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.RichEdit.v15.2.Core.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.RichEdit.v15.2.Core.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraSpellChecker.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraSpellChecker.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraSpellChecker.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraSpellChecker.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.XtraRichEdit.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.XtraRichEdit.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.XtraRichEdit.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.XtraRichEdit.v15.2.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.Office.v15.2.Core.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.Office.v15.2.Core.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.Office.v15.2.Core.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.Office.v15.2.Core.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\de\DevExpress.Pdf.v15.2.Core.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\es\DevExpress.Pdf.v15.2.Core.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ja\DevExpress.Pdf.v15.2.Core.resources.dll
+D:\POS 2 Server Load\POS System\bin\Debug\ru\DevExpress.Pdf.v15.2.Core.resources.dll
+D:\POS 2 Server Load\POS System\obj\Debug\POS System.csprojResolveAssemblyReference.cache
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.BakeryKOTOrder.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Table_Management.BakeryTable_Billing.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Bakery.CustomerChoose.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Bakery.OrderDetailsForm.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.ChequeDetail.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.CreditDetail.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.CustomerDisplayModified.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.CustomerAttendance.AddEventType.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.CustomerAttendance.EventAttendance.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Loyality.Add_Loyality_Itemwise.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Loyality.Loyality.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Loyality.Loyality_Amount.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Loyality.Loyality_Itemwise.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.CustomerLoyalty.ViewCustomerLoyaltyPoint.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.AllCusomterList.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.AppointmentBooking.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.AppointmentGraph.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.BillDetails.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.CheckCard.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.CustomerConsolation.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.EditAppointment.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.ViewCardReport.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Discount.DyanmicDiscount.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Donation.Donation.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Donation_Event.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Dynamic.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.FonePay.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.FonePayApi.QRCodeScan.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.HotelTransfer.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.BookingReport.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.DayEndHotel.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Hotel.HotelStatusUpdate.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Hotel.HotelAdminAccess.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.HotelComplementrySales.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Hotel.HotelRoomStatus.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.HotelUserAccess.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.HotelVoidSales.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Hotel.RoomImages.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.RoomPackage.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Hotel.Room_Transfer.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.SalesReport.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewHotelOrder.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.AddCategoryGrouping.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.ItemSales.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.KitchenOrderInfo.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.KOTOrderManagement.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.OrderCancelDetails.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Parlour.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewRestaurantSalesWithOwnCalculate.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewrestaurantSalesByWeekDay.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewHotelSalesReport.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Sales_Chart.SalesChart.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.SalesDataTaxCalculate.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.ServiceProviderUser.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.AddDamages.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.AddIngredient.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.AllCardCredit.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.CardCreditPay.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.CardCreditRecord.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.CreditPayList.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.CreditRefer.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.CheckCardDetail.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.CustomerCardDetail.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.CustomerCard_Info.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.CustomerCard_Type.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.CustomerCashBack.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.CustomerList.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Dailycardreport.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Damages.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.DenominationList.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Department.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.UserDiscount.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.HotelDashBoard.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.GetDetails.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Hotel.Hotel.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.HotelBilling.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.HotelCoupon.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.hotel_KOTOrder.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.PendingBooking.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Report.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.RoomCategory.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.RoomDetails.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Search.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Test.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Ingredient_Management.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.InventoryList.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.StockAdjustments.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.AddIMenuCategory.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.ADDMenuItem.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.AddMenuItemList.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.AdminAccess.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.AdvanceDiscount.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.allmenu.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.BarCodeSet.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Billing.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.BillingDetails.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Cancel_emo.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.CashWithdrawl.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Counter_Cash_Withdrawl.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.CreateBusiness.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.AllCreditsLists.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.CreditPaidForm.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Creditpayform.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.CustomerDetail.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.CustomerChooseForm.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.CustomerAttendance.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.CustomerDetailform.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.CustomerMessProgram.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.MessPakageChooser.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.Mess_detail_record.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.PakageNameSet.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.setCustomerPakages.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.ShowAttendance.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.ViewPakageChooser.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Customer_Management.xtraform.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Denomination.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Edit_Rest_details.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.edit_user.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.FiscalYear.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.FiscalYearAdd.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Home_delivery_check.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.InhoueseUnit.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.ItemTransfer.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.ItemUpdate.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Item_Modifier.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Item_modifier_list.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.KOTOrder.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Billing_print_setting.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.KOT_printing_setting.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Puchase_Book.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.second_user_interface.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.OpeningStock.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.ProductList.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.PurchaseOrder.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.PurchasePay.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Purchase_Stock_Product.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.StockList.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Stock_Transfer.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.StockProductList.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Stock_Calculation.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.SupplierList.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.SupplierPayment.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.SupplierPurchase.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewPayment.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewStockLog.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewStockSales.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.View_Stock_Purchase.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.SuperAdminAccess.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.SystemCommand.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Table_Management.Table_area_create.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Table_Management.Table_Billing.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Table_Management.Table_create_edit.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Table_Management.Table_new_insert.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Table_Management.Table_update.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_Systems.UserControl_Product.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.UserControl_purchase_return.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS.CV.resources
+D:\POS 2 Server Load\POS System\obj\Debug\BackUP.DatabaseBackup.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.DayEndReport.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS.EditUpdateUser.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.FastBilling.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.KotScreen.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.KOTSetting.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Loding.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.OpeningBalance.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS.user.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewDayendReport.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewDetailDayend.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewDonationReport.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewOrder.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.ShiftChange.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Viewrestaurant_sales_report.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Viewrestaurant_copy.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Viewrestaurant.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewOrderCancelForm.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewShiftChangeForm.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Supplier_Details.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.TableTransfer.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.UserAccess.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.usercontrol_customerwise.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.softwareversion.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Login.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Properties.Resources.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.UserControl_delivery_status.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.home.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.usercontrol_item_wise.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.UserControl_product_add.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.UserControl_purchase_form.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.btnshowall.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewLoginLogout.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewRestaurantDeleteRecord.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewStockTransfer.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.ViewUserLog.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.View_Materialize.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.View_Complementry.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.View_Complementry_Sales.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Void.AddItemForVoid.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Void.VoidBill.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.VoidSales.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.WasteMgnt.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.XReportView.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Login.es-ES.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Login.es-PR.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS System.csproj.GenerateResource.Cache
+D:\POS 2 Server Load\POS System\obj\Debug\POS System.exe.licenses
+D:\POS 2 Server Load\POS System\obj\Debug\es-ES\POS System.resources.dll
+D:\POS 2 Server Load\POS System\obj\Debug\es-PR\POS System.resources.dll

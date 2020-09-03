@@ -1,0 +1,386 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SerialBox</name>
+    </assembly>
+    <members>
+        <member name="T:SerialBox.ExtensionMethods">
+            <summary>
+            Extension methods dealing with serialization
+            </summary>
+        </member>
+        <member name="M:SerialBox.ExtensionMethods.Deserialize``2(``1,System.String)">
+            <summary>
+            Deserializes the data based on the MIME content type specified (defaults to json)
+            </summary>
+            <typeparam name="R">Return type expected</typeparam>
+            <typeparam name="T">Object type</typeparam>
+            <param name="data">Data to deserialize</param>
+            <param name="contentType">Content type (MIME type)</param>
+            <returns>The deserialized object</returns>
+        </member>
+        <member name="M:SerialBox.ExtensionMethods.Deserialize``2(``1,SerialBox.Enums.SerializationType)">
+            <summary>
+            Deserializes the data based on the content type specified (defaults to json)
+            </summary>
+            <typeparam name="R">Return type expected</typeparam>
+            <typeparam name="T">Object type</typeparam>
+            <param name="data">Data to deserialize</param>
+            <param name="contentType">Content type</param>
+            <returns>The deserialized object</returns>
+        </member>
+        <member name="M:SerialBox.ExtensionMethods.Serialize``2(``1,System.String)">
+            <summary>
+            Serializes the data based on the MIME content type specified (defaults to json)
+            </summary>
+            <typeparam name="R">Return type expected</typeparam>
+            <typeparam name="T">Object type</typeparam>
+            <param name="serializationObject">Object to serialize</param>
+            <param name="contentType">Content type (MIME type)</param>
+            <returns>The serialized object</returns>
+        </member>
+        <member name="M:SerialBox.ExtensionMethods.Serialize``2(``1,SerialBox.Enums.SerializationType)">
+            <summary>
+            Serializes the data based on the type specified (defaults to json)
+            </summary>
+            <typeparam name="R">Return type expected</typeparam>
+            <typeparam name="T">Object type</typeparam>
+            <param name="serializationObject">Object to serialize</param>
+            <param name="contentType">Content type</param>
+            <returns>The serialized object</returns>
+        </member>
+        <member name="T:SerialBox.SerialBox">
+            <summary>
+            SerialBox's main class
+            </summary>
+        </member>
+        <member name="M:SerialBox.SerialBox.#ctor(System.Collections.Generic.IEnumerable{SerialBox.Interfaces.ISerializer})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="serializers">The serializers.</param>
+        </member>
+        <member name="P:SerialBox.SerialBox.Serializers">
+            <summary>
+            Serializers
+            </summary>
+        </member>
+        <member name="M:SerialBox.SerialBox.CanSerialize(System.String)">
+            <summary>
+            Determines if the system can serialize/deserialize the content type
+            </summary>
+            <param name="contentType">Content type</param>
+            <returns>True if it can, false otherwise</returns>
+        </member>
+        <member name="M:SerialBox.SerialBox.Deserialize``2(``0,SerialBox.Enums.SerializationType)">
+            <summary>
+            Deserializes the data to an object
+            </summary>
+            <typeparam name="T">Data type</typeparam>
+            <typeparam name="R">Return object type</typeparam>
+            <param name="data">Data to deserialize</param>
+            <param name="contentType">Content type (MIME type)</param>
+            <returns>The deserialized object</returns>
+        </member>
+        <member name="M:SerialBox.SerialBox.Deserialize``1(``0,System.Type,SerialBox.Enums.SerializationType)">
+            <summary>
+            Deserializes the data to an object
+            </summary>
+            <typeparam name="T">Type of the data</typeparam>
+            <param name="data">Data to deserialize</param>
+            <param name="objectType">Object type requested</param>
+            <param name="contentType">Content type (MIME type)</param>
+            <returns>The deserialized object</returns>
+        </member>
+        <member name="M:SerialBox.SerialBox.FileTypeToContentType(System.String)">
+            <summary>
+            File type to content type
+            </summary>
+            <param name="fileType">File type</param>
+            <returns>Content type</returns>
+        </member>
+        <member name="M:SerialBox.SerialBox.Serialize``2(``0,SerialBox.Enums.SerializationType)">
+            <summary>
+            Serializes the object based on the content type specified
+            </summary>
+            <typeparam name="T">Object type</typeparam>
+            <param name="data">Object to serialize</param>
+            <param name="contentType">Content type (MIME type)</param>
+            <typeparam name="R">Return type</typeparam>
+            <returns>The serialized object as a string</returns>
+        </member>
+        <member name="M:SerialBox.SerialBox.Serialize``1(System.Object,System.Type,SerialBox.Enums.SerializationType)">
+            <summary>
+            Serializes the object based on the content type specified
+            </summary>
+            <param name="objectType">Object type</param>
+            <param name="data">Object to serialize</param>
+            <param name="contentType">Content type (MIME type)</param>
+            <typeparam name="T">Return type</typeparam>
+            <returns>The serialized object as a string</returns>
+        </member>
+        <member name="M:SerialBox.SerialBox.ToString">
+            <summary>
+            Outputs information about the serializers the system is using
+            </summary>
+            <returns>String version of the object</returns>
+        </member>
+        <member name="T:SerialBox.BaseClasses.SerializerBase`1">
+            <summary>
+            Serializer base class
+            </summary>
+            <typeparam name="T">Serialized data type</typeparam>
+        </member>
+        <member name="M:SerialBox.BaseClasses.SerializerBase`1.#ctor(Canister.Interfaces.IBootstrapper)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="bootstrapper">The bootstrapper.</param>
+        </member>
+        <member name="P:SerialBox.BaseClasses.SerializerBase`1.ContentType">
+            <summary>
+            Content type (MIME type)
+            </summary>
+        </member>
+        <member name="P:SerialBox.BaseClasses.SerializerBase`1.FileType">
+            <summary>
+            Common file type (extension)
+            </summary>
+        </member>
+        <member name="P:SerialBox.BaseClasses.SerializerBase`1.Name">
+            <summary>
+            Name of the serializer
+            </summary>
+        </member>
+        <member name="P:SerialBox.BaseClasses.SerializerBase`1.ReturnType">
+            <summary>
+            Return type
+            </summary>
+        </member>
+        <member name="P:SerialBox.BaseClasses.SerializerBase`1.Bootstrapper">
+            <summary>
+            Gets the bootstrapper.
+            </summary>
+            <value>The bootstrapper.</value>
+        </member>
+        <member name="M:SerialBox.BaseClasses.SerializerBase`1.Deserialize(System.Type,`0)">
+            <summary>
+            Deserializes the data
+            </summary>
+            <param name="objectType">Object type</param>
+            <param name="data">Data to deserialize</param>
+            <returns>The deserialized data</returns>
+        </member>
+        <member name="M:SerialBox.BaseClasses.SerializerBase`1.Serialize(System.Type,System.Object)">
+            <summary>
+            Serializes the object
+            </summary>
+            <param name="objectType">Object type</param>
+            <param name="data">Data to serialize</param>
+            <returns>The serialized data</returns>
+        </member>
+        <member name="T:SerialBox.Default.JSONSerializer">
+            <summary>
+            JSON Serializer
+            </summary>
+            <seealso cref="T:SerialBox.BaseClasses.SerializerBase`1"/>
+        </member>
+        <member name="M:SerialBox.Default.JSONSerializer.#ctor(Canister.Interfaces.IBootstrapper)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SerialBox.Default.JSONSerializer"/> class.
+            </summary>
+            <param name="bootstrapper">The bootstrapper.</param>
+        </member>
+        <member name="P:SerialBox.Default.JSONSerializer.ContentType">
+            <summary>
+            Content type (MIME type)
+            </summary>
+        </member>
+        <member name="P:SerialBox.Default.JSONSerializer.FileType">
+            <summary>
+            File type
+            </summary>
+        </member>
+        <member name="P:SerialBox.Default.JSONSerializer.Name">
+            <summary>
+            Name
+            </summary>
+        </member>
+        <member name="F:SerialBox.Default.JSONSerializer.JsonPRegex">
+            <summary>
+            JSONP regex filter
+            </summary>
+        </member>
+        <member name="M:SerialBox.Default.JSONSerializer.Deserialize(System.Type,System.String)">
+            <summary>
+            Deserializes the data
+            </summary>
+            <param name="objectType">Object type</param>
+            <param name="data">Data to deserialize</param>
+            <returns>The deserialized data</returns>
+        </member>
+        <member name="M:SerialBox.Default.JSONSerializer.Serialize(System.Type,System.Object)">
+            <summary>
+            Serializes the object
+            </summary>
+            <param name="objectType">Object type</param>
+            <param name="data">Data to serialize</param>
+            <returns>The serialized data</returns>
+        </member>
+        <member name="T:SerialBox.Default.XMLSerializer">
+            <summary>
+            XML serializer
+            </summary>
+        </member>
+        <member name="M:SerialBox.Default.XMLSerializer.#ctor(Canister.Interfaces.IBootstrapper)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SerialBox.Default.XMLSerializer"/> class.
+            </summary>
+            <param name="bootstrapper">The bootstrapper.</param>
+        </member>
+        <member name="P:SerialBox.Default.XMLSerializer.ContentType">
+            <summary>
+            Content type (MIME type)
+            </summary>
+        </member>
+        <member name="P:SerialBox.Default.XMLSerializer.FileType">
+            <summary>
+            File type
+            </summary>
+        </member>
+        <member name="P:SerialBox.Default.XMLSerializer.Name">
+            <summary>
+            Name
+            </summary>
+        </member>
+        <member name="M:SerialBox.Default.XMLSerializer.Deserialize(System.Type,System.String)">
+            <summary>
+            Deserializes the data
+            </summary>
+            <param name="objectType">Object type</param>
+            <param name="data">Data to deserialize</param>
+            <returns>The deserialized data</returns>
+        </member>
+        <member name="M:SerialBox.Default.XMLSerializer.Serialize(System.Type,System.Object)">
+            <summary>
+            Serializes the object
+            </summary>
+            <param name="objectType">Object type</param>
+            <param name="data">Data to serialize</param>
+            <returns>The serialized data</returns>
+        </member>
+        <member name="T:SerialBox.Enums.SerializationType">
+            <summary>
+            Defines the serialization types in an enum like static class
+            </summary>
+        </member>
+        <member name="M:SerialBox.Enums.SerializationType.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SerialBox.Enums.SerializationType"/> class.
+            </summary>
+            <param name="name">The name.</param>
+        </member>
+        <member name="P:SerialBox.Enums.SerializationType.JSON">
+            <summary>
+            Gets the json serialization type.
+            </summary>
+            <value>The json serialization type.</value>
+        </member>
+        <member name="P:SerialBox.Enums.SerializationType.XML">
+            <summary>
+            Gets the XML serialization type.
+            </summary>
+            <value>The XML serialization type.</value>
+        </member>
+        <member name="P:SerialBox.Enums.SerializationType.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="M:SerialBox.Enums.SerializationType.op_Explicit(System.String)~SerialBox.Enums.SerializationType">
+            <summary>
+            Performs an explicit conversion from <see cref="T:System.String"/> to <see cref="T:SerialBox.Enums.SerializationType"/>.
+            </summary>
+            <param name="serializationType">Type of the serialization.</param>
+            <returns>The result of the conversion.</returns>
+        </member>
+        <member name="M:SerialBox.Enums.SerializationType.op_Implicit(SerialBox.Enums.SerializationType)~System.String">
+            <summary>
+            Performs an implicit conversion from <see cref="T:SerialBox.Enums.SerializationType"/> to <see cref="T:System.String"/>.
+            </summary>
+            <param name="serializationType">Type of the serialization.</param>
+            <returns>The result of the conversion.</returns>
+        </member>
+        <member name="M:SerialBox.Enums.SerializationType.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents this instance.
+            </summary>
+            <returns>A <see cref="T:System.String"/> that represents this instance.</returns>
+        </member>
+        <member name="T:SerialBox.Interfaces.ISerializer">
+            <summary>
+            Serializer interface
+            </summary>
+        </member>
+        <member name="P:SerialBox.Interfaces.ISerializer.ContentType">
+            <summary>
+            Content type associated with this serializer (MIME type)
+            </summary>
+        </member>
+        <member name="P:SerialBox.Interfaces.ISerializer.FileType">
+            <summary>
+            File ending associated with the serializer
+            </summary>
+        </member>
+        <member name="P:SerialBox.Interfaces.ISerializer.Name">
+            <summary>
+            Name of the serializer
+            </summary>
+        </member>
+        <member name="P:SerialBox.Interfaces.ISerializer.ReturnType">
+            <summary>
+            Return type for the serialized data
+            </summary>
+        </member>
+        <member name="T:SerialBox.Interfaces.ISerializer`1">
+            <summary>
+            Serializer interface
+            </summary>
+            <typeparam name="T">Object type returned</typeparam>
+        </member>
+        <member name="M:SerialBox.Interfaces.ISerializer`1.Deserialize(System.Type,`0)">
+            <summary>
+            Deserializes the data
+            </summary>
+            <param name="objectType">Object type</param>
+            <param name="data">Data to deserialize</param>
+            <returns>The deserialized data</returns>
+        </member>
+        <member name="M:SerialBox.Interfaces.ISerializer`1.Serialize(System.Type,System.Object)">
+            <summary>
+            Serializes the object
+            </summary>
+            <param name="objectType">Object type</param>
+            <param name="data">Data to serialize</param>
+            <returns>The serialized data</returns>
+        </member>
+        <member name="T:SerialBox.Module.SerialBoxModule">
+            <summary>
+            SerialBox module
+            </summary>
+            <seealso cref="T:Canister.Interfaces.IModule"/>
+        </member>
+        <member name="P:SerialBox.Module.SerialBoxModule.Order">
+            <summary>
+            Order to run it in
+            </summary>
+        </member>
+        <member name="M:SerialBox.Module.SerialBoxModule.Load(Canister.Interfaces.IBootstrapper)">
+            <summary>
+            Loads the module
+            </summary>
+            <param name="bootstrapper">Bootstrapper to register with</param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,662 @@
+c:\users\utshab luitel\documents\visual studio 2012\Projects\POS System\BLLS\bin\Debug\BLLS.dll
+c:\users\utshab luitel\documents\visual studio 2012\Projects\POS System\BLLS\bin\Debug\BLLS.pdb
+c:\users\utshab luitel\documents\visual studio 2012\Projects\POS System\BLLS\bin\Debug\DOA.dll
+c:\users\utshab luitel\documents\visual studio 2012\Projects\POS System\BLLS\bin\Debug\DOA.pdb
+c:\users\utshab luitel\documents\visual studio 2012\Projects\POS System\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+c:\users\utshab luitel\documents\visual studio 2012\Projects\POS System\BLLS\obj\Debug\BLLS.dll
+c:\users\utshab luitel\documents\visual studio 2012\Projects\POS System\BLLS\obj\Debug\BLLS.pdb
+C:\Users\SJNeyos\Desktop\POS System\BLLS\bin\Debug\BLLS.dll
+C:\Users\SJNeyos\Desktop\POS System\BLLS\bin\Debug\BLLS.pdb
+C:\Users\SJNeyos\Desktop\POS System\BLLS\bin\Debug\DOA.dll
+C:\Users\SJNeyos\Desktop\POS System\BLLS\bin\Debug\DOA.pdb
+C:\Users\SJNeyos\Desktop\POS System\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+C:\Users\SJNeyos\Desktop\POS System\BLLS\obj\Debug\BLLS.dll
+C:\Users\SJNeyos\Desktop\POS System\BLLS\obj\Debug\BLLS.pdb
+C:\Users\SJNeyos\Desktop\POS System suraj\BLLS\bin\Debug\BLLS.dll
+C:\Users\SJNeyos\Desktop\POS System suraj\BLLS\bin\Debug\BLLS.pdb
+C:\Users\SJNeyos\Desktop\POS System suraj\BLLS\bin\Debug\DOA.dll
+C:\Users\SJNeyos\Desktop\POS System suraj\BLLS\bin\Debug\DOA.pdb
+C:\Users\SJNeyos\Desktop\POS System suraj\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+C:\Users\SJNeyos\Desktop\POS System suraj\BLLS\obj\Debug\BLLS.dll
+C:\Users\SJNeyos\Desktop\POS System suraj\BLLS\obj\Debug\BLLS.pdb
+C:\Users\Utshab Luitel\Documents\Visual Studio 2012\Projects\POS System 2\BLLS\bin\Debug\BLLS.dll
+C:\Users\Utshab Luitel\Documents\Visual Studio 2012\Projects\POS System 2\BLLS\bin\Debug\BLLS.pdb
+C:\Users\Utshab Luitel\Documents\Visual Studio 2012\Projects\POS System 2\BLLS\bin\Debug\DOA.dll
+C:\Users\Utshab Luitel\Documents\Visual Studio 2012\Projects\POS System 2\BLLS\bin\Debug\DOA.pdb
+C:\Users\Utshab Luitel\Documents\Visual Studio 2012\Projects\POS System 2\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+C:\Users\Utshab Luitel\Documents\Visual Studio 2012\Projects\POS System 2\BLLS\obj\Debug\BLLS.dll
+C:\Users\Utshab Luitel\Documents\Visual Studio 2012\Projects\POS System 2\BLLS\obj\Debug\BLLS.pdb
+C:\Users\SJNeyos\Desktop\final tested for documentation\POS System 2\BLLS\bin\Debug\BLLS.dll
+C:\Users\SJNeyos\Desktop\final tested for documentation\POS System 2\BLLS\bin\Debug\BLLS.pdb
+C:\Users\SJNeyos\Desktop\final tested for documentation\POS System 2\BLLS\bin\Debug\DOA.dll
+C:\Users\SJNeyos\Desktop\final tested for documentation\POS System 2\BLLS\bin\Debug\DOA.pdb
+C:\Users\SJNeyos\Desktop\final tested for documentation\POS System 2\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+C:\Users\SJNeyos\Desktop\final tested for documentation\POS System 2\BLLS\obj\Debug\BLLS.dll
+C:\Users\SJNeyos\Desktop\final tested for documentation\POS System 2\BLLS\obj\Debug\BLLS.pdb
+C:\Users\SJNeyos\Desktop\final tested for documentation\POS System 2 final server edited\BLLS\bin\Debug\BLLS.dll
+C:\Users\SJNeyos\Desktop\final tested for documentation\POS System 2 final server edited\BLLS\bin\Debug\BLLS.pdb
+C:\Users\SJNeyos\Desktop\final tested for documentation\POS System 2 final server edited\BLLS\bin\Debug\DOA.dll
+C:\Users\SJNeyos\Desktop\final tested for documentation\POS System 2 final server edited\BLLS\bin\Debug\DOA.pdb
+C:\Users\SJNeyos\Desktop\final tested for documentation\POS System 2 final server edited\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+C:\Users\SJNeyos\Desktop\final tested for documentation\POS System 2 final server edited\BLLS\obj\Debug\BLLS.dll
+C:\Users\SJNeyos\Desktop\final tested for documentation\POS System 2 final server edited\BLLS\obj\Debug\BLLS.pdb
+C:\Users\Utshab Luitel\Desktop\POS2\BLLS\bin\Debug\BLLS.dll
+C:\Users\Utshab Luitel\Desktop\POS2\BLLS\bin\Debug\BLLS.pdb
+C:\Users\Utshab Luitel\Desktop\POS2\BLLS\bin\Debug\DOA.dll
+C:\Users\Utshab Luitel\Desktop\POS2\BLLS\bin\Debug\DOA.pdb
+C:\Users\Utshab Luitel\Desktop\POS2\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+C:\Users\Utshab Luitel\Desktop\POS2\BLLS\obj\Debug\BLLS.dll
+C:\Users\Utshab Luitel\Desktop\POS2\BLLS\obj\Debug\BLLS.pdb
+C:\Users\SJNeyos\Desktop\POS2\BLLS\bin\Debug\BLLS.dll
+C:\Users\SJNeyos\Desktop\POS2\BLLS\bin\Debug\BLLS.pdb
+C:\Users\SJNeyos\Desktop\POS2\BLLS\bin\Debug\DOA.dll
+C:\Users\SJNeyos\Desktop\POS2\BLLS\bin\Debug\DOA.pdb
+C:\Users\SJNeyos\Desktop\POS2\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+C:\Users\SJNeyos\Desktop\POS2\BLLS\obj\Debug\BLLS.dll
+C:\Users\SJNeyos\Desktop\POS2\BLLS\obj\Debug\BLLS.pdb
+C:\Users\SJNeyos\Desktop\POS2 designed ready n all_\POS2\BLLS\bin\Debug\BLLS.dll
+C:\Users\SJNeyos\Desktop\POS2 designed ready n all_\POS2\BLLS\bin\Debug\BLLS.pdb
+C:\Users\SJNeyos\Desktop\POS2 designed ready n all_\POS2\BLLS\bin\Debug\DOA.dll
+C:\Users\SJNeyos\Desktop\POS2 designed ready n all_\POS2\BLLS\bin\Debug\DOA.pdb
+C:\Users\SJNeyos\Desktop\POS2 designed ready n all_\POS2\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+C:\Users\SJNeyos\Desktop\POS2 designed ready n all_\POS2\BLLS\obj\Debug\BLLS.dll
+C:\Users\SJNeyos\Desktop\POS2 designed ready n all_\POS2\BLLS\obj\Debug\BLLS.pdb
+C:\Users\Utshab Luitel\Desktop\POS2 edite at feb9 2016\BLLS\bin\Debug\BLLS.dll
+C:\Users\Utshab Luitel\Desktop\POS2 edite at feb9 2016\BLLS\bin\Debug\BLLS.pdb
+C:\Users\Utshab Luitel\Desktop\POS2 edite at feb9 2016\BLLS\bin\Debug\DOA.dll
+C:\Users\Utshab Luitel\Desktop\POS2 edite at feb9 2016\BLLS\bin\Debug\DOA.pdb
+C:\Users\Utshab Luitel\Desktop\POS2 edite at feb9 2016\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+C:\Users\Utshab Luitel\Desktop\POS2 edite at feb9 2016\BLLS\obj\Debug\BLLS.dll
+C:\Users\Utshab Luitel\Desktop\POS2 edite at feb9 2016\BLLS\obj\Debug\BLLS.pdb
+C:\Users\SJNeyos\Desktop\POS2 new edit\BLLS\bin\Debug\BLLS.dll
+C:\Users\SJNeyos\Desktop\POS2 new edit\BLLS\bin\Debug\BLLS.pdb
+C:\Users\SJNeyos\Desktop\POS2 new edit\BLLS\bin\Debug\DOA.dll
+C:\Users\SJNeyos\Desktop\POS2 new edit\BLLS\bin\Debug\DOA.pdb
+C:\Users\SJNeyos\Desktop\POS2 new edit\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+C:\Users\SJNeyos\Desktop\POS2 new edit\BLLS\obj\Debug\BLLS.dll
+C:\Users\SJNeyos\Desktop\POS2 new edit\BLLS\obj\Debug\BLLS.pdb
+C:\Users\Utshab Luitel\Desktop\POS2 edited main userinterface\BLLS\bin\Debug\BLLS.dll
+C:\Users\Utshab Luitel\Desktop\POS2 edited main userinterface\BLLS\bin\Debug\BLLS.pdb
+C:\Users\Utshab Luitel\Desktop\POS2 edited main userinterface\BLLS\bin\Debug\DOA.dll
+C:\Users\Utshab Luitel\Desktop\POS2 edited main userinterface\BLLS\bin\Debug\DOA.pdb
+C:\Users\Utshab Luitel\Desktop\POS2 edited main userinterface\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+C:\Users\Utshab Luitel\Desktop\POS2 edited main userinterface\BLLS\obj\Debug\BLLS.dll
+C:\Users\Utshab Luitel\Desktop\POS2 edited main userinterface\BLLS\obj\Debug\BLLS.pdb
+C:\Users\SJNeyos\Desktop\POS2 edited main userinterface (2)\BLLS\bin\Debug\BLLS.dll
+C:\Users\SJNeyos\Desktop\POS2 edited main userinterface (2)\BLLS\bin\Debug\BLLS.pdb
+C:\Users\SJNeyos\Desktop\POS2 edited main userinterface (2)\BLLS\bin\Debug\DOA.dll
+C:\Users\SJNeyos\Desktop\POS2 edited main userinterface (2)\BLLS\bin\Debug\DOA.pdb
+C:\Users\SJNeyos\Desktop\POS2 edited main userinterface (2)\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+C:\Users\SJNeyos\Desktop\POS2 edited main userinterface (2)\BLLS\obj\Debug\BLLS.dll
+C:\Users\SJNeyos\Desktop\POS2 edited main userinterface (2)\BLLS\obj\Debug\BLLS.pdb
+C:\Users\Utshab Luitel\Desktop\POS2 edited main userinterface (2)\BLLS\bin\Debug\BLLS.dll
+C:\Users\Utshab Luitel\Desktop\POS2 edited main userinterface (2)\BLLS\bin\Debug\BLLS.pdb
+C:\Users\Utshab Luitel\Desktop\POS2 edited main userinterface (2)\BLLS\bin\Debug\DOA.dll
+C:\Users\Utshab Luitel\Desktop\POS2 edited main userinterface (2)\BLLS\bin\Debug\DOA.pdb
+C:\Users\Utshab Luitel\Desktop\POS2 edited main userinterface (2)\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+C:\Users\Utshab Luitel\Desktop\POS2 edited main userinterface (2)\BLLS\obj\Debug\BLLS.dll
+C:\Users\Utshab Luitel\Desktop\POS2 edited main userinterface (2)\BLLS\obj\Debug\BLLS.pdb
+C:\Users\SJNeyos\Desktop\POS2 14 feb\BLLS\bin\Debug\BLLS.dll
+C:\Users\SJNeyos\Desktop\POS2 14 feb\BLLS\bin\Debug\BLLS.pdb
+C:\Users\SJNeyos\Desktop\POS2 14 feb\BLLS\bin\Debug\DOA.dll
+C:\Users\SJNeyos\Desktop\POS2 14 feb\BLLS\bin\Debug\DOA.pdb
+C:\Users\SJNeyos\Desktop\POS2 14 feb\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+C:\Users\SJNeyos\Desktop\POS2 14 feb\BLLS\obj\Debug\BLLS.dll
+C:\Users\SJNeyos\Desktop\POS2 14 feb\BLLS\obj\Debug\BLLS.pdb
+C:\Users\Utshab Luitel\Desktop\POS2 14 feb (2)\BLLS\bin\Debug\BLLS.dll
+C:\Users\Utshab Luitel\Desktop\POS2 14 feb (2)\BLLS\bin\Debug\BLLS.pdb
+C:\Users\Utshab Luitel\Desktop\POS2 14 feb (2)\BLLS\bin\Debug\DOA.dll
+C:\Users\Utshab Luitel\Desktop\POS2 14 feb (2)\BLLS\bin\Debug\DOA.pdb
+C:\Users\Utshab Luitel\Desktop\POS2 14 feb (2)\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+C:\Users\Utshab Luitel\Desktop\POS2 14 feb (2)\BLLS\obj\Debug\BLLS.dll
+C:\Users\Utshab Luitel\Desktop\POS2 14 feb (2)\BLLS\obj\Debug\BLLS.pdb
+C:\Users\SJNeyos\Desktop\POS2 14 feb (2)\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+C:\Users\SJNeyos\Desktop\POS2 14 feb (2)\BLLS\obj\Debug\BLLS.dll
+C:\Users\SJNeyos\Desktop\POS2 14 feb (2)\BLLS\obj\Debug\BLLS.pdb
+C:\Users\SJNeyos\Desktop\POS2 14 feb (2)\BLLS\bin\Debug\BLLS.dll
+C:\Users\SJNeyos\Desktop\POS2 14 feb (2)\BLLS\bin\Debug\BLLS.pdb
+C:\Users\SJNeyos\Desktop\POS2 14 feb (2)\BLLS\bin\Debug\DOA.dll
+C:\Users\SJNeyos\Desktop\POS2 14 feb (2)\BLLS\bin\Debug\DOA.pdb
+C:\Users\SJNeyos\Desktop\POS2 14 feb (2) (2)\BLLS\bin\Debug\BLLS.dll
+C:\Users\SJNeyos\Desktop\POS2 14 feb (2) (2)\BLLS\bin\Debug\BLLS.pdb
+C:\Users\SJNeyos\Desktop\POS2 14 feb (2) (2)\BLLS\bin\Debug\DOA.dll
+C:\Users\SJNeyos\Desktop\POS2 14 feb (2) (2)\BLLS\bin\Debug\DOA.pdb
+C:\Users\SJNeyos\Desktop\POS2 14 feb (2) (2)\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+C:\Users\SJNeyos\Desktop\POS2 14 feb (2) (2)\BLLS\obj\Debug\BLLS.dll
+C:\Users\SJNeyos\Desktop\POS2 14 feb (2) (2)\BLLS\obj\Debug\BLLS.pdb
+C:\Users\Utshab Luitel\Desktop\POS2 14 feb (2) (2)\BLLS\bin\Debug\BLLS.dll
+C:\Users\Utshab Luitel\Desktop\POS2 14 feb (2) (2)\BLLS\bin\Debug\BLLS.pdb
+C:\Users\Utshab Luitel\Desktop\POS2 14 feb (2) (2)\BLLS\bin\Debug\DOA.dll
+C:\Users\Utshab Luitel\Desktop\POS2 14 feb (2) (2)\BLLS\bin\Debug\DOA.pdb
+C:\Users\Utshab Luitel\Desktop\POS2 14 feb (2) (2)\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+C:\Users\Utshab Luitel\Desktop\POS2 14 feb (2) (2)\BLLS\obj\Debug\BLLS.dll
+C:\Users\Utshab Luitel\Desktop\POS2 14 feb (2) (2)\BLLS\obj\Debug\BLLS.pdb
+D:\from dukto old files\Night Pos\BLLS\bin\Debug\BLLS.dll
+D:\from dukto old files\Night Pos\BLLS\bin\Debug\BLLS.pdb
+D:\from dukto old files\Night Pos\BLLS\bin\Debug\DOA.dll
+D:\from dukto old files\Night Pos\BLLS\bin\Debug\DOA.pdb
+D:\from dukto old files\Night Pos\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+D:\from dukto old files\Night Pos\BLLS\obj\Debug\BLLS.dll
+D:\from dukto old files\Night Pos\BLLS\obj\Debug\BLLS.pdb
+C:\Users\Utshab Luitel\Desktop\Night Pos (2)\BLLS\bin\Debug\BLLS.dll
+C:\Users\Utshab Luitel\Desktop\Night Pos (2)\BLLS\bin\Debug\BLLS.pdb
+C:\Users\Utshab Luitel\Desktop\Night Pos (2)\BLLS\bin\Debug\DOA.dll
+C:\Users\Utshab Luitel\Desktop\Night Pos (2)\BLLS\bin\Debug\DOA.pdb
+C:\Users\Utshab Luitel\Desktop\Night Pos (2)\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+C:\Users\Utshab Luitel\Desktop\Night Pos (2)\BLLS\obj\Debug\BLLS.dll
+C:\Users\Utshab Luitel\Desktop\Night Pos (2)\BLLS\obj\Debug\BLLS.pdb
+D:\Subek\March 10 Back up\Night Pos (2)\BLLS\bin\Debug\BLLS.dll
+D:\Subek\March 10 Back up\Night Pos (2)\BLLS\bin\Debug\BLLS.pdb
+D:\Subek\March 10 Back up\Night Pos (2)\BLLS\bin\Debug\DOA.dll
+D:\Subek\March 10 Back up\Night Pos (2)\BLLS\bin\Debug\DOA.pdb
+D:\Subek\March 10 Back up\Night Pos (2)\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+D:\Subek\March 10 Back up\Night Pos (2)\BLLS\obj\Debug\BLLS.dll
+D:\Subek\March 10 Back up\Night Pos (2)\BLLS\obj\Debug\BLLS.pdb
+D:\Project\POS\Night Pos (2)\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+D:\Project\POS\Night Pos (2)\BLLS\obj\Debug\BLLS.dll
+D:\Project\POS\Night Pos (2)\BLLS\obj\Debug\BLLS.pdb
+D:\Project\POS\Night Pos (2)\BLLS\bin\Debug\BLLS.dll
+D:\Project\POS\Night Pos (2)\BLLS\bin\Debug\BLLS.pdb
+D:\Project\POS\Night Pos (2)\BLLS\bin\Debug\DOA.dll
+D:\Project\POS\Night Pos (2)\BLLS\bin\Debug\DOA.pdb
+D:\Project\POS\DIL\BLLS\bin\Debug\BLLS.dll
+D:\Project\POS\DIL\BLLS\bin\Debug\BLLS.pdb
+D:\Project\POS\DIL\BLLS\bin\Debug\DOA.dll
+D:\Project\POS\DIL\BLLS\bin\Debug\DOA.pdb
+D:\Project\POS\DIL\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+D:\Project\POS\DIL\BLLS\obj\Debug\BLLS.dll
+D:\Project\POS\DIL\BLLS\obj\Debug\BLLS.pdb
+D:\from dukto old files\Subek Pos\BLLS\bin\Debug\BLLS.dll
+D:\from dukto old files\Subek Pos\BLLS\bin\Debug\BLLS.pdb
+D:\from dukto old files\Subek Pos\BLLS\bin\Debug\DOA.dll
+D:\from dukto old files\Subek Pos\BLLS\bin\Debug\DOA.pdb
+D:\from dukto old files\Subek Pos\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+D:\from dukto old files\Subek Pos\BLLS\obj\Debug\BLLS.dll
+D:\from dukto old files\Subek Pos\BLLS\obj\Debug\BLLS.pdb
+D:\Project\POS\Subek Pos\BLLS\bin\Debug\BLLS.dll
+D:\Project\POS\Subek Pos\BLLS\bin\Debug\BLLS.pdb
+D:\Project\POS\Subek Pos\BLLS\bin\Debug\DOA.dll
+D:\Project\POS\Subek Pos\BLLS\bin\Debug\DOA.pdb
+D:\Project\POS\Subek Pos\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+D:\Project\POS\Subek Pos\BLLS\obj\Debug\BLLS.dll
+D:\Project\POS\Subek Pos\BLLS\obj\Debug\BLLS.pdb
+D:\from dukto old files\Subek Pos (2)\BLLS\bin\Debug\BLLS.dll
+D:\from dukto old files\Subek Pos (2)\BLLS\bin\Debug\BLLS.pdb
+D:\from dukto old files\Subek Pos (2)\BLLS\bin\Debug\DOA.dll
+D:\from dukto old files\Subek Pos (2)\BLLS\bin\Debug\DOA.pdb
+D:\from dukto old files\Subek Pos (2)\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+D:\from dukto old files\Subek Pos (2)\BLLS\obj\Debug\BLLS.dll
+D:\from dukto old files\Subek Pos (2)\BLLS\obj\Debug\BLLS.pdb
+D:\Dukto\Subek Pos april 28\BLLS\bin\Debug\BLLS.dll
+D:\Dukto\Subek Pos april 28\BLLS\bin\Debug\BLLS.pdb
+D:\Dukto\Subek Pos april 28\BLLS\bin\Debug\DOA.dll
+D:\Dukto\Subek Pos april 28\BLLS\bin\Debug\DOA.pdb
+D:\Dukto\Subek Pos april 28\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+D:\Dukto\Subek Pos april 28\BLLS\obj\Debug\BLLS.dll
+D:\Dukto\Subek Pos april 28\BLLS\obj\Debug\BLLS.pdb
+D:\Project\POS\Subek Pos april 28\BLLS\bin\Debug\BLLS.dll
+D:\Project\POS\Subek Pos april 28\BLLS\bin\Debug\BLLS.pdb
+D:\Project\POS\Subek Pos april 28\BLLS\bin\Debug\DOA.dll
+D:\Project\POS\Subek Pos april 28\BLLS\bin\Debug\DOA.pdb
+D:\Project\POS\Subek Pos april 28\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+D:\Project\POS\Subek Pos april 28\BLLS\obj\Debug\BLLS.dll
+D:\Project\POS\Subek Pos april 28\BLLS\obj\Debug\BLLS.pdb
+D:\Project\POS\Subek Pos\Subek Pos april 28\BLLS\bin\Debug\BLLS.dll
+D:\Project\POS\Subek Pos\Subek Pos april 28\BLLS\bin\Debug\BLLS.pdb
+D:\Project\POS\Subek Pos\Subek Pos april 28\BLLS\bin\Debug\DOA.dll
+D:\Project\POS\Subek Pos\Subek Pos april 28\BLLS\bin\Debug\DOA.pdb
+D:\Project\POS\Subek Pos\Subek Pos april 28\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+D:\Project\POS\Subek Pos\Subek Pos april 28\BLLS\obj\Debug\BLLS.dll
+D:\Project\POS\Subek Pos\Subek Pos april 28\BLLS\obj\Debug\BLLS.pdb
+E:\Project\POS\Subek Pos\SQLite\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+E:\Project\POS\Subek Pos\SQLite\BLLS\obj\Debug\BLLS.dll
+E:\Project\POS\Subek Pos\SQLite\BLLS\obj\Debug\BLLS.pdb
+E:\Project\POS\Subek Pos\SQLite\BLLS\bin\Debug\BLLS.dll
+E:\Project\POS\Subek Pos\SQLite\BLLS\bin\Debug\BLLS.pdb
+E:\Project\POS\Subek Pos\SQLite\BLLS\bin\Debug\DOA.dll
+E:\Project\POS\Subek Pos\SQLite\BLLS\bin\Debug\System.Data.SQLite.dll
+E:\Project\POS\Subek Pos\SQLite\BLLS\bin\Debug\DOA.pdb
+E:\Project\POS\Subek Pos\SQLite\BLLS\bin\Debug\System.Data.SQLite.xml
+E:\Project\POS\Subek Pos\SQLite\BLLS\bin\Debug\BLLS.dll.config
+E:\Project\POS\Subek Pos\SQLite\BLLS\bin\Debug\EntityFramework.dll
+E:\Project\POS\Subek Pos\SQLite\BLLS\bin\Debug\EntityFramework.SqlServer.dll
+E:\Project\POS\Subek Pos\SQLite\BLLS\bin\Debug\System.Data.SQLite.EF6.dll
+E:\Project\POS\Subek Pos\SQLite\BLLS\bin\Debug\System.Data.SQLite.Linq.dll
+E:\Project\POS\Subek Pos\SQLite\BLLS\bin\Debug\EntityFramework.xml
+E:\Project\POS\Subek Pos\SQLite\BLLS\bin\Debug\EntityFramework.SqlServer.xml
+E:\Project\POS\Subek Pos\Subek Pos april 28\BLLS\bin\Debug\EntityFramework.xml
+E:\Project\POS\Subek Pos\Subek Pos april 28\BLLS\bin\Debug\BLLS.dll.config
+E:\Project\POS\Subek Pos\Subek Pos april 28\BLLS\bin\Debug\BLLS.dll
+E:\Project\POS\Subek Pos\Subek Pos april 28\BLLS\bin\Debug\BLLS.pdb
+E:\Project\POS\Subek Pos\Subek Pos april 28\BLLS\bin\Debug\DOA.dll
+E:\Project\POS\Subek Pos\Subek Pos april 28\BLLS\bin\Debug\EntityFramework.dll
+E:\Project\POS\Subek Pos\Subek Pos april 28\BLLS\bin\Debug\EntityFramework.SqlServer.dll
+E:\Project\POS\Subek Pos\Subek Pos april 28\BLLS\bin\Debug\System.Data.SQLite.dll
+E:\Project\POS\Subek Pos\Subek Pos april 28\BLLS\bin\Debug\System.Data.SQLite.EF6.dll
+E:\Project\POS\Subek Pos\Subek Pos april 28\BLLS\bin\Debug\System.Data.SQLite.Linq.dll
+E:\Project\POS\Subek Pos\Subek Pos april 28\BLLS\bin\Debug\DOA.pdb
+E:\Project\POS\Subek Pos\Subek Pos april 28\BLLS\bin\Debug\EntityFramework.SqlServer.xml
+E:\Project\POS\Subek Pos\Subek Pos april 28\BLLS\bin\Debug\System.Data.SQLite.xml
+E:\Project\POS\Subek Pos\Subek Pos april 28\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+E:\Project\POS\Subek Pos\Subek Pos april 28\BLLS\obj\Debug\BLLS.dll
+E:\Project\POS\Subek Pos\Subek Pos april 28\BLLS\obj\Debug\BLLS.pdb
+E:\Project\POS\Subek Pos\POS 2 KOT\BLLS\bin\Debug\BLLS.dll.config
+E:\Project\POS\Subek Pos\POS 2 KOT\BLLS\bin\Debug\BLLS.dll
+E:\Project\POS\Subek Pos\POS 2 KOT\BLLS\bin\Debug\BLLS.pdb
+E:\Project\POS\Subek Pos\POS 2 KOT\BLLS\bin\Debug\DOA.dll
+E:\Project\POS\Subek Pos\POS 2 KOT\BLLS\bin\Debug\EntityFramework.dll
+E:\Project\POS\Subek Pos\POS 2 KOT\BLLS\bin\Debug\EntityFramework.SqlServer.dll
+E:\Project\POS\Subek Pos\POS 2 KOT\BLLS\bin\Debug\System.Data.SQLite.dll
+E:\Project\POS\Subek Pos\POS 2 KOT\BLLS\bin\Debug\System.Data.SQLite.EF6.dll
+E:\Project\POS\Subek Pos\POS 2 KOT\BLLS\bin\Debug\System.Data.SQLite.Linq.dll
+E:\Project\POS\Subek Pos\POS 2 KOT\BLLS\bin\Debug\DOA.pdb
+E:\Project\POS\Subek Pos\POS 2 KOT\BLLS\bin\Debug\EntityFramework.xml
+E:\Project\POS\Subek Pos\POS 2 KOT\BLLS\bin\Debug\EntityFramework.SqlServer.xml
+E:\Project\POS\Subek Pos\POS 2 KOT\BLLS\bin\Debug\System.Data.SQLite.xml
+E:\Project\POS\Subek Pos\POS 2 KOT\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+E:\Project\POS\Subek Pos\POS 2 KOT\BLLS\obj\Debug\BLLS.dll
+E:\Project\POS\Subek Pos\POS 2 KOT\BLLS\obj\Debug\BLLS.pdb
+E:\POS 2 KOT_nov20 update\POS 2 KOT\BLLS\bin\Debug\BLLS.dll.config
+E:\POS 2 KOT_nov20 update\POS 2 KOT\BLLS\bin\Debug\BLLS.dll
+E:\POS 2 KOT_nov20 update\POS 2 KOT\BLLS\bin\Debug\BLLS.pdb
+E:\POS 2 KOT_nov20 update\POS 2 KOT\BLLS\bin\Debug\DOA.dll
+E:\POS 2 KOT_nov20 update\POS 2 KOT\BLLS\bin\Debug\EntityFramework.dll
+E:\POS 2 KOT_nov20 update\POS 2 KOT\BLLS\bin\Debug\EntityFramework.SqlServer.dll
+E:\POS 2 KOT_nov20 update\POS 2 KOT\BLLS\bin\Debug\System.Data.SQLite.dll
+E:\POS 2 KOT_nov20 update\POS 2 KOT\BLLS\bin\Debug\System.Data.SQLite.EF6.dll
+E:\POS 2 KOT_nov20 update\POS 2 KOT\BLLS\bin\Debug\System.Data.SQLite.Linq.dll
+E:\POS 2 KOT_nov20 update\POS 2 KOT\BLLS\bin\Debug\DOA.pdb
+E:\POS 2 KOT_nov20 update\POS 2 KOT\BLLS\bin\Debug\EntityFramework.xml
+E:\POS 2 KOT_nov20 update\POS 2 KOT\BLLS\bin\Debug\EntityFramework.SqlServer.xml
+E:\POS 2 KOT_nov20 update\POS 2 KOT\BLLS\bin\Debug\System.Data.SQLite.xml
+E:\POS 2 KOT_nov20 update\POS 2 KOT\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+E:\POS 2 KOT_nov20 update\POS 2 KOT\BLLS\obj\Debug\BLLS.dll
+E:\POS 2 KOT_nov20 update\POS 2 KOT\BLLS\obj\Debug\BLLS.pdb
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT\BLLS\bin\Debug\BLLS.dll.config
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT\BLLS\bin\Debug\BLLS.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT\BLLS\bin\Debug\BLLS.pdb
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT\BLLS\bin\Debug\DOA.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT\BLLS\bin\Debug\EntityFramework.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT\BLLS\bin\Debug\EntityFramework.SqlServer.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT\BLLS\bin\Debug\System.Data.SQLite.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT\BLLS\bin\Debug\System.Data.SQLite.EF6.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT\BLLS\bin\Debug\System.Data.SQLite.Linq.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT\BLLS\bin\Debug\DOA.pdb
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT\BLLS\bin\Debug\EntityFramework.xml
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT\BLLS\bin\Debug\EntityFramework.SqlServer.xml
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT\BLLS\bin\Debug\System.Data.SQLite.xml
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT\BLLS\obj\Debug\BLLS.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT\BLLS\obj\Debug\BLLS.pdb
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 1\BLLS\bin\Debug\BLLS.dll.config
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 1\BLLS\bin\Debug\BLLS.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 1\BLLS\bin\Debug\BLLS.pdb
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 1\BLLS\bin\Debug\DOA.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 1\BLLS\bin\Debug\EntityFramework.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 1\BLLS\bin\Debug\EntityFramework.SqlServer.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 1\BLLS\bin\Debug\System.Data.SQLite.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 1\BLLS\bin\Debug\System.Data.SQLite.EF6.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 1\BLLS\bin\Debug\System.Data.SQLite.Linq.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 1\BLLS\bin\Debug\DOA.pdb
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 1\BLLS\bin\Debug\EntityFramework.xml
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 1\BLLS\bin\Debug\EntityFramework.SqlServer.xml
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 1\BLLS\bin\Debug\System.Data.SQLite.xml
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 1\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 1\BLLS\obj\Debug\BLLS.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 1\BLLS\obj\Debug\BLLS.pdb
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\BLLS\bin\Debug\BLLS.dll.config
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\BLLS\bin\Debug\BLLS.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\BLLS\bin\Debug\BLLS.pdb
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\BLLS\bin\Debug\DOA.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\BLLS\bin\Debug\EntityFramework.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\BLLS\bin\Debug\EntityFramework.SqlServer.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\BLLS\bin\Debug\System.Data.SQLite.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\BLLS\bin\Debug\System.Data.SQLite.EF6.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\BLLS\bin\Debug\System.Data.SQLite.Linq.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\BLLS\bin\Debug\DOA.pdb
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\BLLS\bin\Debug\EntityFramework.xml
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\BLLS\bin\Debug\EntityFramework.SqlServer.xml
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\BLLS\bin\Debug\System.Data.SQLite.xml
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\BLLS\obj\Debug\BLLS.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\BLLS\obj\Debug\BLLS.pdb
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 28 update\BLLS\bin\Debug\BLLS.dll.config
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 28 update\BLLS\bin\Debug\BLLS.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 28 update\BLLS\bin\Debug\BLLS.pdb
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 28 update\BLLS\bin\Debug\DOA.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 28 update\BLLS\bin\Debug\EntityFramework.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 28 update\BLLS\bin\Debug\EntityFramework.SqlServer.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 28 update\BLLS\bin\Debug\System.Data.SQLite.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 28 update\BLLS\bin\Debug\System.Data.SQLite.EF6.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 28 update\BLLS\bin\Debug\System.Data.SQLite.Linq.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 28 update\BLLS\bin\Debug\DOA.pdb
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 28 update\BLLS\bin\Debug\EntityFramework.xml
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 28 update\BLLS\bin\Debug\EntityFramework.SqlServer.xml
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 28 update\BLLS\bin\Debug\System.Data.SQLite.xml
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 28 update\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 28 update\BLLS\obj\Debug\BLLS.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 28 update\BLLS\obj\Debug\BLLS.pdb
+F:\Smtechme projects\POS 2 KOT jan18\BLLS\bin\Debug\BLLS.dll.config
+F:\Smtechme projects\POS 2 KOT jan18\BLLS\bin\Debug\BLLS.dll
+F:\Smtechme projects\POS 2 KOT jan18\BLLS\bin\Debug\BLLS.pdb
+F:\Smtechme projects\POS 2 KOT jan18\BLLS\bin\Debug\DOA.dll
+F:\Smtechme projects\POS 2 KOT jan18\BLLS\bin\Debug\EntityFramework.dll
+F:\Smtechme projects\POS 2 KOT jan18\BLLS\bin\Debug\EntityFramework.SqlServer.dll
+F:\Smtechme projects\POS 2 KOT jan18\BLLS\bin\Debug\System.Data.SQLite.dll
+F:\Smtechme projects\POS 2 KOT jan18\BLLS\bin\Debug\System.Data.SQLite.EF6.dll
+F:\Smtechme projects\POS 2 KOT jan18\BLLS\bin\Debug\System.Data.SQLite.Linq.dll
+F:\Smtechme projects\POS 2 KOT jan18\BLLS\bin\Debug\DOA.pdb
+F:\Smtechme projects\POS 2 KOT jan18\BLLS\bin\Debug\EntityFramework.xml
+F:\Smtechme projects\POS 2 KOT jan18\BLLS\bin\Debug\EntityFramework.SqlServer.xml
+F:\Smtechme projects\POS 2 KOT jan18\BLLS\bin\Debug\System.Data.SQLite.xml
+F:\Smtechme projects\POS 2 KOT jan18\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+F:\Smtechme projects\POS 2 KOT jan18\BLLS\obj\Debug\BLLS.dll
+F:\Smtechme projects\POS 2 KOT jan18\BLLS\obj\Debug\BLLS.pdb
+C:\Users\Sub3k\Desktop\POS 2 KOT jan18\BLLS\bin\Debug\BLLS.dll.config
+C:\Users\Sub3k\Desktop\POS 2 KOT jan18\BLLS\bin\Debug\BLLS.dll
+C:\Users\Sub3k\Desktop\POS 2 KOT jan18\BLLS\bin\Debug\BLLS.pdb
+C:\Users\Sub3k\Desktop\POS 2 KOT jan18\BLLS\bin\Debug\DOA.dll
+C:\Users\Sub3k\Desktop\POS 2 KOT jan18\BLLS\bin\Debug\EntityFramework.dll
+C:\Users\Sub3k\Desktop\POS 2 KOT jan18\BLLS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Sub3k\Desktop\POS 2 KOT jan18\BLLS\bin\Debug\System.Data.SQLite.dll
+C:\Users\Sub3k\Desktop\POS 2 KOT jan18\BLLS\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Sub3k\Desktop\POS 2 KOT jan18\BLLS\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Sub3k\Desktop\POS 2 KOT jan18\BLLS\bin\Debug\DOA.pdb
+C:\Users\Sub3k\Desktop\POS 2 KOT jan18\BLLS\bin\Debug\EntityFramework.xml
+C:\Users\Sub3k\Desktop\POS 2 KOT jan18\BLLS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Sub3k\Desktop\POS 2 KOT jan18\BLLS\bin\Debug\System.Data.SQLite.xml
+C:\Users\Sub3k\Desktop\POS 2 KOT jan18\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+C:\Users\Sub3k\Desktop\POS 2 KOT jan18\BLLS\obj\Debug\BLLS.dll
+C:\Users\Sub3k\Desktop\POS 2 KOT jan18\BLLS\obj\Debug\BLLS.pdb
+C:\Users\Sub3k\Desktop\POS 2 KOT jan 24\BLLS\bin\Debug\BLLS.dll.config
+C:\Users\Sub3k\Desktop\POS 2 KOT jan 24\BLLS\bin\Debug\BLLS.dll
+C:\Users\Sub3k\Desktop\POS 2 KOT jan 24\BLLS\bin\Debug\BLLS.pdb
+C:\Users\Sub3k\Desktop\POS 2 KOT jan 24\BLLS\bin\Debug\DOA.dll
+C:\Users\Sub3k\Desktop\POS 2 KOT jan 24\BLLS\bin\Debug\EntityFramework.dll
+C:\Users\Sub3k\Desktop\POS 2 KOT jan 24\BLLS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Sub3k\Desktop\POS 2 KOT jan 24\BLLS\bin\Debug\System.Data.SQLite.dll
+C:\Users\Sub3k\Desktop\POS 2 KOT jan 24\BLLS\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Sub3k\Desktop\POS 2 KOT jan 24\BLLS\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Sub3k\Desktop\POS 2 KOT jan 24\BLLS\bin\Debug\DOA.pdb
+C:\Users\Sub3k\Desktop\POS 2 KOT jan 24\BLLS\bin\Debug\EntityFramework.xml
+C:\Users\Sub3k\Desktop\POS 2 KOT jan 24\BLLS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Sub3k\Desktop\POS 2 KOT jan 24\BLLS\bin\Debug\System.Data.SQLite.xml
+C:\Users\Sub3k\Desktop\POS 2 KOT jan 24\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+C:\Users\Sub3k\Desktop\POS 2 KOT jan 24\BLLS\obj\Debug\BLLS.dll
+C:\Users\Sub3k\Desktop\POS 2 KOT jan 24\BLLS\obj\Debug\BLLS.pdb
+E:\Project\POS\POS 2 KOT jan 24\BLLS\bin\Debug\BLLS.dll.config
+E:\Project\POS\POS 2 KOT jan 24\BLLS\bin\Debug\BLLS.dll
+E:\Project\POS\POS 2 KOT jan 24\BLLS\bin\Debug\BLLS.pdb
+E:\Project\POS\POS 2 KOT jan 24\BLLS\bin\Debug\DOA.dll
+E:\Project\POS\POS 2 KOT jan 24\BLLS\bin\Debug\EntityFramework.dll
+E:\Project\POS\POS 2 KOT jan 24\BLLS\bin\Debug\EntityFramework.SqlServer.dll
+E:\Project\POS\POS 2 KOT jan 24\BLLS\bin\Debug\System.Data.SQLite.dll
+E:\Project\POS\POS 2 KOT jan 24\BLLS\bin\Debug\System.Data.SQLite.EF6.dll
+E:\Project\POS\POS 2 KOT jan 24\BLLS\bin\Debug\System.Data.SQLite.Linq.dll
+E:\Project\POS\POS 2 KOT jan 24\BLLS\bin\Debug\DOA.pdb
+E:\Project\POS\POS 2 KOT jan 24\BLLS\bin\Debug\EntityFramework.xml
+E:\Project\POS\POS 2 KOT jan 24\BLLS\bin\Debug\EntityFramework.SqlServer.xml
+E:\Project\POS\POS 2 KOT jan 24\BLLS\bin\Debug\System.Data.SQLite.xml
+E:\Project\POS\POS 2 KOT jan 24\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+E:\Project\POS\POS 2 KOT jan 24\BLLS\obj\Debug\BLLS.dll
+E:\Project\POS\POS 2 KOT jan 24\BLLS\obj\Debug\BLLS.pdb
+E:\Project\POS\POS 2 KOT jan 24 (2)\BLLS\bin\Debug\BLLS.dll.config
+E:\Project\POS\POS 2 KOT jan 24 (2)\BLLS\bin\Debug\BLLS.dll
+E:\Project\POS\POS 2 KOT jan 24 (2)\BLLS\bin\Debug\BLLS.pdb
+E:\Project\POS\POS 2 KOT jan 24 (2)\BLLS\bin\Debug\DOA.dll
+E:\Project\POS\POS 2 KOT jan 24 (2)\BLLS\bin\Debug\EntityFramework.dll
+E:\Project\POS\POS 2 KOT jan 24 (2)\BLLS\bin\Debug\EntityFramework.SqlServer.dll
+E:\Project\POS\POS 2 KOT jan 24 (2)\BLLS\bin\Debug\System.Data.SQLite.dll
+E:\Project\POS\POS 2 KOT jan 24 (2)\BLLS\bin\Debug\System.Data.SQLite.EF6.dll
+E:\Project\POS\POS 2 KOT jan 24 (2)\BLLS\bin\Debug\System.Data.SQLite.Linq.dll
+E:\Project\POS\POS 2 KOT jan 24 (2)\BLLS\bin\Debug\DOA.pdb
+E:\Project\POS\POS 2 KOT jan 24 (2)\BLLS\bin\Debug\EntityFramework.xml
+E:\Project\POS\POS 2 KOT jan 24 (2)\BLLS\bin\Debug\EntityFramework.SqlServer.xml
+E:\Project\POS\POS 2 KOT jan 24 (2)\BLLS\bin\Debug\System.Data.SQLite.xml
+E:\Project\POS\POS 2 KOT jan 24 (2)\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+E:\Project\POS\POS 2 KOT jan 24 (2)\BLLS\obj\Debug\BLLS.dll
+E:\Project\POS\POS 2 KOT jan 24 (2)\BLLS\obj\Debug\BLLS.pdb
+C:\Users\ashis\Desktop\web\POS 2 KOT jan 24 (2)\BLLS\bin\Debug\BLLS.dll.config
+C:\Users\ashis\Desktop\web\POS 2 KOT jan 24 (2)\BLLS\bin\Debug\BLLS.dll
+C:\Users\ashis\Desktop\web\POS 2 KOT jan 24 (2)\BLLS\bin\Debug\BLLS.pdb
+C:\Users\ashis\Desktop\web\POS 2 KOT jan 24 (2)\BLLS\bin\Debug\DOA.dll
+C:\Users\ashis\Desktop\web\POS 2 KOT jan 24 (2)\BLLS\bin\Debug\EntityFramework.dll
+C:\Users\ashis\Desktop\web\POS 2 KOT jan 24 (2)\BLLS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ashis\Desktop\web\POS 2 KOT jan 24 (2)\BLLS\bin\Debug\System.Data.SQLite.dll
+C:\Users\ashis\Desktop\web\POS 2 KOT jan 24 (2)\BLLS\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\ashis\Desktop\web\POS 2 KOT jan 24 (2)\BLLS\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\ashis\Desktop\web\POS 2 KOT jan 24 (2)\BLLS\bin\Debug\DOA.pdb
+C:\Users\ashis\Desktop\web\POS 2 KOT jan 24 (2)\BLLS\bin\Debug\EntityFramework.xml
+C:\Users\ashis\Desktop\web\POS 2 KOT jan 24 (2)\BLLS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ashis\Desktop\web\POS 2 KOT jan 24 (2)\BLLS\bin\Debug\System.Data.SQLite.xml
+C:\Users\ashis\Desktop\web\POS 2 KOT jan 24 (2)\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+C:\Users\ashis\Desktop\web\POS 2 KOT jan 24 (2)\BLLS\obj\Debug\BLLS.dll
+C:\Users\ashis\Desktop\web\POS 2 KOT jan 24 (2)\BLLS\obj\Debug\BLLS.pdb
+E:\Project\POS\POS 2 KOT Advance Discount\BLLS\bin\Debug\BLLS.dll.config
+E:\Project\POS\POS 2 KOT Advance Discount\BLLS\bin\Debug\BLLS.dll
+E:\Project\POS\POS 2 KOT Advance Discount\BLLS\bin\Debug\BLLS.pdb
+E:\Project\POS\POS 2 KOT Advance Discount\BLLS\bin\Debug\DOA.dll
+E:\Project\POS\POS 2 KOT Advance Discount\BLLS\bin\Debug\EntityFramework.dll
+E:\Project\POS\POS 2 KOT Advance Discount\BLLS\bin\Debug\EntityFramework.SqlServer.dll
+E:\Project\POS\POS 2 KOT Advance Discount\BLLS\bin\Debug\System.Data.SQLite.dll
+E:\Project\POS\POS 2 KOT Advance Discount\BLLS\bin\Debug\System.Data.SQLite.EF6.dll
+E:\Project\POS\POS 2 KOT Advance Discount\BLLS\bin\Debug\System.Data.SQLite.Linq.dll
+E:\Project\POS\POS 2 KOT Advance Discount\BLLS\bin\Debug\DOA.pdb
+E:\Project\POS\POS 2 KOT Advance Discount\BLLS\bin\Debug\EntityFramework.xml
+E:\Project\POS\POS 2 KOT Advance Discount\BLLS\bin\Debug\EntityFramework.SqlServer.xml
+E:\Project\POS\POS 2 KOT Advance Discount\BLLS\bin\Debug\System.Data.SQLite.xml
+E:\Project\POS\POS 2 KOT Advance Discount\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+E:\Project\POS\POS 2 KOT Advance Discount\BLLS\obj\Debug\BLLS.dll
+E:\Project\POS\POS 2 KOT Advance Discount\BLLS\obj\Debug\BLLS.pdb
+C:\Users\Rozy\Desktop\pos\BLLS\bin\Debug\BLLS.dll.config
+C:\Users\Rozy\Desktop\pos\BLLS\bin\Debug\BLLS.dll
+C:\Users\Rozy\Desktop\pos\BLLS\bin\Debug\BLLS.pdb
+C:\Users\Rozy\Desktop\pos\BLLS\bin\Debug\DOA.dll
+C:\Users\Rozy\Desktop\pos\BLLS\bin\Debug\EntityFramework.dll
+C:\Users\Rozy\Desktop\pos\BLLS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Rozy\Desktop\pos\BLLS\bin\Debug\System.Data.SQLite.dll
+C:\Users\Rozy\Desktop\pos\BLLS\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Rozy\Desktop\pos\BLLS\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Rozy\Desktop\pos\BLLS\bin\Debug\DOA.pdb
+C:\Users\Rozy\Desktop\pos\BLLS\bin\Debug\EntityFramework.xml
+C:\Users\Rozy\Desktop\pos\BLLS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Rozy\Desktop\pos\BLLS\bin\Debug\System.Data.SQLite.xml
+C:\Users\Rozy\Desktop\pos\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+C:\Users\Rozy\Desktop\pos\BLLS\obj\Debug\BLLS.dll
+C:\Users\Rozy\Desktop\pos\BLLS\obj\Debug\BLLS.pdb
+E:\POS Aug 15\pos\BLLS\bin\Debug\BLLS.dll.config
+E:\POS Aug 15\pos\BLLS\bin\Debug\BLLS.dll
+E:\POS Aug 15\pos\BLLS\bin\Debug\BLLS.pdb
+E:\POS Aug 15\pos\BLLS\bin\Debug\DOA.dll
+E:\POS Aug 15\pos\BLLS\bin\Debug\EntityFramework.dll
+E:\POS Aug 15\pos\BLLS\bin\Debug\EntityFramework.SqlServer.dll
+E:\POS Aug 15\pos\BLLS\bin\Debug\System.Data.SQLite.dll
+E:\POS Aug 15\pos\BLLS\bin\Debug\System.Data.SQLite.EF6.dll
+E:\POS Aug 15\pos\BLLS\bin\Debug\System.Data.SQLite.Linq.dll
+E:\POS Aug 15\pos\BLLS\bin\Debug\DOA.pdb
+E:\POS Aug 15\pos\BLLS\bin\Debug\EntityFramework.xml
+E:\POS Aug 15\pos\BLLS\bin\Debug\EntityFramework.SqlServer.xml
+E:\POS Aug 15\pos\BLLS\bin\Debug\System.Data.SQLite.xml
+E:\POS Aug 15\pos\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+E:\POS Aug 15\pos\BLLS\obj\Debug\BLLS.dll
+E:\POS Aug 15\pos\BLLS\obj\Debug\BLLS.pdb
+C:\Users\Rozy\Desktop\POS 2 KOT Advance Discount\BLLS\bin\Debug\BLLS.dll.config
+C:\Users\Rozy\Desktop\POS 2 KOT Advance Discount\BLLS\bin\Debug\BLLS.dll
+C:\Users\Rozy\Desktop\POS 2 KOT Advance Discount\BLLS\bin\Debug\BLLS.pdb
+C:\Users\Rozy\Desktop\POS 2 KOT Advance Discount\BLLS\bin\Debug\DOA.dll
+C:\Users\Rozy\Desktop\POS 2 KOT Advance Discount\BLLS\bin\Debug\EntityFramework.dll
+C:\Users\Rozy\Desktop\POS 2 KOT Advance Discount\BLLS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Rozy\Desktop\POS 2 KOT Advance Discount\BLLS\bin\Debug\System.Data.SQLite.dll
+C:\Users\Rozy\Desktop\POS 2 KOT Advance Discount\BLLS\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Rozy\Desktop\POS 2 KOT Advance Discount\BLLS\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Rozy\Desktop\POS 2 KOT Advance Discount\BLLS\bin\Debug\DOA.pdb
+C:\Users\Rozy\Desktop\POS 2 KOT Advance Discount\BLLS\bin\Debug\EntityFramework.xml
+C:\Users\Rozy\Desktop\POS 2 KOT Advance Discount\BLLS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Rozy\Desktop\POS 2 KOT Advance Discount\BLLS\bin\Debug\System.Data.SQLite.xml
+C:\Users\Rozy\Desktop\POS 2 KOT Advance Discount\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+C:\Users\Rozy\Desktop\POS 2 KOT Advance Discount\BLLS\obj\Debug\BLLS.dll
+C:\Users\Rozy\Desktop\POS 2 KOT Advance Discount\BLLS\obj\Debug\BLLS.pdb
+E:\POS Aug 15\POS 2 KOT Advance Discount\BLLS\bin\Debug\BLLS.dll.config
+E:\POS Aug 15\POS 2 KOT Advance Discount\BLLS\bin\Debug\BLLS.dll
+E:\POS Aug 15\POS 2 KOT Advance Discount\BLLS\bin\Debug\BLLS.pdb
+E:\POS Aug 15\POS 2 KOT Advance Discount\BLLS\bin\Debug\DOA.dll
+E:\POS Aug 15\POS 2 KOT Advance Discount\BLLS\bin\Debug\EntityFramework.dll
+E:\POS Aug 15\POS 2 KOT Advance Discount\BLLS\bin\Debug\EntityFramework.SqlServer.dll
+E:\POS Aug 15\POS 2 KOT Advance Discount\BLLS\bin\Debug\System.Data.SQLite.dll
+E:\POS Aug 15\POS 2 KOT Advance Discount\BLLS\bin\Debug\System.Data.SQLite.EF6.dll
+E:\POS Aug 15\POS 2 KOT Advance Discount\BLLS\bin\Debug\System.Data.SQLite.Linq.dll
+E:\POS Aug 15\POS 2 KOT Advance Discount\BLLS\bin\Debug\DOA.pdb
+E:\POS Aug 15\POS 2 KOT Advance Discount\BLLS\bin\Debug\EntityFramework.xml
+E:\POS Aug 15\POS 2 KOT Advance Discount\BLLS\bin\Debug\EntityFramework.SqlServer.xml
+E:\POS Aug 15\POS 2 KOT Advance Discount\BLLS\bin\Debug\System.Data.SQLite.xml
+E:\POS Aug 15\POS 2 KOT Advance Discount\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+E:\POS Aug 15\POS 2 KOT Advance Discount\BLLS\obj\Debug\BLLS.dll
+E:\POS Aug 15\POS 2 KOT Advance Discount\BLLS\obj\Debug\BLLS.pdb
+\\DESKTOP-35RL81C\POS 2 KOT Advance Discount\BLLS\bin\Debug\BLLS.dll.config
+\\DESKTOP-35RL81C\POS 2 KOT Advance Discount\BLLS\bin\Debug\BLLS.dll
+\\DESKTOP-35RL81C\POS 2 KOT Advance Discount\BLLS\bin\Debug\BLLS.pdb
+\\DESKTOP-35RL81C\POS 2 KOT Advance Discount\BLLS\bin\Debug\DOA.dll
+\\DESKTOP-35RL81C\POS 2 KOT Advance Discount\BLLS\bin\Debug\EntityFramework.dll
+\\DESKTOP-35RL81C\POS 2 KOT Advance Discount\BLLS\bin\Debug\EntityFramework.SqlServer.dll
+\\DESKTOP-35RL81C\POS 2 KOT Advance Discount\BLLS\bin\Debug\System.Data.SQLite.dll
+\\DESKTOP-35RL81C\POS 2 KOT Advance Discount\BLLS\bin\Debug\System.Data.SQLite.EF6.dll
+\\DESKTOP-35RL81C\POS 2 KOT Advance Discount\BLLS\bin\Debug\System.Data.SQLite.Linq.dll
+\\DESKTOP-35RL81C\POS 2 KOT Advance Discount\BLLS\bin\Debug\DOA.pdb
+\\DESKTOP-35RL81C\POS 2 KOT Advance Discount\BLLS\bin\Debug\EntityFramework.xml
+\\DESKTOP-35RL81C\POS 2 KOT Advance Discount\BLLS\bin\Debug\EntityFramework.SqlServer.xml
+\\DESKTOP-35RL81C\POS 2 KOT Advance Discount\BLLS\bin\Debug\System.Data.SQLite.xml
+\\DESKTOP-35RL81C\POS 2 KOT Advance Discount\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+\\DESKTOP-35RL81C\POS 2 KOT Advance Discount\BLLS\obj\Debug\BLLS.dll
+\\DESKTOP-35RL81C\POS 2 KOT Advance Discount\BLLS\obj\Debug\BLLS.pdb
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount (2)\BLLS\bin\Debug\BLLS.dll.config
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount (2)\BLLS\bin\Debug\BLLS.dll
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount (2)\BLLS\bin\Debug\BLLS.pdb
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount (2)\BLLS\bin\Debug\DOA.dll
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount (2)\BLLS\bin\Debug\EntityFramework.dll
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount (2)\BLLS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount (2)\BLLS\bin\Debug\DOA.pdb
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount (2)\BLLS\bin\Debug\EntityFramework.xml
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount (2)\BLLS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount (2)\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount (2)\BLLS\obj\Debug\BLLS.dll
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount (2)\BLLS\obj\Debug\BLLS.pdb
+E:\Hotel Backup\POS 2 KOT Advance Discount (2)\BLLS\bin\Debug\BLLS.dll.config
+E:\Hotel Backup\POS 2 KOT Advance Discount (2)\BLLS\bin\Debug\BLLS.dll
+E:\Hotel Backup\POS 2 KOT Advance Discount (2)\BLLS\bin\Debug\BLLS.pdb
+E:\Hotel Backup\POS 2 KOT Advance Discount (2)\BLLS\bin\Debug\DOA.dll
+E:\Hotel Backup\POS 2 KOT Advance Discount (2)\BLLS\bin\Debug\EntityFramework.dll
+E:\Hotel Backup\POS 2 KOT Advance Discount (2)\BLLS\bin\Debug\EntityFramework.SqlServer.dll
+E:\Hotel Backup\POS 2 KOT Advance Discount (2)\BLLS\bin\Debug\DOA.pdb
+E:\Hotel Backup\POS 2 KOT Advance Discount (2)\BLLS\bin\Debug\EntityFramework.xml
+E:\Hotel Backup\POS 2 KOT Advance Discount (2)\BLLS\bin\Debug\EntityFramework.SqlServer.xml
+E:\Hotel Backup\POS 2 KOT Advance Discount (2)\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+E:\Hotel Backup\POS 2 KOT Advance Discount (2)\BLLS\obj\Debug\BLLS.dll
+E:\Hotel Backup\POS 2 KOT Advance Discount (2)\BLLS\obj\Debug\BLLS.pdb
+D:\Project\POS\POS 2 KOT Advance Discount\BLLS\bin\Debug\BLLS.dll.config
+D:\Project\POS\POS 2 KOT Advance Discount\BLLS\bin\Debug\BLLS.dll
+D:\Project\POS\POS 2 KOT Advance Discount\BLLS\bin\Debug\BLLS.pdb
+D:\Project\POS\POS 2 KOT Advance Discount\BLLS\bin\Debug\DOA.dll
+D:\Project\POS\POS 2 KOT Advance Discount\BLLS\bin\Debug\EntityFramework.dll
+D:\Project\POS\POS 2 KOT Advance Discount\BLLS\bin\Debug\EntityFramework.SqlServer.dll
+D:\Project\POS\POS 2 KOT Advance Discount\BLLS\bin\Debug\DOA.pdb
+D:\Project\POS\POS 2 KOT Advance Discount\BLLS\bin\Debug\EntityFramework.xml
+D:\Project\POS\POS 2 KOT Advance Discount\BLLS\bin\Debug\EntityFramework.SqlServer.xml
+D:\Project\POS\POS 2 KOT Advance Discount\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+D:\Project\POS\POS 2 KOT Advance Discount\BLLS\obj\Debug\BLLS.dll
+D:\Project\POS\POS 2 KOT Advance Discount\BLLS\obj\Debug\BLLS.pdb
+D:\POS 2 KOT Advance Discount\BLLS\bin\Debug\BLLS.dll.config
+D:\POS 2 KOT Advance Discount\BLLS\bin\Debug\BLLS.dll
+D:\POS 2 KOT Advance Discount\BLLS\bin\Debug\BLLS.pdb
+D:\POS 2 KOT Advance Discount\BLLS\bin\Debug\DOA.dll
+D:\POS 2 KOT Advance Discount\BLLS\bin\Debug\EntityFramework.dll
+D:\POS 2 KOT Advance Discount\BLLS\bin\Debug\EntityFramework.SqlServer.dll
+D:\POS 2 KOT Advance Discount\BLLS\bin\Debug\DOA.pdb
+D:\POS 2 KOT Advance Discount\BLLS\bin\Debug\EntityFramework.xml
+D:\POS 2 KOT Advance Discount\BLLS\bin\Debug\EntityFramework.SqlServer.xml
+D:\POS 2 KOT Advance Discount\BLLS\obj\Debug\BLLS.dll
+D:\POS 2 KOT Advance Discount\BLLS\obj\Debug\BLLS.pdb
+D:\POS 2 KOT Advance Discount\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount\BLLS\bin\Debug\BLLS.dll.config
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount\BLLS\bin\Debug\BLLS.dll
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount\BLLS\bin\Debug\BLLS.pdb
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount\BLLS\bin\Debug\DOA.dll
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount\BLLS\bin\Debug\EntityFramework.dll
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount\BLLS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount\BLLS\bin\Debug\DOA.pdb
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount\BLLS\bin\Debug\EntityFramework.xml
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount\BLLS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount\BLLS\obj\Debug\BLLS.dll
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount\BLLS\obj\Debug\BLLS.pdb
+E:\POS 2 KOT Advance Discount\BLLS\bin\Debug\BLLS.dll.config
+E:\POS 2 KOT Advance Discount\BLLS\bin\Debug\BLLS.dll
+E:\POS 2 KOT Advance Discount\BLLS\bin\Debug\BLLS.pdb
+E:\POS 2 KOT Advance Discount\BLLS\bin\Debug\DOA.dll
+E:\POS 2 KOT Advance Discount\BLLS\bin\Debug\EntityFramework.dll
+E:\POS 2 KOT Advance Discount\BLLS\bin\Debug\EntityFramework.SqlServer.dll
+E:\POS 2 KOT Advance Discount\BLLS\bin\Debug\DOA.pdb
+E:\POS 2 KOT Advance Discount\BLLS\bin\Debug\EntityFramework.xml
+E:\POS 2 KOT Advance Discount\BLLS\bin\Debug\EntityFramework.SqlServer.xml
+E:\POS 2 KOT Advance Discount\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+E:\POS 2 KOT Advance Discount\BLLS\obj\Debug\BLLS.dll
+E:\POS 2 KOT Advance Discount\BLLS\obj\Debug\BLLS.pdb
+F:\Dukto\POS 2 KOT Advance Discount\BLLS\bin\Debug\BLLS.dll.config
+F:\Dukto\POS 2 KOT Advance Discount\BLLS\bin\Debug\BLLS.dll
+F:\Dukto\POS 2 KOT Advance Discount\BLLS\bin\Debug\BLLS.pdb
+F:\Dukto\POS 2 KOT Advance Discount\BLLS\bin\Debug\DOA.dll
+F:\Dukto\POS 2 KOT Advance Discount\BLLS\bin\Debug\EntityFramework.dll
+F:\Dukto\POS 2 KOT Advance Discount\BLLS\bin\Debug\EntityFramework.SqlServer.dll
+F:\Dukto\POS 2 KOT Advance Discount\BLLS\bin\Debug\DOA.pdb
+F:\Dukto\POS 2 KOT Advance Discount\BLLS\bin\Debug\EntityFramework.xml
+F:\Dukto\POS 2 KOT Advance Discount\BLLS\bin\Debug\EntityFramework.SqlServer.xml
+F:\Dukto\POS 2 KOT Advance Discount\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+F:\Dukto\POS 2 KOT Advance Discount\BLLS\obj\Debug\BLLS.dll
+F:\Dukto\POS 2 KOT Advance Discount\BLLS\obj\Debug\BLLS.pdb
+D:\POS 2 Server Load\BLLS\bin\Debug\BLLS.dll.config
+D:\POS 2 Server Load\BLLS\bin\Debug\BLLS.dll
+D:\POS 2 Server Load\BLLS\bin\Debug\BLLS.pdb
+D:\POS 2 Server Load\BLLS\bin\Debug\DOA.dll
+D:\POS 2 Server Load\BLLS\bin\Debug\EntityFramework.dll
+D:\POS 2 Server Load\BLLS\bin\Debug\EntityFramework.SqlServer.dll
+D:\POS 2 Server Load\BLLS\bin\Debug\DOA.pdb
+D:\POS 2 Server Load\BLLS\bin\Debug\EntityFramework.xml
+D:\POS 2 Server Load\BLLS\bin\Debug\EntityFramework.SqlServer.xml
+D:\POS 2 Server Load\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+D:\POS 2 Server Load\BLLS\obj\Debug\BLLS.dll
+D:\POS 2 Server Load\BLLS\obj\Debug\BLLS.pdb
+C:\Users\Rozy\Downloads\POS 2 Server Load\BLLS\bin\Debug\BLLS.dll.config
+C:\Users\Rozy\Downloads\POS 2 Server Load\BLLS\bin\Debug\BLLS.dll
+C:\Users\Rozy\Downloads\POS 2 Server Load\BLLS\bin\Debug\BLLS.pdb
+C:\Users\Rozy\Downloads\POS 2 Server Load\BLLS\bin\Debug\DOA.dll
+C:\Users\Rozy\Downloads\POS 2 Server Load\BLLS\bin\Debug\EntityFramework.dll
+C:\Users\Rozy\Downloads\POS 2 Server Load\BLLS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Rozy\Downloads\POS 2 Server Load\BLLS\bin\Debug\DOA.pdb
+C:\Users\Rozy\Downloads\POS 2 Server Load\BLLS\bin\Debug\EntityFramework.xml
+C:\Users\Rozy\Downloads\POS 2 Server Load\BLLS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Rozy\Downloads\POS 2 Server Load\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+C:\Users\Rozy\Downloads\POS 2 Server Load\BLLS\obj\Debug\BLLS.dll
+C:\Users\Rozy\Downloads\POS 2 Server Load\BLLS\obj\Debug\BLLS.pdb
+D:\Office Project\POS 2 Server Load\BLLS\bin\Debug\BLLS.dll.config
+D:\Office Project\POS 2 Server Load\BLLS\bin\Debug\BLLS.dll
+D:\Office Project\POS 2 Server Load\BLLS\bin\Debug\BLLS.pdb
+D:\Office Project\POS 2 Server Load\BLLS\bin\Debug\DOA.dll
+D:\Office Project\POS 2 Server Load\BLLS\bin\Debug\EntityFramework.dll
+D:\Office Project\POS 2 Server Load\BLLS\bin\Debug\EntityFramework.SqlServer.dll
+D:\Office Project\POS 2 Server Load\BLLS\bin\Debug\DOA.pdb
+D:\Office Project\POS 2 Server Load\BLLS\bin\Debug\EntityFramework.xml
+D:\Office Project\POS 2 Server Load\BLLS\bin\Debug\EntityFramework.SqlServer.xml
+D:\Office Project\POS 2 Server Load\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+D:\Office Project\POS 2 Server Load\BLLS\obj\Debug\BLLS.dll
+D:\Office Project\POS 2 Server Load\BLLS\obj\Debug\BLLS.pdb
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\BLLS\bin\Debug\BLLS.dll.config
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\BLLS\bin\Debug\BLLS.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\BLLS\bin\Debug\BLLS.pdb
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\BLLS\bin\Debug\DOA.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\BLLS\bin\Debug\EntityFramework.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\BLLS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\BLLS\bin\Debug\DOA.pdb
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\BLLS\bin\Debug\EntityFramework.xml
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\BLLS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\BLLS\obj\Debug\BLLS.csprojResolveAssemblyReference.cache
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\BLLS\obj\Debug\BLLS.dll
+C:\Users\rozyt\OneDrive\Desktop\POS 2 Server Load\BLLS\obj\Debug\BLLS.pdb

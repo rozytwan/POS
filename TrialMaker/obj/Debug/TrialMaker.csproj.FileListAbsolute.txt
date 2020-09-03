@@ -1,0 +1,126 @@
+E:\Project\PHone\Trial\TrialMaker\TrialMaker\bin\Debug\SoftwareLocker.dll
+E:\Project\PHone\Trial\TrialMaker\TrialMaker\bin\Debug\SoftwareLocker.pdb
+E:\Project\PHone\Trial\TrialMaker\TrialMaker\bin\Debug\FilterControls.dll
+E:\Project\PHone\Trial\TrialMaker\TrialMaker\bin\Debug\SerialBoxes.pdb
+E:\Project\PHone\Trial\TrialMaker\TrialMaker\bin\Debug\FilterControls.pdb
+E:\Project\PHone\Trial\TrialMaker\TrialMaker\obj\Debug\TrialMaker.csprojResolveAssemblyReference.cache
+E:\Project\PHone\Trial\TrialMaker\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+E:\Project\PHone\Trial\TrialMaker\TrialMaker\obj\Debug\TrialMaker.csproj.GenerateResource.Cache
+E:\Project\PHone\Trial\TrialMaker\TrialMaker\obj\Debug\SoftwareLocker.dll
+E:\Project\PHone\Trial\TrialMaker\TrialMaker\obj\Debug\SoftwareLocker.pdb
+E:\Project\PHone\Trial\TrialMaker\TrialMaker\bin\Debug\SerialBoxes.dll
+E:\Project\Back UP\POS 2 KOT dec 11 update\TrialMaker\bin\Debug\SoftwareLocker.dll
+E:\Project\Back UP\POS 2 KOT dec 11 update\TrialMaker\bin\Debug\SoftwareLocker.pdb
+E:\Project\Back UP\POS 2 KOT dec 11 update\TrialMaker\bin\Debug\FilterControls.dll
+E:\Project\Back UP\POS 2 KOT dec 11 update\TrialMaker\bin\Debug\SerialBoxes.pdb
+E:\Project\Back UP\POS 2 KOT dec 11 update\TrialMaker\bin\Debug\FilterControls.pdb
+E:\Project\Back UP\POS 2 KOT dec 11 update\TrialMaker\obj\Debug\TrialMaker.csprojResolveAssemblyReference.cache
+E:\Project\Back UP\POS 2 KOT dec 11 update\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+E:\Project\Back UP\POS 2 KOT dec 11 update\TrialMaker\obj\Debug\TrialMaker.csproj.GenerateResource.Cache
+E:\Project\Back UP\POS 2 KOT dec 11 update\TrialMaker\obj\Debug\SoftwareLocker.dll
+E:\Project\Back UP\POS 2 KOT dec 11 update\TrialMaker\obj\Debug\SoftwareLocker.pdb
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\TrialMaker\bin\Debug\SoftwareLocker.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\TrialMaker\bin\Debug\SoftwareLocker.pdb
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\TrialMaker\obj\Debug\TrialMaker.csproj.GenerateResource.Cache
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\TrialMaker\obj\Debug\SoftwareLocker.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\TrialMaker\obj\Debug\SoftwareLocker.pdb
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\TrialMaker\obj\Debug\TrialMaker.csprojResolveAssemblyReference.cache
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 28 update\TrialMaker\bin\Debug\SoftwareLocker.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 28 update\TrialMaker\bin\Debug\SoftwareLocker.pdb
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 28 update\TrialMaker\obj\Debug\TrialMaker.csprojResolveAssemblyReference.cache
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 28 update\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 28 update\TrialMaker\obj\Debug\TrialMaker.csproj.GenerateResource.Cache
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 28 update\TrialMaker\obj\Debug\SoftwareLocker.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 28 update\TrialMaker\obj\Debug\SoftwareLocker.pdb
+F:\Smtechme projects\POS 2 KOT jan18\TrialMaker\bin\Debug\SoftwareLocker.dll
+F:\Smtechme projects\POS 2 KOT jan18\TrialMaker\bin\Debug\SoftwareLocker.pdb
+F:\Smtechme projects\POS 2 KOT jan18\TrialMaker\obj\Debug\TrialMaker.csprojResolveAssemblyReference.cache
+F:\Smtechme projects\POS 2 KOT jan18\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+F:\Smtechme projects\POS 2 KOT jan18\TrialMaker\obj\Debug\TrialMaker.csproj.GenerateResource.Cache
+F:\Smtechme projects\POS 2 KOT jan18\TrialMaker\obj\Debug\SoftwareLocker.dll
+F:\Smtechme projects\POS 2 KOT jan18\TrialMaker\obj\Debug\SoftwareLocker.pdb
+C:\Users\Sub3k\Desktop\POS 2 KOT jan18\TrialMaker\bin\Debug\SoftwareLocker.dll
+C:\Users\Sub3k\Desktop\POS 2 KOT jan18\TrialMaker\bin\Debug\SoftwareLocker.pdb
+C:\Users\Sub3k\Desktop\POS 2 KOT jan18\TrialMaker\obj\Debug\TrialMaker.csprojResolveAssemblyReference.cache
+C:\Users\Sub3k\Desktop\POS 2 KOT jan18\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+C:\Users\Sub3k\Desktop\POS 2 KOT jan18\TrialMaker\obj\Debug\TrialMaker.csproj.GenerateResource.Cache
+C:\Users\Sub3k\Desktop\POS 2 KOT jan18\TrialMaker\obj\Debug\SoftwareLocker.dll
+C:\Users\Sub3k\Desktop\POS 2 KOT jan18\TrialMaker\obj\Debug\SoftwareLocker.pdb
+E:\Project\POS\POS 2 KOT jan 24\TrialMaker\bin\Debug\SoftwareLocker.dll
+E:\Project\POS\POS 2 KOT jan 24\TrialMaker\bin\Debug\SoftwareLocker.pdb
+E:\Project\POS\POS 2 KOT jan 24\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+E:\Project\POS\POS 2 KOT jan 24\TrialMaker\obj\Debug\TrialMaker.csproj.GenerateResource.Cache
+E:\Project\POS\POS 2 KOT jan 24\TrialMaker\obj\Debug\SoftwareLocker.dll
+E:\Project\POS\POS 2 KOT jan 24\TrialMaker\obj\Debug\SoftwareLocker.pdb
+E:\Project\POS\POS 2 KOT jan 24\TrialMaker\obj\Debug\TrialMaker.csprojResolveAssemblyReference.cache
+E:\Project\POS\POS 2 KOT jan 24 (2)\TrialMaker\bin\Debug\SoftwareLocker.dll
+E:\Project\POS\POS 2 KOT jan 24 (2)\TrialMaker\bin\Debug\SoftwareLocker.pdb
+E:\Project\POS\POS 2 KOT jan 24 (2)\TrialMaker\obj\Debug\TrialMaker.csprojResolveAssemblyReference.cache
+E:\Project\POS\POS 2 KOT jan 24 (2)\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+E:\Project\POS\POS 2 KOT jan 24 (2)\TrialMaker\obj\Debug\TrialMaker.csproj.GenerateResource.Cache
+E:\Project\POS\POS 2 KOT jan 24 (2)\TrialMaker\obj\Debug\SoftwareLocker.dll
+E:\Project\POS\POS 2 KOT jan 24 (2)\TrialMaker\obj\Debug\SoftwareLocker.pdb
+E:\Project\POS\POS 2 KOT Advance Discount\TrialMaker\bin\Debug\SoftwareLocker.dll
+E:\Project\POS\POS 2 KOT Advance Discount\TrialMaker\bin\Debug\SoftwareLocker.pdb
+E:\Project\POS\POS 2 KOT Advance Discount\TrialMaker\obj\Debug\TrialMaker.csprojResolveAssemblyReference.cache
+E:\Project\POS\POS 2 KOT Advance Discount\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+E:\Project\POS\POS 2 KOT Advance Discount\TrialMaker\obj\Debug\TrialMaker.csproj.GenerateResource.Cache
+E:\Project\POS\POS 2 KOT Advance Discount\TrialMaker\obj\Debug\SoftwareLocker.dll
+E:\Project\POS\POS 2 KOT Advance Discount\TrialMaker\obj\Debug\SoftwareLocker.pdb
+C:\Users\Rozy\Desktop\pos\TrialMaker\bin\Debug\SoftwareLocker.dll
+C:\Users\Rozy\Desktop\pos\TrialMaker\bin\Debug\SoftwareLocker.pdb
+C:\Users\Rozy\Desktop\pos\TrialMaker\obj\Debug\TrialMaker.csprojResolveAssemblyReference.cache
+C:\Users\Rozy\Desktop\pos\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+C:\Users\Rozy\Desktop\pos\TrialMaker\obj\Debug\TrialMaker.csproj.GenerateResource.Cache
+C:\Users\Rozy\Desktop\pos\TrialMaker\obj\Debug\SoftwareLocker.dll
+C:\Users\Rozy\Desktop\pos\TrialMaker\obj\Debug\SoftwareLocker.pdb
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount (2)\TrialMaker\bin\Debug\SoftwareLocker.dll
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount (2)\TrialMaker\bin\Debug\SoftwareLocker.pdb
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount (2)\TrialMaker\obj\Debug\TrialMaker.csprojResolveAssemblyReference.cache
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount (2)\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount (2)\TrialMaker\obj\Debug\TrialMaker.csproj.GenerateResource.Cache
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount (2)\TrialMaker\obj\Debug\SoftwareLocker.dll
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount (2)\TrialMaker\obj\Debug\SoftwareLocker.pdb
+D:\Project\POS\POS 2 KOT Advance Discount\TrialMaker\bin\Debug\SoftwareLocker.dll
+D:\Project\POS\POS 2 KOT Advance Discount\TrialMaker\bin\Debug\SoftwareLocker.pdb
+D:\Project\POS\POS 2 KOT Advance Discount\TrialMaker\obj\Debug\TrialMaker.csprojResolveAssemblyReference.cache
+D:\Project\POS\POS 2 KOT Advance Discount\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+D:\Project\POS\POS 2 KOT Advance Discount\TrialMaker\obj\Debug\TrialMaker.csproj.GenerateResource.Cache
+D:\Project\POS\POS 2 KOT Advance Discount\TrialMaker\obj\Debug\SoftwareLocker.dll
+D:\Project\POS\POS 2 KOT Advance Discount\TrialMaker\obj\Debug\SoftwareLocker.pdb
+D:\POS 2 KOT Advance Discount\TrialMaker\bin\Debug\SoftwareLocker.dll
+D:\POS 2 KOT Advance Discount\TrialMaker\bin\Debug\SoftwareLocker.pdb
+D:\POS 2 KOT Advance Discount\TrialMaker\obj\Debug\TrialMaker.csprojResolveAssemblyReference.cache
+D:\POS 2 KOT Advance Discount\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+D:\POS 2 KOT Advance Discount\TrialMaker\obj\Debug\TrialMaker.csproj.GenerateResource.Cache
+D:\POS 2 KOT Advance Discount\TrialMaker\obj\Debug\SoftwareLocker.dll
+D:\POS 2 KOT Advance Discount\TrialMaker\obj\Debug\SoftwareLocker.pdb
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount\TrialMaker\bin\Debug\SoftwareLocker.dll
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount\TrialMaker\bin\Debug\SoftwareLocker.pdb
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount\TrialMaker\obj\Debug\TrialMaker.csprojResolveAssemblyReference.cache
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount\TrialMaker\obj\Debug\TrialMaker.csproj.GenerateResource.Cache
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount\TrialMaker\obj\Debug\SoftwareLocker.dll
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount\TrialMaker\obj\Debug\SoftwareLocker.pdb
+F:\Dukto\POS 2 KOT Advance Discount\TrialMaker\bin\Debug\SoftwareLocker.dll
+F:\Dukto\POS 2 KOT Advance Discount\TrialMaker\bin\Debug\SoftwareLocker.pdb
+F:\Dukto\POS 2 KOT Advance Discount\TrialMaker\obj\Debug\TrialMaker.csprojResolveAssemblyReference.cache
+F:\Dukto\POS 2 KOT Advance Discount\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+F:\Dukto\POS 2 KOT Advance Discount\TrialMaker\obj\Debug\TrialMaker.csproj.GenerateResource.Cache
+F:\Dukto\POS 2 KOT Advance Discount\TrialMaker\obj\Debug\SoftwareLocker.dll
+F:\Dukto\POS 2 KOT Advance Discount\TrialMaker\obj\Debug\SoftwareLocker.pdb
+D:\POS 2 Server Load\TrialMaker\bin\Debug\SoftwareLocker.dll
+D:\POS 2 Server Load\TrialMaker\bin\Debug\SoftwareLocker.pdb
+D:\POS 2 Server Load\TrialMaker\obj\Debug\TrialMaker.csprojResolveAssemblyReference.cache
+D:\POS 2 Server Load\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+D:\POS 2 Server Load\TrialMaker\obj\Debug\TrialMaker.csproj.GenerateResource.Cache
+D:\POS 2 Server Load\TrialMaker\obj\Debug\SoftwareLocker.dll
+D:\POS 2 Server Load\TrialMaker\obj\Debug\SoftwareLocker.pdb
+D:\Office Project\POS 2 Server Load\TrialMaker\bin\Debug\SoftwareLocker.dll
+D:\Office Project\POS 2 Server Load\TrialMaker\bin\Debug\SoftwareLocker.pdb
+D:\Office Project\POS 2 Server Load\TrialMaker\obj\Debug\TrialMaker.csprojResolveAssemblyReference.cache
+D:\Office Project\POS 2 Server Load\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+D:\Office Project\POS 2 Server Load\TrialMaker\obj\Debug\TrialMaker.csproj.GenerateResource.Cache
+D:\Office Project\POS 2 Server Load\TrialMaker\obj\Debug\SoftwareLocker.dll
+D:\Office Project\POS 2 Server Load\TrialMaker\obj\Debug\SoftwareLocker.pdb

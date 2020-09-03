@@ -1,0 +1,2642 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bitfinex.Client.Websocket</name>
+    </assembly>
+    <members>
+        <member name="T:Bitfinex.Client.Websocket.BitfinexValues">
+            <summary>
+            Static values
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.BitfinexValues.ApiWebsocketUrl">
+            <summary>
+            Url to Bitfinex websocket API (Ethfinex also works)
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.BitfinexValues.BitfinexWebsocketUrl">
+            <summary>
+            Url to Bitfinex websocket API (same as `ApiWebsocketUrl`)
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.BitfinexValues.EthfinexWebsocketUrl">
+            <summary>
+            Url to Ethfinex websocket API
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Client.BitfinexClientStreams">
+            <summary>
+            All provided streams from Bitfinex websocket API.
+            You need to subscribe first, send subscription request (for example: `await client.Send(new TradesSubscribeRequest(pair))`)
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Client.BitfinexClientStreams.ErrorStream">
+            <summary>
+            Info about every occurred error
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Client.BitfinexClientStreams.InfoStream">
+            <summary>
+            Initial info stream, publishes always on a new connection
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Client.BitfinexClientStreams.PongStream">
+            <summary>
+            Pong stream to match every ping request
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Client.BitfinexClientStreams.AuthenticationStream">
+            <summary>
+            Info about processed authentication
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Client.BitfinexClientStreams.ConfigurationStream">
+            <summary>
+            Info about processed configuration
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Client.BitfinexClientStreams.SubscriptionStream">
+            <summary>
+            Info about subscribed channel, you need to store channel id in order to future unsubscription
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Client.BitfinexClientStreams.UnsubscriptionStream">
+            <summary>
+            Info about unsubscription
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Client.BitfinexClientStreams.NotificationStream">
+            <summary>
+            Notifications
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Client.BitfinexClientStreams.TickerStream">
+            <summary>
+            Public ticker stream for subscribed pair.
+            The ticker is a high level overview of the state of the market. It shows you the current best bid and ask, as well as the last trade price.
+            It also includes information such as daily volume and how much the price has moved over the last day.
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Client.BitfinexClientStreams.TradesStream">
+            <summary>
+            Public trades stream for subscribed pair.
+            This channel sends a trade message whenever a trade occurs at Bitfinex. It includes all the pertinent details of the trade, such as price, size and time.
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Client.BitfinexClientStreams.TradesSnapshotStream">
+            <summary>
+            Public trades snapshot stream for subscribed pair. It streams only initial snapshot after a reconnection. 
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Client.BitfinexClientStreams.FundingStream">
+            <summary>
+            Public funding stream for subscribed pair
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Client.BitfinexClientStreams.CandlesStream">
+            <summary>
+            Public candles stream for subscribed pair.
+            Provides a way to access charting candle info
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Client.BitfinexClientStreams.BookStream">
+            <summary>
+            Public order book stream, contains also values from initial snapshot.
+            The Order Books channel allow you to keep track of the state of the Bitfinex order book.
+            It is provided on a price aggregated basis, with customizable precision.
+            After receiving the response, you will receive a snapshot of the book,
+            followed by updates upon any changes to the book.
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Client.BitfinexClientStreams.BookSnapshotStream">
+            <summary>
+            Public initial snapshot of the order book 
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Client.BitfinexClientStreams.BookChecksumStream">
+            <summary>
+            Checksum stream for every book iteration. Checks the top 25 entries for each side of book. Checksum is a signed int.
+            Must be enabled by configuration (see `ConfigurationRequest`)
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Client.BitfinexClientStreams.DerivativePairStream">
+            <summary>
+            Public info about a derivative symbol
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Client.BitfinexClientStreams.LiquidationFeedStream">
+            <summary>
+            Public liquidation feed
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Client.BitfinexClientStreams.WalletsStream">
+            <summary>
+            Private initial info about all wallets/balances (streamed only on authentication)
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Client.BitfinexClientStreams.WalletStream">
+            <summary>
+            Private stream for every wallet balance update (initial wallets info is also streamed, same as 'WalletsStream')
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Client.BitfinexClientStreams.PrivateTradeStream">
+            <summary>
+            Private info about executed trades
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Client.BitfinexClientStreams.OrdersStream">
+            <summary>
+            Private initial info about all opened orders (streamed only on authentication)
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Client.BitfinexClientStreams.OrderCreatedStream">
+            <summary>
+            Private info about created/placed order
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Client.BitfinexClientStreams.OrderUpdatedStream">
+            <summary>
+            Private info about updated order
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Client.BitfinexClientStreams.OrderCanceledStream">
+            <summary>
+            Private info about canceled or executed order
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Client.BitfinexClientStreams.PositionsStream">
+            <summary>
+            Private initial info about all opened positions (streamed only on authentication)
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Client.BitfinexClientStreams.PositionCreatedStream">
+            <summary>
+            Private info about created/opened position
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Client.BitfinexClientStreams.PositionUpdatedStream">
+            <summary>
+            Private info about updated position
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Client.BitfinexClientStreams.PositionCanceledStream">
+            <summary>
+            Private info about canceled or closed position
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Client.BitfinexClientStreams.BalanceInfoStream">
+            <summary>
+            Private info about total balances
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Client.BitfinexClientStreams.MarginInfoStream">
+            <summary>
+            Private info about margin data
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Client.BitfinexWebsocketClient">
+            <summary>
+            Bitfinex websocket client, it wraps `IBitfinexCommunicator` and parse raw data into streams.
+            Send subscription requests (for example: `new TradesSubscribeRequest(pair)`) and subscribe to `Streams`
+            </summary>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Client.BitfinexWebsocketClient.#ctor(Bitfinex.Client.Websocket.Communicator.IBitfinexCommunicator)">
+            <inheritdoc />
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Client.BitfinexWebsocketClient.Streams">
+            <summary>
+            Provided message streams
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Client.BitfinexWebsocketClient.Configuration">
+            <summary>
+            Currently enabled features
+            </summary>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Client.BitfinexWebsocketClient.Dispose">
+            <summary>
+            Cleanup everything
+            </summary>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Client.BitfinexWebsocketClient.Send``1(``0)">
+            <summary>
+            Serializes request and sends message via websocket communicator. 
+            It logs and re-throws every exception. 
+            </summary>
+            <param name="request">Request/message to be sent</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Client.BitfinexWebsocketClient.Authenticate(System.String,System.String,System.Boolean)">
+            <summary>
+            Sends authentication request via websocket communicator
+            </summary>
+            <param name="apiKey">Your API key</param>
+            <param name="apiSecret">Your API secret</param>
+            <param name="deadManSwitchEnabled">Dead-Man-Switch flag (optional), when socket is closed, cancel all account orders</param>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Communicator.IBitfinexCommunicator">
+            <inheritdoc />
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Files.BitfinexFileCommunicator">
+            <summary>
+            Communicator that loads raw backtest data from file and streams
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Json.BitfinexJsonSerializer">
+            <summary>
+            Helper class for JSON serialization
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Json.BitfinexJsonSerializer.Settings">
+            <summary>
+            Unified JSON settings
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Json.BitfinexJsonSerializer.Serializer">
+            <summary>
+            Custom preconfigured serializer
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Messages.MessageBase">
+            <summary>
+            Base class for every message
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Messages.MessageBase.Event">
+            <summary>
+            Unique message type
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Requests.AuthenticationRequest">
+            <summary>
+            Authentication request, call before accessing any private API
+            </summary>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Requests.AuthenticationRequest.#ctor(System.String,System.String)">
+            <summary>
+            Authentication request
+            </summary>
+            <param name="apiKey">Your API key</param>
+            <param name="apiSecret">Your API secret</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Requests.AuthenticationRequest.#ctor(System.String,System.String,System.Boolean)">
+            <summary>
+            Authentication request
+            </summary>
+            <param name="apiKey">Your API key</param>
+            <param name="apiSecret">Your API secret</param>
+            <param name="deadManSwitchEnabled">Dead-Man-Switch flag (optional), when socket is closed, cancel all account orders</param>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.AuthenticationRequest.EventType">
+            <inheritdoc />
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.AuthenticationRequest.ApiKey">
+            <summary>
+            Your API key
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.AuthenticationRequest.AuthSig">
+            <summary>
+            The generated signature
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.AuthenticationRequest.AuthNonce">
+            <summary>
+            An ever increasing numeric string but should not exceed the MAX_SAFE_INTEGER constant value of 9007199254740991.
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.AuthenticationRequest.AuthPayload">
+            <summary>
+            Computed authentication payload
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.AuthenticationRequest.Dms">
+            <summary>
+            Dead-Man-Switch flag (optional, value 4), when socket is closed, cancel all account orders
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Requests.CalcRequest">
+            <summary>
+            Calculation request.
+            Calculations are on demand, so no more streaming of unnecessary data.
+            Websocket server allows up to 30 calculations per batch.
+            If the client sends too many concurrent requests (or tries to spam) requests,
+            it will receive an error and potentially a disconnection.
+            The Websocket server performs a maximum of 8 calculations per second per client.
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.CalcRequest.Requests">
+            <summary>
+            requests e.g. (
+              margin_base, margin_sym_SYMBOL,
+              funding_sym_SYMBOL, position_SYMBOL,
+              wallet_WALLET-TYPE_CURRENCY, balance
+            )
+            </summary>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Requests.CalcRequest.#ctor(System.String[])">
+            <inheritdoc />
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Requests.Configurations.ConfigurationFlag">
+            <summary>
+            In order to change the configuration, there is a new event able to be requested conf, and this will have a parameter flags which is the bitwise XOR of the different options listed below
+            
+            Example:
+            To enable all decimals as strings and all times as date strings, you would set the value of flags to 40
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Requests.Configurations.ConfigurationFlag.Undefined">
+            <summary>
+            None
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Requests.Configurations.ConfigurationFlag.DecimalAsString">
+            <summary>
+            Enable all decimal as strings.
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Requests.Configurations.ConfigurationFlag.TimeAsString">
+            <summary>
+            Enable all times as date strings.
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Requests.Configurations.ConfigurationFlag.Timestamp">
+            <summary>
+            Timestamp in milliseconds.
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Requests.Configurations.ConfigurationFlag.Sequencing">
+            <summary>
+            Enable sequencing BETA FEATURE
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Requests.Configurations.ConfigurationFlag.Checksum">
+            <summary>
+            Enable checksum for every book iteration. Checks the top 25 entries for each side of book. Checksum is a signed int.
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Requests.Configurations.ConfigurationRequest">
+            <summary>
+            Request to configure websocket connection
+            </summary>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Requests.Configurations.ConfigurationRequest.#ctor">
+            <summary>
+            Request to configure websocket connection
+            </summary>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Requests.Configurations.ConfigurationRequest.#ctor(Bitfinex.Client.Websocket.Requests.Configurations.ConfigurationFlag)">
+            <summary>
+            Request to configure websocket connection
+            </summary>
+            <param name="flags">Flags - the bitwise XOR of the different options</param>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Configurations.ConfigurationRequest.EventType">
+            <inheritdoc />
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Configurations.ConfigurationRequest.SelectedFlags">
+            <summary>
+            Flags - the bitwise XOR of the different options
+            
+            Example:
+            To enable all decimals as strings and all times as date strings, you would set the value of flags to 40
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Configurations.ConfigurationRequest.Flags">
+            <summary>
+            Flags - converted to integer
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Requests.Orders.CancelMultiOrderRequest">
+            <summary>
+            Cancel multiple orders at once.
+            You can cancel the order by in a few different ways:
+            Cancel 'All' open orders,
+            Using the Internal Order IDs,
+            Using the Client Order ID (supplied by you). The Client Order ID is unique per day,
+            so you also have to provide the date of the order as a date string in this format YYYY-MM-DD.
+            Using the Group Order ID.
+            </summary>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Requests.Orders.CancelMultiOrderRequest.#ctor(System.Boolean)">
+            <summary>
+            Cancel all active orders
+            </summary>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Requests.Orders.CancelMultiOrderRequest.#ctor(System.Int64[])">
+            <summary>
+            Cancel multiple orders by unique Bitfinex order ids
+            </summary>
+            <param name="ids"></param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Requests.Orders.CancelMultiOrderRequest.#ctor(Bitfinex.Client.Websocket.Requests.Orders.CidPair[])">
+            <summary>
+            Cancel multiple orders by unique client order identifications 
+            </summary>
+            <param name="cidPairs"></param>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Orders.CancelMultiOrderRequest.CancelAll">
+            <summary>
+            Set true if you want to cancel all active orders
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Orders.CancelMultiOrderRequest.Ids">
+            <summary>
+             Unique Bitfinex order ids (not cid)
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Orders.CancelMultiOrderRequest.CidPairs">
+            <summary>
+            Unique client order identifications
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Orders.CancelMultiOrderRequest.Gids">
+            <summary>
+            Unique client group ids
+            </summary>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Requests.Orders.CancelMultiOrderRequest.CancelEverything">
+            <summary>
+            Cancel all orders
+            </summary>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Requests.Orders.CancelMultiOrderRequest.CancelGroups(System.Int64[])">
+            <summary>
+            Cancel multiple order in selected groups
+            </summary>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Requests.Orders.CancelMultiOrderRequest.CancelGroup(System.Int64)">
+            <summary>
+            Cancel multiple order in selected group
+            </summary>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Requests.Orders.CancelMultiOrderRequest.CancelCombination(System.Int64[],Bitfinex.Client.Websocket.Requests.Orders.CidPair[],System.Int64[])">
+            <summary>
+            Cancel multiple orders by your custom combinations of unique ids, client ids or/and group ids
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Requests.Orders.CancelOrderRequest">
+            <summary>
+            Cancel order request.
+            You can cancel the order by the Internal Order ID or using a Client Order ID (supplied by you).
+            The Client Order ID is unique per day, so you also have to provide the date of the order.
+            </summary>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Requests.Orders.CancelOrderRequest.#ctor(System.Int64)">
+            <summary>
+            Cancel order by unique Bitfinex order id
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Requests.Orders.CancelOrderRequest.#ctor(Bitfinex.Client.Websocket.Requests.Orders.CidPair)">
+            <summary>
+            Cancel order by combination of client id and order creation date
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Orders.CancelOrderRequest.Id">
+            <summary>
+            Unique Bitfinex order id (not cid)
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Orders.CancelOrderRequest.CidPair">
+            <summary>
+            Unique client order identification
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Requests.Orders.CidPair">
+            <summary>
+            Unique client order identification - id + date
+            </summary>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Requests.Orders.CidPair.#ctor(System.Int64,System.DateTime)">
+            <summary>
+            Create a new unique order identification
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Orders.CidPair.Cid">
+            <summary>
+            Client id, unique per day
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Orders.CidPair.CidDate">
+            <summary>
+            Order creation date to make Cid unique
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Requests.Orders.NewOrderRequest">
+            <summary>
+            Request to create a new order.
+            You will receive a message of the appropriated type on the order streams
+            </summary>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Requests.Orders.NewOrderRequest.#ctor">
+            <summary>
+            Don't forget to set relevant properties
+            </summary>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Requests.Orders.NewOrderRequest.#ctor(System.Int64,System.Int64,System.String,Bitfinex.Client.Websocket.Responses.Orders.OrderType,System.Double,System.Double)">
+            <summary>
+            Simple constructor mostly for LIMIT and MARKET order,
+            for other order types use parameter-less constructor and set properties by your own 
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Orders.NewOrderRequest.Gid">
+            <summary>
+            (optional) Group id for the order
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Orders.NewOrderRequest.Cid">
+            <summary>
+            Must be unique in the day (UTC)
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Orders.NewOrderRequest.Symbol">
+            <summary>
+            symbol (tBTCUSD, tETHUSD, ...)
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Orders.NewOrderRequest.Type">
+            <summary>
+            Type of the order
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Orders.NewOrderRequest.Amount">
+            <summary>
+            Positive for buy, Negative for sell
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Orders.NewOrderRequest.Price">
+            <summary>
+            Price (Not required for market orders)
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Orders.NewOrderRequest.PriceTrailing">
+            <summary>
+            The trailing price
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Orders.NewOrderRequest.PriceAuxLimit">
+            <summary>
+            Auxiliary Limit price (for STOP LIMIT)
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Orders.NewOrderRequest.PriceOcoStop">
+            <summary>
+            OCO stop price
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Orders.NewOrderRequest.Flags">
+            <summary>
+            Additional order configuration, see OrderFlag enum. 
+            You may sum flag values to pass multiple flags. For example passing 4160 (64 + 4096) means hidden post only.
+            Use C# [Flags] to do that: Flags = OrderFlag.Hidden | OrderFlag.PostOnly
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Orders.NewOrderRequest.TimeInForce">
+            <summary>
+            Time-In-Force: datetime for automatic order cancellation (ie. 2020-01-01 10:45:23) )
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Orders.NewOrderRequest.Meta">
+            <summary>
+            Additional parameters
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Requests.Orders.OrderFlag">
+            <summary>
+            Additional configuration for the order
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Requests.Orders.OrderFlag.Undefined">
+            <summary>
+            None
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Requests.Orders.OrderFlag.Hidden">
+            <summary>
+            The hidden order option ensures an order does not appear in the order book; thus does not influence other market participants.
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Requests.Orders.OrderFlag.Close">
+            <summary>
+            Close position if position present.
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Requests.Orders.OrderFlag.ReduceOnly">
+            <summary>
+            Ensures that the executed order does not flip the opened position.
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Requests.Orders.OrderFlag.PostOnly">
+            <summary>
+            The post-only limit order option ensures the limit order will be added to the order book and not match with a pre-existing order.
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Requests.Orders.OrderFlag.OCO">
+            <summary>
+            The one cancels other order option allows you to place a pair of orders stipulating that if one order is executed fully or partially,
+            then the other is automatically canceled.
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Requests.Orders.UpdateOrderRequest">
+            <summary>
+            Request to update active order. 
+            </summary>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Requests.Orders.UpdateOrderRequest.#ctor(System.Int64)">
+            <summary>
+            Create update request for unique Bitfinex order id
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Requests.Orders.UpdateOrderRequest.#ctor(Bitfinex.Client.Websocket.Requests.Orders.CidPair)">
+            <summary>
+            Create update request for unique pair client id + datetime (when client id was generated)
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Orders.UpdateOrderRequest.Id">
+            <summary>
+            Unique Bitfinex id (must be set)
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Orders.UpdateOrderRequest.CidPair">
+            <summary>
+            Unique client order identification
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Orders.UpdateOrderRequest.Gid">
+            <summary>
+            Group id for the order
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Orders.UpdateOrderRequest.Price">
+            <summary>
+            Price
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Orders.UpdateOrderRequest.Amount">
+            <summary>
+            Positive for buy, Negative for sell
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Orders.UpdateOrderRequest.Delta">
+            <summary>
+            Change of amount
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Orders.UpdateOrderRequest.PriceAuxLimit">
+            <summary>
+            Auxiliary Limit price (for STOP LIMIT)
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Orders.UpdateOrderRequest.PriceTrailing">
+            <summary>
+            The trailing price
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Orders.UpdateOrderRequest.Flags">
+            <summary>
+            Additional order configuration, see OrderFlag enum. 
+            You may sum flag values to pass multiple flags. For example passing 4160 (64 + 4096) means hidden post only.
+            Use C# [Flags] to do that: Flags = OrderFlag.Hidden | OrderFlag.PostOnly
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Orders.UpdateOrderRequest.TimeInForce">
+            <summary>
+            Time-In-Force: datetime for automatic order cancellation (ie. 2020-01-01 10:45:23) )
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Requests.RequestBase">
+            <summary>
+            Base class for every request
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.RequestBase.Event">
+            <inheritdoc />
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.RequestBase.EventType">
+            <summary>
+            Unique event type, need to be set in descendants
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Subscriptions.BookSubscribeRequest.Prec">
+            <summary>
+            Level of price aggregation (P0, P1, P2, P3). The default is P0
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Subscriptions.BookSubscribeRequest.Freq">
+            <summary>
+            Frequency of updates (F0, F1).
+            F0=realtime / F1=2sec.
+            The default is F0.
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Subscriptions.BookSubscribeRequest.Len">
+            <summary>
+            Number of price points ("25", "100") [default="25"]
+            </summary>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Requests.Subscriptions.StatusSubscribeRequest.#ctor(System.String)">
+            <summary>
+            Subscribe to and receive different types of platform information - currently supports derivatives pair status and liquidation feed.
+            </summary>
+            <param name="key">"deriv:{symbol}" or "liq:global"</param>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Requests.Subscriptions.SubscribeRequestBase">
+            <summary>
+            Base class for every subscription request
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Subscriptions.SubscribeRequestBase.EventType">
+            <summary>
+            Unique event type - subscribe
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Subscriptions.SubscribeRequestBase.Channel">
+            <summary>
+            Unique channel name
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Requests.Subscriptions.TradesSubscribeRequest">
+            <summary>
+            Subscribe to trades request
+            </summary>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Requests.Subscriptions.TradesSubscribeRequest.#ctor(System.String)">
+            <summary>
+            Subscribe to trades request
+            </summary>
+            <param name="pair">Target pair, for example 'BTC/USD', 'ETH/USD', ETHBTC, etc.</param>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Requests.Subscriptions.UnsubscribeRequest">
+            <summary>
+            Unsubscribe from the channel.
+            You need to subscribe to 'SubscriptionStream' in order to get correct channel id.
+            </summary>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Requests.Subscriptions.UnsubscribeRequest.#ctor">
+            <summary>
+            Unsubscribe from the channel request.
+            Don't forget to set `ChanId`
+            </summary>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Requests.Subscriptions.UnsubscribeRequest.#ctor(System.Int32)">
+            <summary>
+            Unsubscribe from the channel.
+            </summary>
+            <param name="chanId">Target channel id</param>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Subscriptions.UnsubscribeRequest.EventType">
+            <inheritdoc />
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Requests.Subscriptions.UnsubscribeRequest.ChanId">
+            <summary>
+            Target channel id.
+            You need to subscribe to 'SubscriptionStream' in order to get correct channel id.
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.AuthenticationResponse.IsAuthenticated">
+            <summary>
+            Returns true if authentication succeed
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Responses.Balance.BalanceInfo">
+            <summary>
+            Balance response
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Balance.BalanceInfo.TotalAum">
+            <summary>
+            Total Assets Under Management
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Balance.BalanceInfo.NetAum">
+            <summary>
+            Net Assets Under Management
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Responses.Books.Book">
+            <summary>
+            The state of the Bitfinex order book
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Books.Book.Price">
+            <summary>
+            Price level
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Books.Book.Count">
+            <summary>
+            Number of orders at that price level
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Books.Book.Amount">
+            <summary>
+            Total amount available at that price level. 
+            Trading: if AMOUNT greater than 0 then bid else ask; 
+            Funding: if AMOUNT lower than 0 then bid else ask;
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Books.Book.Rate">
+            <summary>
+            Rate level
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Books.Book.Period">
+            <summary>
+            Period level
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Books.Book.Pair">
+            <summary>
+            Target pair
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Responses.ChecksumResponse">
+            <summary>
+            Response with checksum value
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.ChecksumResponse.Checksum">
+            <summary>
+            Checksum value
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.ChecksumResponse.Pair">
+            <summary>
+            Target pair
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Responses.Configurations.ConfigurationResponse">
+            <summary>
+            Info about processed configuration
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Configurations.ConfigurationResponse.Status">
+            <summary>
+            Returns OK if Bitfinex accepted your configuration request
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Configurations.ConfigurationResponse.Flags">
+            <summary>
+            Returns configured flags, see `ConfigurationFlag` enum
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Configurations.ConfigurationResponse.IsConfigured">
+            <summary>
+            True if configuration happened successfully
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Responses.Configurations.ConfigurationState">
+            <summary>
+            State of the enabled features
+            </summary>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Responses.Configurations.ConfigurationState.#ctor">
+            <inheritdoc />
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Responses.Configurations.ConfigurationState.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Select current features and create snapshot
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Responses.Fundings.Funding">
+            <summary>
+            The order that causes the trade determines if it is a buy or a sell.
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Fundings.Funding.Id">
+            <summary>
+            Offer ID
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Fundings.Funding.Mts">
+            <summary>
+            Millisecond time stamp
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Fundings.Funding.Amount">
+            <summary>
+            How much was bought (positive) or sold (negative).
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Fundings.Funding.Rate">
+            <summary>
+            Rate at which funding transaction occurred
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Fundings.Funding.Period">
+            <summary>
+            Amount of time the funding transaction was for
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Fundings.Funding.Type">
+            <summary>
+            Type of the funding
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Fundings.Funding.Symbol">
+            <summary>
+            Target Symbol
+            </summary>        
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Responses.Fundings.FundingType">
+            <summary>
+            Type of the funding
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Fundings.FundingType.Executed">
+            <summary>
+            Initial information (faster)
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Fundings.FundingType.UpdateExecution">
+            <summary>
+            Extended information (slower)
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Responses.Margin.MarginInfo">
+            <summary>
+            Margin response
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Margin.MarginInfo.UserPl">
+            <summary>
+            User Profit and Loss (P/L)
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Margin.MarginInfo.UserSwaps">
+            <summary>
+            Amount of swaps a user has
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Margin.MarginInfo.MarginBalance">
+            <summary>
+            Balance in your margin funding account
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Margin.MarginInfo.MarginNet">
+            <summary>
+            Balance after P/L is accounted for
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Margin.MarginInfo.MarginRequired">
+            <summary>
+            Minimum required margin to keep positions open
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Responses.Notifications.Notification">
+            <summary>
+            Notification response
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Notifications.Notification.Mts">
+            <summary>
+            Timestamp of the update
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Notifications.Notification.Type">
+            <summary>
+            Purpose of the notification
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Notifications.Notification.MessageId">
+            <summary>
+            An unique ID of the message
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Notifications.Notification.NotifyInfo">
+            <summary>
+            A message containing information regarding the notification
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Notifications.Notification.Code">
+            <summary>
+            Work in progress
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Notifications.Notification.Status">
+            <summary>
+            Status of the notification; it may vary over time (SUCCESS, ERROR, FAILURE, ...)
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Notifications.Notification.Text">
+            <summary>
+            Text of the notification
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Responses.Notifications.NotificationType">
+            <summary>
+            Notification type
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Notifications.NotificationType.Undefined">
+            <summary>
+            Unknown type
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Notifications.NotificationType.OnReq">
+            <summary>
+            On a new order request
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Notifications.NotificationType.OcReq">
+            <summary>
+            On cancel order request
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Notifications.NotificationType.Uca">
+            <summary>
+            ???
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Notifications.NotificationType.FonReq">
+            <summary>
+            On a new funding offer request
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Notifications.NotificationType.FocReq">
+            <summary>
+            On cancel funding offer request
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Notifications.NotificationType.OuReq">
+            <summary>
+            On update order request
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Notifications.NotificationType.WalletTransfer">
+            <summary>
+            On wallet transfer (between exchange --> margin --> funding)
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Notifications.NotificationType.PosClose">
+            <summary>
+            On closing a position
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Notifications.NotificationType.DepositNew">
+            <summary>
+            When a new deposit is detected
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Notifications.NotificationType.DepositComplete">
+            <summary>
+            When a deposit has been credited
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Notifications.NotificationType.OnMultiReq">
+            <summary>
+            On multi new order request
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Notifications.NotificationType.OcMultiReq">
+            <summary>
+            On multi cancel order request
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Responses.Orders.Order">
+            <summary>
+            Info about placed order
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Orders.Order.Id">
+            <summary>
+            Order ID
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Orders.Order.Gid">
+            <summary>
+            Group ID
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Orders.Order.Cid">
+            <summary>
+            Client Order ID
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Orders.Order.Symbol">
+            <summary>
+            Pair (tBTCUSD, …)
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Orders.Order.MtsCreate">
+            <summary>
+            Millisecond timestamp of creation
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Orders.Order.MtsUpdate">
+            <summary>
+            Millisecond timestamp of update
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Orders.Order.Amount">
+            <summary>
+            Positive means buy, negative means sell.
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Orders.Order.AmountOrig">
+            <summary>
+            Original amount
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Orders.Order.Type">
+            <summary>
+            The type of the order
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Orders.Order.TypePrev">
+            <summary>
+            Previous order type
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Orders.Order.MtsTiff">
+            <summary>
+            Millisecond timestamp of Time-In-Force: automatic order cancellation
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Orders.Order.Flags">
+            <summary>
+            Hidden | Close | Post Only | Reduce Only | No Var Rates | OCO
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Orders.Order.OrderStatus">
+            <summary>
+            Current order status
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Orders.Order.OrderStatusText">
+            <summary>
+            Raw order status value. Could contain values like:
+            ACTIVE, EXECUTED @ PRICE(AMOUNT) e.g. "EXECUTED @ 107.6(-0.2)",
+            PARTIALLY FILLED @ PRICE(AMOUNT), INSUFFICIENT MARGIN was: PARTIALLY FILLED @ PRICE(AMOUNT),
+            CANCELED, CANCELED was: PARTIALLY FILLED @ PRICE(AMOUNT)
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Orders.Order.Price">
+            <summary>
+            Target price
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Orders.Order.PriceAvg">
+            <summary>
+            Executed average price
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Orders.Order.PriceTrailing">
+            <summary>
+            Target trailing price
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Orders.Order.PriceAuxLimit">
+            <summary>
+            Auxiliary Limit price (for STOP LIMIT)
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Orders.Order.Notify">
+            <summary>
+            Should notify (obsolete, see flags)
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Orders.Order.Hidden">
+            <summary>
+            Is hidden order (obsolete, see flags)
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Orders.Order.PlacedId">
+            <summary>
+            If another order caused this order to be placed (OCO) this will be that other order's ID
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Orders.Order.Pair">
+            <summary>
+            Removes trailing 'f' or 't' and returns raw pair
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Orders.Order.BaseSymbol">
+            <summary>
+            Base symbol (first position: BTC in BTCUSD)
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Orders.Order.QuoteSymbol">
+            <summary>
+            Quote symbol (second position: USD in BTCUSD)
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Orders.Order.IsActive">
+            <summary>
+            Returns true if the <see cref="P:Bitfinex.Client.Websocket.Responses.Orders.Order.OrderStatus"/> represents an active order (placed in the order book)
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Orders.Order.IsInactive">
+            <summary>
+            Returns true if the <see cref="P:Bitfinex.Client.Websocket.Responses.Orders.Order.OrderStatus"/> represents an inactive order (canceled or executed)
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Orders.Order.IsCanceled">
+            <summary>
+            Returns true if the <see cref="P:Bitfinex.Client.Websocket.Responses.Orders.Order.OrderStatus"/> represents a terminated order
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Responses.Orders.OrderStatus">
+            <summary>
+            Current order status
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Orders.OrderStatus.Undefined">
+            <summary>
+            Unknown order status (maybe new API)
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Orders.OrderStatus.Active">
+            <summary>
+            Order is active (placed in the order book)
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Orders.OrderStatus.Executed">
+            <summary>
+            Order was fully executed
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Orders.OrderStatus.PartiallyFilled">
+            <summary>
+            Order was only partially executed (still staying in the order book)
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Orders.OrderStatus.Canceled">
+            <summary>
+            Order was canceled
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Orders.OrderStatus.PostOnlyCanceled">
+            <summary>
+            Order was canceled because it cannot be executed as maker (would be taker)
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Orders.OrderStatus.RsnPosReduceFlip">
+            <summary>
+            (?) Need docs
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Orders.OrderStatus.RsnPosReduceIncr">
+            <summary>
+            (?) Need docs
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Orders.OrderStatus.InsufficientBalance">
+            <summary>
+            Order was canceled because of insufficient funds
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Orders.OrderStatus.InsufficientMargin">
+            <summary>
+            Order was canceled because of insufficient margin
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Responses.Orders.OrderType">
+            <summary>
+            Type of the order
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Orders.OrderType.Undefined">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Orders.OrderType.Limit">
+            <summary>
+            Margin limit (maker) order.
+            A limit order is one of the most basic order types.
+            It allows the trader to specify a price and amount they would like to buy or sell.
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Orders.OrderType.Market">
+            <summary>
+            Margin market (taker) order.
+            A market order is an order type that executes immediately against the best price available.
+            As long as there are willing sellers and buyers, market orders are filled.
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Orders.OrderType.Stop">
+            <summary>
+            Margin stop loss order.
+            A stop order is used to trigger a market sell when the market drops to your trigger (stop) price,
+            or used to trigger a market buy if the market rises to your trigger (stop) price.
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Orders.OrderType.TrailingStop">
+            <summary>
+            Margin trailing stop loss order.
+            A trailing stop order provides flexibility over a stop order by executing
+            once the market goes against you by a defined price, called the price distance.
+            When margin trading, a trailing stop sell order can be used to protect profit.
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Orders.OrderType.ExchangeLimit">
+            <summary>
+            Spot limit (maker) order.
+            A limit order is one of the most basic order types.
+            It allows the trader to specify a price and amount they would like to buy or sell.
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Orders.OrderType.ExchangeMarket">
+            <summary>
+            Spot market (taker) order.
+            A market order is an order type that executes immediately against the best price available.
+            As long as there are willing sellers and buyers, market orders are filled.
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Orders.OrderType.ExchangeStop">
+            <summary>
+            Spot stop loss order.
+            A stop order is used to trigger a market sell when the market drops to your trigger (stop) price,
+            or used to trigger a market buy if the market rises to your trigger (stop) price.
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Orders.OrderType.ExchangeTrailingStop">
+            <summary>
+            Spot trailing stop loss order.
+            A trailing stop order provides flexibility over a stop order by executing
+            once the market goes against you by a defined price, called the price distance.
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Orders.OrderType.Fok">
+            <summary>
+            Margin fill or kill order.
+            A "fill or kill" order is a limit order that must be filled immediately in its entirety or it is canceled (killed).
+            The purpose of a fill or kill order is to ensure that a position is entered instantly and at a specific price.
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Orders.OrderType.ExchangeFok">
+            <summary>
+            Spot fill or kill order.
+            A "fill or kill" order is a limit order that must be filled immediately in its entirety or it is canceled (killed).
+            The purpose of a fill or kill order is to ensure that a position is entered instantly and at a specific price.
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Orders.OrderType.StopLimit">
+            <summary>
+            A margin stop-limit order executes as a limit order within a specific price range (buy or sell limit price or better)
+            and not as a market order.
+            With a stop-limit, the trader sets a stop price at which the order is triggered
+            and a limit price at which the order may be filled.
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Orders.OrderType.ExchangeStopLimit">
+            <summary>
+            A spot stop-limit order executes as a limit order within a specific price range (buy or sell limit price or better)
+            and not as a market order.
+            With a stop-limit, the trader sets a stop price at which the order is triggered
+            and a limit price at which the order may be filled.
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Responses.Positions.MarginFundingType">
+            <summary>
+            Type of the margin funding (borrowed assets/money)
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Positions.MarginFundingType.Undefined">
+            <summary>
+            Not known type (failed to parse or received null)
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Positions.MarginFundingType.Daily">
+            <summary>
+            Funding is taken daily
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Positions.MarginFundingType.Term">
+            <summary>
+            Funding is taken at the end of term
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Responses.Positions.Position">
+            <summary>
+            Info about taken position
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Positions.Position.Symbol">
+            <summary>
+            Pair (tBTCUSD, etc). 
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Positions.Position.Status">
+            <summary>
+            Status (ACTIVE, CLOSED).
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Positions.Position.Amount">
+            <summary>
+            Size of the position. Positive values means a long position, negative values means a short position. 0 means position closed.
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Positions.Position.BasePrice">
+            <summary>
+            The price at which you entered your position.
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Positions.Position.MarginFunding">
+            <summary>
+            The amount of funding being used for this position.
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Positions.Position.MarginFundingType">
+            <summary>
+            Margin funding type (daily or term)
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Bitfinex.Client.Websocket.Responses.Positions.Position.ProfitLoss" -->
+        <!-- Badly formed XML comment ignored for member "P:Bitfinex.Client.Websocket.Responses.Positions.Position.ProfitLossPercentage" -->
+        <member name="P:Bitfinex.Client.Websocket.Responses.Positions.Position.LiquidationPrice">
+            <summary>
+            Liquidation price
+            Could equal to "null" meaning that the new calculated value is not yet available.
+            In order to receive those values the user have to actively request for it with a "calc" message.
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Positions.Position.Pair">
+            <summary>
+            Removes trailing 'f' or 't' and returns raw pair
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Positions.Position.BaseSymbol">
+            <summary>
+            Base symbol (first position: BTC in BTCUSD)
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Positions.Position.QuoteSymbol">
+            <summary>
+            Quote symbol (second position: USD in BTCUSD)
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Responses.Positions.PositionStatus">
+            <summary>
+            Status  of the position
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Positions.PositionStatus.Undefined">
+            <summary>
+            Not known status (failed to parse or received null)
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Positions.PositionStatus.Active">
+            <summary>
+            Position is active
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Positions.PositionStatus.Closed">
+            <summary>
+            Position is closed
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Responses.ResponseBase">
+            <summary>
+            Base class for every response
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.ResponseBase.ChanId">
+            <summary>
+            Unique channel id for this type of response.
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.ResponseBase.ServerSequence">
+            <summary>
+            Server unique sequence number (in most cases not needed, because of TCP/IP delivery guarantees). 
+            Sequencing must be enabled by configuration (see `ConfigurationRequest`). 
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.ResponseBase.ServerPrivateSequence">
+            <summary>
+            Server unique sequence number for authenticated/private channels.
+            Sequencing must be enabled by configuration (see `ConfigurationRequest`). 
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.ResponseBase.ServerTimestamp">
+            <summary>
+            Server timestamp. 
+            Timestamp must be enabled by configuration (see `ConfigurationRequest`). 
+            </summary>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Responses.ResponseBase.SetGlobalData(Bitfinex.Client.Websocket.Responses.ResponseBase,Bitfinex.Client.Websocket.Responses.Configurations.ConfigurationState,Newtonsoft.Json.Linq.JToken,System.Int32,System.Boolean)">
+            <summary>
+            Sets global data (timestamp, sequence) if it is enabled by configuration.
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Responses.Status.DerivativePairStatus">
+            <summary>
+            Derivative pair status
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Status.DerivativePairStatus.TimestampMs">
+            <summary>
+            Millisecond timestamp
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Status.DerivativePairStatus.DerivPrice">
+            <summary>
+            Derivative last traded price.
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Status.DerivativePairStatus.SpotPrice">
+            <summary>
+            Last traded price of the underlying Bitfinex spot trading pair
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Status.DerivativePairStatus.InsuranceFundBalance">
+            <summary>
+            The balance available to the liquidation engine to absorb losses.
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Status.DerivativePairStatus.FundingAccrued">
+            <summary>
+            ?
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Status.DerivativePairStatus.Symbol">
+            <summary>
+            Derivative symbol
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Status.DerivativePairStatus.FundingStep">
+            <summary>
+            ?
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Responses.Status.LiquidationFeedStatus">
+            <summary>
+            Liquidation feed updates
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Status.LiquidationFeedStatus.Type">
+            <summary>
+            ?
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Status.LiquidationFeedStatus.PosId">
+            <summary>
+            Position id
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Status.LiquidationFeedStatus.TimestampMs">
+            <summary>
+            Millisecond timestamp
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Status.LiquidationFeedStatus.Symbol">
+            <summary>
+            Symbol
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Status.LiquidationFeedStatus.Amount">
+            <summary>
+            Amount of the position
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Status.LiquidationFeedStatus.BasePrice">
+            <summary>
+            The price of the position.
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Status.LiquidationFeedStatus.IsMatch">
+            <summary>
+            0 -> initial liquidation trigger, 1 market execution
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Status.LiquidationFeedStatus.IsMarketSold">
+            <summary>
+            0 -> direct sell into the market, 1 position acquired by the system
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Responses.SubscribedResponse">
+            <summary>
+            Information about subscription
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.SubscribedResponse.Channel">
+            <summary>
+            Channel name (trades, ticker. etc)
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.SubscribedResponse.ChanId">
+            <summary>
+            Unique channel id, you need to store this value in order to future unsubscription
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.SubscribedResponse.Pair">
+            <summary>
+            Target subscription pair
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.SubscribedResponse.Symbol">
+            <summary>
+            Target subscription symbol
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.SubscribedResponse.Key">
+            <summary>
+            Target key
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Responses.Tickers.Ticker">
+            <summary>
+            Current price (bid, ask) and statistics for target pair
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Tickers.Ticker.Bid">
+            <summary>
+            Price of last highest bid
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Tickers.Ticker.BidSize">
+            <summary>
+            Size of the last highest bid
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Tickers.Ticker.Ask">
+            <summary>
+            Price of last lowest ask
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Tickers.Ticker.AskSize">
+            <summary>
+            Size of the last lowest ask
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Tickers.Ticker.DailyChange">
+            <summary>
+            Amount that the last price has changed since yesterday
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Tickers.Ticker.DailyChangePercent">
+            <summary>
+            Amount that the price has changed expressed in percentage terms
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Tickers.Ticker.LastPrice">
+            <summary>
+            Price of the last trade
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Tickers.Ticker.Volume">
+            <summary>
+            Daily volume
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Tickers.Ticker.High">
+            <summary>
+            Daily high
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Tickers.Ticker.Low">
+            <summary>
+            Daily low
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Tickers.Ticker.Pair">
+            <summary>
+            Target pair
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Responses.Trades.Trade">
+            <summary>
+            The order that causes the trade determines if it is a buy or a sell.
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Trades.Trade.Id">
+            <summary>
+            Trade id
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Trades.Trade.Mts">
+            <summary>
+            Millisecond time stamp
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Trades.Trade.Amount">
+            <summary>
+            How much was bought (positive) or sold (negative).
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Trades.Trade.Price">
+            <summary>
+            Price at which the trade was executed
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Trades.Trade.Rate">
+            <summary>
+            Rate at which funding transaction occurred
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Trades.Trade.Period">
+            <summary>
+            Amount of time the funding transaction was for
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Trades.Trade.Type">
+            <summary>
+            Type of the trade
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Trades.Trade.Pair">
+            <summary>
+            Target pair
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Responses.Trades.TradeType">
+            <summary>
+            Type of the trade
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Trades.TradeType.Executed">
+            <summary>
+            Initial information (faster)
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Responses.Trades.TradeType.UpdateExecution">
+            <summary>
+            Extended information (slower)
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Responses.TradesPrivate.PrivateTrade">
+            <summary>
+            The order that causes the trade determines if it is a buy or a sell.
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.TradesPrivate.PrivateTrade.Id">
+            <summary>
+            Trade id
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.TradesPrivate.PrivateTrade.Symbol">
+            <summary>
+            Symbol (tBTCUSD, etc)
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.TradesPrivate.PrivateTrade.MtsCreate">
+            <summary>
+            Execution timestamp
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.TradesPrivate.PrivateTrade.OrderId">
+            <summary>
+            Order id
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.TradesPrivate.PrivateTrade.ExecAmount">
+            <summary>
+            How much was bought (positive) or sold (negative).
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.TradesPrivate.PrivateTrade.ExecPrice">
+            <summary>
+            Price at which the trade was executed
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.TradesPrivate.PrivateTrade.OrderType">
+            <summary>
+            Origin order type
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.TradesPrivate.PrivateTrade.OrderPrice">
+            <summary>
+            Origin order target price
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.TradesPrivate.PrivateTrade.IsMaker">
+            <summary>
+            True if maker order (post-only)
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.TradesPrivate.PrivateTrade.Fee">
+            <summary>
+            Taken fee
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.TradesPrivate.PrivateTrade.FeeCurrency">
+            <summary>
+            Taken fee currency
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.TradesPrivate.PrivateTrade.Type">
+            <summary>
+            Type of the trade
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.TradesPrivate.PrivateTrade.Pair">
+            <summary>
+            Target pair
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Responses.UnsubscribedResponse">
+            <summary>
+            Information about unsubscription
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.UnsubscribedResponse.ChanId">
+            <summary>
+            Unique channel id, you need to store this value in order to future unsubscription
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.UnsubscribedResponse.Status">
+            <summary>
+            Unsubscription status
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.UnsubscribedResponse.IsUnsubscribed">
+            <summary>
+            True if unsubscription success
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Responses.Wallets.Wallet">
+            <summary>
+            Wallet info, displays current balance of the currency.
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Wallets.Wallet.Type">
+            <summary>
+            Wallet name (exchange, margin, funding)
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Wallets.Wallet.Currency">
+            <summary>
+            Currency (fUSD, etc)
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Wallets.Wallet.Balance">
+            <summary>
+            Wallet balance
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Wallets.Wallet.UnsettledInterest">
+            <summary>
+            Unsettled interest
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Responses.Wallets.Wallet.BalanceAvailable">
+            <summary>
+            Amount not tied up in active orders, positions or funding (null if the value is not fresh enough).
+            In order to receive those values the user have to actively request for it with a "calc" message.
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Utils.BitfinexSymbolUtils">
+            <summary>
+            Utils for Bitfinex symbols, pairs formatting
+            </summary>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Utils.BitfinexSymbolUtils.FormatPairToTradingSymbol(System.String)">
+            <summary>
+            Format pair into Bitfinex trading symbol (BTC/USD --> tBTCUSD)
+            </summary>
+            <param name="pair">BTC/USD, BTCUSD, etc</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Utils.BitfinexSymbolUtils.FormatSymbolToFunding(System.String)">
+            <summary>
+            Format symbol into Bitfinex funding symbol (BTC --> fBTC)
+            </summary>
+            <param name="symbol">BTC, USD, etc</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Utils.BitfinexSymbolUtils.ExtractPair(System.String)">
+            <summary>
+            Extract pair from symbol (tBTCUSD --> BTCUSD)
+            </summary>
+            <param name="symbol">tBTCUSD, fbtcusd, etc</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Utils.BitfinexSymbolUtils.ExtractBaseSymbol(System.String)">
+            <summary>
+            Extract base symbol from pair (BTCUSD --> BTC)
+            </summary>
+            <param name="pair">BTC/USD, BTCUSD, etc</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Utils.BitfinexSymbolUtils.ExtractQuoteSymbol(System.String)">
+            <summary>
+            Extract quote symbol from pair (BTCUSD --> USD)
+            </summary>
+            <param name="pair">BTC/USD, BTCUSD, etc</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Utils.BitfinexSymbolUtils.FormatPair(System.String)">
+            <summary>
+            Format pair into unified style (btc/usd --> BTCUSD)
+            </summary>
+            <param name="pair"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Utils.BitfinexTime">
+            <summary>
+            Utils for UNIX time
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Utils.BitfinexTime.UnixBase">
+            <summary>
+            UNIX base
+            </summary>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Utils.BitfinexTime.NowMs">
+            <summary>
+            Now in UNIX time
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Utils.BitfinexTime.ConvertToTime(System.Int64)">
+            <summary>
+            Convert UNIX time to DateTime
+            </summary>
+            <param name="timeInMs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Utils.BitfinexTime.ConvertToTime(System.Nullable{System.Int64})">
+            <summary>
+            Convert UNIX time to DateTime or null
+            </summary>
+            <param name="timeInMs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Validations.BfxValidations.ValidateInput(System.String,System.String)">
+            <summary>
+            It throws <exception cref="T:Bitfinex.Client.Websocket.Exceptions.BitfinexBadInputException"></exception> if value is null or empty/white spaces
+            </summary>
+            <param name="value">The value to be validated</param>
+            <param name="name">Input parameter name</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Validations.BfxValidations.ValidateInput``1(``0,System.String)">
+            <summary>
+            It throws <exception cref="T:Bitfinex.Client.Websocket.Exceptions.BitfinexBadInputException"></exception> if value is null
+            </summary>
+            <param name="value">The value to be validated</param>
+            <param name="name">Input parameter name</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Validations.BfxValidations.ValidateInputCollection``1(System.Collections.Generic.IEnumerable{``0},System.String)">
+            <summary>
+            It throws <exception cref="T:Bitfinex.Client.Websocket.Exceptions.BitfinexBadInputException"></exception> if collection is null or collection is empty
+            </summary>
+            <param name="collection">The collection to be validated</param>
+            <param name="name">Input parameter name</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Validations.BfxValidations.ValidateInput(System.Int32,System.String,System.Int32,System.Int32)">
+            <summary>
+            It throws <exception cref="T:Bitfinex.Client.Websocket.Exceptions.BitfinexBadInputException"></exception> if value is not in specified range
+            </summary>
+            <param name="value">The value to be validated</param>
+            <param name="name">Input parameter name</param>
+            <param name="minValue">Minimal value of input</param>
+            <param name="maxValue">Maximum value of input</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Validations.BfxValidations.ValidateInput(System.Int64,System.String,System.Int64,System.Int64)">
+            <summary>
+            It throws <exception cref="T:Bitfinex.Client.Websocket.Exceptions.BitfinexBadInputException"></exception> if value is not in specified range
+            </summary>
+            <param name="value">The value to be validated</param>
+            <param name="name">Input parameter name</param>
+            <param name="minValue">Minimal value of input</param>
+            <param name="maxValue">Maximum value of input</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Validations.BfxValidations.ValidateInput(System.Double,System.String,System.Double,System.Double)">
+            <summary>
+            It throws <exception cref="T:Bitfinex.Client.Websocket.Exceptions.BitfinexBadInputException"></exception> if value is not in specified range
+            </summary>
+            <param name="value">The value to be validated</param>
+            <param name="name">Input parameter name</param>
+            <param name="minValue">Minimal value of input</param>
+            <param name="maxValue">Maximum value of input</param>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Websockets.BitfinexWebsocketCommunicator">
+            <inheritdoc cref="T:Websocket.Client.WebsocketClient" />
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Websockets.BitfinexWebsocketCommunicator.#ctor(System.Uri,System.Func{System.Net.WebSockets.ClientWebSocket})">
+            <inheritdoc />
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Logging.ILog">
+            <summary>
+                Simple interface that represent a logger.
+            </summary>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.ILog.Log(Bitfinex.Client.Websocket.Logging.LogLevel,System.Func{System.String},System.Exception,System.Object[])">
+            <summary>
+                Log a message the specified log level.
+            </summary>
+            <param name="logLevel">The log level.</param>
+            <param name="messageFunc">The message function.</param>
+            <param name="exception">An optional exception.</param>
+            <param name="formatParameters">Optional format parameters for the message generated by the messagefunc. </param>
+            <returns>true if the message was logged. Otherwise false.</returns>
+            <remarks>
+                Note to implementers: the message func should not be called if the loglevel is not enabled
+                so as not to incur performance penalties.
+                To check IsEnabled call Log with only LogLevel and check the return value, no event will be written.
+            </remarks>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Logging.ILogProvider">
+            <summary>
+            Represents a way to get a <see cref="T:Bitfinex.Client.Websocket.Logging.Logger"/>
+            </summary>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.ILogProvider.GetLogger(System.String)">
+            <summary>
+            Gets the specified named logger.
+            </summary>
+            <param name="name">Name of the logger.</param>
+            <returns>The logger reference.</returns>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.ILogProvider.OpenNestedContext(System.String)">
+            <summary>
+            Opens a nested diagnostics context. Not supported in EntLib logging.
+            </summary>
+            <param name="message">The message to add to the diagnostics context.</param>
+            <returns>A disposable that when disposed removes the message from the context.</returns>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.ILogProvider.OpenMappedContext(System.String,System.Object,System.Boolean)">
+            <summary>
+            Opens a mapped diagnostics context. Not supported in EntLib logging.
+            </summary>
+            <param name="key">A key.</param>
+            <param name="value">A value.</param>
+            <param name="destructure">Determines whether to call the destructor or not.</param>
+            <returns>A disposable that when disposed removes the map from the context.</returns>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Logging.LogExtensions">
+            <summary>
+                Extension methods for the <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> interface.
+            </summary>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.IsDebugEnabled(Bitfinex.Client.Websocket.Logging.ILog)">
+            <summary>
+                Check if the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Debug"/> log level is enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to check with.</param>
+            <returns>True if the log level is enabled; false otherwise.</returns>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.IsErrorEnabled(Bitfinex.Client.Websocket.Logging.ILog)">
+            <summary>
+                Check if the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Error"/> log level is enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to check with.</param>
+            <returns>True if the log level is enabled; false otherwise.</returns>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.IsFatalEnabled(Bitfinex.Client.Websocket.Logging.ILog)">
+            <summary>
+                Check if the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Fatal"/> log level is enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to check with.</param>
+            <returns>True if the log level is enabled; false otherwise.</returns>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.IsInfoEnabled(Bitfinex.Client.Websocket.Logging.ILog)">
+            <summary>
+                Check if the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Info"/> log level is enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to check with.</param>
+            <returns>True if the log level is enabled; false otherwise.</returns>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.IsTraceEnabled(Bitfinex.Client.Websocket.Logging.ILog)">
+            <summary>
+                Check if the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Trace"/> log level is enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to check with.</param>
+            <returns>True if the log level is enabled; false otherwise.</returns>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.IsWarnEnabled(Bitfinex.Client.Websocket.Logging.ILog)">
+            <summary>
+                Check if the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Warn"/> log level is enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to check with.</param>
+            <returns>True if the log level is enabled; false otherwise.</returns>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.Debug(Bitfinex.Client.Websocket.Logging.ILog,System.Func{System.String})">
+            <summary>
+                Logs a message at the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Debug"/> log level, if enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to use.</param>
+            <param name="messageFunc">The message function.</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.Debug(Bitfinex.Client.Websocket.Logging.ILog,System.String)">
+            <summary>
+                Logs a message at the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Debug"/> log level, if enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to use.</param>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.Debug(Bitfinex.Client.Websocket.Logging.ILog,System.String,System.Object[])">
+            <summary>
+                Logs a message at the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Debug"/> log level, if enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to use.</param>
+            <param name="message">The message.</param>
+            <param name="args">Optional format parameters for the message.</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.Debug(Bitfinex.Client.Websocket.Logging.ILog,System.Exception,System.String,System.Object[])">
+            <summary>
+                Logs an exception at the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Debug"/> log level, if enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to use.</param>
+            <param name="exception">The exception.</param>
+            <param name="message">The message.</param>
+            <param name="args">Optional format parameters for the message.</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.DebugFormat(Bitfinex.Client.Websocket.Logging.ILog,System.String,System.Object[])">
+            <summary>
+                Logs a message at the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Debug"/> log level, if enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to use.</param>
+            <param name="message">The message.</param>
+            <param name="args">Optional format parameters for the message.</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.DebugException(Bitfinex.Client.Websocket.Logging.ILog,System.String,System.Exception)">
+            <summary>
+                Logs an exception at the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Debug"/> log level, if enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to use.</param>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.DebugException(Bitfinex.Client.Websocket.Logging.ILog,System.String,System.Exception,System.Object[])">
+            <summary>
+                Logs an exception at the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Debug"/> log level, if enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to use.</param>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+            <param name="args">Optional format parameters for the message.</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.Error(Bitfinex.Client.Websocket.Logging.ILog,System.Func{System.String})">
+            <summary>
+                Logs a message at the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Error"/> log level, if enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to use.</param>
+            <param name="messageFunc">The message function.</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.Error(Bitfinex.Client.Websocket.Logging.ILog,System.String)">
+            <summary>
+                Logs a message at the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Error"/> log level, if enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to use.</param>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.Error(Bitfinex.Client.Websocket.Logging.ILog,System.String,System.Object[])">
+            <summary>
+                Logs a message at the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Error"/> log level, if enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to use.</param>
+            <param name="message">The message.</param>
+            <param name="args">Optional format parameters for the message.</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.Error(Bitfinex.Client.Websocket.Logging.ILog,System.Exception,System.String,System.Object[])">
+            <summary>
+                Logs an exception at the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Error"/> log level, if enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to use.</param>
+            <param name="exception">The exception.</param>
+            <param name="message">The message.</param>
+            <param name="args">Optional format parameters for the message.</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.ErrorFormat(Bitfinex.Client.Websocket.Logging.ILog,System.String,System.Object[])">
+            <summary>
+                Logs a message at the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Error"/> log level, if enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to use.</param>
+            <param name="message">The message.</param>
+            <param name="args">Optional format parameters for the message.</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.ErrorException(Bitfinex.Client.Websocket.Logging.ILog,System.String,System.Exception,System.Object[])">
+            <summary>
+                Logs an exception at the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Error"/> log level, if enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to use.</param>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+            <param name="args">Optional format parameters for the message.</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.Fatal(Bitfinex.Client.Websocket.Logging.ILog,System.Func{System.String})">
+            <summary>
+                Logs a message at the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Fatal"/> log level, if enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to use.</param>
+            <param name="messageFunc">The message function.</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.Fatal(Bitfinex.Client.Websocket.Logging.ILog,System.String)">
+            <summary>
+                Logs a message at the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Fatal"/> log level, if enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to use.</param>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.Fatal(Bitfinex.Client.Websocket.Logging.ILog,System.String,System.Object[])">
+            <summary>
+                Logs a message at the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Fatal"/> log level, if enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to use.</param>
+            <param name="message">The message.</param>
+            <param name="args">Optional format parameters for the message.</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.Fatal(Bitfinex.Client.Websocket.Logging.ILog,System.Exception,System.String,System.Object[])">
+            <summary>
+                Logs an exception at the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Fatal"/> log level, if enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to use.</param>
+            <param name="exception">The exception.</param>
+            <param name="message">The message.</param>
+            <param name="args">Optional format parameters for the message.</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.FatalFormat(Bitfinex.Client.Websocket.Logging.ILog,System.String,System.Object[])">
+            <summary>
+                Logs a message at the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Fatal"/> log level, if enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to use.</param>
+            <param name="message">The message.</param>
+            <param name="args">Optional format parameters for the message.</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.FatalException(Bitfinex.Client.Websocket.Logging.ILog,System.String,System.Exception,System.Object[])">
+            <summary>
+                Logs an exception at the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Fatal"/> log level, if enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to use.</param>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+            <param name="args">Optional format parameters for the message.</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.Info(Bitfinex.Client.Websocket.Logging.ILog,System.Func{System.String})">
+            <summary>
+                Logs a message at the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Info"/> log level, if enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to use.</param>
+            <param name="messageFunc">The message function.</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.Info(Bitfinex.Client.Websocket.Logging.ILog,System.String)">
+            <summary>
+                Logs a message at the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Info"/> log level, if enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to use.</param>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.Info(Bitfinex.Client.Websocket.Logging.ILog,System.String,System.Object[])">
+            <summary>
+                Logs a message at the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Info"/> log level, if enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to use.</param>
+            <param name="message">The message.</param>
+            <param name="args">Optional format parameters for the message.</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.Info(Bitfinex.Client.Websocket.Logging.ILog,System.Exception,System.String,System.Object[])">
+            <summary>
+                Logs an exception at the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Info"/> log level, if enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to use.</param>
+            <param name="exception">The exception.</param>
+            <param name="message">The message.</param>
+            <param name="args">Optional format parameters for the message.</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.InfoFormat(Bitfinex.Client.Websocket.Logging.ILog,System.String,System.Object[])">
+            <summary>
+                Logs a message at the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Info"/> log level, if enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to use.</param>
+            <param name="message">The message.</param>
+            <param name="args">Optional format parameters for the message.</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.InfoException(Bitfinex.Client.Websocket.Logging.ILog,System.String,System.Exception,System.Object[])">
+            <summary>
+                Logs an exception at the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Info"/> log level, if enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to use.</param>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+            <param name="args">Optional format parameters for the message.</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.Trace(Bitfinex.Client.Websocket.Logging.ILog,System.Func{System.String})">
+            <summary>
+                Logs a message at the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Trace"/> log level, if enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to use.</param>
+            <param name="messageFunc">The message function.</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.Trace(Bitfinex.Client.Websocket.Logging.ILog,System.String)">
+            <summary>
+                Logs a message at the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Trace"/> log level, if enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to use.</param>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.Trace(Bitfinex.Client.Websocket.Logging.ILog,System.String,System.Object[])">
+            <summary>
+                Logs a message at the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Trace"/> log level, if enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to use.</param>
+            <param name="message">The message.</param>
+            <param name="args">Optional format parameters for the message.</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.Trace(Bitfinex.Client.Websocket.Logging.ILog,System.Exception,System.String,System.Object[])">
+            <summary>
+                Logs an exception at the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Trace"/> log level, if enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to use.</param>
+            <param name="exception">The exception.</param>
+            <param name="message">The message.</param>
+            <param name="args">Optional format parameters for the message.</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.TraceFormat(Bitfinex.Client.Websocket.Logging.ILog,System.String,System.Object[])">
+            <summary>
+                Logs a message at the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Trace"/> log level, if enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to use.</param>
+            <param name="message">The message.</param>
+            <param name="args">Optional format parameters for the message.</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.TraceException(Bitfinex.Client.Websocket.Logging.ILog,System.String,System.Exception,System.Object[])">
+            <summary>
+                Logs an exception at the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Trace"/> log level, if enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to use.</param>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+            <param name="args">Optional format parameters for the message.</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.Warn(Bitfinex.Client.Websocket.Logging.ILog,System.Func{System.String})">
+            <summary>
+                Logs a message at the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Warn"/> log level, if enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to use.</param>
+            <param name="messageFunc">The message function.</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.Warn(Bitfinex.Client.Websocket.Logging.ILog,System.String)">
+            <summary>
+                Logs a message at the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Warn"/> log level, if enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to use.</param>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.Warn(Bitfinex.Client.Websocket.Logging.ILog,System.String,System.Object[])">
+            <summary>
+                Logs a message at the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Warn"/> log level, if enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to use.</param>
+            <param name="message">The message.</param>
+            <param name="args">Optional format parameters for the message.</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.Warn(Bitfinex.Client.Websocket.Logging.ILog,System.Exception,System.String,System.Object[])">
+            <summary>
+                Logs an exception at the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Warn"/> log level, if enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to use.</param>
+            <param name="exception">The exception.</param>
+            <param name="message">The message.</param>
+            <param name="args">Optional format parameters for the message.</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.WarnFormat(Bitfinex.Client.Websocket.Logging.ILog,System.String,System.Object[])">
+            <summary>
+                Logs a message at the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Warn"/> log level, if enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to use.</param>
+            <param name="message">The message.</param>
+            <param name="args">Optional format parameters for the message.</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogExtensions.WarnException(Bitfinex.Client.Websocket.Logging.ILog,System.String,System.Exception,System.Object[])">
+            <summary>
+                Logs an exception at the <see cref="F:Bitfinex.Client.Websocket.Logging.LogLevel.Warn"/> log level, if enabled.
+            </summary>
+            <param name="logger">The <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/> to use.</param>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+            <param name="args">Optional format parameters for the message.</param>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Logging.LogLevel">
+            <summary>
+                The log level.
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Logging.LogLevel.Trace">
+            <summary>
+            Trace
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Logging.LogLevel.Debug">
+            <summary>
+            Debug
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Logging.LogLevel.Info">
+            <summary>
+            Info
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Logging.LogLevel.Warn">
+            <summary>
+            Warn
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Logging.LogLevel.Error">
+            <summary>
+            Error
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Logging.LogLevel.Fatal">
+            <summary>
+            Fatal
+            </summary>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Logging.LogProvider">
+            <summary>
+            Provides a mechanism to set the <see cref="T:Bitfinex.Client.Websocket.Logging.ILogProvider" />.
+            </summary>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogProvider.SetCurrentLogProvider(Bitfinex.Client.Websocket.Logging.ILogProvider)">
+            <summary>
+            Sets the current log provider.
+            </summary>
+            <param name="logProvider">The log provider.</param>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Logging.LogProvider.IsDisabled">
+            <summary>
+            Gets or sets a value indicating whether this is logging is disabled.
+            </summary>
+            <value>
+            <c>true</c> if logging is disabled; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Logging.LogProvider.OnCurrentLogProviderSet">
+            <summary>
+            Sets an action that is invoked when a consumer of your library has called SetCurrentLogProvider. It is 
+            important that hook into this if you are using child libraries (especially ilmerged ones) that are using
+            LibLog (or other logging abstraction) so you adapt and delegate to them.
+            <see cref="M:Bitfinex.Client.Websocket.Logging.LogProvider.SetCurrentLogProvider(Bitfinex.Client.Websocket.Logging.ILogProvider)"/> 
+            </summary>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogProvider.For``1">
+            <summary>
+            Gets a logger for the specified type.
+            </summary>
+            <typeparam name="T">The type whose name will be used for the logger.</typeparam>
+            <returns>An instance of <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/></returns>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogProvider.GetCurrentClassLogger">
+            <summary>
+            Gets a logger for the current class.
+            </summary>
+            <returns>An instance of <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/></returns>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogProvider.GetLogger(System.Type,System.String)">
+            <summary>
+            Gets a logger for the specified type.
+            </summary>
+            <param name="type">The type whose name will be used for the logger.</param>
+            <param name="fallbackTypeName">If the type is null then this name will be used as the log name instead</param>
+            <returns>An instance of <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/></returns>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogProvider.GetLogger(System.String)">
+            <summary>
+            Gets a logger with the specified name.
+            </summary>
+            <param name="name">The name.</param>
+            <returns>An instance of <see cref="T:Bitfinex.Client.Websocket.Logging.ILog"/></returns>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogProvider.OpenNestedContext(System.String)">
+            <summary>
+            Opens a nested diagnostics context.
+            </summary>
+            <param name="message">A message.</param>
+            <returns>An <see cref="T:System.IDisposable"/> that closes context when disposed.</returns>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogProvider.OpenMappedContext(System.String,System.Object,System.Boolean)">
+            <summary>
+            Opens a mapped diagnostics context.
+            </summary>
+            <param name="key">A key.</param>
+            <param name="value">A value.</param>
+            <param name="destructure">A optional paramater to indicate message should be destructured.</param>
+            <returns>An <see cref="T:System.IDisposable"/> that closes context when disposed.</returns>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Logging.LogProviders.LibLogException">
+            <summary>
+            Exception thrown by LibLog.
+            </summary>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogProviders.LibLogException.#ctor(System.String)">
+            <summary>
+            Initializes a new LibLogException with the specified message.
+            </summary>
+            <param name="message">The message</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogProviders.LibLogException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new LibLogException with the specified message and inner exception.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="inner">The inner exception.</param>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogProviders.LogMessageFormatter.SimulateStructuredLogging(System.Func{System.String},System.Object[])">
+            <summary>
+                Some logging frameworks support structured logging, such as serilog. This will allow you to add names to structured
+                data in a format string:
+                For example: Log("Log message to {user}", user). This only works with serilog, but as the user of LibLog, you don't
+                know if serilog is actually
+                used. So, this class simulates that. it will replace any text in {curly braces} with an index number.
+                "Log {message} to {user}" would turn into => "Log {0} to {1}". Then the format parameters are handled using regular
+                .net string.Format.
+            </summary>
+            <param name="messageBuilder">The message builder.</param>
+            <param name="formatParameters">The format parameters.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Logging.LogProviders.LogProviderBase">
+            <summary>
+                Base class for specific log providers.
+            </summary>
+        </member>
+        <member name="F:Bitfinex.Client.Websocket.Logging.LogProviders.LogProviderBase.ErrorInitializingProvider">
+            <summary>
+                Error message should initializing the log provider fail.
+            </summary>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogProviders.LogProviderBase.#ctor">
+            <summary>
+                Initialize an instance of the <see cref="T:Bitfinex.Client.Websocket.Logging.LogProviders.LogProviderBase"/> class by initializing the references
+                to the nested and mapped diagnostics context-obtaining functions.
+            </summary>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogProviders.LogProviderBase.GetLogger(System.String)">
+            <summary>
+            Gets the specified named logger.
+            </summary>
+            <param name="name">Name of the logger.</param>
+            <returns>The logger reference.</returns>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogProviders.LogProviderBase.OpenNestedContext(System.String)">
+            <summary>
+            Opens a nested diagnostics context. Not supported in EntLib logging.
+            </summary>
+            <param name="message">The message to add to the diagnostics context.</param>
+            <returns>A disposable that when disposed removes the message from the context.</returns>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogProviders.LogProviderBase.OpenMappedContext(System.String,System.Object,System.Boolean)">
+            <summary>
+            Opens a mapped diagnostics context. Not supported in EntLib logging.
+            </summary>
+            <param name="key">A key.</param>
+            <param name="value">A value.</param>
+            <param name="destructure">Determines whether to call the destructor or not.</param>
+            <returns>A disposable that when disposed removes the map from the context.</returns>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogProviders.LogProviderBase.GetOpenNdcMethod">
+            <summary>
+                Returns the provider-specific method to open a nested diagnostics context.
+            </summary>
+            <returns>A provider-specific method to open a nested diagnostics context.</returns>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogProviders.LogProviderBase.GetOpenMdcMethod">
+            <summary>
+                Returns the provider-specific method to open a mapped diagnostics context.
+            </summary>
+            <returns>A provider-specific method to open a mapped diagnostics context.</returns>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Logging.LogProviders.LogProviderBase.OpenNdc">
+            <summary>
+                Delegate defining the signature of the method opening a nested diagnostics context.
+            </summary>
+            <param name="message">The message to add to the diagnostics context.</param>
+            <returns>A disposable that when disposed removes the message from the context.</returns>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Logging.LogProviders.LogProviderBase.OpenMdc">
+            <summary>
+                Delegate defining the signature of the method opening a mapped diagnostics context.
+            </summary>
+            <param name="key">A key.</param>
+            <param name="value">A value.</param>
+            <param name="destructure">Determines whether to call the destructor or not.</param>
+            <returns>A disposable that when disposed removes the map from the context.</returns>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogProviders.LogProviderBase.FindType(System.String,System.String)">
+            <summary>
+                Finds a type using a type name and assembly name.
+            </summary>
+            <param name="typeName">The name of the type.</param>
+            <param name="assemblyName">The name of the assembly.</param>
+            <returns>The requested type or null if it was not found.</returns>
+        </member>
+        <member name="M:Bitfinex.Client.Websocket.Logging.LogProviders.LogProviderBase.FindType(System.String,System.Collections.Generic.IReadOnlyList{System.String})">
+            <summary>
+                Finds a type using a type name and a list of assembly names to search.
+            </summary>
+            <param name="typeName">The name of the type.</param>
+            <param name="assemblyNames">A list of assembly names to search.</param>
+            <returns>The request type or null if it was not found.</returns>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Logging.LogProviders.LoupeLogProvider.WriteDelegate">
+            <summary>
+                The form of the Loupe Log.Write method we're using
+            </summary>
+        </member>
+        <member name="P:Bitfinex.Client.Websocket.Logging.LogProviders.LoupeLogProvider.ProviderIsAvailableOverride">
+            <summary>
+                Gets or sets a value indicating whether [provider is available override]. Used in tests.
+            </summary>
+            <value>
+                <c>true</c> if [provider is available override]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:Bitfinex.Client.Websocket.Logging.Logger">
+            <summary>
+            Logger delegate.
+            </summary>
+            <param name="logLevel">The log level</param>
+            <param name="messageFunc">The message function</param>
+            <param name="exception">The exception</param>
+            <param name="formatParameters">The format parameters</param>
+            <returns>A boolean.</returns>
+        </member>
+    </members>
+</doc>

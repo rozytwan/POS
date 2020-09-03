@@ -1,0 +1,128 @@
+ private void printDocument1s_PrintPage(object sender, PrintPageEventArgs e)
+        {
+            float xs = 10;
+            float ys = 7;
+            int yinc = 0;
+            int ybinc = 0;
+            float widths = 120.0F; // max width I found through trial and error
+            float heights = 0F;
+            string price;
+            string name; string quantity; string totala; int y = 0;
+            Pen drawingPen = new Pen(Color.Black, 1);
+            Font drawFontArial12Bold = new Font("Arial", 10, FontStyle.Bold);
+            Font drawFontArial10Regular = new Font("Arial", 9, FontStyle.Regular);
+            Font drawFontArial10Regularsmall = new Font("Arial", 7, FontStyle.Regular);
+            SolidBrush drawBrush = new SolidBrush(Color.Black);
+
+            // Set format of string.
+            StringFormat drawFormatCenter = new StringFormat();
+            drawFormatCenter.Alignment = StringAlignment.Center;
+            StringFormat drawFormatLeft = new StringFormat();
+            drawFormatLeft.Alignment = StringAlignment.Near;
+            StringFormat drawFormatRight = new StringFormat();
+            drawFormatRight.Alignment = StringAlignment.Far;
+            StringFormat drawFormatRightlest = new StringFormat();
+
+            //
+            DataTable dtm = blu.checkbusiness();
+            string business_name = dtm.Rows[0]["business_name"].ToString();
+            string address = dtm.Rows[0]["address"].ToString();
+            string phone_no = dtm.Rows[0]["phone_no"].ToString();
+            string note_1 = dtm.Rows[0]["note_1"].ToString();
+            string note_2 = dtm.Rows[0]["note_2"].ToString();
+            Graphics gra = e.Graphics;
+
+
+            //titel       
+            DateTime strDate = Convert.ToDateTime(DateTime.Now.ToLongDateString() + " " + DateTime.Now.ToShortTimeString());
+            //gra.DrawString(strDate, new System.Drawing.Font("Arial", 7, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 10, 50);
+            e.Graphics.DrawString(business_name, drawFontArial12Bold, drawBrush, new RectangleF(xs, ys, widths, heights), drawFormatCenter);
+            ys += e.Graphics.MeasureString(business_name, drawFontArial12Bold).Height;
+            if (business_name.Length >= 30)
+            {
+                ybinc = 13;
+            }
+            e.Graphics.DrawString(address, drawFontArial10Regular, drawBrush, new RectangleF(xs, ys + ybinc, widths, heights), drawFormatCenter);
+            ys += e.Graphics.MeasureString(address, drawFontArial10Regular).Height;
+            if (address.Length >= 40)
+            {
+                yinc = 10;
+            }
+            e.Graphics.DrawString(phone_no, drawFontArial10Regular, drawBrush, new RectangleF(xs, ys + ybinc + yinc, widths, heights), drawFormatCenter);
+            ys += e.Graphics.MeasureString(phone_no, drawFontArial10Regular).Height;
+
+            e.Graphics.DrawString("Bill Invoice", drawFontArial10Regular, drawBrush, new RectangleF(xs, ys + ybinc + yinc, widths, heights), drawFormatCenter);
+            ys += e.Graphics.MeasureString("Bill Invoice", drawFontArial10Regular).Height;
+
+            gra.DrawString("Bill No #", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, 73 + ybinc + yinc);
+            gra.DrawString(txtnewbillno.Text, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 60, 73 + ybinc + yinc);
+            gra.DrawString(String.Format("{0:f}", strDate), new System.Drawing.Font("Times New Roman ", 7, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, 86 + ybinc + yinc);
+            gra.DrawString("Cashier :", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, 99 + ybinc + yinc);
+            gra.DrawString(txtcashier.Text, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 80, 99 + ybinc + yinc);
+            gra.DrawString("Token No :", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, 109 + ybinc + yinc);
+            gra.DrawString(lbltokenno.Text, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 80, 109 + ybinc + yinc);
+            gra.DrawLine(drawingPen, 0, 124 + ybinc + yinc, 314, 124 + ybinc + yinc);
+            gra.DrawString("Item", new System.Drawing.Font("Arial", 8, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 5, 127 + ybinc + yinc);
+            gra.DrawString("QTY", new System.Drawing.Font("Arial", 8, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 110, 127 + ybinc + yinc);
+           //gra.DrawString("Price", new System.Drawing.Font("Arial", 8, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 170, 127 + ybinc + yinc);
+            gra.DrawString("Rate", new System.Drawing.Font("Arial", 8, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 140, 127 + ybinc + yinc);
+            gra.DrawLine(drawingPen, 0, 140 + ybinc + yinc, 314, 140 + ybinc + yinc);
+
+
+            y = 145;
+
+            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            {
+                name = dataGridView1.Rows[i].Cells["cal_item_name"].Value.ToString();
+                quantity = dataGridView1.Rows[i].Cells["cal_qty"].Value.ToString();
+                price = dataGridView1.Rows[i].Cells["cal_cost"].Value.ToString();
+                totala = dataGridView1.Rows[i].Cells["cal_total"].Value.ToString();
+                if (name.Length <= 15)
+                {
+                    gra.DrawString(name, new System.Drawing.Font("Time New Roamn", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 5, y + yinc + ybinc);
+                }
+                else
+                {
+                    string sub = name.Substring(0, 15);
+                    gra.DrawString(sub + ".....", new System.Drawing.Font("Time New Roamn", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 5, y + yinc + ybinc);
+
+                }
+                gra.DrawString(quantity, new System.Drawing.Font("Time New Roamn", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 120, y + yinc + ybinc);
+               // gra.DrawString(price, new System.Drawing.Font("Time New Roamn", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 180, y + yinc + ybinc);
+                gra.DrawString(totala, new System.Drawing.Font("Time New Roamn", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 150, y + yinc + ybinc);
+                y = y + 20;
+            }
+
+            //mode of payment
+            //gra.DrawString("Mode Of Payment", new System.Drawing.Font("Time New Roamn", 8, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 10, y + yinc + ybinc);
+            //gra.DrawRectangle(drawingPen, 10, y + 15 + yinc + ybinc, 100, 40);
+            //gra.DrawString("Cash", new System.Drawing.Font("Time New Roamn", 8, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 10, y + 20 + yinc + ybinc);
+            //gra.DrawString(txtcashamount.Text, new System.Drawing.Font("Time New Roamn", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 60, y + 20 + yinc + ybinc);
+            //if (txtcardamount.Text != "0.00")
+            //{
+            //    gra.DrawString("Card", new System.Drawing.Font("Time New Roamn", 8, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 10, y + 35 + yinc + ybinc);
+            //    gra.DrawString(txtcardamount.Text, new System.Drawing.Font("Time New Roamn", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 60, y + 35 + yinc + ybinc);
+            //}
+
+            //y = y - 5;
+            //gra.DrawLine(drawingPen, 0, y + yinc + ybinc, 314, y + yinc + ybinc);
+            y = y + 15;
+            gra.DrawString("Total ::", new System.Drawing.Font("Courier New ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 5, y + yinc + ybinc);
+            gra.DrawString(txtsubtotal.Text, new System.Drawing.Font("Courier New ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 150, y + yinc + ybinc);
+
+            gra.DrawString("Discount ::", new System.Drawing.Font("Courier New ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 5, y + 12 + yinc + ybinc);
+            gra.DrawString(txtdiscount.Text, new System.Drawing.Font("Courier New ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 150, y + 12 + yinc + ybinc);
+            gra.DrawString("Grand Total ::", new System.Drawing.Font("Courier New ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 5, y + 25 + yinc + ybinc);
+            gra.DrawString(txtgrandtotal.Text, new System.Drawing.Font("Courier New ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 150, y + 25 + yinc + ybinc);
+            gra.DrawString("Received AMT ::", new System.Drawing.Font("Courier New ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 5, y + 40 + yinc + ybinc);
+            gra.DrawString(txtcashamount.Text, new System.Drawing.Font("Courier New ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 150, y + 40 + yinc + ybinc);
+            gra.DrawString("Change AMT ::", new System.Drawing.Font("Courier New ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 5, y + 55 + yinc + ybinc);
+            gra.DrawString(txtremainingamount.Text, new System.Drawing.Font("Courier New ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 150, y + 55 + yinc + ybinc);
+            y = y + 70;
+
+            gra.DrawLine(drawingPen, 0, y + yinc + 10 + ybinc, 314, y + yinc + 10 + ybinc);
+            gra.DrawString(note_1, new System.Drawing.Font("Courier New ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 10, y + 50 + yinc + ybinc);
+            gra.DrawString(note_2, new System.Drawing.Font("Courier New ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 10, y + 75 + yinc + ybinc);
+           p_height= y + 75 + yinc + ybinc;
+
+        }

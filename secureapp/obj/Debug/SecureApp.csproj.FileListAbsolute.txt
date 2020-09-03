@@ -1,0 +1,438 @@
+G:\New_CSharp\SecureApp\SecureApp\obj\Debug\ResolveAssemblyReference.cache
+G:\New_CSharp\SecureApp\SecureApp\obj\Debug\SecureApp.Form1.resources
+G:\New_CSharp\SecureApp\SecureApp\obj\Debug\GenerateResource-ResGen.read.1.tlog
+G:\New_CSharp\SecureApp\SecureApp\obj\Debug\GenerateResource-ResGen.write.1.tlog
+G:\New_CSharp\SecureApp\SecureApp\bin\Debug\SecureApp.dll
+G:\New_CSharp\SecureApp\SecureApp\bin\Debug\SecureApp.pdb
+G:\New_CSharp\SecureApp\SecureApp\obj\Debug\SecureApp.dll
+G:\New_CSharp\SecureApp\SecureApp\obj\Debug\SecureApp.pdb
+G:\New_CSharp\SecureApp\SecureApp\obj\Debug\SecureApp.Properties.Resources.resources
+G:\New_CSharp\SecureApp\SecureApp\obj\Debug\GenerateResource-ResGen.read.4.tlog
+C:\Users\SJNeyos\Desktop\Make Your Application with Trial Version\SecureApp\SecureApp\bin\Debug\SecureApp.dll
+C:\Users\SJNeyos\Desktop\Make Your Application with Trial Version\SecureApp\SecureApp\bin\Debug\SecureApp.pdb
+C:\Users\SJNeyos\Desktop\Make Your Application with Trial Version\SecureApp\SecureApp\obj\Debug\SecureApp.csprojResolveAssemblyReference.cache
+C:\Users\SJNeyos\Desktop\Make Your Application with Trial Version\SecureApp\SecureApp\obj\Debug\SecureApp.Form1.resources
+C:\Users\SJNeyos\Desktop\Make Your Application with Trial Version\SecureApp\SecureApp\obj\Debug\SecureApp.Properties.Resources.resources
+C:\Users\SJNeyos\Desktop\Make Your Application with Trial Version\SecureApp\SecureApp\obj\Debug\SecureApp.csproj.GenerateResource.Cache
+C:\Users\SJNeyos\Desktop\Make Your Application with Trial Version\SecureApp\SecureApp\obj\Debug\SecureApp.dll
+C:\Users\SJNeyos\Desktop\Make Your Application with Trial Version\SecureApp\SecureApp\obj\Debug\SecureApp.pdb
+C:\Users\SJNeyos\Desktop\POS System 2\POS System 2\secureapp\bin\Debug\SecureApp.dll
+C:\Users\SJNeyos\Desktop\POS System 2\POS System 2\secureapp\bin\Debug\SecureApp.pdb
+C:\Users\SJNeyos\Desktop\POS System 2\POS System 2\secureapp\obj\Debug\secureapp.csprojResolveAssemblyReference.cache
+C:\Users\SJNeyos\Desktop\POS System 2\POS System 2\secureapp\obj\Debug\SecureApp.Form1.resources
+C:\Users\SJNeyos\Desktop\POS System 2\POS System 2\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+C:\Users\SJNeyos\Desktop\POS System 2\POS System 2\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+C:\Users\SJNeyos\Desktop\POS System 2\POS System 2\secureapp\obj\Debug\SecureApp.dll
+C:\Users\SJNeyos\Desktop\POS System 2\POS System 2\secureapp\obj\Debug\SecureApp.pdb
+C:\Users\SJNeyos\Desktop\POS System 2\POS System 2\secureapp\obj\Debug\POS_System.second_user_interface.resources
+C:\Users\SJNeyos\Desktop\final tested for documentation\POS System 2\secureapp\bin\Debug\SecureApp.dll
+C:\Users\SJNeyos\Desktop\final tested for documentation\POS System 2\secureapp\bin\Debug\SecureApp.pdb
+C:\Users\SJNeyos\Desktop\final tested for documentation\POS System 2\secureapp\obj\Debug\SecureApp.Form1.resources
+C:\Users\SJNeyos\Desktop\final tested for documentation\POS System 2\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+C:\Users\SJNeyos\Desktop\final tested for documentation\POS System 2\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+C:\Users\SJNeyos\Desktop\final tested for documentation\POS System 2\secureapp\obj\Debug\SecureApp.dll
+C:\Users\SJNeyos\Desktop\final tested for documentation\POS System 2\secureapp\obj\Debug\SecureApp.pdb
+C:\Users\SJNeyos\Desktop\final tested for documentation\POS System 2 final server edited\secureapp\obj\Debug\secureapp.csprojResolveAssemblyReference.cache
+C:\Users\SJNeyos\Desktop\final tested for documentation\POS System 2 final server edited\secureapp\obj\Debug\SecureApp.Form1.resources
+C:\Users\SJNeyos\Desktop\final tested for documentation\POS System 2 final server edited\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+C:\Users\SJNeyos\Desktop\final tested for documentation\POS System 2 final server edited\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+C:\Users\SJNeyos\Desktop\final tested for documentation\POS System 2 final server edited\secureapp\obj\Debug\SecureApp.dll
+C:\Users\SJNeyos\Desktop\final tested for documentation\POS System 2 final server edited\secureapp\obj\Debug\SecureApp.pdb
+C:\Users\Utshab Luitel\Desktop\POS2\secureapp\obj\Debug\secureapp.csprojResolveAssemblyReference.cache
+C:\Users\Utshab Luitel\Desktop\POS2\secureapp\obj\Debug\SecureApp.Form1.resources
+C:\Users\Utshab Luitel\Desktop\POS2\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+C:\Users\Utshab Luitel\Desktop\POS2\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+C:\Users\Utshab Luitel\Desktop\POS2\secureapp\obj\Debug\SecureApp.dll
+C:\Users\Utshab Luitel\Desktop\POS2\secureapp\obj\Debug\SecureApp.pdb
+C:\Users\Utshab Luitel\Desktop\POS2\secureapp\bin\Debug\SecureApp.dll
+C:\Users\Utshab Luitel\Desktop\POS2\secureapp\bin\Debug\SecureApp.pdb
+C:\Users\SJNeyos\Desktop\POS2\secureapp\bin\Debug\SecureApp.dll
+C:\Users\SJNeyos\Desktop\POS2\secureapp\bin\Debug\SecureApp.pdb
+C:\Users\SJNeyos\Desktop\POS2\secureapp\obj\Debug\secureapp.csprojResolveAssemblyReference.cache
+C:\Users\SJNeyos\Desktop\POS2\secureapp\obj\Debug\SecureApp.Form1.resources
+C:\Users\SJNeyos\Desktop\POS2\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+C:\Users\SJNeyos\Desktop\POS2\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+C:\Users\SJNeyos\Desktop\POS2\secureapp\obj\Debug\SecureApp.dll
+C:\Users\SJNeyos\Desktop\POS2\secureapp\obj\Debug\SecureApp.pdb
+C:\Users\Utshab Luitel\Desktop\POS2 edite at feb9 2016\secureapp\bin\Debug\SecureApp.dll
+C:\Users\Utshab Luitel\Desktop\POS2 edite at feb9 2016\secureapp\bin\Debug\SecureApp.pdb
+C:\Users\Utshab Luitel\Desktop\POS2 edite at feb9 2016\secureapp\obj\Debug\SecureApp.Form1.resources
+C:\Users\Utshab Luitel\Desktop\POS2 edite at feb9 2016\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+C:\Users\Utshab Luitel\Desktop\POS2 edite at feb9 2016\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+C:\Users\Utshab Luitel\Desktop\POS2 edite at feb9 2016\secureapp\obj\Debug\SecureApp.dll
+C:\Users\Utshab Luitel\Desktop\POS2 edite at feb9 2016\secureapp\obj\Debug\SecureApp.pdb
+C:\Users\Utshab Luitel\Desktop\POS2 edited main userinterface\secureapp\bin\Debug\SecureApp.dll
+C:\Users\Utshab Luitel\Desktop\POS2 edited main userinterface\secureapp\bin\Debug\SecureApp.pdb
+C:\Users\Utshab Luitel\Desktop\POS2 edited main userinterface\secureapp\obj\Debug\SecureApp.Form1.resources
+C:\Users\Utshab Luitel\Desktop\POS2 edited main userinterface\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+C:\Users\Utshab Luitel\Desktop\POS2 edited main userinterface\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+C:\Users\Utshab Luitel\Desktop\POS2 edited main userinterface\secureapp\obj\Debug\SecureApp.dll
+C:\Users\Utshab Luitel\Desktop\POS2 edited main userinterface\secureapp\obj\Debug\SecureApp.pdb
+C:\Users\Utshab Luitel\Desktop\POS2 edited main userinterface\secureapp\obj\Debug\secureapp.csprojResolveAssemblyReference.cache
+C:\Users\SJNeyos\Desktop\POS2 edited main userinterface (2)\secureapp\bin\Debug\SecureApp.dll
+C:\Users\SJNeyos\Desktop\POS2 edited main userinterface (2)\secureapp\bin\Debug\SecureApp.pdb
+C:\Users\SJNeyos\Desktop\POS2 edited main userinterface (2)\secureapp\obj\Debug\secureapp.csprojResolveAssemblyReference.cache
+C:\Users\SJNeyos\Desktop\POS2 edited main userinterface (2)\secureapp\obj\Debug\SecureApp.Form1.resources
+C:\Users\SJNeyos\Desktop\POS2 edited main userinterface (2)\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+C:\Users\SJNeyos\Desktop\POS2 edited main userinterface (2)\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+C:\Users\SJNeyos\Desktop\POS2 edited main userinterface (2)\secureapp\obj\Debug\SecureApp.dll
+C:\Users\SJNeyos\Desktop\POS2 edited main userinterface (2)\secureapp\obj\Debug\SecureApp.pdb
+C:\Users\Utshab Luitel\Desktop\POS2 edited main userinterface (2)\secureapp\bin\Debug\SecureApp.dll
+C:\Users\Utshab Luitel\Desktop\POS2 edited main userinterface (2)\secureapp\bin\Debug\SecureApp.pdb
+C:\Users\Utshab Luitel\Desktop\POS2 edited main userinterface (2)\secureapp\obj\Debug\SecureApp.Form1.resources
+C:\Users\Utshab Luitel\Desktop\POS2 edited main userinterface (2)\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+C:\Users\Utshab Luitel\Desktop\POS2 edited main userinterface (2)\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+C:\Users\Utshab Luitel\Desktop\POS2 edited main userinterface (2)\secureapp\obj\Debug\SecureApp.dll
+C:\Users\Utshab Luitel\Desktop\POS2 edited main userinterface (2)\secureapp\obj\Debug\SecureApp.pdb
+C:\Users\SJNeyos\Desktop\POS2 14 feb\secureapp\bin\Debug\SecureApp.dll
+C:\Users\SJNeyos\Desktop\POS2 14 feb\secureapp\bin\Debug\SecureApp.pdb
+C:\Users\SJNeyos\Desktop\POS2 14 feb\secureapp\obj\Debug\secureapp.csprojResolveAssemblyReference.cache
+C:\Users\SJNeyos\Desktop\POS2 14 feb\secureapp\obj\Debug\SecureApp.Form1.resources
+C:\Users\SJNeyos\Desktop\POS2 14 feb\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+C:\Users\SJNeyos\Desktop\POS2 14 feb\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+C:\Users\SJNeyos\Desktop\POS2 14 feb\secureapp\obj\Debug\SecureApp.dll
+C:\Users\SJNeyos\Desktop\POS2 14 feb\secureapp\obj\Debug\SecureApp.pdb
+C:\Users\Utshab Luitel\Desktop\POS2 14 feb (2)\secureapp\bin\Debug\SecureApp.dll
+C:\Users\Utshab Luitel\Desktop\POS2 14 feb (2)\secureapp\bin\Debug\SecureApp.pdb
+C:\Users\Utshab Luitel\Desktop\POS2 14 feb (2)\secureapp\obj\Debug\SecureApp.Form1.resources
+C:\Users\Utshab Luitel\Desktop\POS2 14 feb (2)\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+C:\Users\Utshab Luitel\Desktop\POS2 14 feb (2)\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+C:\Users\Utshab Luitel\Desktop\POS2 14 feb (2)\secureapp\obj\Debug\SecureApp.dll
+C:\Users\Utshab Luitel\Desktop\POS2 14 feb (2)\secureapp\obj\Debug\SecureApp.pdb
+C:\Users\SJNeyos\Desktop\POS2 14 feb (2)\secureapp\bin\Debug\SecureApp.dll
+C:\Users\SJNeyos\Desktop\POS2 14 feb (2)\secureapp\bin\Debug\SecureApp.pdb
+C:\Users\SJNeyos\Desktop\POS2 14 feb (2)\secureapp\obj\Debug\secureapp.csprojResolveAssemblyReference.cache
+C:\Users\SJNeyos\Desktop\POS2 14 feb (2)\secureapp\obj\Debug\SecureApp.Form1.resources
+C:\Users\SJNeyos\Desktop\POS2 14 feb (2)\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+C:\Users\SJNeyos\Desktop\POS2 14 feb (2)\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+C:\Users\SJNeyos\Desktop\POS2 14 feb (2)\secureapp\obj\Debug\SecureApp.dll
+C:\Users\SJNeyos\Desktop\POS2 14 feb (2)\secureapp\obj\Debug\SecureApp.pdb
+C:\Users\Utshab Luitel\Desktop\POS2 14 feb (2)\secureapp\obj\Debug\secureapp.csprojResolveAssemblyReference.cache
+C:\Users\SJNeyos\Desktop\POS2 14 feb (2) (2)\secureapp\bin\Debug\SecureApp.dll
+C:\Users\SJNeyos\Desktop\POS2 14 feb (2) (2)\secureapp\bin\Debug\SecureApp.pdb
+C:\Users\SJNeyos\Desktop\POS2 14 feb (2) (2)\secureapp\obj\Debug\secureapp.csprojResolveAssemblyReference.cache
+C:\Users\SJNeyos\Desktop\POS2 14 feb (2) (2)\secureapp\obj\Debug\SecureApp.Form1.resources
+C:\Users\SJNeyos\Desktop\POS2 14 feb (2) (2)\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+C:\Users\SJNeyos\Desktop\POS2 14 feb (2) (2)\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+C:\Users\SJNeyos\Desktop\POS2 14 feb (2) (2)\secureapp\obj\Debug\SecureApp.dll
+C:\Users\SJNeyos\Desktop\POS2 14 feb (2) (2)\secureapp\obj\Debug\SecureApp.pdb
+C:\Users\Utshab Luitel\Desktop\POS2 14 feb (2) (2)\secureapp\bin\Debug\SecureApp.dll
+C:\Users\Utshab Luitel\Desktop\POS2 14 feb (2) (2)\secureapp\bin\Debug\SecureApp.pdb
+C:\Users\Utshab Luitel\Desktop\POS2 14 feb (2) (2)\secureapp\obj\Debug\SecureApp.Form1.resources
+C:\Users\Utshab Luitel\Desktop\POS2 14 feb (2) (2)\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+C:\Users\Utshab Luitel\Desktop\POS2 14 feb (2) (2)\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+C:\Users\Utshab Luitel\Desktop\POS2 14 feb (2) (2)\secureapp\obj\Debug\SecureApp.dll
+C:\Users\Utshab Luitel\Desktop\POS2 14 feb (2) (2)\secureapp\obj\Debug\SecureApp.pdb
+D:\from dukto old files\Night Pos\secureapp\bin\Debug\SecureApp.dll
+D:\from dukto old files\Night Pos\secureapp\bin\Debug\SecureApp.pdb
+D:\from dukto old files\Night Pos\secureapp\obj\Debug\secureapp.csprojResolveAssemblyReference.cache
+D:\from dukto old files\Night Pos\secureapp\obj\Debug\SecureApp.Form1.resources
+D:\from dukto old files\Night Pos\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+D:\from dukto old files\Night Pos\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+D:\from dukto old files\Night Pos\secureapp\obj\Debug\SecureApp.dll
+D:\from dukto old files\Night Pos\secureapp\obj\Debug\SecureApp.pdb
+C:\Users\Utshab Luitel\Desktop\Night Pos (2)\secureapp\bin\Debug\SecureApp.dll
+C:\Users\Utshab Luitel\Desktop\Night Pos (2)\secureapp\bin\Debug\SecureApp.pdb
+C:\Users\Utshab Luitel\Desktop\Night Pos (2)\secureapp\obj\Debug\SecureApp.Form1.resources
+C:\Users\Utshab Luitel\Desktop\Night Pos (2)\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+C:\Users\Utshab Luitel\Desktop\Night Pos (2)\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+C:\Users\Utshab Luitel\Desktop\Night Pos (2)\secureapp\obj\Debug\SecureApp.dll
+C:\Users\Utshab Luitel\Desktop\Night Pos (2)\secureapp\obj\Debug\SecureApp.pdb
+D:\Project\POS\Night Pos (2)\secureapp\bin\Debug\SecureApp.dll
+D:\Project\POS\Night Pos (2)\secureapp\bin\Debug\SecureApp.pdb
+D:\Project\POS\Night Pos (2)\secureapp\obj\Debug\SecureApp.Form1.resources
+D:\Project\POS\Night Pos (2)\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+D:\Project\POS\Night Pos (2)\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+D:\Project\POS\Night Pos (2)\secureapp\obj\Debug\SecureApp.dll
+D:\Project\POS\Night Pos (2)\secureapp\obj\Debug\SecureApp.pdb
+D:\Project\POS\DIL\secureapp\bin\Debug\SecureApp.dll
+D:\Project\POS\DIL\secureapp\bin\Debug\SecureApp.pdb
+D:\Project\POS\DIL\secureapp\obj\Debug\SecureApp.Form1.resources
+D:\Project\POS\DIL\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+D:\Project\POS\DIL\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+D:\Project\POS\DIL\secureapp\obj\Debug\SecureApp.dll
+D:\Project\POS\DIL\secureapp\obj\Debug\SecureApp.pdb
+D:\from dukto old files\Subek Pos\secureapp\bin\Debug\SecureApp.dll
+D:\from dukto old files\Subek Pos\secureapp\bin\Debug\SecureApp.pdb
+D:\from dukto old files\Subek Pos\secureapp\obj\Debug\secureapp.csprojResolveAssemblyReference.cache
+D:\from dukto old files\Subek Pos\secureapp\obj\Debug\SecureApp.Form1.resources
+D:\from dukto old files\Subek Pos\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+D:\from dukto old files\Subek Pos\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+D:\from dukto old files\Subek Pos\secureapp\obj\Debug\SecureApp.dll
+D:\from dukto old files\Subek Pos\secureapp\obj\Debug\SecureApp.pdb
+D:\Project\POS\Subek Pos\secureapp\bin\Debug\SecureApp.dll
+D:\Project\POS\Subek Pos\secureapp\bin\Debug\SecureApp.pdb
+D:\Project\POS\Subek Pos\secureapp\obj\Debug\SecureApp.Form1.resources
+D:\Project\POS\Subek Pos\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+D:\Project\POS\Subek Pos\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+D:\Project\POS\Subek Pos\secureapp\obj\Debug\SecureApp.dll
+D:\Project\POS\Subek Pos\secureapp\obj\Debug\SecureApp.pdb
+D:\from dukto old files\Subek Pos (2)\secureapp\bin\Debug\SecureApp.dll
+D:\from dukto old files\Subek Pos (2)\secureapp\bin\Debug\SecureApp.pdb
+D:\from dukto old files\Subek Pos (2)\secureapp\obj\Debug\secureapp.csprojResolveAssemblyReference.cache
+D:\from dukto old files\Subek Pos (2)\secureapp\obj\Debug\SecureApp.Form1.resources
+D:\from dukto old files\Subek Pos (2)\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+D:\from dukto old files\Subek Pos (2)\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+D:\from dukto old files\Subek Pos (2)\secureapp\obj\Debug\SecureApp.dll
+D:\from dukto old files\Subek Pos (2)\secureapp\obj\Debug\SecureApp.pdb
+D:\Dukto\Subek Pos april 28\secureapp\bin\Debug\SecureApp.dll
+D:\Dukto\Subek Pos april 28\secureapp\bin\Debug\SecureApp.pdb
+D:\Dukto\Subek Pos april 28\secureapp\obj\Debug\SecureApp.Form1.resources
+D:\Dukto\Subek Pos april 28\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+D:\Dukto\Subek Pos april 28\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+D:\Dukto\Subek Pos april 28\secureapp\obj\Debug\SecureApp.dll
+D:\Dukto\Subek Pos april 28\secureapp\obj\Debug\SecureApp.pdb
+D:\Dukto\Subek Pos april 28\secureapp\obj\Debug\secureapp.csprojResolveAssemblyReference.cache
+D:\Project\POS\Subek Pos april 28\secureapp\bin\Debug\SecureApp.dll
+D:\Project\POS\Subek Pos april 28\secureapp\bin\Debug\SecureApp.pdb
+D:\Project\POS\Subek Pos april 28\secureapp\obj\Debug\SecureApp.Form1.resources
+D:\Project\POS\Subek Pos april 28\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+D:\Project\POS\Subek Pos april 28\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+D:\Project\POS\Subek Pos april 28\secureapp\obj\Debug\SecureApp.dll
+D:\Project\POS\Subek Pos april 28\secureapp\obj\Debug\SecureApp.pdb
+D:\Project\POS\Subek Pos\Subek Pos april 28\secureapp\bin\Debug\SecureApp.dll
+D:\Project\POS\Subek Pos\Subek Pos april 28\secureapp\bin\Debug\SecureApp.pdb
+D:\Project\POS\Subek Pos\Subek Pos april 28\secureapp\obj\Debug\SecureApp.Form1.resources
+D:\Project\POS\Subek Pos\Subek Pos april 28\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+D:\Project\POS\Subek Pos\Subek Pos april 28\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+D:\Project\POS\Subek Pos\Subek Pos april 28\secureapp\obj\Debug\SecureApp.dll
+D:\Project\POS\Subek Pos\Subek Pos april 28\secureapp\obj\Debug\SecureApp.pdb
+D:\Project\POS\Subek Pos\Subek Pos april 28\secureapp\obj\Debug\secureapp.csprojResolveAssemblyReference.cache
+E:\Project\POS\Subek Pos\Subek Pos april 28\secureapp\bin\Debug\SecureApp.dll
+E:\Project\POS\Subek Pos\Subek Pos april 28\secureapp\bin\Debug\SecureApp.pdb
+E:\Project\POS\Subek Pos\Subek Pos april 28\secureapp\obj\Debug\SecureApp.Form1.resources
+E:\Project\POS\Subek Pos\Subek Pos april 28\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+E:\Project\POS\Subek Pos\Subek Pos april 28\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+E:\Project\POS\Subek Pos\Subek Pos april 28\secureapp\obj\Debug\SecureApp.dll
+E:\Project\POS\Subek Pos\Subek Pos april 28\secureapp\obj\Debug\SecureApp.pdb
+E:\Project\POS\Subek Pos\SQLite\secureapp\bin\Debug\SecureApp.dll
+E:\Project\POS\Subek Pos\SQLite\secureapp\bin\Debug\SecureApp.pdb
+E:\Project\POS\Subek Pos\SQLite\secureapp\obj\Debug\SecureApp.Form1.resources
+E:\Project\POS\Subek Pos\SQLite\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+E:\Project\POS\Subek Pos\SQLite\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+E:\Project\POS\Subek Pos\SQLite\secureapp\obj\Debug\SecureApp.dll
+E:\Project\POS\Subek Pos\SQLite\secureapp\obj\Debug\SecureApp.pdb
+E:\Project\POS\Subek Pos\POS 2 KOT\secureapp\bin\Debug\SecureApp.dll
+E:\Project\POS\Subek Pos\POS 2 KOT\secureapp\bin\Debug\SecureApp.pdb
+E:\Project\POS\Subek Pos\POS 2 KOT\secureapp\obj\Debug\SecureApp.Form1.resources
+E:\Project\POS\Subek Pos\POS 2 KOT\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+E:\Project\POS\Subek Pos\POS 2 KOT\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+E:\Project\POS\Subek Pos\POS 2 KOT\secureapp\obj\Debug\SecureApp.dll
+E:\Project\POS\Subek Pos\POS 2 KOT\secureapp\obj\Debug\SecureApp.pdb
+E:\Project\POS\Subek Pos\POS 2 KOT\secureapp\obj\Debug\secureapp.csprojResolveAssemblyReference.cache
+E:\POS 2 KOT_nov20 update\POS 2 KOT\secureapp\bin\Debug\SecureApp.dll
+E:\POS 2 KOT_nov20 update\POS 2 KOT\secureapp\bin\Debug\SecureApp.pdb
+E:\POS 2 KOT_nov20 update\POS 2 KOT\secureapp\obj\Debug\SecureApp.Form1.resources
+E:\POS 2 KOT_nov20 update\POS 2 KOT\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+E:\POS 2 KOT_nov20 update\POS 2 KOT\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+E:\POS 2 KOT_nov20 update\POS 2 KOT\secureapp\obj\Debug\SecureApp.dll
+E:\POS 2 KOT_nov20 update\POS 2 KOT\secureapp\obj\Debug\SecureApp.pdb
+E:\POS 2 KOT_nov20 update\POS 2 KOT\secureapp\obj\Debug\secureapp.csprojResolveAssemblyReference.cache
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT\secureapp\bin\Debug\SecureApp.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT\secureapp\bin\Debug\SecureApp.pdb
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT\secureapp\obj\Debug\SecureApp.Form1.resources
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT\secureapp\obj\Debug\SecureApp.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT\secureapp\obj\Debug\SecureApp.pdb
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT\secureapp\obj\Debug\secureapp.csprojResolveAssemblyReference.cache
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 1\secureapp\bin\Debug\SecureApp.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 1\secureapp\bin\Debug\SecureApp.pdb
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 1\secureapp\obj\Debug\SecureApp.Form1.resources
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 1\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 1\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 1\secureapp\obj\Debug\SecureApp.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 1\secureapp\obj\Debug\SecureApp.pdb
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\secureapp\bin\Debug\SecureApp.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\secureapp\bin\Debug\SecureApp.pdb
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\secureapp\obj\Debug\SecureApp.Form1.resources
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\secureapp\obj\Debug\SecureApp.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\secureapp\obj\Debug\SecureApp.pdb
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\secureapp\obj\Debug\secureapp.csprojResolveAssemblyReference.cache
+E:\Project\Back UP\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\secureapp\bin\Debug\SecureApp.dll
+E:\Project\Back UP\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\secureapp\bin\Debug\SecureApp.pdb
+E:\Project\Back UP\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\secureapp\obj\Debug\SecureApp.Form1.resources
+E:\Project\Back UP\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+E:\Project\Back UP\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+E:\Project\Back UP\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\secureapp\obj\Debug\SecureApp.dll
+E:\Project\Back UP\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\secureapp\obj\Debug\SecureApp.pdb
+E:\Project\Back UP\POS 2 KOT dec 11 update\secureapp\bin\Debug\SecureApp.dll
+E:\Project\Back UP\POS 2 KOT dec 11 update\secureapp\bin\Debug\SecureApp.pdb
+E:\Project\Back UP\POS 2 KOT dec 11 update\secureapp\bin\Debug\SoftwareLocker.dll
+E:\Project\Back UP\POS 2 KOT dec 11 update\secureapp\bin\Debug\SerialBoxes.dll
+E:\Project\Back UP\POS 2 KOT dec 11 update\secureapp\bin\Debug\FilterControls.dll
+E:\Project\Back UP\POS 2 KOT dec 11 update\secureapp\bin\Debug\SoftwareLocker.pdb
+E:\Project\Back UP\POS 2 KOT dec 11 update\secureapp\bin\Debug\SerialBoxes.pdb
+E:\Project\Back UP\POS 2 KOT dec 11 update\secureapp\bin\Debug\FilterControls.pdb
+E:\Project\Back UP\POS 2 KOT dec 11 update\secureapp\obj\Debug\secureapp.csprojResolveAssemblyReference.cache
+E:\Project\Back UP\POS 2 KOT dec 11 update\secureapp\obj\Debug\SecureApp.Form1.resources
+E:\Project\Back UP\POS 2 KOT dec 11 update\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+E:\Project\Back UP\POS 2 KOT dec 11 update\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+E:\Project\Back UP\POS 2 KOT dec 11 update\secureapp\obj\Debug\SecureApp.dll
+E:\Project\Back UP\POS 2 KOT dec 11 update\secureapp\obj\Debug\SecureApp.pdb
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\secureapp\bin\Debug\SoftwareLocker.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\secureapp\bin\Debug\SoftwareLocker.pdb
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\secureapp\bin\Debug\SerialBoxes.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\secureapp\bin\Debug\FilterControls.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\secureapp\bin\Debug\SerialBoxes.pdb
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 2 update\secureapp\bin\Debug\FilterControls.pdb
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 28 update\secureapp\bin\Debug\SecureApp.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 28 update\secureapp\bin\Debug\SecureApp.pdb
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 28 update\secureapp\bin\Debug\SerialBoxes.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 28 update\secureapp\bin\Debug\SoftwareLocker.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 28 update\secureapp\bin\Debug\FilterControls.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 28 update\secureapp\bin\Debug\SoftwareLocker.pdb
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 28 update\secureapp\bin\Debug\SerialBoxes.pdb
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 28 update\secureapp\bin\Debug\FilterControls.pdb
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 28 update\secureapp\obj\Debug\secureapp.csprojResolveAssemblyReference.cache
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 28 update\secureapp\obj\Debug\SecureApp.Form1.resources
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 28 update\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 28 update\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 28 update\secureapp\obj\Debug\SecureApp.dll
+E:\Project\POS\Subek Pos\POS 2 KOT_nov20 update\POS 2 KOT dec 28 update\secureapp\obj\Debug\SecureApp.pdb
+F:\Smtechme projects\POS 2 KOT jan18\secureapp\bin\Debug\SecureApp.dll
+F:\Smtechme projects\POS 2 KOT jan18\secureapp\bin\Debug\SecureApp.pdb
+F:\Smtechme projects\POS 2 KOT jan18\secureapp\bin\Debug\SoftwareLocker.dll
+F:\Smtechme projects\POS 2 KOT jan18\secureapp\bin\Debug\FilterControls.dll
+F:\Smtechme projects\POS 2 KOT jan18\secureapp\bin\Debug\SoftwareLocker.pdb
+F:\Smtechme projects\POS 2 KOT jan18\secureapp\bin\Debug\SerialBoxes.pdb
+F:\Smtechme projects\POS 2 KOT jan18\secureapp\bin\Debug\FilterControls.pdb
+F:\Smtechme projects\POS 2 KOT jan18\secureapp\obj\Debug\secureapp.csprojResolveAssemblyReference.cache
+F:\Smtechme projects\POS 2 KOT jan18\secureapp\obj\Debug\SecureApp.Form1.resources
+F:\Smtechme projects\POS 2 KOT jan18\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+F:\Smtechme projects\POS 2 KOT jan18\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+F:\Smtechme projects\POS 2 KOT jan18\secureapp\obj\Debug\SecureApp.dll
+F:\Smtechme projects\POS 2 KOT jan18\secureapp\obj\Debug\SecureApp.pdb
+C:\Users\Sub3k\Desktop\POS 2 KOT jan18\secureapp\bin\Debug\SecureApp.dll
+C:\Users\Sub3k\Desktop\POS 2 KOT jan18\secureapp\bin\Debug\SecureApp.pdb
+C:\Users\Sub3k\Desktop\POS 2 KOT jan18\secureapp\bin\Debug\SoftwareLocker.dll
+C:\Users\Sub3k\Desktop\POS 2 KOT jan18\secureapp\bin\Debug\FilterControls.dll
+C:\Users\Sub3k\Desktop\POS 2 KOT jan18\secureapp\bin\Debug\SoftwareLocker.pdb
+C:\Users\Sub3k\Desktop\POS 2 KOT jan18\secureapp\bin\Debug\SerialBoxes.pdb
+C:\Users\Sub3k\Desktop\POS 2 KOT jan18\secureapp\bin\Debug\FilterControls.pdb
+C:\Users\Sub3k\Desktop\POS 2 KOT jan18\secureapp\obj\Debug\secureapp.csprojResolveAssemblyReference.cache
+C:\Users\Sub3k\Desktop\POS 2 KOT jan18\secureapp\obj\Debug\SecureApp.Form1.resources
+C:\Users\Sub3k\Desktop\POS 2 KOT jan18\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+C:\Users\Sub3k\Desktop\POS 2 KOT jan18\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+C:\Users\Sub3k\Desktop\POS 2 KOT jan18\secureapp\obj\Debug\SecureApp.dll
+C:\Users\Sub3k\Desktop\POS 2 KOT jan18\secureapp\obj\Debug\SecureApp.pdb
+E:\Project\POS\POS 2 KOT jan 24\secureapp\bin\Debug\SecureApp.dll
+E:\Project\POS\POS 2 KOT jan 24\secureapp\bin\Debug\SecureApp.pdb
+E:\Project\POS\POS 2 KOT jan 24\secureapp\bin\Debug\SoftwareLocker.dll
+E:\Project\POS\POS 2 KOT jan 24\secureapp\bin\Debug\SoftwareLocker.pdb
+E:\Project\POS\POS 2 KOT jan 24\secureapp\obj\Debug\secureapp.csprojResolveAssemblyReference.cache
+E:\Project\POS\POS 2 KOT jan 24\secureapp\obj\Debug\SecureApp.Form1.resources
+E:\Project\POS\POS 2 KOT jan 24\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+E:\Project\POS\POS 2 KOT jan 24\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+E:\Project\POS\POS 2 KOT jan 24\secureapp\obj\Debug\SecureApp.dll
+E:\Project\POS\POS 2 KOT jan 24\secureapp\obj\Debug\SecureApp.pdb
+E:\Project\POS\POS 2 KOT jan 24\secureapp\bin\Debug\FilterControls.dll
+E:\Project\POS\POS 2 KOT jan 24\secureapp\bin\Debug\FilterControls.pdb
+E:\Project\POS\POS 2 KOT jan 24 (2)\secureapp\bin\Debug\SecureApp.dll
+E:\Project\POS\POS 2 KOT jan 24 (2)\secureapp\bin\Debug\SecureApp.pdb
+E:\Project\POS\POS 2 KOT jan 24 (2)\secureapp\bin\Debug\SoftwareLocker.dll
+E:\Project\POS\POS 2 KOT jan 24 (2)\secureapp\bin\Debug\SoftwareLocker.pdb
+E:\Project\POS\POS 2 KOT jan 24 (2)\secureapp\obj\Debug\secureapp.csprojResolveAssemblyReference.cache
+E:\Project\POS\POS 2 KOT jan 24 (2)\secureapp\obj\Debug\SecureApp.Form1.resources
+E:\Project\POS\POS 2 KOT jan 24 (2)\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+E:\Project\POS\POS 2 KOT jan 24 (2)\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+E:\Project\POS\POS 2 KOT jan 24 (2)\secureapp\obj\Debug\SecureApp.dll
+E:\Project\POS\POS 2 KOT jan 24 (2)\secureapp\obj\Debug\SecureApp.pdb
+E:\Project\POS\POS 2 KOT Advance Discount\secureapp\bin\Debug\SecureApp.dll
+E:\Project\POS\POS 2 KOT Advance Discount\secureapp\bin\Debug\SecureApp.pdb
+E:\Project\POS\POS 2 KOT Advance Discount\secureapp\bin\Debug\SoftwareLocker.dll
+E:\Project\POS\POS 2 KOT Advance Discount\secureapp\bin\Debug\SoftwareLocker.pdb
+E:\Project\POS\POS 2 KOT Advance Discount\secureapp\obj\Debug\secureapp.csprojResolveAssemblyReference.cache
+E:\Project\POS\POS 2 KOT Advance Discount\secureapp\obj\Debug\SecureApp.Form1.resources
+E:\Project\POS\POS 2 KOT Advance Discount\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+E:\Project\POS\POS 2 KOT Advance Discount\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+E:\Project\POS\POS 2 KOT Advance Discount\secureapp\obj\Debug\SecureApp.dll
+E:\Project\POS\POS 2 KOT Advance Discount\secureapp\obj\Debug\SecureApp.pdb
+E:\Project\POS\POS 2 KOT Advance Discount\secureapp\bin\Debug\FilterControls.dll
+E:\Project\POS\POS 2 KOT Advance Discount\secureapp\bin\Debug\SerialBoxes.pdb
+E:\Project\POS\POS 2 KOT Advance Discount\secureapp\bin\Debug\FilterControls.pdb
+C:\Users\Rozy\Desktop\pos\secureapp\bin\Debug\SecureApp.dll
+C:\Users\Rozy\Desktop\pos\secureapp\bin\Debug\SecureApp.pdb
+C:\Users\Rozy\Desktop\pos\secureapp\bin\Debug\SoftwareLocker.dll
+C:\Users\Rozy\Desktop\pos\secureapp\bin\Debug\FilterControls.dll
+C:\Users\Rozy\Desktop\pos\secureapp\bin\Debug\SoftwareLocker.pdb
+C:\Users\Rozy\Desktop\pos\secureapp\bin\Debug\SerialBoxes.pdb
+C:\Users\Rozy\Desktop\pos\secureapp\bin\Debug\FilterControls.pdb
+C:\Users\Rozy\Desktop\pos\secureapp\obj\Debug\secureapp.csprojResolveAssemblyReference.cache
+C:\Users\Rozy\Desktop\pos\secureapp\obj\Debug\SecureApp.Form1.resources
+C:\Users\Rozy\Desktop\pos\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+C:\Users\Rozy\Desktop\pos\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+C:\Users\Rozy\Desktop\pos\secureapp\obj\Debug\SecureApp.dll
+C:\Users\Rozy\Desktop\pos\secureapp\obj\Debug\SecureApp.pdb
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount (2)\secureapp\bin\Debug\SecureApp.dll
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount (2)\secureapp\bin\Debug\SecureApp.pdb
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount (2)\secureapp\bin\Debug\SoftwareLocker.dll
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount (2)\secureapp\bin\Debug\SoftwareLocker.pdb
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount (2)\secureapp\obj\Debug\secureapp.csprojResolveAssemblyReference.cache
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount (2)\secureapp\obj\Debug\SecureApp.Form1.resources
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount (2)\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount (2)\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount (2)\secureapp\obj\Debug\SecureApp.dll
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount (2)\secureapp\obj\Debug\SecureApp.pdb
+D:\Project\POS\POS 2 KOT Advance Discount\secureapp\bin\Debug\SecureApp.dll
+D:\Project\POS\POS 2 KOT Advance Discount\secureapp\bin\Debug\SecureApp.pdb
+D:\Project\POS\POS 2 KOT Advance Discount\secureapp\bin\Debug\SoftwareLocker.dll
+D:\Project\POS\POS 2 KOT Advance Discount\secureapp\bin\Debug\SoftwareLocker.pdb
+D:\Project\POS\POS 2 KOT Advance Discount\secureapp\obj\Debug\secureapp.csprojResolveAssemblyReference.cache
+D:\Project\POS\POS 2 KOT Advance Discount\secureapp\obj\Debug\SecureApp.Form1.resources
+D:\Project\POS\POS 2 KOT Advance Discount\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+D:\Project\POS\POS 2 KOT Advance Discount\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+D:\Project\POS\POS 2 KOT Advance Discount\secureapp\obj\Debug\SecureApp.dll
+D:\Project\POS\POS 2 KOT Advance Discount\secureapp\obj\Debug\SecureApp.pdb
+D:\POS 2 KOT Advance Discount\secureapp\bin\Debug\SecureApp.dll
+D:\POS 2 KOT Advance Discount\secureapp\bin\Debug\SecureApp.pdb
+D:\POS 2 KOT Advance Discount\secureapp\bin\Debug\SoftwareLocker.dll
+D:\POS 2 KOT Advance Discount\secureapp\bin\Debug\SoftwareLocker.pdb
+D:\POS 2 KOT Advance Discount\secureapp\obj\Debug\secureapp.csprojResolveAssemblyReference.cache
+D:\POS 2 KOT Advance Discount\secureapp\obj\Debug\SecureApp.Form1.resources
+D:\POS 2 KOT Advance Discount\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+D:\POS 2 KOT Advance Discount\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+D:\POS 2 KOT Advance Discount\secureapp\obj\Debug\SecureApp.dll
+D:\POS 2 KOT Advance Discount\secureapp\obj\Debug\SecureApp.pdb
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount\secureapp\bin\Debug\SecureApp.dll
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount\secureapp\bin\Debug\SecureApp.pdb
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount\secureapp\bin\Debug\SoftwareLocker.dll
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount\secureapp\bin\Debug\SoftwareLocker.pdb
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount\secureapp\obj\Debug\secureapp.csprojResolveAssemblyReference.cache
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount\secureapp\obj\Debug\SecureApp.Form1.resources
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount\secureapp\obj\Debug\SecureApp.dll
+C:\Users\Sm Tech\Desktop\POS 2 KOT Advance Discount\secureapp\obj\Debug\SecureApp.pdb
+F:\Dukto\POS 2 KOT Advance Discount\secureapp\bin\Debug\SecureApp.dll
+F:\Dukto\POS 2 KOT Advance Discount\secureapp\bin\Debug\SecureApp.pdb
+F:\Dukto\POS 2 KOT Advance Discount\secureapp\bin\Debug\SoftwareLocker.dll
+F:\Dukto\POS 2 KOT Advance Discount\secureapp\bin\Debug\SoftwareLocker.pdb
+F:\Dukto\POS 2 KOT Advance Discount\secureapp\obj\Debug\secureapp.csprojResolveAssemblyReference.cache
+F:\Dukto\POS 2 KOT Advance Discount\secureapp\obj\Debug\SecureApp.Form1.resources
+F:\Dukto\POS 2 KOT Advance Discount\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+F:\Dukto\POS 2 KOT Advance Discount\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+F:\Dukto\POS 2 KOT Advance Discount\secureapp\obj\Debug\SecureApp.dll
+F:\Dukto\POS 2 KOT Advance Discount\secureapp\obj\Debug\SecureApp.pdb
+D:\POS 2 Server Load\secureapp\bin\Debug\SecureApp.dll
+D:\POS 2 Server Load\secureapp\bin\Debug\SecureApp.pdb
+D:\POS 2 Server Load\secureapp\bin\Debug\SoftwareLocker.dll
+D:\POS 2 Server Load\secureapp\bin\Debug\SoftwareLocker.pdb
+D:\POS 2 Server Load\secureapp\obj\Debug\secureapp.csprojResolveAssemblyReference.cache
+D:\POS 2 Server Load\secureapp\obj\Debug\SecureApp.Form1.resources
+D:\POS 2 Server Load\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+D:\POS 2 Server Load\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+D:\POS 2 Server Load\secureapp\obj\Debug\SecureApp.dll
+D:\POS 2 Server Load\secureapp\obj\Debug\SecureApp.pdb
+D:\Office Project\POS 2 Server Load\secureapp\bin\Debug\SecureApp.dll
+D:\Office Project\POS 2 Server Load\secureapp\bin\Debug\SecureApp.pdb
+D:\Office Project\POS 2 Server Load\secureapp\bin\Debug\SoftwareLocker.dll
+D:\Office Project\POS 2 Server Load\secureapp\bin\Debug\SoftwareLocker.pdb
+D:\Office Project\POS 2 Server Load\secureapp\obj\Debug\secureapp.csprojResolveAssemblyReference.cache
+D:\Office Project\POS 2 Server Load\secureapp\obj\Debug\SecureApp.Form1.resources
+D:\Office Project\POS 2 Server Load\secureapp\obj\Debug\SecureApp.Properties.Resources.resources
+D:\Office Project\POS 2 Server Load\secureapp\obj\Debug\secureapp.csproj.GenerateResource.Cache
+D:\Office Project\POS 2 Server Load\secureapp\obj\Debug\SecureApp.dll
+D:\Office Project\POS 2 Server Load\secureapp\obj\Debug\SecureApp.pdb
