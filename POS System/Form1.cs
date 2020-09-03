@@ -22,7 +22,7 @@ namespace POS_System
     {
         public Login()
         {
-           
+
 
             InitializeComponent();
             label1.Parent = pictureBox1;
@@ -38,7 +38,7 @@ namespace POS_System
             pictureBox3.Parent = pictureBox1;
             txtusername.ForeColor = SystemColors.GrayText;
 
-       
+
 
             txtusername.Text = "User Name";
             this.txtusername.Leave += new System.EventHandler(this.txtusername_Leave_1);
@@ -57,7 +57,7 @@ namespace POS_System
         BLLBill_printing blbp = new BLLBill_printing();
         BLLkot_kitchen blkk = new BLLkot_kitchen();
         BLL_Fiscal blfs = new BLL_Fiscal();
-        public static string sendtext ;
+        public static string sendtext;
         public string working_day;
         public DateTime working_date;
         public string working_time;
@@ -65,8 +65,8 @@ namespace POS_System
 
 
         string today = DateTime.Now.ToString("yyyy-MM-dd");
-       // DateTime fiscal_year_end;
-       // string frmdtString;
+        // DateTime fiscal_year_end;
+        // string frmdtString;
         private void btnlogin_Click_1(object sender, EventArgs e)
         {
 
@@ -125,7 +125,7 @@ namespace POS_System
                 MessageBox.Show("Invalid Username Pasword", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
-        
+
         public void bill()
         {
             DataTable dt = blog.getMaxid();
@@ -133,7 +133,7 @@ namespace POS_System
             {
                 if (dt.Rows[0][0].ToString() == "")
                 {
-                   log_session_id = 1;
+                    log_session_id = 1;
                 }
                 else
                 {
@@ -142,7 +142,7 @@ namespace POS_System
                 }
             }
         }
-      
+
 
         private void txtpassword_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -246,7 +246,7 @@ namespace POS_System
                 txtpassword.Text = "";
                 txtpassword.ForeColor = SystemColors.WindowText;
                 txtpassword.PasswordChar = '*';
-                
+
             }
         }
 
@@ -256,11 +256,7 @@ namespace POS_System
             this.Close();
             Application.Exit();
         }
-
-
-
-
-
+        
         private void txtusername_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Control && e.KeyCode == Keys.B)
@@ -299,5 +295,5 @@ namespace POS_System
             }
         }
     }
-    }
-  
+}
+
