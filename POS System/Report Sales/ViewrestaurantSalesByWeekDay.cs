@@ -254,23 +254,26 @@ namespace POS_System
             ctls.Controls.Clear();
             ctls.Controls.Add(alls);
         }
+        string column_name;
         private void cbo_searchTYpe_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cbo_searchTYpe.Text == "Item")
             {
                 products();
-                buttonX1.Visible = false;
+                buttonX1.Visible = true;
+                column_name = "item_name";
             }
             else if (cbo_searchTYpe.Text == "Category")
             {
-
+                column_name = "category_name";
                 category();
-                buttonX1.Visible = false;
+                buttonX1.Visible = true;
             }
             else if (cbo_searchTYpe.Text == "Bill No")
             {
                 Billno();
-                buttonX1.Visible = false;
+                buttonX1.Visible = true;
+                column_name = "bill_no";
             }
 
             else if (cbo_searchTYpe.Text == "ALL")
@@ -278,6 +281,7 @@ namespace POS_System
                 clearcombo(txt_searchText);
                 txt_searchText.Text = "ALL";
                 buttonX1.Visible = true;
+                column_name = "ALL";
             }
             else if (cbo_searchTYpe.Text == "Payment Mode")
             {
@@ -289,7 +293,8 @@ namespace POS_System
                 mylist.Add("Online");
                 mylist.Add("Credit");
                 txt_searchText.DataSource = mylist;
-                buttonX1.Visible = false;
+                buttonX1.Visible = true;
+                column_name = "payment_mode";
             }
             else if (cbo_searchTYpe.Text == "KOT Type")
             {
@@ -299,7 +304,8 @@ namespace POS_System
                 mylist.Add("K2");
                 mylist.Add("B1");             
                 txt_searchText.DataSource = mylist;
-                buttonX1.Visible = false;
+                buttonX1.Visible = true;
+                column_name = "kot_type";
             }
             else if (cbo_searchTYpe.Text == "Sales Type")
             {
@@ -310,21 +316,23 @@ namespace POS_System
                 mylist.Add("HD");
                 mylist.Add("DA");
                 txt_searchText.DataSource = mylist;
-                buttonX1.Visible = false;
-
+                buttonX1.Visible = true;
+                column_name = "sales_type";
             }
             else if (cbo_searchTYpe.Text == "User")
             {
                 clearcombo(txt_searchText);
                 User();
-                buttonX1.Visible = false;
+                buttonX1.Visible = true;
+                column_name = "cashier_name";
 
             }
             else if (cbo_searchTYpe.Text == "Service Provider")
             {
                 clearcombo(txt_searchText);
                 ServiceProvider();
-                buttonX1.Visible = false;
+                buttonX1.Visible = true;
+                column_name = "service_provider";
 
             }
 
@@ -757,22 +765,33 @@ namespace POS_System
         private void buttonX1_Click(object sender, EventArgs e)
         {
             dti.Rows.Clear();
-            dti = blod.itemGroup(Convert.ToDateTime(dtp_from.Text),Convert.ToDateTime(dtp_to.Text), fiscal_year);
-            if (dti.Rows.Count > 0)
+            itm.datagridview_name.Clear();
+            itm.datagridview_qty.Clear();
+            itm.datagridview_cost.Clear();
+            if (column_name == "ALL")
             {
-                itm.cashier = Login.sendtext;
-                itm.date_from = dtp_from.Text;
-                itm.date_to = dtp_to.Text;
-                for (int i = 0; i < dti.Rows.Count; i++)
-                {
-                    itm.datagridview_name.Add(dti.Rows[i]["item_name"].ToString());
-                    itm.datagridview_qty.Add(dti.Rows[i]["quantity"].ToString());
-                    itm.datagridview_cost.Add(dti.Rows[i]["cost"].ToString());
-
-                }
-                itm.printcalcel();
-              //  exportItemQuantity();
+                dti = blod.itemGroupWeekAll(txt_searchText.Text, Convert.ToDateTime(dtp_from.Text), Convert.ToDateTime(dtp_to.Text), cbo_week_day.Text, fiscal_year);
             }
+            else
+            {
+                dti = blod.itemGroupweek(txt_searchText.Text, Convert.ToDateTime(dtp_from.Text), Convert.ToDateTime(dtp_to.Text), cbo_week_day.Text, column_name, fiscal_year);
+            }
+                if (dti.Rows.Count > 0)
+                {
+                    itm.cashier = Login.sendtext;
+                    itm.date_from = dtp_from.Text;
+                    itm.date_to = dtp_to.Text;
+                    for (int i = 0; i < dti.Rows.Count; i++)
+                    {
+                        itm.datagridview_name.Add(dti.Rows[i]["item_name"].ToString());
+                        itm.datagridview_qty.Add(dti.Rows[i]["quantity"].ToString());
+                        itm.datagridview_cost.Add(dti.Rows[i]["cost"].ToString());
+
+                    }
+                    itm.printcalcel();
+                    //  exportItemQuantity();
+                }
+            
         }
 
       

@@ -60,7 +60,7 @@ namespace POS_System
                 dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
                 dataGridView1.EnableHeadersVisualStyles = false;
                 dataGridView1.ColumnHeadersHeight = 60;
-                txtinvoicedate.Text = DateTime.Today.ToShortDateString();
+                dtp_invoice.Text = DateTime.Today.ToShortDateString();
                 userLoad();
                 category();
                 invoice_no();
@@ -401,7 +401,7 @@ namespace POS_System
         string fiscal_year;
             public void purchase_add()
             {
-            int i = blin.createinvoice(Convert.ToInt32(txtinvoiceno.Text), Convert.ToDateTime(txtinvoicedate.Text));
+            int i = blin.createinvoice(Convert.ToInt32(txtinvoiceno.Text), Convert.ToDateTime(dtp_invoice.Text));
             if (i > 0)
             {
                         for (int j = 0; j < dataGridView1.Rows.Count; j++)
@@ -418,7 +418,7 @@ namespace POS_System
                             string po_no = dataGridView1.Rows[j].Cells["calponno"].Value.ToString();
                             string supplier_name = dataGridView1.Rows[j].Cells["calsupplier_name"].Value.ToString();
                             string static_qty = dataGridView1.Rows[j].Cells["cal_static_qty"].Value.ToString();
-                            int k = blpur.createpurhase(category_id, product_id, Convert.ToDecimal(static_qty), unit, Convert.ToInt32(txtinvoiceno.Text), price, Convert.ToDecimal(txtdiscount.Text), total, expiry_date, Convert.ToDateTime(txtinvoicedate.Text), po_no, supplier_name, Convert.ToDecimal(txttotal.Text), Convert.ToDecimal(txt_tax_amount.Text), cboreceived_by.Text, Convert.ToDecimal(txtgrandtotal.Text), txt_bill_no.Text);
+                            int k = blpur.createpurhase(category_id, product_id, Convert.ToDecimal(static_qty), unit, Convert.ToInt32(txtinvoiceno.Text), price, Convert.ToDecimal(txtdiscount.Text), total, expiry_date, Convert.ToDateTime(dtp_invoice.Text), po_no, supplier_name, Convert.ToDecimal(txttotal.Text), Convert.ToDecimal(txt_tax_amount.Text), cboreceived_by.Text, Convert.ToDecimal(txtgrandtotal.Text), txt_bill_no.Text);
                             dt = bls.getfiscalyear();
                              dt1 = bls.GetInventoryCategory();
                         if (dt.Rows.Count > 0 && dt1.Rows.Count > 0)

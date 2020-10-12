@@ -145,7 +145,7 @@ namespace BLLS
         }
         public int delete_creditrestaurant()
         {
-            return DAL.IDU("delete tbl_credit_received where paid_status!='HP'", null);
+            return DAL.IDU("delete tbl_credit_received where paid_status='RP'", null);
         }
         public int delete_credithotel()
         {

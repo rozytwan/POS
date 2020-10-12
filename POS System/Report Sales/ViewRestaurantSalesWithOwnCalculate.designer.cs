@@ -36,12 +36,23 @@ namespace POS_System
             this.label23 = new System.Windows.Forms.Label();
             this.backPanel = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.calbill_no = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.calitem = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.calquantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.caltotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.caldate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cal_sub_total = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cal_sub_total_with_dis = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cal_service_charge = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cal_taxable_amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cal_tax = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cal_grand_total = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cal_sales_type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.calcashier_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_previous = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.btn_text_export = new DevComponents.DotNetBar.ButtonX();
             this.btn_export_XML = new DevComponents.DotNetBar.ButtonX();
             this.btn_export_to_pdf = new DevComponents.DotNetBar.ButtonX();
-            this.btn_excel = new DevComponents.DotNetBar.ButtonX();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lbl_sub_total = new System.Windows.Forms.Label();
@@ -73,19 +84,8 @@ namespace POS_System
             this.dtp_from = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.calbill_no = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.calitem = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.calquantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.caltotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.caldate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cal_sub_total = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cal_sub_total_with_dis = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cal_service_charge = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cal_taxable_amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cal_tax = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cal_grand_total = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cal_sales_type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.calcashier_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_excel = new DevComponents.DotNetBar.ButtonX();
+            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.backPanel.SuspendLayout();
@@ -145,9 +145,9 @@ namespace POS_System
             // backPanel
             // 
             this.backPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.backPanel.Controls.Add(this.buttonX1);
             this.backPanel.Controls.Add(this.dataGridView1);
             this.backPanel.Controls.Add(this.btn_previous);
-            this.backPanel.Controls.Add(this.buttonX1);
             this.backPanel.Controls.Add(this.btn_text_export);
             this.backPanel.Controls.Add(this.btn_export_XML);
             this.backPanel.Controls.Add(this.btn_export_to_pdf);
@@ -189,6 +189,108 @@ namespace POS_System
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // calbill_no
+            // 
+            this.calbill_no.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.calbill_no.HeaderText = "Bill No";
+            this.calbill_no.Name = "calbill_no";
+            this.calbill_no.ReadOnly = true;
+            this.calbill_no.Width = 50;
+            // 
+            // calitem
+            // 
+            this.calitem.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.calitem.HeaderText = "Item";
+            this.calitem.Name = "calitem";
+            this.calitem.ReadOnly = true;
+            this.calitem.Width = 150;
+            // 
+            // calquantity
+            // 
+            this.calquantity.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.calquantity.HeaderText = "Quantity";
+            this.calquantity.Name = "calquantity";
+            this.calquantity.ReadOnly = true;
+            this.calquantity.Width = 50;
+            // 
+            // caltotal
+            // 
+            this.caltotal.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.caltotal.HeaderText = "Total";
+            this.caltotal.Name = "caltotal";
+            this.caltotal.ReadOnly = true;
+            this.caltotal.Width = 73;
+            // 
+            // caldate
+            // 
+            this.caldate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.caldate.HeaderText = "Date";
+            this.caldate.Name = "caldate";
+            this.caldate.ReadOnly = true;
+            this.caldate.Width = 73;
+            // 
+            // cal_sub_total
+            // 
+            this.cal_sub_total.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.cal_sub_total.HeaderText = "Sub Total";
+            this.cal_sub_total.Name = "cal_sub_total";
+            this.cal_sub_total.ReadOnly = true;
+            // 
+            // cal_sub_total_with_dis
+            // 
+            this.cal_sub_total_with_dis.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.cal_sub_total_with_dis.HeaderText = "Subtotal With Discount";
+            this.cal_sub_total_with_dis.Name = "cal_sub_total_with_dis";
+            this.cal_sub_total_with_dis.ReadOnly = true;
+            this.cal_sub_total_with_dis.Width = 70;
+            // 
+            // cal_service_charge
+            // 
+            this.cal_service_charge.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.cal_service_charge.HeaderText = "Service Charge";
+            this.cal_service_charge.Name = "cal_service_charge";
+            this.cal_service_charge.ReadOnly = true;
+            this.cal_service_charge.Width = 72;
+            // 
+            // cal_taxable_amount
+            // 
+            this.cal_taxable_amount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.cal_taxable_amount.HeaderText = "Taxable Amount";
+            this.cal_taxable_amount.Name = "cal_taxable_amount";
+            this.cal_taxable_amount.ReadOnly = true;
+            // 
+            // cal_tax
+            // 
+            this.cal_tax.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.cal_tax.HeaderText = "Tax";
+            this.cal_tax.Name = "cal_tax";
+            this.cal_tax.ReadOnly = true;
+            this.cal_tax.Width = 73;
+            // 
+            // cal_grand_total
+            // 
+            this.cal_grand_total.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.cal_grand_total.HeaderText = "Grand total";
+            this.cal_grand_total.Name = "cal_grand_total";
+            this.cal_grand_total.ReadOnly = true;
+            // 
+            // cal_sales_type
+            // 
+            this.cal_sales_type.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.cal_sales_type.HeaderText = "Sales Type";
+            this.cal_sales_type.Name = "cal_sales_type";
+            this.cal_sales_type.ReadOnly = true;
+            this.cal_sales_type.Width = 72;
+            // 
+            // calcashier_name
+            // 
+            this.calcashier_name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.calcashier_name.HeaderText = "Discount %";
+            this.calcashier_name.Name = "calcashier_name";
+            this.calcashier_name.ReadOnly = true;
+            this.calcashier_name.Visible = false;
+            this.calcashier_name.Width = 60;
+            // 
             // btn_previous
             // 
             this.btn_previous.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
@@ -203,21 +305,6 @@ namespace POS_System
             this.btn_previous.Symbol = "";
             this.btn_previous.TabIndex = 147;
             this.btn_previous.Click += new System.EventHandler(this.btn_previous_Click);
-            // 
-            // buttonX1
-            // 
-            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.buttonX1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonX1.Location = new System.Drawing.Point(846, 610);
-            this.buttonX1.Name = "buttonX1";
-            this.buttonX1.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(14);
-            this.buttonX1.Size = new System.Drawing.Size(156, 52);
-            this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX1.Symbol = "";
-            this.buttonX1.TabIndex = 144;
-            this.buttonX1.Text = "Print Item";
-            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
             // 
             // btn_text_export
             // 
@@ -263,21 +350,6 @@ namespace POS_System
             this.btn_export_to_pdf.TabIndex = 141;
             this.btn_export_to_pdf.Text = "Export to PDF";
             this.btn_export_to_pdf.Click += new System.EventHandler(this.btn_export_to_pdf_Click);
-            // 
-            // btn_excel
-            // 
-            this.btn_excel.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_excel.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btn_excel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_excel.Location = new System.Drawing.Point(658, 610);
-            this.btn_excel.Name = "btn_excel";
-            this.btn_excel.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(14);
-            this.btn_excel.Size = new System.Drawing.Size(182, 52);
-            this.btn_excel.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_excel.Symbol = "";
-            this.btn_excel.TabIndex = 140;
-            this.btn_excel.Text = "Export to Excel";
-            this.btn_excel.Click += new System.EventHandler(this.btn_excel_Click);
             // 
             // panel1
             // 
@@ -833,107 +905,35 @@ namespace POS_System
             this.label6.TabIndex = 115;
             this.label6.Text = "Date From:";
             // 
-            // calbill_no
+            // btn_excel
             // 
-            this.calbill_no.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.calbill_no.HeaderText = "Bill No";
-            this.calbill_no.Name = "calbill_no";
-            this.calbill_no.ReadOnly = true;
-            this.calbill_no.Width = 50;
+            this.btn_excel.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btn_excel.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btn_excel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_excel.Location = new System.Drawing.Point(640, 610);
+            this.btn_excel.Name = "btn_excel";
+            this.btn_excel.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(14);
+            this.btn_excel.Size = new System.Drawing.Size(182, 52);
+            this.btn_excel.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btn_excel.Symbol = "";
+            this.btn_excel.TabIndex = 140;
+            this.btn_excel.Text = "Export to Excel";
+            this.btn_excel.Click += new System.EventHandler(this.btn_excel_Click);
             // 
-            // calitem
+            // buttonX1
             // 
-            this.calitem.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.calitem.HeaderText = "Item";
-            this.calitem.Name = "calitem";
-            this.calitem.ReadOnly = true;
-            this.calitem.Width = 150;
-            // 
-            // calquantity
-            // 
-            this.calquantity.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.calquantity.HeaderText = "Quantity";
-            this.calquantity.Name = "calquantity";
-            this.calquantity.ReadOnly = true;
-            this.calquantity.Width = 50;
-            // 
-            // caltotal
-            // 
-            this.caltotal.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.caltotal.HeaderText = "Total";
-            this.caltotal.Name = "caltotal";
-            this.caltotal.ReadOnly = true;
-            this.caltotal.Width = 73;
-            // 
-            // caldate
-            // 
-            this.caldate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.caldate.HeaderText = "Date";
-            this.caldate.Name = "caldate";
-            this.caldate.ReadOnly = true;
-            this.caldate.Width = 73;
-            // 
-            // cal_sub_total
-            // 
-            this.cal_sub_total.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.cal_sub_total.HeaderText = "Sub Total";
-            this.cal_sub_total.Name = "cal_sub_total";
-            this.cal_sub_total.ReadOnly = true;
-            // 
-            // cal_sub_total_with_dis
-            // 
-            this.cal_sub_total_with_dis.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.cal_sub_total_with_dis.HeaderText = "Subtotal With Discount";
-            this.cal_sub_total_with_dis.Name = "cal_sub_total_with_dis";
-            this.cal_sub_total_with_dis.ReadOnly = true;
-            this.cal_sub_total_with_dis.Width = 70;
-            // 
-            // cal_service_charge
-            // 
-            this.cal_service_charge.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.cal_service_charge.HeaderText = "Service Charge";
-            this.cal_service_charge.Name = "cal_service_charge";
-            this.cal_service_charge.ReadOnly = true;
-            this.cal_service_charge.Width = 72;
-            // 
-            // cal_taxable_amount
-            // 
-            this.cal_taxable_amount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.cal_taxable_amount.HeaderText = "Taxable Amount";
-            this.cal_taxable_amount.Name = "cal_taxable_amount";
-            this.cal_taxable_amount.ReadOnly = true;
-            // 
-            // cal_tax
-            // 
-            this.cal_tax.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.cal_tax.HeaderText = "Tax";
-            this.cal_tax.Name = "cal_tax";
-            this.cal_tax.ReadOnly = true;
-            this.cal_tax.Width = 73;
-            // 
-            // cal_grand_total
-            // 
-            this.cal_grand_total.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.cal_grand_total.HeaderText = "Grand total";
-            this.cal_grand_total.Name = "cal_grand_total";
-            this.cal_grand_total.ReadOnly = true;
-            // 
-            // cal_sales_type
-            // 
-            this.cal_sales_type.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.cal_sales_type.HeaderText = "Sales Type";
-            this.cal_sales_type.Name = "cal_sales_type";
-            this.cal_sales_type.ReadOnly = true;
-            this.cal_sales_type.Width = 72;
-            // 
-            // calcashier_name
-            // 
-            this.calcashier_name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.calcashier_name.HeaderText = "Discount %";
-            this.calcashier_name.Name = "calcashier_name";
-            this.calcashier_name.ReadOnly = true;
-            this.calcashier_name.Visible = false;
-            this.calcashier_name.Width = 60;
+            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.buttonX1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonX1.Location = new System.Drawing.Point(828, 610);
+            this.buttonX1.Name = "buttonX1";
+            this.buttonX1.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(14);
+            this.buttonX1.Size = new System.Drawing.Size(156, 52);
+            this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX1.Symbol = "";
+            this.buttonX1.TabIndex = 148;
+            this.buttonX1.Text = "Print Item";
+            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
             // 
             // ViewRestaurantSalesWithOwnCalculate
             // 
@@ -988,11 +988,9 @@ namespace POS_System
         private System.Windows.Forms.Label lbltaotal_quantity;
         private DataGridView dataGridView1;
         private Label lbl_service_charge;
-        private DevComponents.DotNetBar.ButtonX btn_excel;
         private DevComponents.DotNetBar.ButtonX btn_export_to_pdf;
         private DevComponents.DotNetBar.ButtonX btn_export_XML;
         private DevComponents.DotNetBar.ButtonX btn_text_export;
-        private DevComponents.DotNetBar.ButtonX buttonX1;
         private Label lbl_grand_total;
         private Label lbl_tax;
         private CheckBox chk_time;
@@ -1018,5 +1016,7 @@ namespace POS_System
         private DataGridViewTextBoxColumn calquantity;
         private DataGridViewTextBoxColumn calitem;
         private DataGridViewTextBoxColumn calbill_no;
+        private DevComponents.DotNetBar.ButtonX buttonX1;
+        private DevComponents.DotNetBar.ButtonX btn_excel;
     }
 }

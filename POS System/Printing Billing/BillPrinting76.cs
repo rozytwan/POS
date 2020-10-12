@@ -425,14 +425,14 @@ namespace POS_System
                         y = y + 13;
                     }
                 }
-                if (FooterStatus == true && printer_name == "Qprintername")
+                if (FooterStatus == true && printer_name != "Billing")
                 {
-                    e.Graphics.DrawString(note_1, drawFontArial12Bold, drawBrush, new RectangleF(xs, y, widths, heights), drawFormatCenter);
-                    ys += e.Graphics.MeasureString(note_1, drawFontArial12Bold).Height; y = y + 13; y = y + 13;
-                    if (note_1.Length > 40)
-                    {
-                        y = y + 13;
-                    }
+                    //e.Graphics.DrawString(note_2, drawFontArial12Bold, drawBrush, new RectangleF(xs, y, widths, heights), drawFormatCenter);
+                    //ys += e.Graphics.MeasureString(note_2, drawFontArial12Bold).Height; y = y + 13; y = y + 13;
+                    //if (note_1.Length > 40)
+                    //{
+                    //    y = y + 13;
+                    //}
                     gra.DrawString(note_2, new System.Drawing.Font("minisystem", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 10, y + yinc + ybinc);
                     if (note_2.Length > 40)
                     {
@@ -490,6 +490,28 @@ namespace POS_System
                             y = y + 15;
                         }
                     }
+                    if (billing_print_again == true)
+                    {
+                        gra.DrawString("Re-Print Date #", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, y + ybinc + yinc);
+                        gra.DrawString(String.Format("{0:f}", strDate), new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 100, y + ybinc + yinc);
+                        y = y + 15;
+                    }
+                    y = y + 50;
+                    gra.DrawLine(drawingPen, 0, y, 80, y); y = y + 3;
+                    gra.DrawString("Cashier", new System.Drawing.Font("Time New Roamn", 9, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 10, y);
+
+
+                    //signature line2 
+                    gra.DrawLine(drawingPen, 200, y, 300, y); y = y + 3;
+                    gra.DrawString("Customer", new System.Drawing.Font("Time New Roamn", 9, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 210, y); y = y + 15;
+                    if (billing_print_only == true)
+                    {
+                        e.Graphics.DrawString("This Quotation is not for official use.", drawFontArial10Regular, drawBrush, new RectangleF(xs, y, widths, heights), drawFormatCenter);
+                        ys += e.Graphics.MeasureString("This Quotation is not for official use.", drawFontArial10Regular).Height; y = y + 15;
+
+                    }
+
+                    gra.DrawLine(drawingPen, 0, y + yinc + 10 + ybinc, 314, y + yinc + 10 + ybinc);
                 }
                 if (BillFooter == false && printer_name == "Billing")
                 {

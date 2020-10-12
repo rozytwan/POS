@@ -182,7 +182,7 @@ namespace POS_System.Table_Management
             if (e.Button == MouseButtons.Right)
             {
                 //Control ctrl = this.Parent;
-                //KitchenOrderInfo koi = new KitchenOrderInfo();
+               // KitchenOrderInfo koi = new KitchenOrderInfo();
                 //koi.table_no = (((Button)sender).Name).ToString();
                 //ctrl.Controls.Clear();
                 //ctrl.Controls.Add(koi);
@@ -261,17 +261,22 @@ namespace POS_System.Table_Management
          
             else
             {
-                Control ctrl = this.Parent;
-                KitchenOrderInfo koi = new KitchenOrderInfo();
-                koi.table_no = (((Button)sender).Name).ToString();
-                //koi.table_names = ((Button)sender).Text;
-                koi.ShowDialog();
-                if (koi.DialogResult == DialogResult.OK)
+                bool coverup = cd.CoverUpDynamic();
+                if (coverup==true)
                 {
-                    KOTOrder vieret = new KOTOrder(label1.Text, table_name);
-                    ctrl.Controls.Clear();
-                    ctrl.Controls.Add(vieret);
+                    Control ctrl = this.Parent;
+                    KitchenOrderInfo koi = new KitchenOrderInfo();
+                    koi.table_no = (((Button)sender).Name).ToString();
+                    //koi.table_names = ((Button)sender).Text;
+                    koi.ShowDialog();
+                    if (koi.DialogResult == DialogResult.OK)
+                    {
+                        KOTOrder vieret = new KOTOrder(label1.Text, table_name);
+                        ctrl.Controls.Clear();
+                        ctrl.Controls.Add(vieret);
+                    }
                 }
+         
 
             }
             long_press = false;

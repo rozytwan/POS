@@ -184,6 +184,18 @@ namespace BLLS
             dt = DAL.getuser("select sum(qty) from tbl_stockLog where cast(dateOfSales as date) between @from and @to", parm);
             return dt;
         }
+        public DataTable SumSalesQuantity(int product_id,DateTime from, DateTime to)
+        {
+            SqlParameter[] parm = new SqlParameter[]
+         {
+             new SqlParameter("@product_id",product_id),
+             new SqlParameter("@from",from),
+              new SqlParameter("@to",to),
+         };
+            DataTable dt = new DataTable();
+            dt = DAL.getuser("select sum(qty) as qty,unit from tbl_stock_sales_log where product_id=@product_id and date_of_sales between @from and @to group by qty,unit", parm);
+            return dt;
+        }
         public DataTable GetStockLog(DateTime from, DateTime to)
         {
             SqlParameter[] parm = new SqlParameter[]
@@ -233,7 +245,7 @@ namespace BLLS
              new SqlParameter("@from",from),
               new SqlParameter("@to",to),
            };
-            return DAL.getuser("select (p.product_name),s.location,s.qty as purchase,s.dateOfSales,s.status,s.unit from tbl_stock_products p inner join tbl_stockLog s on p.product_id=s.product_id where cast(dateOfSales as date) between @from and @to order by dateOfSales desc", parm);
+            return DAL.getuser("select p.product_id,(p.product_name),s.location,s.qty as purchase,s.dateOfSales,s.status,s.unit from tbl_stock_products p inner join tbl_stockLog s on p.product_id=s.product_id where cast(dateOfSales as date) between @from and @to order by dateOfSales desc", parm);
 
         }
         public DataTable GetStock()

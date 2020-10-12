@@ -53,18 +53,24 @@ namespace POS_System
             DateTime dateto = Convert.ToDateTime(dtp_to.Text);
           
             DataTable dt = blls.GetAllProduct(datefrom, dateto);
+            
             if (dt.Rows.Count > 0)
             {
                 dataGridView1.Rows.Clear();
                 for (int i = 0; i < dt.Rows.Count; i++)
                 {
                     dataGridView1.Rows.Add();
-               
-                   dataGridView1.Rows[i].Cells["col_product_name"].Value = dt.Rows[i]["product_name"].ToString();
-             
+                    dataGridView1.Rows[i].Cells["col_product_id"].Value = dt.Rows[i]["product_id"].ToString();
+                    int product_id =Convert.ToInt32(dt.Rows[i]["product_id"].ToString());
+                    dataGridView1.Rows[i].Cells["col_product_name"].Value = dt.Rows[i]["product_name"].ToString();
                     dataGridView1.Rows[i].Cells["col_location"].Value = dt.Rows[i]["location"].ToString();
                     dataGridView1.Rows[i].Cells["col_status"].Value = dt.Rows[i]["status"].ToString();
                     dataGridView1.Rows[i].Cells["col_purchase_date"].Value = dt.Rows[i]["dateOfSales"].ToString();
+                    DataTable dt1 = blls.SumSalesQuantity(product_id,datefrom, dateto);
+                    if (dt1.Rows.Count>0)
+                    {
+                      dataGridView1.Rows[i].Cells["col_sales"].Value = dt1.Rows[i]["qty"].ToString() + " " + dt1.Rows[i]["unit"].ToString();
+                    }
                     string status = dt.Rows[i]["status"].ToString();
                     if (status == "Opening")
                     {

@@ -35,21 +35,21 @@
             this.add_product = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.add_category = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.adddamage = new DevComponents.DotNetBar.Metro.MetroTileItem();
-            this.metroviestocks = new DevComponents.DotNetBar.Metro.MetroTileItem();
-            this.metroexpiry = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.metropruchases = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.metroTileItem13 = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.metroTileItem14 = new DevComponents.DotNetBar.Metro.MetroTileItem();
+            this.metroviestocks = new DevComponents.DotNetBar.Metro.MetroTileItem();
+            this.metroexpiry = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.metroTilePanel2 = new DevComponents.DotNetBar.Metro.MetroTilePanel();
             this.itemContainer2 = new DevComponents.DotNetBar.ItemContainer();
             this.metroTouchBilling = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.metroorderitem = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.metroTileItem12 = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.metroTileItem5 = new DevComponents.DotNetBar.Metro.MetroTileItem();
-            this.metroTileItem6 = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.metroTileItem7 = new DevComponents.DotNetBar.Metro.MetroTileItem();
-            this.metroTileItem9 = new DevComponents.DotNetBar.Metro.MetroTileItem();
+            this.metroTileItem6 = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.metroTileItem15 = new DevComponents.DotNetBar.Metro.MetroTileItem();
+            this.metroTileItem9 = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.metroTileItem8 = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.metroVieworder = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.metroResturantsell = new DevComponents.DotNetBar.Metro.MetroTileItem();
@@ -70,9 +70,8 @@
             this.contentpanel.Controls.Add(this.panel1);
             this.contentpanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.contentpanel.Location = new System.Drawing.Point(0, 0);
-            this.contentpanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.contentpanel.Name = "contentpanel";
-            this.contentpanel.Size = new System.Drawing.Size(1369, 882);
+            this.contentpanel.Size = new System.Drawing.Size(1027, 717);
             this.contentpanel.TabIndex = 7;
             this.contentpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.contentpanel_Paint);
             // 
@@ -80,10 +79,9 @@
             // 
             this.panel1.Controls.Add(this.metroTilePanel1);
             this.panel1.Controls.Add(this.metroTilePanel2);
-            this.panel1.Location = new System.Drawing.Point(4, 38);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(3, 31);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1361, 841);
+            this.panel1.Size = new System.Drawing.Size(1021, 683);
             this.panel1.TabIndex = 1;
             // 
             // metroTilePanel1
@@ -98,11 +96,9 @@
             this.metroTilePanel1.DragDropSupport = true;
             this.metroTilePanel1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.itemContainer1});
-            this.metroTilePanel1.Location = new System.Drawing.Point(676, 22);
-            this.metroTilePanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroTilePanel1.Location = new System.Drawing.Point(507, 18);
             this.metroTilePanel1.Name = "metroTilePanel1";
-           // this.metroTilePanel1.ReserveLeftSpace = false;
-            this.metroTilePanel1.Size = new System.Drawing.Size(681, 765);
+            this.metroTilePanel1.Size = new System.Drawing.Size(511, 622);
             this.metroTilePanel1.TabIndex = 5;
             this.metroTilePanel1.Text = "metroTilePanel1";
             // 
@@ -128,10 +124,6 @@
             this.metroviestocks,
             this.metroexpiry});
             this.itemContainer1.Text = "Stock";
-            // 
-            // 
-            // 
-           // this.itemContainer1.TitleMouseOverStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
             // 
             // 
@@ -196,40 +188,6 @@
             this.adddamage.TitleTextAlignment = System.Drawing.ContentAlignment.BottomCenter;
             this.adddamage.Click += new System.EventHandler(this.adddamage_Click_1);
             // 
-            // metroviestocks
-            // 
-            this.metroviestocks.Image = global::POS_System.Properties.Resources.transfer_data;
-            this.metroviestocks.ImageTextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroviestocks.Name = "metroviestocks";
-            this.metroviestocks.SymbolColor = System.Drawing.Color.Empty;
-            this.metroviestocks.TileColor = DevComponents.DotNetBar.Metro.eMetroTileColor.Azure;
-            this.metroviestocks.TileSize = new System.Drawing.Size(220, 130);
-            // 
-            // 
-            // 
-            this.metroviestocks.TileStyle.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
-            this.metroviestocks.TileStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.metroviestocks.TitleText = "Stock Transfer";
-            this.metroviestocks.TitleTextAlignment = System.Drawing.ContentAlignment.BottomCenter;
-            this.metroviestocks.Click += new System.EventHandler(this.metroviestocks_Click_1);
-            // 
-            // metroexpiry
-            // 
-            this.metroexpiry.Image = global::POS_System.Properties.Resources.scales;
-            this.metroexpiry.ImageTextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroexpiry.Name = "metroexpiry";
-            this.metroexpiry.SymbolColor = System.Drawing.Color.Empty;
-            this.metroexpiry.TileColor = DevComponents.DotNetBar.Metro.eMetroTileColor.Maroon;
-            this.metroexpiry.TileSize = new System.Drawing.Size(220, 130);
-            // 
-            // 
-            // 
-            this.metroexpiry.TileStyle.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
-            this.metroexpiry.TileStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.metroexpiry.TitleText = "Add Inhouse Unit";
-            this.metroexpiry.TitleTextAlignment = System.Drawing.ContentAlignment.BottomCenter;
-            this.metroexpiry.Click += new System.EventHandler(this.metroexpiry_Click);
-            // 
             // metropruchases
             // 
             this.metropruchases.Image = global::POS_System.Properties.Resources.bar_code_scanner;
@@ -282,6 +240,40 @@
             this.metroTileItem14.TitleTextAlignment = System.Drawing.ContentAlignment.BottomCenter;
             this.metroTileItem14.Click += new System.EventHandler(this.metroTileItem14_Click);
             // 
+            // metroviestocks
+            // 
+            this.metroviestocks.Image = global::POS_System.Properties.Resources.transfer_data;
+            this.metroviestocks.ImageTextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroviestocks.Name = "metroviestocks";
+            this.metroviestocks.SymbolColor = System.Drawing.Color.Empty;
+            this.metroviestocks.TileColor = DevComponents.DotNetBar.Metro.eMetroTileColor.Azure;
+            this.metroviestocks.TileSize = new System.Drawing.Size(220, 130);
+            // 
+            // 
+            // 
+            this.metroviestocks.TileStyle.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.metroviestocks.TileStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.metroviestocks.TitleText = "Stock Transfer";
+            this.metroviestocks.TitleTextAlignment = System.Drawing.ContentAlignment.BottomCenter;
+            this.metroviestocks.Click += new System.EventHandler(this.metroviestocks_Click_1);
+            // 
+            // metroexpiry
+            // 
+            this.metroexpiry.Image = global::POS_System.Properties.Resources.scales;
+            this.metroexpiry.ImageTextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroexpiry.Name = "metroexpiry";
+            this.metroexpiry.SymbolColor = System.Drawing.Color.Empty;
+            this.metroexpiry.TileColor = DevComponents.DotNetBar.Metro.eMetroTileColor.Maroon;
+            this.metroexpiry.TileSize = new System.Drawing.Size(220, 130);
+            // 
+            // 
+            // 
+            this.metroexpiry.TileStyle.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.metroexpiry.TileStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.metroexpiry.TitleText = "Add Inhouse Unit";
+            this.metroexpiry.TitleTextAlignment = System.Drawing.ContentAlignment.BottomCenter;
+            this.metroexpiry.Click += new System.EventHandler(this.metroexpiry_Click);
+            // 
             // metroTilePanel2
             // 
             this.metroTilePanel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -295,11 +287,9 @@
             this.metroTilePanel2.DragDropSupport = true;
             this.metroTilePanel2.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.itemContainer2});
-            this.metroTilePanel2.Location = new System.Drawing.Point(44, 22);
-            this.metroTilePanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroTilePanel2.Location = new System.Drawing.Point(33, 18);
             this.metroTilePanel2.Name = "metroTilePanel2";
-            //this.metroTilePanel2.ReserveLeftSpace = false;
-            this.metroTilePanel2.Size = new System.Drawing.Size(653, 778);
+            this.metroTilePanel2.Size = new System.Drawing.Size(490, 632);
             this.metroTilePanel2.TabIndex = 4;
             this.metroTilePanel2.Text = "metroTilePanel1";
             // 
@@ -323,14 +313,10 @@
             this.metroTileItem12,
             this.metroTileItem5,
             this.metroTileItem7,
-            this.metroTileItem15,
+            this.metroTileItem6,
             this.metroTileItem9,
-            this.metroTileItem6});
+            this.metroTileItem15});
             this.itemContainer2.Text = "Service";
-            // 
-            // 
-            // 
-          //  this.itemContainer2.TitleMouseOverStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
             // 
             // 
@@ -411,23 +397,6 @@
             this.metroTileItem5.TitleTextAlignment = System.Drawing.ContentAlignment.BottomCenter;
             this.metroTileItem5.Click += new System.EventHandler(this.metroTileItem5_Click);
             // 
-            // metroTileItem6
-            // 
-            this.metroTileItem6.Image = global::POS_System.Properties.Resources.coffee;
-            this.metroTileItem6.ImageTextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroTileItem6.Name = "metroTileItem6";
-            this.metroTileItem6.SymbolColor = System.Drawing.Color.Empty;
-            this.metroTileItem6.TileColor = DevComponents.DotNetBar.Metro.eMetroTileColor.Rust;
-            this.metroTileItem6.TileSize = new System.Drawing.Size(220, 130);
-            // 
-            // 
-            // 
-            this.metroTileItem6.TileStyle.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
-            this.metroTileItem6.TileStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.metroTileItem6.TitleText = "Take Away Billing";
-            this.metroTileItem6.TitleTextAlignment = System.Drawing.ContentAlignment.BottomCenter;
-            this.metroTileItem6.Click += new System.EventHandler(this.metroTileItem6_Click);
-            // 
             // metroTileItem7
             // 
             this.metroTileItem7.Image = global::POS_System.Properties.Resources.atm;
@@ -445,22 +414,22 @@
             this.metroTileItem7.TitleTextAlignment = System.Drawing.ContentAlignment.BottomCenter;
             this.metroTileItem7.Click += new System.EventHandler(this.metroTileItem7_Click);
             // 
-            // metroTileItem9
+            // metroTileItem6
             // 
-            this.metroTileItem9.Image = global::POS_System.Properties.Resources.ebook__1_;
-            this.metroTileItem9.ImageTextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroTileItem9.Name = "metroTileItem9";
-            this.metroTileItem9.SymbolColor = System.Drawing.Color.Empty;
-            this.metroTileItem9.TileColor = DevComponents.DotNetBar.Metro.eMetroTileColor.Rust;
-            this.metroTileItem9.TileSize = new System.Drawing.Size(220, 130);
+            this.metroTileItem6.Image = global::POS_System.Properties.Resources.coffee;
+            this.metroTileItem6.ImageTextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTileItem6.Name = "metroTileItem6";
+            this.metroTileItem6.SymbolColor = System.Drawing.Color.Empty;
+            this.metroTileItem6.TileColor = DevComponents.DotNetBar.Metro.eMetroTileColor.Rust;
+            this.metroTileItem6.TileSize = new System.Drawing.Size(220, 130);
             // 
             // 
             // 
-            this.metroTileItem9.TileStyle.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
-            this.metroTileItem9.TileStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.metroTileItem9.TitleText = "Cash Drop";
-            this.metroTileItem9.TitleTextAlignment = System.Drawing.ContentAlignment.BottomCenter;
-            this.metroTileItem9.Click += new System.EventHandler(this.metroTileItem9_Click);
+            this.metroTileItem6.TileStyle.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.metroTileItem6.TileStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.metroTileItem6.TitleText = "Take Away Billing";
+            this.metroTileItem6.TitleTextAlignment = System.Drawing.ContentAlignment.BottomCenter;
+            this.metroTileItem6.Click += new System.EventHandler(this.metroTileItem6_Click);
             // 
             // metroTileItem15
             // 
@@ -478,6 +447,23 @@
             this.metroTileItem15.TitleText = "Sales Summary Report";
             this.metroTileItem15.TitleTextAlignment = System.Drawing.ContentAlignment.BottomCenter;
             this.metroTileItem15.Click += new System.EventHandler(this.metroTileItem15_Click);
+            // 
+            // metroTileItem9
+            // 
+            this.metroTileItem9.Image = global::POS_System.Properties.Resources.ebook__1_;
+            this.metroTileItem9.ImageTextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTileItem9.Name = "metroTileItem9";
+            this.metroTileItem9.SymbolColor = System.Drawing.Color.Empty;
+            this.metroTileItem9.TileColor = DevComponents.DotNetBar.Metro.eMetroTileColor.MaroonWashed;
+            this.metroTileItem9.TileSize = new System.Drawing.Size(220, 130);
+            // 
+            // 
+            // 
+            this.metroTileItem9.TileStyle.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.metroTileItem9.TileStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.metroTileItem9.TitleText = "Cash Drop";
+            this.metroTileItem9.TitleTextAlignment = System.Drawing.ContentAlignment.BottomCenter;
+            this.metroTileItem9.Click += new System.EventHandler(this.metroTileItem9_Click);
             // 
             // metroTileItem8
             // 
@@ -644,13 +630,12 @@
             // 
             // allmenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.contentpanel);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "allmenu";
-            this.Size = new System.Drawing.Size(1369, 886);
+            this.Size = new System.Drawing.Size(1027, 720);
             this.Load += new System.EventHandler(this.Main_menu_Load);
             this.contentpanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

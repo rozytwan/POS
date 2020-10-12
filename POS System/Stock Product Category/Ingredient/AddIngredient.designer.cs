@@ -211,6 +211,7 @@
             this.Name = "AddIngredient";
             this.Size = new System.Drawing.Size(960, 602);
             this.Load += new System.EventHandler(this.ItemList_Load);
+            this.Click += new System.EventHandler(this.AddIngredient_Click);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

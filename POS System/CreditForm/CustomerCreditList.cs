@@ -24,11 +24,14 @@ namespace POS_System
             InitializeComponent();
         }
         string credit_load = second_user_interface.creditload;
+        decimal sumtotal = 0;
+        decimal sumqty_credit= 0;
+        decimal sumqty_paid = 0;
+        decimal sumqty_remaining = 0;
         public void LoadCustomerCredit()
         {
             if (credit_load == "Hotel Credit")
             {
-               
                 DataTable dt = blcustom.Get_Hotel_Credit_Groupbyid(customer_id);
                 if (dt.Rows.Count > 0)
                 {
@@ -60,7 +63,7 @@ namespace POS_System
                     }
 
                 }
-              
+                TotalsumCredit();
             }
             else
             {
@@ -86,19 +89,73 @@ namespace POS_System
                         if (dt2.Rows.Count>0)
                         {
                             dataGridView1.Rows[i].Cells["col_paid"].Value = dt2.Rows[0][0].ToString();
+                      
                         }
                         if (dt3.Rows.Count > 0)
                         {
                             dataGridView1.Rows[i].Cells["col_remaining"].Value = dt3.Rows[0]["credit_left"].ToString();
+                           
                         }
                         dataGridView1.Rows[i].Cells["col_credit_amount"].Value = dt.Rows[i]["sum_credit_amount"].ToString();
-                  
+                    
                     }
 
                 }
+               TotalsumCredit();
             }
         }
-   
+
+        public void TotalsumCredit()
+        {
+            if (lbl_credit.Text != "")
+            {
+                for (int i = 0; i < dataGridView1.Rows.Count; ++i)
+
+                {
+
+                    sumqty_credit += Convert.ToDecimal(dataGridView1.Rows[i].Cells[3].Value);
+
+                }
+                lbl_credit.Text = sumqty_credit.ToString();
+            }
+            else
+            {
+                lbl_credit.Text = "0.00";
+            }
+            if (lbl_remaining.Text != "")
+            {
+                for (int i = 0; i < dataGridView1.Rows.Count; ++i)
+
+                {
+
+                    sumqty_remaining += Convert.ToDecimal(dataGridView1.Rows[i].Cells[5].Value);
+
+                }
+                lbl_remaining.Text = sumqty_remaining.ToString();
+            }
+            else
+            {
+                lbl_remaining.Text = "0.00";
+            }
+            if (lbl_paid.Text != "")
+            {
+                for (int i = 0; i < dataGridView1.Rows.Count; ++i)
+
+                {
+                    if (dataGridView1.Rows[i].Cells[4].Value=="")
+                    {
+                        dataGridView1.Rows[i].Cells[4].Value = "0.00";
+                    }
+                    sumqty_paid += Convert.ToDecimal(dataGridView1.Rows[i].Cells[4].Value);
+
+                }
+                lbl_paid.Text = sumqty_paid.ToString();
+            }
+            else
+            {
+                lbl_paid.Text = "0.00";
+            }
+        }
         private void CustomerDetail_Load(object sender, EventArgs e)
         {
             LoadCustomerCredit();

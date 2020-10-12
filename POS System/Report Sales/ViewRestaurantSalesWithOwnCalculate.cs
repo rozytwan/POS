@@ -328,9 +328,9 @@ namespace POS_System
             BLL_user_log bulg = new BLL_user_log();
             string user_name_log = Login.sendtext;
             string day = DateTime.Now.ToString("ddd");
-            DataTable dt = bulg.getall_user_log(user_name_log,day, "Viewrestaurant");
+            DataTable dt = bulg.getall_user_log(user_name_log, day, "Viewrestaurant");
 
-            if(dt.Rows.Count==0)
+            if (dt.Rows.Count == 0)
             {
                 int abc = bulg.createuserlog(user_name_log, "Viewrestaurant", date, day);
             }
@@ -352,18 +352,20 @@ namespace POS_System
             if (cbo_searchTYpe.Text == "Item")
             {
                 products();
-                buttonX1.Visible = false;
+                colunm_name = "item_name";
+                buttonX1.Visible = true;
             }
             else if (cbo_searchTYpe.Text == "Category")
             {
-
                 category();
-                buttonX1.Visible = false;
+                colunm_name = "category_name";
+                buttonX1.Visible = true;
             }
             else if (cbo_searchTYpe.Text == "Bill No")
             {
                 Billno();
-                buttonX1.Visible = false;
+                colunm_name = "bill_no";
+                buttonX1.Visible = true;
             }
             else if (cbo_searchTYpe.Text == "Category Group")
             {
@@ -375,6 +377,7 @@ namespace POS_System
             else if (cbo_searchTYpe.Text == "ALL")
             {
                 clearcombo(txt_searchText);
+                colunm_name = "ALL";
                 txt_searchText.Text = "ALL";
                 buttonX1.Visible = true;
             }
@@ -387,8 +390,9 @@ namespace POS_System
                 mylist.Add("Cheque");
                 mylist.Add("Online");
                 mylist.Add("Credit");
+                colunm_name = "payment_mode";
                 txt_searchText.DataSource = mylist;
-                buttonX1.Visible = false;
+                buttonX1.Visible = true;
             }
             else if (cbo_searchTYpe.Text == "KOT Type")
             {
@@ -399,8 +403,9 @@ namespace POS_System
                 mylist.Add("K3");
                 mylist.Add("B1");
                 mylist.Add("B2");
+                colunm_name = "kot_type";
                 txt_searchText.DataSource = mylist;
-                buttonX1.Visible = false;
+                buttonX1.Visible = true;
             }
             else if (cbo_searchTYpe.Text == "Sales Type")
             {
@@ -410,22 +415,23 @@ namespace POS_System
                 mylist.Add("TA");
                 mylist.Add("HD");
                 mylist.Add("DA");
+                colunm_name = "sales_type";
                 txt_searchText.DataSource = mylist;
-                buttonX1.Visible = false;
+                buttonX1.Visible = true;
 
             }
             else if (cbo_searchTYpe.Text == "User")
             {
                 clearcombo(txt_searchText);
                 User();
-                buttonX1.Visible = false;
+                buttonX1.Visible = true;
 
             }
             else if (cbo_searchTYpe.Text == "Service Provider")
             {
                 clearcombo(txt_searchText);
                 User();
-                buttonX1.Visible = false;
+                buttonX1.Visible = true;
 
             }
 
@@ -557,11 +563,21 @@ namespace POS_System
         }
         ItemPrint itm = new ItemPrint();
         DataTable dti = new DataTable();
+        
         private void buttonX1_Click(object sender, EventArgs e)
         {
-
             dti.Rows.Clear();
-           dti = blod.itemGroup(Convert.ToDateTime(dtp_from.Text),Convert.ToDateTime(dtp_to.Text),fiscal_year);
+            itm.datagridview_name.Clear();
+            itm.datagridview_qty.Clear();
+            itm.datagridview_cost.Clear();
+            if (colunm_name=="ALL")
+            {
+                dti = blod.itemGroup(Convert.ToDateTime(dtp_from.Text), Convert.ToDateTime(dtp_to.Text), fiscal_year);
+            }
+            else
+            {
+                dti = blod.itemGroups(txt_searchText.Text, Convert.ToDateTime(dtp_from.Text), Convert.ToDateTime(dtp_to.Text), colunm_name, fiscal_year);
+            }
             if (dti.Rows.Count > 0)
             {
                 itm.cashier = Login.sendtext;
@@ -575,8 +591,9 @@ namespace POS_System
 
                 }
                 itm.printcalcel();
-              //  exportItemQuantity();
+                //  exportItemQuantity();
             }
+
         }
 
         private void chk_time_CheckedChanged(object sender, EventArgs e)

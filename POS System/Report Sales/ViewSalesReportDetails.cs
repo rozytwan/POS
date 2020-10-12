@@ -1254,8 +1254,29 @@ namespace POS_System
         {
 
         }
+        ItemPrint itm = new ItemPrint();
+        DataTable dti = new DataTable();
+        private void btn_print_Click(object sender, EventArgs e)
+        {
+            dti.Rows.Clear();
+            dti = blod.itemGroup(Convert.ToDateTime(dtp_from.Text), Convert.ToDateTime(dtp_to.Text), fiscal_year);
+            if (dti.Rows.Count > 0)
+            {
+                itm.cashier = Login.sendtext;
+                itm.date_from = dtp_from.Text;
+                itm.date_to = dtp_to.Text;
+                for (int i = 0; i < dti.Rows.Count; i++)
+                {
+                    itm.datagridview_name.Add(dti.Rows[i]["bill_no"].ToString());
+                    itm.datagridview_qty.Add(dti.Rows[i]["cost"].ToString());
+                    itm.datagridview_service_charge.Add(dti.Rows[i]["service_charge"].ToString());
+                    itm.datagridview_cost.Add(dti.Rows[i]["grand_total"].ToString());
 
-     
+                }
+                itm.printcalcel();
+                //  exportItemQuantity();
+            }
+        }
     }
 }
 

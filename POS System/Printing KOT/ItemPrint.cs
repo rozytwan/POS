@@ -21,8 +21,8 @@ namespace POS_System
         public List<string> datagridview_name = new List<string>();
         public List<string> datagridview_qty = new List<string>();
         public List<string> datagridview_cost = new List<string>();
-
-
+        public List<string> datagridview_service_charge= new List<string>();
+        
         public void printcalcel()
         {
             PrintDialog pd = new PrintDialog();
@@ -55,11 +55,9 @@ namespace POS_System
 
             }
         }
-
+       
         private void printDocument1calcel_PrintPage(object sender, PrintPageEventArgs e)
         {
-           
-
 
                 float xs = 10;
                 float ys = 5;
@@ -130,7 +128,6 @@ namespace POS_System
                     gra.DrawLine(drawingPen, 10, ys, 309, ys); ys = ys + 3;
                     for (int i = 0; i < datagridview_name.Count; i++)
                     {
-                         
                             string item_name = datagridview_name[i];
                             string quantity = datagridview_qty[i];
                             string cost = datagridview_cost[i];

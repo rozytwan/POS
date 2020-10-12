@@ -391,23 +391,27 @@ namespace POS_System
             if (cbo_searchTYpe.Text == "Item")
             {
                 products();
-                buttonX1.Visible = false;
+                buttonX1.Visible = true;
+                colunm_name = "item_name";
             }
             else if (cbo_searchTYpe.Text == "Category")
             {
 
                 category();
-                buttonX1.Visible = false;
+                buttonX1.Visible = true;
+                colunm_name = "category_name";
             }
             else if (cbo_searchTYpe.Text == "Bill No")
             {
                 Billno();
-                buttonX1.Visible = false;
+                buttonX1.Visible = true;
+                colunm_name = "bill_no";
             }
             else if (cbo_searchTYpe.Text == "Category Group")
             {
                 GroupingCategory();
                 buttonX1.Visible = false;
+
             }
            
 
@@ -416,6 +420,7 @@ namespace POS_System
                 clearcombo(txt_searchText);
                 txt_searchText.Text = "ALL";
                 buttonX1.Visible = true;
+                colunm_name = "ALL";
             }
             else if (cbo_searchTYpe.Text == "Payment Mode")
             {
@@ -427,7 +432,8 @@ namespace POS_System
                 mylist.Add("Online");
                 mylist.Add("Credit");
                 txt_searchText.DataSource = mylist;
-                buttonX1.Visible = false;
+                buttonX1.Visible = true;
+                colunm_name = "payment_mode";
             }
             else if (cbo_searchTYpe.Text == "KOT Type")
             {
@@ -439,7 +445,8 @@ namespace POS_System
                 mylist.Add("B1");
                 mylist.Add("B2");
                 txt_searchText.DataSource = mylist;
-                buttonX1.Visible = false;
+                buttonX1.Visible = true;
+                colunm_name = "kot_type";
             }
             else if (cbo_searchTYpe.Text == "Sales Type")
             {
@@ -451,20 +458,21 @@ namespace POS_System
                 mylist.Add("DA");
                 txt_searchText.DataSource = mylist;
                 buttonX1.Visible = false;
-
+                colunm_name = "sales_type";
             }
             else if (cbo_searchTYpe.Text == "User")
             {
                 clearcombo(txt_searchText);
                 User();
                 buttonX1.Visible = false;
-
+                colunm_name = "cashier_name";
             }
             else if (cbo_searchTYpe.Text == "Service Provider")
             {
                 clearcombo(txt_searchText);
                 User();
-                buttonX1.Visible = false;
+                buttonX1.Visible = true;
+                colunm_name = "service_provider";
 
             }
 
@@ -1031,7 +1039,17 @@ namespace POS_System
         private void buttonX1_Click(object sender, EventArgs e)
         {
             dti.Rows.Clear();
-           dti = blod.itemGroup(Convert.ToDateTime(dtp_from.Text),Convert.ToDateTime(dtp_to.Text),fiscal_year);
+            itm.datagridview_name.Clear();
+            itm.datagridview_cost.Clear();
+            itm.datagridview_qty.Clear();
+            if (colunm_name == "ALL")
+            {
+                dti = blod.itemGroup(Convert.ToDateTime(dtp_from.Text), Convert.ToDateTime(dtp_to.Text), fiscal_year);
+            }
+            else
+            {
+                dti = blod.itemGroups(txt_searchText.Text,Convert.ToDateTime(dtp_from.Text), Convert.ToDateTime(dtp_to.Text),colunm_name, fiscal_year);
+            }
             if (dti.Rows.Count > 0)
             {
                 itm.cashier = Login.sendtext;

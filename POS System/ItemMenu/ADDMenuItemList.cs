@@ -69,6 +69,8 @@ namespace POS_System
                 {
 
                     dgv_productitems.FirstDisplayedScrollingRowIndex = dgv_productitems[0, rowIndex].RowIndex;
+                    dgv_productitems.Rows[rowIndex].DefaultCellStyle.BackColor = Color.LightBlue;
+                    dgv_productitems.Rows[rowIndex].DefaultCellStyle.ForeColor = Color.White;
 
                 }
                 dgv_productitems.ClearSelection();
@@ -79,6 +81,7 @@ namespace POS_System
             {
                 dgv_productitems.Rows.Clear();
             }
+            item_id = 0;
         }
 
         private void btn_productitems_Click(object sender, EventArgs e)
@@ -219,6 +222,11 @@ namespace POS_System
         }
 
         private void dgv_productitems_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btn_back_Click(object sender, EventArgs e)
         {
 
         }

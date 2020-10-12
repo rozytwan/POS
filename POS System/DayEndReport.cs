@@ -860,7 +860,7 @@ namespace POS_System
                                     int updateadd_balance_log = blres.update_addbalance_Log_x_report("X");
                                     int upadtecashbackLog = blres.update_cashBackLog_report("X");
                                     int iop = blcas.delete_opening_balancerestaurant();
-                                    int top = blcas.truncate_everyday_credit();
+                                    int top = blcas.delete_creditrestaurant();
                                     int insert = blcas.insertinto(Convert.ToDecimal(txt_closing_balance.Text), Convert.ToDateTime(getdates), set_by, "OB");
                                     DataTable dt1 = bllp.GetTransactioncashdrop();
                                     if (dt1.Rows.Count > 0)

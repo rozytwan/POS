@@ -464,7 +464,7 @@ namespace POS_System
                         y = y + 13;
                     }
                 }
-                if (FooterStatus == true && printer_name== "Qprintername")
+                if (FooterStatus == true && printer_name!= "Billing")
                 {
                     gra.DrawString(note_2, new System.Drawing.Font("Courier New ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 10, y + yinc + ybinc);
                     if (note_2.Length > 40)

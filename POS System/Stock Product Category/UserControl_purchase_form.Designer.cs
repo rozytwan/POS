@@ -84,13 +84,13 @@
             this.txt_bill_no = new System.Windows.Forms.TextBox();
             this.lblPOno = new System.Windows.Forms.Label();
             this.txtcustomername = new System.Windows.Forms.ComboBox();
-            this.txtinvoicedate = new System.Windows.Forms.Label();
             this.txtinvoiceno = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnsave = new DevComponents.DotNetBar.ButtonX();
             this.btn_edit = new DevComponents.DotNetBar.ButtonX();
+            this.dtp_invoice = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -631,12 +631,12 @@
             // panelEx2
             // 
             this.panelEx2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.panelEx2.Controls.Add(this.dtp_invoice);
             this.panelEx2.Controls.Add(this.label12);
             this.panelEx2.Controls.Add(this.cbopono);
             this.panelEx2.Controls.Add(this.txt_bill_no);
             this.panelEx2.Controls.Add(this.lblPOno);
             this.panelEx2.Controls.Add(this.txtcustomername);
-            this.panelEx2.Controls.Add(this.txtinvoicedate);
             this.panelEx2.Controls.Add(this.txtinvoiceno);
             this.panelEx2.Controls.Add(this.label4);
             this.panelEx2.Controls.Add(this.label2);
@@ -706,16 +706,6 @@
             this.txtcustomername.TabIndex = 127;
             this.txtcustomername.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtcustomername_KeyDown);
             // 
-            // txtinvoicedate
-            // 
-            this.txtinvoicedate.AutoSize = true;
-            this.txtinvoicedate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtinvoicedate.Location = new System.Drawing.Point(822, 14);
-            this.txtinvoicedate.Name = "txtinvoicedate";
-            this.txtinvoicedate.Size = new System.Drawing.Size(11, 17);
-            this.txtinvoicedate.TabIndex = 132;
-            this.txtinvoicedate.Text = "l";
-            // 
             // txtinvoiceno
             // 
             this.txtinvoiceno.AutoSize = true;
@@ -740,7 +730,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(729, 14);
+            this.label2.Location = new System.Drawing.Point(708, 16);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 17);
             this.label2.TabIndex = 129;
@@ -785,6 +775,13 @@
             this.btn_edit.TabIndex = 149;
             this.btn_edit.Text = "Update";
             this.btn_edit.Click += new System.EventHandler(this.btn_edit_Click);
+            // 
+            // dtp_invoice
+            // 
+            this.dtp_invoice.Location = new System.Drawing.Point(800, 14);
+            this.dtp_invoice.Name = "dtp_invoice";
+            this.dtp_invoice.Size = new System.Drawing.Size(180, 20);
+            this.dtp_invoice.TabIndex = 147;
             // 
             // UserControl_purchase_form
             // 
@@ -862,7 +859,6 @@
         private System.Windows.Forms.Label label5;
         private DevComponents.DotNetBar.PanelEx panelEx2;
         private System.Windows.Forms.Label lblPOno;
-        private System.Windows.Forms.Label txtinvoicedate;
         private System.Windows.Forms.Label txtinvoiceno;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
@@ -890,5 +886,6 @@
         public System.Windows.Forms.ComboBox cbopono;
         public System.Windows.Forms.ComboBox txtcustomername;
         public System.Windows.Forms.TextBox txt_bill_no;
+        private System.Windows.Forms.DateTimePicker dtp_invoice;
     }
 }

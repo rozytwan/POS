@@ -24,8 +24,11 @@ namespace POS_System
             Loaddatagridview();
             cmb_choose.Text = "Search By";
         }
+ 
         public void Loaddatagridview()
         {
+            
+            int rowIndex = 0;
             DataTable dt = bllproduct.getproductitemWithoutJoin();
             if (dt.Rows.Count > 0)
             {
@@ -35,8 +38,12 @@ namespace POS_System
                 {
                     dataGridView1.Rows.Add();
                     dataGridView1.Rows[i].Cells["col_item_id"].Value = dt.Rows[i]["item_id"].ToString();
-                    int item_id = Convert.ToInt32(dt.Rows[i]["item_id"].ToString());
-                    DataTable dtcal = bllproduct.GetLessIngredientByItem(item_id);
+                    int item_ids = Convert.ToInt32(dt.Rows[i]["item_id"].ToString());
+                    if (Convert.ToInt32(dt.Rows[i]["item_id"]) == item_id)
+                    {
+                        rowIndex = i;
+                    }
+                    DataTable dtcal = bllproduct.GetLessIngredientByItem(item_ids);
                     if (dtcal.Rows.Count > 0)
                     {
                         dataGridView1.Rows[i].Cells["col_add"].Value = Color.IndianRed;
@@ -61,12 +68,20 @@ namespace POS_System
                     }
 
                 }
+                if (item_id > 0)
+                {
+                    dataGridView1.FirstDisplayedScrollingRowIndex = dataGridView1[0, rowIndex].RowIndex;
+                    dataGridView1.Rows[rowIndex].DefaultCellStyle.BackColor = Color.LightBlue;
+                    dataGridView1.Rows[rowIndex].DefaultCellStyle.ForeColor = Color.White;
+                  
+                }
                 dataGridView1.ClearSelection();
             }
             else
             {
                 dataGridView1.Rows.Clear();
             }
+            item_id = 0;
         }
         private void btn_back_Click(object sender, EventArgs e)
         {
@@ -116,6 +131,7 @@ namespace POS_System
         }
         public int product_id;
         public static int item_id;
+      
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.ColumnIndex == dataGridView1.Columns["col_add"].Index && e.RowIndex >= 0)
@@ -129,6 +145,11 @@ namespace POS_System
                 cts.Controls.Add(ami);
 
             }
+        }
+
+        private void AddIngredient_Click(object sender, EventArgs e)
+        {
+  
         }
     }
 }

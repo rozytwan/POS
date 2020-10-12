@@ -269,6 +269,7 @@
             this.btn_back.Size = new System.Drawing.Size(92, 65);
             this.btn_back.TabIndex = 21;
             this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // label1
             // 

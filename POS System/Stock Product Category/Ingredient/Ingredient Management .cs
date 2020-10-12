@@ -421,6 +421,8 @@ namespace POS_System
 
         private void btn_back_Click(object sender, EventArgs e)
         {
+           
+            int curid = item_id;
             Control ctls = this.Parent;
             AddIngredient il = new AddIngredient();
             ctls.Controls.Clear();

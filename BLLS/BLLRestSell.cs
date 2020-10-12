@@ -139,7 +139,15 @@ namespace BLLS
                 };
             return DAL.IDU("insert into tbl_bill_void (void_bill_no,new_bill_no,void_reason,void_status,void_date,void_user) values (@void_bill_no,@new_bill_no,@void_reason,@void_status,@void_date,@void_user) ", parm);
 
-
+        }
+        public DataTable GetBillVoid(int void_bill_no)
+        {
+            SqlParameter[] parm = new SqlParameter[]
+              {
+                    new SqlParameter("@void_bill_no",void_bill_no),
+                   
+              };
+            return DAL.getuser("select * from tbl_bill_void where void_bill_no=@void_bill_no", parm);
         }
         public DataTable count_table()
         {
@@ -368,7 +376,7 @@ namespace BLLS
                 {
                     new SqlParameter("@x_report",x_report)
                 };
-            return DAL.IDU("update  tbl_credit_received set credit_status='NULL' where credit_status=@x_report and paid_status!='HP'", parm);
+            return DAL.IDU("update  tbl_credit_received set credit_status='NULL' where credit_status=@x_report and paid_status='RP'", parm);
         }
         public int update_addbalance_Log_x_report(string x_report)
         {
@@ -480,7 +488,7 @@ namespace BLLS
                           {
                     new SqlParameter("@x_report",x_report)
                           };
-            return DAL.IDU("update  tbl_credit_paid set status='NULL' where status=@x_report and paid_status!='HP'", parm);
+            return DAL.IDU("update  tbl_credit_paid set status='NULL' where status=@x_report and paid_status='RP'", parm);
         }
         public int UpdateShiftChange(string status)
         {

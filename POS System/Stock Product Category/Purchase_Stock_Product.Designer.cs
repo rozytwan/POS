@@ -51,10 +51,12 @@
             this.label23 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.col_product_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_product_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_location = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_opening = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_purchase = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_transfer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_sales = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_add = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_decrease = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_purchase_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -331,15 +333,16 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.col_product_name,
+            this.col_product_id,
             this.col_location,
             this.col_opening,
             this.col_purchase,
             this.col_transfer,
+            this.col_sales,
             this.col_add,
             this.col_decrease,
             this.col_purchase_date,
@@ -354,48 +357,73 @@
             // 
             // col_product_name
             // 
+            this.col_product_name.FillWeight = 507.6141F;
             this.col_product_name.HeaderText = "Product Name";
             this.col_product_name.Name = "col_product_name";
             this.col_product_name.ReadOnly = true;
+            this.col_product_name.Width = 125;
+            // 
+            // col_product_id
+            // 
+            this.col_product_id.HeaderText = "ProductID";
+            this.col_product_id.Name = "col_product_id";
+            this.col_product_id.ReadOnly = true;
+            this.col_product_id.Visible = false;
             // 
             // col_location
             // 
+            this.col_location.FillWeight = 129.7433F;
             this.col_location.HeaderText = "Location";
             this.col_location.Name = "col_location";
             this.col_location.ReadOnly = true;
             // 
             // col_opening
             // 
+            this.col_opening.FillWeight = 27.10708F;
             this.col_opening.HeaderText = "Opening";
             this.col_opening.Name = "col_opening";
             this.col_opening.ReadOnly = true;
+            this.col_opening.Width = 125;
             // 
             // col_purchase
             // 
+            this.col_purchase.FillWeight = 27.10708F;
             this.col_purchase.HeaderText = "Purchase";
             this.col_purchase.Name = "col_purchase";
             this.col_purchase.ReadOnly = true;
+            this.col_purchase.Width = 125;
             // 
             // col_transfer
             // 
+            this.col_transfer.FillWeight = 27.10708F;
             this.col_transfer.HeaderText = "Transfer";
             this.col_transfer.Name = "col_transfer";
             this.col_transfer.ReadOnly = true;
+            this.col_transfer.Width = 125;
+            // 
+            // col_sales
+            // 
+            this.col_sales.HeaderText = "Sales";
+            this.col_sales.Name = "col_sales";
+            this.col_sales.ReadOnly = true;
             // 
             // col_add
             // 
+            this.col_add.FillWeight = 27.10708F;
             this.col_add.HeaderText = "Add Adjust";
             this.col_add.Name = "col_add";
             this.col_add.ReadOnly = true;
             // 
             // col_decrease
             // 
+            this.col_decrease.FillWeight = 27.10708F;
             this.col_decrease.HeaderText = "Decrease Adjust";
             this.col_decrease.Name = "col_decrease";
             this.col_decrease.ReadOnly = true;
             // 
             // col_purchase_date
             // 
+            this.col_purchase_date.FillWeight = 27.10708F;
             this.col_purchase_date.HeaderText = "Date";
             this.col_purchase_date.Name = "col_purchase_date";
             this.col_purchase_date.ReadOnly = true;
@@ -461,10 +489,12 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_product_name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_product_id;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_location;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_opening;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_purchase;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_transfer;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_sales;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_add;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_decrease;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_purchase_date;

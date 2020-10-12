@@ -116,8 +116,7 @@ namespace POS_System
             {
                 for (int i = 0; i < dt_grand_sum.Rows.Count; i++)
                 {
-
-
+                    
                     grand_total_sum += Convert.ToDecimal(dt_grand_sum.Rows[i]["grand_total"].ToString());
                     sub_total_sum += Convert.ToDecimal(dt_grand_sum.Rows[i]["sub_total"].ToString());
                     discount += Convert.ToDecimal(dt_grand_sum.Rows[i]["discount"].ToString());

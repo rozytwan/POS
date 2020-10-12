@@ -401,7 +401,7 @@ namespace POS_System.Printing_Billing
                         y = y + 13;
                     }
                 }
-                if (FooterStatus == true && printer_name== "Qprintername")
+                if (FooterStatus == true && printer_name!= "Billing")
                 {
                     e.Graphics.DrawString(note_1, drawFontArial12Bold, drawBrush, new RectangleF(xs, y, widths, heights), drawFormatCenter);
                     ys += e.Graphics.MeasureString(note_1, drawFontArial12Bold).Height; y = y + 13;

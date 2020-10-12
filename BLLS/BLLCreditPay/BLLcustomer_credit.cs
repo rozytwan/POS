@@ -80,7 +80,7 @@ namespace BLLS
                      {
               new SqlParameter("@customer_id",customer_id)
                      };
-            return DAL.getuser("Select Sum(credit_paid) FROM tbl_credit_paid where customer_id=@customer_id and paid_status='RP'", parm);
+            return DAL.getuser("Select Sum(credit_paid) as paid FROM tbl_credit_paid where customer_id=@customer_id and paid_status='RP'", parm);
         }
 
         public DataTable Get_hotelcustomer_paidsum(int customer_id)

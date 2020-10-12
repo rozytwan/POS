@@ -165,7 +165,7 @@ namespace POS_System
             this.btn_text_export.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btn_text_export.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
             this.btn_text_export.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_text_export.Location = new System.Drawing.Point(580, 606);
+            this.btn_text_export.Location = new System.Drawing.Point(608, 606);
             this.btn_text_export.Name = "btn_text_export";
             this.btn_text_export.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(14);
             this.btn_text_export.Size = new System.Drawing.Size(203, 50);
@@ -179,7 +179,7 @@ namespace POS_System
             this.btn_export_XML.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btn_export_XML.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
             this.btn_export_XML.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_export_XML.Location = new System.Drawing.Point(270, 605);
+            this.btn_export_XML.Location = new System.Drawing.Point(393, 605);
             this.btn_export_XML.Name = "btn_export_XML";
             this.btn_export_XML.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(14);
             this.btn_export_XML.Size = new System.Drawing.Size(203, 50);
@@ -194,7 +194,7 @@ namespace POS_System
             this.btn_export_to_pdf.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btn_export_to_pdf.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
             this.btn_export_to_pdf.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_export_to_pdf.Location = new System.Drawing.Point(3, 605);
+            this.btn_export_to_pdf.Location = new System.Drawing.Point(178, 605);
             this.btn_export_to_pdf.Name = "btn_export_to_pdf";
             this.btn_export_to_pdf.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(14);
             this.btn_export_to_pdf.Size = new System.Drawing.Size(203, 50);
@@ -209,7 +209,7 @@ namespace POS_System
             this.btn_excel.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btn_excel.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
             this.btn_excel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_excel.Location = new System.Drawing.Point(835, 603);
+            this.btn_excel.Location = new System.Drawing.Point(823, 603);
             this.btn_excel.Name = "btn_excel";
             this.btn_excel.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(14);
             this.btn_excel.Size = new System.Drawing.Size(182, 52);

@@ -618,7 +618,41 @@ namespace BLLS
             };
             return DAL.getuser("select SUM(quantity) as quantity ,SUM(cost) as cost,item_name,kot_type from tbl_sales_record where  bill_no NOT IN(SELECT void_bill_no FROM tbl_bill_void where void_status='true' and void_reason=@fiscal_year)  and  date2 between @dateFrom and @dataTo group by item_name,kot_type order by kot_type asc", parm);
         }
-
+        public DataTable itemGroups(string find,DateTime dateFrom, DateTime dataTo,string column_name, string fiscal_year)
+        {
+            SqlParameter[] parm = new SqlParameter[] {
+                new SqlParameter("@find",find),
+                new SqlParameter("@dateFrom",dateFrom),
+                new SqlParameter("@dataTo",dataTo),
+                 new SqlParameter("@column_name",column_name),
+                 new SqlParameter("@fiscal_year",fiscal_year)
+            };
+            return DAL.getuser("select SUM(quantity) as quantity ,SUM(cost) as cost,item_name,kot_type from tbl_sales_record where "+ column_name +"=@find and bill_no NOT IN(SELECT void_bill_no FROM tbl_bill_void where void_status='true' and void_reason=@fiscal_year)  and  date2 between @dateFrom and @dataTo group by item_name,kot_type order by kot_type asc", parm);
+        }
+        public DataTable itemGroupweek(string find, DateTime dateFrom, DateTime dataTo, string weekday, string column_name, string fiscal_year)
+        {
+            SqlParameter[] parm = new SqlParameter[] {
+                new SqlParameter("@find",find),
+                new SqlParameter("@dateFrom",dateFrom),
+                new SqlParameter("@dataTo",dataTo),
+                new SqlParameter("@weekday",weekday),
+                 new SqlParameter("@column_name",column_name),
+                 new SqlParameter("@fiscal_year",fiscal_year)
+            };
+            return DAL.getuser("select SUM(quantity) as quantity ,SUM(cost) as cost,item_name,kot_type from tbl_sales_record where " + column_name + "=@find and bill_no NOT IN(SELECT void_bill_no FROM tbl_bill_void where void_status='true' and void_reason=@fiscal_year)  and  date2 between @dateFrom and @dataTo and datename(WEEKDAY, date2) = @weekday group by item_name,kot_type order by kot_type asc", parm);
+        }
+        public DataTable itemGroupWeekAll(string find, DateTime dateFrom, DateTime dataTo, string weekday, string fiscal_year)
+        {
+            SqlParameter[] parm = new SqlParameter[] {
+                new SqlParameter("@find",find),
+                new SqlParameter("@dateFrom",dateFrom),
+                new SqlParameter("@dataTo",dataTo),
+                new SqlParameter("@weekday",weekday),
+                
+                 new SqlParameter("@fiscal_year",fiscal_year)
+            };
+            return DAL.getuser("select SUM(quantity) as quantity ,SUM(cost) as cost,item_name,kot_type from tbl_sales_record where bill_no NOT IN(SELECT void_bill_no FROM tbl_bill_void where void_status='true' and void_reason=@fiscal_year)  and  date2 between @dateFrom and @dataTo and datename(WEEKDAY, date2) = @weekday group by item_name,kot_type order by kot_type asc", parm);
+        }
         public DataTable itemGroup()
         {
            
