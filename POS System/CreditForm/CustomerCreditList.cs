@@ -47,7 +47,7 @@ namespace POS_System
                         {
                             dataGridView1.Rows[i].Cells["col_customer_id"].Value = dt1.Rows[0]["id"].ToString();
 
-                            dataGridView1.Rows[i].Cells["col_customer_name"].Value = dt1.Rows[0]["name"].ToString();
+                            dataGridView1.Rows[i].Cells["col_customer_name"].Value = dt1.Rows[0]["name"].ToString() + " " + dt1.Rows[0]["lastname"].ToString();
                             dataGridView1.Rows[i].Cells["col_customer_phone"].Value = dt1.Rows[0]["phone"].ToString();
                             dataGridView1.Rows[i].Cells["col_customer_address"].Value = dt1.Rows[0]["address"].ToString();
                         }
@@ -82,7 +82,7 @@ namespace POS_System
                         {
                             dataGridView1.Rows[i].Cells["col_customer_id"].Value = dt1.Rows[0]["id"].ToString();
 
-                            dataGridView1.Rows[i].Cells["col_customer_name"].Value = dt1.Rows[0]["name"].ToString();
+                            dataGridView1.Rows[i].Cells["col_customer_name"].Value = dt1.Rows[0]["name"].ToString() + " " + dt1.Rows[0]["lastname"].ToString();
                             dataGridView1.Rows[i].Cells["col_customer_phone"].Value = dt1.Rows[0]["phone"].ToString();
                             dataGridView1.Rows[i].Cells["col_customer_address"].Value = dt1.Rows[0]["address"].ToString();
                         }
@@ -356,7 +356,7 @@ namespace POS_System
                             {
                                 dataGridView1.Rows[i].Cells["col_customer_id"].Value = dt.Rows[0]["id"].ToString();
 
-                                dataGridView1.Rows[i].Cells["col_customer_name"].Value = dt.Rows[0]["name"].ToString();
+                                dataGridView1.Rows[i].Cells["col_customer_name"].Value = dt.Rows[0]["name"].ToString()+" "+ dt.Rows[0]["lastname"].ToString();
                                 dataGridView1.Rows[i].Cells["col_customer_phone"].Value = dt.Rows[0]["phone"].ToString();
                                 dataGridView1.Rows[i].Cells["col_customer_address"].Value = dt.Rows[0]["address"].ToString();
                             }
@@ -392,7 +392,7 @@ namespace POS_System
                             {
                                 dataGridView1.Rows[i].Cells["col_customer_id"].Value = dt.Rows[0]["id"].ToString();
 
-                                dataGridView1.Rows[i].Cells["col_customer_name"].Value = dt.Rows[0]["name"].ToString();
+                                dataGridView1.Rows[i].Cells["col_customer_name"].Value = dt.Rows[0]["name"].ToString() + " " + dt.Rows[0]["lastname"].ToString();
                                 dataGridView1.Rows[i].Cells["col_customer_phone"].Value = dt.Rows[0]["phone"].ToString();
                                 dataGridView1.Rows[i].Cells["col_customer_address"].Value = dt.Rows[0]["address"].ToString();
                             }

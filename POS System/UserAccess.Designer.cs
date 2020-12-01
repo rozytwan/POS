@@ -46,6 +46,8 @@
             this.col_billing = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.col_multibilling = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.col_itemtransfer = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.col_restaurant = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.col_hotel = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.cal_all = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.col_table_transfer = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.col_dayend = new System.Windows.Forms.DataGridViewCheckBoxColumn();
@@ -80,6 +82,8 @@
             this.col_billing,
             this.col_multibilling,
             this.col_itemtransfer,
+            this.col_restaurant,
+            this.col_hotel,
             this.cal_all,
             this.col_table_transfer,
             this.col_dayend,
@@ -234,6 +238,18 @@
             this.col_itemtransfer.Name = "col_itemtransfer";
             this.col_itemtransfer.Width = 70;
             // 
+            // col_restaurant
+            // 
+            this.col_restaurant.HeaderText = "Restaurant";
+            this.col_restaurant.Name = "col_restaurant";
+            this.col_restaurant.Width = 70;
+            // 
+            // col_hotel
+            // 
+            this.col_hotel.HeaderText = "Hotel";
+            this.col_hotel.Name = "col_hotel";
+            this.col_hotel.Width = 70;
+            // 
             // cal_all
             // 
             this.cal_all.HeaderText = "ALL";
@@ -346,6 +362,8 @@
         private System.Windows.Forms.DataGridViewCheckBoxColumn col_billing;
         private System.Windows.Forms.DataGridViewCheckBoxColumn col_multibilling;
         private System.Windows.Forms.DataGridViewCheckBoxColumn col_itemtransfer;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn col_restaurant;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn col_hotel;
         private System.Windows.Forms.DataGridViewCheckBoxColumn cal_all;
         private System.Windows.Forms.DataGridViewCheckBoxColumn col_table_transfer;
         private System.Windows.Forms.DataGridViewCheckBoxColumn col_dayend;

@@ -33,13 +33,13 @@ namespace POS_System
             comboBox1.SelectedIndex = 0;
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
         }
-
+  
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           // item_id = 0;
-            int rowIndex = 0;
-           // int columnIndex = 0;
+          
+           // int rowIndex = 0;
+           
             add_itemsin_combobox();
             DataTable dt = bllproduct.getproductitems();
             if (dt.Rows.Count > 0)
@@ -51,10 +51,10 @@ namespace POS_System
                     int sd = dgv_productitems.Rows.Add();
             
                     dgv_productitems.Rows[i].Cells["col_itemid"].Value = dt.Rows[i]["item_id"].ToString();
-                    if (Convert.ToInt32(dt.Rows[i]["item_id"]) == item_id)
-                    {
-                        rowIndex = i;
-                    }
+                    //if (Convert.ToInt32(dt.Rows[i]["item_id"]) == item_id)
+                    //{
+                    //    rowIndex = i;
+                    //}
                     dgv_productitems.Rows[i].Cells["col_productitem"].Value = dt.Rows[i]["item_name"].ToString();
                     int categoryid = Convert.ToInt32(dt.Rows[i]["category_id"].ToString());
                     DataTable dt1 = bllproduct.getcategorybycategoryid(categoryid);          
@@ -65,14 +65,14 @@ namespace POS_System
                     dgv_productitems.Rows[i].Cells["col_applicable_time_period"].Value = dt.Rows[i]["applicable_time_period"].ToString();
                   
                 }
-                if (item_id > 0)
-                {
+                //if (item_id > 0)
+                //{
 
-                    dgv_productitems.FirstDisplayedScrollingRowIndex = dgv_productitems[0, rowIndex].RowIndex;
-                    dgv_productitems.Rows[rowIndex].DefaultCellStyle.BackColor = Color.LightBlue;
-                    dgv_productitems.Rows[rowIndex].DefaultCellStyle.ForeColor = Color.White;
+                //    dgv_productitems.FirstDisplayedScrollingRowIndex = dgv_productitems[0, rowIndex].RowIndex;
+                //    dgv_productitems.Rows[rowIndex].DefaultCellStyle.BackColor = Color.LightBlue;
+                //    dgv_productitems.Rows[rowIndex].DefaultCellStyle.ForeColor = Color.White;
 
-                }
+                //}
                 dgv_productitems.ClearSelection();
 
               
@@ -81,7 +81,7 @@ namespace POS_System
             {
                 dgv_productitems.Rows.Clear();
             }
-            item_id = 0;
+          //  item_id = 0;
         }
 
         private void btn_productitems_Click(object sender, EventArgs e)

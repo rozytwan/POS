@@ -125,7 +125,7 @@ namespace BLLS
                 };
             return DAL.getuser("SELECT * FROM tbl_user_access where user_id=@user_id", parm);
         }
-        public int updateuser_access(int user_id, string admin, string account, string sales, string report, string stock, string discount, string billing, string multibilling, string itemtransfer, string tabletransfer, string takeaway, string homedelivery, string dayend, string cashdrop, string menuupdate, string itemcancel)
+        public int updateuser_access(int user_id, string admin, string account, string sales, string report, string stock, string discount, string billing, string multibilling, string itemtransfer, string tabletransfer, string takeaway, string homedelivery, string dayend, string cashdrop, string menuupdate, string itemcancel,string restaurant,string hotel)
         {
             SqlParameter[] parm = new SqlParameter[]
                 {
@@ -146,11 +146,12 @@ namespace BLLS
                      new SqlParameter("@cashdrop",cashdrop),
                     new SqlParameter("@menuupdate",menuupdate),
                     new SqlParameter("@itemcancel",itemcancel),
-
+                    new SqlParameter("@restaurant",restaurant),
+                    new SqlParameter("@hotel",hotel),
                 };
-            return DAL.IDU("update tbl_user_access set admin=@admin,account=@account,sales=@sales,report=@report,stock=@stock,discount=@discount,billing=@billing,multibilling=@multibilling,itemtransfer=@itemtransfer,tabletransfer=@tabletransfer,takeaway=@takeaway,homedelivery=@homedelivery,dayend=@dayend,cashdrop=@cashdrop,menuupdate=@menuupdate,itemcancel=@itemcancel where user_id=@user_id", parm);
+            return DAL.IDU("update tbl_user_access set admin=@admin,account=@account,sales=@sales,report=@report,stock=@stock,discount=@discount,billing=@billing,multibilling=@multibilling,itemtransfer=@itemtransfer,tabletransfer=@tabletransfer,takeaway=@takeaway,homedelivery=@homedelivery,dayend=@dayend,cashdrop=@cashdrop,menuupdate=@menuupdate,itemcancel=@itemcancel,restaurant=@restaurant,hotel=@hotel where user_id=@user_id", parm);
         }
-        public int insert_user_id(int user_id, string admin, string account, string sales, string report, string stock, string discount, string billing, string multibilling, string itemtransfer, string tabletransfer, string takeaway, string homedelivery, string dayend, string cashdrop, string menuupdate, string itemcancel)
+        public int insert_user_id(int user_id, string admin, string account, string sales, string report, string stock, string discount, string billing, string multibilling, string itemtransfer, string tabletransfer, string takeaway, string homedelivery, string dayend, string cashdrop, string menuupdate, string itemcancel,string restaurant,string hotel)
         {
             SqlParameter[] parm = new SqlParameter[]
                 {
@@ -171,9 +172,11 @@ namespace BLLS
                      new SqlParameter("@cashdrop",cashdrop),
                     new SqlParameter("@menuupdate",menuupdate),
                     new SqlParameter("@itemcancel",itemcancel),
+                    new SqlParameter("@restaurant",restaurant),
+                    new SqlParameter("@hotel",hotel),
 
                 };
-            return DAL.IDU("insert into tbl_user_access (user_id,admin,account,sales,report,stock,discount,billing,multibilling,itemtransfer,tabletransfer,takeaway,homedelivery,dayend,cashdrop,menuupdate,itemcancel) values(@user_id,@admin,@account,@sales,@report,@stock,@discount,@billing,@multibilling,@itemtransfer,@tabletransfer,@takeaway,@homedelivery,@dayend,@cashdrop,@menuupdate,@itemcancel)", parm);
+            return DAL.IDU("insert into tbl_user_access (user_id,admin,account,sales,report,stock,discount,billing,multibilling,itemtransfer,tabletransfer,takeaway,homedelivery,dayend,cashdrop,menuupdate,itemcancel,restaurant,hotel) values(@user_id,@admin,@account,@sales,@report,@stock,@discount,@billing,@multibilling,@itemtransfer,@tabletransfer,@takeaway,@homedelivery,@dayend,@cashdrop,@menuupdate,@itemcancel,@restaurant,@hotel)", parm);
         }
         public int saveusers(string user_name, string password, string user_type, string e_mail, string first_name, string last_name, string gender, DateTime date_of_birth, string phone_number, string pin, DateTime date_of_joining, string address_line_1, string address_line_2, string city, string state, string zip_code, string user_image)
         {

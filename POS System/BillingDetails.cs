@@ -52,6 +52,7 @@ namespace POS_System
         {
             btn_create_new_billing.DialogResult = DialogResult.None;
             this.Close();
+          
         }
 
         private void btn_reprint_Click(object sender, EventArgs e)

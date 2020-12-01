@@ -319,7 +319,7 @@ namespace POS_System
             {
                 billVoid = dt_tbl_sale_dinning.Rows.Count.ToString();
             }
-            DataTable dt_kotTypeSum = blres.SumKOTType();
+            DataTable dt_kotTypeSum = blres.SumKOTType(fiscal_year);
             if (dt_kotTypeSum.Rows.Count > 0)
             {
                 K1 = dt_kotTypeSum.Rows[0]["K1"].ToString();

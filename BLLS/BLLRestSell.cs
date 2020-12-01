@@ -477,10 +477,13 @@ namespace BLLS
         }
 
 
-        public DataTable SumKOTType()
+        public DataTable SumKOTType(string fiscal_year)
         {
-
-            return DAL.getuser("select sum(case when kot_type ='K1' then total end)as K1,sum(case when kot_type = 'K2' then total end) as K2,sum(case when kot_type='K3' then total end) as k3,sum(case when kot_type='B1' then total end) as B1,sum(case when kot_type='B2' then total end) as B2 from tbl_sales_record where x_report='X' and sales_type!='HS' ", null);
+            SqlParameter[] parm = new SqlParameter[]
+              {
+                     new SqlParameter("@fiscal_year",fiscal_year)
+              };
+            return DAL.getuser("select sum(case when kot_type ='K1' then total end)as K1,sum(case when kot_type = 'K2' then total end) as K2,sum(case when kot_type='K3' then total end) as k3,sum(case when kot_type='B1' then total end) as B1,sum(case when kot_type='B2' then total end) as B2 from tbl_sales_record where x_report='X' and sales_type!='HS' and bill_no NOT IN (SELECT void_bill_no FROM tbl_bill_void where void_status='true' and void_reason=@fiscal_year)  ", parm);
         }
         public int updateCreditPaidstatus(string x_report)
         {

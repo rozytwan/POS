@@ -31,16 +31,16 @@ namespace POS_System
         BLLKotDisplay blkot = new BLLKotDisplay();
         BLL_Billing_Tax blbt = new BLL_Billing_Tax();
         BLL_Fiscal blfsc = new BLL_Fiscal();
-       public static string home_delivery_id="0";
+        public static string home_delivery_id = "0";
         bool kot_cancel_1 = false;
         bool kot_cancel_2 = false;
-        private bool button_cancelAll = false;    
+        private bool button_cancelAll = false;
         bool user_access_check;
         bool save_after_print;
         DateTime date = Convert.ToDateTime(DateTime.Now.ToString());
         PictureBox userpicbox = new PictureBox();
         string fiscal_year;
-      //  int customer_id = AllCusomterList.customer_id;
+        //  int customer_id = AllCusomterList.customer_id;
         public void clearAllTextbox(Control Con)
         {
             foreach (Control c in Con.Controls)
@@ -113,7 +113,7 @@ namespace POS_System
         }
         private void usercontrol_home_delivery_Load(object sender, EventArgs e)
         {
-          
+
             userpicbox.Image = global::POS_System.Properties.Resources.url;
             cbo_delivery.Focus();
             CUstomer_name();
@@ -123,15 +123,15 @@ namespace POS_System
             dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
             dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
             dataGridView1.EnableHeadersVisualStyles = false;
-            dataGridView1.ColumnHeadersHeight = 60;     
+            dataGridView1.ColumnHeadersHeight = 60;
             HomedeliveryTableNo();
             Cashier();
             txtcashier.Text = Login.sendtext;
             cbo_home_id.Text = home_delivery_id;
-          
-            if (cbo_home_id.Text.Length > 0 & cbo_home_id.Text != "Choose One"&cbo_home_id.Text!="103")
+
+            if (cbo_home_id.Text.Length > 0 & cbo_home_id.Text != "Choose One" & cbo_home_id.Text != "103")
             {
-            
+
                 showall();
                 GetCustomer();
             }
@@ -155,14 +155,14 @@ namespace POS_System
 
 
         }
-      
+
         public void showall()
         {
             DataTable fetchfromHomeId = BLLhome.getDataFromKot(home_delivery_id);
             dataGridView1.Rows.Clear();
             if (fetchfromHomeId.Rows.Count > 0)
             {
-               
+
                 dataGridView1.Rows.Clear();
                 for (int fecrw = 0; fecrw < fetchfromHomeId.Rows.Count; fecrw++)
                 {
@@ -174,18 +174,18 @@ namespace POS_System
                     dataGridView1.Rows[fecrw].Cells["cal_item_category"].Value = fetchfromHomeId.Rows[fecrw]["category_name"].ToString();
                     dataGridView1.Rows[fecrw].Cells["cal_order_id"].Value = fetchfromHomeId.Rows[fecrw]["order_id"].ToString();
                     dataGridView1.Rows[fecrw].Cells["calkot_print"].Value = fetchfromHomeId.Rows[fecrw]["kot_print"].ToString();
-                  //  grand_total += Convert.ToDecimal(dataGridView1.Rows[fecrw].Cells["cal_total"].Value);
+                    //  grand_total += Convert.ToDecimal(dataGridView1.Rows[fecrw].Cells["cal_total"].Value);
                 }
                 //sub_total = grand_total;
                 //txt_total.Text = sub_total.ToString();
                 calculate_total();
                 tax_calcu();
-               
+
             }
         }
         decimal tax_amount;
         decimal sub_total;
-        decimal service_charge=0;
+        decimal service_charge = 0;
         decimal static_grand_total;
         decimal taxable_amount;
         //decimal grand_total;
@@ -207,22 +207,26 @@ namespace POS_System
 
         }
         public void tax_calcu()
-       {
-            TaxCalculation tax = new TaxCalculation();           
-           
+        {
+            TaxCalculation tax = new TaxCalculation();
+
             taxable_amount = Convert.ToDecimal(sub_total);
             tax_amount = tax.tax_calculation(taxable_amount);
             txt_tax_amount.Text = tax_amount.ToString();
             static_grand_total = Convert.ToDecimal(txt_total.Text) + tax_amount + (Convert.ToDecimal(txt_delivery_charge.Text));
-            txt_grand_total.Text = static_grand_total.ToString();         
+            txt_grand_total.Text = static_grand_total.ToString();
         }
         private void txt_discount_TextChanged(object sender, EventArgs e)
-        {
-            if (txt_total.Text.Length > 0 && txt_total.Text != "")
+      {
+            if (txt_discount.Text=="")
             {
-                if (txt_discount.Text.Length > 0 && txt_delivery_charge.Text.Length > 0 && txt_discount.Text.Length>0)
+                txt_grand_total.Text = (Convert.ToDecimal(txt_total.Text) + Convert.ToDecimal(txt_delivery_charge.Text) + Convert.ToDecimal(txt_tax_amount.Text) - Convert.ToDecimal("0.00")).ToString();
+            }
+            else if (txt_total.Text.Length > 0 && txt_total.Text != "")
+             {
+                if (txt_discount.Text.Length > 0 && txt_delivery_charge.Text.Length > 0 && txt_discount.Text.Length > 0)
                 {
-                    txt_grand_total.Text = (Convert.ToDecimal(txt_total.Text) + Convert.ToDecimal(txt_delivery_charge.Text) - Convert.ToDecimal(txt_discount.Text)).ToString();
+                    txt_grand_total.Text = (Convert.ToDecimal(txt_total.Text) + Convert.ToDecimal(txt_delivery_charge.Text) + Convert.ToDecimal(txt_tax_amount.Text) - Convert.ToDecimal(txt_discount.Text)).ToString();
                 }
             }
         }
@@ -248,9 +252,9 @@ namespace POS_System
         private void btn_save_Click(object sender, EventArgs e)
         {
             decimal total;
-           
-           
-            if (!decimal.TryParse(txt_total.Text, out total)  || !decimal.TryParse(txt_grand_total.Text, out total) || !decimal.TryParse(txt_delivery_charge.Text, out total))
+
+
+            if (!decimal.TryParse(txt_total.Text, out total) || !decimal.TryParse(txt_grand_total.Text, out total) || !decimal.TryParse(txt_delivery_charge.Text, out total))
             {
                 MessageBox.Show("Wrong Text Formats. Check again");
             }
@@ -270,32 +274,32 @@ namespace POS_System
                     {
                         if (rbtn_cash.Checked)
                         {
-                            int inserthomedelivery = BLLhome.inserttheDeleverystats(Convert.ToDecimal(cbo_home_id.Text), txt_customer.Text, txt_adress.Text, txt_phone.Text, Convert.ToDecimal(txt_grand_total.Text), cbo_delivery.Text, "Pending",  Convert.ToDecimal(txt_delivery_charge.Text), Convert.ToDecimal(txt_total.Text), 0, "Cash", Convert.ToDecimal(service_charge), taxable_amount, Convert.ToDecimal(tax_amount),fiscal_year,txt_discount.Text);
+                            int inserthomedelivery = BLLhome.inserttheDeleverystats(Convert.ToDecimal(cbo_home_id.Text), txt_customer.Text, txt_adress.Text, txt_phone.Text, Convert.ToDecimal(txt_grand_total.Text), cbo_delivery.Text, "Pending", Convert.ToDecimal(txt_delivery_charge.Text), Convert.ToDecimal(txt_total.Text), 0, "Cash", Convert.ToDecimal(service_charge), taxable_amount, Convert.ToDecimal(tax_amount), fiscal_year, txt_discount.Text);
                             if (inserthomedelivery > 0)
                             {
-                              //  int ibiza = blres.insert_into_bill_invoice(Convert.ToInt32(txtnewbillno.Text));
+                                //  int ibiza = blres.insert_into_bill_invoice(Convert.ToInt32(txtnewbillno.Text));
                                 int delete_hdcustomer = BLLhome.DeleteHomedeliveryCustomer(cbo_home_id.Text);
-                               // printer_checker();
-                                blp_80.billing_print_only = true;
-                                blp_76.billing_print_only = true;
+                                // printer_checker();
+                                blp_80.billing_print_only = false;
+                                blp_76.billing_print_only = false;
                                 printer_checker();
 
                                 dataGridView1.Rows.Clear();
                                 clearAllTextbox(this);
                                 clearAllCombobox(this);
                                 this.Close();
-                               
+
 
                             }
                         }
                         else if (rbtn_card.Checked)
                         {
-                            int inserthomedelivery = BLLhome.inserttheDeleverystats(Convert.ToDecimal(cbo_home_id.Text), txt_customer.Text, txt_adress.Text, txt_phone.Text, Convert.ToDecimal(txt_grand_total.Text), cbo_delivery.Text, "Pending", Convert.ToDecimal(txt_delivery_charge.Text), Convert.ToDecimal(txt_total.Text), 0, "Card", Convert.ToDecimal(service_charge), taxable_amount, Convert.ToDecimal(tax_amount), fiscal_year,txt_discount.Text);
+                            int inserthomedelivery = BLLhome.inserttheDeleverystats(Convert.ToDecimal(cbo_home_id.Text), txt_customer.Text, txt_adress.Text, txt_phone.Text, Convert.ToDecimal(txt_grand_total.Text), cbo_delivery.Text, "Pending", Convert.ToDecimal(txt_delivery_charge.Text), Convert.ToDecimal(txt_total.Text), 0, "Card", Convert.ToDecimal(service_charge), taxable_amount, Convert.ToDecimal(tax_amount), fiscal_year, txt_discount.Text);
                             if (inserthomedelivery > 0)
                             {
-                               // int ibiza = blres.insert_into_bill_invoice(Convert.ToInt32(txtnewbillno.Text));
+                                // int ibiza = blres.insert_into_bill_invoice(Convert.ToInt32(txtnewbillno.Text));
                                 int delete_hdcustomer = BLLhome.DeleteHomedeliveryCustomer(cbo_home_id.Text);
-                              //  printer_checker();
+                                //  printer_checker();
                                 blp_80.billing_print_only = true;
                                 blp_76.billing_print_only = true;
                                 printer_checker();
@@ -303,7 +307,7 @@ namespace POS_System
                                 clearAllTextbox(this);
                                 clearAllCombobox(this);
                                 this.Close();
-                               
+
                             }
                         }
                         //else if (rbtn_zomato_pre_paid.Checked)
@@ -334,10 +338,10 @@ namespace POS_System
                         //        clearAllTextbox(this);
                         //        clearAllCombobox(this);
                         //        this.Close();
-                               
+
                         //    }
 
-                       // }
+                        // }
                     }
 
                 }
@@ -359,26 +363,28 @@ namespace POS_System
             DataTable dt_prt = blpst.getalldata();
             if (dt_prt.Rows.Count > 0)
             {
-                if (dt_prt.Rows[0]["bill_printer"].ToString() == "80") 
+                if (dt_prt.Rows[0]["bill_printer"].ToString() == "80")
                 {
                     blp_80.Headerstatus = headerstatus;
                     blp_80.FooterStatus = Footerstatus;
-                    blp_80.billing_print_only = true;
+                    blp_80.billing_print_only = false;
+                    blp_80.print_again = true;
                     blp_80.printer_name = Qprintername;
                     bill_printing_for_80();
 
                 }
-               
+
                 else if (dt_prt.Rows[0]["bill_printer"].ToString() == "76")
                 {
                     blp_76.Headerstatus = headerstatus;
                     blp_76.FooterStatus = Footerstatus;
-                    blp_76.billing_print_only = true;
+                    blp_76.billing_print_only = false;
+                    blp_76.print_again = true;
                     blp_76.printer_name = Qprintername;
                     bill_printing_for_76();
 
                 }
-               
+
                 else
                 {
                     blp.Headerstatus = headerstatus;
@@ -386,6 +392,7 @@ namespace POS_System
                     blp.billing_print_only = true;
                     blp.printer_name = Qprintername;
                     blp.billing_print_only = true;
+                   // blp_80.print_again = true;
                     bill_printing_for_58();
 
                 }
@@ -393,7 +400,7 @@ namespace POS_System
         }
         public void bill_printing_for_58()
         {
-         
+
             blp.cashier = txtcashier.Text;
             blp.cash_amount = txt_grand_total.Text;
             blp.discount = txt_discount.Text;
@@ -405,10 +412,10 @@ namespace POS_System
             blp.sales_type = "HD";
             blp.billing_date = date;
             blp.fiscal_year = fiscal_year;
-            blp.delivery_charge = txt_delivery_charge.Text;         
+            blp.delivery_charge = txt_delivery_charge.Text;
             blp.change_amount = "0.00";
             blp.customer_phone_no = txt_phone.Text;
-            blp.customer_address = txt_adress.Text;        
+            blp.customer_address = txt_adress.Text;
             blp.customer_name = txt_customer.Text;
 
 
@@ -418,7 +425,7 @@ namespace POS_System
                 blp.datagridview_item_price.Add(dataGridView1.Rows[i].Cells["cal_cost"].Value.ToString());
                 blp.datagridview_total.Add(dataGridView1.Rows[i].Cells["cal_total"].Value.ToString());
                 blp.datagridview_quantity.Add(dataGridView1.Rows[i].Cells["cal_qty"].Value.ToString());
-               
+
             }
             blp.printtobill();
             save_after_print = blp.save_after_print;
@@ -426,7 +433,7 @@ namespace POS_System
         }
         public void bill_printing_for_76()
         {
-            
+
             blp_76.cashier = txtcashier.Text;
             blp_76.cash_amount = Convert.ToDecimal(txt_grand_total.Text).ToString("#.##");
             blp_76.discount = Convert.ToDecimal(txt_discount.Text).ToString("#.##");
@@ -437,7 +444,7 @@ namespace POS_System
             blp_76.customer_address = txt_adress.Text;
             //blp_76.customer_PAN_no = txtpan_no.Text;
             blp_76.customer_name = txt_customer.Text;
-           // blp_76.discount_percent = discount_percent;
+            // blp_76.discount_percent = discount_percent;
             blp_76.tax_amount = tax_amount.ToString("#.##");
             blp_76.service_charge = service_charge.ToString("#.##");
             //blp_76.area_name = area_name;
@@ -487,7 +494,7 @@ namespace POS_System
         }
         public void bill_printing_for_80()
         {
-          
+
             blp_80.cashier = txtcashier.Text;
             blp_80.cash_amount = Convert.ToDecimal(txt_grand_total.Text).ToString("#.##");
             blp_80.discount = Convert.ToDecimal(txt_discount.Text).ToString("#.##");
@@ -496,11 +503,11 @@ namespace POS_System
             blp_80.table_no = cbo_home_id.Text;
             blp_80.customer_phone_no = txt_phone.Text;
             blp_80.customer_address = txt_adress.Text;
-            blp_80.sales_type ="HD";
+            blp_80.sales_type = "HD";
             blp_80.customer_name = txt_customer.Text;
             blp_80.delivery_charge = txt_delivery_charge.Text;
             blp_80.tax_amount = tax_amount.ToString("#.##");
-            blp_80.service_charge = service_charge.ToString("#.##");         
+            blp_80.service_charge = service_charge.ToString("#.##");
             blp_80.billing_date = date;
             blp_80.taxable_amount = taxable_amount.ToString("#.##");
             blp_80.discount_sub_total = Convert.ToDecimal(sub_total).ToString("#.##");
@@ -548,12 +555,12 @@ namespace POS_System
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            if (cbo_home_id.Text != "Choose Id"&&cbo_home_id.Text!= "System.Data.DataRowView")
+            if (cbo_home_id.Text != "Choose Id" && cbo_home_id.Text != "System.Data.DataRowView")
             {
                 if (cbo_home_id.Text.Length > 0)
                 {
                     home_delivery_id = cbo_home_id.Text;
-                   
+
                     showall();
                     GetCustomer();
                 }
@@ -584,20 +591,20 @@ namespace POS_System
 
                         grand += Convert.ToDecimal(dataGridView1.Rows[fecrw].Cells["cal_total"].Value);
                         txt_total.Text = grand.ToString();
-                        
+
                     }
                 }
                 else
                 {
                     MessageBox.Show("There no any Orders for " + cbo_home_id.Text + " Id.");
                 }
-            
+
 
 
             }
         }
 
-      
+
 
         private void txt_adress_KeyDown(object sender, KeyEventArgs e)
         {
@@ -667,12 +674,12 @@ namespace POS_System
             }
         }
         //bool printing2nd=true;
-      
+
         private void txt_delivery_charge_TextChanged(object sender, EventArgs e)
         {
-            if (txt_delivery_charge.Text.Length > 0&&txt_delivery_charge.Text!="0"&& txt_discount.Text.Length>0)
+            if (txt_delivery_charge.Text.Length > 0 && txt_delivery_charge.Text != "0" && txt_discount.Text.Length > 0)
             {
-                txt_grand_total.Text =( Convert.ToDecimal(txt_total.Text) +Convert.ToDecimal(txt_tax_amount.Text) + Convert.ToDecimal(txt_delivery_charge.Text)-Convert.ToDecimal(txt_discount.Text)).ToString();
+                txt_grand_total.Text = (Convert.ToDecimal(txt_total.Text) + Convert.ToDecimal(txt_tax_amount.Text) + Convert.ToDecimal(txt_delivery_charge.Text) - Convert.ToDecimal(txt_discount.Text)).ToString();
             }
         }
 
@@ -714,7 +721,7 @@ namespace POS_System
 
         private void cbo_customer_name_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (txt_customer.Text != "Choose One" && txt_customer.Text != "System.Data.DataRowView"&& txt_customer.Text!="")
+            if (txt_customer.Text != "Choose One" && txt_customer.Text != "System.Data.DataRowView" && txt_customer.Text != "")
             {
                 DataTable dt = blcd.GetallcustomerbyId(txt_customer.SelectedValue.ToString());
                 if (dt.Rows.Count > 0)
@@ -732,7 +739,7 @@ namespace POS_System
 
         private void cbo_customer_no_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (txt_phone.Text != "" && txt_phone.Text != "Choose One"&& txt_customer.Text != "System.Data.DataRowView")
+            if (txt_phone.Text != "" && txt_phone.Text != "Choose One" && txt_customer.Text != "System.Data.DataRowView")
             {
                 DataTable dt = blcd.getDataByitsPhonenumbers(txt_phone.Text);
                 if (dt.Rows.Count > 0)
@@ -742,7 +749,7 @@ namespace POS_System
                     txt_adress.Text = dt.Rows[0]["address"].ToString();
                 }
             }
-            else 
+            else
             {
                 txt_phone.Text = "Choose One";
             }
@@ -761,7 +768,7 @@ namespace POS_System
                             int i = blord.deleteitemfromorder(Convert.ToInt32(dr.Cells["cal_order_id"].Value));
                             decimal total_to_be_remove = Convert.ToDecimal(dr.Cells["cal_total"].Value);
                             //txt_grand_total.Text = (Convert.ToDecimal(txt_grand_total.Text) - Convert.ToDecimal(dataGridView1.CurrentRow.Cells["cal_total"].Value)).ToString();
-                          
+
                             dataGridView1.Rows.Remove(dr);
                         }
                         else
@@ -772,10 +779,10 @@ namespace POS_System
                             decimal total = quantitys * cost;
                             dataGridView1.CurrentRow.Cells["cal_total"].Value = total;
                             int i = blord.updateorderstable(quantitys, Convert.ToInt32(dr.Cells["cal_order_id"].Value), total);
-                           // txt_grand_total.Text = (Convert.ToDecimal(txt_grand_total.Text) - Convert.ToDecimal(dataGridView1.CurrentRow.Cells["cal_total"].Value)).ToString();
-                          // txt_grand_total.Text = (Convert.ToDecimal(txt_grand_total.Text) - (cost)).ToString();
+                            // txt_grand_total.Text = (Convert.ToDecimal(txt_grand_total.Text) - Convert.ToDecimal(dataGridView1.CurrentRow.Cells["cal_total"].Value)).ToString();
+                            // txt_grand_total.Text = (Convert.ToDecimal(txt_grand_total.Text) - (cost)).ToString();
 
-                           
+
                         }
                     }
                     calculate_total();
@@ -799,7 +806,7 @@ namespace POS_System
                 if (dataGridView1.Rows.Count > 0)
                 {
                     DataTable dt = blord.getallfromorder_id(Convert.ToInt32(dataGridView1.CurrentRow.Cells["cal_order_id"].Value));
-                  
+
                     if (dt.Rows.Count > 0)
                     {
 
@@ -837,7 +844,7 @@ namespace POS_System
                             DateTime todaydate = DateTime.Now;
                             string time = DateTime.Now.ToShortTimeString();
                             decimal total_to_be_remove = Convert.ToDecimal(dr.Cells["cal_total"].Value);
-                           txt_grand_total.Text = (Convert.ToDecimal(txt_grand_total.Text) - Convert.ToDecimal(dr.Cells["cal_total"].Value)).ToString();                      
+                            txt_grand_total.Text = (Convert.ToDecimal(txt_grand_total.Text) - Convert.ToDecimal(dr.Cells["cal_total"].Value)).ToString();
                             int i = blord.deleteitemfromorder(Convert.ToInt32(dr.Cells["cal_order_id"].Value));
                             int j = blkot.cancel_update(Convert.ToInt32(dr.Cells["cal_order_id"].Value), "cancel");
                             int bocs = boc.insertordercancellation(txt_customer.Text, Convert.ToDecimal(cbo_home_id.Text), item_name, quantity, total, cost, "No", category_name, kot_print, txt_phone.Text, DateTime.Now, "emo_desc", "TS");
@@ -856,7 +863,7 @@ namespace POS_System
                     }
                 }
             }
-            
+
             catch (Exception ex)
             {
                 throw ex;
@@ -875,7 +882,7 @@ namespace POS_System
             pdoc.DefaultPageSettings.PaperSize.Height = 500;
             pdoc.DefaultPageSettings.PaperSize.Width = 314;
             pdoc.PrintPage += new PrintPageEventHandler(printDocument1calcel_PrintPage);
-            
+
 
             if (pdoc.PrinterSettings.IsValid)
             {
@@ -944,11 +951,11 @@ namespace POS_System
             {
                 yinc = 10;
             }
-          
-                    gra.DrawString("Home Delivery ::", new System.Drawing.Font("Arial", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 150, 60 + ybinc + yinc);
-                    gra.DrawString(home_delivery_id, new System.Drawing.Font("Arial", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 250, 60 + ybinc + yinc);
-               
-              
+
+            gra.DrawString("Home Delivery ::", new System.Drawing.Font("Arial", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 150, 60 + ybinc + yinc);
+            gra.DrawString(home_delivery_id, new System.Drawing.Font("Arial", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 250, 60 + ybinc + yinc);
+
+
 
             gra.DrawLine(drawingPen, 10, 75 + ybinc + yinc, 309, 75 + ybinc + yinc);
             gra.DrawString("Item", new System.Drawing.Font("Arial", 9, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 30, 75 + ybinc + yinc);
@@ -957,30 +964,30 @@ namespace POS_System
             int y;
             y = 100 + ybinc + yinc;
 
-          
-                if (button_cancelAll == true)
+
+            if (button_cancelAll == true)
+            {
+                foreach (DataGridViewRow row in dataGridView1.Rows)
                 {
-                    foreach (DataGridViewRow row in dataGridView1.Rows)
+                    if (row.Cells["calkot_print"].Value.ToString() == "K1")
                     {
-                        if (row.Cells["calkot_print"].Value.ToString() == "K1")
+                        string item_name = row.Cells["cal_item_name"].Value.ToString();
+                        string quantity = row.Cells["cal_qty"].Value.ToString();
+
+                        DataTable dt = blu.checkbusiness();
+                        if (dt.Rows[0]["language"].ToString() == "Arabic")
                         {
-                            string item_name = row.Cells["cal_item_name"].Value.ToString();
-                            string quantity = row.Cells["cal_qty"].Value.ToString();
-
-                            DataTable dt = blu.checkbusiness();
-                            if (dt.Rows[0]["language"].ToString() == "Arabic")
-                            {
-                                gra.DrawString(item_name, new System.Drawing.Font("ArabicNaskhSSK", 8, FontStyle.Strikeout), new SolidBrush(System.Drawing.Color.Black), 200, y - 5, format);
-                            }
-                            else
-                            {
-                                gra.DrawString(item_name, new System.Drawing.Font("Time New Roamn", 9, FontStyle.Strikeout), new SolidBrush(System.Drawing.Color.Black), 10, y);
-
-                            }
-                            gra.DrawString(quantity, new System.Drawing.Font("Time New Roamn", 9, FontStyle.Strikeout), new SolidBrush(System.Drawing.Color.Black), 250, y);
-
-                            y = y + 15;
+                            gra.DrawString(item_name, new System.Drawing.Font("ArabicNaskhSSK", 8, FontStyle.Strikeout), new SolidBrush(System.Drawing.Color.Black), 200, y - 5, format);
                         }
+                        else
+                        {
+                            gra.DrawString(item_name, new System.Drawing.Font("Time New Roamn", 9, FontStyle.Strikeout), new SolidBrush(System.Drawing.Color.Black), 10, y);
+
+                        }
+                        gra.DrawString(quantity, new System.Drawing.Font("Time New Roamn", 9, FontStyle.Strikeout), new SolidBrush(System.Drawing.Color.Black), 250, y);
+
+                        y = y + 15;
+                    }
                     else if (row.Cells["calkot_print"].Value.ToString() == "K2")
                     {
                         string item_name = row.Cells["cal_item_name"].Value.ToString();
@@ -999,12 +1006,12 @@ namespace POS_System
                         y = y + 15;
                     }
                 }
-                }
+            }
 
-                else
+            else
+            {
+                foreach (DataGridViewRow row in dataGridView1.SelectedRows)
                 {
-                    foreach (DataGridViewRow row in dataGridView1.SelectedRows)
-                    {
                     if (row.Cells["calkot_print"].Value.ToString() == "K1")
                     {
                         string item_name = row.Cells["cal_item_name"].Value.ToString();
@@ -1026,25 +1033,25 @@ namespace POS_System
                     }
 
                     else if (row.Cells["calkot_print"].Value.ToString() == "K2")
+                    {
+                        string item_name = row.Cells["cal_item_name"].Value.ToString();
+                        string quantity = row.Cells["cal_qty"].Value.ToString();
+                        DataTable dt = blu.checkbusiness();
+                        if (dt.Rows[0]["language"].ToString() == "Arabic")
                         {
-                            string item_name = row.Cells["cal_item_name"].Value.ToString();
-                            string quantity = row.Cells["cal_qty"].Value.ToString();
-                            DataTable dt = blu.checkbusiness();
-                            if (dt.Rows[0]["language"].ToString() == "Arabic")
-                            {
-                                gra.DrawString(item_name, new System.Drawing.Font("ArabicNaskhSSK", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 200, y - 5, format);
-                            }
-                            else
-                            {
-                                gra.DrawString(item_name, new System.Drawing.Font("Time New Roamn", 9, FontStyle.Strikeout), new SolidBrush(System.Drawing.Color.Black), 10, y);
-
-                            }
-                            gra.DrawString(quantity, new System.Drawing.Font("Time New Roamn", 9, FontStyle.Strikeout), new SolidBrush(System.Drawing.Color.Black), 250, y);
-                            y = y + 15;
+                            gra.DrawString(item_name, new System.Drawing.Font("ArabicNaskhSSK", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 200, y - 5, format);
                         }
+                        else
+                        {
+                            gra.DrawString(item_name, new System.Drawing.Font("Time New Roamn", 9, FontStyle.Strikeout), new SolidBrush(System.Drawing.Color.Black), 10, y);
+
+                        }
+                        gra.DrawString(quantity, new System.Drawing.Font("Time New Roamn", 9, FontStyle.Strikeout), new SolidBrush(System.Drawing.Color.Black), 250, y);
+                        y = y + 15;
                     }
                 }
-            
+            }
+
 
 
             int z = y + 20;
@@ -1133,10 +1140,10 @@ namespace POS_System
             {
                 yinc = 10;
             }
-           
-                    gra.DrawString("Home Delivery ::", new System.Drawing.Font("Arial", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 150, 60 + ybinc + yinc);
-                    gra.DrawString(home_delivery_id, new System.Drawing.Font("Arial", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 250, 60 + ybinc + yinc);
-               
+
+            gra.DrawString("Home Delivery ::", new System.Drawing.Font("Arial", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 150, 60 + ybinc + yinc);
+            gra.DrawString(home_delivery_id, new System.Drawing.Font("Arial", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 250, 60 + ybinc + yinc);
+
             gra.DrawLine(drawingPen, 10, 75 + ybinc + yinc, 309, 75 + ybinc + yinc);
             gra.DrawString("Item", new System.Drawing.Font("Arial", 9, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 30, 75 + ybinc + yinc);
             gra.DrawString("Qty", new System.Drawing.Font("Arial", 9, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 250, 75 + ybinc + yinc);
@@ -1144,56 +1151,56 @@ namespace POS_System
             int y;
             y = 95 + ybinc + yinc;
 
-           
-                if (button_cancelAll == true)
+
+            if (button_cancelAll == true)
+            {
+                foreach (DataGridViewRow row in dataGridView1.Rows)
                 {
-                    foreach (DataGridViewRow row in dataGridView1.Rows)
+                    if (row.Cells["calkot_print"].Value.ToString() == "K2")
                     {
-                        if (row.Cells["calkot_print"].Value.ToString() == "K2")
+                        string item_name = row.Cells["cal_item_name"].Value.ToString();
+                        string quantity = row.Cells["cal_qty"].Value.ToString();
+                        DataTable dt = blu.checkbusiness();
+                        if (dt.Rows[0]["language"].ToString() == "Arabic")
                         {
-                            string item_name = row.Cells["cal_item_name"].Value.ToString();
-                            string quantity = row.Cells["cal_qty"].Value.ToString();
-                            DataTable dt = blu.checkbusiness();
-                            if (dt.Rows[0]["language"].ToString() == "Arabic")
-                            {
-                                gra.DrawString(item_name, new System.Drawing.Font("ArabicNaskhSSK", 8, FontStyle.Strikeout), new SolidBrush(System.Drawing.Color.Black), 200, y - 5, format);
-                            }
-                            else
-                            {
-                                gra.DrawString(item_name, new System.Drawing.Font("Time New Roamn", 9, FontStyle.Strikeout), new SolidBrush(System.Drawing.Color.Black), 10, y);
-
-                            }
-                            gra.DrawString(quantity, new System.Drawing.Font("Time New Roamn", 9, FontStyle.Strikeout), new SolidBrush(System.Drawing.Color.Black), 250, y);
-
-                            y = y + 15;
+                            gra.DrawString(item_name, new System.Drawing.Font("ArabicNaskhSSK", 8, FontStyle.Strikeout), new SolidBrush(System.Drawing.Color.Black), 200, y - 5, format);
                         }
+                        else
+                        {
+                            gra.DrawString(item_name, new System.Drawing.Font("Time New Roamn", 9, FontStyle.Strikeout), new SolidBrush(System.Drawing.Color.Black), 10, y);
+
+                        }
+                        gra.DrawString(quantity, new System.Drawing.Font("Time New Roamn", 9, FontStyle.Strikeout), new SolidBrush(System.Drawing.Color.Black), 250, y);
+
+                        y = y + 15;
                     }
                 }
+            }
 
-                else
+            else
+            {
+                foreach (DataGridViewRow row in dataGridView1.SelectedRows)
                 {
-                    foreach (DataGridViewRow row in dataGridView1.SelectedRows)
+                    if (row.Cells["calkot_print"].Value.ToString() == "K1")
                     {
-                        if (row.Cells["calkot_print"].Value.ToString() == "K1")
+                        string item_name = row.Cells["cal_item_name"].Value.ToString();
+                        string quantity = row.Cells["cal_qty"].Value.ToString();
+                        DataTable dt = blu.checkbusiness();
+                        if (dt.Rows[0]["language"].ToString() == "Arabic")
                         {
-                            string item_name = row.Cells["cal_item_name"].Value.ToString();
-                            string quantity = row.Cells["cal_qty"].Value.ToString();
-                            DataTable dt = blu.checkbusiness();
-                            if (dt.Rows[0]["language"].ToString() == "Arabic")
-                            {
-                                gra.DrawString(item_name, new System.Drawing.Font("ArabicNaskhSSK", 8, FontStyle.Strikeout), new SolidBrush(System.Drawing.Color.Black), 200, y - 5, format);
-                            }
-                            else
-                            {
-                                gra.DrawString(item_name, new System.Drawing.Font("Time New Roamn", 9, FontStyle.Strikeout), new SolidBrush(System.Drawing.Color.Black), 10, y);
-
-                            }
-                            gra.DrawString(quantity, new System.Drawing.Font("Time New Roamn", 9, FontStyle.Strikeout), new SolidBrush(System.Drawing.Color.Black), 250, y);
-                            y = y + 15;
+                            gra.DrawString(item_name, new System.Drawing.Font("ArabicNaskhSSK", 8, FontStyle.Strikeout), new SolidBrush(System.Drawing.Color.Black), 200, y - 5, format);
                         }
+                        else
+                        {
+                            gra.DrawString(item_name, new System.Drawing.Font("Time New Roamn", 9, FontStyle.Strikeout), new SolidBrush(System.Drawing.Color.Black), 10, y);
+
+                        }
+                        gra.DrawString(quantity, new System.Drawing.Font("Time New Roamn", 9, FontStyle.Strikeout), new SolidBrush(System.Drawing.Color.Black), 250, y);
+                        y = y + 15;
                     }
                 }
-            
+            }
+
 
 
             int z = y + 20;
@@ -1203,7 +1210,7 @@ namespace POS_System
             z = y + 20;
             kot_cancel_2 = false;
         }
-      
+
 
         private void btnaadd_Click(object sender, EventArgs e)
         {
@@ -1270,10 +1277,10 @@ namespace POS_System
 
                     }
                 }
-                    txt_grand_total.Text = "0.00";
-                    txt_total.Text = "0.00";
+                txt_grand_total.Text = "0.00";
+                txt_total.Text = "0.00";
                 txt_discount.Text = "0.00";
-                txt_delivery_charge.Text = "0.00";                           
+                txt_delivery_charge.Text = "0.00";
             }
             catch (Exception ex)
             {
@@ -1281,10 +1288,10 @@ namespace POS_System
             }
         }
 
-        
-      
+
+
         private void txt_discount_KeyPress(object sender, KeyPressEventArgs e)
-      {
+        {
             user_access_check = AdminAccess.discount_access_value;
             if (user_access_check != true)
             {
@@ -1330,40 +1337,41 @@ namespace POS_System
             }
         }
         VoidModel vm = new VoidModel();
-        public static string orderstatus="";
+        public static string orderstatus = "";
         //bool void_status = Billing.void_status;
         private void btn_add_Click(object sender, EventArgs e)
         {
-           // orderstatus = "HD";
+            // orderstatus = "HD";
             //if (Application.OpenForms.OfType<AddItemForVoid>().Count() == 1)
             //    Application.OpenForms.OfType<AddItemForVoid>().First().Close();
             AddItemForVoid siv = new AddItemForVoid("HD");
-                siv.ShowDialog();
-                if (VoidModel.item_name.Count > 0)
+            siv.ShowDialog();
+            if (VoidModel.item_name.Count > 0)
+            {
+                for (int i = 0; i < VoidModel.item_name.Count; i++)
                 {
-                    for (int i = 0; i < VoidModel.item_name.Count; i++)
-                    {
-                        int abc = dataGridView1.Rows.Add();
-                        dataGridView1.Rows[abc].Cells["cal_item_name"].Value = VoidModel.item_name[i];
-                        dataGridView1.Rows[abc].Cells["cal_qty"].Value = VoidModel.qty[i];
-                        dataGridView1.Rows[abc].Cells["cal_total"].Value = VoidModel.total[i];
-                        dataGridView1.Rows[abc].Cells["cal_cost"].Value = VoidModel.cost[i];
-                        dataGridView1.Rows[abc].Cells["cal_item_category"].Value = VoidModel.category_name[i];
-                        dataGridView1.Rows[abc].Cells["calkot_print"].Value = VoidModel.kot_type[i];
-                     
+                    int abc = dataGridView1.Rows.Add();
+                    dataGridView1.Rows[abc].Cells["cal_item_name"].Value = VoidModel.item_name[i];
+                    dataGridView1.Rows[abc].Cells["cal_qty"].Value = VoidModel.qty[i];
+                    dataGridView1.Rows[abc].Cells["cal_total"].Value = VoidModel.total[i];
+                    dataGridView1.Rows[abc].Cells["cal_cost"].Value = VoidModel.cost[i];
+                    dataGridView1.Rows[abc].Cells["cal_item_category"].Value = VoidModel.category_name[i];
+                    dataGridView1.Rows[abc].Cells["calkot_print"].Value = VoidModel.kot_type[i];
+
                 }
                 calculate_total();
 
-                }
-
             }
+
+        }
 
         private void btntable_transfer_Enter(object sender, EventArgs e)
         {
 
         }
     }
-    }
+}
+    
    
   
     

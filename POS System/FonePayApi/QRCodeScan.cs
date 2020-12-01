@@ -30,10 +30,10 @@ namespace POS_System.FonePayApi
         string user_name;
         string password;
         string merchantCode;
-        public string amount;
-        public string remarks;
-        public string remarks2;
-        public string prnNo;
+        public static string amount;
+        public static string remarks;
+        public static string remarks2;
+        public static string prnNo;
         CheckDynamic cd = new CheckDynamic();
         string checkFonePay;
 
@@ -74,9 +74,10 @@ namespace POS_System.FonePayApi
         string fiscal_year;
        
         BLL_Fiscal blfsc = new BLL_Fiscal();
-        //string amounts;
- 
 
+        //string amounts;
+
+       static  bool transfer_success = false;
         public  void webSocketData(string data)
         {
             JObject deserjson = JObject.Parse(data);
@@ -85,7 +86,8 @@ namespace POS_System.FonePayApi
             if (message == "VERIFIED")
             {
                 qrVerified = deserts["qrVerified"].ToString();
-                 MessageBox.Show(qrVerified);
+                //transfer_success = true;
+
             }
             else
             {
@@ -96,16 +98,18 @@ namespace POS_System.FonePayApi
                     if (messageRequest == "Request Complete" && paymentStatus == "true" || paymentStatus=="True")
                     {
                         QRCodeScan qrc = new QRCodeScan();
-                    DataTable dt1 = blfsc.get_all_data_from_fiscal("True");
+                        DataTable dt1 = blfsc.get_all_data_from_fiscal("True");
                             if (dt1.Rows.Count > 0)
                             {
                                 fiscal_year = dt1.Rows[0]["fiscal_year"].ToString();
                             
                             }
-                            int insert = blfp.InsertFonePayLog(Convert.ToInt32(remarks2), Login.sendtext, Convert.ToDecimal(amount),prnNo, fiscal_year, Convert.ToDateTime(DateTime.Now.ToShortDateString()));
-                        
+                            int insert = blfp.InsertFonePayLog(Convert.ToInt32(remarks2), Login.sendtext, Convert.ToDecimal(amount),prnNo, fiscal_year, Convert.ToDateTime(DateTime.Now.ToLongDateString()));
+                        MessageBox.Show("Payment Complete");
+                        transfer_success = true;
                         this.DialogResult = DialogResult.OK;
                         this.Close();
+
                     }
                     else
                     {
@@ -118,15 +122,21 @@ namespace POS_System.FonePayApi
            
         }
 
-        public void acma()
-        {
-            QRCodeScan qcs = new QRCodeScan();
-            qcs.DialogResult = DialogResult.OK;
-            qcs.Close();
-        }
+      
         private void btn_disconnect_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            if (transfer_success == true)
+            {
+                transfer_success = false;
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
+            else
+            {
+                this.Close();
+                    
+            }
+
         }
         QRCodePrinting qcp = new QRCodePrinting();
         private void btn_qr_print_Click(object sender, EventArgs e)

@@ -34,84 +34,88 @@
             System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Ird Info");
             System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("First Load");
             System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Business Type");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("KOT Dynamic");
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Rename Take Away");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Kot Enable/Disable");
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Table CoverUp");
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Take Away", new System.Windows.Forms.TreeNode[] {
-            treeNode7,
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Checkout Rename");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("KOT Dynamic", new System.Windows.Forms.TreeNode[] {
+            treeNode6});
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Rename Take Away");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Kot Enable/Disable");
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Table CoverUp");
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Take Away", new System.Windows.Forms.TreeNode[] {
             treeNode8,
-            treeNode9});
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Token Billing Rename");
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Token Billing", new System.Windows.Forms.TreeNode[] {
-            treeNode11});
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Service Provider Access");
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Service Provider Name");
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Service Provider", new System.Windows.Forms.TreeNode[] {
-            treeNode13,
-            treeNode14});
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Grand Total");
-            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Remove Footer");
-            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("Billing", new System.Windows.Forms.TreeNode[] {
-            treeNode16,
-            treeNode17});
-            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Quotation Access");
-            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("Quotation Rename");
-            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("Quotation Printer Name");
-            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("Quotation Requirement");
-            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("Quoation ", new System.Windows.Forms.TreeNode[] {
-            treeNode19,
+            treeNode9,
+            treeNode10});
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Token Billing Rename");
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Token Billing", new System.Windows.Forms.TreeNode[] {
+            treeNode12});
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Service Provider Access");
+            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Service Provider Name");
+            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Service Provider", new System.Windows.Forms.TreeNode[] {
+            treeNode14,
+            treeNode15});
+            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Grand Total");
+            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("Remove Footer");
+            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Billing", new System.Windows.Forms.TreeNode[] {
+            treeNode17,
+            treeNode18});
+            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("Quotation Access");
+            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("Quotation Rename");
+            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("Quotation Printer Name");
+            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("Quotation Requirement");
+            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("Quoation ", new System.Windows.Forms.TreeNode[] {
             treeNode20,
             treeNode21,
-            treeNode22});
-            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("Pan No. or Vat No.");
-            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("Account Access");
-            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("Tax");
-            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("Service Charge Access");
-            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("Home Delivery Rename");
-            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("Add Menu Item Rename");
-            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("View Sales Report Rename");
-            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("Table Billing Rename");
-            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("All Menu Image", new System.Windows.Forms.TreeNode[] {
-            treeNode28,
+            treeNode22,
+            treeNode23});
+            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("Pan No. or Vat No.");
+            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("Account Access");
+            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("Tax");
+            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("Service Charge Access");
+            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("Home Delivery Rename");
+            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("Add Menu Item Rename");
+            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("View Sales Report Rename");
+            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("Table Billing Rename");
+            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("All Menu Image", new System.Windows.Forms.TreeNode[] {
             treeNode29,
             treeNode30,
-            treeNode31});
-            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("Complementry");
-            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("Cheque Details");
-            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("Dayend Mail Access");
-            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("Dayend Mail To");
-            System.Windows.Forms.TreeNode treeNode37 = new System.Windows.Forms.TreeNode("Dayend Changes", new System.Windows.Forms.TreeNode[] {
-            treeNode35,
-            treeNode36});
-            System.Windows.Forms.TreeNode treeNode38 = new System.Windows.Forms.TreeNode("Purchase By CashDrop");
-            System.Windows.Forms.TreeNode treeNode39 = new System.Windows.Forms.TreeNode("Category Grouping");
-            System.Windows.Forms.TreeNode treeNode40 = new System.Windows.Forms.TreeNode("Item Sales Order");
-            System.Windows.Forms.TreeNode treeNode41 = new System.Windows.Forms.TreeNode("Billing Printer Size");
-            System.Windows.Forms.TreeNode treeNode42 = new System.Windows.Forms.TreeNode("KOT Printer Size");
-            System.Windows.Forms.TreeNode treeNode43 = new System.Windows.Forms.TreeNode("Printer Size Setting", new System.Windows.Forms.TreeNode[] {
-            treeNode41,
-            treeNode42});
-            System.Windows.Forms.TreeNode treeNode44 = new System.Windows.Forms.TreeNode("Hotel Access");
-            System.Windows.Forms.TreeNode treeNode45 = new System.Windows.Forms.TreeNode("Home Delivery Pattern");
-            System.Windows.Forms.TreeNode treeNode46 = new System.Windows.Forms.TreeNode("Table Order Pattern");
-            System.Windows.Forms.TreeNode treeNode47 = new System.Windows.Forms.TreeNode("Take Away Pattern");
-            System.Windows.Forms.TreeNode treeNode48 = new System.Windows.Forms.TreeNode("Token Order Pattern");
-            System.Windows.Forms.TreeNode treeNode49 = new System.Windows.Forms.TreeNode("Customer Settlement");
-            System.Windows.Forms.TreeNode treeNode50 = new System.Windows.Forms.TreeNode("Order Pattern", new System.Windows.Forms.TreeNode[] {
-            treeNode45,
-            treeNode46,
+            treeNode31,
+            treeNode32});
+            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("Complementry");
+            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("Cheque Details");
+            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("Dayend Mail Access");
+            System.Windows.Forms.TreeNode treeNode37 = new System.Windows.Forms.TreeNode("Dayend Mail To");
+            System.Windows.Forms.TreeNode treeNode38 = new System.Windows.Forms.TreeNode("Dayend Changes", new System.Windows.Forms.TreeNode[] {
+            treeNode36,
+            treeNode37});
+            System.Windows.Forms.TreeNode treeNode39 = new System.Windows.Forms.TreeNode("Purchase By CashDrop");
+            System.Windows.Forms.TreeNode treeNode40 = new System.Windows.Forms.TreeNode("Grouping Changes");
+            System.Windows.Forms.TreeNode treeNode41 = new System.Windows.Forms.TreeNode("Category Grouping", new System.Windows.Forms.TreeNode[] {
+            treeNode40});
+            System.Windows.Forms.TreeNode treeNode42 = new System.Windows.Forms.TreeNode("Item Sales Order");
+            System.Windows.Forms.TreeNode treeNode43 = new System.Windows.Forms.TreeNode("Billing Printer Size");
+            System.Windows.Forms.TreeNode treeNode44 = new System.Windows.Forms.TreeNode("KOT Printer Size");
+            System.Windows.Forms.TreeNode treeNode45 = new System.Windows.Forms.TreeNode("Printer Size Setting", new System.Windows.Forms.TreeNode[] {
+            treeNode43,
+            treeNode44});
+            System.Windows.Forms.TreeNode treeNode46 = new System.Windows.Forms.TreeNode("Hotel Access");
+            System.Windows.Forms.TreeNode treeNode47 = new System.Windows.Forms.TreeNode("Home Delivery Pattern");
+            System.Windows.Forms.TreeNode treeNode48 = new System.Windows.Forms.TreeNode("Table Order Pattern");
+            System.Windows.Forms.TreeNode treeNode49 = new System.Windows.Forms.TreeNode("Take Away Pattern");
+            System.Windows.Forms.TreeNode treeNode50 = new System.Windows.Forms.TreeNode("Token Order Pattern");
+            System.Windows.Forms.TreeNode treeNode51 = new System.Windows.Forms.TreeNode("Customer Settlement");
+            System.Windows.Forms.TreeNode treeNode52 = new System.Windows.Forms.TreeNode("Order Pattern", new System.Windows.Forms.TreeNode[] {
             treeNode47,
             treeNode48,
-            treeNode49});
-            System.Windows.Forms.TreeNode treeNode51 = new System.Windows.Forms.TreeNode("DayEnd");
-            System.Windows.Forms.TreeNode treeNode52 = new System.Windows.Forms.TreeNode("Billing");
-            System.Windows.Forms.TreeNode treeNode53 = new System.Windows.Forms.TreeNode("Print Name", new System.Windows.Forms.TreeNode[] {
-            treeNode51,
-            treeNode52});
-            System.Windows.Forms.TreeNode treeNode54 = new System.Windows.Forms.TreeNode("FonePay");
-            System.Windows.Forms.TreeNode treeNode55 = new System.Windows.Forms.TreeNode("Discount & Estimate Cost");
-            System.Windows.Forms.TreeNode treeNode56 = new System.Windows.Forms.TreeNode("System Command");
+            treeNode49,
+            treeNode50,
+            treeNode51});
+            System.Windows.Forms.TreeNode treeNode53 = new System.Windows.Forms.TreeNode("DayEnd");
+            System.Windows.Forms.TreeNode treeNode54 = new System.Windows.Forms.TreeNode("Billing");
+            System.Windows.Forms.TreeNode treeNode55 = new System.Windows.Forms.TreeNode("Print Name", new System.Windows.Forms.TreeNode[] {
+            treeNode53,
+            treeNode54});
+            System.Windows.Forms.TreeNode treeNode56 = new System.Windows.Forms.TreeNode("FonePay");
+            System.Windows.Forms.TreeNode treeNode57 = new System.Windows.Forms.TreeNode("Discount & Estimate Cost");
+            System.Windows.Forms.TreeNode treeNode58 = new System.Windows.Forms.TreeNode("System Command");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dynamic));
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
@@ -459,6 +463,20 @@
             this.lbl_billfooter = new System.Windows.Forms.Label();
             this.label156 = new System.Windows.Forms.Label();
             this.label157 = new System.Windows.Forms.Label();
+            this.panel_checkout_rename = new System.Windows.Forms.Panel();
+            this.label151 = new System.Windows.Forms.Label();
+            this.txt_checkout_rename = new System.Windows.Forms.TextBox();
+            this.lbl_checkout_rename = new System.Windows.Forms.Label();
+            this.label158 = new System.Windows.Forms.Label();
+            this.label159 = new System.Windows.Forms.Label();
+            this.panel_fix_grouping = new System.Windows.Forms.Panel();
+            this.chk_fix_grouping = new System.Windows.Forms.CheckBox();
+            this.lbl_fix_grouping = new System.Windows.Forms.Label();
+            this.label161 = new System.Windows.Forms.Label();
+            this.label162 = new System.Windows.Forms.Label();
+            this.chk_hide_grouping = new System.Windows.Forms.CheckBox();
+            this.lbl_hide_grouping = new System.Windows.Forms.Label();
+            this.label164 = new System.Windows.Forms.Label();
             this.PanelLoad.SuspendLayout();
             this.panelTA.SuspendLayout();
             this.panelSPA.SuspendLayout();
@@ -510,6 +528,8 @@
             this.panel_checkdetail.SuspendLayout();
             this.panel_grandtotal.SuspendLayout();
             this.panel_footerbilling.SuspendLayout();
+            this.panel_checkout_rename.SuspendLayout();
+            this.panel_fix_grouping.SuspendLayout();
             this.SuspendLayout();
             // 
             // treeView1
@@ -532,141 +552,145 @@
             treeNode4.Text = "First Load";
             treeNode5.Name = "Node0";
             treeNode5.Text = "Business Type";
-            treeNode6.Name = "Printing Dynamic";
-            treeNode6.SelectedImageIndex = 132;
-            treeNode6.Text = "KOT Dynamic";
-            treeNode7.Name = "Node1";
-            treeNode7.Text = "Rename Take Away";
-            treeNode8.Name = "Node2";
-            treeNode8.Text = "Kot Enable/Disable";
-            treeNode9.Name = "Table CoverUp";
-            treeNode9.Text = "Table CoverUp";
-            treeNode10.Name = "Rename Take Away";
-            treeNode10.SelectedImageIndex = 143;
-            treeNode10.Text = "Take Away";
-            treeNode11.Name = "Node0";
-            treeNode11.Text = "Token Billing Rename";
-            treeNode12.Name = "Token Billing";
-            treeNode12.Text = "Token Billing";
-            treeNode13.Name = "Node7";
-            treeNode13.Text = "Service Provider Access";
-            treeNode14.Name = "Node8";
-            treeNode14.Text = "Service Provider Name";
-            treeNode15.Name = "Service Provider";
-            treeNode15.Text = "Service Provider";
-            treeNode16.Name = "Node1";
-            treeNode16.Text = "Grand Total";
-            treeNode17.Name = "Node2";
-            treeNode17.Text = "Remove Footer";
-            treeNode18.Name = "Node0";
-            treeNode18.Text = "Billing";
-            treeNode19.Name = "Node5";
-            treeNode19.Text = "Quotation Access";
-            treeNode20.Name = "Node6";
-            treeNode20.Text = "Quotation Rename";
-            treeNode21.Name = "Node0";
-            treeNode21.Text = "Quotation Printer Name";
-            treeNode22.Name = "Node1";
-            treeNode22.Text = "Quotation Requirement";
-            treeNode23.Name = "Quoation Access";
-            treeNode23.SelectedImageIndex = 176;
-            treeNode23.Text = "Quoation ";
-            treeNode24.Name = "Pan No. or Vat No.";
-            treeNode24.Text = "Pan No. or Vat No.";
-            treeNode25.Name = "Node0";
-            treeNode25.Text = "Account Access";
-            treeNode26.Name = "Tax";
-            treeNode26.Text = "Tax";
-            treeNode27.Name = "Service Charge Access";
-            treeNode27.Text = "Service Charge Access";
-            treeNode28.Name = "Node2";
-            treeNode28.Text = "Home Delivery Rename";
+            treeNode6.Name = "Checkout Rename";
+            treeNode6.Text = "Checkout Rename";
+            treeNode7.Name = "Printing Dynamic";
+            treeNode7.SelectedImageIndex = 132;
+            treeNode7.Text = "KOT Dynamic";
+            treeNode8.Name = "Node1";
+            treeNode8.Text = "Rename Take Away";
+            treeNode9.Name = "Node2";
+            treeNode9.Text = "Kot Enable/Disable";
+            treeNode10.Name = "Table CoverUp";
+            treeNode10.Text = "Table CoverUp";
+            treeNode11.Name = "Rename Take Away";
+            treeNode11.SelectedImageIndex = 143;
+            treeNode11.Text = "Take Away";
+            treeNode12.Name = "Node0";
+            treeNode12.Text = "Token Billing Rename";
+            treeNode13.Name = "Token Billing";
+            treeNode13.Text = "Token Billing";
+            treeNode14.Name = "Node7";
+            treeNode14.Text = "Service Provider Access";
+            treeNode15.Name = "Node8";
+            treeNode15.Text = "Service Provider Name";
+            treeNode16.Name = "Service Provider";
+            treeNode16.Text = "Service Provider";
+            treeNode17.Name = "Node1";
+            treeNode17.Text = "Grand Total";
+            treeNode18.Name = "Node2";
+            treeNode18.Text = "Remove Footer";
+            treeNode19.Name = "Node0";
+            treeNode19.Text = "Billing";
+            treeNode20.Name = "Node5";
+            treeNode20.Text = "Quotation Access";
+            treeNode21.Name = "Node6";
+            treeNode21.Text = "Quotation Rename";
+            treeNode22.Name = "Node0";
+            treeNode22.Text = "Quotation Printer Name";
+            treeNode23.Name = "Node1";
+            treeNode23.Text = "Quotation Requirement";
+            treeNode24.Name = "Quoation Access";
+            treeNode24.SelectedImageIndex = 176;
+            treeNode24.Text = "Quoation ";
+            treeNode25.Name = "Pan No. or Vat No.";
+            treeNode25.Text = "Pan No. or Vat No.";
+            treeNode26.Name = "Node0";
+            treeNode26.Text = "Account Access";
+            treeNode27.Name = "Tax";
+            treeNode27.Text = "Tax";
+            treeNode28.Name = "Service Charge Access";
+            treeNode28.Text = "Service Charge Access";
             treeNode29.Name = "Node2";
-            treeNode29.Text = "Add Menu Item Rename";
-            treeNode30.Name = "Node3";
-            treeNode30.Text = "View Sales Report Rename";
-            treeNode31.Name = "Node0";
-            treeNode31.Text = "Table Billing Rename";
-            treeNode32.Name = "Node1";
-            treeNode32.Text = "All Menu Image";
-            treeNode33.Name = "Node0";
-            treeNode33.Text = "Complementry";
+            treeNode29.Text = "Home Delivery Rename";
+            treeNode30.Name = "Node2";
+            treeNode30.Text = "Add Menu Item Rename";
+            treeNode31.Name = "Node3";
+            treeNode31.Text = "View Sales Report Rename";
+            treeNode32.Name = "Node0";
+            treeNode32.Text = "Table Billing Rename";
+            treeNode33.Name = "Node1";
+            treeNode33.Text = "All Menu Image";
             treeNode34.Name = "Node0";
-            treeNode34.Text = "Cheque Details";
+            treeNode34.Text = "Complementry";
             treeNode35.Name = "Node0";
-            treeNode35.Text = "Dayend Mail Access";
-            treeNode36.Name = "Node2";
-            treeNode36.Text = "Dayend Mail To";
-            treeNode37.Name = "Node0";
-            treeNode37.Text = "Dayend Changes";
+            treeNode35.Text = "Cheque Details";
+            treeNode36.Name = "Node0";
+            treeNode36.Text = "Dayend Mail Access";
+            treeNode37.Name = "Node2";
+            treeNode37.Text = "Dayend Mail To";
             treeNode38.Name = "Node0";
-            treeNode38.Text = "Purchase By CashDrop";
+            treeNode38.Text = "Dayend Changes";
             treeNode39.Name = "Node0";
-            treeNode39.Text = "Category Grouping";
-            treeNode40.Name = "Node1";
-            treeNode40.Text = "Item Sales Order";
-            treeNode41.Name = "Node1";
-            treeNode41.Text = "Billing Printer Size";
-            treeNode42.Name = "Node2";
-            treeNode42.Text = "KOT Printer Size";
-            treeNode43.Name = "Node0";
-            treeNode43.Text = "Printer Size Setting";
-            treeNode44.Name = "Node0";
-            treeNode44.Text = "Hotel Access";
-            treeNode45.Name = "Node1";
-            treeNode45.Text = "Home Delivery Pattern";
-            treeNode46.Name = "Node2";
-            treeNode46.Text = "Table Order Pattern";
-            treeNode47.Name = "Node3";
-            treeNode47.Text = "Take Away Pattern";
-            treeNode48.Name = "Node4";
-            treeNode48.Text = "Token Order Pattern";
-            treeNode49.Name = "Customer Settlement";
-            treeNode49.Text = "Customer Settlement";
-            treeNode50.Name = "Home Delivery";
-            treeNode50.Text = "Order Pattern";
-            treeNode51.Name = "Node1";
-            treeNode51.Text = "DayEnd";
-            treeNode52.Name = "Node0";
-            treeNode52.Text = "Billing";
-            treeNode53.Name = "Node0";
-            treeNode53.Text = "Print Name";
-            treeNode54.Name = "FonePay";
-            treeNode54.Text = "FonePay";
+            treeNode39.Text = "Purchase By CashDrop";
+            treeNode40.Name = "Grouping Changes";
+            treeNode40.Text = "Grouping Changes";
+            treeNode41.Name = "Node0";
+            treeNode41.Text = "Category Grouping";
+            treeNode42.Name = "Node1";
+            treeNode42.Text = "Item Sales Order";
+            treeNode43.Name = "Node1";
+            treeNode43.Text = "Billing Printer Size";
+            treeNode44.Name = "Node2";
+            treeNode44.Text = "KOT Printer Size";
+            treeNode45.Name = "Node0";
+            treeNode45.Text = "Printer Size Setting";
+            treeNode46.Name = "Node0";
+            treeNode46.Text = "Hotel Access";
+            treeNode47.Name = "Node1";
+            treeNode47.Text = "Home Delivery Pattern";
+            treeNode48.Name = "Node2";
+            treeNode48.Text = "Table Order Pattern";
+            treeNode49.Name = "Node3";
+            treeNode49.Text = "Take Away Pattern";
+            treeNode50.Name = "Node4";
+            treeNode50.Text = "Token Order Pattern";
+            treeNode51.Name = "Customer Settlement";
+            treeNode51.Text = "Customer Settlement";
+            treeNode52.Name = "Home Delivery";
+            treeNode52.Text = "Order Pattern";
+            treeNode53.Name = "Node1";
+            treeNode53.Text = "DayEnd";
+            treeNode54.Name = "Node0";
+            treeNode54.Text = "Billing";
             treeNode55.Name = "Node0";
-            treeNode55.Text = "Discount & Estimate Cost";
-            treeNode56.Name = "syscommand";
-            treeNode56.Text = "System Command";
+            treeNode55.Text = "Print Name";
+            treeNode56.Name = "FonePay";
+            treeNode56.Text = "FonePay";
+            treeNode57.Name = "Node0";
+            treeNode57.Text = "Discount & Estimate Cost";
+            treeNode58.Name = "syscommand";
+            treeNode58.Text = "System Command";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             treeNode1,
             treeNode2,
             treeNode3,
             treeNode4,
             treeNode5,
-            treeNode6,
-            treeNode10,
-            treeNode12,
-            treeNode15,
-            treeNode18,
-            treeNode23,
+            treeNode7,
+            treeNode11,
+            treeNode13,
+            treeNode16,
+            treeNode19,
             treeNode24,
             treeNode25,
             treeNode26,
             treeNode27,
-            treeNode32,
+            treeNode28,
             treeNode33,
             treeNode34,
-            treeNode37,
+            treeNode35,
             treeNode38,
             treeNode39,
-            treeNode40,
-            treeNode43,
-            treeNode44,
-            treeNode50,
-            treeNode53,
-            treeNode54,
+            treeNode41,
+            treeNode42,
+            treeNode45,
+            treeNode46,
+            treeNode52,
             treeNode55,
-            treeNode56});
+            treeNode56,
+            treeNode57,
+            treeNode58});
             this.treeView1.SelectedImageIndex = 0;
             this.treeView1.Size = new System.Drawing.Size(222, 470);
             this.treeView1.TabIndex = 0;
@@ -1631,7 +1655,7 @@
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label31.Location = new System.Drawing.Point(226, 366);
+            this.label31.Location = new System.Drawing.Point(226, 293);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(533, 16);
             this.label31.TabIndex = 26;
@@ -3379,7 +3403,7 @@
             this.panel_token_pattern.Controls.Add(this.lbl_token_pattern);
             this.panel_token_pattern.Controls.Add(this.label116);
             this.panel_token_pattern.Controls.Add(this.label117);
-            this.panel_token_pattern.Location = new System.Drawing.Point(233, 6);
+            this.panel_token_pattern.Location = new System.Drawing.Point(233, 7);
             this.panel_token_pattern.Name = "panel_token_pattern";
             this.panel_token_pattern.Size = new System.Drawing.Size(524, 353);
             this.panel_token_pattern.TabIndex = 50;
@@ -4262,7 +4286,7 @@
             this.FonePayPanel.Controls.Add(this.label135);
             this.FonePayPanel.Controls.Add(this.label149);
             this.FonePayPanel.Controls.Add(this.label150);
-            this.FonePayPanel.Location = new System.Drawing.Point(231, 7);
+            this.FonePayPanel.Location = new System.Drawing.Point(231, 8);
             this.FonePayPanel.Name = "FonePayPanel";
             this.FonePayPanel.Size = new System.Drawing.Size(523, 319);
             this.FonePayPanel.TabIndex = 51;
@@ -4370,7 +4394,7 @@
             this.panel_checkdetail.Controls.Add(this.lbl_checkdetail);
             this.panel_checkdetail.Controls.Add(this.label152);
             this.panel_checkdetail.Controls.Add(this.label153);
-            this.panel_checkdetail.Location = new System.Drawing.Point(229, 9);
+            this.panel_checkdetail.Location = new System.Drawing.Point(229, 10);
             this.panel_checkdetail.Name = "panel_checkdetail";
             this.panel_checkdetail.Size = new System.Drawing.Size(524, 353);
             this.panel_checkdetail.TabIndex = 305;
@@ -4423,7 +4447,7 @@
             this.panel_grandtotal.Controls.Add(this.lbl_grandtotal);
             this.panel_grandtotal.Controls.Add(this.label154);
             this.panel_grandtotal.Controls.Add(this.label155);
-            this.panel_grandtotal.Location = new System.Drawing.Point(229, 8);
+            this.panel_grandtotal.Location = new System.Drawing.Point(229, 9);
             this.panel_grandtotal.Name = "panel_grandtotal";
             this.panel_grandtotal.Size = new System.Drawing.Size(524, 353);
             this.panel_grandtotal.TabIndex = 306;
@@ -4476,7 +4500,7 @@
             this.panel_footerbilling.Controls.Add(this.lbl_billfooter);
             this.panel_footerbilling.Controls.Add(this.label156);
             this.panel_footerbilling.Controls.Add(this.label157);
-            this.panel_footerbilling.Location = new System.Drawing.Point(231, 9);
+            this.panel_footerbilling.Location = new System.Drawing.Point(231, 12);
             this.panel_footerbilling.Name = "panel_footerbilling";
             this.panel_footerbilling.Size = new System.Drawing.Size(524, 353);
             this.panel_footerbilling.TabIndex = 307;
@@ -4523,11 +4547,160 @@
             this.label157.TabIndex = 20;
             this.label157.Text = "Footer In Billing";
             // 
+            // panel_checkout_rename
+            // 
+            this.panel_checkout_rename.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_checkout_rename.Controls.Add(this.label151);
+            this.panel_checkout_rename.Controls.Add(this.txt_checkout_rename);
+            this.panel_checkout_rename.Controls.Add(this.lbl_checkout_rename);
+            this.panel_checkout_rename.Controls.Add(this.label158);
+            this.panel_checkout_rename.Controls.Add(this.label159);
+            this.panel_checkout_rename.Location = new System.Drawing.Point(232, 11);
+            this.panel_checkout_rename.Name = "panel_checkout_rename";
+            this.panel_checkout_rename.Size = new System.Drawing.Size(524, 353);
+            this.panel_checkout_rename.TabIndex = 308;
+            // 
+            // label151
+            // 
+            this.label151.AutoSize = true;
+            this.label151.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label151.Location = new System.Drawing.Point(22, 69);
+            this.label151.Name = "label151";
+            this.label151.Size = new System.Drawing.Size(125, 16);
+            this.label151.TabIndex = 25;
+            this.label151.Text = "Checkout Rename :";
+            // 
+            // txt_checkout_rename
+            // 
+            this.txt_checkout_rename.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_checkout_rename.Location = new System.Drawing.Point(153, 66);
+            this.txt_checkout_rename.Name = "txt_checkout_rename";
+            this.txt_checkout_rename.Size = new System.Drawing.Size(164, 22);
+            this.txt_checkout_rename.TabIndex = 24;
+            // 
+            // lbl_checkout_rename
+            // 
+            this.lbl_checkout_rename.AutoSize = true;
+            this.lbl_checkout_rename.Location = new System.Drawing.Point(481, 11);
+            this.lbl_checkout_rename.Name = "lbl_checkout_rename";
+            this.lbl_checkout_rename.Size = new System.Drawing.Size(30, 13);
+            this.lbl_checkout_rename.TabIndex = 23;
+            this.lbl_checkout_rename.Text = "COR";
+            // 
+            // label158
+            // 
+            this.label158.AutoSize = true;
+            this.label158.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label158.Location = new System.Drawing.Point(431, 8);
+            this.label158.Name = "label158";
+            this.label158.Size = new System.Drawing.Size(44, 16);
+            this.label158.TabIndex = 22;
+            this.label158.Text = "Code:";
+            // 
+            // label159
+            // 
+            this.label159.AutoSize = true;
+            this.label159.BackColor = System.Drawing.SystemColors.Control;
+            this.label159.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label159.Location = new System.Drawing.Point(9, 18);
+            this.label159.Name = "label159";
+            this.label159.Size = new System.Drawing.Size(136, 18);
+            this.label159.TabIndex = 20;
+            this.label159.Text = "Checkout Rename ";
+            // 
+            // panel_fix_grouping
+            // 
+            this.panel_fix_grouping.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_fix_grouping.Controls.Add(this.lbl_hide_grouping);
+            this.panel_fix_grouping.Controls.Add(this.label164);
+            this.panel_fix_grouping.Controls.Add(this.chk_hide_grouping);
+            this.panel_fix_grouping.Controls.Add(this.chk_fix_grouping);
+            this.panel_fix_grouping.Controls.Add(this.lbl_fix_grouping);
+            this.panel_fix_grouping.Controls.Add(this.label161);
+            this.panel_fix_grouping.Controls.Add(this.label162);
+            this.panel_fix_grouping.Location = new System.Drawing.Point(231, 11);
+            this.panel_fix_grouping.Name = "panel_fix_grouping";
+            this.panel_fix_grouping.Size = new System.Drawing.Size(524, 353);
+            this.panel_fix_grouping.TabIndex = 309;
+            // 
+            // chk_fix_grouping
+            // 
+            this.chk_fix_grouping.AutoSize = true;
+            this.chk_fix_grouping.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chk_fix_grouping.Location = new System.Drawing.Point(9, 58);
+            this.chk_fix_grouping.Name = "chk_fix_grouping";
+            this.chk_fix_grouping.Size = new System.Drawing.Size(165, 20);
+            this.chk_fix_grouping.TabIndex = 27;
+            this.chk_fix_grouping.Text = "I Need To Fix Grouping";
+            this.chk_fix_grouping.UseVisualStyleBackColor = true;
+            // 
+            // lbl_fix_grouping
+            // 
+            this.lbl_fix_grouping.AutoSize = true;
+            this.lbl_fix_grouping.Location = new System.Drawing.Point(481, 11);
+            this.lbl_fix_grouping.Name = "lbl_fix_grouping";
+            this.lbl_fix_grouping.Size = new System.Drawing.Size(21, 13);
+            this.lbl_fix_grouping.TabIndex = 23;
+            this.lbl_fix_grouping.Text = "FG";
+            // 
+            // label161
+            // 
+            this.label161.AutoSize = true;
+            this.label161.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label161.Location = new System.Drawing.Point(431, 8);
+            this.label161.Name = "label161";
+            this.label161.Size = new System.Drawing.Size(44, 16);
+            this.label161.TabIndex = 22;
+            this.label161.Text = "Code:";
+            // 
+            // label162
+            // 
+            this.label162.AutoSize = true;
+            this.label162.BackColor = System.Drawing.SystemColors.Control;
+            this.label162.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label162.Location = new System.Drawing.Point(9, 18);
+            this.label162.Name = "label162";
+            this.label162.Size = new System.Drawing.Size(92, 18);
+            this.label162.TabIndex = 20;
+            this.label162.Text = "Fix Grouping";
+            // 
+            // chk_hide_grouping
+            // 
+            this.chk_hide_grouping.AutoSize = true;
+            this.chk_hide_grouping.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chk_hide_grouping.Location = new System.Drawing.Point(9, 95);
+            this.chk_hide_grouping.Name = "chk_hide_grouping";
+            this.chk_hide_grouping.Size = new System.Drawing.Size(134, 20);
+            this.chk_hide_grouping.TabIndex = 28;
+            this.chk_hide_grouping.Text = "Hide \'G\'-Grouping";
+            this.chk_hide_grouping.UseVisualStyleBackColor = true;
+            // 
+            // lbl_hide_grouping
+            // 
+            this.lbl_hide_grouping.AutoSize = true;
+            this.lbl_hide_grouping.Location = new System.Drawing.Point(481, 31);
+            this.lbl_hide_grouping.Name = "lbl_hide_grouping";
+            this.lbl_hide_grouping.Size = new System.Drawing.Size(23, 13);
+            this.lbl_hide_grouping.TabIndex = 30;
+            this.lbl_hide_grouping.Text = "HG";
+            // 
+            // label164
+            // 
+            this.label164.AutoSize = true;
+            this.label164.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label164.Location = new System.Drawing.Point(431, 28);
+            this.label164.Name = "label164";
+            this.label164.Size = new System.Drawing.Size(44, 16);
+            this.label164.TabIndex = 29;
+            this.label164.Text = "Code:";
+            // 
             // Dynamic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(767, 479);
+            this.Controls.Add(this.panel_fix_grouping);
+            this.Controls.Add(this.panel_checkout_rename);
             this.Controls.Add(this.panel_footerbilling);
             this.Controls.Add(this.panel_grandtotal);
             this.Controls.Add(this.FonePayPanel);
@@ -4681,6 +4854,10 @@
             this.panel_grandtotal.PerformLayout();
             this.panel_footerbilling.ResumeLayout(false);
             this.panel_footerbilling.PerformLayout();
+            this.panel_checkout_rename.ResumeLayout(false);
+            this.panel_checkout_rename.PerformLayout();
+            this.panel_fix_grouping.ResumeLayout(false);
+            this.panel_fix_grouping.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -5034,5 +5211,19 @@
         private System.Windows.Forms.Label lbl_billfooter;
         private System.Windows.Forms.Label label156;
         private System.Windows.Forms.Label label157;
+        private System.Windows.Forms.Panel panel_checkout_rename;
+        private System.Windows.Forms.Label label151;
+        private System.Windows.Forms.TextBox txt_checkout_rename;
+        private System.Windows.Forms.Label lbl_checkout_rename;
+        private System.Windows.Forms.Label label158;
+        private System.Windows.Forms.Label label159;
+        private System.Windows.Forms.Panel panel_fix_grouping;
+        private System.Windows.Forms.Label lbl_hide_grouping;
+        private System.Windows.Forms.Label label164;
+        private System.Windows.Forms.CheckBox chk_hide_grouping;
+        private System.Windows.Forms.CheckBox chk_fix_grouping;
+        private System.Windows.Forms.Label lbl_fix_grouping;
+        private System.Windows.Forms.Label label161;
+        private System.Windows.Forms.Label label162;
     }
 }

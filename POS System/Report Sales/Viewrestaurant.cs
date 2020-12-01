@@ -643,6 +643,16 @@ namespace POS_System
             ba4.printtobill();
             save_after_print = ba4.save_after_print;
         }
+        string nepaliDateConvert;
+        public void dateConvertToNepali()
+        {
+            NepaliDateConverter.DateConverter dp = new NepaliDateConverter.DateConverter();
+            var nepalidate = dp.EngToNep(Convert.ToInt32(DateTime.Now.Year), Convert.ToInt32(DateTime.Now.ToString("MM")), Convert.ToInt32(DateTime.Now.ToString("dd")));
+            string nyear = nepalidate.ConvertedDate.Year.ToString();
+            string nday = nepalidate.ConvertedDate.Day.ToString();
+            string nmonths = nepalidate.ConvertedDate.Month.ToString();
+            nepaliDateConvert = nyear + ".0" + nmonths + "." + nday;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -651,8 +661,11 @@ namespace POS_System
             blp_80.Headerstatus = true;
             blp_80.FooterStatus = true;
             blp_80.printer_name = "Billing";
+            blp_80.nepaliDate = nepaliDateConvert;
             string bill_no = dataGridView1.CurrentRow.Cells["calbill_no"].Value.ToString();
             blp_80.bill_no = bill_no;
+            string fiscal_year = dataGridView1.CurrentRow.Cells["col_fiscal_year"].Value.ToString();
+            blp_80.fiscal_year = fiscal_year;
             blp_80.cashier = dataGridView1.CurrentRow.Cells["calcashier_name"].Value.ToString();
             blp_80.cash_amount = dataGridView1.CurrentRow.Cells["calcashamt"].Value.ToString();
             decimal discount = Convert.ToDecimal(dataGridView1.CurrentRow.Cells["cal_discount"].Value.ToString());
@@ -826,8 +839,11 @@ namespace POS_System
             blp76.Headerstatus = true;
             blp76.FooterStatus = true;
             blp76.printer_name = "Billing";
+            blp76.nepaliDate = nepaliDateConvert;
             string bill_no = dataGridView1.CurrentRow.Cells["calbill_no"].Value.ToString();
             blp76.bill_no = bill_no;
+            string fiscal_year = dataGridView1.CurrentRow.Cells["col_fiscal_year"].Value.ToString();
+            blp76.fiscal_year = fiscal_year;
             blp76.cashier = dataGridView1.CurrentRow.Cells["calcashier_name"].Value.ToString();
             blp76.cash_amount = dataGridView1.CurrentRow.Cells["calcashamt"].Value.ToString();
             decimal discount = Convert.ToDecimal(dataGridView1.CurrentRow.Cells["cal_discount"].Value.ToString());
@@ -1232,6 +1248,7 @@ namespace POS_System
                 this.status = (this.mintCurrentPage + 1).ToString() + " / " + this.mintPageCount.ToString();
             }
         }
+
         public void DataGridViewLoad()
         {
             if (dtLoad.Rows.Count > 0)
@@ -1246,8 +1263,18 @@ namespace POS_System
                     dataGridView1.Rows[inc].Cells["caltotal"].Value = dtLoad.Rows[inc]["total"].ToString();
                     dataGridView1.Rows[inc].Cells["cal_cost"].Value = dtLoad.Rows[inc]["cost"].ToString();
                     dataGridView1.Rows[inc].Cells["caldate"].Value = dtLoad.Rows[inc]["date_of_sale"].ToString();
-                  
-                    if (bill_no != dtLoad.Rows[inc]["bill_no"].ToString())
+                    dataGridView1.Rows[inc].Cells["col_fiscal_year"].Value = dtLoad.Rows[inc]["fiscal_year"].ToString();
+                  //  brfiscal_year = dtLoad.Rows[inc]["fiscal_year"].ToString();
+                    //if (fiscal_year!= dtLoad.Rows[inc]["fiscal_year"].ToString())
+                    //{
+
+                    //}
+                    //else
+                    //{
+
+                    //}
+               
+                    if (bill_no != dtLoad.Rows[inc]["bill_no"].ToString() || brfiscal_year != dtLoad.Rows[inc]["fiscal_year"].ToString())
                     {
                         dataGridView1.Rows[inc].Cells["cal_grand_total"].Value = dtLoad.Rows[inc]["grand_total"].ToString();                    
                         string payment_mode  = dtLoad.Rows[inc]["payment_mode"].ToString();
@@ -1260,6 +1287,7 @@ namespace POS_System
                         {
                             dataGridView1.Rows[inc].Cells["cal_credit_amt"].Value = "0.00";
                         }
+                        
                         dataGridView1.Rows[inc].Cells["calcardamount"].Value = dtLoad.Rows[inc]["card_amount"].ToString();
                         dataGridView1.Rows[inc].Cells["calcashamt"].Value = dtLoad.Rows[inc]["cash_amount"].ToString();
                         dataGridView1.Rows[inc].Cells["calcashier_name"].Value = dtLoad.Rows[inc]["cashier_name"].ToString();
@@ -1269,8 +1297,9 @@ namespace POS_System
                    
 
                     }
+                    
                     bill_no = dtLoad.Rows[inc]["bill_no"].ToString();
-                  
+                    brfiscal_year= dtLoad.Rows[inc]["fiscal_year"].ToString();
                     dataGridView1.Rows[inc].Cells["calbill_no"].Value = bill_no;
                     dataGridView1.Rows[inc].Cells["caldate"].Value = Convert.ToDateTime(dtLoad.Rows[inc]["date_of_sale"].ToString());
                     dataGridView1.Rows[inc].Cells["cal_sales_type"].Value = dtLoad.Rows[inc]["sales_type"].ToString();

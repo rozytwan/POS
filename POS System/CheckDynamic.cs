@@ -37,6 +37,17 @@ namespace POS_System
             }
              return returnno;
         }
+        public string CheckoutRename()
+        {
+            returnno = "Check Out";
+            DataTable dtrename = bld.GetDynamic("COR");
+            if (dtrename.Rows.Count > 0)
+            {
+                returnno = dtrename.Rows[0]["description"].ToString();
+
+            }
+            return returnno;
+        }
         public bool ServiceProviderAccess()
         {
             access = false;
@@ -425,6 +436,42 @@ namespace POS_System
         public bool KotSaveEnableDisable()
         {
             DataTable dtload = bld.GetDynamic("KSED");
+            if (dtload.Rows.Count > 0)
+            {
+                string status = dtload.Rows[0]["status"].ToString();
+                if (status == "True")
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+
+            return false;
+        }
+        public bool Fixgrouping()
+        {
+            DataTable dtload = bld.GetDynamic("FG");
+            if (dtload.Rows.Count > 0)
+            {
+                string status = dtload.Rows[0]["status"].ToString();
+                if (status == "True")
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+
+            return false;
+        }
+        public bool Hidegrouping()
+        {
+            DataTable dtload = bld.GetDynamic("HG");
             if (dtload.Rows.Count > 0)
             {
                 string status = dtload.Rows[0]["status"].ToString();

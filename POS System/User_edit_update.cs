@@ -80,40 +80,45 @@ namespace POS
 
         private void btn_delete_Click(object sender, EventArgs e)
         {
-
-            if (dataGridView1.SelectedRows.Count > 0)
+            if (dataGridView1.CurrentRow.Cells["col_userid"].Value.ToString() == "1"|| dataGridView1.CurrentRow.Cells["col_first_name"].Value.ToString()=="admin")
             {
-                DialogResult dig = MessageBox.Show("Do You Like to Delete User", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (dig == DialogResult.Yes)
-                {
-
-                    foreach (DataGridViewRow dr in dataGridView1.SelectedRows)
-                    {
-                        string user_image_name = dr.Cells["col_user_image"].Value.ToString();
-                        user_id = Convert.ToInt32(dataGridView1.CurrentRow.Cells["col_userid"].Value);
-                        int delete_user = blluser.deleteuser(user_id);
-                        if (delete_user > 0)
-                        {
-                            MessageBox.Show("Successfully Deleted", "Delete", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            if (user_image_name.Length > 0)
-                            {
-                                bool s = File.Exists(path + user_image_name);
-                                if (s == true)
-                                {
-
-                                    System.IO.File.Delete(path + user_image_name);
-                                }
-                            }
-                        }
-                        dataGridView1.Rows.RemoveAt(dr.Index);
-                    }
-                }
+                MessageBox.Show("Admin Cannot Be Deleted Alert !!", "Admin Alert !!");
             }
             else
             {
-                MessageBox.Show("Please Select A Row", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+                if (dataGridView1.SelectedRows.Count > 0)
+                {
+                    DialogResult dig = MessageBox.Show("Do You Like to Delete User", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (dig == DialogResult.Yes)
+                    {
 
+                        foreach (DataGridViewRow dr in dataGridView1.SelectedRows)
+                        {
+                            string user_image_name = dr.Cells["col_user_image"].Value.ToString();
+                            user_id = Convert.ToInt32(dataGridView1.CurrentRow.Cells["col_userid"].Value);
+                            int delete_user = blluser.deleteuser(user_id);
+                            if (delete_user > 0)
+                            {
+                                MessageBox.Show("Successfully Deleted", "Delete", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                if (user_image_name.Length > 0)
+                                {
+                                    bool s = File.Exists(path + user_image_name);
+                                    if (s == true)
+                                    {
+
+                                        System.IO.File.Delete(path + user_image_name);
+                                    }
+                                }
+                            }
+                            dataGridView1.Rows.RemoveAt(dr.Index);
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Please Select A Row", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
         }
 
         private void btn_view_Click(object sender, EventArgs e)

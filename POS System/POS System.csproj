@@ -351,6 +351,8 @@
     </Compile>
     <Compile Include="FonePayApi\WebSocketTest.cs" />
     <Compile Include="HomeDelivery\HomeDeliveryModel.cs" />
+    <Compile Include="Hotel\HotelBilling76.cs" />
+    <Compile Include="Hotel\HotelBillingA4.cs" />
     <Compile Include="Hotel\HotelTransfer.cs">
       <SubType>Form</SubType>
     </Compile>

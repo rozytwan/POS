@@ -158,6 +158,14 @@ namespace POS_System
                     {
                         chk_discount.Checked = true;
                     }
+                    if (code == "FG")
+                    {
+                        chk_fix_grouping.Checked = true;
+                    }
+                    if (code == "HG")
+                    {
+                        chk_hide_grouping.Checked = true;
+                    }
                     if (code == "AAC")
                     {
                         chk_complementry.Checked = true;
@@ -460,6 +468,41 @@ namespace POS_System
                         int update = bldd.UpdateDynamicFalse(lbl_qa.Text);
                     }
                 }
+                else if (panel_fix_grouping.Visible == true)
+                {
+                    if (chk_fix_grouping.Checked == true)
+                    {
+                        dt = bld.GetDynamic(lbl_fix_grouping.Text);
+                        if (dt.Rows.Count == 0)
+                        {
+                            int insert = bldd.InsertDynamic("Fix Grouping Access", "Access", "Enable", lbl_fix_grouping.Text);
+                        }
+                        else
+                        {
+                            int update = bldd.UpdateDynamic("Enable", lbl_fix_grouping.Text);
+                        }
+                    }
+                    else
+                    {
+                        int update = bldd.UpdateDynamicFalse(lbl_fix_grouping.Text);
+                    }
+                    if (chk_hide_grouping.Checked == true)
+                    {
+                        dt = bld.GetDynamic(lbl_hide_grouping.Text);
+                        if (dt.Rows.Count == 0)
+                        {
+                            int insert = bldd.InsertDynamic("Hide 'G' Access", "Access", "Enable", lbl_hide_grouping.Text);
+                        }
+                        else
+                        {
+                            int update = bldd.UpdateDynamic("Enable", lbl_hide_grouping.Text);
+                        }
+                    }
+                    else
+                    {
+                        int update = bldd.UpdateDynamicFalse(lbl_hide_grouping.Text);
+                    }
+                }
                 else if (panel_checkdetail.Visible == true)
                 {
                     if (chk_chequedetail.Checked == true)
@@ -566,6 +609,18 @@ namespace POS_System
                     else
                     {
                         int update = bldd.UpdateDynamic(txt_qr.Text, lbl_qr.Text);
+                    }
+                }
+                else if (panel_checkout_rename.Visible == true)
+                {
+                    dt = bld.GetDynamic(lbl_checkout_rename.Text);
+                    if (dt.Rows.Count == 0)
+                    {
+                        int insert = bldd.InsertDynamic("Checkout Rename", txt_checkout_rename.Text,"Rename",lbl_checkout_rename.Text);
+                    }
+                    else
+                    {
+                        int update = bldd.UpdateDynamic(txt_checkout_rename.Text, lbl_checkout_rename.Text);
                     }
                 }
                 else if (panelSPA.Visible == true)
@@ -1369,6 +1424,10 @@ namespace POS_System
                     HidePanel();
                     panelQR.Show();
                   break;
+                case "Checkout Rename":
+                    HidePanel();
+                    panel_checkout_rename.Show();
+                    break;
                 case "Pan No. or Vat No.":
                     HidePanel();
                     panelPanno.Show();
@@ -1493,6 +1552,11 @@ namespace POS_System
                     HidePanel();
                     panel_grandtotal.Show();
                     break;
+                case "Grouping Changes":
+                    HidePanel();
+                    panel_fix_grouping.Show();
+                    break;
+           
                 case "Remove Footer":
                     HidePanel();
                     panel_footerbilling.Show();
@@ -1579,6 +1643,9 @@ namespace POS_System
             panel_checkdetail.Hide();
             panel_grandtotal.Hide();
             panel_footerbilling.Hide();
+            panel_checkout_rename.Hide();
+            panel_fix_grouping.Hide();
+           
         }
       public string imagepath;
         private static System.Drawing.Image ScaleImage(System.Drawing.Image image, int maxWidth, int maxHeight)

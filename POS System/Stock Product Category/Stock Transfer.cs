@@ -97,11 +97,11 @@ namespace POS_System
            
             else
             {
-                if (Convert.ToDecimal(txt_quanitity.Text) > Convert.ToDecimal(txt_stock_quantity.Text))
-                {
-                    MessageBox.Show("There Is Less Stock Than You Enter");
-                }
-                else if (Convert.ToDecimal(txt_quanitity.Text) <= Convert.ToDecimal(txt_stock_quantity.Text))
+                //if (Convert.ToDecimal(txt_quanitity.Text) > Convert.ToDecimal(txt_stock_quantity.Text))
+                //{
+                //    MessageBox.Show("There Is Less Stock Than You Enter");
+                //}
+                 if (Convert.ToDecimal(txt_quanitity.Text) <= Convert.ToDecimal(txt_stock_quantity.Text))
                 {
                     quanityConverter();
                     int k = blsk.createstock(category_id, product_id, quantity,1, cbo_stock_transfer.Text, unitName);

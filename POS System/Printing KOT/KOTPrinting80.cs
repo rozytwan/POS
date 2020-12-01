@@ -146,7 +146,7 @@ namespace POS_System
                 }
                 else if (Convert.ToDecimal(table_no) <= 99)
                 {
-                    gra.DrawString("Table No::", new System.Drawing.Font("Arial", 9, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, ys);
+                    gra.DrawString("Table No::", new System.Drawing.Font("Arial", 9, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 0, ys);
                     gra.DrawString(table_displayNo, new System.Drawing.Font("Arial", 9, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 80, ys);
                     gra.DrawString("Table Area::", new System.Drawing.Font("Arial", 9, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 120, ys);
                     gra.DrawString(table_area, new System.Drawing.Font("Arial", 9, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 200, ys); ys = ys + 13;
@@ -163,8 +163,8 @@ namespace POS_System
                 gra.DrawString(service_provider_name, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 90, ys); ys = ys + 13;
                
                 gra.DrawLine(drawingPen, 0, ys, 309, ys); ys = ys + 3;//line 1
-                    gra.DrawString("Item", new System.Drawing.Font("Time New Roamn", 9, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 0, ys);
-                    gra.DrawString("Qty", new System.Drawing.Font("Time New Roamn", 9, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 250, ys); ys = ys + 13;
+                    gra.DrawString("Item", new System.Drawing.Font("Time New Roamn", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, ys);
+                    gra.DrawString("Qty", new System.Drawing.Font("Time New Roamn", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 250, ys); ys = ys + 18;
                     gra.DrawLine(drawingPen, 0, ys, 309, ys); ys = ys + 13;//line 2            
 
                     for (int i = 0; i < datagridview_name.Count; i++)
@@ -179,19 +179,33 @@ namespace POS_System
                             {
                                 modifier_Value = (datagridview_modifier[i] ?? string.Empty).ToString();
                             }
-                            gra.DrawString(item_name.ToString(), new System.Drawing.Font("Time New Roamn", 9, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, ys);
-                            gra.DrawString(quantity, new System.Drawing.Font("Time New Roamn", 9, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 250, ys); ys = ys + 13;
+
+                        //if (item_name.Length < 30)
+                        //{
+                        //    gra.DrawString(item_name.ToString(), new System.Drawing.Font("Time New Roamn", 12, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 0, ys);
+                        //   // ys = ys + 13;
+                        //}
+                        //else
+                        //{
+                        //    string break_item_name = item_name.Substring(0, 29);
+                        //    gra.DrawString(break_item_name, new System.Drawing.Font("Time New Roamn", 12, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 0, ys); ys = ys + 13;
+                        //    if (29 < item_name.Length)
+                        //    {
+                        //        int length = Math.Abs(item_name.Length - break_item_name.Length);
+                        //        gra.DrawString(item_name.Substring(29, length), new System.Drawing.Font("Time New Roamn", 9, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 0, ys); ys = ys + 13;
+                        //    }
+                        //}
+                        gra.DrawString(item_name.ToString(), new System.Drawing.Font("Time New Roamn", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, ys);
+                        gra.DrawString(quantity, new System.Drawing.Font("Time New Roamn", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 250, ys); ys = ys + 13;
                             if (modifier_Value != "")
                             {
                                 if (modifier_Value.Length < 40)
                                 {
-
                                     gra.DrawString(modifier_Value, new System.Drawing.Font("Time New Roamn", 9, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, ys);
                                     ys = ys + 13;
                                 }
                                 else
                                 {
-
                                     string break_modifier = modifier_Value.Substring(0, 39);
                                     gra.DrawString(break_modifier, new System.Drawing.Font("Time New Roamn", 9, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, ys); ys = ys + 13;
                                     if (39 < modifier_Value.Length)

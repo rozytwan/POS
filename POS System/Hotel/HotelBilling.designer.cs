@@ -60,6 +60,8 @@
             this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.btn_x_save_only = new DevComponents.DotNetBar.ButtonX();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbl_chargeableamt = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
             this.lbl_service_charge = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.lbl_tax = new System.Windows.Forms.Label();
@@ -224,6 +226,8 @@
             this.cmb_package.Name = "cmb_package";
             this.cmb_package.Size = new System.Drawing.Size(176, 26);
             this.cmb_package.TabIndex = 28;
+            this.cmb_package.Enter += new System.EventHandler(this.cmb_package_Enter);
+            this.cmb_package.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmb_package_KeyPress);
             // 
             // btn_bill_all
             // 
@@ -535,6 +539,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.lbl_chargeableamt);
+            this.panel1.Controls.Add(this.label22);
             this.panel1.Controls.Add(this.lbl_service_charge);
             this.panel1.Controls.Add(this.label19);
             this.panel1.Controls.Add(this.lbl_tax);
@@ -560,13 +566,37 @@
             this.panel1.Size = new System.Drawing.Size(211, 280);
             this.panel1.TabIndex = 294;
             // 
+            // lbl_chargeableamt
+            // 
+            this.lbl_chargeableamt.AutoSize = true;
+            this.lbl_chargeableamt.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_chargeableamt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_chargeableamt.ForeColor = System.Drawing.Color.Lime;
+            this.lbl_chargeableamt.Location = new System.Drawing.Point(138, 75);
+            this.lbl_chargeableamt.Name = "lbl_chargeableamt";
+            this.lbl_chargeableamt.Size = new System.Drawing.Size(40, 20);
+            this.lbl_chargeableamt.TabIndex = 21;
+            this.lbl_chargeableamt.Text = "0.00";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.Transparent;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.Lime;
+            this.label22.Location = new System.Drawing.Point(0, 72);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(132, 20);
+            this.label22.TabIndex = 20;
+            this.label22.Text = "Chargeable Amt :";
+            // 
             // lbl_service_charge
             // 
             this.lbl_service_charge.AutoSize = true;
             this.lbl_service_charge.BackColor = System.Drawing.Color.Transparent;
             this.lbl_service_charge.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_service_charge.ForeColor = System.Drawing.Color.Lime;
-            this.lbl_service_charge.Location = new System.Drawing.Point(127, 216);
+            this.lbl_service_charge.Location = new System.Drawing.Point(139, 216);
             this.lbl_service_charge.Name = "lbl_service_charge";
             this.lbl_service_charge.Size = new System.Drawing.Size(40, 20);
             this.lbl_service_charge.TabIndex = 19;
@@ -590,7 +620,7 @@
             this.lbl_tax.BackColor = System.Drawing.Color.Transparent;
             this.lbl_tax.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_tax.ForeColor = System.Drawing.Color.Lime;
-            this.lbl_tax.Location = new System.Drawing.Point(127, 192);
+            this.lbl_tax.Location = new System.Drawing.Point(139, 192);
             this.lbl_tax.Name = "lbl_tax";
             this.lbl_tax.Size = new System.Drawing.Size(40, 20);
             this.lbl_tax.TabIndex = 17;
@@ -650,7 +680,7 @@
             this.lbldiscount.BackColor = System.Drawing.Color.Transparent;
             this.lbldiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbldiscount.ForeColor = System.Drawing.Color.Lime;
-            this.lbldiscount.Location = new System.Drawing.Point(127, 88);
+            this.lbldiscount.Location = new System.Drawing.Point(139, 98);
             this.lbldiscount.Name = "lbldiscount";
             this.lbldiscount.Size = new System.Drawing.Size(40, 20);
             this.lbldiscount.TabIndex = 10;
@@ -662,7 +692,7 @@
             this.lblcardamount.BackColor = System.Drawing.Color.Transparent;
             this.lblcardamount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblcardamount.ForeColor = System.Drawing.Color.Lime;
-            this.lblcardamount.Location = new System.Drawing.Point(127, 143);
+            this.lblcardamount.Location = new System.Drawing.Point(139, 147);
             this.lblcardamount.Name = "lblcardamount";
             this.lblcardamount.Size = new System.Drawing.Size(40, 20);
             this.lblcardamount.TabIndex = 9;
@@ -674,7 +704,7 @@
             this.lblchangeamout.BackColor = System.Drawing.Color.Transparent;
             this.lblchangeamout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblchangeamout.ForeColor = System.Drawing.Color.Lime;
-            this.lblchangeamout.Location = new System.Drawing.Point(127, 116);
+            this.lblchangeamout.Location = new System.Drawing.Point(139, 120);
             this.lblchangeamout.Name = "lblchangeamout";
             this.lblchangeamout.Size = new System.Drawing.Size(40, 20);
             this.lblchangeamout.TabIndex = 8;
@@ -686,7 +716,7 @@
             this.lblrecivedamount.BackColor = System.Drawing.Color.Transparent;
             this.lblrecivedamount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblrecivedamount.ForeColor = System.Drawing.Color.Lime;
-            this.lblrecivedamount.Location = new System.Drawing.Point(128, 167);
+            this.lblrecivedamount.Location = new System.Drawing.Point(140, 167);
             this.lblrecivedamount.Name = "lblrecivedamount";
             this.lblrecivedamount.Size = new System.Drawing.Size(40, 20);
             this.lblrecivedamount.TabIndex = 7;
@@ -698,7 +728,7 @@
             this.lblsub_total.BackColor = System.Drawing.Color.Transparent;
             this.lblsub_total.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblsub_total.ForeColor = System.Drawing.Color.Lime;
-            this.lblsub_total.Location = new System.Drawing.Point(127, 63);
+            this.lblsub_total.Location = new System.Drawing.Point(139, 53);
             this.lblsub_total.Name = "lblsub_total";
             this.lblsub_total.Size = new System.Drawing.Size(40, 20);
             this.lblsub_total.TabIndex = 6;
@@ -722,7 +752,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Lime;
-            this.label5.Location = new System.Drawing.Point(4, 87);
+            this.label5.Location = new System.Drawing.Point(4, 97);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(72, 20);
             this.label5.TabIndex = 4;
@@ -734,7 +764,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Lime;
-            this.label3.Location = new System.Drawing.Point(3, 141);
+            this.label3.Location = new System.Drawing.Point(3, 145);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(103, 20);
             this.label3.TabIndex = 3;
@@ -746,7 +776,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Lime;
-            this.label4.Location = new System.Drawing.Point(3, 116);
+            this.label4.Location = new System.Drawing.Point(3, 120);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(125, 20);
             this.label4.TabIndex = 2;
@@ -770,7 +800,7 @@
             this.label123.BackColor = System.Drawing.Color.Transparent;
             this.label123.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label123.ForeColor = System.Drawing.Color.Lime;
-            this.label123.Location = new System.Drawing.Point(3, 62);
+            this.label123.Location = new System.Drawing.Point(3, 52);
             this.label123.Name = "label123";
             this.label123.Size = new System.Drawing.Size(78, 20);
             this.label123.TabIndex = 0;
@@ -792,11 +822,11 @@
             // 
             this.lblrecivedamount22.AutoSize = true;
             this.lblrecivedamount22.BackColor = System.Drawing.Color.Transparent;
-            this.lblrecivedamount22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblrecivedamount22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblrecivedamount22.ForeColor = System.Drawing.Color.Lime;
             this.lblrecivedamount22.Location = new System.Drawing.Point(-4, 33);
             this.lblrecivedamount22.Name = "lblrecivedamount22";
-            this.lblrecivedamount22.Size = new System.Drawing.Size(261, 20);
+            this.lblrecivedamount22.Size = new System.Drawing.Size(204, 16);
             this.lblrecivedamount22.TabIndex = 14;
             this.lblrecivedamount22.Text = "____________________________";
             // 
@@ -1553,5 +1583,7 @@
         private System.Windows.Forms.Panel panelPackage;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private System.Windows.Forms.ComboBox cmb_package;
+        private System.Windows.Forms.Label lbl_chargeableamt;
+        private System.Windows.Forms.Label label22;
     }
 }

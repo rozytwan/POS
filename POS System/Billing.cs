@@ -93,8 +93,9 @@ namespace POS_System
         string loyalty_type;
         private void Billing_Load(object sender, EventArgs e)
         {
-          
+
             //chk_fone_pay.Hide();
+            groupBox2.Show();
             QuotationAccess = second_user_interface.QuotationAccess;
             QuotationName = second_user_interface.QuotationName;
             Abbreviatedtax = cd.CheckabbreviatedTaxAmount();
@@ -811,7 +812,7 @@ namespace POS_System
                             MessageBox.Show("Can't Complete The Transaction, Cash Amount Is  Low", "Transaction Fail", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                     }
-                    else if (chkcard.Checked)
+                    else if (chkcard.Checked || chk_fone_pay.Checked)
                     {
                         if ((Convert.ToDecimal(txtcardamount.Text) >= Convert.ToDecimal(txtgrandtotal.Text)))
                         {
@@ -2561,6 +2562,11 @@ namespace POS_System
 
                             save_only_trasaction = true;
                         }
+                        else if (chk_cheque.Checked)
+                        {
+
+                            save_only_trasaction = true;
+                        }
                         if (save_only_trasaction == true)
                         {
 
@@ -3813,10 +3819,10 @@ namespace POS_System
                     GuidString = GuidString.Replace("/", "");
 
                     QRCodeScan qrc = new QRCodeScan();
-                    qrc.amount = txtgrandtotal.Text;
-                    qrc.remarks2 = txtnewbillno.Text;
-                    qrc.remarks = "Billing";
-                    qrc.prnNo = fiscal_year + "-" + txtnewbillno.Text + "-" + GuidString.Substring(0,5);
+                    QRCodeScan.amount = txtgrandtotal.Text;
+                    QRCodeScan.remarks2 = txtnewbillno.Text;
+                    QRCodeScan.remarks = "Billing";
+                    QRCodeScan.prnNo = fiscal_year + "-" + txtnewbillno.Text + "-" + GuidString.Substring(0,5);
                     qrc.ShowDialog();
                     if (qrc.DialogResult == DialogResult.OK)
                     {
@@ -3973,6 +3979,24 @@ namespace POS_System
                 ChequeDetail cpd = new ChequeDetail(paystatus);
                 cpd.ShowDialog();
             }
+
+        }
+
+        private void btn_cancel_Click(object sender, EventArgs e)
+        {
+           // groupBox1.Hide();
+            groupBox2.Show();
+            chkcash.Checked = true;
+        }
+
+        private void rbn_others_Click(object sender, EventArgs e)
+        {
+            groupBox1.Show();
+            groupBox2.Hide();
+        }
+
+        private void txtpan_no_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

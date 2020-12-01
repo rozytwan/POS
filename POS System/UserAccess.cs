@@ -55,7 +55,10 @@ namespace POS_System
                 chk15.Value = !(chk15.Value == null ? false : (bool)chk15.Value);
                 DataGridViewCheckBoxCell chk16 = (DataGridViewCheckBoxCell)dataGridView1.CurrentRow.Cells["col_itemcancel"];
                 chk16.Value = !(chk16.Value == null ? false : (bool)chk16.Value);
-      
+                DataGridViewCheckBoxCell chk17 = (DataGridViewCheckBoxCell)dataGridView1.CurrentRow.Cells["col_restaurant"];
+                chk17.Value = !(chk17.Value == null ? false : (bool)chk17.Value);
+                DataGridViewCheckBoxCell chk18 = (DataGridViewCheckBoxCell)dataGridView1.CurrentRow.Cells["col_hotel"];
+                chk18.Value = !(chk18.Value == null ? false : (bool)chk18.Value);
             }
         }
         string account = "False";
@@ -74,9 +77,24 @@ namespace POS_System
         string cashdrop = "False";
         string menuupdate = "False";
         string itemcancel = "False";
-
+        string restaurant = "False";
+        string hotel = "False";
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            //if ((dataGridView1.CurrentRow.Cells["cal_user_name"].Value).ToString() == "admin")
+            //{
+
+            //    DataGridViewCheckBoxCell chk10 = (DataGridViewCheckBoxCell)dataGridView1.CurrentRow.Cells[1];
+            //    chk10.Value =true;
+          
+            //    //if (chk1.Checked == true || checkBox.Checked == false)
+            //    //{
+            //    //    chk1.CheckState = CheckState.Checked;
+            //    //    chk1.CheckState = CheckState.Indeterminate;
+            //    //    //or 
+            //    //    checkBox.CheckState = CheckState.Checked;
+            //    //}
+            //}
             if (e.ColumnIndex == dataGridView1.Columns["cal_update"].Index && e.RowIndex >= 0)
             {
                 //DataGridViewCheckBoxCell chk1 = (DataGridViewCheckBoxCell)dataGridView1.CurrentRow.Cells[1];
@@ -176,10 +194,26 @@ namespace POS_System
                 {
                     itemcancel = "False";
                 }
+                if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells["col_restaurant"].Value) == true)
+                {
+                    restaurant = "True";
+                }
+                else
+                {
+                    restaurant = "False";
+                }
+                if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells["col_hotel"].Value) == true)
+                {
+                    hotel = "True";
+                }
+                else
+                {
+                    hotel = "False";
+                }
                 DataTable dtm = blu.getuserbyuser_idntype(Convert.ToInt32(dataGridView1.CurrentRow.Cells["cal_user_id"].Value));
                 if (dtm.Rows.Count > 0)
                 {
-                    int update_access = blu.updateuser_access(Convert.ToInt32(dataGridView1.CurrentRow.Cells["cal_user_id"].Value), admin, account, sales, report, stock,discount,billing,multibilling,itemtransfer,tabletransfer,takeaway,homedelivery,dayend,cashdrop,menuupdate,itemcancel);
+                    int update_access = blu.updateuser_access(Convert.ToInt32(dataGridView1.CurrentRow.Cells["cal_user_id"].Value), admin, account, sales, report, stock,discount,billing,multibilling,itemtransfer,tabletransfer,takeaway,homedelivery,dayend,cashdrop,menuupdate,itemcancel,restaurant,hotel);
                     if (update_access > 0)
                     {
                         MessageBox.Show("User Access Has Been Update");
@@ -187,7 +221,7 @@ namespace POS_System
                 }
                 else
                 {
-                    int ins = blu.insert_user_id(Convert.ToInt32(dataGridView1.CurrentRow.Cells["cal_user_id"].Value), admin, account, sales, report, stock,discount,billing,multibilling,itemtransfer,tabletransfer, takeaway, homedelivery, dayend, cashdrop, menuupdate, itemcancel);
+                    int ins = blu.insert_user_id(Convert.ToInt32(dataGridView1.CurrentRow.Cells["cal_user_id"].Value), admin, account, sales, report, stock,discount,billing,multibilling,itemtransfer,tabletransfer, takeaway, homedelivery, dayend, cashdrop, menuupdate, itemcancel,restaurant,hotel);
                     MessageBox.Show("User Access Has Been Update");
                 }
             }
@@ -225,6 +259,8 @@ namespace POS_System
                     DataGridViewCheckBoxCell chk14 = (DataGridViewCheckBoxCell)dataGridView1.Rows[i].Cells["col_cashdrop"];
                     DataGridViewCheckBoxCell chk15 = (DataGridViewCheckBoxCell)dataGridView1.Rows[i].Cells["col_menuupdate"];
                     DataGridViewCheckBoxCell chk16= (DataGridViewCheckBoxCell)dataGridView1.Rows[i].Cells["col_itemcancel"];
+                    DataGridViewCheckBoxCell chk17 = (DataGridViewCheckBoxCell)dataGridView1.Rows[i].Cells["col_restaurant"];
+                    DataGridViewCheckBoxCell chk18 = (DataGridViewCheckBoxCell)dataGridView1.Rows[i].Cells["col_hotel"];
                     if (dtm.Rows[0]["account"].ToString() == "True")
                     {
                         chk5.Value = true;
@@ -288,6 +324,14 @@ namespace POS_System
                     if (dtm.Rows[0]["itemcancel"].ToString() == "True")
                     {
                         chk16.Value = true;
+                    }
+                    if (dtm.Rows[0]["restaurant"].ToString() == "True")
+                    {
+                        chk17.Value = true;
+                    }
+                    if (dtm.Rows[0]["hotel"].ToString() == "True")
+                    {
+                        chk18.Value = true;
                     }
                 }
             }

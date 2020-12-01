@@ -18,6 +18,7 @@ namespace POS_System
         public bool save_after_print;
         public string nepaliDate;
         public string bill_no;
+        public string brfiscal_year;
         public string cashier;
         public string table_no;
         public string sub_total;

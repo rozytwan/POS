@@ -34,6 +34,7 @@ namespace POS_System
             LoadPendingBooking();
             LoadPackage();
             LoadCategory();
+            cmb_package.SelectedIndex = 0;
 
         }
         public void LoadCategory()
@@ -86,8 +87,7 @@ namespace POS_System
             byte[] img = null;
             ImageConverter imgCon = new ImageConverter();
             img = (byte[])imgCon.ConvertTo(customer_pic.Image, typeof(byte[]));
-
-            if (txt_fname.Text == "" || txt_lname.Text == "" || txt_mobile.Text == "" || txt_country.Text == "")
+         if (txt_fname.Text == "" || txt_lname.Text == "" || txt_mobile.Text == "" || txt_country.Text == "")
             {
                 MessageBox.Show("Your Information is not Completed", "Confirm Information Alert !!");
             }
@@ -119,7 +119,7 @@ namespace POS_System
                     }
                     if (lbl_room_no.Text != "" && lbl_room_no.Text != "0")
                     {
-                        int insert_booking = hotel.Insert_Booking(customer_id, Convert.ToDateTime(today), Convert.ToDateTime(dtp_check_in.Text), cmb_room_type.Text, Convert.ToInt32(txt_guest.Text), Convert.ToDateTime(dtp_checkout.Text), txt_roomno.Text, room_id,0);
+                        int insert_booking = hotel.Insert_Booking(customer_id, Convert.ToDateTime(today), Convert.ToDateTime(dtp_check_in.Text), cmb_room_type.Text, Convert.ToInt32(txt_guest.Text), Convert.ToDateTime(dtp_checkout.Text), txt_roomno.Text, room_id,cmb_package.SelectedIndex);
                         int delete = pend.CancelationCustomer(Convert.ToInt32(customer_id));
                         MessageBox.Show("Your hotel have been Reserved", "Hotel Reserved Alert !!");
                     }
@@ -137,7 +137,7 @@ namespace POS_System
                     }
                     if (lbl_room_no.Text != "" && lbl_room_no.Text != "0")
                     {
-                        if (cmb_package.Text=="Choose Package")
+                        if (cmb_package.Text=="Choose Package" || cmb_package.SelectedIndex<=0)
                         {
                             cmb_package.SelectedValue = 0;
                         }

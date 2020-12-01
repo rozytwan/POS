@@ -231,6 +231,10 @@ namespace POS_System
                     {
                         stockToolStripMenuItem.Visible = true;
                     }
+                    if (dtm.Rows[0]["hotel"].ToString() == "True")
+                    {
+                        stockToolStripMenuItem.Visible = true;
+                    }
                     if (dtm.Rows[0]["report"].ToString() == "True")
                     {
                         viewToolStripMenuItem.Visible = true;

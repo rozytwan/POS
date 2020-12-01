@@ -166,8 +166,8 @@ namespace POS_System
                 {
 
                     gra.DrawLine(drawingPen, 0, ys, 309, ys); ys = ys + 3;
-                    gra.DrawString("Item", new System.Drawing.Font("Arial", 9, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 0, ys);
-                    gra.DrawString("Qty", new System.Drawing.Font("Arial", 9, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 150, ys); ys = ys + 13;
+                    gra.DrawString("Item", new System.Drawing.Font("Arial", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, ys);
+                    gra.DrawString("Qty", new System.Drawing.Font("Arial", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 150, ys); ys = ys + 18;
                     gra.DrawLine(drawingPen, 0, ys, 309, ys); ys = ys + 7;
 
 
@@ -186,8 +186,8 @@ namespace POS_System
                                 {
                                     modifier_Value = (datagridview_modifier[i] ?? string.Empty).ToString();
                                 }
-                                gra.DrawString(item_name.ToString(), new System.Drawing.Font("Time New Roamn", 9, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 0, ys);
-                                gra.DrawString(quantity, new System.Drawing.Font("Time New Roamn", 9, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 150, ys); ys = ys + 13;
+                                gra.DrawString(item_name.ToString(), new System.Drawing.Font("Time New Roamn", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, ys);
+                                gra.DrawString(quantity, new System.Drawing.Font("Time New Roamn", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 150, ys); ys = ys + 13;
                                 if (modifier_Value != "")
                                 {
                                     if (modifier_Value.Length < 25)

@@ -1,0 +1,6 @@
+truncate table tbl_purchase
+truncate table tbl_stock
+truncate table tbl_stock_transfer
+truncate table tbl_stock_adjust
+truncate table tbl_stockLog
+truncate table tbl_stock_sales_log

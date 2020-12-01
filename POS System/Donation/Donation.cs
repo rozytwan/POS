@@ -57,10 +57,10 @@ namespace POS_System.Donation
                 GuidString = GuidString.Replace("/", "");
 
                 QRCodeScan qrc  = new QRCodeScan();
-                qrc.amount = txt_contribution_amount.Text;
-                qrc.remarks2 = "Donation";
-                qrc.remarks = "Contribution";
-                qrc.prnNo = GuidString;
+                QRCodeScan.amount = txt_contribution_amount.Text;
+                QRCodeScan.remarks2 = "Donation";
+                QRCodeScan.remarks = "Contribution";
+                QRCodeScan.prnNo = GuidString;
                 qrc.ShowDialog();
                 con_payment_mode = "FonePay";
             }

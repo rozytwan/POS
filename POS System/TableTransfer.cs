@@ -81,6 +81,7 @@ namespace POS_System
                         printkot1();
                         printkot2();
                         printkot3();
+                      
                         this.Close();
                     }
                 }
@@ -151,6 +152,7 @@ namespace POS_System
                 }
             }
         }
+
         public void printkot3()
         {
             PrintDialog pd = new PrintDialog();
@@ -159,7 +161,7 @@ namespace POS_System
             Font font = new Font("Arial", 12);
             PaperSize psize = new PaperSize("Custome", 314, 500);
             pd.Document = pdoc;
-            pdoc.PrinterSettings.PrinterName = "BOT";
+            pdoc.PrinterSettings.PrinterName = "B1";
             pdoc.PrintPage += new PrintPageEventHandler(printDocument1_PrintPage);
             pd.Document.DefaultPageSettings.PaperSize = psize;
             pdoc.DefaultPageSettings.PaperSize.Height = 500;

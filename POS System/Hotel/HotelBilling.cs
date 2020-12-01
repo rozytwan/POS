@@ -32,7 +32,7 @@ namespace POS_System
         BLLTakeAway bltk = new BLLTakeAway();
         BillPrinting blp = new BillPrinting();
         HotelBilling80 blp_80 = new HotelBilling80();
-        BillPrinting76 blp_76 = new BillPrinting76();
+        HotelBilling76 blp_76 = new HotelBilling76();
         BLL_Pending pend = new BLL_Pending();
         blllCustomerDetailednyo blcd = new blllCustomerDetailednyo();
         BLL_Fiscal blfsc = new BLL_Fiscal();
@@ -63,6 +63,7 @@ namespace POS_System
         private void HotelBilling_Load(object sender, EventArgs e)
         {
             lbl_room.Text = hotel_room_no;
+        
             CUstomer_name();
             CUstomer_number();
             LoadPackage();
@@ -186,7 +187,7 @@ namespace POS_System
 
             dt = order.GetRoomOrder(hotel_room_id);
             //  dt2 = room.GetRoomId(hotel_room_no);
-
+            //dt4 = room.GetBookCustomer(hotel_room_id);
             package_id = Convert.ToInt32(dt4.Rows[0]["package_id"].ToString());
 
             dt3 = category.GetRoompackageById(package_id);
@@ -242,7 +243,7 @@ namespace POS_System
             else
             {
                 dataGridView1.Rows.Add("Room Charge", lbl_days.Text, room_price, txt_room_charge.Text, "Room", "K1", "HR", "0");
-                 if (dt3.Rows.Count > 0|| package_id!=0)
+                 if (dt3.Rows.Count > 0|| package_id!=0 && package_id>0)
                     {
                         dataGridView1.Rows.Add(package_name, 1, price,price, "Package", "K1", "HR", "0");
 
@@ -350,12 +351,14 @@ namespace POS_System
         {
             if (lblsub_total.Text != "")
             {
+                lbl_chargeableamt.Text = (Convert.ToDecimal(lblsub_total.Text) - Convert.ToDecimal(txt_room_charge.Text)).ToString();
                 TaxCalculation tax = new TaxCalculation();
                 service_status = cd.RoomServiceCharge();
                 if (service_status==true)
                 {
-                    service_charge = tax.service_calculation(Convert.ToDecimal(lblsub_total.Text));
+                    service_charge = tax.service_calculation(Convert.ToDecimal(lbl_chargeableamt.Text));
                 }
+
                 subtotal_with_services = (Convert.ToDecimal(lblsub_total.Text) + service_charge);
                 tax_amount = tax.tax_calculation(Convert.ToDecimal(subtotal_with_services));
                 static_grand_total = Convert.ToDecimal(lblsub_total.Text) + tax_amount + service_charge;
@@ -922,6 +925,8 @@ namespace POS_System
                     if (dt_p.Rows.Count > 0)
                     {
                         blp_80.printer_name = "Billing";
+                        blp_80.print_again = true;
+                        blp_80.Headerstatus = true;
                         for (int i = 0; i < Convert.ToInt32(dt_p.Rows[0]["B1"]); i++)
                         {
                             if (i > 0)
@@ -942,6 +947,8 @@ namespace POS_System
                     if (dt_p.Rows.Count > 0)
                     {
                         blp_76.printer_name = "Billing";
+                        blp_76.print_again = true;
+                        blp_76.Headerstatus = true;
                         for (int i = 0; i < Convert.ToInt32(dt_p.Rows[0]["B1"]); i++)
                         {
                             if (i > 0)
@@ -957,11 +964,35 @@ namespace POS_System
                         MessageBox.Show("Printing setting does not set.", "Printing Size is Zero", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
+                else if (dt_prt.Rows[0]["bill_printer"].ToString() == "A4")
+                {
+                    if (dt_p.Rows.Count > 0)
+                    {
+                        blp.printer_name = "Billing";
+                        bA4.print_again = true;
+                        bA4.Headerstatus = true;
+                        for (int i = 0; i < Convert.ToInt32(dt_p.Rows[0]["B1"]); i++)
+                        {
+                            if (i > 0)
+                            {
+                                blp.print_again = true;
+                            }
+                            bill_printing_for_A4();
+
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Printing setting does not set.", "Printing Size is Zero", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
                 else
                 {
                     if (dt_p.Rows.Count > 0)
                     {
                         blp.printer_name = "Billing";
+                        blp_76.print_again = true;
+                        blp_76.Headerstatus = true;
                         for (int i = 0; i < Convert.ToInt32(dt_p.Rows[0]["B1"]); i++)
                         {
                             if (i > 0)
@@ -978,6 +1009,76 @@ namespace POS_System
                     }
                 }
             }
+        }
+        HotelBillingA4 bA4 = new HotelBillingA4();
+        public void bill_printing_for_A4()
+        {
+            bA4.bill_no = txtnewbillno.Text;
+            bA4.cashier = txtcashier.Text;
+            bA4.cash_amount = Convert.ToDecimal(txtcashamount.Text).ToString("#.##");
+            bA4.discount = Convert.ToDecimal(lbldiscount.Text).ToString("#.##");
+            bA4.grand_total = Convert.ToDecimal(txtgrandtotal.Text).ToString("#.##");
+            bA4.sub_total = Convert.ToDecimal(txtsubtotal.Text).ToString("#.##");
+            bA4.table_no = lbl_room.Text;
+            bA4.customer_PAN_no = txtpan_no.Text;
+            bA4.customer_name = cbo_customer_name.Text;
+          //  bA4.customer_address = customer_address;
+            bA4.customer_phone_no = cbo_customer_no.Text;
+            bA4.discount_percent = discount_percent;
+            bA4.tax_amount = tax_amount.ToString("#.##");
+            bA4.service_charge = service_charge.ToString("#.##");
+            bA4.fiscal_year = fiscal_year;
+            bA4.area_name = area_name;
+            bA4.card_amount = Convert.ToDecimal(txtcardamount.Text).ToString("#.##");
+           // bA4.customer_card_balance = (real_blc - Convert.ToDecimal(txtgrandtotal.Text)).ToString("#.##");
+            if (txtremainingamount.Text != "")
+            {
+                bA4.change_amount = Convert.ToDecimal(txtremainingamount.Text).ToString("#.##");
+            }
+            payment_modeCheck();
+            bA4.billing_date = date;
+            bA4.taxable_amount = subtotal_with_services.ToString("#.##");
+            bA4.discount_sub_total = Convert.ToDecimal(lblsub_total.Text).ToString("#.##");
+            if (multi_billing_check == false)
+            {
+                for (int i = 0; i < dataGridView1.Rows.Count; i++)
+                {
+                    bA4.datagridview_item_name.Add(dataGridView1.Rows[i].Cells["cal_item_name"].Value.ToString());
+                    bA4.datagridview_item_price.Add(dataGridView1.Rows[i].Cells["cal_cost"].Value.ToString());
+                    bA4.datagridview_total.Add(dataGridView1.Rows[i].Cells["cal_total"].Value.ToString());
+                    bA4.datagridview_quantity.Add(dataGridView1.Rows[i].Cells["cal_qty"].Value.ToString());
+                    //bA4.datagridview_complementary.Add(dataGridView1.Rows[i].Cells["cal_comp_status"].Value.ToString());
+                    //bA4.kot_no.Add(dataGridView1.Rows[i].Cells["cal_kot_id"].Value.ToString());
+                }
+                bA4.printtobill();
+                save_after_print = bA4.save_after_print;
+            }
+            else if (multi_billing_check == true)
+            {
+                if (dataGridView1.SelectedRows.Count > 0)
+                {
+                    foreach (DataGridViewRow dr in dataGridView1.SelectedRows)
+                    {
+                        bA4.datagridview_item_name.Add(dr.Cells["cal_item_name"].Value.ToString());
+                        bA4.datagridview_item_price.Add(dr.Cells["cal_cost"].Value.ToString());
+                        bA4.datagridview_total.Add(dr.Cells["cal_total"].Value.ToString());
+                        bA4.datagridview_quantity.Add(dr.Cells["cal_qty"].Value.ToString());
+                        //bA4.datagridview_complementary.Add(dr.Cells["cal_comp_status"].Value.ToString());
+                        //bA4.kot_no.Add(dr.Cells["cal_kot_id"].Value.ToString());
+                    }
+                    bA4.printtobill();
+                    save_after_print = bA4.save_after_print;
+                }
+                else
+                {
+                    MessageBox.Show("Data Row Select", "Please Select Data Row!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Error 404", "Transaction Failed! Please Do It Again.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
         }
         public void bill_printing_for_58()
         {
@@ -2226,6 +2327,44 @@ namespace POS_System
         {
             dgvRowIndex = e.RowIndex;
             ItemSlipt();
+        }
+
+        private void cmb_package_Enter(object sender, EventArgs e)
+        {
+            //if (cmb_package.SelectedIndex!=0)
+            //{
+            //    dt3 = category.GetRoompackageById(cmb_package.SelectedIndex);
+            //    if (dt3.Rows.Count > 0)
+            //    {
+            //        price = Convert.ToDecimal(dt3.Rows[0]["price"].ToString());
+            //    }
+            //    dataGridView1.Rows.Add(cmb_package.Text, 1, price, price, "Package", "K1", "HR", "0");
+            //    calculate_total();
+            
+            //}
+        }
+
+        private void cmb_package_SelectedIndexChanged(object sender, EventArgs e)
+        {
+          //  dataGridView1.Rows.Add(cmb_package.Text, 1, price, price, "Package", "K1", "HR", "0");
+            //customerPackage();
+        }
+        BLL_HotelDetails hotel = new BLL_HotelDetails();
+        private void cmb_package_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (cmb_package.SelectedIndex != 0)
+            {
+                dt3 = category.GetRoompackageById(cmb_package.SelectedIndex);
+                if (dt3.Rows.Count > 0)
+                {
+                    price = Convert.ToDecimal(dt3.Rows[0]["price"].ToString());
+                }
+                dataGridView1.Rows.Add(cmb_package.Text, 1, price, price, "Package", "K1", "HR", "0");
+               // int insert_booking = hotel.Insert_Booking(customer_id, Convert.ToDateTime(today), Convert.ToDateTime(today), cmb_room_type.Text, Convert.ToInt32(txt_guest.Text), Convert.ToDateTime(dtp_checkout.Text), txt_roomno.Text, room_id, Convert.ToInt32(cmb_package.SelectedValue));
+                calculate_total();
+
+            }
         }
     }
     }

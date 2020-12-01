@@ -32,6 +32,17 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Billing));
             this.containpanel = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.rbn_others = new System.Windows.Forms.RadioButton();
+            this.chk_fone_pay = new System.Windows.Forms.RadioButton();
+            this.chkcash_card = new System.Windows.Forms.RadioButton();
+            this.chkcard = new System.Windows.Forms.RadioButton();
+            this.chkcredit = new System.Windows.Forms.RadioButton();
+            this.chkcash = new System.Windows.Forms.RadioButton();
+            this.btn_cancel = new DevComponents.DotNetBar.ButtonX();
+            this.chk_cheque = new System.Windows.Forms.RadioButton();
+            this.chk_club_card = new System.Windows.Forms.RadioButton();
             this.btn_reward = new DevComponents.DotNetBar.ButtonX();
             this.btn_settlement = new DevComponents.DotNetBar.ButtonX();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -43,14 +54,6 @@
             this.cbo_customer_name = new System.Windows.Forms.ComboBox();
             this.txtpan_no = new System.Windows.Forms.TextBox();
             this.btn_bill_void = new DevComponents.DotNetBar.ButtonX();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.chk_cheque = new System.Windows.Forms.RadioButton();
-            this.chk_fone_pay = new System.Windows.Forms.RadioButton();
-            this.chk_club_card = new System.Windows.Forms.RadioButton();
-            this.chkcash_card = new System.Windows.Forms.RadioButton();
-            this.chkcard = new System.Windows.Forms.RadioButton();
-            this.chkcredit = new System.Windows.Forms.RadioButton();
-            this.chkcash = new System.Windows.Forms.RadioButton();
             this.btn_exact = new DevComponents.DotNetBar.ButtonX();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.btn_advance_discount = new DevComponents.DotNetBar.ButtonX();
@@ -131,8 +134,9 @@
             this.txtnewbillno = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.containpanel.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -144,11 +148,11 @@
             // containpanel
             // 
             this.containpanel.BackColor = System.Drawing.Color.White;
+            this.containpanel.Controls.Add(this.groupBox1);
             this.containpanel.Controls.Add(this.btn_reward);
             this.containpanel.Controls.Add(this.btn_settlement);
             this.containpanel.Controls.Add(this.panel3);
             this.containpanel.Controls.Add(this.btn_bill_void);
-            this.containpanel.Controls.Add(this.groupBox2);
             this.containpanel.Controls.Add(this.btn_exact);
             this.containpanel.Controls.Add(this.flowLayoutPanel2);
             this.containpanel.Controls.Add(this.btn_advance_discount);
@@ -189,6 +193,181 @@
             this.containpanel.Size = new System.Drawing.Size(1024, 720);
             this.containpanel.TabIndex = 0;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.Controls.Add(this.groupBox2);
+            this.groupBox1.Controls.Add(this.btn_cancel);
+            this.groupBox1.Controls.Add(this.chk_cheque);
+            this.groupBox1.Controls.Add(this.chk_club_card);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.Black;
+            this.groupBox1.Location = new System.Drawing.Point(557, 268);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(202, 182);
+            this.groupBox1.TabIndex = 312;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Payment Mode";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.rbn_others);
+            this.groupBox2.Controls.Add(this.chk_fone_pay);
+            this.groupBox2.Controls.Add(this.chkcash_card);
+            this.groupBox2.Controls.Add(this.chkcard);
+            this.groupBox2.Controls.Add(this.chkcredit);
+            this.groupBox2.Controls.Add(this.chkcash);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.ForeColor = System.Drawing.Color.Black;
+            this.groupBox2.Location = new System.Drawing.Point(0, 3);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(200, 186);
+            this.groupBox2.TabIndex = 283;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Payment Mode";
+            // 
+            // rbn_others
+            // 
+            this.rbn_others.AutoSize = true;
+            this.rbn_others.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(81)))), ((int)(((byte)(126)))));
+            this.rbn_others.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbn_others.ForeColor = System.Drawing.Color.White;
+            this.rbn_others.Location = new System.Drawing.Point(0, 155);
+            this.rbn_others.Name = "rbn_others";
+            this.rbn_others.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.rbn_others.Size = new System.Drawing.Size(212, 22);
+            this.rbn_others.TabIndex = 11;
+            this.rbn_others.Text = "        Others                  ";
+            this.rbn_others.UseVisualStyleBackColor = false;
+            this.rbn_others.Click += new System.EventHandler(this.rbn_others_Click);
+            // 
+            // chk_fone_pay
+            // 
+            this.chk_fone_pay.AutoSize = true;
+            this.chk_fone_pay.BackColor = System.Drawing.Color.Red;
+            this.chk_fone_pay.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chk_fone_pay.ForeColor = System.Drawing.Color.White;
+            this.chk_fone_pay.Location = new System.Drawing.Point(0, 127);
+            this.chk_fone_pay.Name = "chk_fone_pay";
+            this.chk_fone_pay.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.chk_fone_pay.Size = new System.Drawing.Size(227, 22);
+            this.chk_fone_pay.TabIndex = 10;
+            this.chk_fone_pay.Text = "        FonePay                  ";
+            this.chk_fone_pay.UseVisualStyleBackColor = false;
+            this.chk_fone_pay.CheckedChanged += new System.EventHandler(this.chk_fone_pay_CheckedChanged);
+            // 
+            // chkcash_card
+            // 
+            this.chkcash_card.AutoSize = true;
+            this.chkcash_card.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.chkcash_card.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkcash_card.ForeColor = System.Drawing.Color.White;
+            this.chkcash_card.Location = new System.Drawing.Point(0, 99);
+            this.chkcash_card.Name = "chkcash_card";
+            this.chkcash_card.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.chkcash_card.Size = new System.Drawing.Size(201, 22);
+            this.chkcash_card.TabIndex = 8;
+            this.chkcash_card.Text = "       Cash/Card           ";
+            this.chkcash_card.UseVisualStyleBackColor = false;
+            this.chkcash_card.CheckedChanged += new System.EventHandler(this.chkcash_card_CheckedChanged);
+            this.chkcash_card.Click += new System.EventHandler(this.chkcash_card_Click);
+            // 
+            // chkcard
+            // 
+            this.chkcard.AutoSize = true;
+            this.chkcard.BackColor = System.Drawing.Color.Red;
+            this.chkcard.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkcard.ForeColor = System.Drawing.Color.White;
+            this.chkcard.Location = new System.Drawing.Point(0, 71);
+            this.chkcard.Name = "chkcard";
+            this.chkcard.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.chkcard.Size = new System.Drawing.Size(241, 22);
+            this.chkcard.TabIndex = 7;
+            this.chkcard.Text = "        ATM  Card                  ";
+            this.chkcard.UseVisualStyleBackColor = false;
+            this.chkcard.CheckedChanged += new System.EventHandler(this.chkcard_CheckedChanged);
+            this.chkcard.Click += new System.EventHandler(this.chkcard_Click);
+            // 
+            // chkcredit
+            // 
+            this.chkcredit.AutoSize = true;
+            this.chkcredit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(81)))), ((int)(((byte)(126)))));
+            this.chkcredit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkcredit.ForeColor = System.Drawing.Color.White;
+            this.chkcredit.Location = new System.Drawing.Point(0, 44);
+            this.chkcredit.Name = "chkcredit";
+            this.chkcredit.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.chkcredit.Size = new System.Drawing.Size(221, 22);
+            this.chkcredit.TabIndex = 6;
+            this.chkcredit.Text = "            Credit                 ";
+            this.chkcredit.UseVisualStyleBackColor = false;
+            this.chkcredit.CheckedChanged += new System.EventHandler(this.chkcredit_CheckedChanged);
+            this.chkcredit.Click += new System.EventHandler(this.chkcredit_Click);
+            // 
+            // chkcash
+            // 
+            this.chkcash.AutoSize = true;
+            this.chkcash.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.chkcash.Checked = true;
+            this.chkcash.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkcash.ForeColor = System.Drawing.Color.White;
+            this.chkcash.Location = new System.Drawing.Point(0, 16);
+            this.chkcash.Name = "chkcash";
+            this.chkcash.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.chkcash.Size = new System.Drawing.Size(200, 22);
+            this.chkcash.TabIndex = 5;
+            this.chkcash.TabStop = true;
+            this.chkcash.Text = "            Cash              ";
+            this.chkcash.UseVisualStyleBackColor = false;
+            this.chkcash.CheckedChanged += new System.EventHandler(this.chkcash_CheckedChanged);
+            this.chkcash.Click += new System.EventHandler(this.chkcash_Click);
+            // 
+            // btn_cancel
+            // 
+            this.btn_cancel.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btn_cancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(81)))), ((int)(((byte)(126)))));
+            this.btn_cancel.ColorTable = DevComponents.DotNetBar.eButtonColor.Blue;
+            this.btn_cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancel.Location = new System.Drawing.Point(167, 15);
+            this.btn_cancel.Name = "btn_cancel";
+            this.btn_cancel.Shape = new DevComponents.DotNetBar.EllipticalShapeDescriptor();
+            this.btn_cancel.Size = new System.Drawing.Size(23, 21);
+            this.btn_cancel.Symbol = "";
+            this.btn_cancel.TabIndex = 310;
+            this.btn_cancel.TextColor = System.Drawing.Color.White;
+            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
+            // 
+            // chk_cheque
+            // 
+            this.chk_cheque.AutoSize = true;
+            this.chk_cheque.BackColor = System.Drawing.Color.Red;
+            this.chk_cheque.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chk_cheque.ForeColor = System.Drawing.Color.White;
+            this.chk_cheque.Location = new System.Drawing.Point(0, 66);
+            this.chk_cheque.Name = "chk_cheque";
+            this.chk_cheque.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.chk_cheque.Size = new System.Drawing.Size(198, 22);
+            this.chk_cheque.TabIndex = 11;
+            this.chk_cheque.Text = "       Cheque               ";
+            this.chk_cheque.UseVisualStyleBackColor = false;
+            this.chk_cheque.CheckedChanged += new System.EventHandler(this.chk_cheque_CheckedChanged);
+            this.chk_cheque.Click += new System.EventHandler(this.chk_cheque_Click);
+            // 
+            // chk_club_card
+            // 
+            this.chk_club_card.AutoSize = true;
+            this.chk_club_card.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.chk_club_card.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chk_club_card.ForeColor = System.Drawing.Color.White;
+            this.chk_club_card.Location = new System.Drawing.Point(0, 38);
+            this.chk_club_card.Name = "chk_club_card";
+            this.chk_club_card.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.chk_club_card.Size = new System.Drawing.Size(236, 22);
+            this.chk_club_card.TabIndex = 9;
+            this.chk_club_card.Text = "        Club Card                  ";
+            this.chk_club_card.UseVisualStyleBackColor = false;
+            this.chk_club_card.CheckedChanged += new System.EventHandler(this.chk_club_card_CheckedChanged);
+            // 
             // btn_reward
             // 
             this.btn_reward.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
@@ -226,7 +405,7 @@
             this.panel3.Controls.Add(this.txtpan_no);
             this.panel3.Location = new System.Drawing.Point(554, 130);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(208, 124);
+            this.panel3.Size = new System.Drawing.Size(208, 132);
             this.panel3.TabIndex = 93;
             // 
             // btn_card_balance
@@ -304,6 +483,7 @@
             this.txtpan_no.Name = "txtpan_no";
             this.txtpan_no.Size = new System.Drawing.Size(154, 20);
             this.txtpan_no.TabIndex = 303;
+            this.txtpan_no.TextChanged += new System.EventHandler(this.txtpan_no_TextChanged);
             this.txtpan_no.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtpan_no_KeyPress);
             // 
             // btn_bill_void
@@ -318,136 +498,6 @@
             this.btn_bill_void.TabIndex = 309;
             this.btn_bill_void.Text = "Void";
             this.btn_bill_void.Click += new System.EventHandler(this.btn_bill_void_Click);
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.chk_cheque);
-            this.groupBox2.Controls.Add(this.chk_fone_pay);
-            this.groupBox2.Controls.Add(this.chk_club_card);
-            this.groupBox2.Controls.Add(this.chkcash_card);
-            this.groupBox2.Controls.Add(this.chkcard);
-            this.groupBox2.Controls.Add(this.chkcredit);
-            this.groupBox2.Controls.Add(this.chkcash);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.ForeColor = System.Drawing.Color.Black;
-            this.groupBox2.Location = new System.Drawing.Point(559, 256);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(200, 197);
-            this.groupBox2.TabIndex = 283;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Payment Mode";
-            // 
-            // chk_cheque
-            // 
-            this.chk_cheque.AutoSize = true;
-            this.chk_cheque.BackColor = System.Drawing.Color.Red;
-            this.chk_cheque.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chk_cheque.ForeColor = System.Drawing.Color.White;
-            this.chk_cheque.Location = new System.Drawing.Point(2, 119);
-            this.chk_cheque.Name = "chk_cheque";
-            this.chk_cheque.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.chk_cheque.Size = new System.Drawing.Size(198, 22);
-            this.chk_cheque.TabIndex = 11;
-            this.chk_cheque.Text = "       Cheque               ";
-            this.chk_cheque.UseVisualStyleBackColor = false;
-            this.chk_cheque.CheckedChanged += new System.EventHandler(this.chk_cheque_CheckedChanged);
-            this.chk_cheque.Click += new System.EventHandler(this.chk_cheque_Click);
-            // 
-            // chk_fone_pay
-            // 
-            this.chk_fone_pay.AutoSize = true;
-            this.chk_fone_pay.BackColor = System.Drawing.Color.Red;
-            this.chk_fone_pay.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chk_fone_pay.ForeColor = System.Drawing.Color.White;
-            this.chk_fone_pay.Location = new System.Drawing.Point(2, 175);
-            this.chk_fone_pay.Name = "chk_fone_pay";
-            this.chk_fone_pay.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.chk_fone_pay.Size = new System.Drawing.Size(227, 22);
-            this.chk_fone_pay.TabIndex = 10;
-            this.chk_fone_pay.Text = "        FonePay                  ";
-            this.chk_fone_pay.UseVisualStyleBackColor = false;
-            this.chk_fone_pay.CheckedChanged += new System.EventHandler(this.chk_fone_pay_CheckedChanged);
-            // 
-            // chk_club_card
-            // 
-            this.chk_club_card.AutoSize = true;
-            this.chk_club_card.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.chk_club_card.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chk_club_card.ForeColor = System.Drawing.Color.White;
-            this.chk_club_card.Location = new System.Drawing.Point(2, 147);
-            this.chk_club_card.Name = "chk_club_card";
-            this.chk_club_card.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.chk_club_card.Size = new System.Drawing.Size(236, 22);
-            this.chk_club_card.TabIndex = 9;
-            this.chk_club_card.Text = "        Club Card                  ";
-            this.chk_club_card.UseVisualStyleBackColor = false;
-            this.chk_club_card.CheckedChanged += new System.EventHandler(this.chk_club_card_CheckedChanged);
-            // 
-            // chkcash_card
-            // 
-            this.chkcash_card.AutoSize = true;
-            this.chkcash_card.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.chkcash_card.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkcash_card.ForeColor = System.Drawing.Color.White;
-            this.chkcash_card.Location = new System.Drawing.Point(1, 95);
-            this.chkcash_card.Name = "chkcash_card";
-            this.chkcash_card.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.chkcash_card.Size = new System.Drawing.Size(201, 22);
-            this.chkcash_card.TabIndex = 8;
-            this.chkcash_card.Text = "       Cash/Card           ";
-            this.chkcash_card.UseVisualStyleBackColor = false;
-            this.chkcash_card.CheckedChanged += new System.EventHandler(this.chkcash_card_CheckedChanged);
-            this.chkcash_card.Click += new System.EventHandler(this.chkcash_card_Click);
-            // 
-            // chkcard
-            // 
-            this.chkcard.AutoSize = true;
-            this.chkcard.BackColor = System.Drawing.Color.Red;
-            this.chkcard.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkcard.ForeColor = System.Drawing.Color.White;
-            this.chkcard.Location = new System.Drawing.Point(0, 71);
-            this.chkcard.Name = "chkcard";
-            this.chkcard.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.chkcard.Size = new System.Drawing.Size(241, 22);
-            this.chkcard.TabIndex = 7;
-            this.chkcard.Text = "        ATM  Card                  ";
-            this.chkcard.UseVisualStyleBackColor = false;
-            this.chkcard.CheckedChanged += new System.EventHandler(this.chkcard_CheckedChanged);
-            this.chkcard.Click += new System.EventHandler(this.chkcard_Click);
-            // 
-            // chkcredit
-            // 
-            this.chkcredit.AutoSize = true;
-            this.chkcredit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(81)))), ((int)(((byte)(126)))));
-            this.chkcredit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkcredit.ForeColor = System.Drawing.Color.White;
-            this.chkcredit.Location = new System.Drawing.Point(0, 44);
-            this.chkcredit.Name = "chkcredit";
-            this.chkcredit.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.chkcredit.Size = new System.Drawing.Size(221, 22);
-            this.chkcredit.TabIndex = 6;
-            this.chkcredit.Text = "            Credit                 ";
-            this.chkcredit.UseVisualStyleBackColor = false;
-            this.chkcredit.CheckedChanged += new System.EventHandler(this.chkcredit_CheckedChanged);
-            this.chkcredit.Click += new System.EventHandler(this.chkcredit_Click);
-            // 
-            // chkcash
-            // 
-            this.chkcash.AutoSize = true;
-            this.chkcash.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.chkcash.Checked = true;
-            this.chkcash.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkcash.ForeColor = System.Drawing.Color.White;
-            this.chkcash.Location = new System.Drawing.Point(0, 16);
-            this.chkcash.Name = "chkcash";
-            this.chkcash.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.chkcash.Size = new System.Drawing.Size(200, 22);
-            this.chkcash.TabIndex = 5;
-            this.chkcash.TabStop = true;
-            this.chkcash.Text = "            Cash              ";
-            this.chkcash.UseVisualStyleBackColor = false;
-            this.chkcash.CheckedChanged += new System.EventHandler(this.chkcash_CheckedChanged);
-            this.chkcash.Click += new System.EventHandler(this.chkcash_Click);
             // 
             // btn_exact
             // 
@@ -1481,10 +1531,12 @@
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Billing_KeyUp);
             this.containpanel.ResumeLayout(false);
             this.containpanel.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -1599,5 +1651,8 @@
         private System.Windows.Forms.Label label1;
         private DevComponents.DotNetBar.ButtonX btn_reward;
         private System.Windows.Forms.RadioButton chk_cheque;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private DevComponents.DotNetBar.ButtonX btn_cancel;
+        private System.Windows.Forms.RadioButton rbn_others;
     }
 }

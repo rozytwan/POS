@@ -88,6 +88,9 @@ namespace POS_System
         string billingSize;
         bool KotEnableDisable;
         bool KotSaveEnableDisable;
+        bool Fixgrouping;
+        bool Hidegrouping;
+        string CheckoutRename;
         private void KOTOrder_Load(object sender, EventArgs e)
         {
             ServiceProvider = second_user_interface.ServiceProvider;
@@ -95,6 +98,9 @@ namespace POS_System
             KOTRename = second_user_interface.KOTRename;
             KotEnableDisable = cd.KotEnableDisable();
             KotSaveEnableDisable = cd.KotSaveEnableDisable();
+            Fixgrouping = cd.Fixgrouping();
+            Hidegrouping = cd.Hidegrouping();
+            CheckoutRename = cd.CheckoutRename();
             CheckPrinterForA4Billing();
 
             if (ServiceProvider == true)
@@ -106,6 +112,15 @@ namespace POS_System
             {
                 btn_service_provider.Visible = false;
             }
+            if (Fixgrouping == true)
+            {
+                btn_category_grouping_Click(null,null);
+            }
+            if (Hidegrouping == true)
+            {
+                btn_category_grouping.Visible=false;
+            }
+       
             if (KotEnableDisable == true)
             {
                 btn_x_kot.Visible = true;
@@ -124,6 +139,7 @@ namespace POS_System
                 buttonX1.Visible = false;
             }
             btn_x_kot.Text = KOTRename;
+            btn_x_check_out.Text = CheckoutRename;
             buttonX1.Text = KOTRename + "(save)";
             service_provider_id = ServiceProviderUser.id;
 
@@ -305,7 +321,7 @@ namespace POS_System
                 }
                 else
                 {
-                    int getinvoiceno = Convert.ToInt32(dt.Rows[0][0].ToString()) + 1;
+                    int getinvoiceno = Convert.ToInt32(dt.Rows[0][0].ToString())+1 ;
                     lbltable_real_no.Text = getinvoiceno.ToString();
 
                     label_table_no.Text = getinvoiceno.ToString();
@@ -1176,7 +1192,7 @@ namespace POS_System
             if (dataGridView1.Rows.Count > 0)
             {
                 if (dataGridView1.Rows.Count > 17)
-                {
+                { 
                     if (billingSize == "A4")
                     {
                         MessageBox.Show("Sorry you can't order more than 17 item in A4 size billing.", "Excessive Item Order", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -1240,7 +1256,7 @@ namespace POS_System
                         {
                             if (kot_after_billing == false)
                             {
-                                take_away();
+                                //take_away();
                                 kot_after_billing = false;
                             }
                         }

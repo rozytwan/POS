@@ -252,6 +252,8 @@ namespace POS_System
                 BillDetails detail = new BillDetails();
                 detail.lbl_bill_no.Text = dataGridView1.CurrentRow.Cells["col_bill_no"].Value.ToString();
                 dates= Convert.ToDateTime(dataGridView1.CurrentRow.Cells["col_credit_date"].Value.ToString());
+                detail.lbl_customer_name.Text = (dataGridView1.CurrentRow.Cells["col_customername"].Value.ToString());
+                detail.lbl_customer_id.Text = lbl_id.Text;
                 detail.Show();
             }
        

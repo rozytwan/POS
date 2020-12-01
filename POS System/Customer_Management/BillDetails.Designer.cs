@@ -54,6 +54,11 @@
             this.lbl_discount = new System.Windows.Forms.Label();
             this.btn_payment = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_print = new DevComponents.DotNetBar.ButtonX();
+            this.lbl_customer_name = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_customer_id = new System.Windows.Forms.Label();
+            this.lbl_fiscal_year = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -317,6 +322,11 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.lbl_fiscal_year);
+            this.panel1.Controls.Add(this.lbl_customer_id);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lbl_customer_name);
+            this.panel1.Controls.Add(this.btn_print);
             this.panel1.Controls.Add(this.btn_payment);
             this.panel1.Controls.Add(this.lbl_discount);
             this.panel1.Controls.Add(this.label4);
@@ -341,6 +351,68 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(357, 540);
             this.panel1.TabIndex = 315;
+            // 
+            // btn_print
+            // 
+            this.btn_print.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btn_print.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btn_print.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_print.Location = new System.Drawing.Point(12, 475);
+            this.btn_print.Name = "btn_print";
+            this.btn_print.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(15);
+            this.btn_print.Size = new System.Drawing.Size(88, 39);
+            this.btn_print.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btn_print.TabIndex = 347;
+            this.btn_print.Text = "Print";
+            this.btn_print.Click += new System.EventHandler(this.btn_print_Click);
+            // 
+            // lbl_customer_name
+            // 
+            this.lbl_customer_name.AutoSize = true;
+            this.lbl_customer_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_customer_name.ForeColor = System.Drawing.Color.Black;
+            this.lbl_customer_name.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lbl_customer_name.Location = new System.Drawing.Point(309, 46);
+            this.lbl_customer_name.Name = "lbl_customer_name";
+            this.lbl_customer_name.Size = new System.Drawing.Size(43, 15);
+            this.lbl_customer_name.TabIndex = 348;
+            this.lbl_customer_name.Text = "            ";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label1.Location = new System.Drawing.Point(157, 263);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 15);
+            this.label1.TabIndex = 349;
+            this.label1.Text = "            ";
+            // 
+            // lbl_customer_id
+            // 
+            this.lbl_customer_id.AutoSize = true;
+            this.lbl_customer_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_customer_id.ForeColor = System.Drawing.Color.Black;
+            this.lbl_customer_id.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lbl_customer_id.Location = new System.Drawing.Point(298, 70);
+            this.lbl_customer_id.Name = "lbl_customer_id";
+            this.lbl_customer_id.Size = new System.Drawing.Size(43, 15);
+            this.lbl_customer_id.TabIndex = 350;
+            this.lbl_customer_id.Text = "            ";
+            // 
+            // lbl_fiscal_year
+            // 
+            this.lbl_fiscal_year.AutoSize = true;
+            this.lbl_fiscal_year.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_fiscal_year.ForeColor = System.Drawing.Color.Transparent;
+            this.lbl_fiscal_year.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lbl_fiscal_year.Location = new System.Drawing.Point(6, 3);
+            this.lbl_fiscal_year.Name = "lbl_fiscal_year";
+            this.lbl_fiscal_year.Size = new System.Drawing.Size(43, 15);
+            this.lbl_fiscal_year.TabIndex = 351;
+            this.lbl_fiscal_year.Text = "            ";
             // 
             // BillDetails
             // 
@@ -388,5 +460,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn col_cost;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_total;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_date;
+        private DevComponents.DotNetBar.ButtonX btn_print;
+        public System.Windows.Forms.Label lbl_customer_name;
+        public System.Windows.Forms.Label lbl_customer_id;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label lbl_fiscal_year;
     }
 }

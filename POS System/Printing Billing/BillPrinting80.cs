@@ -18,6 +18,7 @@ namespace POS_System
         public bool save_after_print;
         public string nepaliDate;
         public string bill_no;
+        public string brfiscal_year;
         public string cashier;
         public string table_no;
         public string sub_total;
@@ -291,7 +292,7 @@ namespace POS_System
                     gra.DrawString(nepaliDate, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 80, y + ybinc + yinc);
                     y = y + 13;
                     gra.DrawString("Fiscal Year :", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 10, y + ybinc + yinc);
-                    gra.DrawString(fiscal_year, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 80, y + ybinc + yinc);
+                    gra.DrawString(brfiscal_year, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 80, y + ybinc + yinc);
                     y = y + 13;
                 }
                 if (getalltable.Rows[0]["cashier"].ToString() == "True")
