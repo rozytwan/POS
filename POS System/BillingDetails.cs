@@ -121,6 +121,7 @@ namespace POS_System
         {
             btn_create_new_billing.DialogResult = DialogResult.OK;
             this.Hide();
+
         }
     }
 }

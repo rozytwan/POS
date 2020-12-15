@@ -1273,13 +1273,19 @@ namespace POS_System
             //    MessageBox.Show(ex.Message);
             //}
         }
-
+        public static string row_id;
         private void btnenter_Click_1(object sender, EventArgs e)
         {
             if (btn_x_note.Text == "Note")
             {
+                //row_id = dataGridView1.CurrentRow.Cells["cal_description"].Value.ToString();
 
-                KOTOrder.Animate(txtrichbox, KOTOrder.Effect.Slide, 150, 180);
+                //Control ctls = this.Parent;
+                //NoteItem cl = new NoteItem();
+                //ctls.Controls.Clear();
+                //ctls.Controls.Add(cl);
+
+                  KOTOrder.Animate(txtrichbox, KOTOrder.Effect.Slide, 150, 180);
             }
             else
             {

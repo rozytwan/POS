@@ -445,6 +445,12 @@
     <Compile Include="ItemMenu\AddCategoryGrouping.designer.cs">
       <DependentUpon>AddCategoryGrouping.cs</DependentUpon>
     </Compile>
+    <Compile Include="ItemMenu\NoteItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemMenu\NoteItem.Designer.cs">
+      <DependentUpon>NoteItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="ItemSales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1564,6 +1570,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ItemMenu\AddCategoryGrouping.resx">
       <DependentUpon>AddCategoryGrouping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemMenu\NoteItem.resx">
+      <DependentUpon>NoteItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ItemSales.resx">
       <DependentUpon>ItemSales.cs</DependentUpon>

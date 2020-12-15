@@ -1198,3 +1198,4 @@ D:\POS 2 Server Load\POS System\obj\Debug\POS System.csproj.GenerateResource.Cac
 D:\POS 2 Server Load\POS System\obj\Debug\POS System.exe.licenses
 D:\POS 2 Server Load\POS System\obj\Debug\es-ES\POS System.resources.dll
 D:\POS 2 Server Load\POS System\obj\Debug\es-PR\POS System.resources.dll
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.NoteItem.resources

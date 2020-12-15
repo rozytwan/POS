@@ -50,6 +50,7 @@ namespace POS_System
         string billVoid = "0";
         bool print_ok;
         public decimal cash_sum = 0;
+        public decimal fonepay_sum = 0;
         public decimal card_sum = 0;
         public decimal credit_sum = 0;
         public decimal sub_total_sum = 0;
@@ -61,8 +62,11 @@ namespace POS_System
         decimal credit_recive_amountBYCard = 0;
         public decimal zomato_sum = 0;
         public decimal cashcard_sum = 0;
+        public decimal cashcredit_sum = 0;
         public decimal cashcard_grandTotal_sum = 0;
+        public decimal cashcredit_grandTotal_sum = 0;
         public decimal cashcard_cash_sum = 0;
+        public decimal cashcredit_cash_sum = 0;
         string complementrySalesSum = "0";
         string totalComplementry = "0";
         string totalshiftchange = "0";
@@ -162,18 +166,39 @@ namespace POS_System
                 }
                 cashcard_cash_sum = cashcard_grandTotal_sum - cashcard_sum;
             }
-            // total cash sales 
-            DataTable dt_cash_sale_sum = blres.sum_cash_sale("X", fiscal_year);
-            if (dt_cash_sale_sum.Rows.Count > 0 && dt_cash_sale_sum.Rows[0][0].ToString() != "")
+            //total cash/credit sales
+            DataTable dt_cashcredit_sale_sum = blres.Sum_Credit_cash_Amount("X", fiscal_year);
+            if (dt_cashcredit_sale_sum.Rows.Count > 0 && dt_cashcredit_sale_sum.Rows[0][0].ToString() != "")
             {
 
+                for (int i = 0; dt_cashcredit_sale_sum.Rows.Count > i; i++)
+                {
+                    cashcredit_sum += Convert.ToDecimal(dt_cashcredit_sale_sum.Rows[i][1].ToString());
+                    cashcredit_cash_sum += Convert.ToDecimal(dt_cashcredit_sale_sum.Rows[i][2].ToString());
+                }
+            }
+            // total cash sales 
+            DataTable dt_cash_sale_sum = blres.sum_cash_sale("X", fiscal_year);
+            if (cashcredit_cash_sum > 0 ||dt_cash_sale_sum.Rows.Count > 0 || dt_cash_sale_sum.Rows[0][0].ToString() != "" )
+            {
                 for (int i = 0; dt_cash_sale_sum.Rows.Count > i; i++)
                 {
                     cash_sum += Convert.ToDecimal(dt_cash_sale_sum.Rows[i][1].ToString());
                 }
-                txt_total_cash_sales.Text = (cash_sum + cashcard_cash_sum).ToString("#.##");
+                txt_total_cash_sales.Text = (cash_sum + cashcard_cash_sum + cashcredit_cash_sum).ToString("#.##");
+             }
+        
+            //total fonepay sales
+            DataTable dt_fonepay_sale_sum = blres.sum_fonepay_sale("X", fiscal_year);
+            if (dt_fonepay_sale_sum.Rows.Count > 0 && dt_fonepay_sale_sum.Rows[0][0].ToString() != "")
+            {
+                for (int i = 0; dt_fonepay_sale_sum.Rows.Count > i; i++)
+                {
+                    fonepay_sum += Convert.ToDecimal(dt_fonepay_sale_sum.Rows[i][1].ToString());
+                }
+                txt_fonepay.Text = (fonepay_sum).ToString("#.##");
             }
-           
+
             //total card sales
             DataTable dt_card_sale_sum = blres.sum_card_sale("X", fiscal_year);
             if (dt_card_sale_sum.Rows.Count > 0 && dt_card_sale_sum.Rows[0][0].ToString() != "")
@@ -246,15 +271,17 @@ namespace POS_System
             }
             //sum of total credit amount  recived by cash and card
             txt_credit_paid.Text = (credit_recive_amount + credit_recive_amountBYCard).ToString();
+
+
             //total credit sum 
             DataTable dt_sum_credit_amount = blres.Sum_Credit_Amount("X", fiscal_year);
-            if (dt_sum_credit_amount.Rows.Count > 0)
+            if (dt_sum_credit_amount.Rows.Count > 0 || cashcredit_sum>0)
             {
                 for (int i = 0; i < dt_sum_credit_amount.Rows.Count; i++)
                 {
                     credit_sum += Convert.ToDecimal(dt_sum_credit_amount.Rows[i][1].ToString());
                 }
-                txt_credit.Text = credit_sum.ToString("#.##");
+                txt_credit.Text = (credit_sum + cashcredit_sum).ToString("#.##");
             }
             //total cash drop 
             if (cashdrop == true)
@@ -317,7 +344,7 @@ namespace POS_System
             DataTable dt_voidbill = blres.Count_Voidbill();
             if (dt_voidbill.Rows.Count > 0 && dt_voidbill.Rows[0][0].ToString() != "")
             {
-                billVoid = dt_tbl_sale_dinning.Rows.Count.ToString();
+                billVoid = dt_voidbill.Rows[0][0].ToString();
             }
             DataTable dt_kotTypeSum = blres.SumKOTType(fiscal_year);
             if (dt_kotTypeSum.Rows.Count > 0)
@@ -447,12 +474,13 @@ namespace POS_System
 
             gra.DrawString("Sales By Cash", new XFont("Arial", 10, XFontStyle.Regular), new SolidBrush(Color.Black), 10, ybinc);
             gra.DrawString(txt_total_cash_sales.Text, new XFont("Arial", 9, XFontStyle.Regular), new SolidBrush(Color.Black), 150, ybinc); ybinc = ybinc + 17;
-
+            
             gra.DrawString("Sales By Card", new XFont("Arial", 9, XFontStyle.Regular), new SolidBrush(Color.Black), 10, ybinc);
             gra.DrawString(txt_total_card_sales.Text, new XFont("Arial", 9, XFontStyle.Regular), new SolidBrush(Color.Black), 150, ybinc); ybinc = ybinc + 17;
-           
 
-
+            gra.DrawString("Sales By FonePay", new XFont("Arial", 10, XFontStyle.Regular), new SolidBrush(Color.Black), 10, ybinc);
+            gra.DrawString(txt_fonepay.Text, new XFont("Arial", 9, XFontStyle.Regular), new SolidBrush(Color.Black), 150, ybinc); ybinc = ybinc + 17;
+            
             gra.DrawString("Sales By Club Card", new XFont("Arial", 9, XFontStyle.Regular), new SolidBrush(Color.Black), 10, ybinc);
             gra.DrawString(txt_club_card.Text, new XFont("Arial", 9, XFontStyle.Regular), new SolidBrush(Color.Black), 150, ybinc); ybinc = ybinc + 17;
 
@@ -684,6 +712,9 @@ namespace POS_System
 
             gra.DrawString("Sales By Card", new System.Drawing.Font("Arial", 9, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 10, ybinc);
             gra.DrawString(txt_total_card_sales.Text, new System.Drawing.Font("Arial", 9, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 150, ybinc); ybinc = ybinc + 17;
+
+            gra.DrawString("Sales By FonePay", new System.Drawing.Font("Arial", 9, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 10, ybinc);
+            gra.DrawString(txt_fonepay.Text, new System.Drawing.Font("Arial", 9, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 150, ybinc); ybinc = ybinc + 17;
 
             gra.DrawString("Sales By Club Card", new System.Drawing.Font("Arial", 9, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 10, ybinc);
             gra.DrawString(txt_club_card.Text, new System.Drawing.Font("Arial", 9, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 150, ybinc); ybinc = ybinc + 17;

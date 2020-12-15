@@ -40,7 +40,7 @@ namespace BLLS
                 };
             return DAL.getuser("select bill_no from tbl_sales_record where bill_no=@bill_no and date2=@date2", parm);
         }
-        public int insertintosalesbook(int bill_no, DateTime date_of_sale, string cashier_name, string category_name, string table_no, string customer_name, string customer_no, string item_name, decimal quantity, decimal cost, decimal total, string payment_mode, string kot_type, decimal sub_total, decimal discount, decimal cash_amount, decimal card_amount, decimal grand_total, string sales_type, string customer_pan_no, string x_report, decimal service_charge, decimal taxable_amount, decimal tax_amount, string fiscal_year, string service_provider, DateTime date2, int customer_id, int loopId, string timeOnly, string sync_with_ird, int complementryInvoiceNo, string complementry_status, string void_status, int void_bill_no, string void_reason, int order_id)
+        public int insertintosalesbook(int bill_no, DateTime date_of_sale, string cashier_name, string category_name, string table_no, string customer_name, string customer_no, string item_name, decimal quantity, decimal cost, decimal total, string payment_mode, string kot_type, decimal sub_total, decimal discount, decimal cash_amount, decimal card_amount, decimal grand_total, string sales_type, string customer_pan_no, string x_report, decimal service_charge, decimal taxable_amount, decimal tax_amount, string fiscal_year, string service_provider, DateTime date2, int customer_id, int loopId, string timeOnly, string sync_with_ird, int complementryInvoiceNo, string complementry_status, string void_status, int void_bill_no, string void_reason, int order_id,decimal credit_amount)
         {
             SqlParameter[] parm = new SqlParameter[]
                 {
@@ -81,9 +81,8 @@ namespace BLLS
                         new SqlParameter("@void_bill_no",void_bill_no),
                         new SqlParameter("@void_reason",void_reason),
                         new SqlParameter("@order_id",order_id),
-
-
-                };
+                         new SqlParameter("@credit_amount",credit_amount),
+           };
 
             return DAL.IUD_SP("spSalesRecord", CommandType.StoredProcedure, parm);
 
@@ -124,6 +123,16 @@ namespace BLLS
                      new SqlParameter("@fiscal_year",fiscal_year)
                 };
             return DAL.getuser("select * from tbl_sales_record where fiscal_year=@fiscal_year and bill_no=@bill_no", parm);
+            //datepart(MM,date_of_sale)=DATEPART(MM,GETDATE()) and  datepart(YYYY,date_of_sale)=DATEPART(YYYY,GETDATE())
+        }
+        public DataTable get_bill_by_xreport(string bill_no)
+        {
+            SqlParameter[] parm = new SqlParameter[]
+                {
+                    new SqlParameter("@bill_no",bill_no),
+                   
+                };
+            return DAL.getuser("select * from tbl_sales_record where x_report='X' and bill_no=@bill_no", parm);
             //datepart(MM,date_of_sale)=DATEPART(MM,GETDATE()) and  datepart(YYYY,date_of_sale)=DATEPART(YYYY,GETDATE())
         }
         public int voidBillInsert(int void_bill_no, int new_bill_no, string void_reason, string void_status, DateTime void_date, string void_user)
@@ -249,6 +258,15 @@ namespace BLLS
                 };
             return DAL.getuser("select DISTINCT bill_no,grand_total from tbl_sales_record where x_report=@x_report and sales_type!='HS' and payment_mode='Cash' and bill_no NOT IN (SELECT void_bill_no FROM tbl_bill_void where void_status='true' and void_reason=@fiscal_year) ", parm);
         }
+        public DataTable sum_fonepay_sale(string x_report, string fiscal_year)
+        {
+            SqlParameter[] parm = new SqlParameter[]
+                {
+                    new SqlParameter("@x_report",x_report),
+                    new SqlParameter("@fiscal_year",fiscal_year)
+                };
+            return DAL.getuser("select DISTINCT bill_no,grand_total from tbl_sales_record where x_report=@x_report and sales_type!='HS' and payment_mode='FonePay' and bill_no NOT IN (SELECT void_bill_no FROM tbl_bill_void where void_status='true' and void_reason=@fiscal_year) ", parm);
+        }
         public DataTable sum_cash_sale_Bysalestype(string x_report, string fiscal_year)
         {
             SqlParameter[] parm = new SqlParameter[]
@@ -305,6 +323,15 @@ namespace BLLS
                 };
             return DAL.getuser("select DISTINCT bill_no,card_amount,grand_total from tbl_sales_record where x_report=@x_report and sales_type!='HS' and payment_mode='Cash/Card' and bill_no NOT IN (SELECT void_bill_no FROM tbl_bill_void where void_status='true' and void_reason=@fiscal_year)", parm);
         }
+        public DataTable sum_Cash_Credit_sales(String x_report, string fiscal_year)
+        {
+            SqlParameter[] parm = new SqlParameter[]
+                {
+                    new SqlParameter("@x_report",x_report),
+                     new SqlParameter("@fiscal_year",fiscal_year)
+                };
+            return DAL.getuser("select DISTINCT bill_no,cash_amount,grand_total from tbl_sales_record where x_report=@x_report and sales_type!='HS' and payment_mode='Cash/Credit' and bill_no NOT IN (SELECT void_bill_no FROM tbl_bill_void where void_status='true' and void_reason=@fiscal_year)", parm);
+        }
         public DataTable Sum_Credit_Amount(string x_report, string fiscal_year)
         {
             SqlParameter[] parm = new SqlParameter[]
@@ -313,6 +340,15 @@ namespace BLLS
                      new SqlParameter("@fiscal_year",fiscal_year)
                 };
             return DAL.getuser("select DISTINCT bill_no,grand_total from tbl_sales_record where x_report=@x_report and sales_type!='HS' and payment_mode='Credit' and   bill_no NOT IN (SELECT void_bill_no FROM tbl_bill_void where void_status='true' and void_reason=@fiscal_year)", parm);
+        }
+        public DataTable Sum_Credit_cash_Amount(string x_report, string fiscal_year)
+        {
+            SqlParameter[] parm = new SqlParameter[]
+                {
+                    new SqlParameter("@x_report",x_report),
+                     new SqlParameter("@fiscal_year",fiscal_year)
+                };
+            return DAL.getuser("select DISTINCT bill_no,credit_amount,cash_amount from tbl_sales_record where x_report=@x_report and sales_type!='HS' and payment_mode='Cash/Credit' and   bill_no NOT IN (SELECT void_bill_no FROM tbl_bill_void where void_status='true' and void_reason=@fiscal_year)", parm);
         }
         public DataTable Count_total_Table(string x_report)
         {

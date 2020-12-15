@@ -37,9 +37,9 @@ namespace POS_System
 
         private void Form1_Load(object sender, EventArgs e)
         {
-          
-           // int rowIndex = 0;
-           
+
+            // int rowIndex = 0;
+            item_id = 0;
             add_itemsin_combobox();
             DataTable dt = bllproduct.getproductitems();
             if (dt.Rows.Count > 0)

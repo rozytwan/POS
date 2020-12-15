@@ -86,6 +86,8 @@
             this.txt_counting_cash = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.txt_fonepay = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -94,6 +96,9 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.txt_fonepay);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.label22);
             this.panel1.Controls.Add(this.buttonX4);
             this.panel1.Controls.Add(this.btn_club_card);
             this.panel1.Controls.Add(this.btn_print_preview);
@@ -101,7 +106,6 @@
             this.panel1.Controls.Add(this.txt_club_card);
             this.panel1.Controls.Add(this.lbl_status);
             this.panel1.Controls.Add(this.buttonX3);
-            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.txt_excess_shortage);
             this.panel1.Controls.Add(this.label20);
             this.panel1.Controls.Add(this.txt_closing_balance);
@@ -143,7 +147,7 @@
             this.panel1.Controls.Add(this.label15);
             this.panel1.Location = new System.Drawing.Point(2, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(394, 775);
+            this.panel1.Size = new System.Drawing.Size(391, 775);
             this.panel1.TabIndex = 284;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -151,11 +155,11 @@
             // 
             this.buttonX4.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.buttonX4.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.buttonX4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonX4.Location = new System.Drawing.Point(260, 673);
+            this.buttonX4.Font = new System.Drawing.Font("Book Antiqua", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonX4.Location = new System.Drawing.Point(261, 676);
             this.buttonX4.Name = "buttonX4";
             this.buttonX4.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(15);
-            this.buttonX4.Size = new System.Drawing.Size(107, 47);
+            this.buttonX4.Size = new System.Drawing.Size(121, 43);
             this.buttonX4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.buttonX4.TabIndex = 339;
             this.buttonX4.Text = "Cancel Order";
@@ -165,8 +169,8 @@
             // 
             this.btn_club_card.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btn_club_card.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btn_club_card.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_club_card.Location = new System.Drawing.Point(6, 722);
+            this.btn_club_card.Font = new System.Drawing.Font("Book Antiqua", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_club_card.Location = new System.Drawing.Point(6, 725);
             this.btn_club_card.Name = "btn_club_card";
             this.btn_club_card.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(15);
             this.btn_club_card.Size = new System.Drawing.Size(116, 45);
@@ -179,8 +183,8 @@
             // 
             this.btn_print_preview.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btn_print_preview.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btn_print_preview.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_print_preview.Location = new System.Drawing.Point(129, 722);
+            this.btn_print_preview.Font = new System.Drawing.Font("Book Antiqua", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_print_preview.Location = new System.Drawing.Point(129, 725);
             this.btn_print_preview.Name = "btn_print_preview";
             this.btn_print_preview.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(15);
             this.btn_print_preview.Size = new System.Drawing.Size(125, 45);
@@ -193,7 +197,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(26, 216);
+            this.label21.Location = new System.Drawing.Point(26, 224);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(106, 17);
             this.label21.TabIndex = 336;
@@ -202,7 +206,7 @@
             // txt_club_card
             // 
             this.txt_club_card.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_club_card.Location = new System.Drawing.Point(170, 210);
+            this.txt_club_card.Location = new System.Drawing.Point(170, 218);
             this.txt_club_card.Name = "txt_club_card";
             this.txt_club_card.ReadOnly = true;
             this.txt_club_card.Size = new System.Drawing.Size(207, 26);
@@ -212,7 +216,7 @@
             // lbl_status
             // 
             this.lbl_status.AutoSize = true;
-            this.lbl_status.Location = new System.Drawing.Point(340, 574);
+            this.lbl_status.Location = new System.Drawing.Point(340, 580);
             this.lbl_status.Name = "lbl_status";
             this.lbl_status.Size = new System.Drawing.Size(0, 13);
             this.lbl_status.TabIndex = 334;
@@ -221,11 +225,11 @@
             // 
             this.buttonX3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.buttonX3.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.buttonX3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonX3.Location = new System.Drawing.Point(5, 671);
+            this.buttonX3.Font = new System.Drawing.Font("Book Antiqua", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonX3.Location = new System.Drawing.Point(6, 674);
             this.buttonX3.Name = "buttonX3";
             this.buttonX3.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(15);
-            this.buttonX3.Size = new System.Drawing.Size(117, 47);
+            this.buttonX3.Size = new System.Drawing.Size(117, 45);
             this.buttonX3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.buttonX3.TabIndex = 333;
             this.buttonX3.Text = "Item Sales";
@@ -233,14 +237,14 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.bth_panel_close);
             this.panel2.Controls.Add(this.txtuser_name);
             this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.txtpassword);
             this.panel2.Controls.Add(this.label9);
-            this.panel2.Location = new System.Drawing.Point(40, 312);
+            this.panel2.Location = new System.Drawing.Point(40, 275);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(337, 149);
             this.panel2.TabIndex = 299;
@@ -339,7 +343,7 @@
             // txt_excess_shortage
             // 
             this.txt_excess_shortage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_excess_shortage.Location = new System.Drawing.Point(170, 566);
+            this.txt_excess_shortage.Location = new System.Drawing.Point(170, 572);
             this.txt_excess_shortage.Name = "txt_excess_shortage";
             this.txt_excess_shortage.Size = new System.Drawing.Size(162, 26);
             this.txt_excess_shortage.TabIndex = 332;
@@ -350,7 +354,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(26, 568);
+            this.label20.Location = new System.Drawing.Point(26, 574);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(114, 17);
             this.label20.TabIndex = 331;
@@ -359,7 +363,7 @@
             // txt_closing_balance
             // 
             this.txt_closing_balance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_closing_balance.Location = new System.Drawing.Point(170, 634);
+            this.txt_closing_balance.Location = new System.Drawing.Point(170, 640);
             this.txt_closing_balance.Name = "txt_closing_balance";
             this.txt_closing_balance.Size = new System.Drawing.Size(162, 26);
             this.txt_closing_balance.TabIndex = 330;
@@ -369,7 +373,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(23, 633);
+            this.label19.Location = new System.Drawing.Point(23, 639);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(109, 17);
             this.label19.TabIndex = 329;
@@ -379,7 +383,7 @@
             // 
             this.lbl_calculation.AutoSize = true;
             this.lbl_calculation.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_calculation.Location = new System.Drawing.Point(338, 566);
+            this.lbl_calculation.Location = new System.Drawing.Point(338, 572);
             this.lbl_calculation.Name = "lbl_calculation";
             this.lbl_calculation.Size = new System.Drawing.Size(0, 17);
             this.lbl_calculation.TabIndex = 328;
@@ -387,7 +391,7 @@
             // txt_cashsettlement
             // 
             this.txt_cashsettlement.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_cashsettlement.Location = new System.Drawing.Point(170, 602);
+            this.txt_cashsettlement.Location = new System.Drawing.Point(170, 608);
             this.txt_cashsettlement.Name = "txt_cashsettlement";
             this.txt_cashsettlement.Size = new System.Drawing.Size(162, 26);
             this.txt_cashsettlement.TabIndex = 327;
@@ -399,7 +403,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(23, 601);
+            this.label18.Location = new System.Drawing.Point(23, 607);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(111, 17);
             this.label18.TabIndex = 326;
@@ -409,7 +413,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(23, 345);
+            this.label17.Location = new System.Drawing.Point(23, 353);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(141, 17);
             this.label17.TabIndex = 325;
@@ -418,7 +422,7 @@
             // txt_service_charge
             // 
             this.txt_service_charge.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_service_charge.Location = new System.Drawing.Point(170, 339);
+            this.txt_service_charge.Location = new System.Drawing.Point(170, 347);
             this.txt_service_charge.Name = "txt_service_charge";
             this.txt_service_charge.ReadOnly = true;
             this.txt_service_charge.Size = new System.Drawing.Size(207, 26);
@@ -430,7 +434,7 @@
             this.buttonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.buttonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
             this.buttonX2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonX2.Location = new System.Drawing.Point(341, 531);
+            this.buttonX2.Location = new System.Drawing.Point(341, 537);
             this.buttonX2.Name = "buttonX2";
             this.buttonX2.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(15);
             this.buttonX2.Size = new System.Drawing.Size(36, 35);
@@ -443,7 +447,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(26, 247);
+            this.label11.Location = new System.Drawing.Point(26, 255);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(81, 17);
             this.label11.TabIndex = 322;
@@ -452,7 +456,7 @@
             // txt_credit
             // 
             this.txt_credit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_credit.Location = new System.Drawing.Point(170, 241);
+            this.txt_credit.Location = new System.Drawing.Point(170, 249);
             this.txt_credit.Name = "txt_credit";
             this.txt_credit.ReadOnly = true;
             this.txt_credit.Size = new System.Drawing.Size(207, 26);
@@ -462,7 +466,7 @@
             // txt_credit_paid
             // 
             this.txt_credit_paid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_credit_paid.Location = new System.Drawing.Point(170, 467);
+            this.txt_credit_paid.Location = new System.Drawing.Point(170, 475);
             this.txt_credit_paid.Name = "txt_credit_paid";
             this.txt_credit_paid.ReadOnly = true;
             this.txt_credit_paid.Size = new System.Drawing.Size(207, 26);
@@ -473,7 +477,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(26, 473);
+            this.label16.Location = new System.Drawing.Point(26, 481);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(113, 17);
             this.label16.TabIndex = 318;
@@ -483,7 +487,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(26, 377);
+            this.label14.Location = new System.Drawing.Point(26, 385);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(67, 17);
             this.label14.TabIndex = 312;
@@ -492,7 +496,7 @@
             // txt_discount
             // 
             this.txt_discount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_discount.Location = new System.Drawing.Point(170, 307);
+            this.txt_discount.Location = new System.Drawing.Point(170, 315);
             this.txt_discount.Name = "txt_discount";
             this.txt_discount.ReadOnly = true;
             this.txt_discount.Size = new System.Drawing.Size(207, 26);
@@ -503,7 +507,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(26, 313);
+            this.label13.Location = new System.Drawing.Point(26, 321);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(99, 17);
             this.label13.TabIndex = 310;
@@ -512,7 +516,7 @@
             // txt_grand_total
             // 
             this.txt_grand_total.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_grand_total.Location = new System.Drawing.Point(170, 403);
+            this.txt_grand_total.Location = new System.Drawing.Point(170, 411);
             this.txt_grand_total.Name = "txt_grand_total";
             this.txt_grand_total.ReadOnly = true;
             this.txt_grand_total.Size = new System.Drawing.Size(207, 26);
@@ -523,7 +527,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(26, 409);
+            this.label12.Location = new System.Drawing.Point(26, 417);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(84, 17);
             this.label12.TabIndex = 308;
@@ -533,11 +537,11 @@
             // 
             this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.buttonX1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonX1.Location = new System.Drawing.Point(129, 671);
+            this.buttonX1.Font = new System.Drawing.Font("Book Antiqua", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonX1.Location = new System.Drawing.Point(130, 674);
             this.buttonX1.Name = "buttonX1";
             this.buttonX1.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(15);
-            this.buttonX1.Size = new System.Drawing.Size(125, 47);
+            this.buttonX1.Size = new System.Drawing.Size(125, 45);
             this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.buttonX1.TabIndex = 307;
             this.buttonX1.Text = "Day End";
@@ -546,7 +550,7 @@
             // txttotal_care_of
             // 
             this.txttotal_care_of.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttotal_care_of.Location = new System.Drawing.Point(170, 435);
+            this.txttotal_care_of.Location = new System.Drawing.Point(170, 443);
             this.txttotal_care_of.Name = "txttotal_care_of";
             this.txttotal_care_of.ReadOnly = true;
             this.txttotal_care_of.Size = new System.Drawing.Size(207, 26);
@@ -557,7 +561,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(26, 440);
+            this.label10.Location = new System.Drawing.Point(26, 448);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(111, 17);
             this.label10.TabIndex = 299;
@@ -566,7 +570,7 @@
             // txt_total_cash_counter
             // 
             this.txt_total_cash_counter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_total_cash_counter.Location = new System.Drawing.Point(170, 499);
+            this.txt_total_cash_counter.Location = new System.Drawing.Point(170, 507);
             this.txt_total_cash_counter.Name = "txt_total_cash_counter";
             this.txt_total_cash_counter.ReadOnly = true;
             this.txt_total_cash_counter.Size = new System.Drawing.Size(207, 26);
@@ -577,7 +581,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(26, 505);
+            this.label7.Location = new System.Drawing.Point(26, 513);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(145, 17);
             this.label7.TabIndex = 297;
@@ -586,7 +590,7 @@
             // txt_total_card_sales
             // 
             this.txt_total_card_sales.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_total_card_sales.Location = new System.Drawing.Point(170, 180);
+            this.txt_total_card_sales.Location = new System.Drawing.Point(170, 155);
             this.txt_total_card_sales.Name = "txt_total_card_sales";
             this.txt_total_card_sales.ReadOnly = true;
             this.txt_total_card_sales.Size = new System.Drawing.Size(207, 26);
@@ -597,7 +601,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(26, 186);
+            this.label5.Location = new System.Drawing.Point(26, 161);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(113, 17);
             this.label5.TabIndex = 295;
@@ -606,7 +610,7 @@
             // txt_total_cash_sales
             // 
             this.txt_total_cash_sales.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_total_cash_sales.Location = new System.Drawing.Point(170, 145);
+            this.txt_total_cash_sales.Location = new System.Drawing.Point(170, 123);
             this.txt_total_cash_sales.Name = "txt_total_cash_sales";
             this.txt_total_cash_sales.ReadOnly = true;
             this.txt_total_cash_sales.Size = new System.Drawing.Size(207, 26);
@@ -617,7 +621,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(26, 151);
+            this.label4.Location = new System.Drawing.Point(26, 129);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(115, 17);
             this.label4.TabIndex = 293;
@@ -626,7 +630,7 @@
             // txt_sub_total
             // 
             this.txt_sub_total.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_sub_total.Location = new System.Drawing.Point(170, 273);
+            this.txt_sub_total.Location = new System.Drawing.Point(170, 281);
             this.txt_sub_total.Name = "txt_sub_total";
             this.txt_sub_total.ReadOnly = true;
             this.txt_sub_total.Size = new System.Drawing.Size(207, 26);
@@ -638,7 +642,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(26, 279);
+            this.label3.Location = new System.Drawing.Point(26, 287);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 17);
             this.label3.TabIndex = 291;
@@ -648,9 +652,9 @@
             // 
             this.btn_exit.BackColor = System.Drawing.Color.Red;
             this.btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_exit.Font = new System.Drawing.Font("Book Antiqua", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_exit.ForeColor = System.Drawing.Color.White;
-            this.btn_exit.Location = new System.Drawing.Point(276, 729);
+            this.btn_exit.Location = new System.Drawing.Point(275, 732);
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.Size = new System.Drawing.Size(91, 38);
             this.btn_exit.TabIndex = 290;
@@ -661,7 +665,7 @@
             // btn_day_end
             // 
             this.btn_day_end.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_day_end.Location = new System.Drawing.Point(170, 76);
+            this.btn_day_end.Location = new System.Drawing.Point(170, 63);
             this.btn_day_end.Name = "btn_day_end";
             this.btn_day_end.ReadOnly = true;
             this.btn_day_end.Size = new System.Drawing.Size(207, 26);
@@ -671,7 +675,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(26, 85);
+            this.label2.Location = new System.Drawing.Point(26, 72);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 17);
             this.label2.TabIndex = 287;
@@ -680,7 +684,7 @@
             // txt_opening_balance
             // 
             this.txt_opening_balance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_opening_balance.Location = new System.Drawing.Point(170, 110);
+            this.txt_opening_balance.Location = new System.Drawing.Point(170, 92);
             this.txt_opening_balance.Name = "txt_opening_balance";
             this.txt_opening_balance.ReadOnly = true;
             this.txt_opening_balance.Size = new System.Drawing.Size(207, 26);
@@ -691,7 +695,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(26, 116);
+            this.label1.Location = new System.Drawing.Point(26, 98);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(117, 17);
             this.label1.TabIndex = 285;
@@ -705,7 +709,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(394, 62);
+            this.panel3.Size = new System.Drawing.Size(391, 54);
             this.panel3.TabIndex = 284;
             // 
             // label23
@@ -713,7 +717,7 @@
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.Color.White;
-            this.label23.Location = new System.Drawing.Point(73, 11);
+            this.label23.Location = new System.Drawing.Point(62, 8);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(259, 39);
             this.label23.TabIndex = 19;
@@ -722,7 +726,7 @@
             // txt_tax
             // 
             this.txt_tax.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_tax.Location = new System.Drawing.Point(170, 371);
+            this.txt_tax.Location = new System.Drawing.Point(170, 379);
             this.txt_tax.Name = "txt_tax";
             this.txt_tax.ReadOnly = true;
             this.txt_tax.Size = new System.Drawing.Size(207, 26);
@@ -732,7 +736,7 @@
             // txt_counting_cash
             // 
             this.txt_counting_cash.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_counting_cash.Location = new System.Drawing.Point(170, 532);
+            this.txt_counting_cash.Location = new System.Drawing.Point(170, 538);
             this.txt_counting_cash.Name = "txt_counting_cash";
             this.txt_counting_cash.Size = new System.Drawing.Size(162, 26);
             this.txt_counting_cash.TabIndex = 315;
@@ -743,7 +747,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(23, 538);
+            this.label15.Location = new System.Drawing.Point(23, 544);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(136, 17);
             this.label15.TabIndex = 314;
@@ -752,6 +756,26 @@
             // backgroundWorker1
             // 
             this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+            // 
+            // txt_fonepay
+            // 
+            this.txt_fonepay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_fonepay.Location = new System.Drawing.Point(170, 186);
+            this.txt_fonepay.Name = "txt_fonepay";
+            this.txt_fonepay.ReadOnly = true;
+            this.txt_fonepay.Size = new System.Drawing.Size(207, 26);
+            this.txt_fonepay.TabIndex = 341;
+            this.txt_fonepay.Text = "0.00";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(26, 192);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(139, 17);
+            this.label22.TabIndex = 340;
+            this.label22.Text = "Total FonePay Sales";
             // 
             // DayEndReport
             // 
@@ -838,5 +862,7 @@
         private DevComponents.DotNetBar.ButtonX btn_club_card;
         private DevComponents.DotNetBar.ButtonX buttonX4;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.TextBox txt_fonepay;
+        private System.Windows.Forms.Label label22;
     }
 }

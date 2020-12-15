@@ -285,28 +285,28 @@ namespace POS_System.Hotel
                         if (name == "Room Charge")
                         {
                             gra.DrawString(quantity+" days", new System.Drawing.Font("Time New Roamn", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 140, y + yinc + ybinc);
-                            //gra.DrawString(price, new System.Drawing.Font("minisystem", 7, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 145, y + yinc + ybinc);
-                            //gra.DrawString(totala, new System.Drawing.Font("minisystem", 7, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 195, y + yinc + ybinc);
-                            //y = y + 13;
-                            //gra.DrawLine(drawingPen, 0, y + ybinc + yinc, 314, y + ybinc + yinc);
-                            //y = y + 2;
-                            //gra.DrawString("Total :", new System.Drawing.Font("minisystem", 7, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 150, y + yinc + ybinc);
-                            //gra.DrawString(totala, new System.Drawing.Font("minisystem", 7, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 200, y + yinc + ybinc); y = y + 16;
-                            //gra.DrawLine(drawingPen, 150, y + yinc + ybinc, 314, y + yinc + ybinc); y = y + 2;
+                            gra.DrawString(price, new System.Drawing.Font("minisystem", 7, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 180, y + yinc + ybinc);
+                            gra.DrawString(totala, new System.Drawing.Font("minisystem", 7, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 230, y + yinc + ybinc);
+                            y = y + 13;
+                            gra.DrawLine(drawingPen, 0, y + ybinc + yinc, 314, y + ybinc + yinc);
+                            y = y + 2;
+                            gra.DrawString("Total :", new System.Drawing.Font("minisystem", 7, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 180, y + yinc + ybinc);
+                            gra.DrawString(totala, new System.Drawing.Font("minisystem", 7, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 230, y + yinc + ybinc); y = y + 16;
+                            gra.DrawLine(drawingPen, 150, y + yinc + ybinc, 314, y + yinc + ybinc); y = y + 2;
 
                         }
 
                         else
                         {
                             gra.DrawString(quantity, new System.Drawing.Font("Time New Roamn", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 140, y + yinc + ybinc);
-                            //gra.DrawString(price, new System.Drawing.Font("Time New Roamn", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 180, y + yinc + ybinc);
-                            //gra.DrawString(totala, new System.Drawing.Font("Time New Roamn", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 230, y + yinc + ybinc);
-                            //y = y + 20;
+                            gra.DrawString(price, new System.Drawing.Font("Time New Roamn", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 180, y + yinc + ybinc);
+                            gra.DrawString(totala, new System.Drawing.Font("Time New Roamn", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 230, y + yinc + ybinc);
+                            y = y + 20;
                         }
 
-                        gra.DrawString(price, new System.Drawing.Font("Time New Roamn", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 180, y + yinc + ybinc);
-                        gra.DrawString(totala, new System.Drawing.Font("Time New Roamn", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 230, y + yinc + ybinc);
-                        y = y + 20;
+                        //gra.DrawString(price, new System.Drawing.Font("Time New Roamn", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 180, y + yinc + ybinc);
+                        //gra.DrawString(totala, new System.Drawing.Font("Time New Roamn", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 230, y + yinc + ybinc);
+                        //y = y + 20;
                     }
                 }
                 //mode of payment

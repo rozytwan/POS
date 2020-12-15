@@ -13,6 +13,7 @@ namespace POS_System.Void
         public static List<string> cost = new List<string>();
         public static List<string> total = new List<string>();
         public static List<string> kot_type = new List<string>();
+        public static List<string> sale_type = new List<string>();
         public static List<string> category_name = new List<string>();
 
     }

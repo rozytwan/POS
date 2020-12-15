@@ -105,15 +105,51 @@ namespace POS_System.Customer_Management
             }
         }
         HomeDeliveryModel hdm = new HomeDeliveryModel();
+        public static int customer_details;
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.ColumnIndex == dataGridView1.Columns["col_select"].Index && e.RowIndex >= 0)
             {
-                HomeDeliveryModel.customer_id= Convert.ToInt32(dataGridView1.CurrentRow.Cells["col_id"].Value.ToString());
-                Control ctls = this.Parent;
-                KOTOrder vieret = new KOTOrder("520", null);
-                ctls.Controls.Clear();
-                ctls.Controls.Add(vieret);
+                if (orderpattern == "TakeAway")
+                {
+                    customer_details = Convert.ToInt32(dataGridView1.CurrentRow.Cells["col_id"].Value);
+                    DataTable dt = bltk.getmaxNo();
+                    if (dt.Rows.Count > 0)
+                    {
+                        if (dt.Rows[0][0].ToString() == "")
+                        {
+                            take_away_id = "1001";
+                        }
+                        else
+                        {
+                            int getinvoiceno = Convert.ToInt32(dt.Rows[0][0].ToString()) + 1;
+                            take_away_id = getinvoiceno.ToString();
+                            DataTable dtm = bltk.getallfromtable();
+                        }
+                        Control cts = this.Parent;
+                        KOTOrder kotpass = new KOTOrder(take_away_id, "TA");
+                        cts.Controls.Clear();
+                        cts.Controls.Add(kotpass);
+                    }
+
+                }
+                else if (orderpattern == "HomeDelivery")
+                {
+                    customer_details = Convert.ToInt32(dataGridView1.CurrentRow.Cells["col_id"].Value);
+                    HomeDeliveryModel.customer_id = Convert.ToInt32(dataGridView1.CurrentRow.Cells["col_id"].Value.ToString());
+                    Control ctls = this.Parent;
+                    KOTOrder vieret = new KOTOrder("520", null);
+                    ctls.Controls.Clear();
+                    ctls.Controls.Add(vieret);
+                }
+                else
+                {
+                    customer_details = Convert.ToInt32(dataGridView1.CurrentRow.Cells["col_id"].Value);
+                    Control ctls = this.Parent;
+                    Table_Management.Table_Billing winfor = new Table_Management.Table_Billing();
+                    ctls.Controls.Clear();
+                    ctls.Controls.Add(winfor);
+                }
             }
         }
 
@@ -189,6 +225,7 @@ namespace POS_System.Customer_Management
                 ctls.Controls.Clear();
                 ctls.Controls.Add(vieret);
             }
+            Customer_Management.AllCusomterList.customer_details = 0;
         }
     }
 }

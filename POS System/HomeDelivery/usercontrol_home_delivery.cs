@@ -111,13 +111,22 @@ namespace POS_System
                 //txt_phone.Text = dt.Rows[0]["phone"].ToString();
             }
         }
+        int customer_details;
         private void usercontrol_home_delivery_Load(object sender, EventArgs e)
         {
 
             userpicbox.Image = global::POS_System.Properties.Resources.url;
             cbo_delivery.Focus();
-            CUstomer_name();
-            CUstomer_number();
+            customer_details = Customer_Management.AllCusomterList.customer_details;
+            if (customer_details > 0)
+            {
+                txt_customer.SelectedValue = customer_details;
+            }
+            else
+            {
+                CUstomer_name();
+                CUstomer_number();
+            }
             cbo_home_id.DropDownStyle = ComboBoxStyle.DropDown;
             dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(11, 81, 126);
             dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
@@ -217,7 +226,7 @@ namespace POS_System
             txt_grand_total.Text = static_grand_total.ToString();
         }
         private void txt_discount_TextChanged(object sender, EventArgs e)
-      {
+        {
             if (txt_discount.Text=="")
             {
                 txt_grand_total.Text = (Convert.ToDecimal(txt_total.Text) + Convert.ToDecimal(txt_delivery_charge.Text) + Convert.ToDecimal(txt_tax_amount.Text) - Convert.ToDecimal("0.00")).ToString();
@@ -346,7 +355,7 @@ namespace POS_System
 
                 }
 
-
+                Customer_Management.AllCusomterList.customer_details = 0;
             }
         }
         BillPrinting blp = new BillPrinting();

@@ -95,7 +95,7 @@ namespace POS_System
                     decimal cost = Convert.ToDecimal(dtItem.Rows[z]["cost"].ToString());
                     string category_name = dtItem.Rows[z]["category_name"].ToString();
                     string service_provider = "";
-                    int b = blres.insertintosalesbook(bill_no, date, txtcashier.Text, category_name ,homeId.Text,customer_name, "", item_name, quantity, cost, total, lbl_payment_type.Text, "", sub_total, Convert.ToDecimal(0.00), grand_total, Convert.ToDecimal(0.00), grand_total, "HD", "", "X", service_charge, taxable_amount, tax_amount, fiscal_year, service_provider, date, 0, z ,DateTime.Now.ToString("HH:mm tt"), "False", 0, "", "", 0, "", order_id);
+                    int b = blres.insertintosalesbook(bill_no, date, txtcashier.Text, category_name ,homeId.Text,customer_name, "", item_name, quantity, cost, total, lbl_payment_type.Text, "", sub_total, Convert.ToDecimal(0.00), grand_total, Convert.ToDecimal(0.00), grand_total, "HD", "", "X", service_charge, taxable_amount, tax_amount, fiscal_year, service_provider, date, 0, z ,DateTime.Now.ToString("HH:mm tt"), "False", 0, "", "", 0, "", order_id,Convert.ToDecimal(0.00));
                 }
 
                 int ibiza = blres.insert_into_bill_invoice(bill_no);

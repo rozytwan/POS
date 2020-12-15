@@ -1014,7 +1014,9 @@ namespace POS_System
                 mylist.Add("Cheque");
                 mylist.Add("Zomato");
                 mylist.Add("Credit");
+                mylist.Add("FonePay");
                 txt_searchText.DataSource = mylist;
+              
             }
             else if (cbo_searchTYpe.Text == "Sales Type")
             {

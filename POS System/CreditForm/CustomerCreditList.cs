@@ -54,12 +54,18 @@ namespace POS_System
                         if (dt2.Rows.Count > 0)
                         {
                             dataGridView1.Rows[i].Cells["col_paid"].Value = dt2.Rows[0][0].ToString();
+                            if (dt2.Rows[0][0].ToString() != "")
+                            {
+                                paid = Convert.ToDecimal(dt2.Rows[0][0].ToString());
+                            }
                         }
+                        dataGridView1.Rows[i].Cells["col_credit_amount"].Value = dt.Rows[i]["sum_credit_amount"].ToString();
+                        credit = Convert.ToDecimal(dt.Rows[i]["sum_credit_amount"].ToString());
                         if (dt3.Rows.Count > 0)
                         {
                             dataGridView1.Rows[i].Cells["col_remaining"].Value = dt3.Rows[0]["credit_left"].ToString();
                         }
-                        dataGridView1.Rows[i].Cells["col_credit_amount"].Value = dt.Rows[i]["sum_credit_amount"].ToString();
+                      
                     }
 
                 }
@@ -89,14 +95,20 @@ namespace POS_System
                         if (dt2.Rows.Count>0)
                         {
                             dataGridView1.Rows[i].Cells["col_paid"].Value = dt2.Rows[0][0].ToString();
-                      
-                        }
-                        if (dt3.Rows.Count > 0)
-                        {
-                            dataGridView1.Rows[i].Cells["col_remaining"].Value = dt3.Rows[0]["credit_left"].ToString();
+                            if (dt2.Rows[0][0].ToString() != "")
+                            {
+                                paid = Convert.ToDecimal(dt2.Rows[0][0].ToString());
+                            }
                            
                         }
                         dataGridView1.Rows[i].Cells["col_credit_amount"].Value = dt.Rows[i]["sum_credit_amount"].ToString();
+                        credit = Convert.ToDecimal(dt.Rows[i]["sum_credit_amount"].ToString());
+                        if (dt3.Rows.Count > 0)
+                        {
+                            dataGridView1.Rows[i].Cells["col_remaining"].Value =credit-paid;
+                           
+                        }
+                       
                     
                     }
 
@@ -335,7 +347,8 @@ namespace POS_System
         {
 
         }
-
+        decimal credit;
+        decimal paid;
         private void txt_search_TextChanged(object sender, EventArgs e)
       {
             if (credit_load == "Hotel Credit")
@@ -363,13 +376,18 @@ namespace POS_System
                             if (dt2.Rows.Count > 0)
                             {
                                 dataGridView1.Rows[i].Cells["col_paid"].Value = dt2.Rows[0][0].ToString();
-                            }
-                            if (dt3.Rows.Count > 0)
-                            {
-                                dataGridView1.Rows[i].Cells["col_remaining"].Value = dt3.Rows[0]["credit_left"].ToString();
+                                if (dt2.Rows[0][0].ToString() != "")
+                                {
+                                    paid = Convert.ToDecimal(dt2.Rows[0][0].ToString());
+                                }
+
                             }
                             dataGridView1.Rows[i].Cells["col_credit_amount"].Value = dt.Rows[i]["credit_amount"].ToString();
-
+                            credit = Convert.ToDecimal(dt.Rows[i]["credit_amount"].ToString());
+                            if (dt3.Rows.Count > 0)
+                            {
+                                dataGridView1.Rows[i].Cells["col_remaining"].Value = credit-paid;
+                            }
                         }
                     }
                 }
@@ -399,12 +417,18 @@ namespace POS_System
                             if (dt2.Rows.Count > 0)
                             {
                                 dataGridView1.Rows[i].Cells["col_paid"].Value = dt2.Rows[0][0].ToString();
-                            }
-                            if (dt3.Rows.Count > 0)
-                            {
-                                dataGridView1.Rows[i].Cells["col_remaining"].Value = dt3.Rows[0]["credit_left"].ToString();
+                                if (dt2.Rows[0][0].ToString() != "")
+                                {
+                                    paid = Convert.ToDecimal(dt2.Rows[0][0].ToString());
+                                }
                             }
                             dataGridView1.Rows[i].Cells["col_credit_amount"].Value = dt.Rows[i]["credit_amount"].ToString();
+                            credit = Convert.ToDecimal(dt.Rows[i]["credit_amount"].ToString());
+                            if (dt3.Rows.Count > 0)
+                            {
+                                dataGridView1.Rows[i].Cells["col_remaining"].Value = credit-paid;
+                            }
+                           
 
                         }
                     }

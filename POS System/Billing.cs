@@ -91,11 +91,14 @@ namespace POS_System
         string ird_username;
         string ird_password;
         string loyalty_type;
+        int customer_details;
         private void Billing_Load(object sender, EventArgs e)
         {
 
             //chk_fone_pay.Hide();
             groupBox2.Show();
+            label15.Show();
+            txtcardamount.Show();
             QuotationAccess = second_user_interface.QuotationAccess;
             QuotationName = second_user_interface.QuotationName;
             Abbreviatedtax = cd.CheckabbreviatedTaxAmount();
@@ -195,9 +198,17 @@ namespace POS_System
                 datagridviewload(dtm);
             }
             bill();
-            panel3.Show();           
-            CUstomer_name();
-            CUstomer_number();
+            panel3.Show();
+            customer_details = Customer_Management.AllCusomterList.customer_details;
+            if (customer_details > 0)
+            {
+                cbo_customer_name.SelectedValue = customer_details;
+            }
+            else
+            {
+                CUstomer_name();
+                CUstomer_number();
+            }
             dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.ColumnHeadersHeight = 60;
             txtcashamount.Focus();
@@ -857,8 +868,7 @@ namespace POS_System
                     {
                         if (cbo_customer_name.SelectedIndex > 0 && cbo_customer_name.Text != "")
                         {
-
-
+                            
                             printer_checker();
                             save_only_trasaction = true;
                         }
@@ -878,6 +888,19 @@ namespace POS_System
                         else
                         {
                             MessageBox.Show("Transaction Cannot Be Processed With Out Cash Or Card Amount", "Transaction Fail", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                    }
+                    else 
+                    if (chk_cash_credit.Checked)
+                    {
+                        if (cbo_customer_name.SelectedIndex > 0 && cbo_customer_name.Text != "")
+                        {
+                            printer_checker();
+                            save_only_trasaction = true;
+                        }
+                        else
+                        {
+                            MessageBox.Show("Select Customers While Billing in Credit.", "Customer Empty", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                     }
                     if (save_only_trasaction == true)
@@ -912,6 +935,9 @@ namespace POS_System
         BLLComplementry blcomp = new BLLComplementry();
         BLLKitchenOrderInfo blkoi = new BLLKitchenOrderInfo();
         Ingredient im = new Ingredient();
+        BLL_credit_paid blcp = new BLL_credit_paid();
+        string x_report;
+     
         public void billing_save_with_multi()
         {
             //try
@@ -920,6 +946,7 @@ namespace POS_System
             {
                 IRD();
                 billVoid();
+                x_report = VoidBill.x_report;
                 if (multi_billing_check == true)
                 {
                     int loop_id = 0;
@@ -935,12 +962,14 @@ namespace POS_System
                         string complementru_status = dr.Cells["cal_comp_status"].Value.ToString();
                         string service_provider = dr.Cells["cal_service_provider"].Value.ToString();
                         int order_id = Convert.ToInt32(dr.Cells["cal_order_id"].Value.ToString());
-                       
-                        int b = blresll.insertintosalesbook(Convert.ToInt32(txtnewbillno.Text), date, txtcashier.Text, category_name1, lbltable.Text, cbo_customer_name.Text, txtpan_no.Text, item, quantity, cost, total, payment_mode, kot_type, Convert.ToDecimal(txtsubtotal.Text), Convert.ToDecimal(discount_amount), Convert.ToDecimal(txtcashamount.Text), Convert.ToDecimal(txtcardamount.Text), Convert.ToDecimal(txtgrandtotal.Text), sales_type, txtpan_no.Text, "X", Convert.ToDecimal(lbl_service_charge.Text), subtotal_with_services, Convert.ToDecimal(lbl_tax.Text), fiscal_year, service_provider, date, customer_id, loop_id, date.ToString("HH:mm tt"), sync_with_ird, complementryInvoiceNo, complementru_status, void_status.ToString(), Convert.ToInt32(void_bill_no), "", order_id);
+                        if (x_report != "NULL")
+                        {
+                            x_report = "X";
+                        }
+                        int b = blresll.insertintosalesbook(Convert.ToInt32(txtnewbillno.Text), date, txtcashier.Text, category_name1, lbltable.Text, cbo_customer_name.Text, txtpan_no.Text, item, quantity, cost, total, payment_mode, kot_type, Convert.ToDecimal(txtsubtotal.Text), Convert.ToDecimal(discount_amount), Convert.ToDecimal(txtcashamount.Text), Convert.ToDecimal(txtcardamount.Text), Convert.ToDecimal(txtgrandtotal.Text), sales_type, txtpan_no.Text, x_report, Convert.ToDecimal(lbl_service_charge.Text), subtotal_with_services, Convert.ToDecimal(lbl_tax.Text), fiscal_year, service_provider, date, customer_id, loop_id, date.ToString("HH:mm tt"), sync_with_ird, complementryInvoiceNo, complementru_status, void_status.ToString(), Convert.ToInt32(void_bill_no), "", order_id, Convert.ToDecimal(lbl_credit.Text));
+                        //void_status = false;
                         if (b > 0)
                         {
-                          
-                          
                             loop_id++;
                             DataTable dt = blord.getallbyitem_name(item);
                             if (dt.Rows.Count > 0)
@@ -950,7 +979,7 @@ namespace POS_System
                             save_data = true;
 
                         }
-
+                        x_report = "X";
                     }
                 }
 
@@ -972,10 +1001,16 @@ namespace POS_System
                         //{
                         //    sales_type = "CS";
                         //}
-                        int b = blresll.insertintosalesbook(Convert.ToInt32(txtnewbillno.Text), date, txtcashier.Text, category_name1, lbltable.Text, cbo_customer_name.Text, txtpan_no.Text, item, quantity, cost, total, payment_mode, kot_type, Convert.ToDecimal(txtsubtotal.Text), Convert.ToDecimal(discount_amount), Convert.ToDecimal(txtcashamount.Text), Convert.ToDecimal(txtcardamount.Text), Convert.ToDecimal(txtgrandtotal.Text), sales_type, txtpan_no.Text, "X", Convert.ToDecimal(lbl_service_charge.Text), subtotal_with_services, Convert.ToDecimal(lbl_tax.Text), fiscal_year, service_provider, date, customer_id, a, date.ToString("HH:mm tt"), sync_with_ird, complementryInvoiceNo, complementru_status, void_status.ToString(), Convert.ToInt32(void_bill_no), "", order_id);
+                        if (x_report != "NULL")
+                        {
+                            x_report = "X";
+                        }
+                        int b = blresll.insertintosalesbook(Convert.ToInt32(txtnewbillno.Text), date, txtcashier.Text, category_name1, lbltable.Text, cbo_customer_name.Text, txtpan_no.Text, item, quantity, cost, total, payment_mode, kot_type, Convert.ToDecimal(txtsubtotal.Text), Convert.ToDecimal(discount_amount), Convert.ToDecimal(txtcashamount.Text), Convert.ToDecimal(txtcardamount.Text), Convert.ToDecimal(txtgrandtotal.Text), sales_type, txtpan_no.Text, x_report, Convert.ToDecimal(lbl_service_charge.Text), subtotal_with_services, Convert.ToDecimal(lbl_tax.Text), fiscal_year, service_provider, date, customer_id, a, date.ToString("HH:mm tt"), sync_with_ird, complementryInvoiceNo, complementru_status, void_status.ToString(), Convert.ToInt32(void_bill_no), "", order_id, Convert.ToDecimal(lbl_credit.Text));
+
+                        //  void_status = false;
                         if (b > 0)
                         {
-                           
+
                             save_data = true;
                             DataTable dt = blord.getallbyitem_name(item);
                             if (dt.Rows.Count > 0)
@@ -984,8 +1019,19 @@ namespace POS_System
                             }
                         }
                     }
+                    if (payment_mode == "Cash/Credit")
+                    {
+                        if (Convert.ToDecimal(txtcashamount.Text) >= Convert.ToDecimal(txtgrandtotal.Text))
+                        {
+                            MessageBox.Show("Change Payment Mode Alert !!", "Payment Mode Not Correctly Applied Alert !!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            int creditrecord = blc_credit.insert_into_credit(Convert.ToInt32(cbo_customer_name.SelectedValue), Convert.ToInt32(txtnewbillno.Text), date, Convert.ToDecimal(txtgrandtotal.Text), Login.sendtext, "RC");
+                            int i = blcp.Insert_credit_paid(Convert.ToInt32(customer_id), Convert.ToDecimal(txtgrandtotal.Text), Convert.ToDecimal(txtcashamount.Text), Convert.ToDecimal(lbl_credit.Text), txtcashier.Text, Convert.ToDateTime(date.ToShortDateString()), payment_mode, " ", "RP");
+                        }
+                    }
                 }
-
             }
             if (save_data == true)
             {
@@ -1021,10 +1067,12 @@ namespace POS_System
         {
 
             txtcardamount.Text = "0.00";
+            lbl_credit.Text = "0.00";
             txtcashamount.Text = "0.00";
             lbldiscount.Text = "0.00";
             lblrecivedamount.Text = "0.00";
             lblcardamount.Text = "0.00";
+            lbl_credit.Text = "0.00";
             txtremainingamount.Text = "0.00";
             lblchangeamout.Text = "0.00";
             txtgrandtotal.Text = "0.00";
@@ -1817,6 +1865,13 @@ namespace POS_System
                 pn80.payment_mode = "Credit";
                 bA4.payment_mode = "Credit";
             }
+            else if (chk_cash_credit.Checked)
+            {
+                blp_80.payment_mode = "Cash/Credit";
+                blp_76.payment_mode = "Cash/Credit";
+                pn80.payment_mode = "Cash/Credit";
+                bA4.payment_mode = "Cash/Credit";
+            }
             else if (chk_fone_pay.Checked)
             {
                 blp_80.payment_mode = "FonePay";
@@ -1914,6 +1969,7 @@ namespace POS_System
                         txtremainingamount.Text = Math.Abs(Convert.ToDecimal(txtcashamount.Text) - Convert.ToDecimal(txtgrandtotal.Text)).ToString();
                         txtcardamount.Text = "0.00";
                         lblcardamount.Text = "0.00";
+                        lbl_credit.Text = "0.00";
                         lblchangeamout.Text = txtremainingamount.Text;
 
                     }
@@ -1923,6 +1979,29 @@ namespace POS_System
                         txtremainingamount.Text = "0.00";
                         lblchangeamout.Text = "0.00";
                         lblcardamount.Text = txtcardamount.Text;
+                    }
+
+                }
+                else if (chk_cash_credit.Checked)
+                {
+                    decimal grandtotal = Convert.ToDecimal(txtgrandtotal.Text);
+                    decimal cashamount = Convert.ToDecimal(txtcashamount.Text);
+                    if (grandtotal < cashamount)
+                    {
+                        txtremainingamount.Text = Math.Abs(Convert.ToDecimal(txtcashamount.Text) - Convert.ToDecimal(txtgrandtotal.Text)).ToString();
+                        txtcardamount.Text = "0.00";
+                        lblcardamount.Text = "0.00";
+                        lbl_credit.Text = "0.00";
+                        lblchangeamout.Text = txtremainingamount.Text;
+                   
+
+                    }
+                    else
+                    {
+                        lbl_credit.Text = Math.Abs(Convert.ToDecimal(txtcashamount.Text) - Convert.ToDecimal(txtgrandtotal.Text)).ToString();
+                        txtremainingamount.Text = "0.00";
+                        lblchangeamout.Text = "0.00";
+                      
                     }
 
                 }
@@ -1941,20 +2020,20 @@ namespace POS_System
             {
                 txtcardamount.Text = "0.00";
                 lblcardamount.Text = "0.00";
+                lbl_credit.Text = "0.00";
 
             }
             else if (txtcardamount.Text == "")
             {
                 txtcardamount.Text = "0.00";
                 lblcardamount.Text = "0.00";
+                lbl_credit.Text = "0.00";
 
             }
 
         }
-
+   
         public bool user_access_check;
-
-
         private void txtcashamount_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
@@ -2419,6 +2498,7 @@ namespace POS_System
         BLLTakeAway bltk = new BLLTakeAway();
         private void btnprintandsave_Click_1(object sender, EventArgs e)
         {
+            
             if (txtpan_no.Text.Length > 0 && txtpan_no.Text.Length != 9 && label13.Text != "Club Card No")
             {
                 MessageBox.Show("Incorrect Pan No", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -2474,12 +2554,15 @@ namespace POS_System
                         btn_bill_void.Text = "Void";
                         spds.CustomerDisplayVFD(txtgrandtotal.Text, 0x30);
                         txtcardamount.ReadOnly = false;
+                        
                     }
                 }
+                Customer_Management.AllCusomterList.customer_details = 0;
             }
         }
         BLL_Fiscal blfsc = new BLL_Fiscal();
         DateTime date = Convert.ToDateTime(DateTime.Now.ToString());
+
         bool save_only_trasaction = false;
 
         private void btnsave_only_Click(object sender, EventArgs e)
@@ -2498,7 +2581,7 @@ namespace POS_System
                     MessageBox.Show("Fiscal year has been ended or set fiscal year.", "Fiscal Year", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
-                else if (txtcardamount.Text != "0.00" || txtcashamount.Text != "0.00" || chkcredit.Checked)
+                else 
                 {
                     DataTable dtCheckBill = blresll.CheckBillNo(Convert.ToInt32(txtnewbillno.Text), Convert.ToDateTime(DateTime.Now.ToShortDateString()));
                     if (dtCheckBill.Rows.Count > 0)
@@ -2562,6 +2645,19 @@ namespace POS_System
 
                             save_only_trasaction = true;
                         }
+                        else if (chk_cash_credit.Checked)
+                        {
+                            if (cbo_customer_name.SelectedIndex > 0)
+                            {
+                                txtcardamount.Text = "0.00";
+                                save_only_trasaction = true;
+                            }
+                            else
+                            {
+                                MessageBox.Show("Please Choose Your Customer For Credit Transaction", "Transaction Fail", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            }
+
+                        }
                         else if (chk_cheque.Checked)
                         {
 
@@ -2593,6 +2689,7 @@ namespace POS_System
                                 lbldiscount.Text = "0.00";
                                 lblrecivedamount.Text = "0.00";
                                 lblcardamount.Text = "0.00";
+                                lbl_credit.Text = "0.00";
                                 txtremainingamount.Text = "0.00";
                                 lblchangeamout.Text = "0.00";
                                 AdminAccess.discount_access_value = false;
@@ -2822,6 +2919,7 @@ namespace POS_System
                 txtcashamount.Text = "0.00";
                 lblrecivedamount.Text = "0.00";
                 lblcardamount.Text = "0.00";
+                lbl_credit.Text = "0.00";
                 txtremainingamount.Text = "0.00";
                 lblchangeamout.Text = "0.00";
                 txtcardamount.Text = txtgrandtotal.Text;
@@ -2839,6 +2937,7 @@ namespace POS_System
                 txtcashamount.Text = "0.00";
                 lblrecivedamount.Text = "0.00";
                 lblcardamount.Text = "0.00";
+                lbl_credit.Text = "0.00";
                 txtremainingamount.Text = "0.00";
                 lblchangeamout.Text = "0.00";
                 payment_mode = "Cash";
@@ -2858,6 +2957,7 @@ namespace POS_System
                 txtcashamount.Text = "0.00";
                 lblrecivedamount.Text = "0.00";
                 lblcardamount.Text = "0.00";
+                lbl_credit.Text = "0.00";
                 txtremainingamount.Text = "0.00";
                 lblchangeamout.Text = "0.00";
                 payment_mode = "Cash/Card";
@@ -2875,6 +2975,7 @@ namespace POS_System
         {
             if (chkcredit.Checked)
             {
+                lbl_credit.Text = txtgrandtotal.Text;
                 payment_mode = "Credit";
                 tax_calcu();
             }
@@ -2885,7 +2986,7 @@ namespace POS_System
         {
             panel3.Show();
             txtcardamount.Enabled = false;
-
+            lbl_credit.Text = txtgrandtotal.Text;
             label14.Text = "Credit Amount";
 
         }
@@ -3410,7 +3511,7 @@ namespace POS_System
                         dataGridView1.Rows[abc].Cells["cal_kot_type"].Value = VoidModel.kot_type[i];
                         dataGridView1.Rows[abc].Cells["cal_comp_status"].Value = "";
                         dataGridView1.Rows[abc].Cells["cal_service_provider"].Value = "";
-                        dataGridView1.Rows[abc].Cells["cal_sales_type"].Value = "";
+                        dataGridView1.Rows[abc].Cells["cal_sales_type"].Value = "" ;
                         dataGridView1.Rows[abc].Cells["cal_order_id"].Value = "0";
                         dataGridView1.Rows[abc].Cells["cal_kot_id"].Value = "0";
 
@@ -3466,6 +3567,7 @@ namespace POS_System
                         }
                     }
                 }
+              
             }
 
         }
@@ -3809,6 +3911,7 @@ namespace POS_System
                     txtcashamount.Text = "0.00";
                     lblrecivedamount.Text = "0.00";
                     lblcardamount.Text = "0.00";
+                    lbl_credit.Text = "0.00";
                     txtremainingamount.Text = "0.00";
                     lblchangeamout.Text = "0.00";
                     txtcardamount.Text = txtgrandtotal.Text;
@@ -3959,6 +4062,7 @@ namespace POS_System
                 txtcashamount.Text = "0.00";
                 lblrecivedamount.Text = "0.00";
                 lblcardamount.Text = "0.00";
+                lbl_credit.Text = "0.00";
                 txtremainingamount.Text = "0.00";
                 lblchangeamout.Text = "0.00";
                 payment_mode = "Cheque";
@@ -3998,6 +4102,32 @@ namespace POS_System
         private void txtpan_no_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void chk_cash_credit_CheckedChanged(object sender, EventArgs e)
+        {
+            txtcardamount.Text = "0.00";
+            txtcashamount.Text = "0.00";
+            lblrecivedamount.Text = "0.00";
+            lblcardamount.Text = "0.00";
+            lbl_credit.Text = "0.00";
+            txtremainingamount.Text = "0.00";
+            lblchangeamout.Text = "0.00";
+            payment_mode = "Cash/Credit";
+            tax_calcu();
+            txtcashamount.ReadOnly = false;
+            btn_exact.Visible = true;
+            txtcashamount.Visible = true;
+            txtcardamount.ReadOnly = true;
+        }
+
+        private void chk_cash_credit_Click(object sender, EventArgs e)
+        {
+            txtcardamount.Enabled = true;
+            chkcash.Checked = false;
+            payment_mode = "Cash/Credit";
+            // btn_card_balance.Visible = false;
+            label14.Text = "Change Amount";
         }
     }
 }

@@ -652,6 +652,7 @@ namespace POS_System
                                 btn_firebrick.Image = null;
                                 btn_maroon.Image = null;
                                 btn_update.Enabled = false;
+
                             }
                         }
                     }

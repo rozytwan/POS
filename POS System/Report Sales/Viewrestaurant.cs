@@ -431,6 +431,7 @@ namespace POS_System
                 mylist.Add("Cheque");
                 mylist.Add("Online");
                 mylist.Add("Credit");
+                mylist.Add("FonePay");
                 txt_searchText.DataSource = mylist;
                 buttonX1.Visible = true;
                 colunm_name = "payment_mode";

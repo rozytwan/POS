@@ -18,8 +18,9 @@ namespace POS_System.Void
             InitializeComponent();
         }
         BLLRestSell brs = new BLLRestSell();
+
         public string fiscal_year;
-             
+        public static string x_report;   
         private void btn_ok_Click(object sender, EventArgs e)
         {
             if (txt_void_bill_no.Text.Length > 0 && txt_void_bill_no.Text != "")
@@ -32,13 +33,22 @@ namespace POS_System.Void
                 }
                 else
                  {
+                    DataTable dt_check = brs.get_bill_by_xreport(txt_void_bill_no.Text);
+                    if (dt_check.Rows.Count <= 0)
+                    {
+                        x_report = "NULL";
+                    }
+                    else
+                    {
+                        x_report = "X";
+                    }
                     DataTable dt = brs.get_all_value_by_bill_no(txt_void_bill_no.Text, fiscal_year);
                     if (dt.Rows.Count > 0)
                     {
                         this.DialogResult = DialogResult.OK;
                         this.Hide();
                     }
-                    else
+                   else
                     {
                         MessageBox.Show("Invalid Bill No please check your bill no.", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
