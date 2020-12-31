@@ -986,6 +986,28 @@ namespace POS_System
                         MessageBox.Show("Printing setting does not set.", "Printing Size is Zero", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
+                else if (dt_prt.Rows[0]["bill_printer"].ToString() == "A5")
+                {
+                    if (dt_p.Rows.Count > 0)
+                    {
+                        blp.printer_name = "Billing";
+                        bA4.print_again = true;
+                        bA4.Headerstatus = true;
+                        for (int i = 0; i < Convert.ToInt32(dt_p.Rows[0]["B1"]); i++)
+                        {
+                            if (i > 0)
+                            {
+                                blp.print_again = true;
+                            }
+                            bill_printing_for_A4();
+
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Printing setting does not set.", "Printing Size is Zero", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
                 else
                 {
                     if (dt_p.Rows.Count > 0)
@@ -1011,6 +1033,7 @@ namespace POS_System
             }
         }
         HotelBillingA4 bA4 = new HotelBillingA4();
+        HotelBillingA5 bA5= new HotelBillingA5();
         public void bill_printing_for_A4()
         {
             bA4.bill_no = txtnewbillno.Text;
@@ -1068,6 +1091,75 @@ namespace POS_System
                     }
                     bA4.printtobill();
                     save_after_print = bA4.save_after_print;
+                }
+                else
+                {
+                    MessageBox.Show("Data Row Select", "Please Select Data Row!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Error 404", "Transaction Failed! Please Do It Again.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+        }
+        public void bill_printing_for_A5()
+        {
+            bA5.bill_no = txtnewbillno.Text;
+            bA5.cashier = txtcashier.Text;
+            bA5.cash_amount = Convert.ToDecimal(txtcashamount.Text).ToString("#.##");
+            bA5.discount = Convert.ToDecimal(lbldiscount.Text).ToString("#.##");
+            bA5.grand_total = Convert.ToDecimal(txtgrandtotal.Text).ToString("#.##");
+            bA5.sub_total = Convert.ToDecimal(txtsubtotal.Text).ToString("#.##");
+            bA5.table_no = lbl_room.Text;
+            bA5.customer_PAN_no = txtpan_no.Text;
+            bA5.customer_name = cbo_customer_name.Text;
+            //  bA4.customer_address = customer_address;
+            bA5.customer_phone_no = cbo_customer_no.Text;
+            bA5.discount_percent = discount_percent;
+            bA5.tax_amount = tax_amount.ToString("#.##");
+            bA5.service_charge = service_charge.ToString("#.##");
+            bA5.fiscal_year = fiscal_year;
+            bA5.area_name = area_name;
+            bA5.card_amount = Convert.ToDecimal(txtcardamount.Text).ToString("#.##");
+            // bA4.customer_card_balance = (real_blc - Convert.ToDecimal(txtgrandtotal.Text)).ToString("#.##");
+            if (txtremainingamount.Text != "")
+            {
+                bA5.change_amount = Convert.ToDecimal(txtremainingamount.Text).ToString("#.##");
+            }
+            payment_modeCheck();
+            bA5.billing_date = date;
+            bA5.taxable_amount = subtotal_with_services.ToString("#.##");
+            bA5.discount_sub_total = Convert.ToDecimal(lblsub_total.Text).ToString("#.##");
+            if (multi_billing_check == false)
+            {
+                for (int i = 0; i < dataGridView1.Rows.Count; i++)
+                {
+                    bA5.datagridview_item_name.Add(dataGridView1.Rows[i].Cells["cal_item_name"].Value.ToString());
+                    bA5.datagridview_item_price.Add(dataGridView1.Rows[i].Cells["cal_cost"].Value.ToString());
+                    bA5.datagridview_total.Add(dataGridView1.Rows[i].Cells["cal_total"].Value.ToString());
+                    bA5.datagridview_quantity.Add(dataGridView1.Rows[i].Cells["cal_qty"].Value.ToString());
+                    //bA4.datagridview_complementary.Add(dataGridView1.Rows[i].Cells["cal_comp_status"].Value.ToString());
+                    //bA4.kot_no.Add(dataGridView1.Rows[i].Cells["cal_kot_id"].Value.ToString());
+                }
+                bA5.printtobill();
+                save_after_print = bA5.save_after_print;
+            }
+            else if (multi_billing_check == true)
+            {
+                if (dataGridView1.SelectedRows.Count > 0)
+                {
+                    foreach (DataGridViewRow dr in dataGridView1.SelectedRows)
+                    {
+                        bA5.datagridview_item_name.Add(dr.Cells["cal_item_name"].Value.ToString());
+                        bA5.datagridview_item_price.Add(dr.Cells["cal_cost"].Value.ToString());
+                        bA5.datagridview_total.Add(dr.Cells["cal_total"].Value.ToString());
+                        bA5.datagridview_quantity.Add(dr.Cells["cal_qty"].Value.ToString());
+                        //bA4.datagridview_complementary.Add(dr.Cells["cal_comp_status"].Value.ToString());
+                        //bA4.kot_no.Add(dr.Cells["cal_kot_id"].Value.ToString());
+                    }
+                    bA5.printtobill();
+                    save_after_print = bA5.save_after_print;
                 }
                 else
                 {

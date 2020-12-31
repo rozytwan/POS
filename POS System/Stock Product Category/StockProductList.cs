@@ -22,7 +22,7 @@ namespace POS_System
         private void tbl_stock_product_list_Load(object sender, EventArgs e)
         {
             LoadDataGridView();
-
+       
         }
         public void LoadDataGridView()
         {
@@ -158,7 +158,7 @@ namespace POS_System
             }
 
         }
-
+    
         private void Addproduct_Click(object sender, EventArgs e)
         {
             Control ctls = this.Parent;

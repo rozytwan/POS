@@ -275,6 +275,10 @@ namespace POS_System
                     {
                         chk_cover.Checked = true;
                     }
+                    if (code == "CA")
+                    {
+                        chk_attendence.Checked = true;
+                    }
                     if (code == "CS")
                     {
                         chk_customer_settlement.Checked = true;
@@ -520,6 +524,25 @@ namespace POS_System
                     else
                     {
                         int update = bldd.UpdateDynamicFalse(lbl_checkdetail.Text);
+                    }
+                }
+                else if (panel_attendence.Visible == true)
+                {
+                    if (chk_attendence.Checked == true)
+                    {
+                        dt = bld.GetDynamic(lbl_attendence.Text);
+                        if (dt.Rows.Count == 0)
+                        {
+                            int insert = bldd.InsertDynamic("Customer Attendence Access", "Access", "Enable", lbl_attendence.Text);
+                        }
+                        else
+                        {
+                            int update = bldd.UpdateDynamic("Enable", lbl_attendence.Text);
+                        }
+                    }
+                    else
+                    {
+                        int update = bldd.UpdateDynamicFalse(lbl_attendence.Text);
                     }
                 }
                 else if (panel_grandtotal.Visible == true)
@@ -1580,6 +1603,10 @@ namespace POS_System
                         pnl_taxfrom.Show();
                     }
                     break;
+                case "Customer Attendence":
+                    HidePanel();
+                    panel_attendence.Show();
+                    break;
                 case "FonePay":
                     SuperAdminAccess su = new SuperAdminAccess();
                     su.ShowDialog();
@@ -1645,6 +1672,7 @@ namespace POS_System
             panel_footerbilling.Hide();
             panel_checkout_rename.Hide();
             panel_fix_grouping.Hide();
+            panel_attendence.Hide();
            
         }
       public string imagepath;

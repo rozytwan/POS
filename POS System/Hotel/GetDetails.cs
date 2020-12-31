@@ -61,9 +61,8 @@ namespace POS_System
                 cmb_package.DataSource = dt;
                 cmb_package.DisplayMember = "package_name";
                 cmb_package.ValueMember = "package_id";
-            }
-
-        }
+             }
+         }
         public void LoadPendingBooking()
         {
             //DataTable dt = hotel.GetCustomerName();
@@ -121,9 +120,14 @@ namespace POS_System
                     {
                         if (cmb_package.Text=="" || cmb_package.SelectedIndex <= 0)
                         {
-                            cmb_package.Text = "Choose Package";
+                            int insert_booking = hotel.Insert_Booking(customer_id, Convert.ToDateTime(today), Convert.ToDateTime(today), cmb_room_type.Text, Convert.ToInt32(txt_guest.Text), Convert.ToDateTime(dtp_checkout.Text), txt_roomno.Text, room_id, 0);
+
                         }
-                        int insert_booking = hotel.Insert_Booking(customer_id, Convert.ToDateTime(today), Convert.ToDateTime(dtp_check_in.Text), cmb_room_type.Text, Convert.ToInt32(txt_guest.Text), Convert.ToDateTime(dtp_checkout.Text), txt_roomno.Text, room_id,cmb_package.SelectedIndex);
+                        else
+                        {
+                            int insert_booking = hotel.Insert_Booking(customer_id, Convert.ToDateTime(today), Convert.ToDateTime(today), cmb_room_type.Text, Convert.ToInt32(txt_guest.Text), Convert.ToDateTime(dtp_checkout.Text), txt_roomno.Text, room_id, cmb_package.SelectedIndex);
+                        }
+                      //  int insert_booking = hotel.Insert_Booking(customer_id, Convert.ToDateTime(today), Convert.ToDateTime(dtp_check_in.Text), cmb_room_type.Text, Convert.ToInt32(txt_guest.Text), Convert.ToDateTime(dtp_checkout.Text), txt_roomno.Text, room_id,cmb_package.SelectedIndex);
                         int delete = pend.CancelationCustomer(Convert.ToInt32(customer_id));
                         MessageBox.Show("Your hotel have been Reserved", "Hotel Reserved Alert !!");
                     }
@@ -143,9 +147,12 @@ namespace POS_System
                     {
                         if (cmb_package.Text=="Choose Package" || cmb_package.SelectedIndex<=0)
                         {
-                            cmb_package.SelectedValue = 0;
-                        }
-                        int insert_booking = hotel.Insert_Booking(customer_id, Convert.ToDateTime(today), Convert.ToDateTime(today), cmb_room_type.Text, Convert.ToInt32(txt_guest.Text), Convert.ToDateTime(dtp_checkout.Text), txt_roomno.Text, room_id,Convert.ToInt32(cmb_package.SelectedValue));
+                            int insert_booking = hotel.Insert_Booking(customer_id, Convert.ToDateTime(today), Convert.ToDateTime(today), cmb_room_type.Text, Convert.ToInt32(txt_guest.Text), Convert.ToDateTime(dtp_checkout.Text), txt_roomno.Text, room_id,0);
+                         }
+                        else
+                        {
+                            int insert_booking = hotel.Insert_Booking(customer_id, Convert.ToDateTime(today), Convert.ToDateTime(today), cmb_room_type.Text, Convert.ToInt32(txt_guest.Text), Convert.ToDateTime(dtp_checkout.Text), txt_roomno.Text, room_id, cmb_package.SelectedIndex);
+                         }
                         // int updateroom = category.UpdateRoombyid(Convert.ToInt32(room_id));
                         DataTable dt = pend.GetpendingDetails(pending_booking_id);
                         if (Convert.ToInt32(dt.Rows[0]["no_of_room"].ToString()) > 1)

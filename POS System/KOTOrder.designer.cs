@@ -32,6 +32,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KOTOrder));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel_note = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btn_modifier = new System.Windows.Forms.Button();
+            this.btn_save = new System.Windows.Forms.Button();
+            this.txt_rich_note = new System.Windows.Forms.RichTextBox();
             this.btn_service_provider = new DevComponents.DotNetBar.ButtonX();
             this.btn_item_transfer = new DevComponents.DotNetBar.ButtonX();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -86,6 +92,7 @@
             this.tbl_count = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.panel_note.SuspendLayout();
             this.panel5.SuspendLayout();
             this.total_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -104,6 +111,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.panel_note);
             this.panel1.Controls.Add(this.btn_service_provider);
             this.panel1.Controls.Add(this.btn_item_transfer);
             this.panel1.Controls.Add(this.panel5);
@@ -118,6 +126,83 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1026, 717);
             this.panel1.TabIndex = 0;
+            // 
+            // panel_note
+            // 
+            this.panel_note.BackColor = System.Drawing.Color.White;
+            this.panel_note.Controls.Add(this.button1);
+            this.panel_note.Controls.Add(this.label2);
+            this.panel_note.Controls.Add(this.btn_modifier);
+            this.panel_note.Controls.Add(this.btn_save);
+            this.panel_note.Controls.Add(this.txt_rich_note);
+            this.panel_note.Location = new System.Drawing.Point(613, 262);
+            this.panel_note.Name = "panel_note";
+            this.panel_note.Size = new System.Drawing.Size(231, 151);
+            this.panel_note.TabIndex = 0;
+            this.panel_note.Visible = false;
+            this.panel_note.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel_note_MouseMove);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(205, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(23, 24);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(15, 4);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(43, 20);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Note";
+            // 
+            // btn_modifier
+            // 
+            this.btn_modifier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(81)))), ((int)(((byte)(126)))));
+            this.btn_modifier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_modifier.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_modifier.ForeColor = System.Drawing.Color.White;
+            this.btn_modifier.Location = new System.Drawing.Point(11, 110);
+            this.btn_modifier.Name = "btn_modifier";
+            this.btn_modifier.Size = new System.Drawing.Size(93, 36);
+            this.btn_modifier.TabIndex = 7;
+            this.btn_modifier.Text = "Modifier";
+            this.btn_modifier.UseVisualStyleBackColor = false;
+            this.btn_modifier.Visible = false;
+            this.btn_modifier.Click += new System.EventHandler(this.btn_modifier_Click);
+            // 
+            // btn_save
+            // 
+            this.btn_save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(81)))), ((int)(((byte)(126)))));
+            this.btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_save.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_save.ForeColor = System.Drawing.Color.White;
+            this.btn_save.Location = new System.Drawing.Point(110, 112);
+            this.btn_save.Name = "btn_save";
+            this.btn_save.Size = new System.Drawing.Size(93, 34);
+            this.btn_save.TabIndex = 6;
+            this.btn_save.Text = "Ok";
+            this.btn_save.UseVisualStyleBackColor = false;
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
+            // 
+            // txt_rich_note
+            // 
+            this.txt_rich_note.Location = new System.Drawing.Point(3, 27);
+            this.txt_rich_note.Name = "txt_rich_note";
+            this.txt_rich_note.Size = new System.Drawing.Size(223, 77);
+            this.txt_rich_note.TabIndex = 5;
+            this.txt_rich_note.Text = "";
+            this.txt_rich_note.TextChanged += new System.EventHandler(this.txt_rich_note_TextChanged);
             // 
             // btn_service_provider
             // 
@@ -334,7 +419,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.Location = new System.Drawing.Point(613, 152);
+            this.dataGridView1.Location = new System.Drawing.Point(611, 153);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.dataGridView1.RowTemplate.Height = 35;
@@ -682,7 +767,7 @@
             // 
             this.label_table_no.AutoSize = true;
             this.label_table_no.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_table_no.Location = new System.Drawing.Point(173, 9);
+            this.label_table_no.Location = new System.Drawing.Point(173, 13);
             this.label_table_no.Name = "label_table_no";
             this.label_table_no.Size = new System.Drawing.Size(102, 37);
             this.label_table_no.TabIndex = 265;
@@ -755,6 +840,8 @@
             this.Load += new System.EventHandler(this.KOTOrder_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel_note.ResumeLayout(false);
+            this.panel_note.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.total_panel.ResumeLayout(false);
             this.total_panel.PerformLayout();
@@ -833,5 +920,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn cal_order_id;
         private System.Windows.Forms.DataGridViewTextBoxColumn cal_category_name;
         private System.Windows.Forms.DataGridViewTextBoxColumn cal_item_name;
+        private System.Windows.Forms.Panel panel_note;
+        public System.Windows.Forms.Button btn_modifier;
+        public System.Windows.Forms.Button btn_save;
+        private System.Windows.Forms.RichTextBox txt_rich_note;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
     }
 }

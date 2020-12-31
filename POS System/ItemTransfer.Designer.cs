@@ -42,6 +42,15 @@
             this.cal_kot_type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cal_status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.cal_item_name2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cal_qty_2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cal_cost_2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cal_total_2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cal_kot_type_2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cal_delete_status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cal_order_id_2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cal_status_2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cal_category_name2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.btn_move = new System.Windows.Forms.PictureBox();
@@ -54,15 +63,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btn_item_transfer = new DevComponents.DotNetBar.ButtonX();
             this.tbn_cancle = new DevComponents.DotNetBar.ButtonX();
-            this.cal_item_name2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cal_qty_2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cal_cost_2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cal_total_2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cal_kot_type_2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cal_delete_status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cal_order_id_2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cal_status_2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cal_category_name2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.panel3.SuspendLayout();
@@ -215,6 +215,64 @@
             this.dataGridView2.Size = new System.Drawing.Size(441, 469);
             this.dataGridView2.TabIndex = 284;
             // 
+            // cal_item_name2
+            // 
+            this.cal_item_name2.HeaderText = "Item_name";
+            this.cal_item_name2.Name = "cal_item_name2";
+            this.cal_item_name2.ReadOnly = true;
+            // 
+            // cal_qty_2
+            // 
+            this.cal_qty_2.HeaderText = "QTY";
+            this.cal_qty_2.Name = "cal_qty_2";
+            this.cal_qty_2.ReadOnly = true;
+            // 
+            // cal_cost_2
+            // 
+            this.cal_cost_2.HeaderText = "Cost";
+            this.cal_cost_2.Name = "cal_cost_2";
+            this.cal_cost_2.ReadOnly = true;
+            // 
+            // cal_total_2
+            // 
+            this.cal_total_2.HeaderText = "Total";
+            this.cal_total_2.Name = "cal_total_2";
+            this.cal_total_2.ReadOnly = true;
+            // 
+            // cal_kot_type_2
+            // 
+            this.cal_kot_type_2.HeaderText = "Kot Type";
+            this.cal_kot_type_2.Name = "cal_kot_type_2";
+            this.cal_kot_type_2.ReadOnly = true;
+            this.cal_kot_type_2.Visible = false;
+            // 
+            // cal_delete_status
+            // 
+            this.cal_delete_status.HeaderText = "deletestatus";
+            this.cal_delete_status.Name = "cal_delete_status";
+            this.cal_delete_status.ReadOnly = true;
+            // 
+            // cal_order_id_2
+            // 
+            this.cal_order_id_2.HeaderText = "Order Id";
+            this.cal_order_id_2.Name = "cal_order_id_2";
+            this.cal_order_id_2.ReadOnly = true;
+            this.cal_order_id_2.Visible = false;
+            // 
+            // cal_status_2
+            // 
+            this.cal_status_2.HeaderText = "Status";
+            this.cal_status_2.Name = "cal_status_2";
+            this.cal_status_2.ReadOnly = true;
+            this.cal_status_2.Visible = false;
+            // 
+            // cal_category_name2
+            // 
+            this.cal_category_name2.HeaderText = "Category Name";
+            this.cal_category_name2.Name = "cal_category_name2";
+            this.cal_category_name2.ReadOnly = true;
+            this.cal_category_name2.Visible = false;
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(81)))), ((int)(((byte)(126)))));
@@ -345,64 +403,6 @@
             this.tbn_cancle.TabIndex = 295;
             this.tbn_cancle.Text = "Cancel";
             this.tbn_cancle.Click += new System.EventHandler(this.tbn_cancle_Click);
-            // 
-            // cal_item_name2
-            // 
-            this.cal_item_name2.HeaderText = "Item_name";
-            this.cal_item_name2.Name = "cal_item_name2";
-            this.cal_item_name2.ReadOnly = true;
-            // 
-            // cal_qty_2
-            // 
-            this.cal_qty_2.HeaderText = "QTY";
-            this.cal_qty_2.Name = "cal_qty_2";
-            this.cal_qty_2.ReadOnly = true;
-            // 
-            // cal_cost_2
-            // 
-            this.cal_cost_2.HeaderText = "Cost";
-            this.cal_cost_2.Name = "cal_cost_2";
-            this.cal_cost_2.ReadOnly = true;
-            // 
-            // cal_total_2
-            // 
-            this.cal_total_2.HeaderText = "Total";
-            this.cal_total_2.Name = "cal_total_2";
-            this.cal_total_2.ReadOnly = true;
-            // 
-            // cal_kot_type_2
-            // 
-            this.cal_kot_type_2.HeaderText = "Kot Type";
-            this.cal_kot_type_2.Name = "cal_kot_type_2";
-            this.cal_kot_type_2.ReadOnly = true;
-            this.cal_kot_type_2.Visible = false;
-            // 
-            // cal_delete_status
-            // 
-            this.cal_delete_status.HeaderText = "deletestatus";
-            this.cal_delete_status.Name = "cal_delete_status";
-            this.cal_delete_status.ReadOnly = true;
-            // 
-            // cal_order_id_2
-            // 
-            this.cal_order_id_2.HeaderText = "Order Id";
-            this.cal_order_id_2.Name = "cal_order_id_2";
-            this.cal_order_id_2.ReadOnly = true;
-            this.cal_order_id_2.Visible = false;
-            // 
-            // cal_status_2
-            // 
-            this.cal_status_2.HeaderText = "Status";
-            this.cal_status_2.Name = "cal_status_2";
-            this.cal_status_2.ReadOnly = true;
-            this.cal_status_2.Visible = false;
-            // 
-            // cal_category_name2
-            // 
-            this.cal_category_name2.HeaderText = "Category Name";
-            this.cal_category_name2.Name = "cal_category_name2";
-            this.cal_category_name2.ReadOnly = true;
-            this.cal_category_name2.Visible = false;
             // 
             // ItemTransfer
             // 

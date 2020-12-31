@@ -36,6 +36,31 @@ namespace POS_System
             this.label23 = new System.Windows.Forms.Label();
             this.backPanel = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.calbill_no = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_fiscal_year = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.calitem = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.calquantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.caltotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.caldate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cal_sub_total = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cal_discount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cal_service_charge = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cal_tax = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cal_grand_total = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.calpaymode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.calcardamount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.calcashamt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cal_credit_amt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.calcashier_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cal_sales_type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cal_print = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.cal_date2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cal_sales_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cal_table_no = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cal_cost = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cal_category_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cal_customer_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cal_customer_pan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_previous = new DevComponents.DotNetBar.ButtonX();
             this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.btn_text_export = new DevComponents.DotNetBar.ButtonX();
@@ -70,31 +95,6 @@ namespace POS_System
             this.dtp_from = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.calbill_no = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_fiscal_year = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.calitem = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.calquantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.caltotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.caldate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cal_sub_total = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cal_discount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cal_service_charge = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cal_tax = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cal_grand_total = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.calpaymode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.calcardamount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.calcashamt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cal_credit_amt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.calcashier_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cal_sales_type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cal_print = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.cal_date2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cal_sales_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cal_table_no = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cal_cost = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cal_category_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cal_customer_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cal_customer_pan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.backPanel.SuspendLayout();
@@ -201,7 +201,7 @@ namespace POS_System
             this.cal_category_name,
             this.cal_customer_name,
             this.cal_customer_pan});
-            this.dataGridView1.Location = new System.Drawing.Point(0, 74);
+            this.dataGridView1.Location = new System.Drawing.Point(1, 74);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
@@ -209,6 +209,204 @@ namespace POS_System
             this.dataGridView1.TabIndex = 139;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // calbill_no
+            // 
+            this.calbill_no.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.calbill_no.HeaderText = "Bill No";
+            this.calbill_no.Name = "calbill_no";
+            this.calbill_no.ReadOnly = true;
+            this.calbill_no.Width = 60;
+            // 
+            // col_fiscal_year
+            // 
+            this.col_fiscal_year.HeaderText = "Fiscal Year";
+            this.col_fiscal_year.Name = "col_fiscal_year";
+            this.col_fiscal_year.ReadOnly = true;
+            this.col_fiscal_year.Visible = false;
+            // 
+            // calitem
+            // 
+            this.calitem.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.calitem.HeaderText = "Item";
+            this.calitem.Name = "calitem";
+            this.calitem.ReadOnly = true;
+            // 
+            // calquantity
+            // 
+            this.calquantity.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.calquantity.HeaderText = "Quantity";
+            this.calquantity.Name = "calquantity";
+            this.calquantity.ReadOnly = true;
+            this.calquantity.Width = 50;
+            // 
+            // caltotal
+            // 
+            this.caltotal.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.caltotal.HeaderText = "Total";
+            this.caltotal.Name = "caltotal";
+            this.caltotal.ReadOnly = true;
+            this.caltotal.Width = 73;
+            // 
+            // caldate
+            // 
+            this.caldate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.caldate.HeaderText = "Date";
+            this.caldate.Name = "caldate";
+            this.caldate.ReadOnly = true;
+            this.caldate.Width = 73;
+            // 
+            // cal_sub_total
+            // 
+            this.cal_sub_total.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.cal_sub_total.HeaderText = "Subtotal";
+            this.cal_sub_total.Name = "cal_sub_total";
+            this.cal_sub_total.ReadOnly = true;
+            this.cal_sub_total.Visible = false;
+            // 
+            // cal_discount
+            // 
+            this.cal_discount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.cal_discount.HeaderText = "Bill Discount";
+            this.cal_discount.Name = "cal_discount";
+            this.cal_discount.ReadOnly = true;
+            this.cal_discount.Width = 60;
+            // 
+            // cal_service_charge
+            // 
+            this.cal_service_charge.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.cal_service_charge.HeaderText = "Bill Service Charge";
+            this.cal_service_charge.Name = "cal_service_charge";
+            this.cal_service_charge.ReadOnly = true;
+            this.cal_service_charge.Width = 72;
+            // 
+            // cal_tax
+            // 
+            this.cal_tax.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.cal_tax.HeaderText = "Bill Tax";
+            this.cal_tax.Name = "cal_tax";
+            this.cal_tax.ReadOnly = true;
+            this.cal_tax.Width = 73;
+            // 
+            // cal_grand_total
+            // 
+            this.cal_grand_total.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.cal_grand_total.HeaderText = "Bill Grand total";
+            this.cal_grand_total.Name = "cal_grand_total";
+            this.cal_grand_total.ReadOnly = true;
+            this.cal_grand_total.Width = 73;
+            // 
+            // calpaymode
+            // 
+            this.calpaymode.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.calpaymode.HeaderText = "PayMode";
+            this.calpaymode.Name = "calpaymode";
+            this.calpaymode.ReadOnly = true;
+            this.calpaymode.Width = 72;
+            // 
+            // calcardamount
+            // 
+            this.calcardamount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.calcardamount.HeaderText = "Card Amt.";
+            this.calcardamount.Name = "calcardamount";
+            this.calcardamount.ReadOnly = true;
+            this.calcardamount.Width = 73;
+            // 
+            // calcashamt
+            // 
+            this.calcashamt.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.calcashamt.HeaderText = "Cash Amt.";
+            this.calcashamt.Name = "calcashamt";
+            this.calcashamt.ReadOnly = true;
+            this.calcashamt.Width = 73;
+            // 
+            // cal_credit_amt
+            // 
+            this.cal_credit_amt.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.cal_credit_amt.HeaderText = "Credit Amt";
+            this.cal_credit_amt.Name = "cal_credit_amt";
+            this.cal_credit_amt.ReadOnly = true;
+            this.cal_credit_amt.Width = 60;
+            // 
+            // calcashier_name
+            // 
+            this.calcashier_name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.calcashier_name.HeaderText = "Cashier";
+            this.calcashier_name.Name = "calcashier_name";
+            this.calcashier_name.ReadOnly = true;
+            this.calcashier_name.Width = 60;
+            // 
+            // cal_sales_type
+            // 
+            this.cal_sales_type.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.cal_sales_type.HeaderText = "Sales Type";
+            this.cal_sales_type.Name = "cal_sales_type";
+            this.cal_sales_type.ReadOnly = true;
+            this.cal_sales_type.Width = 72;
+            // 
+            // cal_print
+            // 
+            this.cal_print.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.cal_print.HeaderText = "Re Print";
+            this.cal_print.Name = "cal_print";
+            this.cal_print.ReadOnly = true;
+            this.cal_print.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.cal_print.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.cal_print.Text = "Re Print";
+            this.cal_print.UseColumnTextForButtonValue = true;
+            this.cal_print.Width = 73;
+            // 
+            // cal_date2
+            // 
+            this.cal_date2.HeaderText = "Date2";
+            this.cal_date2.Name = "cal_date2";
+            this.cal_date2.ReadOnly = true;
+            this.cal_date2.Visible = false;
+            // 
+            // cal_sales_id
+            // 
+            this.cal_sales_id.HeaderText = "Sales Id";
+            this.cal_sales_id.Name = "cal_sales_id";
+            this.cal_sales_id.ReadOnly = true;
+            this.cal_sales_id.Visible = false;
+            // 
+            // cal_table_no
+            // 
+            this.cal_table_no.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.cal_table_no.HeaderText = "Table no.";
+            this.cal_table_no.Name = "cal_table_no";
+            this.cal_table_no.ReadOnly = true;
+            this.cal_table_no.Visible = false;
+            // 
+            // cal_cost
+            // 
+            this.cal_cost.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.cal_cost.HeaderText = "Cost";
+            this.cal_cost.Name = "cal_cost";
+            this.cal_cost.ReadOnly = true;
+            this.cal_cost.Visible = false;
+            // 
+            // cal_category_name
+            // 
+            this.cal_category_name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.cal_category_name.HeaderText = "Category";
+            this.cal_category_name.Name = "cal_category_name";
+            this.cal_category_name.ReadOnly = true;
+            this.cal_category_name.Visible = false;
+            // 
+            // cal_customer_name
+            // 
+            this.cal_customer_name.HeaderText = "Customer Name";
+            this.cal_customer_name.Name = "cal_customer_name";
+            this.cal_customer_name.ReadOnly = true;
+            this.cal_customer_name.Visible = false;
+            // 
+            // cal_customer_pan
+            // 
+            this.cal_customer_pan.HeaderText = "Customer Pan";
+            this.cal_customer_pan.Name = "cal_customer_pan";
+            this.cal_customer_pan.ReadOnly = true;
+            this.cal_customer_pan.Visible = false;
             // 
             // btn_previous
             // 
@@ -822,204 +1020,6 @@ namespace POS_System
             this.label6.Size = new System.Drawing.Size(59, 13);
             this.label6.TabIndex = 115;
             this.label6.Text = "Date From:";
-            // 
-            // calbill_no
-            // 
-            this.calbill_no.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.calbill_no.HeaderText = "Bill No";
-            this.calbill_no.Name = "calbill_no";
-            this.calbill_no.ReadOnly = true;
-            this.calbill_no.Width = 60;
-            // 
-            // col_fiscal_year
-            // 
-            this.col_fiscal_year.HeaderText = "Fiscal Year";
-            this.col_fiscal_year.Name = "col_fiscal_year";
-            this.col_fiscal_year.ReadOnly = true;
-            this.col_fiscal_year.Visible = false;
-            // 
-            // calitem
-            // 
-            this.calitem.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.calitem.HeaderText = "Item";
-            this.calitem.Name = "calitem";
-            this.calitem.ReadOnly = true;
-            // 
-            // calquantity
-            // 
-            this.calquantity.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.calquantity.HeaderText = "Quantity";
-            this.calquantity.Name = "calquantity";
-            this.calquantity.ReadOnly = true;
-            this.calquantity.Width = 50;
-            // 
-            // caltotal
-            // 
-            this.caltotal.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.caltotal.HeaderText = "Total";
-            this.caltotal.Name = "caltotal";
-            this.caltotal.ReadOnly = true;
-            this.caltotal.Width = 73;
-            // 
-            // caldate
-            // 
-            this.caldate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.caldate.HeaderText = "Date";
-            this.caldate.Name = "caldate";
-            this.caldate.ReadOnly = true;
-            this.caldate.Width = 73;
-            // 
-            // cal_sub_total
-            // 
-            this.cal_sub_total.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.cal_sub_total.HeaderText = "Subtotal";
-            this.cal_sub_total.Name = "cal_sub_total";
-            this.cal_sub_total.ReadOnly = true;
-            this.cal_sub_total.Visible = false;
-            // 
-            // cal_discount
-            // 
-            this.cal_discount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.cal_discount.HeaderText = "Bill Discount";
-            this.cal_discount.Name = "cal_discount";
-            this.cal_discount.ReadOnly = true;
-            this.cal_discount.Width = 60;
-            // 
-            // cal_service_charge
-            // 
-            this.cal_service_charge.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.cal_service_charge.HeaderText = "Bill Service Charge";
-            this.cal_service_charge.Name = "cal_service_charge";
-            this.cal_service_charge.ReadOnly = true;
-            this.cal_service_charge.Width = 72;
-            // 
-            // cal_tax
-            // 
-            this.cal_tax.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.cal_tax.HeaderText = "Bill Tax";
-            this.cal_tax.Name = "cal_tax";
-            this.cal_tax.ReadOnly = true;
-            this.cal_tax.Width = 73;
-            // 
-            // cal_grand_total
-            // 
-            this.cal_grand_total.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.cal_grand_total.HeaderText = "Bill Grand total";
-            this.cal_grand_total.Name = "cal_grand_total";
-            this.cal_grand_total.ReadOnly = true;
-            this.cal_grand_total.Width = 73;
-            // 
-            // calpaymode
-            // 
-            this.calpaymode.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.calpaymode.HeaderText = "PayMode";
-            this.calpaymode.Name = "calpaymode";
-            this.calpaymode.ReadOnly = true;
-            this.calpaymode.Width = 72;
-            // 
-            // calcardamount
-            // 
-            this.calcardamount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.calcardamount.HeaderText = "Card Amt.";
-            this.calcardamount.Name = "calcardamount";
-            this.calcardamount.ReadOnly = true;
-            this.calcardamount.Width = 73;
-            // 
-            // calcashamt
-            // 
-            this.calcashamt.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.calcashamt.HeaderText = "Cash Amt.";
-            this.calcashamt.Name = "calcashamt";
-            this.calcashamt.ReadOnly = true;
-            this.calcashamt.Width = 73;
-            // 
-            // cal_credit_amt
-            // 
-            this.cal_credit_amt.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.cal_credit_amt.HeaderText = "Credit Amt";
-            this.cal_credit_amt.Name = "cal_credit_amt";
-            this.cal_credit_amt.ReadOnly = true;
-            this.cal_credit_amt.Width = 60;
-            // 
-            // calcashier_name
-            // 
-            this.calcashier_name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.calcashier_name.HeaderText = "Cashier";
-            this.calcashier_name.Name = "calcashier_name";
-            this.calcashier_name.ReadOnly = true;
-            this.calcashier_name.Width = 60;
-            // 
-            // cal_sales_type
-            // 
-            this.cal_sales_type.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.cal_sales_type.HeaderText = "Sales Type";
-            this.cal_sales_type.Name = "cal_sales_type";
-            this.cal_sales_type.ReadOnly = true;
-            this.cal_sales_type.Width = 72;
-            // 
-            // cal_print
-            // 
-            this.cal_print.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.cal_print.HeaderText = "Re Print";
-            this.cal_print.Name = "cal_print";
-            this.cal_print.ReadOnly = true;
-            this.cal_print.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.cal_print.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.cal_print.Text = "Re Print";
-            this.cal_print.UseColumnTextForButtonValue = true;
-            this.cal_print.Width = 73;
-            // 
-            // cal_date2
-            // 
-            this.cal_date2.HeaderText = "Date2";
-            this.cal_date2.Name = "cal_date2";
-            this.cal_date2.ReadOnly = true;
-            this.cal_date2.Visible = false;
-            // 
-            // cal_sales_id
-            // 
-            this.cal_sales_id.HeaderText = "Sales Id";
-            this.cal_sales_id.Name = "cal_sales_id";
-            this.cal_sales_id.ReadOnly = true;
-            this.cal_sales_id.Visible = false;
-            // 
-            // cal_table_no
-            // 
-            this.cal_table_no.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.cal_table_no.HeaderText = "Table no.";
-            this.cal_table_no.Name = "cal_table_no";
-            this.cal_table_no.ReadOnly = true;
-            this.cal_table_no.Visible = false;
-            // 
-            // cal_cost
-            // 
-            this.cal_cost.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.cal_cost.HeaderText = "Cost";
-            this.cal_cost.Name = "cal_cost";
-            this.cal_cost.ReadOnly = true;
-            this.cal_cost.Visible = false;
-            // 
-            // cal_category_name
-            // 
-            this.cal_category_name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.cal_category_name.HeaderText = "Category";
-            this.cal_category_name.Name = "cal_category_name";
-            this.cal_category_name.ReadOnly = true;
-            this.cal_category_name.Visible = false;
-            // 
-            // cal_customer_name
-            // 
-            this.cal_customer_name.HeaderText = "Customer Name";
-            this.cal_customer_name.Name = "cal_customer_name";
-            this.cal_customer_name.ReadOnly = true;
-            this.cal_customer_name.Visible = false;
-            // 
-            // cal_customer_pan
-            // 
-            this.cal_customer_pan.HeaderText = "Customer Pan";
-            this.cal_customer_pan.Name = "cal_customer_pan";
-            this.cal_customer_pan.ReadOnly = true;
-            this.cal_customer_pan.Visible = false;
             // 
             // Viewrestaurant
             // 

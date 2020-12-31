@@ -1384,5 +1384,13 @@ namespace POS_System
                 txt_item_search.ForeColor = SystemColors.GrayText;
             }
         }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            Hotel.Hotel rp = new Hotel.Hotel();
+            panel1.Controls.Clear();
+            panel1.Controls.Add(rp);
+        
+        }
     }
 }

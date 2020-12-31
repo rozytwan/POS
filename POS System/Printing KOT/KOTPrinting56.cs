@@ -129,7 +129,7 @@ namespace POS_System
                         ys = ys + 13;
                     }
                 }
-                gra.DrawString(strDate, new System.Drawing.Font("Arial", 7, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, ys);
+                //gra.DrawString(strDate, new System.Drawing.Font("Arial", 7, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, ys);
                 if (Convert.ToDecimal(table_no) >= 106)
                 {
                     if (Convert.ToDecimal(table_no) < 1000)

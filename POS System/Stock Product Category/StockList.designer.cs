@@ -32,13 +32,6 @@
             this.btn_back = new System.Windows.Forms.Button();
             this.lbl_addcategory = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.cmb_choose = new System.Windows.Forms.ComboBox();
-            this.txt_search = new System.Windows.Forms.TextBox();
-            this.lbl_search = new System.Windows.Forms.Label();
-            this.cmb_location = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btn_excel = new DevComponents.DotNetBar.ButtonX();
             this.cal_sn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_category_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_product_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,6 +44,14 @@
             this.col_transfer = new System.Windows.Forms.DataGridViewButtonColumn();
             this.col_unit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_stock_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cmb_choose = new System.Windows.Forms.ComboBox();
+            this.txt_search = new System.Windows.Forms.TextBox();
+            this.cmb_location = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btn_excel = new DevComponents.DotNetBar.ButtonX();
+            this.flwpln_categoryGrouping = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -58,6 +59,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(81)))), ((int)(((byte)(126)))));
+            this.panel2.Controls.Add(this.flwpln_categoryGrouping);
             this.panel2.Controls.Add(this.btn_back);
             this.panel2.Controls.Add(this.lbl_addcategory);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -108,107 +110,12 @@
             this.col_transfer,
             this.col_unit,
             this.col_stock_id});
-            this.dataGridView1.Location = new System.Drawing.Point(3, 118);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 135);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(1028, 504);
+            this.dataGridView1.Size = new System.Drawing.Size(1028, 485);
             this.dataGridView1.TabIndex = 28;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(310, 83);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 20);
-            this.label2.TabIndex = 32;
-            this.label2.Text = "Stock Search";
-            // 
-            // cmb_choose
-            // 
-            this.cmb_choose.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cmb_choose.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_choose.FormattingEnabled = true;
-            this.cmb_choose.Items.AddRange(new object[] {
-            "Product Name",
-            "Category Name",
-            "Department "});
-            this.cmb_choose.Location = new System.Drawing.Point(421, 74);
-            this.cmb_choose.Name = "cmb_choose";
-            this.cmb_choose.Size = new System.Drawing.Size(197, 32);
-            this.cmb_choose.TabIndex = 31;
-            // 
-            // txt_search
-            // 
-            this.txt_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_search.Location = new System.Drawing.Point(743, 74);
-            this.txt_search.Name = "txt_search";
-            this.txt_search.Size = new System.Drawing.Size(243, 29);
-            this.txt_search.TabIndex = 29;
-            this.txt_search.TextChanged += new System.EventHandler(this.txt_search_TextChanged);
-            // 
-            // lbl_search
-            // 
-            this.lbl_search.AutoSize = true;
-            this.lbl_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_search.ForeColor = System.Drawing.Color.White;
-            this.lbl_search.Location = new System.Drawing.Point(677, 80);
-            this.lbl_search.Name = "lbl_search";
-            this.lbl_search.Size = new System.Drawing.Size(60, 20);
-            this.lbl_search.TabIndex = 30;
-            this.lbl_search.Text = "Search";
-            // 
-            // cmb_location
-            // 
-            this.cmb_location.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cmb_location.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_location.FormattingEnabled = true;
-            this.cmb_location.Items.AddRange(new object[] {
-            "M",
-            "K1",
-            "K2",
-            "BOT",
-            "S1",
-            "S2",
-            "S3",
-            "Branch 1",
-            "Branch 2",
-            "Branch 3"});
-            this.cmb_location.Location = new System.Drawing.Point(89, 74);
-            this.cmb_location.Name = "cmb_location";
-            this.cmb_location.Size = new System.Drawing.Size(197, 32);
-            this.cmb_location.TabIndex = 33;
-            this.cmb_location.SelectedIndexChanged += new System.EventHandler(this.cmb_location_SelectedIndexChanged);
-            this.cmb_location.Enter += new System.EventHandler(this.cmb_location_Enter);
-            this.cmb_location.Leave += new System.EventHandler(this.cmb_location_Leave);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(13, 83);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 20);
-            this.label1.TabIndex = 34;
-            this.label1.Text = "Location";
-            // 
-            // btn_excel
-            // 
-            this.btn_excel.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_excel.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btn_excel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_excel.Location = new System.Drawing.Point(829, 628);
-            this.btn_excel.Name = "btn_excel";
-            this.btn_excel.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(14);
-            this.btn_excel.Size = new System.Drawing.Size(182, 52);
-            this.btn_excel.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_excel.Symbol = "";
-            this.btn_excel.TabIndex = 141;
-            this.btn_excel.Text = "Export to Excel";
-            this.btn_excel.Click += new System.EventHandler(this.btn_excel_Click);
             // 
             // cal_sn
             // 
@@ -293,17 +200,122 @@
             this.col_stock_id.ReadOnly = true;
             this.col_stock_id.Visible = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(633, 86);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(82, 20);
+            this.label2.TabIndex = 32;
+            this.label2.Text = "Search By";
+            // 
+            // cmb_choose
+            // 
+            this.cmb_choose.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.cmb_choose.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_choose.FormattingEnabled = true;
+            this.cmb_choose.Items.AddRange(new object[] {
+            "Product Name",
+            "Category Name",
+            "Department "});
+            this.cmb_choose.Location = new System.Drawing.Point(715, 77);
+            this.cmb_choose.Name = "cmb_choose";
+            this.cmb_choose.Size = new System.Drawing.Size(150, 32);
+            this.cmb_choose.TabIndex = 31;
+            // 
+            // txt_search
+            // 
+            this.txt_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_search.Location = new System.Drawing.Point(871, 77);
+            this.txt_search.Name = "txt_search";
+            this.txt_search.Size = new System.Drawing.Size(160, 29);
+            this.txt_search.TabIndex = 29;
+            this.txt_search.TextChanged += new System.EventHandler(this.txt_search_TextChanged);
+            // 
+            // cmb_location
+            // 
+            this.cmb_location.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.cmb_location.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_location.FormattingEnabled = true;
+            this.cmb_location.Items.AddRange(new object[] {
+            "M",
+            "K1",
+            "K2",
+            "BOT",
+            "S1",
+            "S2",
+            "S3",
+            "Branch 1",
+            "Branch 2",
+            "Branch 3"});
+            this.cmb_location.Location = new System.Drawing.Point(499, 97);
+            this.cmb_location.Name = "cmb_location";
+            this.cmb_location.Size = new System.Drawing.Size(102, 32);
+            this.cmb_location.TabIndex = 33;
+            this.cmb_location.SelectedIndexChanged += new System.EventHandler(this.cmb_location_SelectedIndexChanged);
+            this.cmb_location.Enter += new System.EventHandler(this.cmb_location_Enter);
+            this.cmb_location.Leave += new System.EventHandler(this.cmb_location_Leave);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(495, 74);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 20);
+            this.label1.TabIndex = 34;
+            this.label1.Text = "Location";
+            // 
+            // btn_excel
+            // 
+            this.btn_excel.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btn_excel.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btn_excel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_excel.Location = new System.Drawing.Point(829, 628);
+            this.btn_excel.Name = "btn_excel";
+            this.btn_excel.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(14);
+            this.btn_excel.Size = new System.Drawing.Size(182, 52);
+            this.btn_excel.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btn_excel.Symbol = "";
+            this.btn_excel.TabIndex = 141;
+            this.btn_excel.Text = "Export to Excel";
+            this.btn_excel.Click += new System.EventHandler(this.btn_excel_Click);
+            // 
+            // flwpln_categoryGrouping
+            // 
+            this.flwpln_categoryGrouping.AutoScroll = true;
+            this.flwpln_categoryGrouping.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.flwpln_categoryGrouping.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.flwpln_categoryGrouping.Location = new System.Drawing.Point(184, 74);
+            this.flwpln_categoryGrouping.Name = "flwpln_categoryGrouping";
+            this.flwpln_categoryGrouping.Size = new System.Drawing.Size(443, 57);
+            this.flwpln_categoryGrouping.TabIndex = 272;
+            this.flwpln_categoryGrouping.Visible = false;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 72);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(486, 57);
+            this.flowLayoutPanel1.TabIndex = 272;
+            // 
             // StockList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.btn_excel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmb_location);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cmb_choose);
             this.Controls.Add(this.txt_search);
-            this.Controls.Add(this.lbl_search);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel2);
             this.Name = "StockList";
@@ -326,7 +338,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cmb_choose;
         private System.Windows.Forms.TextBox txt_search;
-        private System.Windows.Forms.Label lbl_search;
         private System.Windows.Forms.ComboBox cmb_location;
         private System.Windows.Forms.Label label1;
         private DevComponents.DotNetBar.ButtonX btn_excel;
@@ -342,5 +353,7 @@
         private System.Windows.Forms.DataGridViewButtonColumn col_transfer;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_unit;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_stock_id;
+        private System.Windows.Forms.FlowLayoutPanel flwpln_categoryGrouping;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

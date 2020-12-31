@@ -41,13 +41,13 @@ namespace BLLS
                 {
                     new SqlParameter("@card_no",card_no)
                 };
-            return DAL.getuser("Select * from tbl_event_attendance where card_no=@card_no and x_report='X'", parm);
+            return DAL.getuser("Select * from tbl_event_attendence where card_no=@card_no and x_report='X'", parm);
 
         }
         public DataTable GetallDataofattendance()
         {
             
-            return DAL.getuser("Select count(event_id)total_no_guest,event_name,total_guest from tbl_event_attendance ea  left join tbl_event e on(ea.event_id=e.id) where  x_report='X' group by total_guest,event_name", null);
+            return DAL.getuser("Select count(event_id)total_no_guest,event_name,total_guest from tbl_event_attendence ea  left join tbl_event e on(ea.event_id=e.id) where  x_report='X' group by total_guest,event_name", null);
 
         }
         public int InserCardAttendance(string card_no, DateTime date_time, int customer_id,int event_id)
@@ -60,7 +60,7 @@ namespace BLLS
                      new SqlParameter("@event_id",event_id),
 
                 };
-            return DAL.IDU("insert into tbl_event_attendance (card_no,date_time,customer_id,x_report,event_id) values (@card_no,@date_time,@customer_id,'X',@event_id)", parm);
+            return DAL.IDU("insert into tbl_event_attendence (card_no,date_time,customer_id,x_report,event_id) values (@card_no,@date_time,@customer_id,'X',@event_id)", parm);
         }
         public int UpdateXreport(int event_id)
         {
@@ -68,7 +68,7 @@ namespace BLLS
                 {
                     new SqlParameter("@event_id",event_id)
                 };
-            return DAL.IDU("update tbl_event_attendance set x_report='' where event_id=@event_id and x_report='X'", parm);
+            return DAL.IDU("update tbl_event_attendence set x_report='' where event_id=@event_id and x_report='X'", parm);
 
         }
     }

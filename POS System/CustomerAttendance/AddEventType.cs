@@ -54,6 +54,7 @@ namespace POS_System.CustomerAttendance
                     {
                         dataGridViewLoad();
                         btn_save.Text = "Save";
+                        clear();
                     }
                 }
                 else
@@ -62,6 +63,7 @@ namespace POS_System.CustomerAttendance
                     if (insertEvent > 0)
                     {
                         dataGridViewLoad();
+                        clear();
                     }
                 }
 
@@ -78,7 +80,14 @@ namespace POS_System.CustomerAttendance
                 btn_save.Text = "Update";
             }
         }
+        public void clear()
+        {
+            txt_event_name.Text = "";
+            txt_total_guest.Text = "";
+        }
+        private void btn_back_Click(object sender, EventArgs e)
+        {
 
-       
+        }
     }
 }

@@ -116,6 +116,7 @@
             System.Windows.Forms.TreeNode treeNode56 = new System.Windows.Forms.TreeNode("FonePay");
             System.Windows.Forms.TreeNode treeNode57 = new System.Windows.Forms.TreeNode("Discount & Estimate Cost");
             System.Windows.Forms.TreeNode treeNode58 = new System.Windows.Forms.TreeNode("System Command");
+            System.Windows.Forms.TreeNode treeNode59 = new System.Windows.Forms.TreeNode("Customer Attendence");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dynamic));
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
@@ -470,13 +471,18 @@
             this.label158 = new System.Windows.Forms.Label();
             this.label159 = new System.Windows.Forms.Label();
             this.panel_fix_grouping = new System.Windows.Forms.Panel();
+            this.lbl_hide_grouping = new System.Windows.Forms.Label();
+            this.label164 = new System.Windows.Forms.Label();
+            this.chk_hide_grouping = new System.Windows.Forms.CheckBox();
             this.chk_fix_grouping = new System.Windows.Forms.CheckBox();
             this.lbl_fix_grouping = new System.Windows.Forms.Label();
             this.label161 = new System.Windows.Forms.Label();
             this.label162 = new System.Windows.Forms.Label();
-            this.chk_hide_grouping = new System.Windows.Forms.CheckBox();
-            this.lbl_hide_grouping = new System.Windows.Forms.Label();
-            this.label164 = new System.Windows.Forms.Label();
+            this.panel_attendence = new System.Windows.Forms.Panel();
+            this.chk_attendence = new System.Windows.Forms.CheckBox();
+            this.lbl_attendence = new System.Windows.Forms.Label();
+            this.label166 = new System.Windows.Forms.Label();
+            this.label167 = new System.Windows.Forms.Label();
             this.PanelLoad.SuspendLayout();
             this.panelTA.SuspendLayout();
             this.panelSPA.SuspendLayout();
@@ -530,6 +536,7 @@
             this.panel_footerbilling.SuspendLayout();
             this.panel_checkout_rename.SuspendLayout();
             this.panel_fix_grouping.SuspendLayout();
+            this.panel_attendence.SuspendLayout();
             this.SuspendLayout();
             // 
             // treeView1
@@ -661,6 +668,8 @@
             treeNode57.Text = "Discount & Estimate Cost";
             treeNode58.Name = "syscommand";
             treeNode58.Text = "System Command";
+            treeNode59.Name = "Customer Attendence";
+            treeNode59.Text = "Customer Attendence";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             treeNode1,
             treeNode2,
@@ -690,7 +699,8 @@
             treeNode55,
             treeNode56,
             treeNode57,
-            treeNode58});
+            treeNode58,
+            treeNode59});
             this.treeView1.SelectedImageIndex = 0;
             this.treeView1.Size = new System.Drawing.Size(222, 470);
             this.treeView1.TabIndex = 0;
@@ -4623,6 +4633,36 @@
             this.panel_fix_grouping.Size = new System.Drawing.Size(524, 353);
             this.panel_fix_grouping.TabIndex = 309;
             // 
+            // lbl_hide_grouping
+            // 
+            this.lbl_hide_grouping.AutoSize = true;
+            this.lbl_hide_grouping.Location = new System.Drawing.Point(481, 31);
+            this.lbl_hide_grouping.Name = "lbl_hide_grouping";
+            this.lbl_hide_grouping.Size = new System.Drawing.Size(23, 13);
+            this.lbl_hide_grouping.TabIndex = 30;
+            this.lbl_hide_grouping.Text = "HG";
+            // 
+            // label164
+            // 
+            this.label164.AutoSize = true;
+            this.label164.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label164.Location = new System.Drawing.Point(431, 28);
+            this.label164.Name = "label164";
+            this.label164.Size = new System.Drawing.Size(44, 16);
+            this.label164.TabIndex = 29;
+            this.label164.Text = "Code:";
+            // 
+            // chk_hide_grouping
+            // 
+            this.chk_hide_grouping.AutoSize = true;
+            this.chk_hide_grouping.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chk_hide_grouping.Location = new System.Drawing.Point(9, 95);
+            this.chk_hide_grouping.Name = "chk_hide_grouping";
+            this.chk_hide_grouping.Size = new System.Drawing.Size(134, 20);
+            this.chk_hide_grouping.TabIndex = 28;
+            this.chk_hide_grouping.Text = "Hide \'G\'-Grouping";
+            this.chk_hide_grouping.UseVisualStyleBackColor = true;
+            // 
             // chk_fix_grouping
             // 
             this.chk_fix_grouping.AutoSize = true;
@@ -4664,41 +4704,65 @@
             this.label162.TabIndex = 20;
             this.label162.Text = "Fix Grouping";
             // 
-            // chk_hide_grouping
+            // panel_attendence
             // 
-            this.chk_hide_grouping.AutoSize = true;
-            this.chk_hide_grouping.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chk_hide_grouping.Location = new System.Drawing.Point(9, 95);
-            this.chk_hide_grouping.Name = "chk_hide_grouping";
-            this.chk_hide_grouping.Size = new System.Drawing.Size(134, 20);
-            this.chk_hide_grouping.TabIndex = 28;
-            this.chk_hide_grouping.Text = "Hide \'G\'-Grouping";
-            this.chk_hide_grouping.UseVisualStyleBackColor = true;
+            this.panel_attendence.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_attendence.Controls.Add(this.chk_attendence);
+            this.panel_attendence.Controls.Add(this.lbl_attendence);
+            this.panel_attendence.Controls.Add(this.label166);
+            this.panel_attendence.Controls.Add(this.label167);
+            this.panel_attendence.Location = new System.Drawing.Point(231, 10);
+            this.panel_attendence.Name = "panel_attendence";
+            this.panel_attendence.Size = new System.Drawing.Size(524, 353);
+            this.panel_attendence.TabIndex = 310;
             // 
-            // lbl_hide_grouping
+            // chk_attendence
             // 
-            this.lbl_hide_grouping.AutoSize = true;
-            this.lbl_hide_grouping.Location = new System.Drawing.Point(481, 31);
-            this.lbl_hide_grouping.Name = "lbl_hide_grouping";
-            this.lbl_hide_grouping.Size = new System.Drawing.Size(23, 13);
-            this.lbl_hide_grouping.TabIndex = 30;
-            this.lbl_hide_grouping.Text = "HG";
+            this.chk_attendence.AutoSize = true;
+            this.chk_attendence.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chk_attendence.Location = new System.Drawing.Point(9, 58);
+            this.chk_attendence.Name = "chk_attendence";
+            this.chk_attendence.Size = new System.Drawing.Size(240, 20);
+            this.chk_attendence.TabIndex = 27;
+            this.chk_attendence.Text = "Need Customer Attendence Access";
+            this.chk_attendence.UseVisualStyleBackColor = true;
             // 
-            // label164
+            // lbl_attendence
             // 
-            this.label164.AutoSize = true;
-            this.label164.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label164.Location = new System.Drawing.Point(431, 28);
-            this.label164.Name = "label164";
-            this.label164.Size = new System.Drawing.Size(44, 16);
-            this.label164.TabIndex = 29;
-            this.label164.Text = "Code:";
+            this.lbl_attendence.AutoSize = true;
+            this.lbl_attendence.Location = new System.Drawing.Point(481, 11);
+            this.lbl_attendence.Name = "lbl_attendence";
+            this.lbl_attendence.Size = new System.Drawing.Size(21, 13);
+            this.lbl_attendence.TabIndex = 23;
+            this.lbl_attendence.Text = "CA";
+            // 
+            // label166
+            // 
+            this.label166.AutoSize = true;
+            this.label166.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label166.Location = new System.Drawing.Point(431, 8);
+            this.label166.Name = "label166";
+            this.label166.Size = new System.Drawing.Size(44, 16);
+            this.label166.TabIndex = 22;
+            this.label166.Text = "Code:";
+            // 
+            // label167
+            // 
+            this.label167.AutoSize = true;
+            this.label167.BackColor = System.Drawing.SystemColors.Control;
+            this.label167.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label167.Location = new System.Drawing.Point(9, 18);
+            this.label167.Name = "label167";
+            this.label167.Size = new System.Drawing.Size(151, 18);
+            this.label167.TabIndex = 20;
+            this.label167.Text = "Customer Attendence";
             // 
             // Dynamic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(767, 479);
+            this.Controls.Add(this.panel_attendence);
             this.Controls.Add(this.panel_fix_grouping);
             this.Controls.Add(this.panel_checkout_rename);
             this.Controls.Add(this.panel_footerbilling);
@@ -4858,6 +4922,8 @@
             this.panel_checkout_rename.PerformLayout();
             this.panel_fix_grouping.ResumeLayout(false);
             this.panel_fix_grouping.PerformLayout();
+            this.panel_attendence.ResumeLayout(false);
+            this.panel_attendence.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -5225,5 +5291,10 @@
         private System.Windows.Forms.Label lbl_fix_grouping;
         private System.Windows.Forms.Label label161;
         private System.Windows.Forms.Label label162;
+        private System.Windows.Forms.Panel panel_attendence;
+        private System.Windows.Forms.CheckBox chk_attendence;
+        private System.Windows.Forms.Label lbl_attendence;
+        private System.Windows.Forms.Label label166;
+        private System.Windows.Forms.Label label167;
     }
 }

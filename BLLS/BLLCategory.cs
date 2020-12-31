@@ -31,13 +31,15 @@ namespace BLLS
             return DAL.getuser("select * from tbl_categorys order by category_id desc", null);
 
         }
-        public int addcategory(string category_name)
+
+        public int addcategory(string category_name,int id)
         {
             SqlParameter[] parm = new SqlParameter[]
             {
-                new SqlParameter ("@category_name",category_name)
+                new SqlParameter ("@category_name",category_name),
+                new SqlParameter ("@id",id),
             };
-            return DAL.IDU("insert into tbl_categorys values(@category_name)", parm);
+            return DAL.IDU("insert into tbl_categorys values(@category_name,@id)", parm);
         }
         public DataTable checkcategory(string category_name)
         {
@@ -87,14 +89,15 @@ namespace BLLS
                 };
             return DAL.getuser("select * from tbl_categorys where category_name like @category_name +'%'", parm);
         }
-        public int updatecategory(int category_id, string new_category_name)
+        public int updatecategory(int category_id, string new_category_name,int id)
         {
             SqlParameter[] parm = new SqlParameter[]
             {
           new SqlParameter("@category_id",category_id),
-          new SqlParameter("@new_category_name",new_category_name)
+          new SqlParameter("@new_category_name",new_category_name),
+           new SqlParameter("@id",id),
             };
-            return DAL.IDU("update tbl_categorys set category_name=@new_category_name where category_id=@category_id", parm);
+            return DAL.IDU("update tbl_categorys set category_name=@new_category_name ,id=@id where category_id=@category_id", parm);
         }
 
     }

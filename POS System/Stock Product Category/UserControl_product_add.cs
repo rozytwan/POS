@@ -19,17 +19,32 @@ namespace POS_System
         }
         BLLCategory blcat = new BLLCategory();
 
-
+        BLLCategoryGrouping blcg = new BLLCategoryGrouping();
         private void UserControl_product_add_Load_1(object sender, EventArgs e)
         {
             showallcartegory();
+            loadcategory();
             dgv_category.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(11, 81, 126);
             dgv_category.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
             dgv_category.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
             dgv_category.EnableHeadersVisualStyles = false;
             dgv_category.ColumnHeadersHeight = 60;
         }
+        public void loadcategory()
+        {
+            DataTable dt = blcg.GetStockGrouping();
+            if (dt.Rows.Count > 0)
+            {
+                DataRow dr = dt.NewRow();
+                dr["group_name"] = "Choose Grouping";
+                dr["id"] = "0";
+                dt.Rows.InsertAt(dr, 0);
 
+                cbo_group_category.DataSource = dt;
+                cbo_group_category.DisplayMember = "group_name";
+                cbo_group_category.ValueMember = "id";
+            }
+        }
         public void showallcartegory()
         {
             DataTable dt = blcat.getallcategorydecending();
@@ -61,10 +76,12 @@ namespace POS_System
                 {
                     if (category_id > 0)
                     {
-                        int abc = blcat.updatecategory(category_id, txtaddcategory.Text);
+                        int abc = blcat.updatecategory(category_id, txtaddcategory.Text, Convert.ToInt32(cbo_group_category.SelectedValue));
                         if (abc > 0)
                         {
                             showallcartegory();
+                            txtaddcategory.Text = "";
+                            cbo_group_category.SelectedIndex = 0;
                             btncategoryadd.Text = "Add Category";
                         }
 
@@ -87,7 +104,7 @@ namespace POS_System
                         }
                         else
                         {
-                            int i = blcat.addcategory(txtaddcategory.Text);
+                            int i = blcat.addcategory(txtaddcategory.Text, Convert.ToInt32(cbo_group_category.SelectedValue));
                             if (i > 0)
                             {
                                 showallcartegory();
@@ -161,9 +178,23 @@ namespace POS_System
                 {
                     category_id = Convert.ToInt32(dgv_category.CurrentRow.Cells["cal_category_id"].Value);
                     txtaddcategory.Text = dgv_category.CurrentRow.Cells["calcategory"].Value.ToString();
-                    btncategoryadd.Text = "Update";
+                    DataTable dt = blcg.GetStockCategoryById(category_id);
+                    if (dt.Rows.Count > 0)
+                    {
+                        int id = Convert.ToInt32(dt.Rows[0]["id"].ToString());
+                        DataTable dt1 = blcg.GetAllProductGrouping(id);
+                        if (dt1.Rows.Count > 0)
+                        {
+                            cbo_group_category.Text = dt1.Rows[0]["group_name"].ToString();
+                        }
+                        else
+                        {
+                            if (cbo_group_category.Text != "")
+                                cbo_group_category.SelectedIndex = 0;
+                        }
+                        btncategoryadd.Text = "Update";
+                    }
                 }
-
             }
         }
     }

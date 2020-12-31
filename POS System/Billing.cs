@@ -798,7 +798,7 @@ namespace POS_System
                 {
                     MessageBox.Show("Input Error In Table No", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-
+              
                 else if (txtsubtotal.Text.Length > 0 && dataGridView1.Rows.Count > 0 || txtcardamount.Text != "0.00" || txtcashamount.Text != "0.00")
                 {
 
@@ -902,6 +902,7 @@ namespace POS_System
                         {
                             MessageBox.Show("Select Customers While Billing in Credit.", "Customer Empty", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
+
                     }
                     if (save_only_trasaction == true)
                     {
@@ -985,54 +986,48 @@ namespace POS_System
 
                 else
                 {
-                    for (int a = 0; a < dataGridView1.Rows.Count; a++)
-                    {
-                        string item = (dataGridView1.Rows[a].Cells["cal_item_name"].Value.ToString());
-                        decimal quantity = Convert.ToDecimal(dataGridView1.Rows[a].Cells["cal_qty"].Value.ToString());
-                        decimal cost = Convert.ToDecimal(dataGridView1.Rows[a].Cells["cal_cost"].Value.ToString());
-                        decimal total = Convert.ToDecimal(dataGridView1.Rows[a].Cells["cal_total"].Value.ToString());
-                        string category_name1 = dataGridView1.Rows[a].Cells["cal_category_name"].Value.ToString();
-                        string kot_type = dataGridView1.Rows[a].Cells["cal_kot_type"].Value.ToString();
-                        string sales_type = dataGridView1.Rows[0].Cells["cal_sales_type"].Value.ToString();
-                        string complementru_status = dataGridView1.Rows[a].Cells["cal_comp_status"].Value.ToString();
-                        string service_provider = dataGridView1.Rows[a].Cells["cal_service_provider"].Value.ToString();
-                        int order_id = Convert.ToInt32(dataGridView1.Rows[a].Cells["cal_order_id"].Value.ToString());
-                        //if (area_name=="Customer")
-                        //{
-                        //    sales_type = "CS";
-                        //}
-                        if (x_report != "NULL")
+                        for (int a = 0; a < dataGridView1.Rows.Count; a++)
                         {
-                            x_report = "X";
-                        }
-                        int b = blresll.insertintosalesbook(Convert.ToInt32(txtnewbillno.Text), date, txtcashier.Text, category_name1, lbltable.Text, cbo_customer_name.Text, txtpan_no.Text, item, quantity, cost, total, payment_mode, kot_type, Convert.ToDecimal(txtsubtotal.Text), Convert.ToDecimal(discount_amount), Convert.ToDecimal(txtcashamount.Text), Convert.ToDecimal(txtcardamount.Text), Convert.ToDecimal(txtgrandtotal.Text), sales_type, txtpan_no.Text, x_report, Convert.ToDecimal(lbl_service_charge.Text), subtotal_with_services, Convert.ToDecimal(lbl_tax.Text), fiscal_year, service_provider, date, customer_id, a, date.ToString("HH:mm tt"), sync_with_ird, complementryInvoiceNo, complementru_status, void_status.ToString(), Convert.ToInt32(void_bill_no), "", order_id, Convert.ToDecimal(lbl_credit.Text));
-
-                        //  void_status = false;
-                        if (b > 0)
-                        {
-
-                            save_data = true;
-                            DataTable dt = blord.getallbyitem_name(item);
-                            if (dt.Rows.Count > 0)
+                            string item = (dataGridView1.Rows[a].Cells["cal_item_name"].Value.ToString());
+                            decimal quantity = Convert.ToDecimal(dataGridView1.Rows[a].Cells["cal_qty"].Value.ToString());
+                            decimal cost = Convert.ToDecimal(dataGridView1.Rows[a].Cells["cal_cost"].Value.ToString());
+                            decimal total = Convert.ToDecimal(dataGridView1.Rows[a].Cells["cal_total"].Value.ToString());
+                            string category_name1 = dataGridView1.Rows[a].Cells["cal_category_name"].Value.ToString();
+                            string kot_type = dataGridView1.Rows[a].Cells["cal_kot_type"].Value.ToString();
+                            string sales_type = dataGridView1.Rows[0].Cells["cal_sales_type"].Value.ToString();
+                            string complementru_status = dataGridView1.Rows[a].Cells["cal_comp_status"].Value.ToString();
+                            string service_provider = dataGridView1.Rows[a].Cells["cal_service_provider"].Value.ToString();
+                            int order_id = Convert.ToInt32(dataGridView1.Rows[a].Cells["cal_order_id"].Value.ToString());
+                            //if (area_name=="Customer")
+                            //{
+                            //    sales_type = "CS";
+                            //}
+                            if (x_report != "NULL")
                             {
-                                im.ingredientManage(Convert.ToInt32(dt.Rows[0]["item_id"]), quantity);//item sales wise stock decrease 
+                                x_report = "X";
+                            }
+                            int b = blresll.insertintosalesbook(Convert.ToInt32(txtnewbillno.Text), date, txtcashier.Text, category_name1, lbltable.Text, cbo_customer_name.Text, txtpan_no.Text, item, quantity, cost, total, payment_mode, kot_type, Convert.ToDecimal(txtsubtotal.Text), Convert.ToDecimal(discount_amount), Convert.ToDecimal(txtcashamount.Text), Convert.ToDecimal(txtcardamount.Text), Convert.ToDecimal(txtgrandtotal.Text), sales_type, txtpan_no.Text, x_report, Convert.ToDecimal(lbl_service_charge.Text), subtotal_with_services, Convert.ToDecimal(lbl_tax.Text), fiscal_year, service_provider, date, customer_id, a, date.ToString("HH:mm tt"), sync_with_ird, complementryInvoiceNo, complementru_status, void_status.ToString(), Convert.ToInt32(void_bill_no), "", order_id, Convert.ToDecimal(lbl_credit.Text));
+
+                            //  void_status = false;
+                            if (b > 0)
+                            {
+
+                                save_data = true;
+                                DataTable dt = blord.getallbyitem_name(item);
+                                if (dt.Rows.Count > 0)
+                                {
+                                    im.ingredientManage(Convert.ToInt32(dt.Rows[0]["item_id"]), quantity);//item sales wise stock decrease 
+                                }
                             }
                         }
-                    }
-                    if (payment_mode == "Cash/Credit")
-                    {
-                        if (Convert.ToDecimal(txtcashamount.Text) >= Convert.ToDecimal(txtgrandtotal.Text))
-                        {
-                            MessageBox.Show("Change Payment Mode Alert !!", "Payment Mode Not Correctly Applied Alert !!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        }
-                        else
+                        if (payment_mode == "Cash/Credit")
                         {
                             int creditrecord = blc_credit.insert_into_credit(Convert.ToInt32(cbo_customer_name.SelectedValue), Convert.ToInt32(txtnewbillno.Text), date, Convert.ToDecimal(txtgrandtotal.Text), Login.sendtext, "RC");
                             int i = blcp.Insert_credit_paid(Convert.ToInt32(customer_id), Convert.ToDecimal(txtgrandtotal.Text), Convert.ToDecimal(txtcashamount.Text), Convert.ToDecimal(lbl_credit.Text), txtcashier.Text, Convert.ToDateTime(date.ToShortDateString()), payment_mode, " ", "RP");
                         }
                     }
                 }
-            }
+            
             if (save_data == true)
             {
                 if (customer_id > 0 && customer_points > 0)//customer loyalti point insert
@@ -1987,24 +1982,23 @@ namespace POS_System
                     decimal grandtotal = Convert.ToDecimal(txtgrandtotal.Text);
                     decimal cashamount = Convert.ToDecimal(txtcashamount.Text);
                     if (grandtotal < cashamount)
-                    {
+                        {
                         txtremainingamount.Text = Math.Abs(Convert.ToDecimal(txtcashamount.Text) - Convert.ToDecimal(txtgrandtotal.Text)).ToString();
                         txtcardamount.Text = "0.00";
                         lblcardamount.Text = "0.00";
                         lbl_credit.Text = "0.00";
                         lblchangeamout.Text = txtremainingamount.Text;
-                   
-
+                        
                     }
                     else
-                    {
-                        lbl_credit.Text = Math.Abs(Convert.ToDecimal(txtcashamount.Text) - Convert.ToDecimal(txtgrandtotal.Text)).ToString();
-                        txtremainingamount.Text = "0.00";
-                        lblchangeamout.Text = "0.00";
-                      
-                    }
+                        {
+                            lbl_credit.Text = Math.Abs(Convert.ToDecimal(txtcashamount.Text) - Convert.ToDecimal(txtgrandtotal.Text)).ToString();
+                            txtremainingamount.Text = "0.00";
+                            lblchangeamout.Text = "0.00";
 
-                }
+                        }
+                    }
+                
                 else if (chkcash.Checked && txtcashamount.Text != "0.00")
                 {
                     txtremainingamount.Text = (Convert.ToDecimal(txtcashamount.Text) - Convert.ToDecimal(txtgrandtotal.Text)).ToString();
@@ -2507,6 +2501,11 @@ namespace POS_System
             {
                 MessageBox.Show("Fiscal year has been ended or set fiscal year.", "Fiscal Year", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            else if (chk_cash_credit.Checked == true && Convert.ToDecimal(txtcashamount.Text) >= Convert.ToDecimal(txtgrandtotal.Text))
+            {
+                MessageBox.Show("Payment Mode Not Correctly Applied Alert !!", "Change Payment Mode Alert  !!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            
             else
             {
                 DataTable dtCheckBill = blresll.CheckBillNo(Convert.ToInt32(txtnewbillno.Text), Convert.ToDateTime(DateTime.Now.ToShortDateString()));

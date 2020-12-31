@@ -32,13 +32,6 @@
             this.btn_back = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btn_edit = new DevComponents.DotNetBar.ButtonX();
-            this.btn_delete = new DevComponents.DotNetBar.ButtonX();
-            this.label2 = new System.Windows.Forms.Label();
-            this.cmb_choose = new System.Windows.Forms.ComboBox();
-            this.txt_search = new System.Windows.Forms.TextBox();
-            this.lbl_search = new System.Windows.Forms.Label();
-            this.Addproduct = new DevComponents.DotNetBar.ButtonX();
             this.col_product_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_category_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_product_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,6 +42,13 @@
             this.col_unit2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_qty3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_unit3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_edit = new DevComponents.DotNetBar.ButtonX();
+            this.btn_delete = new DevComponents.DotNetBar.ButtonX();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cmb_choose = new System.Windows.Forms.ComboBox();
+            this.txt_search = new System.Windows.Forms.TextBox();
+            this.lbl_search = new System.Windows.Forms.Label();
+            this.Addproduct = new DevComponents.DotNetBar.ButtonX();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -104,93 +104,12 @@
             this.col_unit2,
             this.col_qty3,
             this.col_unit3});
-            this.dataGridView1.Location = new System.Drawing.Point(2, 121);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 130);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(1005, 484);
+            this.dataGridView1.Size = new System.Drawing.Size(1005, 474);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // btn_edit
-            // 
-            this.btn_edit.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_edit.ColorTable = DevComponents.DotNetBar.eButtonColor.Office2007WithBackground;
-            this.btn_edit.Location = new System.Drawing.Point(4, 611);
-            this.btn_edit.Name = "btn_edit";
-            this.btn_edit.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(15);
-            this.btn_edit.Size = new System.Drawing.Size(51, 51);
-            this.btn_edit.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_edit.Symbol = "";
-            this.btn_edit.TabIndex = 10;
-            this.btn_edit.Click += new System.EventHandler(this.btn_edit_Click);
-            // 
-            // btn_delete
-            // 
-            this.btn_delete.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_delete.ColorTable = DevComponents.DotNetBar.eButtonColor.Office2007WithBackground;
-            this.btn_delete.Location = new System.Drawing.Point(84, 611);
-            this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(15);
-            this.btn_delete.Size = new System.Drawing.Size(51, 51);
-            this.btn_delete.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_delete.Symbol = "";
-            this.btn_delete.TabIndex = 11;
-            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(349, 79);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 20);
-            this.label2.TabIndex = 15;
-            this.label2.Text = "Product/Category";
-            // 
-            // cmb_choose
-            // 
-            this.cmb_choose.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_choose.FormattingEnabled = true;
-            this.cmb_choose.Items.AddRange(new object[] {
-            "Product Name\t",
-            "Department"});
-            this.cmb_choose.Location = new System.Drawing.Point(487, 73);
-            this.cmb_choose.Name = "cmb_choose";
-            this.cmb_choose.Size = new System.Drawing.Size(197, 32);
-            this.cmb_choose.TabIndex = 14;
-            // 
-            // txt_search
-            // 
-            this.txt_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_search.Location = new System.Drawing.Point(749, 76);
-            this.txt_search.Name = "txt_search";
-            this.txt_search.Size = new System.Drawing.Size(176, 29);
-            this.txt_search.TabIndex = 12;
-            this.txt_search.TextChanged += new System.EventHandler(this.txt_search_TextChanged);
-            // 
-            // lbl_search
-            // 
-            this.lbl_search.AutoSize = true;
-            this.lbl_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_search.Location = new System.Drawing.Point(690, 79);
-            this.lbl_search.Name = "lbl_search";
-            this.lbl_search.Size = new System.Drawing.Size(60, 20);
-            this.lbl_search.TabIndex = 13;
-            this.lbl_search.Text = "Search";
-            // 
-            // Addproduct
-            // 
-            this.Addproduct.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.Addproduct.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.Addproduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Addproduct.Location = new System.Drawing.Point(12, 73);
-            this.Addproduct.Name = "Addproduct";
-            this.Addproduct.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(15);
-            this.Addproduct.Size = new System.Drawing.Size(111, 42);
-            this.Addproduct.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.Addproduct.TabIndex = 16;
-            this.Addproduct.Text = "+Product";
-            this.Addproduct.Click += new System.EventHandler(this.Addproduct_Click);
             // 
             // col_product_id
             // 
@@ -252,6 +171,89 @@
             this.col_unit3.HeaderText = "Unit3";
             this.col_unit3.Name = "col_unit3";
             this.col_unit3.ReadOnly = true;
+            // 
+            // btn_edit
+            // 
+            this.btn_edit.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btn_edit.ColorTable = DevComponents.DotNetBar.eButtonColor.Office2007WithBackground;
+            this.btn_edit.Location = new System.Drawing.Point(4, 611);
+            this.btn_edit.Name = "btn_edit";
+            this.btn_edit.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(15);
+            this.btn_edit.Size = new System.Drawing.Size(51, 51);
+            this.btn_edit.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btn_edit.Symbol = "";
+            this.btn_edit.TabIndex = 10;
+            this.btn_edit.Click += new System.EventHandler(this.btn_edit_Click);
+            // 
+            // btn_delete
+            // 
+            this.btn_delete.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btn_delete.ColorTable = DevComponents.DotNetBar.eButtonColor.Office2007WithBackground;
+            this.btn_delete.Location = new System.Drawing.Point(84, 611);
+            this.btn_delete.Name = "btn_delete";
+            this.btn_delete.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(15);
+            this.btn_delete.Size = new System.Drawing.Size(51, 51);
+            this.btn_delete.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btn_delete.Symbol = "";
+            this.btn_delete.TabIndex = 11;
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(566, 90);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(76, 18);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "Search By";
+            // 
+            // cmb_choose
+            // 
+            this.cmb_choose.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_choose.FormattingEnabled = true;
+            this.cmb_choose.Items.AddRange(new object[] {
+            "Product Name\t",
+            "Department"});
+            this.cmb_choose.Location = new System.Drawing.Point(644, 82);
+            this.cmb_choose.Name = "cmb_choose";
+            this.cmb_choose.Size = new System.Drawing.Size(149, 32);
+            this.cmb_choose.TabIndex = 14;
+            // 
+            // txt_search
+            // 
+            this.txt_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_search.Location = new System.Drawing.Point(855, 85);
+            this.txt_search.Name = "txt_search";
+            this.txt_search.Size = new System.Drawing.Size(153, 29);
+            this.txt_search.TabIndex = 12;
+            this.txt_search.TextChanged += new System.EventHandler(this.txt_search_TextChanged);
+            // 
+            // lbl_search
+            // 
+            this.lbl_search.AutoSize = true;
+            this.lbl_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_search.ForeColor = System.Drawing.Color.White;
+            this.lbl_search.Location = new System.Drawing.Point(796, 88);
+            this.lbl_search.Name = "lbl_search";
+            this.lbl_search.Size = new System.Drawing.Size(60, 20);
+            this.lbl_search.TabIndex = 13;
+            this.lbl_search.Text = "Search";
+            // 
+            // Addproduct
+            // 
+            this.Addproduct.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.Addproduct.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.Addproduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Addproduct.Location = new System.Drawing.Point(2, 72);
+            this.Addproduct.Name = "Addproduct";
+            this.Addproduct.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(15);
+            this.Addproduct.Size = new System.Drawing.Size(111, 52);
+            this.Addproduct.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.Addproduct.TabIndex = 16;
+            this.Addproduct.Text = "+Product";
+            this.Addproduct.Click += new System.EventHandler(this.Addproduct_Click);
             // 
             // StockProductList
             // 

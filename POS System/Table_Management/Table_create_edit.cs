@@ -358,5 +358,10 @@ namespace POS_System.Table_Management
                 }
             }
         }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

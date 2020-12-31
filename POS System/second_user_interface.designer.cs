@@ -70,6 +70,9 @@
             this.userLevelDiscountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewCustomerBalanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consulationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cardAttendanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addEventToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eventAttendanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addProductToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addStockCategoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -157,9 +160,7 @@
             this.txt_generate = new System.Windows.Forms.TextBox();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.cardAttendanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addEventToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eventAttendanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addStockGroupingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -536,6 +537,30 @@
             this.consulationToolStripMenuItem.Text = "Consulation Card";
             this.consulationToolStripMenuItem.Click += new System.EventHandler(this.consulationToolStripMenuItem_Click);
             // 
+            // cardAttendanceToolStripMenuItem
+            // 
+            this.cardAttendanceToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addEventToolStripMenuItem,
+            this.eventAttendanceToolStripMenuItem});
+            this.cardAttendanceToolStripMenuItem.Name = "cardAttendanceToolStripMenuItem";
+            this.cardAttendanceToolStripMenuItem.Size = new System.Drawing.Size(302, 28);
+            this.cardAttendanceToolStripMenuItem.Text = "Card Attendance";
+            this.cardAttendanceToolStripMenuItem.Click += new System.EventHandler(this.cardAttendanceToolStripMenuItem_Click);
+            // 
+            // addEventToolStripMenuItem
+            // 
+            this.addEventToolStripMenuItem.Name = "addEventToolStripMenuItem";
+            this.addEventToolStripMenuItem.Size = new System.Drawing.Size(245, 28);
+            this.addEventToolStripMenuItem.Text = "Add Event";
+            this.addEventToolStripMenuItem.Click += new System.EventHandler(this.addEventToolStripMenuItem_Click);
+            // 
+            // eventAttendanceToolStripMenuItem
+            // 
+            this.eventAttendanceToolStripMenuItem.Name = "eventAttendanceToolStripMenuItem";
+            this.eventAttendanceToolStripMenuItem.Size = new System.Drawing.Size(245, 28);
+            this.eventAttendanceToolStripMenuItem.Text = "Event Attendance";
+            this.eventAttendanceToolStripMenuItem.Click += new System.EventHandler(this.eventAttendanceToolStripMenuItem_Click);
+            // 
             // stockToolStripMenuItem
             // 
             this.stockToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -565,7 +590,8 @@
             // 
             this.addProductToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addStockCategoryToolStripMenuItem,
-            this.addStockProductToolStripMenuItem});
+            this.addStockProductToolStripMenuItem,
+            this.addStockGroupingToolStripMenuItem});
             this.addProductToolStripMenuItem.Name = "addProductToolStripMenuItem";
             this.addProductToolStripMenuItem.Size = new System.Drawing.Size(301, 28);
             this.addProductToolStripMenuItem.Text = "Add Product";
@@ -574,14 +600,14 @@
             // addStockCategoryToolStripMenuItem
             // 
             this.addStockCategoryToolStripMenuItem.Name = "addStockCategoryToolStripMenuItem";
-            this.addStockCategoryToolStripMenuItem.Size = new System.Drawing.Size(264, 28);
+            this.addStockCategoryToolStripMenuItem.Size = new System.Drawing.Size(357, 28);
             this.addStockCategoryToolStripMenuItem.Text = "Add Stock Category";
             this.addStockCategoryToolStripMenuItem.Click += new System.EventHandler(this.addStockCategoryToolStripMenuItem_Click);
             // 
             // addStockProductToolStripMenuItem
             // 
             this.addStockProductToolStripMenuItem.Name = "addStockProductToolStripMenuItem";
-            this.addStockProductToolStripMenuItem.Size = new System.Drawing.Size(264, 28);
+            this.addStockProductToolStripMenuItem.Size = new System.Drawing.Size(357, 28);
             this.addStockProductToolStripMenuItem.Text = "Add Stock Product";
             this.addStockProductToolStripMenuItem.Click += new System.EventHandler(this.addStockProductToolStripMenuItem_Click);
             // 
@@ -1279,29 +1305,12 @@
             this.timer2.Interval = 900000;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
-            // cardAttendanceToolStripMenuItem
+            // addStockGroupingToolStripMenuItem
             // 
-            this.cardAttendanceToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addEventToolStripMenuItem,
-            this.eventAttendanceToolStripMenuItem});
-            this.cardAttendanceToolStripMenuItem.Name = "cardAttendanceToolStripMenuItem";
-            this.cardAttendanceToolStripMenuItem.Size = new System.Drawing.Size(302, 28);
-            this.cardAttendanceToolStripMenuItem.Text = "Card Attendance";
-            this.cardAttendanceToolStripMenuItem.Click += new System.EventHandler(this.cardAttendanceToolStripMenuItem_Click);
-            // 
-            // addEventToolStripMenuItem
-            // 
-            this.addEventToolStripMenuItem.Name = "addEventToolStripMenuItem";
-            this.addEventToolStripMenuItem.Size = new System.Drawing.Size(245, 28);
-            this.addEventToolStripMenuItem.Text = "Add Event";
-            this.addEventToolStripMenuItem.Click += new System.EventHandler(this.addEventToolStripMenuItem_Click);
-            // 
-            // eventAttendanceToolStripMenuItem
-            // 
-            this.eventAttendanceToolStripMenuItem.Name = "eventAttendanceToolStripMenuItem";
-            this.eventAttendanceToolStripMenuItem.Size = new System.Drawing.Size(245, 28);
-            this.eventAttendanceToolStripMenuItem.Text = "Event Attendance";
-            this.eventAttendanceToolStripMenuItem.Click += new System.EventHandler(this.eventAttendanceToolStripMenuItem_Click);
+            this.addStockGroupingToolStripMenuItem.Name = "addStockGroupingToolStripMenuItem";
+            this.addStockGroupingToolStripMenuItem.Size = new System.Drawing.Size(357, 28);
+            this.addStockGroupingToolStripMenuItem.Text = "Add Stock Category Grouping";
+            this.addStockGroupingToolStripMenuItem.Click += new System.EventHandler(this.addStockGroupingToolStripMenuItem_Click);
             // 
             // second_user_interface
             // 
@@ -1464,5 +1473,6 @@
         private System.Windows.Forms.ToolStripMenuItem cardAttendanceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addEventToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eventAttendanceToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addStockGroupingToolStripMenuItem;
     }
 }

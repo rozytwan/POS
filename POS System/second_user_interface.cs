@@ -231,9 +231,22 @@ namespace POS_System
                     {
                         stockToolStripMenuItem.Visible = true;
                     }
+                    if (dtm.Rows[0]["restaurant"].ToString() == "True")
+                    {
+                        resturentToolStripMenuItem.Visible = true;
+                    }
+                    else
+                    {
+                        resturentToolStripMenuItem.Enabled = false;
+                    }
                     if (dtm.Rows[0]["hotel"].ToString() == "True")
                     {
                         stockToolStripMenuItem.Visible = true;
+                    }
+                    else
+                    {
+                        hotel.Enabled = false;
+                        
                     }
                     if (dtm.Rows[0]["report"].ToString() == "True")
                     {
@@ -1017,6 +1030,7 @@ namespace POS_System
             //    HotelDashBoard dr = new HotelDashBoard();
             //    contentpanel.Controls.Clear();
             //    contentpanel.Controls.Add(dr);
+    
         }
         string min_stock;
         string remain_qty;
@@ -1456,6 +1470,13 @@ namespace POS_System
             EventAttendance vsr = new EventAttendance();
             contentpanel.Controls.Clear();
             contentpanel.Controls.Add(vsr);
+        }
+
+        private void addStockGroupingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddStockGrouping adsg= new AddStockGrouping();
+            contentpanel.Controls.Clear();
+            contentpanel.Controls.Add(adsg);
         }
     }
 }

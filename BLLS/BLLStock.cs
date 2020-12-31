@@ -121,6 +121,16 @@ namespace BLLS
             return DAL.getuser("select category_name,product_name,department,unit,qty,location,stock_id from tbl_stock s join tbl_categorys c on s.category_id=c.category_id join tbl_stock_products p on s.product_id=p.product_id join tbl_department d on s.department_id=d.id where category_name like '%' +@category_name+ '%'", parm);
 
         }
+        public DataTable SearchbyCategoryId(int category_id)
+        {
+            SqlParameter[] parm = new SqlParameter[]
+            {
+                new SqlParameter("@category_id",category_id)
+            };
+
+            return DAL.getuser("select category_name,product_name,department,unit,qty,location,stock_id from tbl_stock s join tbl_categorys c on s.category_id=c.category_id join tbl_stock_products p on s.product_id=p.product_id join tbl_department d on s.department_id=d.id where category_id=@category_id", parm);
+
+        }
         public DataTable SearchbyDepartment(string department)
         {
             SqlParameter[] parm = new SqlParameter[]

@@ -24,7 +24,7 @@ namespace POS_System
         private void StockList_Load(object sender, EventArgs e)
         {
             LoadStock();
-           
+            StockGrouping();
             cmb_choose.Text = "Search By";
         }
        
@@ -94,7 +94,7 @@ namespace POS_System
                 }
             }
         }
-
+  
         private void txt_search_TextChanged(object sender, EventArgs e)
         {
             DataTable dt2 = blsc.GetQtybyProductid(product_id);
@@ -290,7 +290,86 @@ namespace POS_System
         {
            
         }
+        BLLCategoryGrouping blcg = new BLLCategoryGrouping();
+        int i = 0;
+        public void StockGrouping()
+        {
+            DataTable dt = blcg.GetStockGrouping();
+            flwpln_categoryGrouping.Controls.Clear();
+            for (int low = 0; low < dt.Rows.Count; low++)
+            {
+                Button[] GroupCategory = new Button[99];
+                GroupCategory[low] = new Button();
+                GroupCategory[low].Name = dt.Rows[low]["id"].ToString();
+                GroupCategory[low].Text = dt.Rows[low]["group_name"].ToString();
+                GroupCategory[low].Location = System.Drawing.Point.Add(new Point(0, 4 + i * 55), new Size(25, 20));
+                GroupCategory[low].Height = 50;
+                GroupCategory[low].Width = 80;
+                GroupCategory[low].AutoSizeMode = AutoSizeMode.GrowAndShrink;
+                GroupCategory[low].FlatStyle = FlatStyle.Flat;
+                GroupCategory[low].Font = new Font("Century Gothic", 10, FontStyle.Bold);
+                //GroupCategory[low].BackColor = ColorTranslator.FromHtml("#33A6FF");
 
+                GroupCategory[low].ForeColor = Color.White;
+
+                string image_color = dt.Rows[low]["group_color"].ToString();
+                GroupCategory[low].BackColor = Color.FromName(image_color);
+                GroupCategory[low].TextAlign = ContentAlignment.TopCenter;
+
+                flwpln_categoryGrouping.Controls.Add(GroupCategory[low]);
+                GroupCategory[low].Click += new EventHandler(GroupCategorys_Click);
+                // lblcateogry_item.Hide();
+                //lblitem_id.Hide();
+            }
+
+        }
+        private void GroupCategorys_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(((Button)sender).Name);
+            if (id > 0)
+            {
+                DataTable dt = blcg.GetProductCategoryGrouping(id);
+                if (dt.Rows.Count>0)
+                {
+                    for (int i = 0; i < dt.Rows.Count; i++)
+                    {
+                        int category_id = Convert.ToInt32(dt.Rows[i]["category_id"].ToString());
+                        DataTable dt1 = blls.SearchbyCategoryId(category_id);
+                        if (dt1.Rows.Count>0)
+                        {
+                            for (int j = 0; j< dt.Rows.Count; j++)
+                            {
+                                //dataGridView1.Rows.Add();
+                                //dataGridView1.Rows[i].Cells["col_category_name"].Value = dt.Rows[i]["category_name"].ToString();
+                                //dataGridView1.Rows[i].Cells["col_product_name"].Value = dt.Rows[i]["product_name"].ToString();
+                                //dataGridView1.Rows[i].Cells["col_department_name"].Value = dt.Rows[i]["department"].ToString();
+                                //dataGridView1.Rows[i].Cells["col_stock_id"].Value = dt.Rows[i]["stock_id"].ToString();
+
+                                //dataGridView1.Rows[i].Cells["col_unit"].Value = dt.Rows[i]["unit"].ToString();
+                                //dataGridView1.Rows[i].Cells["col_qty"].Value = dt.Rows[i]["qty"].ToString();
+                                //dataGridView1.Rows[i].Cells["col_location"].Value = dt.Rows[i]["location"].ToString();
+                                //if (Convert.ToDecimal(dt2.Rows[0]["inhouse_qty_3"]) > 0)
+                                //{
+                                //    dataGridView1.Rows[i].Cells["col_qty1"].Value = Convert.ToDecimal(dt.Rows[i]["qty"]) / (Convert.ToDecimal(dt2.Rows[0]["inhouse_qty_2"]) * Convert.ToDecimal(dt2.Rows[0]["inhouse_qty_3"]));
+                                //    dataGridView1.Rows[i].Cells["col_qty2"].Value = Convert.ToDecimal(dt.Rows[i]["qty"]) / Convert.ToDecimal(dt2.Rows[0]["inhouse_qty_3"]);
+                                //    dataGridView1.Rows[i].Cells["col_qty3"].Value = dt.Rows[i]["qty"].ToString();
+                                //}
+                                //else if (Convert.ToDecimal(dt2.Rows[0]["inhouse_qty_2"]) > 0)
+                                //{
+                                //    dataGridView1.Rows[i].Cells["col_qty1"].Value = Convert.ToDecimal(dt.Rows[i]["qty"]) / (Convert.ToDecimal(dt2.Rows[0]["inhouse_qty_2"]));
+                                //    dataGridView1.Rows[i].Cells["col_qty2"].Value = Convert.ToDecimal(dt.Rows[i]["qty"]);
+                                //}
+                                //else
+                                //{
+
+                                //    dataGridView1.Rows[i].Cells["col_qty1"].Value = dt.Rows[i]["qty"].ToString();
+                                //}
+                            }
+                        }
+                    }
+                }
+            }
+        }
         private void btn_excel_Click(object sender, EventArgs e)
         {
             //ExporyToExcel(btn_export_toexcel, "ExportedUserDetail");
@@ -336,6 +415,11 @@ namespace POS_System
                 wb.Worksheets.Add(dt, "Stock Record");
                 wb.SaveAs(folderPath + DateTime.Now.ToString("yyyy-mm-dd hh") + "StockReport.xlsx");
             }
+        }
+
+        private void lbl_search_Click(object sender, EventArgs e)
+        {
+
         }
     }
     }

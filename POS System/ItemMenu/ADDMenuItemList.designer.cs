@@ -131,7 +131,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(346, 82);
+            this.label2.Location = new System.Drawing.Point(331, 83);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(132, 20);
             this.label2.TabIndex = 7;
@@ -141,7 +141,7 @@
             // 
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(484, 76);
+            this.comboBox1.Location = new System.Drawing.Point(469, 77);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(197, 32);
             this.comboBox1.TabIndex = 6;
@@ -149,7 +149,7 @@
             // txt_searchbox
             // 
             this.txt_searchbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_searchbox.Location = new System.Drawing.Point(753, 76);
+            this.txt_searchbox.Location = new System.Drawing.Point(731, 77);
             this.txt_searchbox.Name = "txt_searchbox";
             this.txt_searchbox.Size = new System.Drawing.Size(176, 29);
             this.txt_searchbox.TabIndex = 2;
@@ -159,7 +159,7 @@
             // 
             this.lbl_search.AutoSize = true;
             this.lbl_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_search.Location = new System.Drawing.Point(687, 82);
+            this.lbl_search.Location = new System.Drawing.Point(672, 83);
             this.lbl_search.Name = "lbl_search";
             this.lbl_search.Size = new System.Drawing.Size(60, 20);
             this.lbl_search.TabIndex = 5;

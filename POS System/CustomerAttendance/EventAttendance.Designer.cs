@@ -101,6 +101,7 @@
             this.btn_back.Size = new System.Drawing.Size(70, 64);
             this.btn_back.TabIndex = 22;
             this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // lbl_addcategory
             // 

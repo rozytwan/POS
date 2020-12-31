@@ -15,6 +15,15 @@ namespace BLLS.Hotel
         {
             return DAL.getuser("select * from hotel_room_category", null);
         }
+        public DataTable getAllRoomCategorybyId(int id)
+        {
+            SqlParameter[] parm = new SqlParameter[]
+                {
+                    new SqlParameter("@room_category_id",id)
+                };
+            return DAL.getuser("select * from hotel_room_category where room_category_id=@room_category_id", parm);
+
+        }
         public DataTable getAllRoomDetaisbyId(int id)
         {
             SqlParameter[] parm = new SqlParameter[]

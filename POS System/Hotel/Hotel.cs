@@ -25,11 +25,16 @@ namespace POS_System.Hotel
         BLLHotelRoom blhr = new BLLHotelRoom();
         BLL_HotelCategory hotel = new BLL_HotelCategory();
         ButtonX btn_area = new ButtonX();
+        //int category_id = 1;
         private void Hotel_Load(object sender, EventArgs e)
         {
-            
-            flowLayoutPanel2.AllowDrop = true;
-          DataTable dt = blhr.getAllRoomCategory();
+            if (room_category_id==0)
+            {
+                room_category_id = 1;
+            }
+                flowLayoutPanel2.AllowDrop = true;
+          DataTable dt1 = blhr.getAllRoomCategorybyId(room_category_id);
+            DataTable dt = blhr.getAllRoomCategory();
             if (dt.Rows.Count > 0)
             {
                 for (int x = 0; dt.Rows.Count > x; x++)
@@ -48,6 +53,10 @@ namespace POS_System.Hotel
                 
                     flowLayoutPanel1.Controls.Add(btn_area);
                     btn_area.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+                    if (dt1.Rows.Count > 0)
+                    {
+                        roomManagement();
+                    }
                 }
             }
         }
@@ -61,7 +70,7 @@ namespace POS_System.Hotel
             }
         }
 
-        int room_category_id;
+        public static int room_category_id;
        
         Panel mainPanel = new Panel();
         Panel roomPanel = new Panel();

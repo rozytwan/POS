@@ -202,7 +202,7 @@
             this.panelPackage.Controls.Add(this.cmb_package);
             this.panelPackage.Location = new System.Drawing.Point(633, 1);
             this.panelPackage.Name = "panelPackage";
-            this.panelPackage.Size = new System.Drawing.Size(182, 54);
+            this.panelPackage.Size = new System.Drawing.Size(170, 54);
             this.panelPackage.TabIndex = 326;
             // 
             // bunifuCustomLabel1
@@ -224,7 +224,7 @@
             this.cmb_package.FormattingEnabled = true;
             this.cmb_package.Location = new System.Drawing.Point(3, 25);
             this.cmb_package.Name = "cmb_package";
-            this.cmb_package.Size = new System.Drawing.Size(176, 26);
+            this.cmb_package.Size = new System.Drawing.Size(164, 26);
             this.cmb_package.TabIndex = 28;
             this.cmb_package.Enter += new System.EventHandler(this.cmb_package_Enter);
             this.cmb_package.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmb_package_KeyPress);
@@ -297,7 +297,7 @@
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(457, 8);
+            this.label20.Location = new System.Drawing.Point(484, 8);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(38, 18);
             this.label20.TabIndex = 318;
@@ -308,7 +308,7 @@
             this.lbl_days.AutoSize = true;
             this.lbl_days.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_days.ForeColor = System.Drawing.Color.White;
-            this.lbl_days.Location = new System.Drawing.Point(430, 7);
+            this.lbl_days.Location = new System.Drawing.Point(457, 7);
             this.lbl_days.Name = "lbl_days";
             this.lbl_days.Size = new System.Drawing.Size(28, 18);
             this.lbl_days.TabIndex = 317;
@@ -318,10 +318,10 @@
             // txt_room_charge
             // 
             this.txt_room_charge.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_room_charge.Location = new System.Drawing.Point(501, 28);
+            this.txt_room_charge.Location = new System.Drawing.Point(525, 30);
             this.txt_room_charge.Name = "txt_room_charge";
             this.txt_room_charge.ReadOnly = true;
-            this.txt_room_charge.Size = new System.Drawing.Size(126, 25);
+            this.txt_room_charge.Size = new System.Drawing.Size(105, 25);
             this.txt_room_charge.TabIndex = 316;
             this.txt_room_charge.Text = "0.00";
             // 
@@ -330,7 +330,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(505, 8);
+            this.label16.Location = new System.Drawing.Point(522, 7);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(101, 18);
             this.label16.TabIndex = 315;
@@ -340,7 +340,7 @@
             // 
             this.dtp_check_out.CalendarFont = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_check_out.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtp_check_out.Location = new System.Drawing.Point(256, 28);
+            this.dtp_check_out.Location = new System.Drawing.Point(283, 28);
             this.dtp_check_out.Name = "dtp_check_out";
             this.dtp_check_out.Size = new System.Drawing.Size(241, 28);
             this.dtp_check_out.TabIndex = 314;
@@ -351,7 +351,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(253, 8);
+            this.label1.Location = new System.Drawing.Point(291, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(116, 18);
             this.label1.TabIndex = 313;
@@ -361,7 +361,7 @@
             // 
             this.dtp_checkin.CalendarFont = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_checkin.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtp_checkin.Location = new System.Drawing.Point(7, 27);
+            this.dtp_checkin.Location = new System.Drawing.Point(34, 27);
             this.dtp_checkin.Name = "dtp_checkin";
             this.dtp_checkin.Size = new System.Drawing.Size(244, 28);
             this.dtp_checkin.TabIndex = 312;
@@ -372,7 +372,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(4, 7);
+            this.label10.Location = new System.Drawing.Point(41, 8);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(106, 18);
             this.label10.TabIndex = 311;

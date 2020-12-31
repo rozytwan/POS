@@ -92,6 +92,7 @@
             this.cmb_package = new System.Windows.Forms.ComboBox();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panelPackage = new System.Windows.Forms.Panel();
+            this.btn_back = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.customer_pic)).BeginInit();
             this.panel2.SuspendLayout();
@@ -116,7 +117,7 @@
             this.bunifuCustomLabel5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuCustomLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel5.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel5.Location = new System.Drawing.Point(7, 4);
+            this.bunifuCustomLabel5.Location = new System.Drawing.Point(51, 11);
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
             this.bunifuCustomLabel5.Size = new System.Drawing.Size(115, 20);
             this.bunifuCustomLabel5.TabIndex = 5;
@@ -1398,11 +1399,25 @@
             this.panelPackage.Size = new System.Drawing.Size(237, 66);
             this.panelPackage.TabIndex = 29;
             // 
+            // btn_back
+            // 
+            this.btn_back.BackColor = System.Drawing.Color.MintCream;
+            this.btn_back.FlatAppearance.BorderSize = 0;
+            this.btn_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_back.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(80)))), ((int)(((byte)(86)))));
+            this.btn_back.Image = global::POS_System.Properties.Resources.left_arrow_angle;
+            this.btn_back.Location = new System.Drawing.Point(3, 3);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(42, 38);
+            this.btn_back.TabIndex = 30;
+            this.btn_back.UseVisualStyleBackColor = false;
+            // 
             // GetDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(45)))));
+            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.panelPackage);
             this.Controls.Add(this.lbl_room_no);
             this.Controls.Add(this.label10);
@@ -1492,5 +1507,6 @@
         private System.Windows.Forms.ComboBox cmb_package;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private System.Windows.Forms.Panel panelPackage;
+        private System.Windows.Forms.Button btn_back;
     }
 }

@@ -93,6 +93,7 @@ namespace POS_System
         string CheckoutRename;
         private void KOTOrder_Load(object sender, EventArgs e)
         {
+            panel_note.Visible=false;
             ServiceProvider = second_user_interface.ServiceProvider;
             ProviderName = second_user_interface.ProviderName;
             KOTRename = second_user_interface.KOTRename;
@@ -661,13 +662,14 @@ namespace POS_System
             }
         }
         //item button click
+        decimal quantity ;
         public void panelButtons_Click(object sender, EventArgs e)
         {
             try
             {
-                decimal quantity = 1;
+               
                 item_id = ((Button)sender).Name;
-
+                quantity = 1;
                 DataTable dt = blord.getitembyitem_id(Convert.ToInt32(item_id));
                 bool Found = false;
                 if (dataGridView1.Rows.Count > 0)
@@ -1163,7 +1165,7 @@ namespace POS_System
             kot80.table_no = lbltable_real_no.Text;
             kot80.table_displayNo = label_table_no.Text;
             kot80.table_name = lbl_table_name.Text;
-            kot80.note_pad = txtrichbox.Text;
+            kot80.note_pad = txtrichbox.Text; 
             kot80.cashier = Login.sendtext;
             kot80.service_provider_name = service_provider_name;
             kot80.kot_id = kot_id.ToString();
@@ -1273,19 +1275,18 @@ namespace POS_System
             //    MessageBox.Show(ex.Message);
             //}
         }
-        public static string row_id;
+        public static int row_id;
         private void btnenter_Click_1(object sender, EventArgs e)
         {
             if (btn_x_note.Text == "Note")
             {
-                //row_id = dataGridView1.CurrentRow.Cells["cal_description"].Value.ToString();
-
-                //Control ctls = this.Parent;
-                //NoteItem cl = new NoteItem();
-                //ctls.Controls.Clear();
-                //ctls.Controls.Add(cl);
-
-                  KOTOrder.Animate(txtrichbox, KOTOrder.Effect.Slide, 150, 180);
+                //panel_note.Visible = true;
+                //panel_note.Show();
+                /*old design */
+                 KOTOrder.Animate(txtrichbox, KOTOrder.Effect.Slide, 150, 180);
+                /*new form*/
+                //NoteItem ni = new NoteItem();
+                //ni.ShowDialog();
             }
             else
             {
@@ -2130,6 +2131,7 @@ namespace POS_System
 
 
         DataGridViewRow[] old;
+        string itemnote = NoteItem.itemnote;
         private void dataGridView1_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
 
@@ -2144,7 +2146,7 @@ namespace POS_System
                     gr.Selected = true;
                 }
             }
-            txtrichbox.Text = dataGridView1.CurrentRow.Cells["cal_note"].Value.ToString();
+         txtrichbox.Text = dataGridView1.CurrentRow.Cells["cal_note"].Value.ToString();
         }
         //string tempQty = "1";
 
@@ -2326,7 +2328,8 @@ namespace POS_System
                                     it.datagridview_kotType.Add(dataGridView1.Rows[i].Cells["calkot_print"].Value.ToString());
                                 }
                             }
-                            it.table_no = lbl_table_name.Text;
+                            it.table_no = label_table_no.Text;
+                            it.table_name = lbl_table_name.Text;
                             it.ShowDialog();
                             datagridviewload();
                         }
@@ -2430,6 +2433,46 @@ namespace POS_System
                 txt_item_search.ForeColor = SystemColors.GrayText;
 
             }
+        }
+
+        private void txt_rich_note_TextChanged(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                dataGridView1.CurrentRow.Cells["cal_description"].Value = txt_rich_note.Text;
+            }
+        }
+
+        private void btn_save_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                dataGridView1.CurrentRow.Cells["cal_description"].Value = txt_rich_note.Text;
+                //txt_rich_note.Text = "";
+            }
+            panel_note.Hide();
+        }
+
+        private void btn_modifier_Click(object sender, EventArgs e)
+        {
+            Item_modifier_list iml = new Item_modifier_list();
+            iml.ShowDialog();
+        }
+
+        private void panel_note_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                Point newLoc = new Point(e.X + panel_note.Location.X, e.Y + panel_note.Location.Y);
+                panel_note.Location = newLoc;
+
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            panel_note.Visible = false;
+
         }
     }
 }

@@ -142,6 +142,7 @@
             this.btn_back.Size = new System.Drawing.Size(70, 64);
             this.btn_back.TabIndex = 22;
             this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // lbl_addcategory
             // 
@@ -230,7 +231,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1003, 637);
             this.Controls.Add(this.btn_save);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
@@ -240,7 +240,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel10);
             this.Name = "AddEventType";
-            this.Text = "AddEventType";
+            this.Size = new System.Drawing.Size(1003, 637);
             this.Load += new System.EventHandler(this.AddEventType_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel6.ResumeLayout(false);
