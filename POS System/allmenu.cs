@@ -436,9 +436,12 @@ namespace POS_System
 
         private void metroTileItem9_Click(object sender, EventArgs e)
         {
-            CashWithdrawl cashwith = new CashWithdrawl("Restaurant");
+            //CashWithdrawl cashwith = new CashWithdrawl("Restaurant");
+            //contentpanel.Controls.Clear();
+            //contentpanel.Controls.Add(cashwith);
+            BakeryTable_Billing winfor = new BakeryTable_Billing("TA");
             contentpanel.Controls.Clear();
-            contentpanel.Controls.Add(cashwith);
+            contentpanel.Controls.Add(winfor);
         }
 
         private void metroTileItem14_Click(object sender, EventArgs e)

@@ -34,6 +34,16 @@
             this.btn_back = new System.Windows.Forms.Button();
             this.label23 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.col_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_last_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_card_no = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_card_type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_balance = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_add = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.col_cash_back = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.col_replace = new System.Windows.Forms.DataGridViewButtonColumn();
             this.txt_searchbox = new System.Windows.Forms.TextBox();
             this.lbl_search = new System.Windows.Forms.Label();
             this.lbl_balance = new System.Windows.Forms.Label();
@@ -46,6 +56,7 @@
             this.btn_previous = new DevComponents.DotNetBar.ButtonX();
             this.btn_next = new DevComponents.DotNetBar.ButtonX();
             this.panel_replace = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.btn_change = new DevComponents.DotNetBar.ButtonX();
             this.label12 = new System.Windows.Forms.Label();
@@ -54,17 +65,7 @@
             this.lbl_cardno = new System.Windows.Forms.Label();
             this.txt_newcard = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.col_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_last_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_card_no = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_card_type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_balance = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_add = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.col_cash_back = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.col_replace = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_topup = new DevComponents.DotNetBar.ButtonX();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -150,6 +151,85 @@
             this.dataGridView1.Size = new System.Drawing.Size(989, 529);
             this.dataGridView1.TabIndex = 116;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            // 
+            // col_name
+            // 
+            this.col_name.HeaderText = "Name";
+            this.col_name.Name = "col_name";
+            this.col_name.ReadOnly = true;
+            this.col_name.Width = 120;
+            // 
+            // col_last_name
+            // 
+            this.col_last_name.HeaderText = "Last Name";
+            this.col_last_name.Name = "col_last_name";
+            this.col_last_name.ReadOnly = true;
+            this.col_last_name.Width = 145;
+            // 
+            // col_phone
+            // 
+            this.col_phone.HeaderText = "Phone";
+            this.col_phone.Name = "col_phone";
+            this.col_phone.ReadOnly = true;
+            // 
+            // col_card_no
+            // 
+            this.col_card_no.HeaderText = "Card no.";
+            this.col_card_no.Name = "col_card_no";
+            this.col_card_no.ReadOnly = true;
+            this.col_card_no.Width = 140;
+            // 
+            // col_card_type
+            // 
+            this.col_card_type.HeaderText = "Card Type";
+            this.col_card_type.Name = "col_card_type";
+            this.col_card_type.ReadOnly = true;
+            this.col_card_type.Width = 80;
+            // 
+            // col_balance
+            // 
+            this.col_balance.HeaderText = "Card Balance";
+            this.col_balance.Name = "col_balance";
+            this.col_balance.ReadOnly = true;
+            // 
+            // col_id
+            // 
+            this.col_id.HeaderText = "Id";
+            this.col_id.Name = "col_id";
+            this.col_id.ReadOnly = true;
+            this.col_id.Visible = false;
+            // 
+            // col_add
+            // 
+            this.col_add.HeaderText = "Add Balance";
+            this.col_add.Name = "col_add";
+            this.col_add.ReadOnly = true;
+            this.col_add.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.col_add.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.col_add.Text = "Add Balance";
+            this.col_add.ToolTipText = "Add Balance";
+            this.col_add.UseColumnTextForButtonValue = true;
+            this.col_add.Width = 85;
+            // 
+            // col_cash_back
+            // 
+            this.col_cash_back.HeaderText = "Cash Back";
+            this.col_cash_back.Name = "col_cash_back";
+            this.col_cash_back.ReadOnly = true;
+            this.col_cash_back.Text = "Cash Back";
+            this.col_cash_back.ToolTipText = "Cash Back";
+            this.col_cash_back.UseColumnTextForButtonValue = true;
+            this.col_cash_back.Width = 85;
+            // 
+            // col_replace
+            // 
+            this.col_replace.HeaderText = "Replace Card";
+            this.col_replace.Name = "col_replace";
+            this.col_replace.ReadOnly = true;
+            this.col_replace.Text = "Replace Card";
+            this.col_replace.ToolTipText = "Replace Card";
+            this.col_replace.UseColumnTextForButtonValue = true;
+            this.col_replace.Width = 85;
             // 
             // txt_searchbox
             // 
@@ -301,6 +381,19 @@
             this.panel_replace.Size = new System.Drawing.Size(280, 305);
             this.panel_replace.TabIndex = 150;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(254, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(26, 27);
+            this.button1.TabIndex = 151;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -386,103 +479,26 @@
             this.label4.TabIndex = 120;
             this.label4.Text = "New Card No.";
             // 
-            // col_name
+            // btn_topup
             // 
-            this.col_name.HeaderText = "Name";
-            this.col_name.Name = "col_name";
-            this.col_name.ReadOnly = true;
-            this.col_name.Width = 120;
-            // 
-            // col_last_name
-            // 
-            this.col_last_name.HeaderText = "Last Name";
-            this.col_last_name.Name = "col_last_name";
-            this.col_last_name.ReadOnly = true;
-            this.col_last_name.Width = 145;
-            // 
-            // col_phone
-            // 
-            this.col_phone.HeaderText = "Phone";
-            this.col_phone.Name = "col_phone";
-            this.col_phone.ReadOnly = true;
-            // 
-            // col_card_no
-            // 
-            this.col_card_no.HeaderText = "Card no.";
-            this.col_card_no.Name = "col_card_no";
-            this.col_card_no.ReadOnly = true;
-            this.col_card_no.Width = 140;
-            // 
-            // col_card_type
-            // 
-            this.col_card_type.HeaderText = "Card Type";
-            this.col_card_type.Name = "col_card_type";
-            this.col_card_type.ReadOnly = true;
-            this.col_card_type.Width = 80;
-            // 
-            // col_balance
-            // 
-            this.col_balance.HeaderText = "Card Balance";
-            this.col_balance.Name = "col_balance";
-            this.col_balance.ReadOnly = true;
-            // 
-            // col_id
-            // 
-            this.col_id.HeaderText = "Id";
-            this.col_id.Name = "col_id";
-            this.col_id.ReadOnly = true;
-            this.col_id.Visible = false;
-            // 
-            // col_add
-            // 
-            this.col_add.HeaderText = "Add Balance";
-            this.col_add.Name = "col_add";
-            this.col_add.ReadOnly = true;
-            this.col_add.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.col_add.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.col_add.Text = "Add Balance";
-            this.col_add.ToolTipText = "Add Balance";
-            this.col_add.UseColumnTextForButtonValue = true;
-            this.col_add.Width = 85;
-            // 
-            // col_cash_back
-            // 
-            this.col_cash_back.HeaderText = "Cash Back";
-            this.col_cash_back.Name = "col_cash_back";
-            this.col_cash_back.ReadOnly = true;
-            this.col_cash_back.Text = "Cash Back";
-            this.col_cash_back.ToolTipText = "Cash Back";
-            this.col_cash_back.UseColumnTextForButtonValue = true;
-            this.col_cash_back.Width = 85;
-            // 
-            // col_replace
-            // 
-            this.col_replace.HeaderText = "Replace Card";
-            this.col_replace.Name = "col_replace";
-            this.col_replace.ReadOnly = true;
-            this.col_replace.Text = "Replace Card";
-            this.col_replace.ToolTipText = "Replace Card";
-            this.col_replace.UseColumnTextForButtonValue = true;
-            this.col_replace.Width = 85;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(254, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(26, 27);
-            this.button1.TabIndex = 151;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_topup.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btn_topup.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btn_topup.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_topup.Location = new System.Drawing.Point(710, 646);
+            this.btn_topup.Name = "btn_topup";
+            this.btn_topup.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(14);
+            this.btn_topup.Size = new System.Drawing.Size(148, 50);
+            this.btn_topup.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btn_topup.Symbol = "";
+            this.btn_topup.TabIndex = 151;
+            this.btn_topup.Text = "Topup All";
             // 
             // CustomerList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btn_topup);
             this.Controls.Add(this.panel_replace);
             this.Controls.Add(this.btn_previous);
             this.Controls.Add(this.btn_next);
@@ -550,5 +566,6 @@
         private System.Windows.Forms.DataGridViewButtonColumn col_cash_back;
         private System.Windows.Forms.DataGridViewButtonColumn col_replace;
         private System.Windows.Forms.Button button1;
+        private DevComponents.DotNetBar.ButtonX btn_topup;
     }
 }

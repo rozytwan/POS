@@ -31,7 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HotelBilling));
-            this.containpanel = new System.Windows.Forms.Panel();
+            this.GetDetails = new System.Windows.Forms.Panel();
             this.panelPackage = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.cmb_package = new System.Windows.Forms.ComboBox();
@@ -59,7 +59,7 @@
             this.btn_x_billing = new DevComponents.DotNetBar.ButtonX();
             this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.btn_x_save_only = new DevComponents.DotNetBar.ButtonX();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel_total = new System.Windows.Forms.Panel();
             this.lbl_chargeableamt = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.lbl_service_charge = new System.Windows.Forms.Label();
@@ -131,70 +131,72 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtnewbillno = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.containpanel.SuspendLayout();
+            this.btn_back = new System.Windows.Forms.Button();
+            this.GetDetails.SuspendLayout();
             this.panelPackage.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.panel_total.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
             this.btntable_transfer.SuspendLayout();
             this.SuspendLayout();
             // 
-            // containpanel
+            // panel1
             // 
-            this.containpanel.BackColor = System.Drawing.Color.Transparent;
-            this.containpanel.Controls.Add(this.panelPackage);
-            this.containpanel.Controls.Add(this.btn_bill_all);
-            this.containpanel.Controls.Add(this.lbl_id);
-            this.containpanel.Controls.Add(this.lbl_visited_customer);
-            this.containpanel.Controls.Add(this.btn_booking_cancel);
-            this.containpanel.Controls.Add(this.btn_exact);
-            this.containpanel.Controls.Add(this.label20);
-            this.containpanel.Controls.Add(this.lbl_days);
-            this.containpanel.Controls.Add(this.txt_room_charge);
-            this.containpanel.Controls.Add(this.label16);
-            this.containpanel.Controls.Add(this.dtp_check_out);
-            this.containpanel.Controls.Add(this.label1);
-            this.containpanel.Controls.Add(this.dtp_checkin);
-            this.containpanel.Controls.Add(this.label10);
-            this.containpanel.Controls.Add(this.btn_bill_void);
-            this.containpanel.Controls.Add(this.groupBox2);
-            this.containpanel.Controls.Add(this.btn_advance_discount);
-            this.containpanel.Controls.Add(this.buttonX2);
-            this.containpanel.Controls.Add(this.btn_x_billing);
-            this.containpanel.Controls.Add(this.buttonX1);
-            this.containpanel.Controls.Add(this.btn_x_save_only);
-            this.containpanel.Controls.Add(this.panel1);
-            this.containpanel.Controls.Add(this.txtremainingamount);
-            this.containpanel.Controls.Add(this.label12);
-            this.containpanel.Controls.Add(this.label15);
-            this.containpanel.Controls.Add(this.txtcardamount);
-            this.containpanel.Controls.Add(this.txtcashamount);
-            this.containpanel.Controls.Add(this.txtsubtotal);
-            this.containpanel.Controls.Add(this.label17);
-            this.containpanel.Controls.Add(this.dataGridView1);
-            this.containpanel.Controls.Add(this.btnrefresh);
-            this.containpanel.Controls.Add(this.btnbackspace);
-            this.containpanel.Controls.Add(this.btndot);
-            this.containpanel.Controls.Add(this.btnzero);
-            this.containpanel.Controls.Add(this.btndoublezero);
-            this.containpanel.Controls.Add(this.btn9);
-            this.containpanel.Controls.Add(this.btn8);
-            this.containpanel.Controls.Add(this.btnseven);
-            this.containpanel.Controls.Add(this.btnsix);
-            this.containpanel.Controls.Add(this.btnfive);
-            this.containpanel.Controls.Add(this.btnfour);
-            this.containpanel.Controls.Add(this.btnthree);
-            this.containpanel.Controls.Add(this.btntwo);
-            this.containpanel.Controls.Add(this.btnone);
-            this.containpanel.Controls.Add(this.btncalcu);
-            this.containpanel.Controls.Add(this.label14);
-            this.containpanel.Controls.Add(this.panel3);
-            this.containpanel.Controls.Add(this.btntable_transfer);
-            this.containpanel.Location = new System.Drawing.Point(3, 2);
-            this.containpanel.Name = "containpanel";
-            this.containpanel.Size = new System.Drawing.Size(818, 713);
-            this.containpanel.TabIndex = 1;
+            this.GetDetails.BackColor = System.Drawing.Color.Transparent;
+            this.GetDetails.Controls.Add(this.btn_back);
+            this.GetDetails.Controls.Add(this.panelPackage);
+            this.GetDetails.Controls.Add(this.btn_bill_all);
+            this.GetDetails.Controls.Add(this.lbl_id);
+            this.GetDetails.Controls.Add(this.lbl_visited_customer);
+            this.GetDetails.Controls.Add(this.btn_booking_cancel);
+            this.GetDetails.Controls.Add(this.btn_exact);
+            this.GetDetails.Controls.Add(this.label20);
+            this.GetDetails.Controls.Add(this.lbl_days);
+            this.GetDetails.Controls.Add(this.txt_room_charge);
+            this.GetDetails.Controls.Add(this.label16);
+            this.GetDetails.Controls.Add(this.dtp_check_out);
+            this.GetDetails.Controls.Add(this.label1);
+            this.GetDetails.Controls.Add(this.dtp_checkin);
+            this.GetDetails.Controls.Add(this.label10);
+            this.GetDetails.Controls.Add(this.btn_bill_void);
+            this.GetDetails.Controls.Add(this.groupBox2);
+            this.GetDetails.Controls.Add(this.btn_advance_discount);
+            this.GetDetails.Controls.Add(this.buttonX2);
+            this.GetDetails.Controls.Add(this.btn_x_billing);
+            this.GetDetails.Controls.Add(this.buttonX1);
+            this.GetDetails.Controls.Add(this.btn_x_save_only);
+            this.GetDetails.Controls.Add(this.panel_total);
+            this.GetDetails.Controls.Add(this.txtremainingamount);
+            this.GetDetails.Controls.Add(this.label12);
+            this.GetDetails.Controls.Add(this.label15);
+            this.GetDetails.Controls.Add(this.txtcardamount);
+            this.GetDetails.Controls.Add(this.txtcashamount);
+            this.GetDetails.Controls.Add(this.txtsubtotal);
+            this.GetDetails.Controls.Add(this.label17);
+            this.GetDetails.Controls.Add(this.dataGridView1);
+            this.GetDetails.Controls.Add(this.btnrefresh);
+            this.GetDetails.Controls.Add(this.btnbackspace);
+            this.GetDetails.Controls.Add(this.btndot);
+            this.GetDetails.Controls.Add(this.btnzero);
+            this.GetDetails.Controls.Add(this.btndoublezero);
+            this.GetDetails.Controls.Add(this.btn9);
+            this.GetDetails.Controls.Add(this.btn8);
+            this.GetDetails.Controls.Add(this.btnseven);
+            this.GetDetails.Controls.Add(this.btnsix);
+            this.GetDetails.Controls.Add(this.btnfive);
+            this.GetDetails.Controls.Add(this.btnfour);
+            this.GetDetails.Controls.Add(this.btnthree);
+            this.GetDetails.Controls.Add(this.btntwo);
+            this.GetDetails.Controls.Add(this.btnone);
+            this.GetDetails.Controls.Add(this.btncalcu);
+            this.GetDetails.Controls.Add(this.label14);
+            this.GetDetails.Controls.Add(this.panel3);
+            this.GetDetails.Controls.Add(this.btntable_transfer);
+            this.GetDetails.Location = new System.Drawing.Point(3, 2);
+            this.GetDetails.Name = "panel1";
+            this.GetDetails.Size = new System.Drawing.Size(818, 713);
+            this.GetDetails.TabIndex = 1;
             // 
             // panelPackage
             // 
@@ -340,9 +342,9 @@
             // 
             this.dtp_check_out.CalendarFont = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_check_out.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtp_check_out.Location = new System.Drawing.Point(283, 28);
+            this.dtp_check_out.Location = new System.Drawing.Point(292, 27);
             this.dtp_check_out.Name = "dtp_check_out";
-            this.dtp_check_out.Size = new System.Drawing.Size(241, 28);
+            this.dtp_check_out.Size = new System.Drawing.Size(223, 28);
             this.dtp_check_out.TabIndex = 314;
             this.dtp_check_out.ValueChanged += new System.EventHandler(this.dtp_check_out_ValueChanged);
             // 
@@ -359,11 +361,11 @@
             // 
             // dtp_checkin
             // 
-            this.dtp_checkin.CalendarFont = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtp_checkin.CalendarFont = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_checkin.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtp_checkin.Location = new System.Drawing.Point(34, 27);
+            this.dtp_checkin.Location = new System.Drawing.Point(57, 27);
             this.dtp_checkin.Name = "dtp_checkin";
-            this.dtp_checkin.Size = new System.Drawing.Size(244, 28);
+            this.dtp_checkin.Size = new System.Drawing.Size(229, 28);
             this.dtp_checkin.TabIndex = 312;
             this.dtp_checkin.ValueChanged += new System.EventHandler(this.dtp_checkin_ValueChanged);
             // 
@@ -372,7 +374,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(41, 8);
+            this.label10.Location = new System.Drawing.Point(57, 6);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(106, 18);
             this.label10.TabIndex = 311;
@@ -536,35 +538,35 @@
             this.btn_x_save_only.TextAlignment = DevComponents.DotNetBar.eButtonTextAlignment.Left;
             this.btn_x_save_only.Click += new System.EventHandler(this.btn_x_save_only_Click);
             // 
-            // panel1
+            // panel_total
             // 
-            this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Controls.Add(this.lbl_chargeableamt);
-            this.panel1.Controls.Add(this.label22);
-            this.panel1.Controls.Add(this.lbl_service_charge);
-            this.panel1.Controls.Add(this.label19);
-            this.panel1.Controls.Add(this.lbl_tax);
-            this.panel1.Controls.Add(this.label18);
-            this.panel1.Controls.Add(this.lbl_room);
-            this.panel1.Controls.Add(this.lbl_table_no_2);
-            this.panel1.Controls.Add(this.txtgrandtotal);
-            this.panel1.Controls.Add(this.lbldiscount);
-            this.panel1.Controls.Add(this.lblcardamount);
-            this.panel1.Controls.Add(this.lblchangeamout);
-            this.panel1.Controls.Add(this.lblrecivedamount);
-            this.panel1.Controls.Add(this.lblsub_total);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label123);
-            this.panel1.Controls.Add(this.label23);
-            this.panel1.Controls.Add(this.lblrecivedamount22);
-            this.panel1.Location = new System.Drawing.Point(575, 58);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(211, 280);
-            this.panel1.TabIndex = 294;
+            this.panel_total.BackColor = System.Drawing.Color.Black;
+            this.panel_total.Controls.Add(this.lbl_chargeableamt);
+            this.panel_total.Controls.Add(this.label22);
+            this.panel_total.Controls.Add(this.lbl_service_charge);
+            this.panel_total.Controls.Add(this.label19);
+            this.panel_total.Controls.Add(this.lbl_tax);
+            this.panel_total.Controls.Add(this.label18);
+            this.panel_total.Controls.Add(this.lbl_room);
+            this.panel_total.Controls.Add(this.lbl_table_no_2);
+            this.panel_total.Controls.Add(this.txtgrandtotal);
+            this.panel_total.Controls.Add(this.lbldiscount);
+            this.panel_total.Controls.Add(this.lblcardamount);
+            this.panel_total.Controls.Add(this.lblchangeamout);
+            this.panel_total.Controls.Add(this.lblrecivedamount);
+            this.panel_total.Controls.Add(this.lblsub_total);
+            this.panel_total.Controls.Add(this.label6);
+            this.panel_total.Controls.Add(this.label5);
+            this.panel_total.Controls.Add(this.label3);
+            this.panel_total.Controls.Add(this.label4);
+            this.panel_total.Controls.Add(this.label2);
+            this.panel_total.Controls.Add(this.label123);
+            this.panel_total.Controls.Add(this.label23);
+            this.panel_total.Controls.Add(this.lblrecivedamount22);
+            this.panel_total.Location = new System.Drawing.Point(575, 58);
+            this.panel_total.Name = "panel_total";
+            this.panel_total.Size = new System.Drawing.Size(211, 280);
+            this.panel_total.TabIndex = 294;
             // 
             // lbl_chargeableamt
             // 
@@ -1457,23 +1459,37 @@
             this.label11.TabIndex = 90;
             this.label11.Text = "Bill No";
             // 
+            // btn_back
+            // 
+            this.btn_back.BackColor = System.Drawing.Color.MintCream;
+            this.btn_back.FlatAppearance.BorderSize = 0;
+            this.btn_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_back.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(80)))), ((int)(((byte)(86)))));
+            this.btn_back.Image = global::POS_System.Properties.Resources.left_arrow_angle;
+            this.btn_back.Location = new System.Drawing.Point(3, 6);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(48, 46);
+            this.btn_back.TabIndex = 327;
+            this.btn_back.UseVisualStyleBackColor = false;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
+            // 
             // HotelBilling
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.containpanel);
+            this.Controls.Add(this.GetDetails);
             this.Name = "HotelBilling";
             this.Size = new System.Drawing.Size(829, 713);
             this.Load += new System.EventHandler(this.HotelBilling_Load);
-            this.containpanel.ResumeLayout(false);
-            this.containpanel.PerformLayout();
+            this.GetDetails.ResumeLayout(false);
+            this.GetDetails.PerformLayout();
             this.panelPackage.ResumeLayout(false);
             this.panelPackage.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panel_total.ResumeLayout(false);
+            this.panel_total.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -1485,14 +1501,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel containpanel;
+        private System.Windows.Forms.Panel GetDetails;
         private DevComponents.DotNetBar.ButtonX btn_bill_void;
         private DevComponents.DotNetBar.ButtonX btn_advance_discount;
         private DevComponents.DotNetBar.ButtonX buttonX2;
         private DevComponents.DotNetBar.ButtonX btn_x_billing;
         private DevComponents.DotNetBar.ButtonX buttonX1;
         private DevComponents.DotNetBar.ButtonX btn_x_save_only;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel_total;
         private System.Windows.Forms.Label lbl_service_charge;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label lbl_tax;
@@ -1585,5 +1601,6 @@
         private System.Windows.Forms.ComboBox cmb_package;
         private System.Windows.Forms.Label lbl_chargeableamt;
         private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Button btn_back;
     }
 }

@@ -67,12 +67,13 @@ namespace POS_System.Hotel
             PrintDocument pdoc = new PrintDocument();
             PrinterSettings ps = new PrinterSettings();
             Font font = new Font("Arial", 12);
-            PaperSize psize = new PaperSize("A5 (210 x 148 mm)", 400, 1800);
+            PaperSize psize = new PaperSize("A5 (148 x 210 mm)", 584, 827);
             pd.Document = pdoc;
             pdoc.PrinterSettings.PrinterName = "BillingA5";
             pd.Document.DefaultPageSettings.PaperSize = psize;
 
-            pdoc.PrintPage += new PrintPageEventHandler(printDocument1s_PrintPage);
+            
+pdoc.PrintPage += new PrintPageEventHandler(printDocument1s_PrintPage);
 
 
             if (pdoc.PrinterSettings.IsValid)
@@ -115,14 +116,14 @@ namespace POS_System.Hotel
         {
             total_noOfPage++;
             panvat = cd.DynamicPan();
-            float xs = 10;
-            float ys = 7;
+            float xs = 5;
+            float ys = 5;
             int yinc = 0;
             int ybinc = 0;
-            float widths = 350.0F; // max width I found through trial and error
+            float widths = 550.0F; // max width I found through trial and error
             float heights = 0F;
             string price;
-            string name; string quantity; string totala; int y = 93;
+            string name; string quantity; string totala; int y = 83;
             Pen drawingPen = new Pen(Color.Black, 1);
             Pen draw_watermark = new Pen(Color.FromArgb(64, Color.Black));
             Font drawFontArial12Bold = new Font("Arial", 16, FontStyle.Bold);
@@ -177,7 +178,7 @@ namespace POS_System.Hotel
                 }
                 Graphics gra = e.Graphics;
                 //titel       
-                DateTime strDate = Convert.ToDateTime(DateTime.Now.ToLongDateString() + " " + DateTime.Now.ToShortTimeString());
+                DateTime strDate = Convert.ToDateTime(DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToShortTimeString());
 
                 if (Headerstatus == true)
                 {
@@ -249,18 +250,18 @@ namespace POS_System.Hotel
                 }
                 if (customer_name != "Choose One" && customer_name != "")
                 {
-                    gra.DrawString("Customer Name #", new System.Drawing.Font("Times New Roman ", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 225, y);
+                    gra.DrawString("Customer Name #", new System.Drawing.Font("Times New Roman ", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 300, y);
                     if (customer_name.Length > 30)
                     {
-                        gra.DrawString(customer_name.Substring(0, 29), new System.Drawing.Font("Times New Roman ", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 290, y);
+                        gra.DrawString(customer_name.Substring(0, 29), new System.Drawing.Font("Times New Roman ", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 440, y);
                         y = y + 16;
-                        gra.DrawString(customer_name.Substring(29), new System.Drawing.Font("Times New Roman ", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 290, y);
+                        gra.DrawString(customer_name.Substring(29), new System.Drawing.Font("Times New Roman ", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 440, y);
                         y = y + 16;
 
                     }
                     else
                     {
-                        gra.DrawString(customer_name, new System.Drawing.Font("Times New Roman ", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 290, y);
+                        gra.DrawString(customer_name, new System.Drawing.Font("Times New Roman ", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 440, y);
                         y = y + 16;
                     }
                 }
@@ -293,8 +294,8 @@ namespace POS_System.Hotel
                 }
                 if (customer_PAN_no != "")
                 {
-                    gra.DrawString("Customer PAN No #", new System.Drawing.Font("Times New Roman ", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 225, y);
-                    gra.DrawString(customer_PAN_no, new System.Drawing.Font("Times New Roman ", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 290, y);
+                    gra.DrawString("Customer PAN No #", new System.Drawing.Font("Times New Roman ", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 340, y);
+                    gra.DrawString(customer_PAN_no, new System.Drawing.Font("Times New Roman ", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 440, y);
                     y = y + 16;
                 }
                 else
@@ -313,8 +314,8 @@ namespace POS_System.Hotel
                 }
                 if (customer_address != "" && customer_address != null)
                 {
-                    gra.DrawString("Customer Address #", new System.Drawing.Font("Times New Roman ", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 225, y);
-                    gra.DrawString(customer_address, new System.Drawing.Font("Times New Roman ", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 290, y);
+                    gra.DrawString("Customer Address #", new System.Drawing.Font("Times New Roman ", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 300, y);
+                    gra.DrawString(customer_address, new System.Drawing.Font("Times New Roman ", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 440, y);
                     y = y + 16;
 
                 }
@@ -330,8 +331,8 @@ namespace POS_System.Hotel
                 }
                 if (customer_phone_no != "" && customer_phone_no != "Choose One")
                 {
-                    gra.DrawString("Customer Phone No #", new System.Drawing.Font("Times New Roman ", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 225, y);
-                    gra.DrawString(customer_phone_no, new System.Drawing.Font("Times New Roman ", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 290, y);
+                    gra.DrawString("Customer Phone No #", new System.Drawing.Font("Times New Roman ", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 300, y);
+                    gra.DrawString(customer_phone_no, new System.Drawing.Font("Times New Roman ", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 440, y);
                     y = y + 19;
 
                 }
@@ -342,15 +343,15 @@ namespace POS_System.Hotel
 
                 if (getalltable.Rows[0]["header"].ToString() == "True")
                 {
-                    gra.DrawLine(drawingPen, 0, y, 890, y);
+                    gra.DrawLine(drawingPen, 0, y, 690, y);
                     y = y + 7;
                     gra.DrawString("S.N", new System.Drawing.Font("Arial", 10, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 5, y);
                     gra.DrawString("Item", new System.Drawing.Font("Arial", 10, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 35, y);
-                    gra.DrawString("QTY", new System.Drawing.Font("Arial", 10, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 275, y);
-                    gra.DrawString("Price", new System.Drawing.Font("Arial", 10, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 325, y);
-                    gra.DrawString("Total", new System.Drawing.Font("Arial", 10, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 275, y);
+                    gra.DrawString("QTY", new System.Drawing.Font("Arial", 10, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 250, y);
+                    gra.DrawString("Price", new System.Drawing.Font("Arial", 10, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 350, y);
+                    gra.DrawString("Total", new System.Drawing.Font("Arial", 10, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 450, y);
                     y = y + 16;
-                    gra.DrawLine(drawingPen, 0, y, 890, y);
+                    gra.DrawLine(drawingPen, 0, y, 690, y);
                     y = y + 7;
                 }
                 if (getalltable.Rows[0]["items"].ToString() == "True")
@@ -374,25 +375,25 @@ namespace POS_System.Hotel
                         }
                         if (print_again != true)
                         {
-                            gra.DrawString(datagridview_complementary[i], new System.Drawing.Font("Time New Roamn", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 245, y);
+                            gra.DrawString(datagridview_complementary[i], new System.Drawing.Font("Time New Roamn", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 490, y);
                         }
                         if (name == "Room Charge")
                         {
-                            gra.DrawString(quantity + " days", new System.Drawing.Font("Time New Roamn", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 260, y);
-                            gra.DrawString(price, new System.Drawing.Font("minisystem", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 320, y);
-                            gra.DrawString(totala, new System.Drawing.Font("minisystem", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 370, y);
+                            gra.DrawString(quantity + " days", new System.Drawing.Font("Time New Roamn", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 240, y);
+                            gra.DrawString(price, new System.Drawing.Font("minisystem", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 340, y);
+                            gra.DrawString(totala, new System.Drawing.Font("minisystem", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 440, y);
                             y = y + 20;
-                            gra.DrawLine(drawingPen, 520, y, 890, y);
+                            gra.DrawLine(drawingPen, 220, y, 690, y);
                             y = y + 2;
-                            gra.DrawString("Total :", new System.Drawing.Font("minisystem", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 320, y);
-                            gra.DrawString(totala, new System.Drawing.Font("minisystem", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 370, y); y = y + 16;
-                            gra.DrawLine(drawingPen, 520, y, 890, y); y = y + 2;
+                            gra.DrawString("Total :", new System.Drawing.Font("minisystem", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 340, y);
+                            gra.DrawString(totala, new System.Drawing.Font("minisystem", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 440, y); y = y + 16;
+                            gra.DrawLine(drawingPen, 220, y, 690, y); y = y + 2;
                         }
                         else
                         {
-                            gra.DrawString(quantity, new System.Drawing.Font("Time New Roamn", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 540, y);
-                            gra.DrawString(price, new System.Drawing.Font("Time New Roamn", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 640, y);
-                            gra.DrawString(totala, new System.Drawing.Font("Time New Roamn", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 740, y);
+                            gra.DrawString(quantity, new System.Drawing.Font("Time New Roamn", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 240, y);
+                            gra.DrawString(price, new System.Drawing.Font("Time New Roamn", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 340, y);
+                            gra.DrawString(totala, new System.Drawing.Font("Time New Roamn", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 440, y);
                             y = y + 23;
                         }
                         //gra.DrawString(quantity, new System.Drawing.Font("Time New Roamn", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 540, y);
@@ -427,42 +428,42 @@ namespace POS_System.Hotel
                 }
 
                 y = y - 5;
-                gra.DrawLine(drawingPen, 0, y, 890, y);
+                gra.DrawLine(drawingPen, 0, y, 690, y);
                 y = y + 21;
                 if (getalltable.Rows[0]["sub_total"].ToString() == "True")
                 {
-                    gra.DrawString("Sub-Total :", new System.Drawing.Font("Courier New ", 10, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 500, y);
-                    gra.DrawString(sub_total, new System.Drawing.Font("Courier New ", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 600, y); y = y + 19;
-                    gra.DrawLine(drawingPen, 490, y, 890, y); y = y + 2;
+                    gra.DrawString("Sub-Total :", new System.Drawing.Font("Courier New ", 10, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 300, y);
+                    gra.DrawString(sub_total, new System.Drawing.Font("Courier New ", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 400, y); y = y + 19;
+                    gra.DrawLine(drawingPen, 290, y, 690, y); y = y + 2;
                 }
 
                 if (getalltable.Rows[0]["discount"].ToString() == "True")
                 {
-                    gra.DrawString("Discount(" + discount_percent + ")", new System.Drawing.Font("Courier New ", 10, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 250, y);
-                    gra.DrawString(discount, new System.Drawing.Font("Courier New ", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 300, y); y = y + 19;
-                    gra.DrawLine(drawingPen, 590, y, 590, y + 72); //xline stright
-                    gra.DrawLine(drawingPen, 490, y, 890, y); y = y + 2;
+                    gra.DrawString("Discount(" + discount_percent + ")", new System.Drawing.Font("Courier New ", 10, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 300, y);
+                    gra.DrawString(discount, new System.Drawing.Font("Courier New ", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 400, y); y = y + 19;
+                    gra.DrawLine(drawingPen, 390, y, 390, y + 72); //xline stright
+                    gra.DrawLine(drawingPen, 290, y, 690, y); y = y + 2;
 
-                    gra.DrawString("Total", new System.Drawing.Font("Courier New ", 10, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 250, y);
-                    gra.DrawString(discount_sub_total, new System.Drawing.Font("Courier New ", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 300, y); y = y + 19;
+                    gra.DrawString("Total", new System.Drawing.Font("Courier New ", 10, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 300, y);
+                    gra.DrawString(discount_sub_total, new System.Drawing.Font("Courier New ", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 400, y); y = y + 19;
 
-                    gra.DrawLine(drawingPen, 490, y, 890, y); y = y + 2;
+                    gra.DrawLine(drawingPen, 290, y, 690, y); y = y + 2;
                     if (sales_type != "HD")
                     {
-                        gra.DrawString("Service (" + service_charge_percent + "%)", new System.Drawing.Font("Courier New ", 10, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 250, y);
-                        gra.DrawString(service_charge, new System.Drawing.Font("Courier New ", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 300, y); y = y + 19;
+                        gra.DrawString("Service (" + service_charge_percent + "%)", new System.Drawing.Font("Courier New ", 10, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 300, y);
+                        gra.DrawString(service_charge, new System.Drawing.Font("Courier New ", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 400, y); y = y + 19;
                     }
-                    gra.DrawLine(drawingPen, 490, y, 890, y); y = y + 2;
+                    gra.DrawLine(drawingPen, 290, y, 690, y); y = y + 2;
 
                 }
                 if (getalltable.Rows[0]["total"].ToString() == "True")
                 {
-                    gra.DrawString("Taxable AMT", new System.Drawing.Font("Courier New ", 10, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 250, y);
-                    gra.DrawString(taxable_amount, new System.Drawing.Font("Courier New ", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 300, y); y = y + 19;
+                    gra.DrawString("Taxable AMT", new System.Drawing.Font("Courier New ", 10, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 300, y);
+                    gra.DrawString(taxable_amount, new System.Drawing.Font("Courier New ", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 400, y); y = y + 19;
 
-                    gra.DrawLine(drawingPen, 490, y, 890, y); y = y + 2;
-                    gra.DrawString("VAT (" + String.Format("{0:0.##}", tax_percent) + "%)", new System.Drawing.Font("Courier New ", 10, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 250, y);
-                    gra.DrawString(tax_amount, new System.Drawing.Font("Courier New ", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 300, y); y = y + 19;
+                    gra.DrawLine(drawingPen, 290, y, 690, y); y = y + 2;
+                    gra.DrawString("VAT (" + String.Format("{0:0.##}", tax_percent) + "%)", new System.Drawing.Font("Courier New ", 10, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 300, y);
+                    gra.DrawString(tax_amount, new System.Drawing.Font("Courier New ", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 400, y); y = y + 19;
 
                 }
                 if (sales_type == "HD")
@@ -471,17 +472,17 @@ namespace POS_System.Hotel
                     gra.DrawString(delivery_charge, new System.Drawing.Font("Courier New ", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 600, y); y = y + 19;
 
                 }
-                gra.DrawLine(drawingPen, 0, y, 890, y); y = y + 2;
+                gra.DrawLine(drawingPen, 0, y, 690, y); y = y + 2;
                 gra.DrawString("Grand Total:", new System.Drawing.Font("Courier New ", 25, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 10, y);
                 gra.DrawString(grand_total, new System.Drawing.Font("Courier New ", 19, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 400, y); y = y + 60;
 
-                gra.DrawLine(drawingPen, 0, y, 890, y); y = y + 2;
+                gra.DrawLine(drawingPen, 0, y, 690, y); y = y + 2;
                 if (Grandtotal == false)
                 {
                     string inwordtext = Spell.SpellAmount.InWrods(Convert.ToDecimal(Convert.ToDecimal(grand_total).ToString("F")));
                     e.Graphics.DrawString("In Words:" + inwordtext.Substring(4, inwordtext.Length - 4), drawFontArial10Regular, drawBrush, new RectangleF(xs, y, widths, heights), drawFormatCenter);
-                    ys += e.Graphics.MeasureString("In Words:" + inwordtext.Substring(4, inwordtext.Length - 4), drawFontArial10Regular).Height; y = y + 50;
-                    gra.DrawLine(drawingPen, 0, y + yinc + ybinc, 890, y + yinc + ybinc); y = y + 2;
+                    ys += e.Graphics.MeasureString("In Words:" + inwordtext.Substring(4, inwordtext.Length - 4), drawFontArial10Regular).Height; y = y + 40;
+                    gra.DrawLine(drawingPen, 0, y + yinc + ybinc, 690, y + yinc + ybinc); y = y + 2;
                 }
                 if (getalltable.Rows[0]["received_amt"].ToString() == "True")
                 {
@@ -498,15 +499,15 @@ namespace POS_System.Hotel
                     }
                     else
                     {
-                        gra.DrawString("Received AMT ::", new System.Drawing.Font("Courier New ", 10, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 400, y);
-                        gra.DrawString(cash_amount, new System.Drawing.Font("Courier New ", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 600, y); y = y + 16;
+                        gra.DrawString("Received AMT ::", new System.Drawing.Font("Courier New ", 10, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 200, y);
+                        gra.DrawString(cash_amount, new System.Drawing.Font("Courier New ", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 400, y); y = y + 16;
 
                     }
                 }
                 if (getalltable.Rows[0]["change_amt"].ToString() == "True")
                 {
-                    gra.DrawString("Change AMT :", new System.Drawing.Font("Courier New ", 10, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 400, y);
-                    gra.DrawString(change_amount, new System.Drawing.Font("Courier New ", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 600, y); y = y + 30;
+                    gra.DrawString("Change AMT :", new System.Drawing.Font("Courier New ", 10, FontStyle.Bold), new SolidBrush(System.Drawing.Color.Black), 200, y);
+                    gra.DrawString(change_amount, new System.Drawing.Font("Courier New ", 10, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 400, y); y = y + 30;
 
                 }
 

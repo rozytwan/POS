@@ -852,5 +852,21 @@ namespace POS_System
                 ctls.Controls.Add(alls);
             }
         }
+
+        private void btn_inclusive_vat_Click(object sender, EventArgs e)
+        {
+            txt_sellingprice.Text = Convert.ToString(Convert.ToDecimal(0.13)* Convert.ToDecimal(txt_sellingprice.Text)+Convert.ToDecimal(txt_sellingprice.Text));
+            txt_sellingprice.ReadOnly = true;
+        }
+
+        private void txt_amount_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_total_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

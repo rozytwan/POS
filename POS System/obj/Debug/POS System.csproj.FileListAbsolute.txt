@@ -1064,7 +1064,6 @@ D:\POS 2 Server Load\POS System\obj\Debug\POS_System.DenominationList.resources
 D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Department.resources
 D:\POS 2 Server Load\POS System\obj\Debug\POS_System.UserDiscount.resources
 D:\POS 2 Server Load\POS System\obj\Debug\POS_System.HotelDashBoard.resources
-D:\POS 2 Server Load\POS System\obj\Debug\POS_System.GetDetails.resources
 D:\POS 2 Server Load\POS System\obj\Debug\POS_System.Hotel.Hotel.resources
 D:\POS 2 Server Load\POS System\obj\Debug\POS_System.HotelBilling.resources
 D:\POS 2 Server Load\POS System\obj\Debug\POS_System.HotelCoupon.resources
@@ -1200,3 +1199,4 @@ D:\POS 2 Server Load\POS System\obj\Debug\es-ES\POS System.resources.dll
 D:\POS 2 Server Load\POS System\obj\Debug\es-PR\POS System.resources.dll
 D:\POS 2 Server Load\POS System\obj\Debug\POS_System.NoteItem.resources
 D:\POS 2 Server Load\POS System\obj\Debug\POS_System.AddStockGrouping.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.GetDetails.resources

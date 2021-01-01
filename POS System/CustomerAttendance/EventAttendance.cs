@@ -76,7 +76,7 @@ namespace POS_System.CustomerAttendance
                 event_status = true;
                 btn_start.Enabled = false;
                 btn_stop.Enabled = true;
-                txt_card_no.Focus();
+               // txt_card_no.Focus();
                     btn_start.Checked = true;
                     //this.ActiveControl = txt_card_no;
                 }

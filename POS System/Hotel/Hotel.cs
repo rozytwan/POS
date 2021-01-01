@@ -53,10 +53,11 @@ namespace POS_System.Hotel
                 
                     flowLayoutPanel1.Controls.Add(btn_area);
                     btn_area.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-                    if (dt1.Rows.Count > 0)
-                    {
-                        roomManagement();
-                    }
+                
+                }
+                if (dt1.Rows.Count > 0)
+                {
+                    roomManagement();
                 }
             }
         }

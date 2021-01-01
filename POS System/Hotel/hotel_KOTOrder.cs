@@ -1387,10 +1387,14 @@ namespace POS_System
 
         private void btn_back_Click(object sender, EventArgs e)
         {
-            Hotel.Hotel rp = new Hotel.Hotel();
-            panel1.Controls.Clear();
-            panel1.Controls.Add(rp);
-        
+            //Hotel.Hotel rp = new Hotel.Hotel();
+            //panel1.Controls.Clear();
+            //panel1.Controls.Add(rp);
+            Hotel.Hotel al = new Hotel.Hotel();
+            Control ctls = this.Parent;
+            ctls.Controls.Clear();
+            ctls.Controls.Add(al);
+
         }
     }
 }

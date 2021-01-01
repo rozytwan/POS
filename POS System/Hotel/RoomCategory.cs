@@ -178,5 +178,13 @@ namespace POS_System
                 e.Handled = true;
             }
         }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            Hotel.Hotel al = new Hotel.Hotel();
+            Control ctls = this.Parent;
+            ctls.Controls.Clear();
+            ctls.Controls.Add(al);
+        }
     }
 }

@@ -288,8 +288,7 @@ namespace POS_System
                 //addTableToolStripMenuItem.Visible = false;
                 tokenBillingToolStripMenuItem.Visible = false;
             }
-
-          
+            
         }
 
         public void businessLoad()

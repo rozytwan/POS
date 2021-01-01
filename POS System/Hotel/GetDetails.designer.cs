@@ -117,7 +117,7 @@
             this.bunifuCustomLabel5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuCustomLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel5.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel5.Location = new System.Drawing.Point(51, 11);
+            this.bunifuCustomLabel5.Location = new System.Drawing.Point(67, 4);
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
             this.bunifuCustomLabel5.Size = new System.Drawing.Size(115, 20);
             this.bunifuCustomLabel5.TabIndex = 5;
@@ -1404,13 +1404,13 @@
             this.btn_back.BackColor = System.Drawing.Color.MintCream;
             this.btn_back.FlatAppearance.BorderSize = 0;
             this.btn_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_back.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(80)))), ((int)(((byte)(86)))));
             this.btn_back.Image = global::POS_System.Properties.Resources.left_arrow_angle;
-            this.btn_back.Location = new System.Drawing.Point(3, 3);
+            this.btn_back.Location = new System.Drawing.Point(3, 0);
             this.btn_back.Name = "btn_back";
-            this.btn_back.Size = new System.Drawing.Size(42, 38);
+            this.btn_back.Size = new System.Drawing.Size(48, 42);
             this.btn_back.TabIndex = 30;
             this.btn_back.UseVisualStyleBackColor = false;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // GetDetails
             // 

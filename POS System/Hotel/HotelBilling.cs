@@ -924,7 +924,7 @@ namespace POS_System
                 {
                     if (dt_p.Rows.Count > 0)
                     {
-                        blp_80.printer_name = "Billing";
+                        blp_80.printer_name = "H1";
                         blp_80.print_again = true;
                         blp_80.Headerstatus = true;
                         for (int i = 0; i < Convert.ToInt32(dt_p.Rows[0]["B1"]); i++)
@@ -946,7 +946,7 @@ namespace POS_System
                 {
                     if (dt_p.Rows.Count > 0)
                     {
-                        blp_76.printer_name = "Billing";
+                        blp_76.printer_name = "H1";
                         blp_76.print_again = true;
                         blp_76.Headerstatus = true;
                         for (int i = 0; i < Convert.ToInt32(dt_p.Rows[0]["B1"]); i++)
@@ -968,7 +968,7 @@ namespace POS_System
                 {
                     if (dt_p.Rows.Count > 0)
                     {
-                        blp.printer_name = "Billing";
+                        blp.printer_name = "H1";
                         bA4.print_again = true;
                         bA4.Headerstatus = true;
                         for (int i = 0; i < Convert.ToInt32(dt_p.Rows[0]["B1"]); i++)
@@ -990,16 +990,16 @@ namespace POS_System
                 {
                     if (dt_p.Rows.Count > 0)
                     {
-                        blp.printer_name = "Billing";
-                        bA4.print_again = true;
-                        bA4.Headerstatus = true;
+                        blp.printer_name = "H1";
+                        bA5.print_again = true;
+                        bA5.Headerstatus = true;
                         for (int i = 0; i < Convert.ToInt32(dt_p.Rows[0]["B1"]); i++)
                         {
                             if (i > 0)
                             {
                                 blp.print_again = true;
                             }
-                            bill_printing_for_A4();
+                            bill_printing_for_A5();
 
                         }
                     }
@@ -1012,7 +1012,7 @@ namespace POS_System
                 {
                     if (dt_p.Rows.Count > 0)
                     {
-                        blp.printer_name = "Billing";
+                        blp.printer_name = "H1";
                         blp_76.print_again = true;
                         blp_76.Headerstatus = true;
                         for (int i = 0; i < Convert.ToInt32(dt_p.Rows[0]["B1"]); i++)
@@ -2457,6 +2457,13 @@ namespace POS_System
                 calculate_total();
 
             }
+        }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            Hotel.Hotel rp = new Hotel.Hotel();
+            GetDetails.Controls.Clear();
+            GetDetails.Controls.Add(rp);
         }
     }
     }

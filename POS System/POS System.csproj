@@ -351,6 +351,12 @@
     </Compile>
     <Compile Include="FonePayApi\WebSocketTest.cs" />
     <Compile Include="HomeDelivery\HomeDeliveryModel.cs" />
+    <Compile Include="Hotel\GetDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Hotel\GetDetails.designer.cs">
+      <DependentUpon>GetDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Hotel\HotelBilling76.cs" />
     <Compile Include="Hotel\HotelBillingA4.cs" />
     <Compile Include="Hotel\HotelBillingA5.cs" />
@@ -648,12 +654,6 @@
     </Compile>
     <Compile Include="Hotel\Form1.designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Hotel\GetDetails.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Hotel\GetDetails.designer.cs">
-      <DependentUpon>GetDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="Hotel\Hotel.cs">
       <SubType>UserControl</SubType>
@@ -1533,6 +1533,9 @@
     <EmbeddedResource Include="FonePayApi\QRCodeScan.resx">
       <DependentUpon>QRCodeScan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Hotel\GetDetails.resx">
+      <DependentUpon>GetDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Hotel\HotelTransfer.resx">
       <DependentUpon>HotelTransfer.cs</DependentUpon>
     </EmbeddedResource>
@@ -1673,9 +1676,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Hotel\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Hotel\GetDetails.resx">
-      <DependentUpon>GetDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Hotel\Hotel.resx">
       <DependentUpon>Hotel.cs</DependentUpon>

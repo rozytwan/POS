@@ -88,7 +88,6 @@ namespace POS_System.Customer_Management
                 if (acc.DialogResult == DialogResult.OK)
                 {
                     Customer_Management.CustomerCard_Info cci = new Customer_Management.CustomerCard_Info(Convert.ToInt32(dataGridView1.CurrentRow.Cells["col_id"].Value.ToString()));
-
                     cci.ShowDialog();
                 }
             }

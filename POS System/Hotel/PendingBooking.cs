@@ -61,6 +61,7 @@ namespace POS_System
 
                 GetDetails ccb = new GetDetails();
                 customer_id = Convert.ToInt32((dataGridView1.CurrentRow.Cells["col_customer_id"].Value.ToString()));
+                pending_booking_id= Convert.ToInt32((dataGridView1.CurrentRow.Cells["col_pend_id"].Value.ToString()));
                 this.DialogResult = DialogResult.OK;
                 this.Close();
 
@@ -104,6 +105,11 @@ namespace POS_System
         private void bunifuGradientPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
