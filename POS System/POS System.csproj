@@ -298,6 +298,12 @@
     <Compile Include="Customer_Management\CustomerConsunlation.designer.cs">
       <DependentUpon>CustomerConsunlation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Customer_Management\CustomerNames.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_Management\CustomerNames.Designer.cs">
+      <DependentUpon>CustomerNames.cs</DependentUpon>
+    </Compile>
     <Compile Include="Customer_Management\EditAppointment.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -1508,6 +1514,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Customer_Management\CustomerConsunlation.resx">
       <DependentUpon>CustomerConsunlation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_Management\CustomerNames.resx">
+      <DependentUpon>CustomerNames.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Customer_Management\EditAppointment.resx">
       <DependentUpon>EditAppointment.cs</DependentUpon>

@@ -59,6 +59,8 @@ namespace POS_System
                 chk17.Value = !(chk17.Value == null ? false : (bool)chk17.Value);
                 DataGridViewCheckBoxCell chk18 = (DataGridViewCheckBoxCell)dataGridView1.CurrentRow.Cells["col_hotel"];
                 chk18.Value = !(chk18.Value == null ? false : (bool)chk18.Value);
+                DataGridViewCheckBoxCell chk19 = (DataGridViewCheckBoxCell)dataGridView1.CurrentRow.Cells["col_bill_save"];
+                chk19.Value = !(chk19.Value == null ? false : (bool)chk19.Value);
             }
         }
         string account = "False";
@@ -79,159 +81,165 @@ namespace POS_System
         string itemcancel = "False";
         string restaurant = "False";
         string hotel = "False";
+        string billingsave = "False";
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            //if ((dataGridView1.CurrentRow.Cells["cal_user_name"].Value).ToString() == "admin")
-            //{
+                //DataGridViewCheckBoxCell chk10 = (DataGridViewCheckBoxCell)dataGridView1.CurrentRow.Cells[1];
+                //chk10.Value = true;
 
-            //    DataGridViewCheckBoxCell chk10 = (DataGridViewCheckBoxCell)dataGridView1.CurrentRow.Cells[1];
-            //    chk10.Value =true;
-          
-            //    //if (chk1.Checked == true || checkBox.Checked == false)
-            //    //{
-            //    //    chk1.CheckState = CheckState.Checked;
-            //    //    chk1.CheckState = CheckState.Indeterminate;
-            //    //    //or 
-            //    //    checkBox.CheckState = CheckState.Checked;
-            //    //}
-            //}
-            if (e.ColumnIndex == dataGridView1.Columns["cal_update"].Index && e.RowIndex >= 0)
-            {
-                //DataGridViewCheckBoxCell chk1 = (DataGridViewCheckBoxCell)dataGridView1.CurrentRow.Cells[1];
-                //DataGridViewCheckBoxCell chk2 = (DataGridViewCheckBoxCell)dataGridView1.CurrentRow.Cells[2];
-                //DataGridViewCheckBoxCell chk3 = (DataGridViewCheckBoxCell)dataGridView1.CurrentRow.Cells[3];
-                //DataGridViewCheckBoxCell chk4 = (DataGridViewCheckBoxCell)dataGridView1.CurrentRow.Cells[4];
-                //DataGridViewCheckBoxCell chk5 = (DataGridViewCheckBoxCell)dataGridView1.CurrentRow.Cells[5];
-                if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells[1].Value) == true)
+                //if (chk1.Checked == true || checkBox.Checked == false)
+                //{
+                //    chk1.CheckState = CheckState.Checked;
+                //    chk1.CheckState = CheckState.Indeterminate;
+                //    //or 
+                //    checkBox.CheckState = CheckState.Checked;
+                //}
+           
+                if (e.ColumnIndex == dataGridView1.Columns["cal_update"].Index && e.RowIndex >= 0)
                 {
-                    account = "True";
-                }
-                else
-                {
-                    account = "False";
-                }           
-                if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells[2].Value) == true)
-                {
-                    sales = "True";
-                }
-                if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells[4].Value) == true)
-                {
-                    stock = "True";
-                }
-                if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells[3].Value) == true)
-                {
-                    report = "True";
-                }
-                if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells[6].Value) == true)
-                {
-                    admin = "True";
-                }
-                if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells[5].Value) == true)
-                {
-                    discount = "True";
-                }
-                if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells[7].Value) == true)
-                {
-                    billing = "True";
-                }
-                if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells[8].Value) == true)
-                {
-                    multibilling = "True";
-                }
-                if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells[9].Value) == true)
-                {
-                    itemtransfer = "True";
-                }
-                if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells["col_table_transfer"].Value) == true)
-                {
-                    tabletransfer = "True";
-                }
-                if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells["col_takeaway"].Value) == true)
-                {
-                    takeaway = "True";
-                }
-                else
-                {
-                    takeaway = "False";
-                }
-                if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells["col_homedelivery"].Value) == true)
-                {
-                    homedelivery = "True";
-                }
-                else
-                {
-                    homedelivery = "False";
-                }
-                if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells["col_dayend"].Value) == true)
-                {
-                    dayend = "True";
-                }
-                else
-                {
-                    dayend = "False";
-                }
-                if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells["col_cashdrop"].Value) == true)
-                {
-                    cashdrop = "True";
-                }
-                else
-                {
-                    cashdrop = "False";
-                }
-                if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells["col_menuupdate"].Value) == true)
-                {
-                    menuupdate = "True";
-                }
-                else
-                {
-                    menuupdate = "False";
-                }
-                if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells["col_itemcancel"].Value) == true)
-                {
-                    itemcancel = "True";
-                }
-                else
-                {
-                    itemcancel = "False";
-                }
-                if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells["col_restaurant"].Value) == true)
-                {
-                    restaurant = "True";
-                }
-                else
-                {
-                    restaurant = "False";
-                }
-                if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells["col_hotel"].Value) == true)
-                {
-                    hotel = "True";
-                }
-                else
-                {
-                    hotel = "False";
-                }
-                DataTable dtm = blu.getuserbyuser_idntype(Convert.ToInt32(dataGridView1.CurrentRow.Cells["cal_user_id"].Value));
-                if (dtm.Rows.Count > 0)
-                {
-                    int update_access = blu.updateuser_access(Convert.ToInt32(dataGridView1.CurrentRow.Cells["cal_user_id"].Value), admin, account, sales, report, stock,discount,billing,multibilling,itemtransfer,tabletransfer,takeaway,homedelivery,dayend,cashdrop,menuupdate,itemcancel,restaurant,hotel);
-                    if (update_access > 0)
+                    //DataGridViewCheckBoxCell chk1 = (DataGridViewCheckBoxCell)dataGridView1.CurrentRow.Cells[1];
+                    //DataGridViewCheckBoxCell chk2 = (DataGridViewCheckBoxCell)dataGridView1.CurrentRow.Cells[2];
+                    //DataGridViewCheckBoxCell chk3 = (DataGridViewCheckBoxCell)dataGridView1.CurrentRow.Cells[3];
+                    //DataGridViewCheckBoxCell chk4 = (DataGridViewCheckBoxCell)dataGridView1.CurrentRow.Cells[4];
+                    //DataGridViewCheckBoxCell chk5 = (DataGridViewCheckBoxCell)dataGridView1.CurrentRow.Cells[5];
+                    if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells[1].Value) == true)
                     {
+                        account = "True";
+                    }
+                    else
+                    {
+                        account = "False";
+                    }
+                    if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells[2].Value) == true)
+                    {
+                        sales = "True";
+                    }
+                    if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells[4].Value) == true)
+                    {
+                        stock = "True";
+                    }
+                    if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells[3].Value) == true)
+                    {
+                        report = "True";
+                    }
+                    if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells[6].Value) == true)
+                    {
+                        admin = "True";
+                    }
+                    if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells[5].Value) == true)
+                    {
+                        discount = "True";
+                    }
+                    if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells[7].Value) == true)
+                    {
+                        billing = "True";
+                    }
+                    if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells[8].Value) == true)
+                    {
+                        multibilling = "True";
+                    }
+                    if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells[9].Value) == true)
+                    {
+                        itemtransfer = "True";
+                    }
+                    if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells["col_table_transfer"].Value) == true)
+                    {
+                        tabletransfer = "True";
+                    }
+                    if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells["col_takeaway"].Value) == true)
+                    {
+                        takeaway = "True";
+                    }
+                    else
+                    {
+                        takeaway = "False";
+                    }
+                    if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells["col_homedelivery"].Value) == true)
+                    {
+                        homedelivery = "True";
+                    }
+                    else
+                    {
+                        homedelivery = "False";
+                    }
+                    if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells["col_dayend"].Value) == true)
+                    {
+                        dayend = "True";
+                    }
+                    else
+                    {
+                        dayend = "False";
+                    }
+                    if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells["col_cashdrop"].Value) == true)
+                    {
+                        cashdrop = "True";
+                    }
+                    else
+                    {
+                        cashdrop = "False";
+                    }
+                    if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells["col_menuupdate"].Value) == true)
+                    {
+                        menuupdate = "True";
+                    }
+                    else
+                    {
+                        menuupdate = "False";
+                    }
+                    if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells["col_itemcancel"].Value) == true)
+                    {
+                        itemcancel = "True";
+                    }
+                    else
+                    {
+                        itemcancel = "False";
+                    }
+                    if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells["col_restaurant"].Value) == true)
+                    {
+                        restaurant = "True";
+                    }
+                    else
+                    {
+                        restaurant = "False";
+                    }
+                    if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells["col_hotel"].Value) == true)
+                    {
+                        hotel = "True";
+                    }
+                    else
+                    {
+                        hotel = "False";
+                    }
+                    if (Convert.ToBoolean(dataGridView1.CurrentRow.Cells["col_bill_save"].Value) == true)
+                   {
+                      billingsave = "True";
+                   }
+                   else
+                   {
+                    billingsave = "False";
+                   }
+                DataTable dtm = blu.getuserbyuser_idntype(Convert.ToInt32(dataGridView1.CurrentRow.Cells["cal_user_id"].Value));
+                    if (dtm.Rows.Count > 0)
+                    {
+                        int update_access = blu.updateuser_access(Convert.ToInt32(dataGridView1.CurrentRow.Cells["cal_user_id"].Value), admin, account, sales, report, stock, discount, billing, multibilling, itemtransfer, tabletransfer, takeaway, homedelivery, dayend, cashdrop, menuupdate, itemcancel, restaurant, hotel);
+                        if (update_access > 0)
+                        {
+                            MessageBox.Show("User Access Has Been Update");
+                        }
+                    }
+                    else
+                    {
+                        int ins = blu.insert_user_id(Convert.ToInt32(dataGridView1.CurrentRow.Cells["cal_user_id"].Value), admin, account, sales, report, stock, discount, billing, multibilling, itemtransfer, tabletransfer, takeaway, homedelivery, dayend, cashdrop, menuupdate, itemcancel, restaurant, hotel);
                         MessageBox.Show("User Access Has Been Update");
                     }
                 }
-                else
-                {
-                    int ins = blu.insert_user_id(Convert.ToInt32(dataGridView1.CurrentRow.Cells["cal_user_id"].Value), admin, account, sales, report, stock,discount,billing,multibilling,itemtransfer,tabletransfer, takeaway, homedelivery, dayend, cashdrop, menuupdate, itemcancel,restaurant,hotel);
-                    MessageBox.Show("User Access Has Been Update");
-                }
             }
-
-        }
-
+        
         private void UserAccess_Load(object sender, EventArgs e)
         {
             grid_view_load();
         }
+      
         public void grid_view_load()
         {
             DataTable dt = blu.getalluser();
@@ -239,7 +247,18 @@ namespace POS_System
             {
                 int bc = dataGridView1.Rows.Add();
                 dataGridView1.Rows[i].Cells["cal_user_id"].Value = dt.Rows[i]["user_id"].ToString();
+              
                 dataGridView1.Rows[i].Cells["cal_user_name"].Value = dt.Rows[i]["user_name"].ToString();
+               
+                if (dt.Rows[i]["user_name"].ToString() == "admin"|| Convert.ToInt32(dt.Rows[i]["user_id"].ToString())==1)
+                {
+                    dataGridView1.CurrentRow.ReadOnly = true;
+                    for (int t = 0; t < 20; t++)
+                    {
+                        dataGridView1.Rows[i].Cells[t].ToolTipText = "Admin User Not Editable";
+
+                    }
+                }
                 DataTable dtm = blu.getuserbyuser_idntype(Convert.ToInt32(dt.Rows[i]["user_id"].ToString()));
                 if (dtm.Rows.Count > 0)
                 {
@@ -261,6 +280,7 @@ namespace POS_System
                     DataGridViewCheckBoxCell chk16= (DataGridViewCheckBoxCell)dataGridView1.Rows[i].Cells["col_itemcancel"];
                     DataGridViewCheckBoxCell chk17 = (DataGridViewCheckBoxCell)dataGridView1.Rows[i].Cells["col_restaurant"];
                     DataGridViewCheckBoxCell chk18 = (DataGridViewCheckBoxCell)dataGridView1.Rows[i].Cells["col_hotel"];
+                    DataGridViewCheckBoxCell chk19 = (DataGridViewCheckBoxCell)dataGridView1.Rows[i].Cells["col_bill_save"];
                     if (dtm.Rows[0]["account"].ToString() == "True")
                     {
                         chk5.Value = true;
@@ -333,6 +353,10 @@ namespace POS_System
                     {
                         chk18.Value = true;
                     }
+                    if (dtm.Rows[0]["billing save"].ToString() == "True")
+                    {
+                        chk19.Value = true;
+                    }
                 }
             }
         }
@@ -364,6 +388,11 @@ namespace POS_System
         private void pictureBox5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataGridView1_CellMouseEnter(object sender, DataGridViewCellEventArgs e)
+        {
+           
         }
     }
 }

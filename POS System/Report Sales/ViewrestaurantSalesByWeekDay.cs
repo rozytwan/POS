@@ -837,7 +837,7 @@ namespace POS_System
                 {
                     fiscal_year = dtfis.Rows[0]["fiscal_year"].ToString();
                 }
-
+             
 
                 if (cbo_searchTYpe.Text == "Item")
                 {
@@ -984,6 +984,7 @@ namespace POS_System
            // loadPage();
         }
         DataTable dtCount = new DataTable();
+        BLL_Fiscal blfsc = new BLL_Fiscal();
         public void datatableLoadCount()
         {
             if (cbo_searchTYpe.Text == "" || cbo_searchTYpe.Text == "Choose Type" || txt_searchText.Text == "")
@@ -998,11 +999,12 @@ namespace POS_System
                 DateTime dateOne = Convert.ToDateTime(theDate);
                 DateTime datetwo = Convert.ToDateTime(theDate2);
                 DataTable dtfis = blrer.GetFiscalYearsales(dateOne, datetwo);
+              
                 if (dtfis.Rows.Count > 0)
                 {
                     fiscal_year = dtfis.Rows[0]["fiscal_year"].ToString();
                 }
-
+              
                 if (cbo_searchTYpe.Text == "Item")
                 {
                     colunm_name = "item_name";

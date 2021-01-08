@@ -33,6 +33,7 @@ namespace POS_System
             Combocardtype();
             btn_update.Enabled = false;
             rdo_male.Checked = true;
+            rbn_less.Checked = true;
             lstview_customers.View = View.Details;
             lstview_customers.Columns.Add("Customer Lists", 200);
             lstview_customers.Items.Clear();
@@ -88,7 +89,15 @@ namespace POS_System
                 {
                     rdo_female.Checked = true;
                 }
-
+                string highlow = receiveDatabyId.Rows[0]["nationid"].ToString();
+                if (highlow == "High")
+                {
+                    rbn_high.Checked = true;
+                }
+                else
+                {
+                    rbn_less.Checked = true;
+                }
                 txt_phone.Text = receiveDatabyId.Rows[0]["phone"].ToString();
                 txtpan_no.Text = receiveDatabyId.Rows[0]["phone2"].ToString();
                 txt_city.Text = receiveDatabyId.Rows[0]["city"].ToString();
@@ -194,7 +203,16 @@ namespace POS_System
                 {
                     malefemale = "Female";
                 }
-                int insertinto = custor.insertintotables(img, txt_name.Text, txt_lastname.Text, Convert.ToDateTime(dtp_dob.Text), malefemale, txt_address.Text, txt_phone.Text, txtpan_no.Text, txt_city.Text, txt_country.Text, txt_nationality.Text, txt_nationalityidno.Text, txt_email.Text,cbo_card_status.Text, txt_card_no.Text, txt_card_type.Text);
+            string highlow = null;
+            if (rbn_high.Checked)
+            {
+                highlow = "High";
+            }
+            else
+            {
+                highlow = "Less";
+            }
+            int insertinto = custor.insertintotables(img, txt_name.Text, txt_lastname.Text, Convert.ToDateTime(dtp_dob.Text), malefemale, txt_address.Text, txt_phone.Text, txtpan_no.Text, txt_city.Text, txt_country.Text, txt_nationality.Text, highlow, txt_email.Text,cbo_card_status.Text, txt_card_no.Text, txt_card_type.Text);
                 if (insertinto > 0)
                 {
                     MessageBox.Show("Customer Has Been Saved");
@@ -407,7 +425,15 @@ namespace POS_System
                     {
                         rdo_female.Checked = true;
                     }
-
+                    string highlow = receiveDatabyId.Rows[0]["nationid"].ToString();
+                    if (highlow == "High")
+                    {
+                        rbn_high.Checked = true;
+                    }
+                    else
+                    {
+                        rbn_less.Checked = true;
+                    }
                     txt_phone.Text = receiveDatabyId.Rows[0]["phone"].ToString();
                     txtpan_no.Text = receiveDatabyId.Rows[0]["phone2"].ToString();
                     txt_city.Text = receiveDatabyId.Rows[0]["city"].ToString();
@@ -611,13 +637,21 @@ namespace POS_System
             {
                 malefemale = "Female";
             }
-
+            string highlow = null;
+            if (rbn_high.Checked)
+            {
+                highlow = "High";
+            }
+            else
+            {
+                highlow = "Less";
+            }
             byte[] img = null;
             ImageConverter imgCon = new ImageConverter();
             img = (byte[])imgCon.ConvertTo(userpicbox.Image, typeof(byte[]));
             string getusersIdtoupdate = lbl_cutomerIdget.Text;
 
-            int update = custor.updateintotables(img, txt_name.Text, txt_lastname.Text, Convert.ToDateTime(dtp_dob.Text), malefemale, txt_address.Text, txt_phone.Text, txtpan_no.Text, txt_city.Text, txt_country.Text, txt_nationality.Text, txt_nationalityidno.Text, txt_email.Text, getusersIdtoupdate,cbo_card_status.Text, txt_card_no.Text, txt_card_type.Text);
+            int update = custor.updateintotables(img, txt_name.Text, txt_lastname.Text, Convert.ToDateTime(dtp_dob.Text), malefemale, txt_address.Text, txt_phone.Text, txtpan_no.Text, txt_city.Text, txt_country.Text, txt_nationality.Text, highlow, txt_email.Text, getusersIdtoupdate,cbo_card_status.Text, txt_card_no.Text, txt_card_type.Text);
             if (update > 0)
             {
                 MessageBox.Show("Your Customer Name " + txt_name.Text + " has been updated.", "Update Successfully", MessageBoxButtons.OK, MessageBoxIcon.Information);

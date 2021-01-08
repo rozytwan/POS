@@ -66,10 +66,17 @@
             this.txt_newcard = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_topup = new DevComponents.DotNetBar.ButtonX();
+            this.panel_topup = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
+            this.txt_topup = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel_replace.SuspendLayout();
+            this.panel_topup.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -484,7 +491,7 @@
             this.btn_topup.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btn_topup.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
             this.btn_topup.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_topup.Location = new System.Drawing.Point(710, 646);
+            this.btn_topup.Location = new System.Drawing.Point(379, 648);
             this.btn_topup.Name = "btn_topup";
             this.btn_topup.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(14);
             this.btn_topup.Size = new System.Drawing.Size(148, 50);
@@ -492,12 +499,85 @@
             this.btn_topup.Symbol = "";
             this.btn_topup.TabIndex = 151;
             this.btn_topup.Text = "Topup All";
+            this.btn_topup.Click += new System.EventHandler(this.btn_topup_Click);
+            // 
+            // panel_topup
+            // 
+            this.panel_topup.BackColor = System.Drawing.SystemColors.Control;
+            this.panel_topup.Controls.Add(this.button2);
+            this.panel_topup.Controls.Add(this.label6);
+            this.panel_topup.Controls.Add(this.buttonX1);
+            this.panel_topup.Controls.Add(this.txt_topup);
+            this.panel_topup.Controls.Add(this.label11);
+            this.panel_topup.Location = new System.Drawing.Point(364, 255);
+            this.panel_topup.Name = "panel_topup";
+            this.panel_topup.Size = new System.Drawing.Size(280, 195);
+            this.panel_topup.TabIndex = 152;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Red;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(254, 0);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(26, 27);
+            this.button2.TabIndex = 151;
+            this.button2.Text = "X";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Georgia", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(81)))), ((int)(((byte)(126)))));
+            this.label6.Location = new System.Drawing.Point(9, 34);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(158, 29);
+            this.label6.TabIndex = 19;
+            this.label6.Text = "Card Topup";
+            // 
+            // buttonX1
+            // 
+            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX1.BackColor = System.Drawing.Color.Transparent;
+            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.buttonX1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonX1.Location = new System.Drawing.Point(145, 147);
+            this.buttonX1.Name = "buttonX1";
+            this.buttonX1.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor();
+            this.buttonX1.Size = new System.Drawing.Size(113, 36);
+            this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX1.Symbol = "";
+            this.buttonX1.TabIndex = 150;
+            this.buttonX1.Text = "Add";
+            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
+            // 
+            // txt_topup
+            // 
+            this.txt_topup.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_topup.Location = new System.Drawing.Point(6, 100);
+            this.txt_topup.Name = "txt_topup";
+            this.txt_topup.Size = new System.Drawing.Size(252, 29);
+            this.txt_topup.TabIndex = 119;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(11, 77);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(133, 18);
+            this.label11.TabIndex = 120;
+            this.label11.Text = "Add Card Balance";
             // 
             // CustomerList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.panel_topup);
             this.Controls.Add(this.btn_topup);
             this.Controls.Add(this.panel_replace);
             this.Controls.Add(this.btn_previous);
@@ -522,6 +602,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel_replace.ResumeLayout(false);
             this.panel_replace.PerformLayout();
+            this.panel_topup.ResumeLayout(false);
+            this.panel_topup.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -567,5 +649,11 @@
         private System.Windows.Forms.DataGridViewButtonColumn col_replace;
         private System.Windows.Forms.Button button1;
         private DevComponents.DotNetBar.ButtonX btn_topup;
+        private System.Windows.Forms.Panel panel_topup;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label6;
+        private DevComponents.DotNetBar.ButtonX buttonX1;
+        private System.Windows.Forms.TextBox txt_topup;
+        private System.Windows.Forms.Label label11;
     }
 }

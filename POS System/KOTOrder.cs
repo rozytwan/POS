@@ -961,6 +961,7 @@ namespace POS_System
                     {
                         MessageBox.Show("Cannot Order Your Item Please Do It Again", "Try Again", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
+                    dataGridView1.CurrentCell = null;
                 }
             }
         }
@@ -1267,6 +1268,7 @@ namespace POS_System
                     {
                         MessageBox.Show("Cannot Order Your Item Please Do It Again", "Try Again", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
+                    dataGridView1.CurrentCell = null;
                 }
             }
             //}
@@ -1280,10 +1282,17 @@ namespace POS_System
         {
             if (btn_x_note.Text == "Note")
             {
-                //panel_note.Visible = true;
-                //panel_note.Show();
                 /*old design */
-                 KOTOrder.Animate(txtrichbox, KOTOrder.Effect.Slide, 150, 180);
+                //KOTOrder.Animate(txtrichbox, KOTOrder.Effect.Slide, 150, 180);
+                if (dataGridView1.SelectedRows.Count == 1)
+                {
+                    panel_note.Visible = true;
+                    panel_note.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Please Select Row First Alert !!", "Select Row Alert !!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
                 /*new form*/
                 //NoteItem ni = new NoteItem();
                 //ni.ShowDialog();
@@ -1544,21 +1553,35 @@ namespace POS_System
                 }
                 else
                 {
-                    Control ctls = this.Parent;
-                    Billing blb = new Billing(lbltable_real_no.Text, label_table_no.Text);
-                    ctls.Controls.Clear();
-                    ctls.Controls.Add(blb);
+                    if (dataGridView1.Rows.Count > 0)
+                    {
+                        Control ctls = this.Parent;
+                        Billing blb = new Billing(lbltable_real_no.Text, label_table_no.Text);
+                        ctls.Controls.Clear();
+                        ctls.Controls.Add(blb);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Checkout Not Accessible For Empty Tables Alert !!","Empty Table Alert !!");
+                    }
                 }
             }
             else
             {
-
+                if (dataGridView1.Rows.Count > 0)
+                {
                 Control ctls = this.Parent;
                 Billing blb = new Billing(lbltable_real_no.Text, null);
                 ctls.Controls.Clear();
                 ctls.Controls.Add(blb);
+                }
+                else
+                {
+                    MessageBox.Show("Checkout Not Accessible For Empty Tables Alert !!", "Empty Table Alert !!");
+                }
             }
         }
+       
         bool minus_click = false;
         private void btnminus_Click_1(object sender, EventArgs e)
         {
@@ -1585,6 +1608,8 @@ namespace POS_System
                 else
                 {
                     MessageBox.Show("Please select row first or select only one row");
+                    dataGridView1.CurrentCell = null;
+
                 }
 
             }
@@ -2091,6 +2116,12 @@ namespace POS_System
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.ColumnIndex == dataGridView1.Columns["cal_item_name"].Index && e.RowIndex >= 0)
+            {
+                txt_rich_note.Text = "";
+                dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+               
+            }
             //try
             //{
             //    if (e.ColumnIndex == dataGridView1.Columns["cal_qty"].Index && e.RowIndex >= 0)
@@ -2134,7 +2165,7 @@ namespace POS_System
         string itemnote = NoteItem.itemnote;
         private void dataGridView1_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-
+            txt_rich_note.Text = "";
             foreach (DataGridViewRow gr in old)
             {
                 if (gr == dataGridView1.CurrentRow)
@@ -2177,8 +2208,8 @@ namespace POS_System
 
         private void dataGridView1_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
         {
-
-
+            //panel_quantity.Show();
+            //txt_cost.Text = Convert.ToDecimal(dataGridView1.CurrentRow.Cells["cal_cost"].Value).ToString();
             if (dataGridView1.CurrentCell.ColumnIndex == dataGridView1.Columns["cal_qty"].Index)
             {
                 if (Convert.ToDecimal(dataGridView1.CurrentRow.Cells["cal_qty"].Value) > 0)
@@ -2329,7 +2360,7 @@ namespace POS_System
                                 }
                             }
                             it.table_no = label_table_no.Text;
-                            it.table_name = lbl_table_name.Text;
+                            //it.table_name = lbl_table_name.Text;
                             it.ShowDialog();
                             datagridviewload();
                         }
@@ -2448,6 +2479,7 @@ namespace POS_System
             if (dataGridView1.SelectedRows.Count > 0)
             {
                 dataGridView1.CurrentRow.Cells["cal_description"].Value = txt_rich_note.Text;
+                dataGridView1.CurrentCell = null;
                 //txt_rich_note.Text = "";
             }
             panel_note.Hide();

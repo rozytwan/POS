@@ -152,8 +152,7 @@ namespace BLLS
         }
         public DataTable getallcustomersPhoneNoName()
         {
-
-            return DAL.getuser("select concat(name , ' ' , lastname) AS name,phone,id from tbl_customerDetailnyo", null);
+            return DAL.getuser("select concat(name , ' ' , lastname) AS name,phone,id,image from tbl_customerDetailnyo order by nationid desc", null);
         }
         public int fast_Customer_Create(string name, string phone, string address)
         {
@@ -403,7 +402,14 @@ namespace BLLS
             };
             return DAL.getuser("update tbl_customerDetailnyo set pakage_name='Choose Package' where id=@id ", parm);
         }
-
+        public int UpdateCardBalance(int id,decimal customer_balance)
+        {
+            SqlParameter[] parm = new SqlParameter[] {
+                new SqlParameter("@id",id),
+                 new SqlParameter("@customer_balance",customer_balance),
+            };
+            return DAL.IDU("update tbl_customer_card_info set customer_balance=customer_balance+@customer_balance where customer_id=@id ", parm);
+        }
         public DataTable GetCardType()
         {
             return DAL.getuser("select * from tbl_card_type", null);
@@ -731,6 +737,11 @@ namespace BLLS
         {
 
             return DAL.getuser("select id from tbl_customerDetailnyo order by id desc;", null);
+        }
+        public DataTable GetCustomerwithcardno()
+        {
+
+            return DAL.getuser("select * from tbl_customerDetailnyo where card_no!=''", null);
         }
     }
 }

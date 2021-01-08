@@ -87,6 +87,9 @@
             this.btn_back = new System.Windows.Forms.Button();
             this.label23 = new System.Windows.Forms.Label();
             this.userpicbox = new System.Windows.Forms.PictureBox();
+            this.rbn_less = new System.Windows.Forms.RadioButton();
+            this.rbn_high = new System.Windows.Forms.RadioButton();
+            this.label5 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -118,6 +121,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.rbn_less);
+            this.groupBox1.Controls.Add(this.rbn_high);
+            this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label30);
             this.groupBox1.Controls.Add(this.cbo_card_status);
             this.groupBox1.Controls.Add(this.label29);
@@ -744,6 +750,40 @@
             this.userpicbox.TabIndex = 0;
             this.userpicbox.TabStop = false;
             // 
+            // rbn_less
+            // 
+            this.rbn_less.AutoSize = true;
+            this.rbn_less.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbn_less.Location = new System.Drawing.Point(187, 514);
+            this.rbn_less.Name = "rbn_less";
+            this.rbn_less.Size = new System.Drawing.Size(51, 19);
+            this.rbn_less.TabIndex = 127;
+            this.rbn_less.TabStop = true;
+            this.rbn_less.Text = "Less";
+            this.rbn_less.UseVisualStyleBackColor = true;
+            // 
+            // rbn_high
+            // 
+            this.rbn_high.AutoSize = true;
+            this.rbn_high.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbn_high.Location = new System.Drawing.Point(131, 514);
+            this.rbn_high.Name = "rbn_high";
+            this.rbn_high.Size = new System.Drawing.Size(51, 19);
+            this.rbn_high.TabIndex = 126;
+            this.rbn_high.TabStop = true;
+            this.rbn_high.Text = "High";
+            this.rbn_high.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(63, 512);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(62, 18);
+            this.label5.TabIndex = 128;
+            this.label5.Text = "Priority :";
+            // 
             // CustomerDetailform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -834,5 +874,8 @@
         public System.Windows.Forms.Label label30;
         private System.Windows.Forms.ComboBox cbo_card_status;
         private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.RadioButton rbn_less;
+        private System.Windows.Forms.RadioButton rbn_high;
+        private System.Windows.Forms.Label label5;
     }
 }

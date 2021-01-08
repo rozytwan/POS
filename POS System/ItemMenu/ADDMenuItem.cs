@@ -466,8 +466,6 @@ namespace POS_System
         }
         
 
-
-
         ToolTip t1 = new ToolTip();
       
         private void btn_selectimage_MouseHover(object sender, EventArgs e)
@@ -491,14 +489,15 @@ namespace POS_System
                 {
                     MessageBox.Show("Please Choose a Category");
                 }
-                else if (txt_name.Text == "" || txt_costprice.Text == "" || txt_sellingprice.Text == "" || txt_discount.Text == "" || cbo_category.Text == "" || cbo_kot_print.Text == "" || cbo_applicabletimeperiod.Text == "")
+                else if (txt_name.Text == "" || txt_costprice.Text == "" || txt_sellingprice.Text == "" || txt_sellingprice.Text == "0.00" ||txt_discount.Text == "" || txt_costprice.Text == "0.00"||cbo_category.Text == "" || cbo_kot_print.Text == "" || cbo_applicabletimeperiod.Text == "")
                 {
-                    MessageBox.Show("Please Fill The Required Fields");
+                    MessageBox.Show("Field Empty Complete Required Field !!","Complete Field Alert !!");
                 }
                 else if (kilobytes > 200)
                 {
                     MessageBox.Show("Image Size Mustn't Be Greater Than 200KB !!", "Small Image Size Alert !!");
                 }
+            
                 else
                 {
                     DataTable dt = bllpro.get_item_byname(txt_name.Text);
@@ -592,7 +591,7 @@ namespace POS_System
                 {
                     if (dtm.Rows[0]["menuupdate"].ToString() == "True")
                     {
-                        if (txt_name.Text == "" || txt_costprice.Text == "" || txt_sellingprice.Text == "" || cbo_category.Text == "" || txt_discount.Text == "" || cbo_applicabletimeperiod.Text == "" || cbo_kot_print.Text == "" || cbo_category.Text == "Choose One" || cbo_category.SelectedIndex == 0)
+                        if (txt_name.Text == "" || txt_costprice.Text == "" || txt_sellingprice.Text == "" || cbo_category.Text == "" || txt_discount.Text == ""|| txt_costprice.Text == "0.00" || txt_sellingprice.Text == "0.00"|| cbo_applicabletimeperiod.Text == "" || cbo_kot_print.Text == "" || cbo_category.Text == "Choose One" || cbo_category.SelectedIndex == 0)
                         {
                             MessageBox.Show("Fill The Required Fields", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
@@ -832,6 +831,12 @@ namespace POS_System
         {
             lbl_preview_selling_price.Text = txt_sellingprice.Text;
             lbl_preview_selling_price.Show();
+            //if (txt_costprice.Text == "" || txt_costprice.Text == "0.00")
+            //{
+            //    txt_costprice.Text = "0.00";
+
+            //}
+
         }
 
         private void btn_back_Click(object sender, EventArgs e)
@@ -867,6 +872,91 @@ namespace POS_System
         private void txt_total_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void txt_costprice_Enter(object sender, EventArgs e)
+        {
+            if (txt_costprice.Text == "0.00")
+            {
+                txt_costprice.Text = "";
+            }
+        }
+
+        private void txt_costprice_Leave(object sender, EventArgs e)
+        {
+            if (txt_costprice.Text == "")
+            {
+                txt_costprice.Text = "0.00";
+            }
+        }
+
+        private void txt_costprice_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void txt_sellingprice_Enter(object sender, EventArgs e)
+        {
+
+            if (txt_sellingprice.Text == "0.00")
+            {
+                txt_sellingprice.Text = "";
+            }
+        }
+
+        private void txt_sellingprice_Leave(object sender, EventArgs e)
+        {
+            if (txt_sellingprice.Text == "")
+            {
+                txt_sellingprice.Text = "0.00";
+            }
+            
+        }
+
+        private void txt_costprice_TextChanged(object sender, EventArgs e)
+        {
+            //if (txt_costprice.Text == "")
+            //{
+            //    txt_costprice.Text = "0.00";
+
+            //}
+            //if (txt_costprice.Text == "0.00")
+            //{
+            //    txt_costprice.Text = "";
+
+            //}
+        }
+
+        private void txt_costprice_Click(object sender, EventArgs e)
+        {
+            if (txt_costprice.Text == "0.00")
+            {
+                txt_costprice.Text = "";
+            }
+        }
+
+        private void txt_sellingprice_Click(object sender, EventArgs e)
+        {
+            if (txt_sellingprice.Text == "0.00")
+            {
+                txt_sellingprice.Text = "";
+            }
+        }
+
+        private void txt_discount_Enter(object sender, EventArgs e)
+        {
+            if (txt_discount.Text == "0.00")
+            {
+                txt_discount.Text = "";
+            }
+        }
+
+        private void txt_discount_Leave(object sender, EventArgs e)
+        {
+            if (txt_discount.Text == "")
+            {
+                txt_discount.Text = "0.00";
+            }
         }
     }
 }

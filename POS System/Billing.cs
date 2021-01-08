@@ -92,6 +92,7 @@ namespace POS_System
         string ird_password;
         string loyalty_type;
         int customer_details;
+        string customer;
         private void Billing_Load(object sender, EventArgs e)
         {
 
@@ -154,8 +155,9 @@ namespace POS_System
                 fiscal_year = dt.Rows[0]["fiscal_year"].ToString();
                 fiscal_year_status = dt.Rows[0]["is_active"].ToString();
             }
-            // area_button();
-            tabletuch();
+           
+                // area_button();
+                tabletuch();
             user_access_check = false;
          
             txtcashier.Text = Login.sendtext;
@@ -203,6 +205,16 @@ namespace POS_System
             if (customer_details > 0)
             {
                 cbo_customer_name.SelectedValue = customer_details;
+            }
+            else
+            {
+                CUstomer_name();
+                CUstomer_number();
+            }
+            string customer = CustomerNames.customer_names;
+            if (customer != ""&& customer!=null)
+            {
+                cbo_customer_name.Text = customer;
             }
             else
             {
@@ -2557,6 +2569,7 @@ namespace POS_System
                     }
                 }
                 Customer_Management.AllCusomterList.customer_details = 0;
+                CustomerNames.customer_names = "";
             }
         }
         BLL_Fiscal blfsc = new BLL_Fiscal();
@@ -3601,6 +3614,11 @@ namespace POS_System
                     dgvColumnId = e.RowIndex;
                 }
             }
+            if ((e.ColumnIndex == dataGridView1.Columns["cal_item_name"].Index && e.RowIndex >= 0))
+            {
+                dataGridView1_RowHeaderMouseClick(null,null);
+                dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            }
             if ((e.ColumnIndex == dataGridView1.Columns["cal_complementary"].Index && e.RowIndex >= 0))
             {
                 DataTable dtcaccess = bldd.GetAdminAccessComplementry();
@@ -4127,6 +4145,25 @@ namespace POS_System
             payment_mode = "Cash/Credit";
             // btn_card_balance.Visible = false;
             label14.Text = "Change Amount";
+        }
+        public static int id;
+        int customer_name_id = 0;
+        string customer_name_list = "";
+        private void btn_list_Click(object sender, EventArgs e)
+        {
+           // Control ctls = this.Parent;
+           //CustomerNames cn = new CustomerNames(table_no2,Gettablename);
+           // cn.ShowDialog();
+           // //ctls.Controls.Clear();
+           // //ctls.Controls.Add(cn);
+           // customer_name_id = CustomerNames.id;
+           // customer_name_list = CustomerNames.customer_names;
+
+        }
+
+        private void cbo_customer_name_TextChanged(object sender, EventArgs e)
+        {
+          //  cbo_customer_name.Text = CustomerNames.customer_names;
         }
     }
 }

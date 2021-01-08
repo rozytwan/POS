@@ -29,6 +29,17 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txt_fonepay = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button2 = new DevComponents.DotNetBar.ButtonX();
+            this.bth_panel_close = new System.Windows.Forms.Button();
+            this.txtuser_name = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtpassword = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
             this.buttonX4 = new DevComponents.DotNetBar.ButtonX();
             this.btn_club_card = new DevComponents.DotNetBar.ButtonX();
             this.btn_print_preview = new DevComponents.DotNetBar.ButtonX();
@@ -36,15 +47,6 @@
             this.txt_club_card = new System.Windows.Forms.TextBox();
             this.lbl_status = new System.Windows.Forms.Label();
             this.buttonX3 = new DevComponents.DotNetBar.ButtonX();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button2 = new DevComponents.DotNetBar.ButtonX();
-            this.bth_panel_close = new System.Windows.Forms.Button();
-            this.txtuser_name = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtpassword = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.txt_excess_shortage = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.txt_closing_balance = new System.Windows.Forms.TextBox();
@@ -86,8 +88,6 @@
             this.txt_counting_cash = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.txt_fonepay = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -151,89 +151,15 @@
             this.panel1.TabIndex = 284;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // buttonX4
+            // txt_fonepay
             // 
-            this.buttonX4.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX4.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.buttonX4.Font = new System.Drawing.Font("Book Antiqua", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonX4.Location = new System.Drawing.Point(261, 676);
-            this.buttonX4.Name = "buttonX4";
-            this.buttonX4.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(15);
-            this.buttonX4.Size = new System.Drawing.Size(121, 43);
-            this.buttonX4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX4.TabIndex = 339;
-            this.buttonX4.Text = "Cancel Order";
-            this.buttonX4.Click += new System.EventHandler(this.buttonX4_Click);
-            // 
-            // btn_club_card
-            // 
-            this.btn_club_card.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_club_card.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btn_club_card.Font = new System.Drawing.Font("Book Antiqua", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_club_card.Location = new System.Drawing.Point(6, 725);
-            this.btn_club_card.Name = "btn_club_card";
-            this.btn_club_card.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(15);
-            this.btn_club_card.Size = new System.Drawing.Size(116, 45);
-            this.btn_club_card.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_club_card.TabIndex = 338;
-            this.btn_club_card.Text = "Club Card Report";
-            this.btn_club_card.Click += new System.EventHandler(this.btn_club_card_Click);
-            // 
-            // btn_print_preview
-            // 
-            this.btn_print_preview.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_print_preview.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.btn_print_preview.Font = new System.Drawing.Font("Book Antiqua", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_print_preview.Location = new System.Drawing.Point(129, 725);
-            this.btn_print_preview.Name = "btn_print_preview";
-            this.btn_print_preview.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(15);
-            this.btn_print_preview.Size = new System.Drawing.Size(125, 45);
-            this.btn_print_preview.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_print_preview.TabIndex = 337;
-            this.btn_print_preview.Text = "Print Preview";
-            this.btn_print_preview.Click += new System.EventHandler(this.btn_print_preview_Click);
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(26, 224);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(106, 17);
-            this.label21.TabIndex = 336;
-            this.label21.Text = "Total Club Card";
-            // 
-            // txt_club_card
-            // 
-            this.txt_club_card.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_club_card.Location = new System.Drawing.Point(170, 218);
-            this.txt_club_card.Name = "txt_club_card";
-            this.txt_club_card.ReadOnly = true;
-            this.txt_club_card.Size = new System.Drawing.Size(207, 26);
-            this.txt_club_card.TabIndex = 335;
-            this.txt_club_card.Text = "0.00";
-            // 
-            // lbl_status
-            // 
-            this.lbl_status.AutoSize = true;
-            this.lbl_status.Location = new System.Drawing.Point(340, 580);
-            this.lbl_status.Name = "lbl_status";
-            this.lbl_status.Size = new System.Drawing.Size(0, 13);
-            this.lbl_status.TabIndex = 334;
-            // 
-            // buttonX3
-            // 
-            this.buttonX3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX3.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.buttonX3.Font = new System.Drawing.Font("Book Antiqua", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonX3.Location = new System.Drawing.Point(6, 674);
-            this.buttonX3.Name = "buttonX3";
-            this.buttonX3.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(15);
-            this.buttonX3.Size = new System.Drawing.Size(117, 45);
-            this.buttonX3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX3.TabIndex = 333;
-            this.buttonX3.Text = "Item Sales";
-            this.buttonX3.Click += new System.EventHandler(this.buttonX3_Click);
+            this.txt_fonepay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_fonepay.Location = new System.Drawing.Point(170, 186);
+            this.txt_fonepay.Name = "txt_fonepay";
+            this.txt_fonepay.ReadOnly = true;
+            this.txt_fonepay.Size = new System.Drawing.Size(207, 26);
+            this.txt_fonepay.TabIndex = 341;
+            this.txt_fonepay.Text = "0.00";
             // 
             // panel2
             // 
@@ -249,6 +175,28 @@
             this.panel2.Size = new System.Drawing.Size(337, 149);
             this.panel2.TabIndex = 299;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // panel4
+            // 
+            this.panel4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(81)))), ((int)(((byte)(126)))));
+            this.panel4.Controls.Add(this.label6);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(337, 25);
+            this.panel4.TabIndex = 285;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(92, 1);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(138, 25);
+            this.label6.TabIndex = 19;
+            this.label6.Text = "Admin Access";
             // 
             // button2
             // 
@@ -298,28 +246,6 @@
             this.label8.TabIndex = 302;
             this.label8.Text = "User Name";
             // 
-            // panel4
-            // 
-            this.panel4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(81)))), ((int)(((byte)(126)))));
-            this.panel4.Controls.Add(this.label6);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(337, 25);
-            this.panel4.TabIndex = 285;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(92, 1);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(138, 25);
-            this.label6.TabIndex = 19;
-            this.label6.Text = "Admin Access";
-            // 
             // txtpassword
             // 
             this.txtpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -339,6 +265,100 @@
             this.label9.Size = new System.Drawing.Size(69, 17);
             this.label9.TabIndex = 300;
             this.label9.Text = "Password";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(26, 192);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(139, 17);
+            this.label22.TabIndex = 340;
+            this.label22.Text = "Total FonePay Sales";
+            // 
+            // buttonX4
+            // 
+            this.buttonX4.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX4.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.buttonX4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonX4.Location = new System.Drawing.Point(261, 676);
+            this.buttonX4.Name = "buttonX4";
+            this.buttonX4.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(15);
+            this.buttonX4.Size = new System.Drawing.Size(121, 43);
+            this.buttonX4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX4.TabIndex = 339;
+            this.buttonX4.Text = "Cancel Order";
+            this.buttonX4.Click += new System.EventHandler(this.buttonX4_Click);
+            // 
+            // btn_club_card
+            // 
+            this.btn_club_card.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btn_club_card.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btn_club_card.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_club_card.Location = new System.Drawing.Point(6, 725);
+            this.btn_club_card.Name = "btn_club_card";
+            this.btn_club_card.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(15);
+            this.btn_club_card.Size = new System.Drawing.Size(116, 45);
+            this.btn_club_card.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btn_club_card.TabIndex = 338;
+            this.btn_club_card.Text = "Club Card Report";
+            this.btn_club_card.Click += new System.EventHandler(this.btn_club_card_Click);
+            // 
+            // btn_print_preview
+            // 
+            this.btn_print_preview.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btn_print_preview.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.btn_print_preview.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_print_preview.Location = new System.Drawing.Point(129, 725);
+            this.btn_print_preview.Name = "btn_print_preview";
+            this.btn_print_preview.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(15);
+            this.btn_print_preview.Size = new System.Drawing.Size(125, 45);
+            this.btn_print_preview.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btn_print_preview.TabIndex = 337;
+            this.btn_print_preview.Text = "Print Preview";
+            this.btn_print_preview.Click += new System.EventHandler(this.btn_print_preview_Click);
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(26, 224);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(106, 17);
+            this.label21.TabIndex = 336;
+            this.label21.Text = "Total Club Card";
+            // 
+            // txt_club_card
+            // 
+            this.txt_club_card.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_club_card.Location = new System.Drawing.Point(170, 218);
+            this.txt_club_card.Name = "txt_club_card";
+            this.txt_club_card.ReadOnly = true;
+            this.txt_club_card.Size = new System.Drawing.Size(207, 26);
+            this.txt_club_card.TabIndex = 335;
+            this.txt_club_card.Text = "0.00";
+            // 
+            // lbl_status
+            // 
+            this.lbl_status.AutoSize = true;
+            this.lbl_status.Location = new System.Drawing.Point(340, 580);
+            this.lbl_status.Name = "lbl_status";
+            this.lbl_status.Size = new System.Drawing.Size(0, 13);
+            this.lbl_status.TabIndex = 334;
+            // 
+            // buttonX3
+            // 
+            this.buttonX3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX3.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+            this.buttonX3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonX3.Location = new System.Drawing.Point(6, 674);
+            this.buttonX3.Name = "buttonX3";
+            this.buttonX3.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(15);
+            this.buttonX3.Size = new System.Drawing.Size(117, 45);
+            this.buttonX3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX3.TabIndex = 333;
+            this.buttonX3.Text = "Item Sales";
+            this.buttonX3.Click += new System.EventHandler(this.buttonX3_Click);
             // 
             // txt_excess_shortage
             // 
@@ -537,7 +557,7 @@
             // 
             this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
-            this.buttonX1.Font = new System.Drawing.Font("Book Antiqua", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonX1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonX1.Location = new System.Drawing.Point(130, 674);
             this.buttonX1.Name = "buttonX1";
             this.buttonX1.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(15);
@@ -652,7 +672,7 @@
             // 
             this.btn_exit.BackColor = System.Drawing.Color.Red;
             this.btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_exit.Font = new System.Drawing.Font("Book Antiqua", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_exit.ForeColor = System.Drawing.Color.White;
             this.btn_exit.Location = new System.Drawing.Point(275, 732);
             this.btn_exit.Name = "btn_exit";
@@ -756,26 +776,6 @@
             // backgroundWorker1
             // 
             this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
-            // 
-            // txt_fonepay
-            // 
-            this.txt_fonepay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_fonepay.Location = new System.Drawing.Point(170, 186);
-            this.txt_fonepay.Name = "txt_fonepay";
-            this.txt_fonepay.ReadOnly = true;
-            this.txt_fonepay.Size = new System.Drawing.Size(207, 26);
-            this.txt_fonepay.TabIndex = 341;
-            this.txt_fonepay.Text = "0.00";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(26, 192);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(139, 17);
-            this.label22.TabIndex = 340;
-            this.label22.Text = "Total FonePay Sales";
             // 
             // DayEndReport
             // 

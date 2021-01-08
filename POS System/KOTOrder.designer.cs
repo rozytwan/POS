@@ -32,6 +32,16 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KOTOrder));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel_quantity = new System.Windows.Forms.Panel();
+            this.txt_total = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txt_cost = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txt_qty = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             this.panel_note = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -92,6 +102,7 @@
             this.tbl_count = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.panel_quantity.SuspendLayout();
             this.panel_note.SuspendLayout();
             this.panel5.SuspendLayout();
             this.total_panel.SuspendLayout();
@@ -111,6 +122,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.panel_quantity);
             this.panel1.Controls.Add(this.panel_note);
             this.panel1.Controls.Add(this.btn_service_provider);
             this.panel1.Controls.Add(this.btn_item_transfer);
@@ -127,17 +139,128 @@
             this.panel1.Size = new System.Drawing.Size(1026, 717);
             this.panel1.TabIndex = 0;
             // 
+            // panel_quantity
+            // 
+            this.panel_quantity.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel_quantity.Controls.Add(this.txt_total);
+            this.panel_quantity.Controls.Add(this.label6);
+            this.panel_quantity.Controls.Add(this.txt_cost);
+            this.panel_quantity.Controls.Add(this.label5);
+            this.panel_quantity.Controls.Add(this.txt_qty);
+            this.panel_quantity.Controls.Add(this.label4);
+            this.panel_quantity.Controls.Add(this.button2);
+            this.panel_quantity.Controls.Add(this.label3);
+            this.panel_quantity.Controls.Add(this.button4);
+            this.panel_quantity.Location = new System.Drawing.Point(614, 426);
+            this.panel_quantity.Name = "panel_quantity";
+            this.panel_quantity.Size = new System.Drawing.Size(273, 166);
+            this.panel_quantity.TabIndex = 281;
+            this.panel_quantity.Visible = false;
+            // 
+            // txt_total
+            // 
+            this.txt_total.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_total.Location = new System.Drawing.Point(97, 89);
+            this.txt_total.Name = "txt_total";
+            this.txt_total.Size = new System.Drawing.Size(160, 22);
+            this.txt_total.TabIndex = 18;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(23, 89);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(44, 20);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "Total";
+            // 
+            // txt_cost
+            // 
+            this.txt_cost.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_cost.Location = new System.Drawing.Point(97, 64);
+            this.txt_cost.Name = "txt_cost";
+            this.txt_cost.Size = new System.Drawing.Size(160, 22);
+            this.txt_cost.TabIndex = 16;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(23, 66);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(42, 20);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "Cost";
+            // 
+            // txt_qty
+            // 
+            this.txt_qty.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_qty.Location = new System.Drawing.Point(97, 41);
+            this.txt_qty.Name = "txt_qty";
+            this.txt_qty.Size = new System.Drawing.Size(160, 22);
+            this.txt_qty.TabIndex = 14;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(23, 41);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(68, 20);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Quantity";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Red;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(247, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(23, 24);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "X";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(15, 4);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(103, 20);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Qty Change";
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(81)))), ((int)(((byte)(126)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(164, 129);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(93, 34);
+            this.button4.TabIndex = 6;
+            this.button4.Text = "Ok";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
             // panel_note
             // 
-            this.panel_note.BackColor = System.Drawing.Color.White;
+            this.panel_note.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel_note.Controls.Add(this.button1);
             this.panel_note.Controls.Add(this.label2);
             this.panel_note.Controls.Add(this.btn_modifier);
             this.panel_note.Controls.Add(this.btn_save);
             this.panel_note.Controls.Add(this.txt_rich_note);
-            this.panel_note.Location = new System.Drawing.Point(613, 262);
+            this.panel_note.Location = new System.Drawing.Point(611, 269);
             this.panel_note.Name = "panel_note";
-            this.panel_note.Size = new System.Drawing.Size(231, 151);
+            this.panel_note.Size = new System.Drawing.Size(273, 151);
             this.panel_note.TabIndex = 0;
             this.panel_note.Visible = false;
             this.panel_note.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel_note_MouseMove);
@@ -147,7 +270,7 @@
             this.button1.BackColor = System.Drawing.Color.Red;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(205, 3);
+            this.button1.Location = new System.Drawing.Point(247, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(23, 24);
             this.button1.TabIndex = 12;
@@ -158,11 +281,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(15, 4);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 20);
+            this.label2.Size = new System.Drawing.Size(47, 20);
             this.label2.TabIndex = 8;
             this.label2.Text = "Note";
             // 
@@ -172,7 +295,7 @@
             this.btn_modifier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_modifier.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_modifier.ForeColor = System.Drawing.Color.White;
-            this.btn_modifier.Location = new System.Drawing.Point(11, 110);
+            this.btn_modifier.Location = new System.Drawing.Point(78, 110);
             this.btn_modifier.Name = "btn_modifier";
             this.btn_modifier.Size = new System.Drawing.Size(93, 36);
             this.btn_modifier.TabIndex = 7;
@@ -187,7 +310,7 @@
             this.btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_save.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_save.ForeColor = System.Drawing.Color.White;
-            this.btn_save.Location = new System.Drawing.Point(110, 112);
+            this.btn_save.Location = new System.Drawing.Point(177, 110);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(93, 34);
             this.btn_save.TabIndex = 6;
@@ -197,9 +320,10 @@
             // 
             // txt_rich_note
             // 
+            this.txt_rich_note.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_rich_note.Location = new System.Drawing.Point(3, 27);
             this.txt_rich_note.Name = "txt_rich_note";
-            this.txt_rich_note.Size = new System.Drawing.Size(223, 77);
+            this.txt_rich_note.Size = new System.Drawing.Size(267, 77);
             this.txt_rich_note.TabIndex = 5;
             this.txt_rich_note.Text = "";
             this.txt_rich_note.TextChanged += new System.EventHandler(this.txt_rich_note_TextChanged);
@@ -411,10 +535,11 @@
             this.calkot_print,
             this.cal_description,
             this.cal_note});
+            this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Default;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Snow;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -840,6 +965,8 @@
             this.Load += new System.EventHandler(this.KOTOrder_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel_quantity.ResumeLayout(false);
+            this.panel_quantity.PerformLayout();
             this.panel_note.ResumeLayout(false);
             this.panel_note.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -926,5 +1053,15 @@
         private System.Windows.Forms.RichTextBox txt_rich_note;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel_quantity;
+        private System.Windows.Forms.TextBox txt_total;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txt_cost;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txt_qty;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Button button4;
     }
 }

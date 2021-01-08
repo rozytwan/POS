@@ -43,6 +43,7 @@ namespace POS_System.Customer_Management
             fillGrid();
             Loadcustomer();
             panel_replace.Hide();
+            panel_topup.Hide();
             cmb_search.SelectedIndex = 0;
             txt_search_by.Hide();
         }
@@ -434,6 +435,53 @@ namespace POS_System.Customer_Management
         {
             panel_replace.Hide();
         }
+
+        private void btn_topup_Click(object sender, EventArgs e)
+        {
+            AdminAccess acc = new AdminAccess();
+            acc.ShowDialog();
+            if (acc.DialogResult == DialogResult.OK)
+            {
+                panel_topup.Show();
+            }
+        }
+
+        private void buttonX1_Click(object sender, EventArgs e)
+        {
+          
+                DialogResult dialogResult = MessageBox.Show("Are You Sure To Topup Balance In All Card??", "Topup All Card !!", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    DataTable dt = customer.GetCustomerwithcardno();
+
+                    if (dt.Rows.Count > 0)
+                    {
+                        for (int i = 0; i < dt.Rows.Count; i++)
+                        {
+                        int id = Convert.ToInt32(dt.Rows[i]["id"].ToString());
+                        int insert = customer.Insert_add_balance(id, Login.sendtext, Convert.ToDecimal(txt_topup.Text), Convert.ToDateTime(DateTime.Now.ToLongTimeString()), "X", "Cash","All Topup");
+
+                        int update = customer.UpdateCardBalance(id,Convert.ToDecimal(txt_topup.Text));
+                        if (update==0)
+                        {
+                            int insertblc = customer.Insert_balance(id, Convert.ToDecimal(txt_topup.Text), "true", Convert.ToDecimal(0.00), "Inactive", Convert.ToDecimal(0.00), "Inactive");
+
+                        }
+                        
+                    }
+                   
+                       MessageBox.Show("Successfully Update Alert !!", "Success Alert !!");
+                    Loadcustomer();
+                    panel_topup.Hide();
+                }
+                }
+            }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            panel_topup.Hide();
+        }
     }
-}
+    }
+
 

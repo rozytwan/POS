@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Billing));
             this.containpanel = new System.Windows.Forms.Panel();
+            this.lbl_credit = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.rbn_others = new System.Windows.Forms.RadioButton();
@@ -41,6 +43,7 @@
             this.chkcredit = new System.Windows.Forms.RadioButton();
             this.chkcash = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rbn_esewa = new System.Windows.Forms.RadioButton();
             this.chk_cash_credit = new System.Windows.Forms.RadioButton();
             this.btn_cancel = new DevComponents.DotNetBar.ButtonX();
             this.chk_cheque = new System.Windows.Forms.RadioButton();
@@ -48,6 +51,7 @@
             this.btn_reward = new DevComponents.DotNetBar.ButtonX();
             this.btn_settlement = new DevComponents.DotNetBar.ButtonX();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btn_list = new DevComponents.DotNetBar.ButtonX();
             this.btn_card_balance = new DevComponents.DotNetBar.ButtonX();
             this.label13 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -134,8 +138,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtnewbillno = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.lbl_credit = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.containpanel.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -199,6 +201,28 @@
             this.containpanel.Size = new System.Drawing.Size(1024, 720);
             this.containpanel.TabIndex = 0;
             // 
+            // lbl_credit
+            // 
+            this.lbl_credit.AutoSize = true;
+            this.lbl_credit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_credit.ForeColor = System.Drawing.Color.Black;
+            this.lbl_credit.Location = new System.Drawing.Point(669, 638);
+            this.lbl_credit.Name = "lbl_credit";
+            this.lbl_credit.Size = new System.Drawing.Size(36, 17);
+            this.lbl_credit.TabIndex = 315;
+            this.lbl_credit.Text = "0.00";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.Black;
+            this.label16.Location = new System.Drawing.Point(566, 638);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(97, 17);
+            this.label16.TabIndex = 314;
+            this.label16.Text = "Credit Amount";
+            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -220,7 +244,7 @@
             this.groupBox2.Controls.Add(this.chkcash);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.Black;
-            this.groupBox2.Location = new System.Drawing.Point(555, 268);
+            this.groupBox2.Location = new System.Drawing.Point(556, 268);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(205, 186);
             this.groupBox2.TabIndex = 283;
@@ -326,6 +350,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.Controls.Add(this.rbn_esewa);
             this.groupBox1.Controls.Add(this.chk_cash_credit);
             this.groupBox1.Controls.Add(this.btn_cancel);
             this.groupBox1.Controls.Add(this.chk_cheque);
@@ -339,10 +364,24 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Payment Mode";
             // 
+            // rbn_esewa
+            // 
+            this.rbn_esewa.AutoSize = true;
+            this.rbn_esewa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.rbn_esewa.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbn_esewa.ForeColor = System.Drawing.Color.White;
+            this.rbn_esewa.Location = new System.Drawing.Point(1, 122);
+            this.rbn_esewa.Name = "rbn_esewa";
+            this.rbn_esewa.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.rbn_esewa.Size = new System.Drawing.Size(198, 22);
+            this.rbn_esewa.TabIndex = 312;
+            this.rbn_esewa.Text = "        ESewa               ";
+            this.rbn_esewa.UseVisualStyleBackColor = false;
+            // 
             // chk_cash_credit
             // 
             this.chk_cash_credit.AutoSize = true;
-            this.chk_cash_credit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(81)))), ((int)(((byte)(126)))));
+            this.chk_cash_credit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.chk_cash_credit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chk_cash_credit.ForeColor = System.Drawing.Color.White;
             this.chk_cash_credit.Location = new System.Drawing.Point(-1, 38);
@@ -389,7 +428,7 @@
             // chk_club_card
             // 
             this.chk_club_card.AutoSize = true;
-            this.chk_club_card.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.chk_club_card.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(81)))), ((int)(((byte)(126)))));
             this.chk_club_card.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chk_club_card.ForeColor = System.Drawing.Color.White;
             this.chk_club_card.Location = new System.Drawing.Point(0, 94);
@@ -429,6 +468,7 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.btn_list);
             this.panel3.Controls.Add(this.btn_card_balance);
             this.panel3.Controls.Add(this.label13);
             this.panel3.Controls.Add(this.label9);
@@ -441,12 +481,25 @@
             this.panel3.Size = new System.Drawing.Size(208, 132);
             this.panel3.TabIndex = 93;
             // 
+            // btn_list
+            // 
+            this.btn_list.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btn_list.ColorTable = DevComponents.DotNetBar.eButtonColor.Blue;
+            this.btn_list.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_list.Image = global::POS_System.Properties.Resources.arrow_left_direction;
+            this.btn_list.Location = new System.Drawing.Point(175, 18);
+            this.btn_list.Name = "btn_list";
+            this.btn_list.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(15);
+            this.btn_list.Size = new System.Drawing.Size(21, 21);
+            this.btn_list.TabIndex = 310;
+            this.btn_list.Click += new System.EventHandler(this.btn_list_Click);
+            // 
             // btn_card_balance
             // 
             this.btn_card_balance.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btn_card_balance.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
             this.btn_card_balance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_card_balance.Location = new System.Drawing.Point(170, 87);
+            this.btn_card_balance.Location = new System.Drawing.Point(171, 91);
             this.btn_card_balance.Name = "btn_card_balance";
             this.btn_card_balance.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(15);
             this.btn_card_balance.Size = new System.Drawing.Size(35, 33);
@@ -495,7 +548,7 @@
             this.cbo_customer_no.FormattingEnabled = true;
             this.cbo_customer_no.Location = new System.Drawing.Point(15, 55);
             this.cbo_customer_no.Name = "cbo_customer_no";
-            this.cbo_customer_no.Size = new System.Drawing.Size(172, 21);
+            this.cbo_customer_no.Size = new System.Drawing.Size(153, 21);
             this.cbo_customer_no.TabIndex = 1;
             this.cbo_customer_no.SelectedIndexChanged += new System.EventHandler(this.cbo_customer_no_SelectedIndexChanged);
             // 
@@ -506,9 +559,10 @@
             this.cbo_customer_name.FormattingEnabled = true;
             this.cbo_customer_name.Location = new System.Drawing.Point(14, 18);
             this.cbo_customer_name.Name = "cbo_customer_name";
-            this.cbo_customer_name.Size = new System.Drawing.Size(172, 21);
+            this.cbo_customer_name.Size = new System.Drawing.Size(155, 21);
             this.cbo_customer_name.TabIndex = 0;
             this.cbo_customer_name.SelectedIndexChanged += new System.EventHandler(this.cbo_customer_name_SelectedIndexChanged);
+            this.cbo_customer_name.TextChanged += new System.EventHandler(this.cbo_customer_name_TextChanged);
             // 
             // txtpan_no
             // 
@@ -1060,13 +1114,13 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cal_item_name,
@@ -1083,14 +1137,14 @@
             this.cal_comp_status,
             this.cal_service_provider,
             this.cal_kot_id});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Location = new System.Drawing.Point(151, 135);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -1540,28 +1594,6 @@
             this.label11.TabIndex = 90;
             this.label11.Text = "Bill No";
             // 
-            // lbl_credit
-            // 
-            this.lbl_credit.AutoSize = true;
-            this.lbl_credit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_credit.ForeColor = System.Drawing.Color.Black;
-            this.lbl_credit.Location = new System.Drawing.Point(669, 638);
-            this.lbl_credit.Name = "lbl_credit";
-            this.lbl_credit.Size = new System.Drawing.Size(36, 17);
-            this.lbl_credit.TabIndex = 315;
-            this.lbl_credit.Text = "0.00";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(566, 638);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(97, 17);
-            this.label16.TabIndex = 314;
-            this.label16.Text = "Credit Amount";
-            // 
             // Billing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1656,7 +1688,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cbo_customer_no;
-        private System.Windows.Forms.ComboBox cbo_customer_name;
         private System.Windows.Forms.Label lbl_service_charge;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label lbl_tax;
@@ -1701,5 +1732,8 @@
         private System.Windows.Forms.RadioButton chk_cash_credit;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label lbl_credit;
+        private DevComponents.DotNetBar.ButtonX btn_list;
+        private System.Windows.Forms.RadioButton rbn_esewa;
+        public System.Windows.Forms.ComboBox cbo_customer_name;
     }
 }

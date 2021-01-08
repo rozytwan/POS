@@ -44,8 +44,9 @@ namespace POS_System
         private void AdvanceDiscount_Load(object sender, EventArgs e)
         {
             datagrid_Load();
+
         }
-     
+    
         public void datagrid_Load()
         {
             if (datagridview_item_name.Count > 0)

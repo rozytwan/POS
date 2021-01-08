@@ -27,7 +27,6 @@ namespace POS_System
         public List<string> datagridview_category = new List<string>();
         public List<string> datagridview_kotType = new List<string>();
         public string table_no;
-        public string table_name;
         private void ItemTransfer_Load(object sender, EventArgs e)
         {
             from();
@@ -58,7 +57,7 @@ namespace POS_System
                 cbo_table_no_choose.ValueMember = "rest_table_no";
             }
         }
-        int i;      
+        int i;
         private void btn_move_Click(object sender, EventArgs e)
         {
             bool Found = false;
@@ -74,13 +73,13 @@ namespace POS_System
                         decimal cost = Convert.ToDecimal(row.Cells["cal_cost_2"].Value);
                         decimal quantitys = Convert.ToDecimal(row.Cells["cal_qty_2"].Value ?? String.Empty);
                         decimal total = quantitys * cost;
-                        row.Cells["cal_total_2"].Value = total;                    
+                        row.Cells["cal_total_2"].Value = total;
                         Found = true;
                         decimal qty = Convert.ToDecimal(dataGridView1.CurrentRow.Cells["cal_qty"].Value) - 1;
                         dataGridView1.CurrentRow.Cells["cal_qty"].Value = qty;
                         dataGridView1.CurrentRow.Cells["cal_total"].Value = (qty * Convert.ToDecimal(dataGridView1.CurrentRow.Cells["cal_cost"].Value)).ToString();
                         dataGridView1.CurrentRow.Cells["cal_status"].Value = "Update";
-                        if (dataGridView1.CurrentRow.Cells["cal_qty"].Value.ToString() == "0"||dataGridView1.CurrentRow.Cells["cal_qty"].Value.ToString() == "0.00")
+                        if (dataGridView1.CurrentRow.Cells["cal_qty"].Value.ToString() == "0" || dataGridView1.CurrentRow.Cells["cal_qty"].Value.ToString() == "0.00")
                         {
 
                             row.Cells["cal_status_2"].Value = "I";
@@ -92,7 +91,7 @@ namespace POS_System
                 }
                 if (!Found)
                 {
-                    if (dataGridView1.CurrentRow.Cells["cal_qty"].Value.ToString() == "1.00"|| dataGridView1.CurrentRow.Cells["cal_qty"].Value.ToString() == "1")
+                    if (dataGridView1.CurrentRow.Cells["cal_qty"].Value.ToString() == "1.00" || dataGridView1.CurrentRow.Cells["cal_qty"].Value.ToString() == "1")
                     {
                         i = dataGridView2.Rows.Count;
                         dataGridView2.Rows.Add();
@@ -119,12 +118,13 @@ namespace POS_System
                         dataGridView2.Rows[i].Cells["cal_status_2"].Value = "I";
                         dataGridView2.Rows[i].Cells["cal_order_id_2"].Value = dataGridView1.CurrentRow.Cells["cal_order_id"].Value;
                         dataGridView2.Rows[i].Cells["cal_category_name2"].Value = dataGridView1.CurrentRow.Cells["cal_category_name"].Value;
-                        decimal qty= Convert.ToDecimal(dataGridView1.CurrentRow.Cells["cal_qty"].Value) - 1;
+                        decimal qty = Convert.ToDecimal(dataGridView1.CurrentRow.Cells["cal_qty"].Value) - 1;
                         dataGridView1.CurrentRow.Cells["cal_qty"].Value = qty;
                         dataGridView1.CurrentRow.Cells["cal_total"].Value = (qty * Convert.ToDecimal(dataGridView1.CurrentRow.Cells["cal_cost"].Value)).ToString();
                         dataGridView1.CurrentRow.Cells["cal_status"].Value = "Update";
                         dataGridView2.Rows[i].Cells["cal_delete_status"].Value = "False";
-                        
+
+
                     }
                 }
 
@@ -157,7 +157,7 @@ namespace POS_System
         int j;
         private void btn_move_all_rows_left_Click(object sender, EventArgs e)
         {
-         
+
             if (dataGridView2.SelectedRows.Count > 0)
             {
                 i = dataGridView1.Rows.Count;
@@ -195,7 +195,7 @@ namespace POS_System
                         dataGridView2.CurrentRow.Cells["cal_qty_2"].Value = qty;
                         dataGridView2.CurrentRow.Cells["cal_total_2"].Value = (qty * Convert.ToDecimal(dataGridView2.CurrentRow.Cells["cal_cost_2"].Value)).ToString();
                         dataGridView2.CurrentRow.Cells["cal_status_2"].Value = "U";
-                        if (dataGridView2.CurrentRow.Cells["cal_qty_2"].Value.ToString() == "0"|| dataGridView2.CurrentRow.Cells["cal_qty_2"].Value.ToString() == "0.00")
+                        if (dataGridView2.CurrentRow.Cells["cal_qty_2"].Value.ToString() == "0" || dataGridView2.CurrentRow.Cells["cal_qty_2"].Value.ToString() == "0.00")
                         {
 
                             row.Cells["cal_status"].Value = "Update";
@@ -206,7 +206,7 @@ namespace POS_System
                 }
                 if (!Found)
                 {
-                    if (dataGridView2.CurrentRow.Cells["cal_qty_2"].Value.ToString() == "1"|| dataGridView2.CurrentRow.Cells["cal_qty_2"].Value.ToString() == "1.00")
+                    if (dataGridView2.CurrentRow.Cells["cal_qty_2"].Value.ToString() == "1" || dataGridView2.CurrentRow.Cells["cal_qty_2"].Value.ToString() == "1.00")
                     {
                         i = dataGridView1.Rows.Count;
                         dataGridView1.Rows.Add();
@@ -243,308 +243,72 @@ namespace POS_System
 
             }
         }
-        KOTPrinting80 kot80 = new KOTPrinting80();
-        public void kot_printing_80()
-        {
-            kot80.table_no = table_no;
-            kot80.table_displayNo = lbl_table_no.Text;
-            kot80.table_name = cbo_table_no_choose.Text;
-          //  kot80.note_pad = txtrichbox.Text;
-            kot80.cashier = Login.sendtext;
-           // kot80.service_provider_name = service_provider_name;
-           // kot80.kot_id = kot_id.ToString();
-            kot80.kid = KitchenOrderInfo.kid;
-            kot80.adult = KitchenOrderInfo.adult;
-            for (int i = 0; i < dataGridView1.Rows.Count; i++)
-            {
-                if (dataGridView1.Rows[i].Cells["cal_order_id"].Value == null)
-                {
-                    kot80.datagridview_name.Add(dataGridView1.Rows[i].Cells["cal_item_name"].Value.ToString());
-                    kot80.datagridview_qty.Add(dataGridView1.Rows[i].Cells["cal_qty"].Value.ToString());
-                    kot80.datagridview_kot_print.Add(dataGridView1.Rows[i].Cells["calkot_print"].Value.ToString());
-                    kot80.datagridview_modifier.Add((dataGridView1.Rows[i].Cells["cal_description"].Value ?? string.Empty).ToString());
-                }
-            }
-
-        }
-        bool kot_printer_1 = false;
-        bool kot_printer_2 = false;
-        bool kot_printer_3 = false;
-        bool kot_printer_4 = false;
-        bool kot_printer_5 = false;
-        BLLPrinterSetting blpt = new BLLPrinterSetting();
-        public void kot_printChecker()
-        {
-            DataTable dt_prt = blpt.getalldata();
-            DataTable dtp = blpt.getallPrintingTimes();
-            if (dt_prt.Rows[0]["kot_printer"].ToString() == "80")
-            {
-                if (kot_printer_1 == true)
-                {
-                    if (dtp.Rows.Count > 0)
-                    {
-                        for (int i = 0; i < Convert.ToInt32(dtp.Rows[0]["K1"]); i++)
-                        {
-                            kot80.printerName = "K1";
-                            kot_printing_80();
-                            kot80.printkot();
-                            kot80.clear_data();
-                            kot_printer_1 = kot80.kot_printer_1;
-                        }
-                    }
-                }
-                if (kot_printer_2 == true)
-                {
-                    if (dtp.Rows.Count > 0)
-                    {
-                        for (int i = 0; i < Convert.ToInt32(dtp.Rows[0]["K2"]); i++)
-                        {
-                            kot80.printerName = "K2";
-                            kot_printing_80();
-                            kot80.printkot();
-                            kot_printer_2 = kot80.kot_printer_1;
-                        }
-                    }
-                }
-                if (kot_printer_3 == true)
-                {
-                    if (dtp.Rows.Count > 0)
-                    {
-                        for (int i = 0; i < Convert.ToInt32(dtp.Rows[0]["BOT"]); i++)
-                        {
-                            kot80.printerName = "B1";
-                            kot_printing_80();
-                            kot80.printkot();
-                            kot_printer_3 = kot80.kot_printer_1;
-
-                        }
-                    }
-                }
-                if (kot_printer_4 == true)
-                {
-                    if (dtp.Rows.Count > 0)
-                    {
-                        for (int i = 0; i < Convert.ToInt32(dtp.Rows[0]["BOT"]); i++)
-                        {
-                            kot80.printerName = "B2";
-                            kot_printing_80();
-                            kot80.printkot();
-                            kot_printer_4 = kot80.kot_printer_1;
-
-                        }
-                    }
-                }
-                if (kot_printer_5 == true)
-                {
-                    if (dtp.Rows.Count > 0)
-                    {
-                        for (int i = 0; i < Convert.ToInt32(dtp.Rows[0]["K1"]); i++)
-                        {
-                            kot80.printerName = "K3";
-                            kot_printing_80();
-                            kot80.printkot();
-                            kot_printer_5 = kot80.kot_printer_1;
-
-                        }
-                    }
-                }
-            }
-            else
-            {
-                if (kot_printer_1 == true)
-                {
-                    if (dtp.Rows.Count > 0)
-                    {
-                        for (int i = 0; i < Convert.ToInt32(dtp.Rows[0]["K1"]); i++)
-                        {
-                            kot.printer_name = "K1";
-                            kot_printing_56_2();
-                            kot.printkot();
-                            kot_printer_1 = kot.kot_printer_1;
-                        }
-                    }
-                }
-                if (kot_printer_2 == true)
-                {
-                    if (dtp.Rows.Count > 0)
-                    {
-                        for (int i = 0; i < Convert.ToInt32(dtp.Rows[0]["K2"]); i++)
-                        {
-                            kot.printer_name = "K2";
-                            kot_printing_56_2();
-                            kot.printkot();
-                            kot_printer_2 = kot.kot_printer_1;
-                        }
-                    }
-                }
-                if (kot_printer_3 == true)
-                {
-                    if (dtp.Rows.Count > 0)
-                    {
-                        for (int i = 0; i < Convert.ToInt32(dtp.Rows[0]["BOT"]); i++)
-                        {
-                            kot.printer_name = "B1";
-                            kot_printing_56_2();
-                            kot.printkot();
-                            kot_printer_3 = kot.kot_printer_1;
-                        }
-                    }
-                }
-                if (kot_printer_4 == true)
-                {
-                    if (dtp.Rows.Count > 0)
-                    {
-                        for (int i = 0; i < Convert.ToInt32(dtp.Rows[0]["BOT"]); i++)
-                        {
-                            kot.printer_name = "B2";
-                            kot_printing_56_2();
-                            kot.printkot();
-                            kot_printer_4 = kot.kot_printer_1;
-                        }
-                    }
-                }
-                if (kot_printer_5 == true)
-                {
-                    if (dtp.Rows.Count > 0)
-                    {
-                        for (int i = 0; i < Convert.ToInt32(dtp.Rows[0]["K1"]); i++)
-                        {
-                            kot.printer_name = "K3";
-                            kot_printing_56_2();
-                            kot.printkot();
-                            kot_printer_5 = kot.kot_printer_1;
-                        }
-                    }
-                }
-            }
-        }
-        KOTPrinting56 kot = new KOTPrinting56();
-        public void kot_printing_56_2()
-        {
-            kot80.table_no = table_no;
-            kot80.table_displayNo = lbl_table_no.Text;
-            kot80.table_name = cbo_table_no_choose.Text;
-            for (int i = 0; i < dataGridView1.Rows.Count; i++)
-            {
-                if (dataGridView1.Rows[i].Cells["cal_order_id"].Value == null)
-                {
-                    kot.datagridview_name.Add(dataGridView1.Rows[i].Cells["cal_item_name"].Value.ToString());
-                    kot.datagridview_qty.Add(dataGridView1.Rows[i].Cells["cal_qty"].Value.ToString());
-                    kot.datagridview_kot_print.Add(dataGridView1.Rows[i].Cells["calkot_print"].Value.ToString());
-                    kot.datagridview_modifier.Add((dataGridView1.Rows[i].Cells["cal_description"].Value ?? string.Empty).ToString());
-                }
-            }
-
-
-        }
         BLLOrder blo = new BLLOrder();
         private void btn_item_transfer_Click(object sender, EventArgs e)
         {
-            if (cbo_table_no_choose.Text != "Choose One" && cbo_table_no_choose.SelectedIndex > 0 && cbo_table_no_choose.Text != "")
+            if (lbl_table_no.Text != Convert.ToString(cbo_table_no_choose.SelectedValue))
             {
-                if (dataGridView2.Rows.Count > 0)
+                if (cbo_table_no_choose.Text != "Choose One" && cbo_table_no_choose.SelectedIndex > 0 && cbo_table_no_choose.Text != "")
                 {
-                    for (int i = 0; i < dataGridView1.Rows.Count; i++)
+                    if (dataGridView2.Rows.Count > 0)
                     {
-                      
-                       string order_id=dataGridView1.Rows[i].Cells["cal_order_id"].Value.ToString();
-                       string qty= dataGridView1.Rows[i].Cells["cal_qty"].Value.ToString();                
-                       string total= dataGridView1.Rows[i].Cells["cal_total"].Value.ToString();
-                        string status = dataGridView1.Rows[i].Cells["cal_status"].Value.ToString();
-                        if (status == "Update")
-                        {  
-                            int update = blo.updateorderstable( Convert.ToDecimal(qty), Convert.ToInt32(order_id), Convert.ToDecimal(total));//this stattement will update the item of datagridview1 
+                        for (int i = 0; i < dataGridView1.Rows.Count; i++)
+                        {
+
+                            string order_id = dataGridView1.Rows[i].Cells["cal_order_id"].Value.ToString();
+                            string qty = dataGridView1.Rows[i].Cells["cal_qty"].Value.ToString();
+                            string total = dataGridView1.Rows[i].Cells["cal_total"].Value.ToString();
+                            string status = dataGridView1.Rows[i].Cells["cal_status"].Value.ToString();
+                            if (status == "Update")
+                            {
+                                int update = blo.updateorderstable(Convert.ToDecimal(qty), Convert.ToInt32(order_id), Convert.ToDecimal(total));//this stattement will update the item of datagridview1 
+                            }
                         }
+                        for (int i = 0; i < dataGridView2.Rows.Count; i++)
+                        {
+                            string order_id = dataGridView2.Rows[i].Cells["cal_order_id_2"].Value.ToString();
+                            string qty = dataGridView2.Rows[i].Cells["cal_qty_2"].Value.ToString();
+                            string total = dataGridView2.Rows[i].Cells["cal_total_2"].Value.ToString();
+                            string category_name = dataGridView2.Rows[i].Cells["cal_category_name2"].Value.ToString();
+                            string kot_type = dataGridView2.Rows[i].Cells["cal_kot_type_2"].Value.ToString();
+                            string item_name = dataGridView2.Rows[i].Cells["cal_item_name2"].Value.ToString();
+                            string cost = dataGridView2.Rows[i].Cells["cal_cost_2"].Value.ToString();
+                            string status = dataGridView2.Rows[i].Cells["cal_status_2"].Value.ToString();
+                            string table_no = cbo_table_no_choose.SelectedValue.ToString();
+                            if (status == "I")
+                            {
+                                //DataTable dt = blo.getallbyitem_nameandTableno(item_name, table_no);
+                                //if (dt.Rows.Count == 0)
+                                //{
+                                int insert_order = blo.insertorder_using_sp(Login.sendtext, Convert.ToDecimal(table_no), item_name, Convert.ToDecimal(qty), Convert.ToDecimal(total), Convert.ToDecimal(cost), "Y", category_name, kot_type, "TS", "0", 0);//this will insert data of datagridview2  
+
+                                if (dataGridView2.Rows[i].Cells["cal_delete_status"].Value.ToString() == "True")
+                                {
+                                    int delete_item = blo.deletefromorder_id(Convert.ToInt32(order_id));
+                                }
+                                //else
+                                //{ 
+                                //int updateOrder = blo.updateorderItemTransfer(Convert.ToInt32(order_id), Convert.ToDecimal(table_no));
+                                // }
+
+                            }
+                            else
+                            {
+                                int updateOrder = blo.updateorderItemTransfer(Convert.ToInt32(order_id), Convert.ToDecimal(table_no));//this will update datagridview2
+                            }
+                        }
+                        this.Close();
                     }
-                    for (int i = 0; i < dataGridView2.Rows.Count; i++)
+                    else
                     {
-                        string order_id = dataGridView2.Rows[i].Cells["cal_order_id_2"].Value.ToString();
-                        string qty = dataGridView2.Rows[i].Cells["cal_qty_2"].Value.ToString();
-                        string total = dataGridView2.Rows[i].Cells["cal_total_2"].Value.ToString();
-                        string category_name = dataGridView2.Rows[i].Cells["cal_category_name2"].Value.ToString();
-                        string kot_type = dataGridView2.Rows[i].Cells["cal_kot_type_2"].Value.ToString();
-                        string item_name = dataGridView2.Rows[i].Cells["cal_item_name2"].Value.ToString();
-                        string cost = dataGridView2.Rows[i].Cells["cal_cost_2"].Value.ToString();
-                        string status = dataGridView2.Rows[i].Cells["cal_status_2"].Value.ToString();
-                        string table_no = cbo_table_no_choose.SelectedValue.ToString();
-                        if (status == "I")
-                        {
-                            //DataTable dt = blo.getallbyitem_nameandTableno(item_name, table_no);
-                            //if (dt.Rows.Count == 0)
-                            //{
-                                int insert_order = blo.insertorder_using_sp(Login.sendtext, Convert.ToDecimal(table_no), item_name, Convert.ToDecimal(qty), Convert.ToDecimal(total), Convert.ToDecimal(cost), "Y",category_name, kot_type, "TS", "0", 0);//this will insert data of datagridview2  
-
-                            if (dataGridView2.Rows[i].Cells["cal_delete_status"].Value.ToString() == "True")
-                            {
-                                int delete_item = blo.deletefromorder_id(Convert.ToInt32(order_id));
-                            }
-                            //print
-                            if (dataGridView2.Rows[i].Cells["cal_kot_type_2"].Value.ToString() == "K1")
-                            {
-                                kot_printer_1 = true;
-                            }
-                            if (dataGridView2.Rows[i].Cells["cal_kot_type_2"].Value.ToString() == "K2")
-                            {
-                                kot_printer_2 = true;
-                            }
-                            if (dataGridView2.Rows[i].Cells["cal_kot_type_2"].Value.ToString() == "B1")
-                            {
-                                kot_printer_3 = true;
-                            }
-                            if (dataGridView2.Rows[i].Cells["cal_kot_type_2"].Value.ToString() == "B2")
-                            {
-                                kot_printer_4 = true;
-                            }
-                            if (dataGridView2.Rows[i].Cells["cal_kot_type_2"].Value.ToString() == "K3")
-                            {
-                                kot_printer_5 = true;
-                            }
-                            kot_printChecker();
-                            //this will update datagridview2
-                            //else
-                            //{ 
-                            //int updateOrder = blo.updateorderItemTransfer(Convert.ToInt32(order_id), Convert.ToDecimal(table_no));
-                            // }
-
-                        }
-                        else
-                        {
-                            int updateOrder = blo.updateorderItemTransfer(Convert.ToInt32(order_id), Convert.ToDecimal(table_no));
-                            //print
-                            if (dataGridView2.Rows[i].Cells["cal_kot_type_2"].Value.ToString() == "K1")
-                            {
-                                kot_printer_1 = true;
-                            }
-                            if (dataGridView2.Rows[i].Cells["cal_kot_type_2"].Value.ToString() == "K2")
-                            {
-                                kot_printer_2 = true;
-                            }
-                            if (dataGridView2.Rows[i].Cells["cal_kot_type_2"].Value.ToString() == "B1")
-                            {
-                                kot_printer_3 = true;
-                            }
-                            if (dataGridView2.Rows[i].Cells["cal_kot_type_2"].Value.ToString() == "B2")
-                            {
-                                kot_printer_4 = true;
-                            }
-                            if (dataGridView2.Rows[i].Cells["cal_kot_type_2"].Value.ToString() == "K3")
-                            {
-                                kot_printer_5 = true;
-                            }//this will update datagridview2
-                            kot_printChecker();
-                        }
+                        MessageBox.Show("There is no data to transfer.", "Invalid Item Transfer", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
-                    this.Close();
-                }
-                else
-                {
-                    MessageBox.Show("There is no data to transfer.", "Invalid Item Transfer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
 
+                }
             }
             else
             {
-                MessageBox.Show("Choose Correct Table No.", "Invalid Table No", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Cannot Transfer Item In Same Table Or Choose Correct Table No. !!", "Invalid Table No Alert !!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }

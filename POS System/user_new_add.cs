@@ -205,6 +205,10 @@ namespace POS
                 DataTable dt = blluser.getuserdetailsby_user_id(user_id);
                 if (dt.Rows.Count > 0)
                 {
+                    if (user_id==1)
+                    {
+                        txt_username.ReadOnly = true;
+                    }
                     txt_firstname.Text = dt.Rows[0]["first_name"].ToString();
                     txt_lastname.Text = dt.Rows[0]["last_name"].ToString();
                     txt_email.Text = dt.Rows[0]["e_mail"].ToString();
@@ -229,7 +233,6 @@ namespace POS
                         var sm = File.Exists(user_image);
                         if (sm==true)
                         {
-
                             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                             pictureBox1.Image = Image.FromFile(user_image);
                         }

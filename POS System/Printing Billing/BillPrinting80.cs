@@ -64,6 +64,24 @@ namespace POS_System
         BLLBill_printing blps = new BLLBill_printing();
         BLL_Tax bltx = new BLL_Tax();
         BLLTable blt = new BLLTable();
+        string nepaliDateConvert;
+        public void dateConvertToNepali()
+        {
+           
+            var dateOnlyString = billing_date.ToShortDateString();
+            string[] splitedDate = dateOnlyString.Split('/');
+         
+            //Save this in Year field
+            string year = splitedDate[2];
+            string month = splitedDate[0];
+            string day = splitedDate[1];
+            NepaliDateConverter.DateConverter dp = new NepaliDateConverter.DateConverter();
+            var nepaliDateConvert = dp.EngToNep(Convert.ToInt32(year), Convert.ToInt32(month), Convert.ToInt32(day));
+            string nyear = nepaliDateConvert.ConvertedDate.Year.ToString();
+            string nday = nepaliDateConvert.ConvertedDate.Day.ToString();
+            string nmonths = nepaliDateConvert.ConvertedDate.Month.ToString();
+            nepaliDate = nyear + ".0" + nmonths + "." + nday;
+        }
         public void printtobill()
         {
             PrintDialog pd = new PrintDialog();
@@ -116,6 +134,7 @@ namespace POS_System
         public bool FooterStatus;
        public bool Grandtotal;
         public bool BillFooter;
+
         private void printDocument1s_PrintPage(object sender, PrintPageEventArgs e)
         {
             panvat = cd.DynamicPan();
@@ -288,11 +307,15 @@ namespace POS_System
                     gra.DrawString("Bill Date :", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 10, y + ybinc + yinc);
                     gra.DrawString(String.Format("{0:f}", billing_date), new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 80, y + ybinc + yinc);
                     y = y + 13;
+                    if (nepaliDate == null)
+                    {
+                        dateConvertToNepali();
+                    }
                     gra.DrawString("Nepali Date :", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 10, y + ybinc + yinc);
                     gra.DrawString(nepaliDate, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 80, y + ybinc + yinc);
                     y = y + 13;
                     gra.DrawString("Fiscal Year :", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 10, y + ybinc + yinc);
-                    gra.DrawString(brfiscal_year, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 80, y + ybinc + yinc);
+                    gra.DrawString(fiscal_year, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 80, y + ybinc + yinc);
                     y = y + 13;
                 }
                 if (getalltable.Rows[0]["cashier"].ToString() == "True")
@@ -303,6 +326,75 @@ namespace POS_System
                     y = y + 13;
                 }
 
+                if (customer_name != "Choose One" && customer_name != "")
+                {
+                    gra.DrawString("Customer Name #", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 10, y + ybinc + yinc);
+                    if (customer_name.Length > 29)
+                    {
+
+                        gra.DrawString(customer_name.Substring(0, 29), new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 120, y + ybinc + yinc);
+                        y = y + 15;
+                        if (customer_name.Length > 29)
+                        {
+                            int cs_length;
+                            if (customer_name.Length > 58)
+                            {
+                                cs_length = 29;
+                            }
+                            else
+                            {
+                                cs_length = customer_name.Length - 29;
+                            }
+
+                            gra.DrawString(customer_name.Substring(29, cs_length), new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 120, y + ybinc + yinc);
+                            y = y + 15;
+
+                        }
+                        if (customer_name.Length > 60)
+                        {
+                            gra.DrawString(customer_name.Substring(59), new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 120, y + ybinc + yinc);
+                            y = y + 15;
+
+                        }
+
+                    }
+                    else
+                    {
+                        gra.DrawString(customer_name, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 120, y + ybinc + yinc);
+                        y = y + 15;
+                    }
+                    if (payment_mode == "Club Card")
+                    {
+                        gra.DrawString("Club Card No #", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, y + ybinc + yinc);
+                        gra.DrawString(customer_PAN_no, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 130, y + ybinc + yinc);
+                        y = y + 15;
+                        gra.DrawString("Card Balance #", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, y + ybinc + yinc);
+                        gra.DrawString(customer_card_balance, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 130, y + ybinc + yinc);
+                        y = y + 15;
+                    }
+                    else
+                    {
+                        if (customer_PAN_no != "")
+                        {
+                            gra.DrawString("Customer PAN No #", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 10, y + ybinc + yinc);
+                            gra.DrawString(customer_PAN_no, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 130, y + ybinc + yinc);
+                            y = y + 15;
+                        }
+                    }
+                    //if (customer_address != ""&&customer_address.Length>0)
+                    //{
+                    //    gra.DrawString("Customer Address #", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, y + ybinc + yinc);
+                    //    gra.DrawString(customer_address, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 130, y + ybinc + yinc);
+                    //    y = y + 15;
+                    //}
+                    if (customer_phone_no != "")
+                    {
+                        gra.DrawString("Customer Phone No #", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 10, y + ybinc + yinc);
+                        gra.DrawString(customer_phone_no, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 130, y + ybinc + yinc);
+                        y = y + 15;
+                    }
+
+                }
                 if (getalltable.Rows[0]["header"].ToString() == "True")
                 {
                     gra.DrawLine(drawingPen, 0, y + ybinc + yinc, 314, y + ybinc + yinc);
@@ -474,75 +566,75 @@ namespace POS_System
                     }
                     y = y + 30;
 
-                    if (customer_name != "Choose One" && customer_name != "")
-                    {
-                        gra.DrawString("Customer Name #", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, y + ybinc + yinc);
-                        if (customer_name.Length > 29)
-                        {
+                    //if (customer_name != "Choose One" && customer_name != "")
+                    //{
+                    //    gra.DrawString("Customer Name #", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, y + ybinc + yinc);
+                    //    if (customer_name.Length > 29)
+                    //    {
 
-                            gra.DrawString(customer_name.Substring(0, 29), new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 120, y + ybinc + yinc);
-                            y = y + 15;
-                            if (customer_name.Length > 29)
-                            {
-                                int cs_length;
-                                if (customer_name.Length > 58)
-                                {
-                                    cs_length = 29;
-                                }
-                                else
-                                {
-                                    cs_length = customer_name.Length-29;
-                                }
+                    //        gra.DrawString(customer_name.Substring(0, 29), new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 120, y + ybinc + yinc);
+                    //        y = y + 15;
+                    //        if (customer_name.Length > 29)
+                    //        {
+                    //            int cs_length;
+                    //            if (customer_name.Length > 58)
+                    //            {
+                    //                cs_length = 29;
+                    //            }
+                    //            else
+                    //            {
+                    //                cs_length = customer_name.Length-29;
+                    //            }
 
-                                gra.DrawString(customer_name.Substring(29, cs_length), new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 120, y + ybinc + yinc);
-                                y = y + 15;
+                    //            gra.DrawString(customer_name.Substring(29, cs_length), new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 120, y + ybinc + yinc);
+                    //            y = y + 15;
 
-                            }
-                            if (customer_name.Length > 60)
-                            {
-                                gra.DrawString(customer_name.Substring(59), new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 120, y + ybinc + yinc);
-                                y = y + 15;
+                    //        }
+                    //        if (customer_name.Length > 60)
+                    //        {
+                    //            gra.DrawString(customer_name.Substring(59), new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 120, y + ybinc + yinc);
+                    //            y = y + 15;
 
-                            }
+                    //        }
 
-                        }
-                        else
-                        {
-                            gra.DrawString(customer_name, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 120, y + ybinc + yinc);
-                            y = y + 15;
-                        }
-                        if (payment_mode == "Club Card")
-                        {
-                            gra.DrawString("Club Card No #", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, y + ybinc + yinc);
-                            gra.DrawString(customer_PAN_no, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 130, y + ybinc + yinc);
-                            y = y + 15;
-                            gra.DrawString("Card Balance #", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, y + ybinc + yinc);
-                            gra.DrawString(customer_card_balance, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 130, y + ybinc + yinc);
-                            y = y + 15;
-                        }
-                        else
-                        {
-                            if (customer_PAN_no != "" )
-                            {
-                                gra.DrawString("Customer PAN No #", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, y + ybinc + yinc);
-                                gra.DrawString(customer_PAN_no, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 130, y + ybinc + yinc);
-                                y = y + 15;
-                            }
-                        }
-                        //if (customer_address != ""&&customer_address.Length>0)
-                        //{
-                        //    gra.DrawString("Customer Address #", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, y + ybinc + yinc);
-                        //    gra.DrawString(customer_address, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 130, y + ybinc + yinc);
-                        //    y = y + 15;
-                        //}
-                        if (customer_phone_no != "")
-                        {
-                            gra.DrawString("Customer Phone No #", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, y + ybinc + yinc);
-                            gra.DrawString(customer_phone_no, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 130, y + ybinc + yinc);
-                            y = y + 15;
-                        }
+                    //    }
+                    //    else
+                    //    {
+                    //        gra.DrawString(customer_name, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 120, y + ybinc + yinc);
+                    //        y = y + 15;
+                    //    }
+                    //    if (payment_mode == "Club Card")
+                    //    {
+                    //        gra.DrawString("Club Card No #", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, y + ybinc + yinc);
+                    //        gra.DrawString(customer_PAN_no, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 130, y + ybinc + yinc);
+                    //        y = y + 15;
+                    //        gra.DrawString("Card Balance #", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, y + ybinc + yinc);
+                    //        gra.DrawString(customer_card_balance, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 130, y + ybinc + yinc);
+                    //        y = y + 15;
+                    //    }
+                    //    else
+                    //    {
+                    //        if (customer_PAN_no != "" )
+                    //        {
+                    //            gra.DrawString("Customer PAN No #", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, y + ybinc + yinc);
+                    //            gra.DrawString(customer_PAN_no, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 130, y + ybinc + yinc);
+                    //            y = y + 15;
+                    //        }
+                    //    }
+                    //    //if (customer_address != ""&&customer_address.Length>0)
+                    //    //{
+                    //    //    gra.DrawString("Customer Address #", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, y + ybinc + yinc);
+                    //    //    gra.DrawString(customer_address, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 130, y + ybinc + yinc);
+                    //    //    y = y + 15;
+                    //    //}
+                    //    if (customer_phone_no != "")
+                    //    {
+                    //        gra.DrawString("Customer Phone No #", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, y + ybinc + yinc);
+                    //        gra.DrawString(customer_phone_no, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 130, y + ybinc + yinc);
+                    //        y = y + 15;
+                    //    }
 
-                    }
+                    //}
                     //if (kot_no.Count > 0)
                     //{
                     //    //string kid = kot_no.Distinct().ToString();
@@ -585,75 +677,75 @@ namespace POS_System
                     }
                     y = y + 30;
 
-                    if (customer_name != "Choose One" && customer_name != "")
-                    {
-                        gra.DrawString("Customer Name #", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, y + ybinc + yinc);
-                        if (customer_name.Length > 29)
-                        {
+                    //if (customer_name != "Choose One" && customer_name != "")
+                    //{
+                    //    gra.DrawString("Customer Name #", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, y + ybinc + yinc);
+                    //    if (customer_name.Length > 29)
+                    //    {
 
-                            gra.DrawString(customer_name.Substring(0, 29), new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 120, y + ybinc + yinc);
-                            y = y + 15;
-                            if (customer_name.Length > 29)
-                            {
-                                int cs_length;
-                                if (customer_name.Length > 58)
-                                {
-                                    cs_length = 29;
-                                }
-                                else
-                                {
-                                    cs_length = customer_name.Length - 29;
-                                }
+                    //        gra.DrawString(customer_name.Substring(0, 29), new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 120, y + ybinc + yinc);
+                    //        y = y + 15;
+                    //        if (customer_name.Length > 29)
+                    //        {
+                    //            int cs_length;
+                    //            if (customer_name.Length > 58)
+                    //            {
+                    //                cs_length = 29;
+                    //            }
+                    //            else
+                    //            {
+                    //                cs_length = customer_name.Length - 29;
+                    //            }
 
-                                gra.DrawString(customer_name.Substring(29, cs_length), new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 120, y + ybinc + yinc);
-                                y = y + 15;
+                    //            gra.DrawString(customer_name.Substring(29, cs_length), new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 120, y + ybinc + yinc);
+                    //            y = y + 15;
 
-                            }
-                            if (customer_name.Length > 60)
-                            {
-                                gra.DrawString(customer_name.Substring(59), new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 120, y + ybinc + yinc);
-                                y = y + 15;
+                    //        }
+                    //        if (customer_name.Length > 60)
+                    //        {
+                    //            gra.DrawString(customer_name.Substring(59), new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 120, y + ybinc + yinc);
+                    //            y = y + 15;
 
-                            }
+                    //        }
 
-                        }
-                        else
-                        {
-                            gra.DrawString(customer_name, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 120, y + ybinc + yinc);
-                            y = y + 15;
-                        }
-                        if (payment_mode == "Club Card")
-                        {
-                            gra.DrawString("Club Card No #", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, y + ybinc + yinc);
-                            gra.DrawString(customer_PAN_no, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 130, y + ybinc + yinc);
-                            y = y + 15;
-                            gra.DrawString("Card Balance #", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, y + ybinc + yinc);
-                            gra.DrawString(customer_card_balance, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 130, y + ybinc + yinc);
-                            y = y + 15;
-                        }
-                        else
-                        {
-                            if (customer_PAN_no != "")
-                            {
-                                gra.DrawString("Customer PAN No #", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, y + ybinc + yinc);
-                                gra.DrawString(customer_PAN_no, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 130, y + ybinc + yinc);
-                                y = y + 15;
-                            }
-                        }
-                        //if (customer_address != ""&&customer_address.Length>0)
-                        //{
-                        //    gra.DrawString("Customer Address #", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, y + ybinc + yinc);
-                        //    gra.DrawString(customer_address, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 130, y + ybinc + yinc);
-                        //    y = y + 15;
-                        //}
-                        if (customer_phone_no != "")
-                        {
-                            gra.DrawString("Customer Phone No #", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, y + ybinc + yinc);
-                            gra.DrawString(customer_phone_no, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 130, y + ybinc + yinc);
-                            y = y + 15;
-                        }
+                    //    }
+                    //    else
+                    //    {
+                    //        gra.DrawString(customer_name, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 120, y + ybinc + yinc);
+                    //        y = y + 15;
+                    //    }
+                    //    if (payment_mode == "Club Card")
+                    //    {
+                    //        gra.DrawString("Club Card No #", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, y + ybinc + yinc);
+                    //        gra.DrawString(customer_PAN_no, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 130, y + ybinc + yinc);
+                    //        y = y + 15;
+                    //        gra.DrawString("Card Balance #", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, y + ybinc + yinc);
+                    //        gra.DrawString(customer_card_balance, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 130, y + ybinc + yinc);
+                    //        y = y + 15;
+                    //    }
+                    //    else
+                    //    {
+                    //        if (customer_PAN_no != "")
+                    //        {
+                    //            gra.DrawString("Customer PAN No #", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, y + ybinc + yinc);
+                    //            gra.DrawString(customer_PAN_no, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 130, y + ybinc + yinc);
+                    //            y = y + 15;
+                    //        }
+                    //    }
+                    //    //if (customer_address != ""&&customer_address.Length>0)
+                    //    //{
+                    //    //    gra.DrawString("Customer Address #", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, y + ybinc + yinc);
+                    //    //    gra.DrawString(customer_address, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 130, y + ybinc + yinc);
+                    //    //    y = y + 15;
+                    //    //}
+                    //    if (customer_phone_no != "")
+                    //    {
+                    //        gra.DrawString("Customer Phone No #", new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 0, y + ybinc + yinc);
+                    //        gra.DrawString(customer_phone_no, new System.Drawing.Font("Times New Roman ", 8, FontStyle.Regular), new SolidBrush(System.Drawing.Color.Black), 130, y + ybinc + yinc);
+                    //        y = y + 15;
+                    //    }
 
-                    }
+                    //}
                     //if (kot_no.Count > 0)
                     //{
                     //    //string kid = kot_no.Distinct().ToString();

@@ -1200,3 +1200,4 @@ D:\POS 2 Server Load\POS System\obj\Debug\es-PR\POS System.resources.dll
 D:\POS 2 Server Load\POS System\obj\Debug\POS_System.NoteItem.resources
 D:\POS 2 Server Load\POS System\obj\Debug\POS_System.AddStockGrouping.resources
 D:\POS 2 Server Load\POS System\obj\Debug\POS_System.GetDetails.resources
+D:\POS 2 Server Load\POS System\obj\Debug\POS_System.CustomerNames.resources

@@ -44,6 +44,7 @@
             this.cal_discount = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.cal_admin = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.col_billing = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.col_bill_save = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.col_multibilling = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.col_itemtransfer = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.col_restaurant = new System.Windows.Forms.DataGridViewCheckBoxColumn();
@@ -80,6 +81,7 @@
             this.cal_discount,
             this.cal_admin,
             this.col_billing,
+            this.col_bill_save,
             this.col_multibilling,
             this.col_itemtransfer,
             this.col_restaurant,
@@ -101,6 +103,7 @@
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellMouseEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellMouseEnter);
             // 
             // panel2
             // 
@@ -225,6 +228,11 @@
             this.col_billing.HeaderText = "Billing";
             this.col_billing.Name = "col_billing";
             this.col_billing.Width = 70;
+            // 
+            // col_bill_save
+            // 
+            this.col_bill_save.HeaderText = "Billing(Save)";
+            this.col_bill_save.Name = "col_bill_save";
             // 
             // col_multibilling
             // 
@@ -360,6 +368,7 @@
         private System.Windows.Forms.DataGridViewCheckBoxColumn cal_discount;
         private System.Windows.Forms.DataGridViewCheckBoxColumn cal_admin;
         private System.Windows.Forms.DataGridViewCheckBoxColumn col_billing;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn col_bill_save;
         private System.Windows.Forms.DataGridViewCheckBoxColumn col_multibilling;
         private System.Windows.Forms.DataGridViewCheckBoxColumn col_itemtransfer;
         private System.Windows.Forms.DataGridViewCheckBoxColumn col_restaurant;

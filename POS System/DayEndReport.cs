@@ -92,6 +92,7 @@ namespace POS_System
         bool cashdrop;
         private void DayEndReport_Load(object sender, EventArgs e)
         {
+           
             cashdrop = cd.PurchaseCashDropAccess();
             DataTable dtfis = blf.get_all_data_from_fiscal("True");
             if (dtfis.Rows.Count > 0)

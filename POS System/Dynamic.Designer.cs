@@ -4453,6 +4453,7 @@
             // panel_grandtotal
             // 
             this.panel_grandtotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_grandtotal.Controls.Add(this.panel_attendence);
             this.panel_grandtotal.Controls.Add(this.chk_grandtotal);
             this.panel_grandtotal.Controls.Add(this.lbl_grandtotal);
             this.panel_grandtotal.Controls.Add(this.label154);
@@ -4711,7 +4712,7 @@
             this.panel_attendence.Controls.Add(this.lbl_attendence);
             this.panel_attendence.Controls.Add(this.label166);
             this.panel_attendence.Controls.Add(this.label167);
-            this.panel_attendence.Location = new System.Drawing.Point(231, 10);
+            this.panel_attendence.Location = new System.Drawing.Point(5, 0);
             this.panel_attendence.Name = "panel_attendence";
             this.panel_attendence.Size = new System.Drawing.Size(524, 353);
             this.panel_attendence.TabIndex = 310;
@@ -4762,7 +4763,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(767, 479);
-            this.Controls.Add(this.panel_attendence);
             this.Controls.Add(this.panel_fix_grouping);
             this.Controls.Add(this.panel_checkout_rename);
             this.Controls.Add(this.panel_footerbilling);
